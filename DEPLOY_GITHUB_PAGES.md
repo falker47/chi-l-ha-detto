@@ -45,11 +45,28 @@ Deploy automatico ad ogni push su `main`
 
 3. **Aspetta il deploy** (2-5 minuti)
 
+### **Opzione 1.5: Deploy con Build Locale**
+
+1. **Build locale:**
+   ```bash
+   npm run build
+   ```
+
+2. **Pusha la cartella dist:**
+   ```bash
+   git add dist/
+   git commit -m "Build per GitHub Pages"
+   git push origin main
+   ```
+
+3. **Configura Pages** come sopra
+
 ### **Opzione 2: GitHub Actions (Automatico)**
 
 1. **Pusha le modifiche** (come sopra)
 2. **Vai su Actions** per monitorare il deploy
-3. **Configura Pages** per usare il branch `gh-pages`
+3. **Configura Pages** per usare il branch `gh-pages` (se usi il workflow semplice)
+4. **Configura Pages** per usare "GitHub Actions" (se usi il workflow moderno)
 
 ## 🌐 **URL Finale**
 
@@ -75,6 +92,25 @@ https://[username].github.io/chi-l-ha-detto/
 1. **Console browser** - errori 404 per le immagini?
 2. **Network tab** - richieste fallite?
 3. **Repository** - le immagini sono nel branch corretto?
+
+### **Problemi Comuni GitHub Actions:**
+
+#### **Errore Git Exit Code 128:**
+- **Causa**: Azioni obsolete o permessi insufficienti
+- **Soluzione**: Usa il workflow moderno o quello semplice alternativo
+
+#### **Workflow Fallisce:**
+- **Causa**: Conflitti di concorrenza o permessi
+- **Soluzione**: 
+  1. Vai su Actions > Workflow fallito
+  2. Clicca "Re-run jobs"
+  3. Se persiste, usa il deploy manuale
+
+#### **Branch gh-pages non creato:**
+- **Causa**: Workflow non completato
+- **Soluzione**: 
+  1. Usa il deploy manuale
+  2. Oppure riprova il workflow
 
 ## 📁 **Struttura Finale Repository**
 
