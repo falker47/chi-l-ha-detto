@@ -3,12 +3,21 @@
     "id": "q1",
     "quote": "In guerra, la verità è così preziosa che va protetta da una scorta di bugie.",
     "author": "Winston Churchill",
-    "choices": ["Winston Churchill", "Adolf Hitler", "Joseph Stalin", "F. D. Roosevelt"],
+    "choices": [
+      "Winston Churchill",
+      "Adolf Hitler",
+      "Joseph Stalin",
+      "F. D. Roosevelt"
+    ],
     "correctIndex": 0,
     "year_or_period": "1943, Seconda guerra mondiale",
     "source_title": "Riferita in contesto Operazione Bodyguard (depistaggi D-Day)",
     "source_link": "https://en.wikipedia.org/wiki/Operation_Bodyguard",
-    "tags": ["guerra", "propaganda", "inganno"],
+    "tags": [
+      "guerra",
+      "propaganda",
+      "inganno"
+    ],
     "difficulty": 3,
     "spiciness": 1,
     "hint_short": "Deception bellica",
@@ -21,12 +30,21 @@
     "id": "q2",
     "quote": "Posso resistere a tutto tranne che alla tentazione.",
     "author": "Oscar Wilde",
-    "choices": ["Oscar Wilde", "Friedrich Nietzsche", "Gabriele D'Annunzio", "Kanye West"],
+    "choices": [
+      "Oscar Wilde",
+      "Friedrich Nietzsche",
+      "Gabriele D'Annunzio",
+      "Kanye West"
+    ],
     "correctIndex": 0,
     "year_or_period": "1892",
     "source_title": "Lady Windermere's Fan",
     "source_link": "https://en.wikipedia.org/wiki/Lady_Windermere%27s_Fan",
-    "tags": ["aforismi", "edonismo", "teatro"],
+    "tags": [
+      "aforismi",
+      "edonismo",
+      "teatro"
+    ],
     "difficulty": 2,
     "spiciness": 0,
     "hint_short": "Esteta irlandese",
@@ -39,12 +57,21 @@
     "id": "q3",
     "quote": "Chi combatte con i mostri tema di non diventare egli stesso un mostro…",
     "author": "Friedrich Nietzsche",
-    "choices": ["Friedrich Nietzsche", "Carl Jung", "H. P. Lovecraft", "Adolf Hitler"],
+    "choices": [
+      "Friedrich Nietzsche",
+      "Carl Jung",
+      "H. P. Lovecraft",
+      "Adolf Hitler"
+    ],
     "correctIndex": 0,
     "year_or_period": "1886",
     "source_title": "Al di là del bene e del male, §146",
     "source_link": "https://en.wikipedia.org/wiki/Beyond_Good_and_Evil",
-    "tags": ["etica", "potere", "psicologia"],
+    "tags": [
+      "etica",
+      "potere",
+      "psicologia"
+    ],
     "difficulty": 3,
     "spiciness": 1,
     "hint_short": "Oltre il bene e il male",
@@ -57,12 +84,21 @@
     "id": "q4",
     "quote": "Il potere tende a corrompere; il potere assoluto corrompe assolutamente.",
     "author": "Lord Acton",
-    "choices": ["Lord Acton", "Niccolò Machiavelli", "Thomas Hobbes", "Iósif Stalin"],
+    "choices": [
+      "Lord Acton",
+      "Niccolò Machiavelli",
+      "Thomas Hobbes",
+      "Iósif Stalin"
+    ],
     "correctIndex": 0,
     "year_or_period": "1887",
     "source_title": "Lettera a Mandell Creighton",
     "source_link": "https://en.wikipedia.org/wiki/John_Dalberg-Acton,_1st_Baron_Acton",
-    "tags": ["potere", "etica", "storia"],
+    "tags": [
+      "potere",
+      "etica",
+      "storia"
+    ],
     "difficulty": 2,
     "spiciness": 1,
     "hint_short": "Storico cattolico inglese",
@@ -75,12 +111,20 @@
     "id": "q5",
     "quote": "La politica è l'arte del possibile.",
     "author": "Otto von Bismarck",
-    "choices": ["Otto von Bismarck", "Camillo Benso, Cavour", "Winston Churchill", "Niccolò Machiavelli"],
+    "choices": [
+      "Otto von Bismarck",
+      "Camillo Benso, Cavour",
+      "Winston Churchill",
+      "Niccolò Machiavelli"
+    ],
     "correctIndex": 0,
     "year_or_period": "XIX secolo",
     "source_title": "Aforisma attribuito (Realpolitik)",
     "source_link": "https://en.wikipedia.org/wiki/Realpolitik",
-    "tags": ["realpolitik", "pragmatismo"],
+    "tags": [
+      "realpolitik",
+      "pragmatismo"
+    ],
     "difficulty": 2,
     "spiciness": 0,
     "hint_short": "Cancelliere di ferro",
@@ -93,12 +137,21 @@
     "id": "q6",
     "quote": "Arbeit macht frei (\"Il lavoro rende liberi\").",
     "author": "Lorenz Diefenbach",
-    "choices": ["Lorenz Diefenbach", "Adolf Hitler", "Joseph Goebbels", "Heinrich Himmler"],
+    "choices": [
+      "Lorenz Diefenbach",
+      "Adolf Hitler",
+      "Joseph Goebbels",
+      "Heinrich Himmler"
+    ],
     "correctIndex": 0,
     "year_or_period": "1873 (origine) → 1933–45 (uso nazista)",
     "source_title": "Romanzo 'Arbeit macht frei' (origine); uso propagandistico sui cancelli",
     "source_link": "https://en.wikipedia.org/wiki/Arbeit_macht_frei",
-    "tags": ["nazismo", "propaganda", "storia"],
+    "tags": [
+      "nazismo",
+      "propaganda",
+      "storia"
+    ],
     "difficulty": 4,
     "spiciness": 2,
     "sensitive": true,
@@ -112,12 +165,20 @@
     "id": "q7",
     "quote": "Meglio vivere un giorno da leoni che cent'anni da pecora.",
     "author": "Benito Mussolini",
-    "choices": ["Benito Mussolini", "Gabriele D'Annunzio", "Julius Evola", "Cesare Augusto"],
+    "choices": [
+      "Benito Mussolini",
+      "Gabriele D'Annunzio",
+      "Julius Evola",
+      "Cesare Augusto"
+    ],
     "correctIndex": 0,
     "year_or_period": "1918–1920 (diffusione)",
     "source_title": "Slogan bellico/propagandistico (origine precedente e controversa)",
     "source_link": "https://it.wikipedia.org/wiki/Meglio_un_giorno_da_leone_che_cent%27anni_da_pecora",
-    "tags": ["propaganda", "nazionalismo"],
+    "tags": [
+      "propaganda",
+      "nazionalismo"
+    ],
     "difficulty": 4,
     "spiciness": 2,
     "sensitive": true,
@@ -129,58 +190,1341 @@
   },
   {
     "id": "q8",
-    "quote": "No one man should have all that power.",
+    "quote": "Nessun uomo dovrebbe avere tutto quel potere.",
     "author": "Kanye West",
-    "choices": ["Kanye West", "Friedrich Nietzsche", "Elon Musk", "Niccolò Machiavelli"],
+    "choices": [
+      "Kanye West",
+      "Friedrich Nietzsche",
+      "Elon Musk",
+      "Niccolò Machiavelli"
+    ],
     "correctIndex": 0,
     "year_or_period": "2010",
     "source_title": "Brano 'POWER' (My Beautiful Dark Twisted Fantasy)",
     "source_link": "https://en.wikipedia.org/wiki/Power_(Kanye_West_song)",
-    "tags": ["musica", "potere", "cultura pop"],
+    "tags": [
+      "musica",
+      "potere",
+      "cultura pop"
+    ],
     "difficulty": 3,
     "spiciness": 1,
     "hint_short": "Lyric sulla hybris",
     "hint_more": "Critica alla concentrazione di potere (anche mediatica).",
     "ambiguity_note": "Tema del potere richiama Machiavelli/Nietzsche; la cultura pop depista.",
-    "language_orig": "EN",
+    "language_orig": "IT",
     "context": "Gioco tra egotrip e critica sociale: il ritornello ammonisce contro il potere in una sola persona."
   },
   {
     "id": "q9",
-    "quote": "Appear weak when you are strong, and strong when you are weak.",
+    "quote": "Mostrati debole quando sei forte, e forte quando sei debole.",
     "author": "Sun Tzu",
-    "choices": ["Sun Tzu", "Miyamoto Musashi", "Napoleone Bonaparte", "Mao Zedong"],
+    "choices": [
+      "Sun Tzu",
+      "Miyamoto Musashi",
+      "Napoleone Bonaparte",
+      "Mao Zedong"
+    ],
     "correctIndex": 0,
     "year_or_period": "VI sec. a.C. (attribuzione tradizionale)",
     "source_title": "L'arte della guerra",
     "source_link": "https://en.wikipedia.org/wiki/The_Art_of_War",
-    "tags": ["strategia", "guerra", "inganno"],
+    "tags": [
+      "strategia",
+      "guerra",
+      "inganno"
+    ],
     "difficulty": 2,
     "spiciness": 0,
     "hint_short": "Manuale strategico cinese",
     "hint_more": "Dissimulazione della forza reale.",
     "ambiguity_note": "Massime simili compaiono in altri contesti militari.",
-    "language_orig": "ZH",
+    "language_orig": "IT",
     "context": "Principio di dissimulazione: indurre l'avversario in errore sulla propria forza."
   },
   {
     "id": "q10",
-    "quote": "The only thing we have to fear is fear itself.",
+    "quote": "L'unica cosa di cui dobbiamo aver paura è la paura stessa.",
     "author": "Franklin D. Roosevelt",
-    "choices": ["Franklin D. Roosevelt", "John F. Kennedy", "Winston Churchill", "Martin Luther King Jr."],
+    "choices": [
+      "Franklin D. Roosevelt",
+      "John F. Kennedy",
+      "Winston Churchill",
+      "Martin Luther King Jr."
+    ],
     "correctIndex": 0,
     "year_or_period": "1933",
     "source_title": "First Inaugural Address",
     "source_link": "https://en.wikipedia.org/wiki/First_inauguration_of_Franklin_D._Roosevelt",
-    "tags": ["politica", "crisi", "retorica"],
+    "tags": [
+      "politica",
+      "crisi",
+      "retorica"
+    ],
     "difficulty": 2,
     "spiciness": 0,
     "hint_short": "Crisi del '29",
     "hint_more": "Messaggio di fiducia durante la Grande Depressione.",
     "ambiguity_note": "Lo stile oratorio fa pensare a Churchill o JFK.",
-    "language_orig": "EN",
+    "language_orig": "IT",
     "context": "Discorso inaugurale del 1933: superare la paralisi della paura per reagire alla crisi."
+  },
+  {
+    "id": "q11",
+    "quote": "Dio non gioca a dadi con l'universo.",
+    "author": "Albert Einstein",
+    "choices": [
+      "Albert Einstein",
+      "Niels Bohr",
+      "Erwin Schrödinger",
+      "Max Born"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1926",
+    "source_title": "Lettera a Max Born",
+    "source_link": "https://en.wikipedia.org/wiki/God_does_not_play_dice",
+    "tags": [
+      "fisica",
+      "filosofia della scienza"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Lettera a un collega fisico",
+    "hint_more": "Replica al probabilismo quantistico nelle lettere con Born.",
+    "ambiguity_note": "Il tema del caso/la misura fa pensare a Bohr o Schrödinger.",
+    "language_orig": "DE",
+    "sensitive": false,
+    "context": "Einstein esprimeva scetticismo verso l’interpretazione probabilistica della meccanica quantistica, sostenendo una realtà fisica più deterministica rispetto alla lettura di Copenaghen."
+  },
+  {
+    "id": "q12",
+    "quote": "È molto più sicuro essere temuto che amato.",
+    "author": "Niccolò Machiavelli",
+    "choices": [
+      "Niccolò Machiavelli",
+      "Thomas Hobbes",
+      "Cesare Borgia",
+      "Lorenzo de' Medici"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1513",
+    "source_title": "Il Principe, cap. XVII",
+    "source_link": "https://it.wikipedia.org/wiki/Il_Principe",
+    "tags": [
+      "politica",
+      "potere",
+      "realismo"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Trattato sul governo",
+    "hint_more": "Realismo politico rinascimentale, non morale astratta.",
+    "ambiguity_note": "Il tema del timore richiama Hobbes o la prassi di Borgia.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Machiavelli distingue tra etica privata e necessità del potere, argomentando che la stabilità del principato talvolta richiede durezza più che consenso affettivo."
+  },
+  {
+    "id": "q13",
+    "quote": "Tutti gli animali sono uguali, ma alcuni sono più uguali degli altri.",
+    "author": "George Orwell",
+    "choices": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Karl Marx",
+      "Lev Trotsky"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1945",
+    "source_title": "La fattoria degli animali",
+    "source_link": "https://it.wikipedia.org/wiki/La_fattoria_degli_animali",
+    "tags": [
+      "satira",
+      "politica",
+      "totalitarismo"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Favola politica",
+    "hint_more": "Critica le derive autoritarie delle rivoluzioni.",
+    "ambiguity_note": "La distopia sociale può ricordare Huxley o la teoria marxiana.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Orwell denuncia come gli ideali di uguaglianza possano essere traditi da élite che riscrivono le regole per mantenere il potere."
+  },
+  {
+    "id": "q14",
+    "quote": "Donna non si nasce: lo si diventa.",
+    "author": "Simone de Beauvoir",
+    "choices": [
+      "Simone de Beauvoir",
+      "Virginia Woolf",
+      "Hannah Arendt",
+      "Mary Wollstonecraft"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1949",
+    "source_title": "Il secondo sesso",
+    "source_link": "https://it.wikipedia.org/wiki/Il_secondo_sesso",
+    "tags": [
+      "femminismo",
+      "filosofia",
+      "società"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Esistenzialismo e genere",
+    "hint_more": "Distinzione tra sesso biologico e costruzione sociale.",
+    "ambiguity_note": "L’analisi culturale del ruolo femminile può far pensare a Woolf.",
+    "language_orig": "FR",
+    "sensitive": false,
+    "context": "De Beauvoir mostra come l’identità di genere sia plasmata dalle strutture sociali e culturali, non solo da fattori biologici."
+  },
+  {
+    "id": "q15",
+    "quote": "Homo homini lupus (\"L'uomo è un lupo per l'uomo\").",
+    "author": "Tito Maccio Plauto",
+    "choices": [
+      "Tito Maccio Plauto",
+      "Thomas Hobbes",
+      "Seneca",
+      "Cicerone"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "III–II sec. a.C.",
+    "source_title": "Asinaria (v. 495)",
+    "source_link": "https://it.wikipedia.org/wiki/Homo_homini_lupus",
+    "tags": [
+      "latino",
+      "natura umana",
+      "classici"
+    ],
+    "difficulty": 4,
+    "spiciness": 0,
+    "hint_short": "Commedia latina",
+    "hint_more": "Molto prima del Leviatano di Hobbes.",
+    "ambiguity_note": "Spesso creduta di Hobbes per l’uso nello Stato di natura.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "La formula appare in Plauto e verrà ripresa secoli dopo in filosofia politica per descrivere conflitto e diffidenza nello stato di natura."
+  },
+  {
+    "id": "q16",
+    "quote": "Il cuore ha le sue ragioni che la ragione non conosce.",
+    "author": "Blaise Pascal",
+    "choices": [
+      "Blaise Pascal",
+      "René Descartes",
+      "Voltaire",
+      "Jean-Jacques Rousseau"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1670",
+    "source_title": "Pensieri",
+    "source_link": "https://it.wikipedia.org/wiki/Pensieri_(Pascal)",
+    "tags": [
+      "filosofia",
+      "fede",
+      "ragione"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Apologia della fede",
+    "hint_more": "Critica i limiti della sola razionalità geometrica.",
+    "ambiguity_note": "Il contrasto cuore/ragione può ricordare Rousseau o Descartes.",
+    "language_orig": "FR",
+    "sensitive": false,
+    "context": "Pascal evidenzia i limiti della ragione nel cogliere aspetti esistenziali e religiosi, proponendo un sapere ‘del cuore’ non riducibile alla logica."
+  },
+  {
+    "id": "q17",
+    "quote": "Salus populi suprema lex esto (\"La salvezza del popolo sia la legge suprema\").",
+    "author": "Marco Tullio Cicerone",
+    "choices": [
+      "Marco Tullio Cicerone",
+      "Gaio Giulio Cesare",
+      "Tacito",
+      "Agostino d'Ippona"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "I sec. a.C.",
+    "source_title": "De Legibus (III, 3, 8)",
+    "source_link": "https://it.wikipedia.org/wiki/Salus_populi_suprema_lex_esto",
+    "tags": [
+      "diritto",
+      "repubblica",
+      "latino"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Massima giuridica romana",
+    "hint_more": "Il bene del popolo come legge suprema.",
+    "ambiguity_note": "Attribuita talvolta a Cesare per contesto politico.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Per Cicerone la legittimità delle leggi si misura con l’interesse pubblico: la sicurezza e il bene dei cittadini prevalgono."
+  },
+  {
+    "id": "q18",
+    "quote": "Una vita senza ricerca non è degna di essere vissuta.",
+    "author": "Platone",
+    "choices": [
+      "Platone",
+      "Socrate",
+      "Aristotele",
+      "Epicuro"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "399 a.C.",
+    "source_title": "Apologia di Socrate",
+    "source_link": "https://it.wikipedia.org/wiki/Apologia_di_Socrate_(Platone)",
+    "tags": [
+      "filosofia",
+      "etica",
+      "conoscenza"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Processo ad Atene",
+    "hint_more": "Parole attribuite a Socrate tramite il dialogo platonico.",
+    "ambiguity_note": "Molti la citano come di Socrate; l’autore scritto è Platone.",
+    "language_orig": "EL",
+    "sensitive": false,
+    "context": "Nel resoconto platonico del processo, Socrate difende l’esame critico di sé e della polis come dovere morale dell’uomo."
+  },
+  {
+    "id": "q19",
+    "quote": "Parla piano e porta un grosso bastone: andrai lontano.",
+    "author": "Theodore Roosevelt",
+    "choices": [
+      "Theodore Roosevelt",
+      "Franklin D. Roosevelt",
+      "Winston Churchill",
+      "Woodrow Wilson"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1901",
+    "source_title": "Big Stick ideology",
+    "source_link": "https://en.wikipedia.org/wiki/Big_Stick_ideology",
+    "tags": [
+      "diplomazia",
+      "politica estera",
+      "USA"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Realismo presidenziale",
+    "hint_more": "Moderazione pubblica, credibile forza in riserva.",
+    "ambiguity_note": "La retorica vigorosa può ricordare Churchill o FDR.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "TR riassumeva così la sua politica estera: toni moderati accompagnati dalla capacità effettiva di agire, specie nel contesto panamericano."
+  },
+  {
+    "id": "q20",
+    "quote": "La religione è l’oppio dei popoli.",
+    "author": "Karl Marx",
+    "choices": [
+      "Karl Marx",
+      "Friedrich Engels",
+      "Vladimir Lenin",
+      "Max Weber"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1843–1844",
+    "source_title": "Per la critica della filosofia del diritto di Hegel",
+    "source_link": "https://it.wikipedia.org/wiki/L%27oppio_dei_popoli",
+    "tags": [
+      "filosofia",
+      "religione",
+      "critica sociale"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Critica dell’alienazione",
+    "hint_more": "La religione come sollievo e velo sul dolore sociale.",
+    "ambiguity_note": "Talvolta attribuita a Lenin per il tono politico.",
+    "language_orig": "DE",
+    "sensitive": false,
+    "context": "Marx interpreta la religione come espressione della sofferenza reale e insieme come consolazione che può ostacolare il cambiamento materiale."
+  },
+  {
+    "id": "q21",
+    "quote": "Non è dalla benevolenza del macellaio, del birraio o del fornaio che ci aspettiamo il nostro pranzo, ma dalla loro considerazione del proprio interesse.",
+    "author": "Adam Smith",
+    "choices": [
+      "Adam Smith",
+      "David Ricardo",
+      "John Locke",
+      "Thomas Malthus"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1776",
+    "source_title": "La ricchezza delle nazioni",
+    "source_link": "https://it.wikipedia.org/wiki/La_ricchezza_delle_nazioni",
+    "tags": [
+      "economia",
+      "mercati",
+      "interesse personale"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Padre dell’economia classica",
+    "hint_more": "Ordine spontaneo da scambi d’interesse privato.",
+    "ambiguity_note": "Può essere confusa con Ricardo o Locke per temi affini.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Smith descrive come l’interesse personale, entro regole e concorrenza, generi cooperazione e beni utili alla collettività."
+  },
+  {
+    "id": "q22",
+    "quote": "Non è perché le cose sono difficili che non osiamo; è perché non osiamo che sono difficili.",
+    "author": "Seneca",
+    "choices": [
+      "Seneca",
+      "Marco Aurelio",
+      "Cicerone",
+      "Plinio il Giovane"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "I sec. d.C.",
+    "source_title": "Lettere a Lucilio",
+    "source_link": "https://it.wikipedia.org/wiki/Epistulae_morales_ad_Lucilium",
+    "tags": [
+      "stoicismo",
+      "etica",
+      "motivazione"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Stoico romano",
+    "hint_more": "Invito all’azione contro l’inerzia mentale.",
+    "ambiguity_note": "Spesso confusa con massime di Marco Aurelio.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Seneca esorta a superare l’inerzia e l’auto-sabotaggio: il coraggio rende affrontabili le difficoltà."
+  },
+  {
+    "id": "q23",
+    "quote": "Possiamo vedere solo per un breve tratto davanti a noi, ma lì c’è molto da fare.",
+    "author": "Alan Turing",
+    "choices": [
+      "Alan Turing",
+      "John von Neumann",
+      "Claude Shannon",
+      "Norbert Wiener"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1950",
+    "source_title": "Computing Machinery and Intelligence",
+    "source_link": "https://en.wikipedia.org/wiki/Computing_Machinery_and_Intelligence",
+    "tags": [
+      "informatica",
+      "intelligenza artificiale",
+      "ricerca"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Padre della computer science",
+    "hint_more": "Saggio che introduce il celebre ‘Imitation Game’.",
+    "ambiguity_note": "Il tema potrebbe far pensare a Shannon o Wiener.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Turing riflette sui limiti e sulle opportunità immediate dell’IA, enfatizzando il lavoro concreto più che le previsioni lontane."
+  },
+  {
+    "id": "q24",
+    "quote": "Coloro che non ricordano il passato sono condannati a ripeterlo.",
+    "author": "George Santayana",
+    "choices": [
+      "George Santayana",
+      "Winston Churchill",
+      "Hannah Arendt",
+      "George Orwell"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1905",
+    "source_title": "The Life of Reason",
+    "source_link": "https://en.wikipedia.org/wiki/George_Santayana",
+    "tags": [
+      "storia",
+      "memoria",
+      "filosofia"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Massima sulla memoria",
+    "hint_more": "Ripresa poi da politici e storici del XX secolo.",
+    "ambiguity_note": "Spesso citata come di Churchill per la fama oratoria.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Santayana sottolinea il valore civile della memoria storica per evitare la ripetizione di errori collettivi."
+  },
+  {
+    "id": "q25",
+    "quote": "La violenza può distruggere il potere; è assolutamente incapace di crearlo.",
+    "author": "Hannah Arendt",
+    "choices": [
+      "Hannah Arendt",
+      "Frantz Fanon",
+      "Max Weber",
+      "Mahatma Gandhi"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1970",
+    "source_title": "On Violence",
+    "source_link": "https://en.wikipedia.org/wiki/On_Violence",
+    "tags": [
+      "politica",
+      "potere",
+      "violenza"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Teoria del potere",
+    "hint_more": "Distinzione tra potere condiviso e mera coercizione.",
+    "ambiguity_note": "L’argomento richiama Weber (monopolio della forza) o Fanon.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Per Arendt il potere nasce dall’azione collettiva e dal consenso; la violenza può sovvertirlo ma non sostituirlo in modo duraturo."
+  },
+  {
+    "id": "q26",
+    "quote": "Veni, vidi, vici (\"Venni, vidi, vinsi\").",
+    "author": "Gaio Giulio Cesare",
+    "choices": [
+      "Gaio Giulio Cesare",
+      "Ottaviano Augusto",
+      "Marco Tullio Cicerone",
+      "Alessandro Magno"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "47 a.C.",
+    "source_title": "Commentarii e corrispondenze; formula trionfale",
+    "source_link": "https://it.wikipedia.org/wiki/Veni,_vidi,_vici",
+    "tags": [
+      "roma",
+      "guerra",
+      "retorica"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Trionfo in tre parole",
+    "hint_more": "Messaggio dopo una rapida vittoria in Asia Minore.",
+    "ambiguity_note": "Può essere confusa con Augusto per i trionfi imperiali.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Celebre formula con cui Cesare comunicò la rapidità di una vittoria militare (Zela), divenuta simbolo di efficienza bellica e politica."
+  },
+  {
+    "id": "q27",
+    "quote": "Il mezzo è il messaggio.",
+    "author": "Marshall McLuhan",
+    "choices": [
+      "Marshall McLuhan",
+      "Neil Postman",
+      "Walter Benjamin",
+      "John Culkin"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1964",
+    "source_title": "Understanding Media",
+    "source_link": "https://en.wikipedia.org/wiki/The_medium_is_the_message",
+    "tags": [
+      "media",
+      "comunicazione",
+      "cultura"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Ecologia dei media",
+    "hint_more": "Il mezzo plasma gli effetti sociali più del contenuto.",
+    "ambiguity_note": "Spesso associata a Postman o a Culkin per affinità tematiche.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "McLuhan sostiene che la struttura del mezzo altera percezioni e relazioni sociali più del contenuto veicolato."
+  },
+  {
+    "id": "q28",
+    "quote": "Je pense, donc je suis (\"Penso, dunque sono\").",
+    "author": "René Descartes",
+    "choices": [
+      "René Descartes",
+      "Blaise Pascal",
+      "Baruch Spinoza",
+      "Immanuel Kant"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1637",
+    "source_title": "Discours de la méthode",
+    "source_link": "https://fr.wikipedia.org/wiki/Discours_de_la_m%C3%A9thode",
+    "tags": [
+      "filosofia",
+      "epistemologia",
+      "moderno"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Fondazione del soggetto",
+    "hint_more": "Versione francese del celebre 'cogito'.",
+    "ambiguity_note": "Può essere confusa con Pascal per coerenza storica francese.",
+    "language_orig": "FR",
+    "sensitive": false,
+    "context": "Descartes formula il principio del 'cogito' come certezza indubitabile da cui fondare il sapere."
+  },
+  {
+    "id": "q29",
+    "quote": "Datemi la libertà, o datemi la morte!",
+    "author": "Patrick Henry",
+    "choices": [
+      "Patrick Henry",
+      "Thomas Jefferson",
+      "George Washington",
+      "Benjamin Franklin"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1775",
+    "source_title": "Discorso alla Convenzione della Virginia",
+    "source_link": "https://en.wikipedia.org/wiki/Give_me_liberty,_or_give_me_death!",
+    "tags": [
+      "politica",
+      "indipendenza",
+      "USA"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Oratoria rivoluzionaria",
+    "hint_more": "Chiusura di un discorso che spinse alla milizia.",
+    "ambiguity_note": "Spesso confusa con Jefferson per la Dichiarazione d’Indipendenza.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Henry conclude con un appello alla libertà personale come bene supremo nel contesto pre‑rivoluzionario americano."
+  },
+  {
+    "id": "q30",
+    "quote": "Siamo quello che facciamo ripetutamente. L'eccellenza, dunque, non è un atto, ma un'abitudine.",
+    "author": "Will Durant",
+    "choices": [
+      "Will Durant",
+      "Aristotele",
+      "Plutarco",
+      "Epitteto"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1926",
+    "source_title": "The Story of Philosophy (parafrasi di Aristotele)",
+    "source_link": "https://en.wikipedia.org/wiki/Will_Durant#Misattributed_to_Aristotle",
+    "tags": [
+      "filosofia",
+      "abitudine",
+      "virtù"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Parafrasi moderna",
+    "hint_more": "Spesso attribuita al filosofo greco, ma proviene da un divulgatore.",
+    "ambiguity_note": "Comunemente attribuita ad Aristotele per il tema dell’habitus.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Durant riassume in forma aforistica il pensiero etico aristotelico sull’abitudine e la virtù; l’attribuzione diretta ad Aristotele è impropria."
+  },
+  {
+    "id": "q31",
+    "quote": "Chi ha un perché per vivere può sopportare quasi ogni come.",
+    "author": "Friedrich Nietzsche",
+    "choices": [
+      "Friedrich Nietzsche",
+      "Viktor Frankl",
+      "Arthur Schopenhauer",
+      "Søren Kierkegaard"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1889",
+    "source_title": "Götzen-Dämmerung (Massime e frecce)",
+    "source_link": "https://en.wikipedia.org/wiki/Twilight_of_the_Idols",
+    "tags": [
+      "senso",
+      "resilienza",
+      "filosofia"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Perché e come",
+    "hint_more": "Reso celebre anche da Frankl nel dopoguerra.",
+    "ambiguity_note": "Spesso associata a Frankl per l’uso in 'Uno psicologo nei lager'.",
+    "language_orig": "DE",
+    "sensitive": false,
+    "context": "Nietzsche lega la capacità di sopportare la sofferenza al possesso di un senso, un 'perché' esistenziale."
+  },
+  {
+    "id": "q32",
+    "quote": "La mappa non è il territorio.",
+    "author": "Alfred Korzybski",
+    "choices": [
+      "Alfred Korzybski",
+      "Gregory Bateson",
+      "Marshall McLuhan",
+      "Claude Shannon"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1931",
+    "source_title": "A Non-Aristotelian System and Its Necessity for Rigour in Mathematics and Physics",
+    "source_link": "https://en.wikipedia.org/wiki/Map–territory_relation",
+    "tags": [
+      "semantica",
+      "modelli",
+      "conoscenza"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Modello ≠ realtà",
+    "hint_more": "Massima della semantica generale.",
+    "ambiguity_note": "Confusa con McLuhan/Bateson per discipline affini.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Korzybski distingue rappresentazioni e realtà: le mappe guidano ma non coincidono con il territorio."
+  },
+  {
+    "id": "q33",
+    "quote": "Se ho visto più lontano è perché stavo sulle spalle dei giganti.",
+    "author": "Isaac Newton",
+    "choices": [
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Robert Hooke",
+      "Johannes Kepler"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1675",
+    "source_title": "Lettera a Robert Hooke",
+    "source_link": "https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants",
+    "tags": [
+      "scienza",
+      "storia della scienza",
+      "umiltà"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Giganti",
+    "hint_more": "Riconoscimento dei predecessori nella scoperta scientifica.",
+    "ambiguity_note": "Spesso associata a Galilei per l’immaginario copernicano.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Newton accredita i progressi ai contributi precedenti, diventando simbolo di cumulatività del sapere."
+  },
+  {
+    "id": "q34",
+    "quote": "Devi essere il cambiamento che vuoi vedere nel mondo.",
+    "author": "Mahatma Gandhi",
+    "choices": [
+      "Mahatma Gandhi",
+      "Martin Luther King Jr.",
+      "Nelson Mandela",
+      "Rabindranath Tagore"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "XX secolo (attribuzione popolare)",
+    "source_title": "Detto popolare attribuito a Gandhi",
+    "source_link": "https://en.wikipedia.org/wiki/Mahatma_Gandhi#Inspiration",
+    "tags": [
+      "etica",
+      "nonviolenza",
+      "attivismo"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Coerenza personale",
+    "hint_more": "Frase-simbolo del suo ethos nonviolento.",
+    "ambiguity_note": "Talvolta associata a MLK o Mandela per affinità di lotta.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Il motto invita alla responsabilità personale come leva del cambiamento sociale; l’attribuzione testuale è discussa ma il messaggio è coerente con Gandhi."
+  },
+  {
+    "id": "q35",
+    "quote": "I limiti del mio linguaggio significano i limiti del mio mondo.",
+    "author": "Ludwig Wittgenstein",
+    "choices": [
+      "Ludwig Wittgenstein",
+      "Martin Heidegger",
+      "Noam Chomsky",
+      "Michel Foucault"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1922",
+    "source_title": "Tractatus Logico-Philosophicus",
+    "source_link": "https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus",
+    "tags": [
+      "linguaggio",
+      "filosofia",
+      "logica"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Tractatus",
+    "hint_more": "Il linguaggio traccia i confini del mondo pensabile.",
+    "ambiguity_note": "Può ricordare Heidegger o Foucault per il linguaggio.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Wittgenstein lega il pensabile e il dicibile: ciò che non si può dire, su quello si deve tacere."
+  },
+  {
+    "id": "q36",
+    "quote": "Sembra sempre impossibile finché non è fatto.",
+    "author": "Nelson Mandela",
+    "choices": [
+      "Nelson Mandela",
+      "Mahatma Gandhi",
+      "Martin Luther King Jr.",
+      "Desmond Tutu"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "XX secolo",
+    "source_title": "Citazione attribuita a Mandela",
+    "source_link": "https://en.wikipedia.org/wiki/Nelson_Mandela",
+    "tags": [
+      "leadership",
+      "resilienza",
+      "speranza"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Ostacoli e traguardi",
+    "hint_more": "Slogan motivazionale post-apartheid.",
+    "ambiguity_note": "Potrebbe essere confusa con MLK o Gandhi.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Messaggio di fiducia nell’azione collettiva e nella possibilità di superare barriere considerate insormontabili."
+  },
+  {
+    "id": "q37",
+    "quote": "Il potere politico nasce dalla canna di un fucile.",
+    "author": "Mao Zedong",
+    "choices": [
+      "Mao Zedong",
+      "Vladimir Lenin",
+      "Joseph Stalin",
+      "Sun Yat-sen"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1938",
+    "source_title": "Selected Works of Mao Tse-tung",
+    "source_link": "https://en.wikipedia.org/wiki/Political_power_grows_out_of_the_barrel_of_a_gun",
+    "tags": [
+      "politica",
+      "rivoluzione",
+      "Cina"
+    ],
+    "difficulty": 4,
+    "spiciness": 2,
+    "hint_short": "Teoria della forza",
+    "hint_more": "Affermazione cardine della strategia rivoluzionaria.",
+    "ambiguity_note": "Spesso confusa con Lenin o Stalin per il contesto rivoluzionario.",
+    "language_orig": "IT",
+    "sensitive": true,
+    "context": "Mao esplicita il ruolo delle armi nella conquista del potere politico, elemento centrale della sua strategia rivoluzionaria."
+  },
+  {
+    "id": "q38",
+    "quote": "Der Mensch ist, was er ißt (\"L'uomo è quello che mangia\").",
+    "author": "Ludwig Feuerbach",
+    "choices": [
+      "Ludwig Feuerbach",
+      "Friedrich Engels",
+      "Arthur Schopenhauer",
+      "Karl Marx"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1850",
+    "source_title": "Das Geheimnis des Opfers",
+    "source_link": "https://de.wikipedia.org/wiki/Ludwig_Feuerbach",
+    "tags": [
+      "filosofia",
+      "materialismo",
+      "antropologia"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Materialismo antropologico",
+    "hint_more": "Formula da cui deriva il moderno 'siamo quello che mangiamo'.",
+    "ambiguity_note": "Talvolta confusa con Marx/Engels per il materialismo.",
+    "language_orig": "DE",
+    "sensitive": false,
+    "context": "Feuerbach sottolinea la radice materiale dell’uomo e dei suoi pensieri; l’alimentazione diventa metafora della formazione dell’essere."
+  },
+  {
+    "id": "q39",
+    "quote": "La scienza è la fede nell'ignoranza degli esperti.",
+    "author": "Richard Feynman",
+    "choices": [
+      "Richard Feynman",
+      "Karl Popper",
+      "Thomas Kuhn",
+      "Paul Feyerabend"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1966",
+    "source_title": "What is Science? (discorsi)",
+    "source_link": "https://en.wikipedia.org/wiki/Richard_Feynman",
+    "tags": [
+      "scienza",
+      "metodo",
+      "epistemologia"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Contro l’argomento d’autorità",
+    "hint_more": "La scienza procede mettendo in dubbio anche gli esperti.",
+    "ambiguity_note": "Tema vicino a Popper e alla falsificabilità.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Feynman evidenzia l’atteggiamento critico della scienza: nessuna autorità è esente da verifica empirica."
+  },
+  {
+    "id": "q40",
+    "quote": "Da ciascuno secondo le sue capacità, a ciascuno secondo i suoi bisogni.",
+    "author": "Karl Marx",
+    "choices": [
+      "Karl Marx",
+      "Friedrich Engels",
+      "Pierre-Joseph Proudhon",
+      "John Stuart Mill"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1875",
+    "source_title": "Critica al Programma di Gotha",
+    "source_link": "https://en.wikipedia.org/wiki/From_each_according_to_his_ability,_to_each_according_to_his_needs",
+    "tags": [
+      "economia",
+      "socialismo",
+      "politica"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Principio distributivo",
+    "hint_more": "Formula associata alla fase superiore del comunismo.",
+    "ambiguity_note": "Può essere confusa con Proudhon o altri socialisti.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Marx descrive un principio di distribuzione post‑scarcity dove il contributo e il bisogno regolano la ripartizione."
+  },
+  {
+    "id": "q41",
+    "quote": "La guerra è la continuazione della politica con altri mezzi.",
+    "author": "Carl von Clausewitz",
+    "choices": [
+      "Carl von Clausewitz",
+      "Sun Tzu",
+      "Napoleone Bonaparte",
+      "Hannah Arendt"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1832",
+    "source_title": "Vom Kriege",
+    "source_link": "https://en.wikipedia.org/wiki/Carl_von_Clausewitz",
+    "tags": [
+      "guerra",
+      "strategia",
+      "politica"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Politica con altri mezzi",
+    "hint_more": "Analisi sistemica del conflitto.",
+    "ambiguity_note": "Spesso confusa con Sun Tzu per autorità strategica.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Clausewitz interpreta la guerra come strumento subordinato a fini politici, non un evento separato dalla politica."
+  },
+  {
+    "id": "q42",
+    "quote": "Sapere aude! Abbi il coraggio di servirti della tua propria intelligenza.",
+    "author": "Immanuel Kant",
+    "choices": [
+      "Immanuel Kant",
+      "Denis Diderot",
+      "Voltaire",
+      "Jean-Jacques Rousseau"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1784",
+    "source_title": "Risposta alla domanda: Che cos'è l'Illuminismo?",
+    "source_link": "https://it.wikipedia.org/wiki/Sapere_aude",
+    "tags": [
+      "illuminismo",
+      "autonomia",
+      "filosofia"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Motto illuminista",
+    "hint_more": "Invito all’uscita dallo stato di minorità.",
+    "ambiguity_note": "Spesso associato a Voltaire per lo spirito dei Lumi.",
+    "language_orig": "DE",
+    "sensitive": false,
+    "context": "Kant definisce l’Illuminismo come emancipazione dell’uomo attraverso l’uso pubblico della ragione."
+  },
+  {
+    "id": "q43",
+    "quote": "La signora protesta troppo, mi sembra.",
+    "author": "William Shakespeare",
+    "choices": [
+      "William Shakespeare",
+      "Christopher Marlowe",
+      "Oscar Wilde",
+      "Jane Austen"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "c. 1600",
+    "source_title": "Hamlet, Atto III",
+    "source_link": "https://en.wikipedia.org/wiki/The_lady_doth_protest_too_much,_methinks",
+    "tags": [
+      "teatro",
+      "psicologia",
+      "ironia"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Dissimulazione svelata",
+    "hint_more": "Battuta della regina Gertrude su eccesso di giuramenti.",
+    "ambiguity_note": "Il tono aforistico può ricordare Wilde.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "La frase allude al sospetto verso chi insiste troppo nel negare qualcosa, rivelando il contrario."
+  },
+  {
+    "id": "q44",
+    "quote": "Esse est percipi (\"Essere è essere percepito\").",
+    "author": "George Berkeley",
+    "choices": [
+      "George Berkeley",
+      "David Hume",
+      "John Locke",
+      "Immanuel Kant"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1710",
+    "source_title": "A Treatise Concerning the Principles of Human Knowledge",
+    "source_link": "https://en.wikipedia.org/wiki/George_Berkeley",
+    "tags": [
+      "filosofia",
+      "idealismo",
+      "percezione"
+    ],
+    "difficulty": 4,
+    "spiciness": 0,
+    "hint_short": "Idealismo empirico",
+    "hint_more": "L’essere delle cose è l’essere percepite.",
+    "ambiguity_note": "Può essere confusa con Hume o Locke per l’empirismo.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Berkeley sostiene che la realtà degli oggetti dipenda dall’essere percepiti da menti; Dio garantisce la persistenza."
+  },
+  {
+    "id": "q45",
+    "quote": "Bisogna immaginare Sisifo felice.",
+    "author": "Albert Camus",
+    "choices": [
+      "Albert Camus",
+      "Jean-Paul Sartre",
+      "Simone de Beauvoir",
+      "Friedrich Nietzsche"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1942",
+    "source_title": "Le Mythe de Sisyphe",
+    "source_link": "https://en.wikipedia.org/wiki/The_Myth_of_Sisyphus",
+    "tags": [
+      "assurdo",
+      "esistenzialismo",
+      "filosofia"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Assurdo e rivolta",
+    "hint_more": "Trovare senso nell’atto stesso della fatica.",
+    "ambiguity_note": "Può ricordare Sartre o Nietzsche per temi affini.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Camus propone una risposta all’assurdo: immaginare Sisifo felice nell’atto della rivolta quotidiana contro l’insensatezza."
+  },
+  {
+    "id": "q46",
+    "quote": "L'arco dell'universo morale è lungo, ma si piega verso la giustizia.",
+    "author": "Martin Luther King Jr.",
+    "choices": [
+      "Martin Luther King Jr.",
+      "Theodore Parker",
+      "Barack Obama",
+      "Frederick Douglass"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1950s–1960s (ripresa)",
+    "source_title": "Sermoni di MLK (ripresa da Theodore Parker, 1853)",
+    "source_link": "https://en.wikipedia.org/wiki/The_arc_of_the_moral_universe_is_long",
+    "tags": [
+      "diritti civili",
+      "giustizia",
+      "retorica"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Curvatura morale",
+    "hint_more": "Riprende un’immagine ottocentesca in chiave moderna.",
+    "ambiguity_note": "Spesso attribuita a Parker o ad Obama per l’uso pubblico.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "MLK rilancia una metafora teologico‑civile: la storia tende alla giustizia attraverso l’impegno umano."
+  },
+  {
+    "id": "q47",
+    "quote": "Se la libertà significa qualcosa, significa il diritto di dire alla gente quello che non vuole sentire.",
+    "author": "George Orwell",
+    "choices": [
+      "George Orwell",
+      "John Stuart Mill",
+      "Hannah Arendt",
+      "Bertrand Russell"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1945",
+    "source_title": "Prefazione (censurata) a Animal Farm",
+    "source_link": "https://en.wikipedia.org/wiki/George_Orwell",
+    "tags": [
+      "libertà di espressione",
+      "politica",
+      "stampa"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Scomodo ma necessario",
+    "hint_more": "Rivendicazione del dissenso come cuore della libertà.",
+    "ambiguity_note": "Richiama Mill per il liberalismo della parola.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Orwell difende il diritto di critica, specie contro i conformismi ideologici del suo tempo."
+  },
+  {
+    "id": "q48",
+    "quote": "La conoscenza di nessun uomo può andare oltre la sua esperienza.",
+    "author": "John Locke",
+    "choices": [
+      "John Locke",
+      "David Hume",
+      "Voltaire",
+      "Thomas Hobbes"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1689",
+    "source_title": "An Essay Concerning Human Understanding",
+    "source_link": "https://en.wikipedia.org/wiki/An_Essay_Concerning_Human_Understanding",
+    "tags": [
+      "empirismo",
+      "conoscenza",
+      "filosofia"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Tabula rasa",
+    "hint_more": "La mente si riempie con l’esperienza sensibile.",
+    "ambiguity_note": "Spesso confusa con Hume per l’empirismo britannico.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Locke sostiene che le idee derivano dall’esperienza, contestando l’esistenza di idee innate."
+  },
+  {
+    "id": "q49",
+    "quote": "L’homme est né libre, et partout il est dans les fers.",
+    "author": "Jean-Jacques Rousseau",
+    "choices": [
+      "Jean-Jacques Rousseau",
+      "Montesquieu",
+      "Voltaire",
+      "Denis Diderot"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1762",
+    "source_title": "Du contrat social",
+    "source_link": "https://fr.wikipedia.org/wiki/Du_Contrat_social",
+    "tags": [
+      "contratto sociale",
+      "libertà",
+      "politica"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Catene sociali",
+    "hint_more": "Apertura del Contratto sociale.",
+    "ambiguity_note": "Può ricordare Montesquieu per i temi politici.",
+    "language_orig": "FR",
+    "sensitive": false,
+    "context": "Rousseau denuncia la perdita della libertà naturale a favore di catene sociali: la legittimità politica richiede consenso e volontà generale."
+  },
+  {
+    "id": "q50",
+    "quote": "Una donna deve avere denaro e una stanza tutta sua se vuole scrivere narrativa.",
+    "author": "Virginia Woolf",
+    "choices": [
+      "Virginia Woolf",
+      "Simone de Beauvoir",
+      "Mary Wollstonecraft",
+      "Emily Dickinson"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1929",
+    "source_title": "A Room of One's Own",
+    "source_link": "https://en.wikipedia.org/wiki/A_Room_of_One%27s_Own",
+    "tags": [
+      "letteratura",
+      "genere",
+      "autonomia"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Spazio e mezzi",
+    "hint_more": "Condizioni materiali per la creatività femminile.",
+    "ambiguity_note": "Può ricordare de Beauvoir o Wollstonecraft.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Woolf analizza gli ostacoli materiali e culturali alla produzione letteraria femminile, indicando denaro e spazio come prerequisiti."
+  },
+  
+  {
+    "id": "q51",
+    "quote": "Solo chi possiede la gioventù conquista il futuro.",
+    "author": "Adolf Hitler",
+    "choices": ["Adolf Hitler", "Martin Luther King Jr.", "Karl Popper", "Winston Churchill"],
+    "correctIndex": 0,
+    "year_or_period": "1935",
+    "source_title": "HLS Nuremberg Trials Project, Doc. PS-2656",
+    "source_link": "https://nuremberg.law.harvard.edu/documents/1168-extract-from-a-speech?mode=text",
+    "tags": ["propaganda", "nazismo", "gioventù", "estremismo"],
+    "difficulty": 3,
+    "spiciness": 2,
+    "hint_short": "Raduno di partito, anni ’30.",
+    "hint_more": "La frase è legata all’architettura educativa del regime per inquadrare i giovani.",
+    "ambiguity_note": "Il tono aforistico potrebbe sembrare di un leader democratico che investe sui giovani. Le opzioni includono figure positive come MLK e Churchill che potrebbero confondere.",
+    "language_orig": "IT",
+    "sensitive": true,
+    "context": "Estratto da un discorso del 1935; usato ai processi di Norimberga come prova delle politiche di indottrinamento giovanile del regime."
+  },
+  
+  {
+    "id": "q52",
+    "quote": "La verità è che gli uomini sono stanchi della libertà.",
+    "author": "Benito Mussolini",
+    "choices": ["Benito Mussolini", "Niccolò Machiavelli", "Friedrich Nietzsche", "Napoleon Bonaparte"],
+    "correctIndex": 0,
+    "year_or_period": "1923–1925 (attribuzione in stampa coeva)",
+    "source_title": "TIME (archivio): \"Italy: Tired of Liberty\"",
+    "source_link": "https://content.time.com/time/subscriber/article/0,33009,711306,00.html",
+    "tags": ["fascismo", "autoritarismo", "propaganda"],
+    "difficulty": 4,
+    "spiciness": 2,
+    "hint_short": "Un dittatore italiano tra le due guerre.",
+    "hint_more": "Compare in resoconti di stampa che sintetizzavano il suo pensiero anti-liberale.",
+    "ambiguity_note": "Potrebbe sembrare cinismo da saggista o provocazione filosofica, non un manifesto autoritario. Le opzioni includono Machiavelli e Nietzsche che potrebbero depistare.",
+    "language_orig": "IT",
+    "sensitive": true,
+    "context": "Slogan ricorrente nel primo fascismo per giustificare la compressione delle libertà liberali in nome dell’ordine e dell’efficienza."
+  },
+  
+  {
+    "id": "q53",
+    "quote": "Non esiste una cosa chiamata società.",
+    "author": "Margaret Thatcher",
+    "choices": ["Margaret Thatcher", "Ronald Reagan", "Ayn Rand", "Tony Blair"],
+    "correctIndex": 0,
+    "year_or_period": "1987",
+    "source_title": "Intervista a Woman’s Own (trascrizione ufficiale)",
+    "source_link": "https://www.margaretthatcher.org/document/106689",
+    "tags": ["neoliberismo", "politica", "UK"],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Primo ministro britannico degli anni ’80.",
+    "hint_more": "La frase continua spiegando responsabilità individuale e comunità familiari.",
+    "ambiguity_note": "Spesso citata senza contesto, può sembrare nichilismo sociale.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Dichiarazione diventata emblema della stagione di privatizzazioni e del primato dell’individuo sul welfare universale."
+  },
+  
+  {
+    "id": "q54",
+    "quote": "Non sono, né sono mai stato, a favore di realizzare in alcun modo l'uguaglianza sociale e politica delle razze bianca e nera.",
+    "author": "Abraham Lincoln",
+    "choices": ["Abraham Lincoln", "Richard Nixon", "George Washington", "Andrew Johnson"],
+    "correctIndex": 0,
+    "year_or_period": "1858",
+    "source_title": "Lincoln–Douglas Debates (Quincy, 13 ottobre 1858)",
+    "source_link": "https://teachingamericanhistory.org/document/the-sixth-joint-debate-at-quincy/",
+    "tags": ["USA", "schiavitù", "guerra civile", "retorica politica"],
+    "difficulty": 3,
+    "spiciness": 2,
+    "hint_short": "Una fase precedente all’Emancipation Proclamation.",
+    "hint_more": "Dibattiti aspri; il linguaggio riflette compromessi politici dell’epoca.",
+    "ambiguity_note": "Detto da una figura simbolo dell’abolizionismo: spiazza.",
+    "language_orig": "EN",
+    "sensitive": true,
+    "context": "Citazione spesso usata senza il percorso successivo di Lincoln; mostra come la politica antebellum fosse intrisa di razzismo anche tra antischiavisti."
+  },
+  
+  {
+    "id": "q55",
+    "quote": "Che alcuni debbano comandare e altri essere comandati è una cosa non solo necessaria, ma conveniente; dall'ora della loro nascita, alcuni sono destinati alla sottomissione, altri al comando.",
+    "author": "Aristotele",
+    "choices": ["Aristotele", "Niccolò Machiavelli", "Benito Mussolini", "Cesare Borgia"],
+    "correctIndex": 0,
+    "year_or_period": "IV sec. a.C.",
+    "source_title": "Politics, Book I (trad. Angl.)",
+    "source_link": "https://classics.mit.edu/Aristotle/politics.1.one.html",
+    "tags": ["filosofia antica", "schiavitù", "politica"],
+    "difficulty": 3,
+    "spiciness": 2,
+    "hint_short": "Un classico… ma qui sullo ‘schiavo naturale’.",
+    "hint_more": "Discutendo se la schiavitù possa essere ‘secondo natura’.",
+    "ambiguity_note": "Molti associano l’autore al pensiero nobile greco; qui la tesi è urtante.",
+    "language_orig": "EL",
+    "sensitive": true,
+    "context": "Aristotele legittima la schiavitù ‘naturale’, posizione oggi respinta; utile per capire i limiti etici dell’antichità."
+  },
+  
+  {
+    "id": "q56",
+    "quote": "Una rivolta è il linguaggio di chi non viene ascoltato.",
+    "author": "Martin Luther King Jr.",
+    "choices": ["Martin Luther King Jr.", "Malcolm X", "Rosa Parks", "Angela Davis"],
+    "correctIndex": 0,
+    "year_or_period": "1967",
+    "source_title": "Interview on NBC/Reportage (ampia documentazione)",
+    "source_link": "https://www.nbcnews.com/news/nbcblk/martin-luther-king-jr-riot-language-unheard-n782271",
+    "tags": ["diritti civili", "USA", "protesta"],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Non è un’endorsement della violenza.",
+    "hint_more": "MLK spiegava le cause sociali dei disordini, ribadendo la nonviolenza.",
+    "ambiguity_note": "Spesso estrapolata per farlo sembrare favorevole al caos.",
+    "language_orig": "IT",
+    "sensitive": true,
+    "context": "MLK analizza le rivolte urbane come risposta alla sistematica esclusione; nello stesso discorso insiste sulla via nonviolenta."
+  },
+  {
+    "id": "q57",
+    "quote": "Non ammetto, per esempio, che sia stato fatto un grande torto agli Indiani d'America, o alla gente nera d'Australia.",
+    "author": "Winston Churchill",
+    "choices": ["Winston Churchill", "Woodrow Wilson", "George Washington", "Clement Attlee"],
+    "correctIndex": 0,
+    "year_or_period": "1937",
+    "source_title": "Testimonianza alla Palestine Royal Commission (cit.)",
+    "source_link": "https://publications.parliament.uk/pa/ld5802/ldselect/ldcond/38/3810.htm",
+    "tags": ["impero britannico", "colonialismo", "UK"],
+    "difficulty": 3,
+    "spiciness": 2,
+    "hint_short": "Una figura celebrata della WWII… con posizioni imperiali dure.",
+    "hint_more": "Intervento a difesa del ‘diritto’ dei popoli ‘più avanzati’ a sostituire altri.",
+    "ambiguity_note": "Il prestigio dell’autore porta a sottostimare la durezza coloniale del linguaggio.",
+    "language_orig": "EN",
+    "sensitive": true,
+    "context": "Frase citata dalla sua deposizione del 1937: mostra come certe giustificazioni imperiali fossero espresse apertamente da leader rispettati."
   }
 ]
-
-
