@@ -1,42 +1,86 @@
-# Chi l'ha detto? — Ambiguità Edition
+# Chi l'ha detto? - Quiz Storico
 
-Quiz a 4 opzioni con timer, punteggio, hint 50/50 e modalità Historical/Context che mostra una breve contestualizzazione didattica dopo ogni risposta. Include avviso per contenuti sensibili quando applicabile e dataset JSON validato con Zod.
+Un'applicazione interattiva per testare la conoscenza delle citazioni storiche e del loro vero contesto.
 
-## Avvio
+## 🎯 Caratteristiche
+
+- **Quiz interattivo** con citazioni storiche
+- **Modalità Historical/Context** per contenuti educativi
+- **Immagini dei personaggi** storici
+- **Sistema di punteggio** e streak
+- **Hint e aiuti** durante il gioco
+- **Design responsive** con palette seppia storica
+
+## 🚀 Deploy su GitHub Pages
+
+### Metodo 1: Deploy Manuale
+
+1. **Build dell'applicazione:**
+   ```bash
+   npm run build
+   ```
+
+2. **Configura GitHub Pages:**
+   - Vai su GitHub > Repository > Settings > Pages
+   - Source: "Deploy from a branch"
+   - Branch: `main` (o `gh-pages` se usi Actions)
+   - Folder: `/ (root)` o `/docs`
+
+3. **Pusha le modifiche:**
+   ```bash
+   git add .
+   git commit -m "Deploy su GitHub Pages"
+   git push origin main
+   ```
+
+### Metodo 2: GitHub Actions (Automatico)
+
+Il repository include un workflow che si attiva automaticamente ad ogni push su `main`.
+
+## 🛠️ Sviluppo Locale
+
 ```bash
-npm i
+# Installa dipendenze
+npm install
+
+# Avvia server di sviluppo
 npm run dev
-```
 
-## Build
-```bash
+# Build per produzione
 npm run build
+
+# Anteprima build
 npm run preview
-```
 
-## Validazione dataset
-```bash
+# Validazione dati
 npm run validate
 ```
-Lo script verifica lo schema Zod e ulteriori invarianti: ID unici, nessuna scelta duplicata, autore uguale alla scelta corretta, coerenza `sensitive`/`spiciness`.
 
-## Linee guida contenuti
-- Le citazioni sensibili o controverse sono ammesse solo se corredate di contestualizzazione educativa e fonte.
-- Nessuna incitazione all’odio, violenza o discriminazione.
-- La modalità Historical/Context mette in evidenza il contesto e “perché trae in inganno”.
+## 📁 Struttura Progetto
 
-## Aggiungere item
-1. Modifica `src/data/quotes.json` aggiungendo elementi che rispettino il tipo `Item` in `src/types.ts`.
-2. Esegui la validazione:
-```bash
-npm run validate
 ```
-3. Avvia l’app in sviluppo per testare:
-```bash
-npm run dev
+├── src/
+│   ├── components/     # Componenti React
+│   ├── data/          # Dati delle citazioni
+│   └── types.ts       # Definizioni TypeScript
+├── public/
+│   └── images/        # Immagini e personaggi
+├── .github/workflows/ # GitHub Actions
+└── vite.config.ts     # Configurazione Vite
 ```
 
-## Struttura principale
-- `src/components/ChiLHaDetto.tsx`: logica del gioco (timer 20s, punteggio 100 + 2*s + 10*streak, hint 50/50, pannello educativo, banner sensibili)
-- `scripts/validate.ts`: validazione Zod del dataset
+## 🎨 Palette Colori
+
+L'applicazione utilizza una palette seppia storica coerente con l'immagine hero:
+- **Sfondo**: Gradiente amber-orange
+- **Testi**: Marroni scuri e dorati
+- **Accenti**: Seppia caldo e arancioni
+
+## 🌐 Live Demo
+
+[Chi l'ha detto?](https://[username].github.io/chi-l-ha-detto/)
+
+## 📝 Licenza
+
+Progetto educativo per scopi didattici.
 
