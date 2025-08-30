@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Percorsi Immagini</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-image { max-width: 200px; margin: 10px; border: 2px solid #ccc; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Test Percorsi Immagini per GitHub Pages</h1>
+    
+    <h2>Test Immagine Hero</h2>
+    <p>Percorso: <code>/chi-l-ha-detto/images/hero-bg.png</code></p>
+    <img src="/chi-l-ha-detto/images/hero-bg.png" alt="Hero" class="test-image" onload="this.style.borderColor='green'" onerror="this.style.borderColor='red'; this.alt='ERRORE: Immagine non trovata'">
+    
+    <h2>Test Immagini Personaggi</h2>
+    <p>Percorso: <code>/chi-l-ha-detto/images/personaggi/bismarck.jpg</code></p>
+    <img src="/chi-l-ha-detto/images/personaggi/bismarck.jpg" alt="Bismarck" class="test-image" onload="this.style.borderColor='green'" onerror="this.style.borderColor='red'; this.alt='ERRORE: Immagine non trovata'">
+    
+    <p>Percorso: <code>/chi-l-ha-detto/images/personaggi/winston-churchill.jpg</code></p>
+    <img src="/chi-l-ha-detto/images/personaggi/winston-churchill.jpg" alt="Churchill" class="test-image" onload="this.style.borderColor='green'" onerror="this.style.borderColor='red'; this.alt='ERRORE: Immagine non trovata'">
+    
+    <h2>Istruzioni</h2>
+    <ol>
+        <li>Carica questo file su GitHub Pages</li>
+        <li>Verifica che le immagini si carichino correttamente</li>
+        <li>Se le immagini si caricano, il problema è nel codice React</li>
+        <li>Se le immagini NON si caricano, il problema è nei percorsi</li>
+    </ol>
+    
+    <h2>Debug</h2>
+    <p>Apri la console del browser (F12) per vedere eventuali errori 404</p>
+</body>
+</html>
