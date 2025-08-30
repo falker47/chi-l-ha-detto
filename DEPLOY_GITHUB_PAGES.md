@@ -29,21 +29,26 @@ Deploy automatico ad ogni push su `main`
 
 ### **Opzione 1: Deploy Manuale (Raccomandato per il primo deploy)**
 
-1. **Committa e pusha le modifiche:**
+1. **Build locale:**
    ```bash
-   git add .
-   git commit -m "Configurazione per GitHub Pages + palette seppia"
+   npm run build
+   ```
+
+2. **Pusha la cartella dist:**
+   ```bash
+   git add dist/
+   git commit -m "Build per GitHub Pages"
    git push origin main
    ```
 
-2. **Configura GitHub Pages:**
+3. **Configura GitHub Pages:**
    - Vai su GitHub > Repository > **Settings** > **Pages**
    - **Source**: "Deploy from a branch"
    - **Branch**: `main`
    - **Folder**: `/ (root)`
    - Clicca **Save**
 
-3. **Aspetta il deploy** (2-5 minuti)
+4. **Aspetta il deploy** (2-5 minuti)
 
 ### **Opzione 1.5: Deploy con Build Locale**
 
@@ -61,12 +66,19 @@ Deploy automatico ad ogni push su `main`
 
 3. **Configura Pages** come sopra
 
-### **Opzione 2: GitHub Actions (Automatico)**
+### **Opzione 2: Deploy Automatico (GitHub Actions)**
 
-1. **Pusha le modifiche** (come sopra)
-2. **Vai su Actions** per monitorare il deploy
-3. **Configura Pages** per usare il branch `gh-pages` (se usi il workflow semplice)
-4. **Configura Pages** per usare "GitHub Actions" (se usi il workflow moderno)
+1. **Pusha le modifiche:**
+   ```bash
+   git add .
+   git commit -m "Aggiornamenti per GitHub Pages"
+   git push origin main
+   ```
+
+2. **Monitora Actions** per il deploy automatico
+3. **Configura Pages** per usare il branch `gh-pages`
+
+
 
 ## 🌐 **URL Finale**
 
