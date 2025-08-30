@@ -13,29 +13,35 @@ Un'applicazione interattiva per testare la conoscenza delle citazioni storiche e
 
 ## 🚀 Deploy su GitHub Pages
 
-### Metodo 1: Deploy Manuale
+### Metodo 1: Deploy Manuale (Raccomandato)
 
-1. **Build dell'applicazione:**
+1. **Build locale:**
    ```bash
    npm run build
    ```
 
-2. **Configura GitHub Pages:**
-   - Vai su GitHub > Repository > Settings > Pages
-   - Source: "Deploy from a branch"
-   - Branch: `main` (o `gh-pages` se usi Actions)
-   - Folder: `/ (root)` o `/docs`
-
-3. **Pusha le modifiche:**
+2. **Pusha tutto:**
    ```bash
    git add .
-   git commit -m "Deploy su GitHub Pages"
+   git commit -m "Aggiornamenti per GitHub Pages"
    git push origin main
    ```
 
-### Metodo 2: GitHub Actions (Automatico)
+3. **Configura GitHub Pages:**
+   - Vai su GitHub > Repository > **Settings** > **Pages**
+   - **Source**: "Deploy from a branch"
+   - **Branch**: `main`
+   - **Folder**: `/ (root)`
+   - Clicca **Save**
 
-Il repository include un workflow che si attiva automaticamente ad ogni push su `main`.
+4. **Aspetta il deploy** (2-5 minuti)
+
+### Metodo 2: GitHub Actions (Opzionale)
+
+1. **Vai su Actions** nel repository
+2. **Seleziona** "Manual Deploy to GitHub Pages"
+3. **Clicca** "Run workflow"
+4. **Configura Pages** per usare branch `gh-pages`
 
 ## 🛠️ Sviluppo Locale
 
