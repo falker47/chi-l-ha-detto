@@ -1,0 +1,5 @@
+[33m4aa7bca[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Rimosso l'immagine di Augusto Cesare e aggiornato il mapping dei personaggi. Aggiunta la logica per limitare le domande a 10 per partita e migliorata la gestione del punteggio e delle domande nel componente ChiLHaDetto. Aggiornato il formato delle scelte e dei tag nel file quotes.json per una migliore leggibilità.
+[33mee3cb5b[m Aggiunto script PowerShell per deploy automatico
+[33m1421e37[m Aggiunta cartella docs per deploy diretto GitHub Pages
+[33mb94f8b0[m Aggiunte istruzioni finali per il deploy
+[33m0640ec8[m Aggiunto workflow manuale e README aggiornato per GitHub Pages

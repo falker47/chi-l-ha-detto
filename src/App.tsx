@@ -7,7 +7,7 @@ function MainMenu({ onStartGame }: { onStartGame: () => void }) {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/chi-l-ha-detto/images/hero-bg.png" 
+          src="images/hero-bg.png" 
           alt="Personaggi e avvenimenti storici" 
           className="w-full h-full object-cover"
         />
