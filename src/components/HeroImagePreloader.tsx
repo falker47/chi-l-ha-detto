@@ -13,15 +13,8 @@ export default function HeroImagePreloader({ children }: HeroImagePreloaderProps
     const preloadHeroImage = () => {
       const img = new Image();
       
-      // Determina il formato migliore da usare
-      const supportsWebP = document.createElement('canvas')
-        .toDataURL('image/webp')
-        .indexOf('data:image/webp') === 0;
-      
-      const isMobile = window.innerWidth <= 768;
-      const imagePath = supportsWebP 
-        ? (isMobile ? '/images/hero-bg-mobile.webp' : '/images/hero-bg.webp')
-        : (isMobile ? '/images/hero-bg-mobile.jpg' : '/images/hero-bg.jpg');
+      // Usa l'immagine compressa ottimizzata
+      const imagePath = '/images/hero-bg-compressed.png';
 
       img.onload = () => {
         setImageLoaded(true);
@@ -49,18 +42,12 @@ export default function HeroImagePreloader({ children }: HeroImagePreloaderProps
 
   return (
     <>
-      {/* Preload link per l'immagine hero */}
+      {/* Preload link per l'immagine hero compressa */}
       <link 
         rel="preload" 
         as="image" 
-        href="/images/hero-bg.webp"
-        type="image/webp"
-      />
-      <link 
-        rel="preload" 
-        as="image" 
-        href="/images/hero-bg.jpg"
-        type="image/jpeg"
+        href="/images/hero-bg-compressed.png"
+        type="image/png"
       />
       
       {/* Indicatore di caricamento sottile */}

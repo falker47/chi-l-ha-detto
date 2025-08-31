@@ -246,7 +246,7 @@ export default function ChiLHaDetto() {
       "Benjamin Franklin": "images/personaggi/benjamin-franklin.jpg",
       "Will Durant": "images/personaggi/will-durant.jpg",
       "Plutarco": "images/personaggi/plutarco.jpg",
-      "Epitteto": "images/personaggi/epitteto.jpg",
+      "Epitteto": "images/personaggi/epitteto.jpeg",
       "Viktor Frankl": "images/personaggi/viktor-frankl.jpg",
       "Arthur Schopenhauer": "images/personaggi/arthur-schopenhauer.jpg",
       "Søren Kierkegaard": "images/personaggi/soren-kierkegaard.jpg",
