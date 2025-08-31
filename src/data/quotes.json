@@ -169,7 +169,7 @@
       "Benito Mussolini",
       "Gabriele D'Annunzio",
       "Julius Evola",
-      "Cesare Augusto"
+      "Ottaviano Augusto"
     ],
     "correctIndex": 0,
     "year_or_period": "1918–1920 (diffusione)",
@@ -439,9 +439,9 @@
   {
     "id": "q17",
     "quote": "Salus populi suprema lex esto (\"La salvezza del popolo sia la legge suprema\").",
-    "author": "Marco Tullio Cicerone",
+    "author": "Cicerone",
     "choices": [
-      "Marco Tullio Cicerone",
+      "Cicerone",
       "Gaio Giulio Cesare",
       "Tacito",
       "Agostino d'Ippona"
@@ -695,7 +695,7 @@
     "choices": [
       "Gaio Giulio Cesare",
       "Ottaviano Augusto",
-      "Marco Tullio Cicerone",
+      "Cicerone",
       "Alessandro Magno"
     ],
     "correctIndex": 0,

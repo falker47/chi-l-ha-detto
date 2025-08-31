@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import type { Item } from "../types";
 import itemsRaw from "../data/quotes.json";
+import HeroImagePreloader from "./HeroImagePreloader";
 
 const ITEMS = itemsRaw as Item[];
 
@@ -179,8 +180,9 @@ export default function ChiLHaDetto() {
       "Camillo Benso di Cavour": "images/personaggi/camillo-cavour.jpg",
       "Gabriele D'Annunzio": "images/personaggi/gabriele-dannunzio.png",
       "Julius Evola": "images/personaggi/julius-evola.jpg",
+      "Lorenzo de' Medici": "images/personaggi/lorenzo-de-medici.jpg",
       "Augustus Caesar": "images/personaggi/ottaviano-augusto.jpg",
-      "Cesare Augusto": "images/personaggi/augustus-caesar.jpg",
+      "Cesare Augusto": "images/personaggi/ottaviano-augusto.jpg",
       "Lorenz Diefenbach": "images/personaggi/karl-diefenbach.jpg",
       "Karl Diefenbach": "images/personaggi/karl-diefenbach.jpg",
       "Lord Acton": "images/personaggi/john-acton.jpg",
@@ -236,7 +238,7 @@ export default function ChiLHaDetto() {
       "Walter Benjamin": "images/personaggi/walter-benjamin.jpg",
       "John Culkin": "images/personaggi/john-culkin.jpg",
       "René Descartes": "images/personaggi/rene-descartes.jpg",
-      "Blaise Pascal": "images/personaggi/blaise-pascal.jpg",
+      "Blaise Pascal": "images/personaggi/blaise-pascal.jpeg",
       "Baruch Spinoza": "images/personaggi/baruch-spinoza.jpg",
       "Immanuel Kant": "images/personaggi/immanuel-kant.jpg",
       "Patrick Henry": "images/personaggi/patrick-henry.jpeg",
@@ -263,7 +265,7 @@ export default function ChiLHaDetto() {
       "Sun Yat-sen": "images/personaggi/sun-yat-sen.jpg",
       "Ludwig Feuerbach": "images/personaggi/ludwig-feuerbach.jpg",
       "Friedrich Engels": "images/personaggi/friedrich-engels.jpg",
-      "Richard Feynman": "images/personaggi/richard-feynman.jpeg",
+      "Richard Feynman": "images/personaggi/richard-feynman.png",
       "Thomas Kuhn": "images/personaggi/thomas-kuhn.jpg",
       "Paul Feyerabend": "images/personaggi/paul-feyerabend.jpg",
       "Pierre-Joseph Proudhon": "images/personaggi/pierre-joseph-proudhon.jpg",
@@ -310,50 +312,64 @@ export default function ChiLHaDetto() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100 text-amber-900">
-      <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
-        <div className="flex items-center justify-between mb-6 bg-gradient-to-r from-amber-800 via-orange-800 to-amber-900 p-4 rounded-xl shadow-lg border border-amber-700">
-                     <h1 className="text-3xl font-extrabold tracking-tight text-amber-50 text-shadow-2xl">Chi l'ha detto? — 10 Domande</h1>
-          <div className="flex items-center gap-3 text-sm">
-            <span className="pill bg-amber-200 text-amber-800 border border-amber-300">Punteggio: {score}</span>
-            <span className="pill bg-orange-200 text-orange-800 border border-orange-300">Streak: {streak}</span>
-            <span className="pill bg-yellow-200 text-yellow-800 border border-yellow-300">Tempo: {timeLeft}s</span>
+    <HeroImagePreloader>
+      <div className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100 text-amber-900 optimize-mobile">
+      <div className="max-w-7xl mx-auto p-2 sm:p-4 md:p-6 lg:p-8">
+        {/* Header con layout responsive migliorato */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 sm:mb-6 bg-gradient-to-r from-amber-800 via-orange-800 to-amber-900 p-3 sm:p-4 rounded-xl shadow-lg border border-amber-700">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-amber-50 text-shadow-2xl mb-3 sm:mb-0 text-center sm:text-left">
+            Chi l'ha detto? — 10 Domande
+          </h1>
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3 text-xs sm:text-sm">
+            <span className="pill bg-amber-200 text-amber-800 border border-amber-300 px-2 py-1 rounded-lg">
+              Punteggio: {score}
+            </span>
+            <span className="pill bg-orange-200 text-orange-800 border border-orange-300 px-2 py-1 rounded-lg">
+              Streak: {streak}
+            </span>
+            <span className="pill bg-yellow-200 text-yellow-800 border border-yellow-300 px-2 py-1 rounded-lg">
+              Tempo: {timeLeft}s
+            </span>
           </div>
         </div>
 
         {historicalMode && isSensitive && (
-          <div className="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-300 text-sm text-amber-800">
+          <div className="mt-3 sm:mt-4 p-2 sm:p-3 rounded-xl bg-amber-50 border border-amber-300 text-xs sm:text-sm text-amber-800">
             <strong>Avviso contenuti storici sensibili.</strong> Questo elemento è mostrato per
             scopi storici e didattici. Alcune citazioni/slogan sono legati a regimi autoritari e a crimini.
           </div>
         )}
 
-        <div className="mt-4 flex items-center justify-between">
-          <div className="text-sm text-amber-700 font-medium">Domanda {i + 1} / {QUESTIONS_PER_GAME}</div>
-          <div className="flex items-center gap-2">
-            <div className="w-40 h-2 bg-amber-200 rounded-full overflow-hidden border border-amber-300">
+        {/* Barra di progresso e timer responsive */}
+        <div className="mt-3 sm:mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0">
+          <div className="text-xs sm:text-sm text-amber-700 font-medium text-center sm:text-left">
+            Domanda {i + 1} / {QUESTIONS_PER_GAME}
+          </div>
+          <div className="flex items-center justify-center sm:justify-end gap-2">
+            <div className="w-32 sm:w-40 h-2 bg-amber-200 rounded-full overflow-hidden border border-amber-300">
               <div className="h-full bg-gradient-to-r from-amber-600 to-orange-600" style={{ width: `${(timeLeft / 20) * 100}%` }} />
             </div>
-            <span className="text-sm tabular-nums text-amber-700 font-medium">{timeLeft}s</span>
+            <span className="text-xs sm:text-sm tabular-nums text-amber-700 font-medium">{timeLeft}s</span>
           </div>
         </div>
 
-        <div className="mt-4 p-4 sm:p-5 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl shadow-lg border border-amber-200">
-          {/* Rimosse le chip informative per non dare indizi */}
-
-          <blockquote className="text-lg sm:text-xl leading-relaxed font-serif text-amber-900 italic">
-            “{current.quote}”
+        {/* Container principale della domanda */}
+        <div className="mt-3 sm:mt-4 p-3 sm:p-4 md:p-5 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl shadow-lg border border-amber-200">
+          {/* Citazione con font size responsive */}
+          <blockquote className="text-base sm:text-lg md:text-xl leading-relaxed font-serif text-amber-900 italic text-center sm:text-left">
+            "{current.quote}"
           </blockquote>
 
-          <div className="mt-4 flex items-center gap-3 text-sm">
+          {/* Bottoni degli aiuti con layout responsive */}
+          <div className="mt-3 sm:mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3 text-xs sm:text-sm">
             <button
               onClick={use5050}
               disabled={used5050 || revealed || available5050 <= 0}
-              className="px-3 py-1 rounded-lg border border-amber-300 bg-amber-50 hover:bg-amber-100 disabled:opacity-50 relative text-amber-800 font-medium"
+              className="px-2 sm:px-3 py-1 rounded-lg border border-amber-300 bg-amber-50 hover:bg-amber-100 disabled:opacity-50 relative text-amber-800 font-medium text-xs sm:text-sm"
             >
               50/50
               {available5050 > 0 && (
-                <span className="absolute -top-2 -right-2 w-5 h-5 bg-amber-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-lg">
+                <span className="absolute -top-1 sm:-top-2 -right-1 sm:-right-2 w-4 h-4 sm:w-5 sm:h-5 bg-amber-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-lg">
                   {available5050}
                 </span>
               )}
@@ -361,23 +377,25 @@ export default function ChiLHaDetto() {
             <button
               onClick={useHint}
               disabled={hintRevealed || revealed || availableHints <= 0}
-              className="px-3 py-1 rounded-lg border border-orange-300 bg-orange-50 hover:bg-orange-100 disabled:opacity-50 relative text-orange-800 font-medium"
+              className="px-2 sm:px-3 py-1 rounded-lg border border-orange-300 bg-orange-50 hover:bg-orange-100 disabled:opacity-50 relative text-orange-800 font-medium text-xs sm:text-sm"
             >
               Mostra hint
               {availableHints > 0 && (
-                <span className="absolute -top-2 -right-2 w-5 h-5 bg-orange-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-lg">
+                <span className="absolute -top-1 sm:-top-2 -right-1 sm:-right-2 w-4 h-4 sm:w-5 sm:h-5 bg-orange-600 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-lg">
                   {availableHints}
                 </span>
               )}
             </button>
             {hintRevealed && (
-              <span className="px-2 py-1 rounded bg-amber-100 border border-amber-300 text-amber-800">Hint: {current.hint_short}</span>
+              <span className="px-2 py-1 rounded bg-amber-100 border border-amber-300 text-amber-800 text-xs sm:text-sm">
+                Hint: {current.hint_short}
+              </span>
             )}
           </div>
 
-          <div className="mt-5 relative">
-            {/* Container delle opzioni con posizione relativa */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+          {/* Container delle opzioni con grid responsive migliorato */}
+          <div className="mt-4 sm:mt-5 relative">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
               {mappedChoices.map((c, idx) => {
                 const isDisabled = disabledOptions.includes(idx) || revealed;
                 const isCorrect = idx === correctness;
@@ -390,16 +408,18 @@ export default function ChiLHaDetto() {
                     onClick={() => onAnswer(idx)}
                     className={`group overflow-hidden rounded-xl border border-amber-200 bg-amber-50 text-left disabled:opacity-60 transition ${ring} shadow-sm hover:shadow aspect-[3/4] flex flex-col hover:border-amber-300`}
                   >
-                                          <div className="w-full bg-amber-100 overflow-hidden relative flex-grow">
+                    <div className="w-full bg-amber-100 overflow-hidden relative flex-grow">
                       <img
                         src={getPortrait(c.label)}
                         alt={c.label}
                         className="h-full w-full object-cover"
                         loading="lazy"
                       />
-                      {/* Overlay per il nome con sfondo semi-trasparente */}
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-2">
-                        <div className="font-bold text-sm sm:text-base text-white drop-shadow-lg">{c.label}</div>
+                      {/* Overlay per il nome con font size responsive */}
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-1 sm:p-2">
+                        <div className="font-bold text-xs sm:text-sm md:text-base text-white drop-shadow-lg leading-tight">
+                          {c.label}
+                        </div>
                       </div>
                     </div>
                   </button>
@@ -407,51 +427,52 @@ export default function ChiLHaDetto() {
               })}
             </div>
 
-            {/* Overlay della risposta che copre le opzioni */}
+            {/* Overlay della risposta con layout responsive */}
             {(selected !== null || revealed) && (
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-50/95 via-orange-50/95 to-amber-100/95 backdrop-blur-sm rounded-2xl border-2 border-amber-300 shadow-2xl z-10 flex items-center justify-center p-6">
-                <div className="text-center max-w-2xl">
-                                      <div className="mb-6">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-50/95 via-orange-50/95 to-amber-100/95 backdrop-blur-sm rounded-2xl border-2 border-amber-300 shadow-2xl z-10 flex items-center justify-center p-3 sm:p-6">
+                <div className="text-center max-w-xs sm:max-w-2xl w-full">
+                  <div className="mb-4 sm:mb-6">
                     {selected !== null && mappedChoices[selected]?.isCorrect ? (
-                      <div className="text-3xl font-bold text-green-700 mb-2">✅ Corretto!</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-green-700 mb-2">✅ Corretto!</div>
                     ) : (
-                      <div className="text-3xl font-bold text-red-700 mb-2">❌ Errato.</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-red-700 mb-2">❌ Errato.</div>
                     )}
-                    <div className="text-lg text-amber-800">
+                    <div className="text-base sm:text-lg text-amber-800">
                       Autore: <span className="font-bold text-amber-900">{current.author}</span>
                     </div>
                   </div>
 
                   {historicalMode && (
-                    <div className="mb-6 text-left">
-                      <div className="mb-3 p-3 bg-amber-100 rounded-lg border-l-4 border-amber-500 border border-amber-300">
-                        <p className="text-sm leading-relaxed">
+                    <div className="mb-4 sm:mb-6 text-left space-y-2 sm:space-y-3">
+                      <div className="p-2 sm:p-3 bg-amber-100 rounded-lg border-l-4 border-amber-500 border border-amber-300">
+                        <p className="text-xs sm:text-sm leading-relaxed">
                           <span className="font-semibold text-amber-900">Contesto:</span> <span className="text-amber-800">{current.context}</span>
                         </p>
                       </div>
-                      <div className="p-3 bg-orange-100 rounded-lg border-l-4 border-orange-500 border border-orange-300">
-                        <p className="text-sm leading-relaxed">
+                      <div className="p-2 sm:p-3 bg-orange-100 rounded-lg border-l-4 border-orange-500 border border-orange-300">
+                        <p className="text-xs sm:text-sm leading-relaxed">
                           <span className="font-semibold text-orange-900">Perché trae in inganno:</span> <span className="text-orange-800">{current.ambiguity_note}</span>
                         </p>
                       </div>
                     </div>
                   )}
 
-                  <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                  {/* Bottoni di azione con layout responsive */}
+                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center items-center">
                     <a
                       href={current.source_link}
                       target="_blank"
                       rel="noreferrer"
-                      className="px-4 py-2 rounded-lg border border-amber-400 bg-amber-50 hover:bg-amber-100 text-sm font-medium transition-colors text-amber-800"
+                      className="px-3 sm:px-4 py-2 rounded-lg border border-amber-400 bg-amber-50 hover:bg-amber-100 text-xs sm:text-sm font-medium transition-colors text-amber-800 text-center w-full sm:w-auto"
                     >
                       📚 Fonte: {current.source_title}
                     </a>
-                                         <button 
-                       onClick={next} 
-                       className="px-6 py-2 rounded-lg bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold hover:from-amber-700 hover:to-orange-700 transition-colors shadow-lg"
-                     >
-                       {i < QUESTIONS_PER_GAME - 1 ? "Prossima Domanda" : "Nuovo Round"}
-                     </button>
+                    <button 
+                      onClick={next} 
+                      className="px-4 sm:px-6 py-2 rounded-lg bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold hover:from-amber-700 hover:to-orange-700 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto"
+                    >
+                      {i < QUESTIONS_PER_GAME - 1 ? "Prossima Domanda" : "Nuovo Round"}
+                    </button>
                   </div>
                 </div>
               </div>
@@ -459,14 +480,16 @@ export default function ChiLHaDetto() {
           </div>
         </div>
 
-        <div className="mt-6 text-xs text-amber-600">
-          <p>
+        {/* Footer con testo responsive */}
+        <div className="mt-4 sm:mt-6 text-xs text-amber-600 text-center sm:text-left">
+          <p className="px-2 sm:px-0">
             Modalità Historical/Context attiva: le citazioni controverse sono presentate con finalità
             educative e contestualizzate. Evitiamo slogan d'odio non contestualizzati e incitazioni.
           </p>
-        </div>
-      </div>
-    </div>
-  );
-}
+                 </div>
+       </div>
+     </div>
+      </HeroImagePreloader>
+   );
+ }
 

@@ -22,6 +22,36 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #94a3b8;
   }
+
+  /* Preload dell'immagine hero per caricamento prioritario */
+  .hero-image {
+    background-image: url('/images/hero-bg-compressed.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    will-change: transform;
+    transform: translateZ(0);
+  }
+  
+  /* Fallback per browser che non supportano WebP */
+  @supports not (background-image: url('/images/hero-bg-compressed.png')) {
+    .hero-image {
+      background-image: url('/images/hero-bg.jpg');
+    }
+  }
+  
+  /* Ottimizzazione per dispositivi mobili */
+  @media (max-width: 768px) {
+    .hero-image {
+      background-image: url('/images/hero-bg-compressed.png');
+    }
+    
+    @supports not (background-image: url('/images/hero-bg-compressed.png')) {
+      .hero-image {
+        background-image: url('/images/hero-bg.png');
+      }
+    }
+  }
 }
 
 @layer components {
@@ -91,6 +121,130 @@
   }
   to {
     box-shadow: 0 0 30px rgba(59, 130, 246, 0.8);
+  }
+}
+
+/* Stili personalizzati per migliorare la responsiveness mobile */
+@layer components {
+  /* Pill component con migliore supporto mobile */
+  .pill {
+    @apply inline-flex items-center justify-center px-2 py-1 text-xs font-medium rounded-lg;
+  }
+  
+  /* Miglioramenti per dispositivi touch */
+  @media (max-width: 640px) {
+    /* Aumenta l'area cliccabile sui bottoni per dispositivi touch */
+    button {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    /* Ottimizza il testo per schermi piccoli */
+    .text-shadow-2xl {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Migliora la leggibilità delle citazioni su mobile */
+    blockquote {
+      line-height: 1.6;
+      word-wrap: break-word;
+      hyphens: auto;
+    }
+    
+    /* Ottimizza le immagini per mobile */
+    img {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+  }
+  
+  /* Miglioramenti per tablet */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .pill {
+      @apply px-3 py-1.5 text-sm;
+    }
+  }
+  
+  /* Ottimizzazioni per schermi molto piccoli */
+  @media (max-width: 480px) {
+    .pill {
+      @apply px-1.5 py-0.5 text-xs;
+    }
+    
+    /* Riduce il padding generale per schermi molto piccoli */
+    .max-w-7xl {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+  
+  /* Migliora la leggibilità su schermi ad alta densità */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .text-shadow-2xl {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+  
+  /* Ottimizzazioni per orientamento landscape su mobile */
+  @media (max-width: 768px) and (orientation: landscape) {
+    .min-h-screen {
+      min-height: auto;
+    }
+    
+    .mt-4 {
+      margin-top: 0.75rem;
+    }
+    
+    .mb-6 {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Migliora l'accessibilità per dispositivi touch */
+  @media (hover: none) and (pointer: coarse) {
+    /* Aumenta l'area cliccabile per dispositivi touch */
+    button, a {
+      @apply cursor-pointer;
+    }
+    
+    /* Migliora il feedback visivo per touch */
+    button:active {
+      @apply scale-95 transition-transform duration-100;
+    }
+  }
+  
+  /* Ottimizzazioni per schermi ultra-wide */
+  @media (min-width: 1536px) {
+    .max-w-7xl {
+      max-width: 90rem;
+    }
+  }
+}
+
+/* Stili per migliorare la performance su mobile */
+@layer utilities {
+  /* Riduce le animazioni su dispositivi che preferiscono meno movimento */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  
+  /* Ottimizza il rendering per dispositivi mobili */
+  .optimize-mobile {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Classe per immagini ottimizzate */
+  .image-optimized {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    transform: translateZ(0);
   }
 }
 
