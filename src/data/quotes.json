@@ -1677,7 +1677,7 @@
       "Jean-Paul Sartre",
       "Camillo Benso, Cavour",
       "Simone de Beauvoir",
-      "William Shakespeare"
+      "Albert Camus"
     ],
     "correctIndex": 0,
     "year_or_period": "1944",
@@ -1688,7 +1688,7 @@
       "teatro",
       "filosofia"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "spiciness": 0,
     "hint_short": "Dramma a porte chiuse",
     "hint_more": "Sintesi di una tesi relazionale.",
@@ -1893,7 +1893,7 @@
   },
   {
     "id": "q69",
-    "quote": "Genius is one percent inspiration and ninety-nine percent perspiration (\"Il genio è per l'uno per cento ispirazione e per il novantanove per cento traspirazione\").",
+    "quote": "Il genio è per l'1% ispirazione e per il 99% dedizione.",
     "author": "Thomas A. Edison",
     "choices": [
       "Thomas A. Edison",
@@ -2887,7 +2887,7 @@
       "NASA",
       "imprevisti"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "spiciness": 0,
     "hint_short": "Incidente in volo.",
     "hint_more": "Variazione popolare dell’originale 'we’ve had'.",
