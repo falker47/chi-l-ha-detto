@@ -298,7 +298,22 @@ export default function ChiLHaDetto() {
       "Nelson Mandela": "images/personaggi/nelson-mandela.jpg",
       "Rabindranath Tagore": "images/personaggi/rabindranath-tagore.jpg",
       "Barack Obama": "images/personaggi/barack-obama.webp",
-      "Karl Marx e Friedrich Engels": "images/personaggi/marx-engels.png"
+      "Karl Marx e Friedrich Engels": "images/personaggi/marx-engels.png",
+      "Pitagora": "images/personaggi/pitagora.jpg",
+      "Papa Giovanni Paolo II": "images/personaggi/giovanni-paolo-ii.jpg",
+      "Leonardo da Vinci": "images/personaggi/leonardo-davinci.jpg",
+      "Michelangelo": "images/personaggi/michelangelo.jpg",
+      "Steve Jobs": "images/personaggi/steve-jobs.jpg",
+      "Eraclito": "images/personaggi/eraclito.jpeg",
+      "Jim Lovell": "images/personaggi/jim-lovell.jpg",
+      "Neil Armstrong": "images/personaggi/neil-armstrong.webp",
+      "Buzz Aldrin": "images/personaggi/buzz-aldrin.jpg",
+      "Yuri Gagarin": "images/personaggi/yuri-gagarin.jpg",
+      "Maria Antonietta": "images/personaggi/maria-antonietta.jpg",
+      "Luigi XVI": "images/personaggi/luigi-xvi.jpg",
+      "Charles de Gaulle": "images/personaggi/charles-de-gaulle.jpg",
+      "Mark Zuckerberg": "images/personaggi/mark-zuckerberg.jpg",
+      "Bill Gates": "images/personaggi/bill-gates.jpg"
     };
     
     // Se esiste immagine personalizzata, usala
