@@ -388,7 +388,7 @@
       "Tito Maccio Plauto",
       "Thomas Hobbes",
       "Seneca",
-      "Cicerone"
+      "Marco Tullio Cicerone"
     ],
     "correctIndex": 0,
     "year_or_period": "III–II sec. a.C.",
@@ -439,9 +439,9 @@
   {
     "id": "q17",
     "quote": "Salus populi suprema lex esto (\"La salvezza del popolo sia la legge suprema\").",
-    "author": "Cicerone",
+    "author": "Marco Tullio Cicerone",
     "choices": [
-      "Cicerone",
+      "Marco Tullio Cicerone",
       "Gaio Giulio Cesare",
       "Tacito",
       "Sant'Agostino"
@@ -695,7 +695,7 @@
     "choices": [
       "Gaio Giulio Cesare",
       "Ottaviano Augusto",
-      "Cicerone",
+      "Marco Tullio Cicerone",
       "Alessandro Magno"
     ],
     "correctIndex": 0,
@@ -1704,7 +1704,7 @@
     "choices": [
       "Gaio Giulio Cesare",
       "Ottaviano Augusto",
-      "Cicerone",
+      "Marco Tullio Cicerone",
       "Alessandro Magno"
     ],
     "correctIndex": 0,
@@ -1730,7 +1730,7 @@
     "author": "Quinto Orazio Flacco",
     "choices": [
       "Quinto Orazio Flacco",
-      "Virgilio",
+      "Publio Virgilio Marone",
       "Oscar Wilde",
       "Gaio Giulio Cesare"
     ],
@@ -2147,7 +2147,7 @@
     "choices": [
       "Flavio Vegetio Renato",
       "Tacito",
-      "Cicerone",
+      "Marco Tullio Cicerone",
       "Seneca"
     ],
     "correctIndex": 0,
@@ -2198,7 +2198,7 @@
   },
   {
     "id": "q80",
-    "quote": "Eureka (\"Ho trovato!\").",
+    "quote": "Eureka! (\"Ho trovato!\").",
     "author": "Archimede",
     "choices": [
       "Archimede",
@@ -2624,7 +2624,7 @@
       "Publio Virgilio Marone",
       "Elon Musk",
       "Benjamin Franklin",
-      "Cicerone"
+      "Marco Tullio Cicerone"
     ],
     "correctIndex": 0,
     "year_or_period": "I sec. a.C.",
