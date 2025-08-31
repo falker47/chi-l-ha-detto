@@ -157,7 +157,6 @@ export default function ChiLHaDetto() {
       "Joseph Goebbels": "images/personaggi/joseph-goebbels.jpg",
       "Heinrich Himmler": "images/personaggi/heinrich-himmler.jpg",
       "Joseph Stalin": "images/personaggi/joseph-stalin.jpg",
-      "Iósif Stalin": "images/personaggi/joseph-stalin.jpg",
       "Benito Mussolini": "images/personaggi/benito-mussolini.jpg",
       "Mao Zedong": "images/personaggi/mao-zedong.jpg",
       "Napoleone Bonaparte": "images/personaggi/napoleone-bonaparte.jpg",
@@ -295,10 +294,11 @@ export default function ChiLHaDetto() {
       "Epicuro": "images/personaggi/epicuro.jpeg",
       "Gaio Giulio Cesare": "images/personaggi/gaio-giulio-cesare.jpg",
       "Tacito": "images/personaggi/tacito.jpeg",
-      "Agostino d'Ippona": "images/personaggi/agostino-dippona.jpg",
+      "Sant'Agostino": "images/personaggi/agostino-dippona.jpg",
       "Nelson Mandela": "images/personaggi/nelson-mandela.jpg",
       "Rabindranath Tagore": "images/personaggi/rabindranath-tagore.jpg",
-      "Barack Obama": "images/personaggi/barack-obama.webp"
+      "Barack Obama": "images/personaggi/barack-obama.webp",
+      "Karl Marx e Friedrich Engels": "images/personaggi/marx-engels.png"
     };
     
     // Se esiste immagine personalizzata, usala

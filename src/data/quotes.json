@@ -18,7 +18,7 @@
       "propaganda",
       "inganno"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "spiciness": 1,
     "hint_short": "Deception bellica",
     "hint_more": "Piani di depistaggio alleati per il D-Day.",
@@ -72,7 +72,7 @@
       "potere",
       "psicologia"
     ],
-    "difficulty": 3,
+    "difficulty": 5,
     "spiciness": 1,
     "hint_short": "Oltre il bene e il male",
     "hint_more": "Rischio di somigliare a ciò che combatti.",
@@ -88,7 +88,7 @@
       "Lord Acton",
       "Niccolò Machiavelli",
       "Thomas Hobbes",
-      "Iósif Stalin"
+      "Joseph Stalin"
     ],
     "correctIndex": 0,
     "year_or_period": "1887",
@@ -99,7 +99,7 @@
       "etica",
       "storia"
     ],
-    "difficulty": 2,
+    "difficulty": 6,
     "spiciness": 1,
     "hint_short": "Storico cattolico inglese",
     "hint_more": "Responsabilità morale dei potenti.",
@@ -125,7 +125,7 @@
       "realpolitik",
       "pragmatismo"
     ],
-    "difficulty": 2,
+    "difficulty": 5,
     "spiciness": 0,
     "hint_short": "Cancelliere di ferro",
     "hint_more": "Architetto dell'unificazione tedesca.",
@@ -152,7 +152,7 @@
       "propaganda",
       "storia"
     ],
-    "difficulty": 4,
+    "difficulty": 7,
     "spiciness": 2,
     "sensitive": true,
     "hint_short": "Slogan su cancelli di campi",
@@ -179,7 +179,7 @@
       "propaganda",
       "nazionalismo"
     ],
-    "difficulty": 4,
+    "difficulty": 2,
     "spiciness": 2,
     "sensitive": true,
     "hint_short": "Slogan bellico italiano",
@@ -207,7 +207,7 @@
       "potere",
       "cultura pop"
     ],
-    "difficulty": 3,
+    "difficulty": 6,
     "spiciness": 1,
     "hint_short": "Lyric sulla hybris",
     "hint_more": "Critica alla concentrazione di potere (anche mediatica).",
@@ -234,7 +234,7 @@
       "guerra",
       "inganno"
     ],
-    "difficulty": 2,
+    "difficulty": 4,
     "spiciness": 0,
     "hint_short": "Manuale strategico cinese",
     "hint_more": "Dissimulazione della forza reale.",
@@ -261,7 +261,7 @@
       "crisi",
       "retorica"
     ],
-    "difficulty": 2,
+    "difficulty": 4,
     "spiciness": 0,
     "hint_short": "Crisi del '29",
     "hint_more": "Messaggio di fiducia durante la Grande Depressione.",
@@ -275,7 +275,7 @@
     "author": "Albert Einstein",
     "choices": [
       "Albert Einstein",
-      "Niels Bohr",
+      "Friedrich Nietzsche",
       "Erwin Schrödinger",
       "Max Born"
     ],
@@ -287,11 +287,11 @@
       "fisica",
       "filosofia della scienza"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "spiciness": 0,
     "hint_short": "Lettera a un collega fisico",
     "hint_more": "Replica al probabilismo quantistico nelle lettere con Born.",
-    "ambiguity_note": "Il tema del caso/la misura fa pensare a Bohr o Schrödinger.",
+    "ambiguity_note": "Il tema del caso/la misura fa pensare a Schrödinger.",
     "language_orig": "DE",
     "sensitive": false,
     "context": "Einstein esprimeva scetticismo verso l’interpretazione probabilistica della meccanica quantistica, sostenendo una realtà fisica più deterministica rispetto alla lettura di Copenaghen."
@@ -304,7 +304,7 @@
       "Niccolò Machiavelli",
       "Thomas Hobbes",
       "Cesare Borgia",
-      "Lorenzo de' Medici"
+      "Voltaire"
     ],
     "correctIndex": 0,
     "year_or_period": "1513",
@@ -315,7 +315,7 @@
       "potere",
       "realismo"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "spiciness": 1,
     "hint_short": "Trattato sul governo",
     "hint_more": "Realismo politico rinascimentale, non morale astratta.",
@@ -332,7 +332,7 @@
       "George Orwell",
       "Aldous Huxley",
       "Karl Marx",
-      "Lev Trotsky"
+      "Malcolm X"
     ],
     "correctIndex": 0,
     "year_or_period": "1945",
@@ -371,7 +371,7 @@
       "filosofia",
       "società"
     ],
-    "difficulty": 3,
+    "difficulty": 5,
     "spiciness": 1,
     "hint_short": "Esistenzialismo e genere",
     "hint_more": "Distinzione tra sesso biologico e costruzione sociale.",
@@ -399,7 +399,7 @@
       "natura umana",
       "classici"
     ],
-    "difficulty": 4,
+    "difficulty": 7,
     "spiciness": 0,
     "hint_short": "Commedia latina",
     "hint_more": "Molto prima del Leviatano di Hobbes.",
@@ -427,7 +427,7 @@
       "fede",
       "ragione"
     ],
-    "difficulty": 2,
+    "difficulty": 5,
     "spiciness": 0,
     "hint_short": "Apologia della fede",
     "hint_more": "Critica i limiti della sola razionalità geometrica.",
@@ -444,7 +444,7 @@
       "Cicerone",
       "Gaio Giulio Cesare",
       "Tacito",
-      "Agostino d'Ippona"
+      "Sant'Agostino"
     ],
     "correctIndex": 0,
     "year_or_period": "I sec. a.C.",
@@ -455,7 +455,7 @@
       "repubblica",
       "latino"
     ],
-    "difficulty": 3,
+    "difficulty": 7,
     "spiciness": 0,
     "hint_short": "Massima giuridica romana",
     "hint_more": "Il bene del popolo come legge suprema.",
@@ -483,7 +483,7 @@
       "etica",
       "conoscenza"
     ],
-    "difficulty": 3,
+    "difficulty": 7,
     "spiciness": 0,
     "hint_short": "Processo ad Atene",
     "hint_more": "Parole attribuite a Socrate tramite il dialogo platonico.",
@@ -498,7 +498,7 @@
     "author": "Theodore Roosevelt",
     "choices": [
       "Theodore Roosevelt",
-      "Franklin D. Roosevelt",
+      "Margaret Thatcher",
       "Winston Churchill",
       "Woodrow Wilson"
     ],
@@ -511,11 +511,11 @@
       "politica estera",
       "USA"
     ],
-    "difficulty": 3,
+    "difficulty": 6,
     "spiciness": 0,
     "hint_short": "Realismo presidenziale",
     "hint_more": "Moderazione pubblica, credibile forza in riserva.",
-    "ambiguity_note": "La retorica vigorosa può ricordare Churchill o FDR.",
+    "ambiguity_note": "La retorica vigorosa può ricordare Churchill.",
     "language_orig": "EN",
     "sensitive": false,
     "context": "TR riassumeva così la sua politica estera: toni moderati accompagnati dalla capacità effettiva di agire, specie nel contesto panamericano."
@@ -526,7 +526,7 @@
     "author": "Karl Marx",
     "choices": [
       "Karl Marx",
-      "Friedrich Engels",
+      "Immanuel Kant",
       "Vladimir Lenin",
       "Max Weber"
     ],
@@ -554,9 +554,9 @@
     "author": "Adam Smith",
     "choices": [
       "Adam Smith",
-      "David Ricardo",
+      "Immanuel Kant",
       "John Locke",
-      "Thomas Malthus"
+      "Voltaire"
     ],
     "correctIndex": 0,
     "year_or_period": "1776",
@@ -567,11 +567,11 @@
       "mercati",
       "interesse personale"
     ],
-    "difficulty": 3,
+    "difficulty": 6,
     "spiciness": 0,
     "hint_short": "Padre dell’economia classica",
     "hint_more": "Ordine spontaneo da scambi d’interesse privato.",
-    "ambiguity_note": "Può essere confusa con Ricardo o Locke per temi affini.",
+    "ambiguity_note": "Può essere confusa con Locke per temi affini.",
     "language_orig": "EN",
     "sensitive": false,
     "context": "Smith descrive come l’interesse personale, entro regole e concorrenza, generi cooperazione e beni utili alla collettività."
@@ -583,8 +583,8 @@
     "choices": [
       "Seneca",
       "Marco Aurelio",
-      "Cicerone",
-      "Plinio il Giovane"
+      "Alessandro Magno",
+      "Adolf Hitler"
     ],
     "correctIndex": 0,
     "year_or_period": "I sec. d.C.",
@@ -595,7 +595,7 @@
       "etica",
       "motivazione"
     ],
-    "difficulty": 2,
+    "difficulty": 5,
     "spiciness": 0,
     "hint_short": "Stoico romano",
     "hint_more": "Invito all’azione contro l’inerzia mentale.",
@@ -610,8 +610,8 @@
     "author": "Alan Turing",
     "choices": [
       "Alan Turing",
-      "John von Neumann",
-      "Claude Shannon",
+      "Sun Yat-sen",
+      "Sun Tzu",
       "Norbert Wiener"
     ],
     "correctIndex": 0,
@@ -623,7 +623,7 @@
       "intelligenza artificiale",
       "ricerca"
     ],
-    "difficulty": 3,
+    "difficulty": 5,
     "spiciness": 0,
     "hint_short": "Padre della computer science",
     "hint_more": "Saggio che introduce il celebre ‘Imitation Game’.",
@@ -651,7 +651,7 @@
       "memoria",
       "filosofia"
     ],
-    "difficulty": 3,
+    "difficulty": 6,
     "spiciness": 0,
     "hint_short": "Massima sulla memoria",
     "hint_more": "Ripresa poi da politici e storici del XX secolo.",
@@ -679,7 +679,7 @@
       "potere",
       "violenza"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "spiciness": 1,
     "hint_short": "Teoria del potere",
     "hint_more": "Distinzione tra potere condiviso e mera coercizione.",
@@ -707,7 +707,7 @@
       "guerra",
       "retorica"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "spiciness": 0,
     "hint_short": "Trionfo in tre parole",
     "hint_more": "Messaggio dopo una rapida vittoria in Asia Minore.",
@@ -723,8 +723,8 @@
     "choices": [
       "Marshall McLuhan",
       "Neil Postman",
-      "Walter Benjamin",
-      "John Culkin"
+      "Joseph Stalin",
+      "Karl Marx"
     ],
     "correctIndex": 0,
     "year_or_period": "1964",
@@ -735,11 +735,11 @@
       "comunicazione",
       "cultura"
     ],
-    "difficulty": 3,
+    "difficulty": 6,
     "spiciness": 0,
     "hint_short": "Ecologia dei media",
     "hint_more": "Il mezzo plasma gli effetti sociali più del contenuto.",
-    "ambiguity_note": "Spesso associata a Postman o a Culkin per affinità tematiche.",
+    "ambiguity_note": "Spesso associata a Postman per affinità tematiche.",
     "language_orig": "IT",
     "sensitive": false,
     "context": "McLuhan sostiene che la struttura del mezzo altera percezioni e relazioni sociali più del contenuto veicolato."
@@ -763,7 +763,7 @@
       "epistemologia",
       "moderno"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "spiciness": 0,
     "hint_short": "Fondazione del soggetto",
     "hint_more": "Versione francese del celebre 'cogito'.",
@@ -791,7 +791,7 @@
       "indipendenza",
       "USA"
     ],
-    "difficulty": 3,
+    "difficulty": 7,
     "spiciness": 1,
     "hint_short": "Oratoria rivoluzionaria",
     "hint_more": "Chiusura di un discorso che spinse alla milizia.",
@@ -807,8 +807,8 @@
     "choices": [
       "Will Durant",
       "Aristotele",
-      "Plutarco",
-      "Epitteto"
+      "Kanye West",
+      "Albert Einstein"
     ],
     "correctIndex": 0,
     "year_or_period": "1926",
@@ -819,7 +819,7 @@
       "abitudine",
       "virtù"
     ],
-    "difficulty": 4,
+    "difficulty": 6,
     "spiciness": 1,
     "hint_short": "Parafrasi moderna",
     "hint_more": "Spesso attribuita al filosofo greco, ma proviene da un divulgatore.",
@@ -835,8 +835,8 @@
     "choices": [
       "Friedrich Nietzsche",
       "Viktor Frankl",
-      "Arthur Schopenhauer",
-      "Søren Kierkegaard"
+      "Mary Wollstonecraft",
+      "Mahatma Gandhi"
     ],
     "correctIndex": 0,
     "year_or_period": "1889",
@@ -847,7 +847,7 @@
       "resilienza",
       "filosofia"
     ],
-    "difficulty": 2,
+    "difficulty": 5,
     "spiciness": 1,
     "hint_short": "Perché e come",
     "hint_more": "Reso celebre anche da Frankl nel dopoguerra.",
@@ -863,8 +863,8 @@
     "choices": [
       "Alfred Korzybski",
       "Gregory Bateson",
-      "Marshall McLuhan",
-      "Claude Shannon"
+      "Otto von Bismarck",
+      "Alessandro Magno"
     ],
     "correctIndex": 0,
     "year_or_period": "1931",
@@ -875,11 +875,11 @@
       "modelli",
       "conoscenza"
     ],
-    "difficulty": 3,
+    "difficulty": 5,
     "spiciness": 0,
     "hint_short": "Modello ≠ realtà",
     "hint_more": "Massima della semantica generale.",
-    "ambiguity_note": "Confusa con McLuhan/Bateson per discipline affini.",
+    "ambiguity_note": "Confusa con Bateson per discipline affini.",
     "language_orig": "IT",
     "sensitive": false,
     "context": "Korzybski distingue rappresentazioni e realtà: le mappe guidano ma non coincidono con il territorio."
@@ -890,7 +890,7 @@
     "author": "Isaac Newton",
     "choices": [
       "Isaac Newton",
-      "Galileo Galilei",
+      "Platone",
       "Robert Hooke",
       "Johannes Kepler"
     ],
@@ -903,7 +903,7 @@
       "storia della scienza",
       "umiltà"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "spiciness": 0,
     "hint_short": "Giganti",
     "hint_more": "Riconoscimento dei predecessori nella scoperta scientifica.",
@@ -931,7 +931,7 @@
       "nonviolenza",
       "attivismo"
     ],
-    "difficulty": 2,
+    "difficulty": 4,
     "spiciness": 1,
     "hint_short": "Coerenza personale",
     "hint_more": "Frase-simbolo del suo ethos nonviolento.",
@@ -959,7 +959,7 @@
       "filosofia",
       "logica"
     ],
-    "difficulty": 3,
+    "difficulty": 7,
     "spiciness": 0,
     "hint_short": "Tractatus",
     "hint_more": "Il linguaggio traccia i confini del mondo pensabile.",
@@ -970,7 +970,7 @@
   },
   {
     "id": "q36",
-    "quote": "Sembra sempre impossibile finché non è fatto.",
+    "quote": "Sembra sempre impossibile finché non viene fatto.",
     "author": "Nelson Mandela",
     "choices": [
       "Nelson Mandela",
@@ -987,7 +987,7 @@
       "resilienza",
       "speranza"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "spiciness": 1,
     "hint_short": "Ostacoli e traguardi",
     "hint_more": "Slogan motivazionale post-apartheid.",
@@ -1015,7 +1015,7 @@
       "rivoluzione",
       "Cina"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "spiciness": 2,
     "hint_short": "Teoria della forza",
     "hint_more": "Affermazione cardine della strategia rivoluzionaria.",
@@ -1043,7 +1043,7 @@
       "materialismo",
       "antropologia"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "spiciness": 1,
     "hint_short": "Materialismo antropologico",
     "hint_more": "Formula da cui deriva il moderno 'siamo quello che mangiamo'.",
@@ -1099,7 +1099,7 @@
       "socialismo",
       "politica"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "spiciness": 1,
     "hint_short": "Principio distributivo",
     "hint_more": "Formula associata alla fase superiore del comunismo.",
@@ -1127,7 +1127,7 @@
       "strategia",
       "politica"
     ],
-    "difficulty": 3,
+    "difficulty": 5,
     "spiciness": 1,
     "hint_short": "Politica con altri mezzi",
     "hint_more": "Analisi sistemica del conflitto.",
@@ -1142,9 +1142,9 @@
     "author": "Immanuel Kant",
     "choices": [
       "Immanuel Kant",
-      "Denis Diderot",
-      "Voltaire",
-      "Jean-Jacques Rousseau"
+      "Niccolò Machiavelli",
+      "Gaio Giulio Cesare",
+      "Voltaire"
     ],
     "correctIndex": 0,
     "year_or_period": "1784",
@@ -1170,7 +1170,7 @@
     "author": "William Shakespeare",
     "choices": [
       "William Shakespeare",
-      "Christopher Marlowe",
+      "Angela Davis",
       "Oscar Wilde",
       "Jane Austen"
     ],
@@ -1183,7 +1183,7 @@
       "psicologia",
       "ironia"
     ],
-    "difficulty": 3,
+    "difficulty": 5,
     "spiciness": 0,
     "hint_short": "Dissimulazione svelata",
     "hint_more": "Battuta della regina Gertrude su eccesso di giuramenti.",
@@ -1211,7 +1211,7 @@
       "idealismo",
       "percezione"
     ],
-    "difficulty": 4,
+    "difficulty": 6,
     "spiciness": 0,
     "hint_short": "Idealismo empirico",
     "hint_more": "L’essere delle cose è l’essere percepite.",
@@ -1239,7 +1239,7 @@
       "esistenzialismo",
       "filosofia"
     ],
-    "difficulty": 3,
+    "difficulty": 6,
     "spiciness": 0,
     "hint_short": "Assurdo e rivolta",
     "hint_more": "Trovare senso nell’atto stesso della fatica.",
@@ -1267,7 +1267,7 @@
       "giustizia",
       "retorica"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "spiciness": 1,
     "hint_short": "Curvatura morale",
     "hint_more": "Riprende un’immagine ottocentesca in chiave moderna.",
@@ -1323,7 +1323,7 @@
       "conoscenza",
       "filosofia"
     ],
-    "difficulty": 3,
+    "difficulty": 5,
     "spiciness": 0,
     "hint_short": "Tabula rasa",
     "hint_more": "La mente si riempie con l’esperienza sensibile.",
@@ -1334,13 +1334,13 @@
   },
   {
     "id": "q49",
-    "quote": "L’homme est né libre, et partout il est dans les fers.",
+    "quote": "L’uomo è nato libero, e ovunque è in catene.",
     "author": "Jean-Jacques Rousseau",
     "choices": [
       "Jean-Jacques Rousseau",
       "Montesquieu",
       "Voltaire",
-      "Denis Diderot"
+      "Seneca"
     ],
     "correctIndex": 0,
     "year_or_period": "1762",
@@ -1351,7 +1351,7 @@
       "libertà",
       "politica"
     ],
-    "difficulty": 3,
+    "difficulty": 5,
     "spiciness": 0,
     "hint_short": "Catene sociali",
     "hint_more": "Apertura del Contratto sociale.",
@@ -1379,7 +1379,7 @@
       "genere",
       "autonomia"
     ],
-    "difficulty": 3,
+    "difficulty": 6,
     "spiciness": 1,
     "hint_short": "Spazio e mezzi",
     "hint_more": "Condizioni materiali per la creatività femminile.",
@@ -1388,18 +1388,27 @@
     "sensitive": false,
     "context": "Woolf analizza gli ostacoli materiali e culturali alla produzione letteraria femminile, indicando denaro e spazio come prerequisiti."
   },
-  
   {
     "id": "q51",
     "quote": "Solo chi possiede la gioventù conquista il futuro.",
     "author": "Adolf Hitler",
-    "choices": ["Adolf Hitler", "Martin Luther King Jr.", "Karl Popper", "Winston Churchill"],
+    "choices": [
+      "Adolf Hitler",
+      "Martin Luther King Jr.",
+      "Karl Popper",
+      "Winston Churchill"
+    ],
     "correctIndex": 0,
     "year_or_period": "1935",
     "source_title": "HLS Nuremberg Trials Project, Doc. PS-2656",
     "source_link": "https://nuremberg.law.harvard.edu/documents/1168-extract-from-a-speech?mode=text",
-    "tags": ["propaganda", "nazismo", "gioventù", "estremismo"],
-    "difficulty": 3,
+    "tags": [
+      "propaganda",
+      "nazismo",
+      "gioventù",
+      "estremismo"
+    ],
+    "difficulty": 5,
     "spiciness": 2,
     "hint_short": "Raduno di partito, anni ’30.",
     "hint_more": "La frase è legata all’architettura educativa del regime per inquadrare i giovani.",
@@ -1408,18 +1417,26 @@
     "sensitive": true,
     "context": "Estratto da un discorso del 1935; usato ai processi di Norimberga come prova delle politiche di indottrinamento giovanile del regime."
   },
-  
   {
     "id": "q52",
     "quote": "La verità è che gli uomini sono stanchi della libertà.",
     "author": "Benito Mussolini",
-    "choices": ["Benito Mussolini", "Niccolò Machiavelli", "Friedrich Nietzsche", "Napoleon Bonaparte"],
+    "choices": [
+      "Benito Mussolini",
+      "Niccolò Machiavelli",
+      "Friedrich Nietzsche",
+      "Napoleon Bonaparte"
+    ],
     "correctIndex": 0,
     "year_or_period": "1923–1925 (attribuzione in stampa coeva)",
     "source_title": "TIME (archivio): \"Italy: Tired of Liberty\"",
     "source_link": "https://content.time.com/time/subscriber/article/0,33009,711306,00.html",
-    "tags": ["fascismo", "autoritarismo", "propaganda"],
-    "difficulty": 4,
+    "tags": [
+      "fascismo",
+      "autoritarismo",
+      "propaganda"
+    ],
+    "difficulty": 5,
     "spiciness": 2,
     "hint_short": "Un dittatore italiano tra le due guerre.",
     "hint_more": "Compare in resoconti di stampa che sintetizzavano il suo pensiero anti-liberale.",
@@ -1428,18 +1445,26 @@
     "sensitive": true,
     "context": "Slogan ricorrente nel primo fascismo per giustificare la compressione delle libertà liberali in nome dell’ordine e dell’efficienza."
   },
-  
   {
     "id": "q53",
     "quote": "Non esiste una cosa chiamata società.",
     "author": "Margaret Thatcher",
-    "choices": ["Margaret Thatcher", "Ronald Reagan", "Ayn Rand", "Tony Blair"],
+    "choices": [
+      "Margaret Thatcher",
+      "Ronald Reagan",
+      "Ayn Rand",
+      "Tony Blair"
+    ],
     "correctIndex": 0,
     "year_or_period": "1987",
     "source_title": "Intervista a Woman’s Own (trascrizione ufficiale)",
     "source_link": "https://www.margaretthatcher.org/document/106689",
-    "tags": ["neoliberismo", "politica", "UK"],
-    "difficulty": 2,
+    "tags": [
+      "neoliberismo",
+      "politica",
+      "UK"
+    ],
+    "difficulty": 4,
     "spiciness": 1,
     "hint_short": "Primo ministro britannico degli anni ’80.",
     "hint_more": "La frase continua spiegando responsabilità individuale e comunità familiari.",
@@ -1448,18 +1473,27 @@
     "sensitive": false,
     "context": "Dichiarazione diventata emblema della stagione di privatizzazioni e del primato dell’individuo sul welfare universale."
   },
-  
   {
     "id": "q54",
     "quote": "Non sono, né sono mai stato, a favore di realizzare in alcun modo l'uguaglianza sociale e politica delle razze bianca e nera.",
     "author": "Abraham Lincoln",
-    "choices": ["Abraham Lincoln", "Richard Nixon", "George Washington", "Andrew Johnson"],
+    "choices": [
+      "Abraham Lincoln",
+      "Richard Nixon",
+      "George Washington",
+      "Andrew Johnson"
+    ],
     "correctIndex": 0,
     "year_or_period": "1858",
     "source_title": "Lincoln–Douglas Debates (Quincy, 13 ottobre 1858)",
     "source_link": "https://teachingamericanhistory.org/document/the-sixth-joint-debate-at-quincy/",
-    "tags": ["USA", "schiavitù", "guerra civile", "retorica politica"],
-    "difficulty": 3,
+    "tags": [
+      "USA",
+      "schiavitù",
+      "guerra civile",
+      "retorica politica"
+    ],
+    "difficulty": 6,
     "spiciness": 2,
     "hint_short": "Una fase precedente all’Emancipation Proclamation.",
     "hint_more": "Dibattiti aspri; il linguaggio riflette compromessi politici dell’epoca.",
@@ -1468,18 +1502,26 @@
     "sensitive": true,
     "context": "Citazione spesso usata senza il percorso successivo di Lincoln; mostra come la politica antebellum fosse intrisa di razzismo anche tra antischiavisti."
   },
-  
   {
     "id": "q55",
     "quote": "Che alcuni debbano comandare e altri essere comandati è una cosa non solo necessaria, ma conveniente; dall'ora della loro nascita, alcuni sono destinati alla sottomissione, altri al comando.",
     "author": "Aristotele",
-    "choices": ["Aristotele", "Niccolò Machiavelli", "Benito Mussolini", "Cesare Borgia"],
+    "choices": [
+      "Aristotele",
+      "Niccolò Machiavelli",
+      "Benito Mussolini",
+      "Cesare Borgia"
+    ],
     "correctIndex": 0,
     "year_or_period": "IV sec. a.C.",
     "source_title": "Politics, Book I (trad. Angl.)",
     "source_link": "https://classics.mit.edu/Aristotle/politics.1.one.html",
-    "tags": ["filosofia antica", "schiavitù", "politica"],
-    "difficulty": 3,
+    "tags": [
+      "filosofia antica",
+      "schiavitù",
+      "politica"
+    ],
+    "difficulty": 5,
     "spiciness": 2,
     "hint_short": "Un classico… ma qui sullo ‘schiavo naturale’.",
     "hint_more": "Discutendo se la schiavitù possa essere ‘secondo natura’.",
@@ -1488,18 +1530,26 @@
     "sensitive": true,
     "context": "Aristotele legittima la schiavitù ‘naturale’, posizione oggi respinta; utile per capire i limiti etici dell’antichità."
   },
-  
   {
     "id": "q56",
     "quote": "Una rivolta è il linguaggio di chi non viene ascoltato.",
     "author": "Martin Luther King Jr.",
-    "choices": ["Martin Luther King Jr.", "Malcolm X", "Rosa Parks", "Angela Davis"],
+    "choices": [
+      "Martin Luther King Jr.",
+      "Malcolm X",
+      "Rosa Parks",
+      "Angela Davis"
+    ],
     "correctIndex": 0,
     "year_or_period": "1967",
     "source_title": "Interview on NBC/Reportage (ampia documentazione)",
     "source_link": "https://www.nbcnews.com/news/nbcblk/martin-luther-king-jr-riot-language-unheard-n782271",
-    "tags": ["diritti civili", "USA", "protesta"],
-    "difficulty": 2,
+    "tags": [
+      "diritti civili",
+      "USA",
+      "protesta"
+    ],
+    "difficulty": 3,
     "spiciness": 1,
     "hint_short": "Non è un’endorsement della violenza.",
     "hint_more": "MLK spiegava le cause sociali dei disordini, ribadendo la nonviolenza.",
@@ -1512,13 +1562,22 @@
     "id": "q57",
     "quote": "Non ammetto, per esempio, che sia stato fatto un grande torto agli Indiani d'America, o alla gente nera d'Australia.",
     "author": "Winston Churchill",
-    "choices": ["Winston Churchill", "Woodrow Wilson", "George Washington", "Clement Attlee"],
+    "choices": [
+      "Winston Churchill",
+      "Woodrow Wilson",
+      "George Washington",
+      "Clement Attlee"
+    ],
     "correctIndex": 0,
     "year_or_period": "1937",
     "source_title": "Testimonianza alla Palestine Royal Commission (cit.)",
     "source_link": "https://publications.parliament.uk/pa/ld5802/ldselect/ldcond/38/3810.htm",
-    "tags": ["impero britannico", "colonialismo", "UK"],
-    "difficulty": 3,
+    "tags": [
+      "impero britannico",
+      "colonialismo",
+      "UK"
+    ],
+    "difficulty": 4,
     "spiciness": 2,
     "hint_short": "Una figura celebrata della WWII… con posizioni imperiali dure.",
     "hint_more": "Intervento a difesa del ‘diritto’ dei popoli ‘più avanzati’ a sostituire altri.",
@@ -1526,5 +1585,1399 @@
     "language_orig": "EN",
     "sensitive": true,
     "context": "Frase citata dalla sua deposizione del 1937: mostra come certe giustificazioni imperiali fossero espresse apertamente da leader rispettati."
+  },
+  {
+    "id": "q58",
+    "quote": "I have a dream (\"Ho un sogno\").",
+    "author": "Martin Luther King Jr.",
+    "choices": [
+      "Martin Luther King Jr.",
+      "Malcolm X",
+      "Nelson Mandela",
+      "John F. Kennedy"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1963",
+    "source_title": "Discorso \"I Have a Dream\"",
+    "source_link": "https://en.wikipedia.org/wiki/I_Have_a_Dream",
+    "tags": [
+      "diritti civili",
+      "USA",
+      "retorica"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Marcia su Washington",
+    "hint_more": "Lincoln Memorial, 28 agosto 1963.",
+    "ambiguity_note": "Citazione iconica di MLK.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Manifesto della lotta per i diritti civili negli USA."
+  },
+  {
+    "id": "q59",
+    "quote": "To be, or not to be, that is the question (\"Essere o non essere, questo è il problema\").",
+    "author": "William Shakespeare",
+    "choices": [
+      "William Shakespeare",
+      "Christopher Marlowe",
+      "Oscar Wilde",
+      "Jane Austen"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "c. 1600",
+    "source_title": "Hamlet, Atto III",
+    "source_link": "https://en.wikipedia.org/wiki/To_be,_or_not_to_be",
+    "tags": [
+      "teatro",
+      "Inghilterra",
+      "classici"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Monologo celebre",
+    "hint_more": "Principe danese in dubbio esistenziale.",
+    "ambiguity_note": "Tra le frasi più note della letteratura.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Riflessione sulla vita, il dolore e l’azione."
+  },
+  {
+    "id": "q60",
+    "quote": "Imagination is more important than knowledge (\"L'immaginazione è più importante della conoscenza\").",
+    "author": "Albert Einstein",
+    "choices": [
+      "Albert Einstein",
+      "Elon Musk",
+      "Richard Feynman",
+      "Mao Zedong"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1929",
+    "source_title": "Intervista a G. Viereck",
+    "source_link": "https://en.wikipedia.org/wiki/Albert_Einstein#Quotations",
+    "tags": [
+      "scienza",
+      "creatività"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Fisico teorico",
+    "hint_more": "L’invenzione precede spesso la prova.",
+    "ambiguity_note": "Aforisma motivazionale spesso citato.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Sottolinea il ruolo della fantasia nel progresso scientifico."
+  },
+  {
+    "id": "q61",
+    "quote": "L'enfer, c'est les autres (\"L'inferno sono gli altri\").",
+    "author": "Jean-Paul Sartre",
+    "choices": [
+      "Jean-Paul Sartre",
+      "Camillo Benso, Cavour",
+      "Simone de Beauvoir",
+      "William Shakespeare"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1944",
+    "source_title": "Huis clos (A porte chiuse)",
+    "source_link": "https://en.wikipedia.org/wiki/No_Exit",
+    "tags": [
+      "esistenzialismo",
+      "teatro",
+      "filosofia"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Dramma a porte chiuse",
+    "hint_more": "Sintesi di una tesi relazionale.",
+    "ambiguity_note": "Spesso confusa con Camus.",
+    "language_orig": "FR",
+    "sensitive": false,
+    "context": "L’altro come specchio ineludibile del sé."
+  },
+  {
+    "id": "q62",
+    "quote": "Alea iacta est (\"Il dado è tratto\").",
+    "author": "Gaio Giulio Cesare",
+    "choices": [
+      "Gaio Giulio Cesare",
+      "Ottaviano Augusto",
+      "Cicerone",
+      "Alessandro Magno"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "49 a.C.",
+    "source_title": "Attraversamento del Rubicone",
+    "source_link": "https://en.wikipedia.org/wiki/Alea_iacta_est",
+    "tags": [
+      "roma",
+      "storia antica"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Rubicone",
+    "hint_more": "Scelta irreversibile verso la guerra civile.",
+    "ambiguity_note": "Massima latina tra le più famose.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Segna il punto di non ritorno politico di Cesare."
+  },
+  {
+    "id": "q63",
+    "quote": "Carpe diem (\"Cogli l'attimo\").",
+    "author": "Quinto Orazio Flacco",
+    "choices": [
+      "Quinto Orazio Flacco",
+      "Virgilio",
+      "Oscar Wilde",
+      "Gaio Giulio Cesare"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "23 a.C.",
+    "source_title": "Odi I, 11",
+    "source_link": "https://en.wikipedia.org/wiki/Carpe_diem",
+    "tags": [
+      "latino",
+      "poesia",
+      "etica"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Odi",
+    "hint_more": "Invito a cogliere il presente.",
+    "ambiguity_note": "Attribuzione scolastica classica.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Sintesi dell’etica oraziana del presente."
+  },
+  {
+    "id": "q64",
+    "quote": "Time is money (\"Il tempo è denaro\").",
+    "author": "Benjamin Franklin",
+    "choices": [
+      "Benjamin Franklin",
+      "Thomas Jefferson",
+      "David Hume",
+      "Jean-Jacques Rousseau"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1748",
+    "source_title": "Advice to a Young Tradesman",
+    "source_link": "https://en.wikipedia.org/wiki/Time_is_money",
+    "tags": [
+      "economia",
+      "proverbio",
+      "USA"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Padri fondatori",
+    "hint_more": "Uso efficiente del tempo.",
+    "ambiguity_note": "Aforisma molto diffuso.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Sottolinea il valore economico del tempo."
+  },
+  {
+    "id": "q65",
+    "quote": "Scientia potentia est (\"La conoscenza è potere\").",
+    "author": "Francis Bacon",
+    "choices": [
+      "Francis Bacon",
+      "Thomas Hobbes",
+      "John Locke",
+      "Isaac Newton"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1597",
+    "source_title": "Meditationes Sacrae",
+    "source_link": "https://en.wikipedia.org/wiki/Scientia_potentia_est",
+    "tags": [
+      "conoscenza",
+      "filosofia",
+      "modernità"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Aforisma latino",
+    "hint_more": "Sapere come leva pratica.",
+    "ambiguity_note": "Talvolta confuso con Hobbes.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Il sapere abilita azione e controllo."
+  },
+  {
+    "id": "q66",
+    "quote": "That's one small step for man, one giant leap for mankind (\"Questo è un piccolo passo per un uomo, ma un gigantesco balzo per l'umanità\").",
+    "author": "Neil Armstrong",
+    "choices": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Gaio Giulio Cesare",
+      "Alessandro Magno"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1969",
+    "source_title": "Allunaggio Apollo 11",
+    "source_link": "https://en.wikipedia.org/wiki/Apollo_11",
+    "tags": [
+      "spazio",
+      "NASA",
+      "storia"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Primo passo sulla Luna",
+    "hint_more": "Diretta mondiale, 20 luglio 1969.",
+    "ambiguity_note": "Frase simbolo dell’era spaziale.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Annuncia il primo passo umano sulla Luna."
+  },
+  {
+    "id": "q67",
+    "quote": "千里之行，始于足下 (\"Un viaggio di mille miglia comincia con un solo passo\").",
+    "author": "Laozi",
+    "choices": [
+      "Laozi",
+      "Confucio",
+      "Sun Tzu",
+      "Mao Zedong"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "VI–IV sec. a.C. (tradiz.)",
+    "source_title": "Tao Te Ching",
+    "source_link": "https://en.wikipedia.org/wiki/Tao_Te_Ching",
+    "tags": [
+      "filosofia orientale",
+      "taoismo"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Tao Te Ching",
+    "hint_more": "Procedere graduale.",
+    "ambiguity_note": "Spesso confusa con Confucio.",
+    "language_orig": "ZH",
+    "sensitive": false,
+    "context": "Invito all’azione concreta come inizio di ogni impresa."
+  },
+  {
+    "id": "q68",
+    "quote": "Float like a butterfly, sting like a bee (\"Vola come una farfalla, pungi come un'ape\").",
+    "author": "Muhammad Ali",
+    "choices": [
+      "Muhammad Ali",
+      "Mike Tyson",
+      "Sun Tzu",
+      "Virginia Woolf"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1964",
+    "source_title": "Slogan pre-incontro",
+    "source_link": "https://en.wikipedia.org/wiki/Muhammad_Ali#Quotes",
+    "tags": [
+      "sport",
+      "boxe",
+      "cultura pop"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "The Greatest",
+    "hint_more": "Rima del suo stile sul ring.",
+    "ambiguity_note": "Può essere associata a Tyson.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Descrive agilità e potenza del campione."
+  },
+  {
+    "id": "q69",
+    "quote": "Genius is one percent inspiration and ninety-nine percent perspiration (\"Il genio è per l'uno per cento ispirazione e per il novantanove per cento traspirazione\").",
+    "author": "Thomas A. Edison",
+    "choices": [
+      "Thomas A. Edison",
+      "Nikola Tesla",
+      "Adolf Hitler",
+      "Elon Musk"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "c. 1902",
+    "source_title": "Interviste e scritti",
+    "source_link": "https://en.wikipedia.org/wiki/Thomas_Edison#Quotations",
+    "tags": [
+      "innovazione",
+      "lavoro",
+      "aforismi"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Menlo Park",
+    "hint_more": "Disciplina > intuizione.",
+    "ambiguity_note": "Spesso attribuita genericamente agli inventori.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Sottolinea il peso della perseveranza pratica."
+  },
+  {
+    "id": "q70",
+    "quote": "Nulla è permanente tranne il cambiamento",
+    "author": "Eraclito",
+    "choices": [
+      "Eraclito",
+      "Gaio Giulio Cesare",
+      "Niccolò Machiavelli",
+      "Pitagora"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "V sec. a.C.",
+    "source_title": "Frammenti (tradizione)",
+    "source_link": "https://en.wikipedia.org/wiki/Heraclitus",
+    "tags": [
+      "filosofia antica",
+      "metafisica"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Panta rhei",
+    "hint_more": "Dottrina del divenire.",
+    "ambiguity_note": "Massime spesso confuse tra presocratici.",
+    "language_orig": "EL",
+    "sensitive": false,
+    "context": "Il mondo è flusso e mutamento costante."
+  },
+  {
+    "id": "q71",
+    "quote": "La vera conoscenza è sapere i limiti della propria ignoranza",
+    "author": "Confucio",
+    "choices": [
+      "Confucio",
+      "Socrate",
+      "Laozi",
+      "Aristotele"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "V sec. a.C.",
+    "source_title": "Analects",
+    "source_link": "https://en.wikipedia.org/wiki/Analects",
+    "tags": [
+      "filosofia",
+      "etica",
+      "sapienza"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Maestro cinese",
+    "hint_more": "Umiltà cognitiva.",
+    "ambiguity_note": "Avvicinata spesso al socratismo.",
+    "language_orig": "ZH",
+    "sensitive": false,
+    "context": "Invita a riconoscere i propri limiti."
+  },
+  {
+    "id": "q72",
+    "quote": "The Earth is blue (\"La Terra è blu\").",
+    "author": "Yuri Gagarin",
+    "choices": [
+      "Yuri Gagarin",
+      "Alessandro Magno",
+      "Pitagora",
+      "Neil Armstrong"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1961",
+    "source_title": "Vostok 1 (resoconti)",
+    "source_link": "https://en.wikipedia.org/wiki/Yuri_Gagarin",
+    "tags": [
+      "spazio",
+      "URSS",
+      "prima orbita"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Primo uomo in orbita",
+    "hint_more": "Descrizione della Terra dallo spazio.",
+    "ambiguity_note": "Talvolta attribuita genericamente agli astronauti.",
+    "language_orig": "RU",
+    "sensitive": false,
+    "context": "Gagarin commentò il colore del pianeta visto dall’orbita."
+  },
+  {
+    "id": "q73",
+    "quote": "Tutta la guerra si fonda sull'inganno.",
+    "author": "Sun Tzu",
+    "choices": [
+      "Sun Tzu",
+      "Winston Churchill",
+      "Napoleone Bonaparte",
+      "Carl von Clausewitz"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "VI sec. a.C. (tradiz.)",
+    "source_title": "The Art of War",
+    "source_link": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "tags": [
+      "strategia",
+      "guerra",
+      "inganno"
+    ],
+    "difficulty": 4,
+    "spiciness": 0,
+    "hint_short": "Manuale classico",
+    "hint_more": "Principio basilare della strategia.",
+    "ambiguity_note": "Spesso associata a generali moderni.",
+    "language_orig": "ZH",
+    "sensitive": false,
+    "context": "La dissimulazione è chiave nella condotta bellica."
+  },
+  {
+    "id": "q74",
+    "quote": "Injustice anywhere is a threat to justice everywhere (\"L'ingiustizia in qualunque luogo è una minaccia alla giustizia ovunque\").",
+    "author": "Martin Luther King Jr.",
+    "choices": [
+      "Martin Luther King Jr.",
+      "Mahatma Gandhi",
+      "James Baldwin",
+      "Nelson Mandela"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1963",
+    "source_title": "Letter from Birmingham Jail",
+    "source_link": "https://en.wikipedia.org/wiki/Letter_from_Birmingham_Jail",
+    "tags": [
+      "diritti civili",
+      "giustizia"
+    ],
+    "difficulty": 5,
+    "spiciness": 0,
+    "hint_short": "Lettera dal carcere",
+    "hint_more": "Interdipendenza morale delle comunità.",
+    "ambiguity_note": "Citazione frequente in ambito civile.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "La giustizia è un bene indivisibile."
+  },
+  {
+    "id": "q75",
+    "quote": "Do what you can, with what you have, where you are (\"Fai ciò che puoi, con ciò che hai, dove sei\").",
+    "author": "Theodore Roosevelt",
+    "choices": [
+      "Theodore Roosevelt",
+      "Franklin D. Roosevelt",
+      "Abraham Lincoln",
+      "Winston Churchill"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "inizi XX secolo",
+    "source_title": "Discorsi e raccolte",
+    "source_link": "https://en.wikipedia.org/wiki/Theodore_Roosevelt#Quotes",
+    "tags": [
+      "leadership",
+      "pragmatismo"
+    ],
+    "difficulty": 4,
+    "spiciness": 0,
+    "hint_short": "Presidente energico",
+    "hint_more": "Agire senza rinviare.",
+    "ambiguity_note": "Talvolta confusa con altri presidenti USA.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Esorta a iniziare con i mezzi disponibili."
+  },
+  {
+    "id": "q76",
+    "quote": "I have nothing to offer but blood, toil, tears and sweat (\"Non ho altro da offrire che sangue, fatica, lacrime e sudore\").",
+    "author": "Winston Churchill",
+    "choices": [
+      "Winston Churchill",
+      "Franklin D. Roosevelt",
+      "Charles de Gaulle",
+      "Dwight D. Eisenhower"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1940",
+    "source_title": "Discorso alla Camera dei Comuni",
+    "source_link": "https://en.wikipedia.org/wiki/Blood,_toil,_tears,_and_sweat",
+    "tags": [
+      "WWII",
+      "retorica",
+      "politica"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Primi giorni da Primo Ministro",
+    "hint_more": "Maggio 1940.",
+    "ambiguity_note": "Formula storica riconoscibilissima.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Impegno alla resistenza totale contro il nazismo."
+  },
+  {
+    "id": "q77",
+    "quote": "Proletari di tutti i paesi, unitevi!",
+    "author": "Karl Marx e Friedrich Engels",
+    "choices": [
+      "Karl Marx e Friedrich Engels",
+      "Vladimir Lenin",
+      "Voltaire",
+      "Antonio Gramsci"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1848",
+    "source_title": "Manifesto del Partito Comunista",
+    "source_link": "https://en.wikipedia.org/wiki/The_Communist_Manifesto",
+    "tags": [
+      "politica",
+      "slogan",
+      "XIX secolo"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Chiusura di un manifesto",
+    "hint_more": "Slogan conclusivo dell’opuscolo.",
+    "ambiguity_note": "Talvolta attribuito solo a Marx.",
+    "language_orig": "DE",
+    "sensitive": false,
+    "context": "Invito internazionale alla solidarietà operaia."
+  },
+  {
+    "id": "q78",
+    "quote": "Si vis pacem, para bellum (\"Se vuoi la pace, prepara la guerra\").",
+    "author": "Flavio Vegetio Renato",
+    "choices": [
+      "Flavio Vegetio Renato",
+      "Tacito",
+      "Cicerone",
+      "Seneca"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "IV–V sec. d.C.",
+    "source_title": "Epitoma Rei Militaris",
+    "source_link": "https://en.wikipedia.org/wiki/Si_vis_pacem,_para_bellum",
+    "tags": [
+      "militare",
+      "latino",
+      "massime"
+    ],
+    "difficulty": 5,
+    "spiciness": 1,
+    "hint_short": "Trattato tardo-romano",
+    "hint_more": "Paradosso della deterrenza.",
+    "ambiguity_note": "Spesso scambiata per Tacito o Cicerone.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Deterrenza per preservare la pace."
+  },
+  {
+    "id": "q79",
+    "quote": "Now I am become Death, the destroyer of worlds (\"Ora sono diventato Morte, il distruttore di mondi\").",
+    "author": "J. Robert Oppenheimer",
+    "choices": [
+      "J. Robert Oppenheimer",
+      "Albert Einstein",
+      "Adolf Hitler",
+      "Alessandro Magno"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1965 (ricordo del 1945)",
+    "source_title": "Intervista TV; Bhagavadgītā 11:32",
+    "source_link": "https://en.wikipedia.org/wiki/J._Robert_Oppenheimer#Manhattan_Project",
+    "tags": [
+      "storia",
+      "etica",
+      "nucleare"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Progetto Manhattan",
+    "hint_more": "Riflessione dopo Trinity.",
+    "ambiguity_note": "Spesso citata senza il riferimento religioso induista (Bhagavadgītā).",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Confronto morale con la potenza distruttiva dell’atomo."
+  },
+  {
+    "id": "q80",
+    "quote": "Eureka (\"Ho trovato!\").",
+    "author": "Archimede",
+    "choices": [
+      "Archimede",
+      "Winston Churchill",
+      "Galileo Galilei",
+      "Gaio Giulio Cesare"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "III sec. a.C.",
+    "source_title": "Tradizione antica (Vitruvio)",
+    "source_link": "https://it.wikipedia.org/wiki/Eureka",
+    "tags": [
+      "scienza",
+      "storia antica",
+      "leggenda"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Bagno e principio idrostatico.",
+    "hint_more": "Grido leggendario legato alla spinta dei fluidi.",
+    "ambiguity_note": "Spesso associato genericamente agli 'antichi scienziati'.",
+    "language_orig": "EL",
+    "sensitive": false,
+    "context": "Esclamazione attribuita ad Archimede dopo l’intuizione sul principio della spinta idrostatica."
+  },
+  {
+    "id": "q81",
+    "quote": "Et tu, Brute? (\"Anche tu, Bruto?\").",
+    "author": "William Shakespeare",
+    "choices": [
+      "William Shakespeare",
+      "Gaio Giulio Cesare",
+      "Marco Tullio Cicerone",
+      "Seneca"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1599",
+    "source_title": "Julius Caesar",
+    "source_link": "https://en.wikipedia.org/wiki/Julius_Caesar_(play)",
+    "tags": [
+      "teatro",
+      "Inghilterra",
+      "classici"
+    ],
+    "difficulty": 6,
+    "spiciness": 0,
+    "hint_short": "Tragedia elisabettiana.",
+    "hint_more": "Battuta del Cesare shakespeariano al momento dell’assassinio.",
+    "ambiguity_note": "Spesso presa per una frase storica di Cesare, ma è teatrale.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Shakespeare mette in scena il tradimento di Bruto con una frase divenuta proverbiale."
+  },
+  {
+    "id": "q82",
+    "quote": "Mens sana in corpore sano (\"Mente sana in corpo sano\").",
+    "author": "Decimo Giunio Giovenale",
+    "choices": [
+      "Decimo Giunio Giovenale",
+      "Seneca",
+      "Kanye West",
+      "David Hume"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "I–II sec. d.C.",
+    "source_title": "Satire X, 356",
+    "source_link": "https://it.wikipedia.org/wiki/Mens_sana_in_corpore_sano",
+    "tags": [
+      "latino",
+      "salute",
+      "etica"
+    ],
+    "difficulty": 4,
+    "spiciness": 0,
+    "hint_short": "Satira latina.",
+    "hint_more": "Invito alla salute del corpo e della mente.",
+    "ambiguity_note": "Spesso attribuita genericamente ai 'Romani'.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Giovenale propone desideri saggi, tra cui salute fisica e mentale."
+  },
+  {
+    "id": "q83",
+    "quote": "Yes we can (\"Sì, possiamo\").",
+    "author": "Barack Obama",
+    "choices": [
+      "Barack Obama",
+      "Winston Churchill",
+      "Albert Einstein",
+      "Ronald Reagan"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2008",
+    "source_title": "Campagna presidenziale USA",
+    "source_link": "https://en.wikipedia.org/wiki/Yes_We_Can_(slogan)",
+    "tags": [
+      "politica",
+      "USA",
+      "slogan"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Campagna 2008.",
+    "hint_more": "Ritornello di comizi e video virali.",
+    "ambiguity_note": "Talvolta confuso con slogan sindacali precedenti.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Sintetizza il messaggio mobilitante della campagna di Obama."
+  },
+  {
+    "id": "q84",
+    "quote": "Mr. Gorbachev, tear down this wall! (\"Signor Gorbaciov, abbatta questo muro!\").",
+    "author": "Ronald Reagan",
+    "choices": [
+      "Ronald Reagan",
+      "Vladimir Lenin",
+      "Mahatma Gandhi",
+      "Papa Giovanni Paolo II"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1987",
+    "source_title": "Discorso alla Porta di Brandeburgo",
+    "source_link": "https://en.wikipedia.org/wiki/Tear_down_this_wall!",
+    "tags": [
+      "guerra fredda",
+      "Berlino",
+      "politica"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Berlino Ovest.",
+    "hint_more": "Appello simbolo contro il Muro di Berlino.",
+    "ambiguity_note": "Talvolta confuso con discorsi di altri leader.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Invito pubblico al leader sovietico a rimuovere il Muro."
+  },
+  {
+    "id": "q85",
+    "quote": "La libertà non vale nulla se non include la libertà di sbagliare.",
+    "author": "Mahatma Gandhi",
+    "choices": [
+      "Mahatma Gandhi",
+      "Nelson Mandela",
+      "Martin Luther King Jr.",
+      "Rabindranath Tagore"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "XX secolo",
+    "source_title": "Scritti e discorsi",
+    "source_link": "https://en.wikiquote.org/wiki/Mahatma_Gandhi",
+    "tags": [
+      "libertà",
+      "etica",
+      "nonviolenza"
+    ],
+    "difficulty": 5,
+    "spiciness": 0,
+    "hint_short": "Libertà concreta.",
+    "hint_more": "Diritti includono anche l’errore.",
+    "ambiguity_note": "Spesso confusa con frasi di Mandela o MLK.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Concezione non paternalistica della libertà."
+  },
+  {
+    "id": "q86",
+    "quote": "Non chiederti cosa il tuo Paese può fare per te, chiediti cosa tu puoi fare per il tuo Paese.",
+    "author": "John F. Kennedy",
+    "choices": [
+      "John F. Kennedy",
+      "Winston Churchill",
+      "Benito Mussolini",
+      "Karl Marx"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1961",
+    "source_title": "Inaugural Address",
+    "source_link": "https://en.wikipedia.org/wiki/Inauguration_of_John_F._Kennedy#Address",
+    "tags": [
+      "politica",
+      "civismo",
+      "USA"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Discorso di insediamento.",
+    "hint_more": "Appello al servizio civico.",
+    "ambiguity_note": "A volte confusa con frasi di altri presidenti.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Richiamo alla responsabilità civica in piena Guerra fredda."
+  },
+  {
+    "id": "q87",
+    "quote": "The pen is mightier than the sword (\"La penna è più potente della spada\").",
+    "author": "Edward Bulwer-Lytton",
+    "choices": [
+      "Edward Bulwer-Lytton",
+      "Oscar Wilde",
+      "William Shakespeare",
+      "Socrate"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1839",
+    "source_title": "Richelieu; Or the Conspiracy",
+    "source_link": "https://en.wikipedia.org/wiki/The_pen_is_mightier_than_the_sword",
+    "tags": [
+      "letteratura",
+      "comunicazione",
+      "potere"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Dramma storico.",
+    "hint_more": "Aforisma nato a teatro.",
+    "ambiguity_note": "Spesso attribuito a Shakespeare per 'aura' classica.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Sottolinea la forza delle idee rispetto alla violenza."
+  },
+  {
+    "id": "q88",
+    "quote": "Datemi un punto d'appoggio e una leva e solleverò il mondo",
+    "author": "Archimede",
+    "choices": [
+      "Archimede",
+      "Alessandro Magno",
+      "Elon Musk",
+      "Leonardo da Vinci"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "III sec. a.C. (tradiz.)",
+    "source_title": "Aforisma attribuito (principio della leva)",
+    "source_link": "https://en.wikipedia.org/wiki/Archimedes#Engineering",
+    "tags": [
+      "fisica",
+      "meccanica",
+      "ingegneria"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Leva e fulcro.",
+    "hint_more": "La potenza del vantaggio meccanico.",
+    "ambiguity_note": "Talvolta confuso con Leonardo.",
+    "language_orig": "EL",
+    "sensitive": false,
+    "context": "Esprime il principio del braccio di leva."
+  },
+  {
+    "id": "q89",
+    "quote": "Stay hungry, stay foolish (\"Siate affamati, siate folli\").",
+    "author": "Steve Jobs",
+    "choices": [
+      "Steve Jobs",
+      "Bill Gates",
+      "Elon Musk",
+      "Mahatma Gandhi"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2005",
+    "source_title": "Commencement, Stanford University",
+    "source_link": "https://en.wikipedia.org/wiki/Steve_Jobs#Stanford_commencement_speech",
+    "tags": [
+      "innovazione",
+      "motivazione",
+      "tech"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Discorso agli studenti.",
+    "hint_more": "Invito a curiosità e audacia.",
+    "ambiguity_note": "Spesso associata genericamente al mondo startup.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Chiusura del celebre discorso, ripresa da Whole Earth Catalog."
+  },
+  {
+    "id": "q90",
+    "quote": "Be water, my friend (\"Sii acqua, amico mio\").",
+    "author": "Bruce Lee",
+    "choices": [
+      "Bruce Lee",
+      "Confucio",
+      "Miyamoto Musashi",
+      "Sun Tzu"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "c. 1971",
+    "source_title": "Intervista/spot (parafrasi)",
+    "source_link": "https://en.wikipedia.org/wiki/Bruce_Lee_philosophy",
+    "tags": [
+      "filosofia pratica",
+      "arti marziali",
+      "metafora"
+    ],
+    "difficulty": 4,
+    "spiciness": 0,
+    "hint_short": "Forma e adattabilità.",
+    "hint_more": "L’acqua assume ogni forma senza perdere sé stessa.",
+    "ambiguity_note": "Spesso confusa con detti zen/taoisti.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Metafora della flessibilità mentale e fisica."
+  },
+  {
+    "id": "q91",
+    "quote": "Nella vita nulla va temuto, va solo compreso.",
+    "author": "Marie Curie",
+    "choices": [
+      "Marie Curie",
+      "Joseph Stalin",
+      "Seneca",
+      "Confucio"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "XX secolo",
+    "source_title": "Discorsi e scritti",
+    "source_link": "https://en.wikipedia.org/wiki/Marie_Curie",
+    "tags": [
+      "scienza",
+      "coraggio",
+      "conoscenza"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Pioniera della radioattività.",
+    "hint_more": "Sostituire la paura con la comprensione.",
+    "ambiguity_note": "Talvolta attribuita ad altri scienziati.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Invito ad affrontare l’ignoto con studio, non con timore."
+  },
+  {
+    "id": "q92",
+    "quote": "Non tutti possiamo fare grandi cose. Ma possiamo fare piccole cose con grande amore.",
+    "author": "Madre Teresa di Calcutta",
+    "choices": [
+      "Madre Teresa di Calcutta",
+      "Papa Giovanni Paolo II",
+      "Desmond Tutu",
+      "Adolf Hitler"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "XX secolo",
+    "source_title": "Detti e interviste",
+    "source_link": "https://en.wikipedia.org/wiki/Mother_Teresa#Legacy",
+    "tags": [
+      "carità",
+      "etica",
+      "motivazione"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Piccoli gesti, grande amore.",
+    "hint_more": "Etica dell’azione quotidiana.",
+    "ambiguity_note": "Spesso associata ad altri leader spirituali.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Sottolinea il valore delle azioni umili."
+  },
+  {
+    "id": "q93",
+    "quote": "La vita è come andare in bicicletta. Per mantenere l'equilibrio devi muoverti.",
+    "author": "Albert Einstein",
+    "choices": [
+      "Albert Einstein",
+      "Confucio",
+      "Winston Churchill",
+      "Jean-Paul Sartre"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1930",
+    "source_title": "Lettera a Eduard",
+    "source_link": "https://en.wikipedia.org/wiki/Albert_Einstein#Quotations",
+    "tags": [
+      "vita",
+      "metafora",
+      "resilienza"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Equilibrio e moto.",
+    "hint_more": "Invito a non fermarsi.",
+    "ambiguity_note": "Talvolta attribuita genericamente agli scienziati.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Metafora del movimento continuo come condizione di stabilità."
+  },
+  {
+    "id": "q94",
+    "quote": "Lasciate ogne speranza, voi ch'intrate.",
+    "author": "Dante Alighieri",
+    "choices": [
+      "Dante Alighieri",
+      "Seneca",
+      "Ludovico Ariosto",
+      "William Shakespeare"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1304–1321",
+    "source_title": "Divina Commedia, Inferno III",
+    "source_link": "https://it.wikipedia.org/wiki/Divina_Commedia",
+    "tags": [
+      "letteratura",
+      "medioevo",
+      "poesia"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Soglia dell’Inferno.",
+    "hint_more": "Iscrizione sulla porta infernale.",
+    "ambiguity_note": "Iconica terzina dantesca.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Accoglie Dante e Virgilio all’ingresso dell’Inferno."
+  },
+  {
+    "id": "q95",
+    "quote": "Audentes fortuna iuvat (\"La fortuna aiuta gli audaci\").",
+    "author": "Publio Virgilio Marone",
+    "choices": [
+      "Publio Virgilio Marone",
+      "Elon Musk",
+      "Benjamin Franklin",
+      "Cicerone"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "I sec. a.C.",
+    "source_title": "Eneide X, 284",
+    "source_link": "https://it.wikipedia.org/wiki/Audentes_fortuna_iuvat",
+    "tags": [
+      "latino",
+      "coraggio",
+      "epica"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Epica latina.",
+    "hint_more": "Incoraggia l’audacia in battaglia.",
+    "ambiguity_note": "Esistono varianti proverbiali.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Idea che l’audacia sia premiata dalla sorte."
+  },
+  {
+    "id": "q96",
+    "quote": "Per aspera ad astra (\"Attraverso le difficoltà fino alle stelle\").",
+    "author": "Seneca",
+    "choices": [
+      "Seneca",
+      "Benito Mussolini",
+      "Marco Aurelio",
+      "Sun Tzu"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "I sec. d.C. (tradiz.)",
+    "source_title": "Massima latina (vari autori)",
+    "source_link": "https://it.wikipedia.org/wiki/Per_aspera_ad_astra",
+    "tags": [
+      "latino",
+      "resilienza",
+      "motto"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Motto classico.",
+    "hint_more": "Usata in stemmi e missioni spaziali.",
+    "ambiguity_note": "Attribuzione variabile; spesso associata anche a Virgilio e Cicerone.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Conquista di traguardi attraverso le prove."
+  },
+  {
+    "id": "q97",
+    "quote": "Gallia est omnis divisa in partes tres (\"Tutta la Gallia è divisa in tre parti\").",
+    "author": "Gaio Giulio Cesare",
+    "choices": [
+      "Gaio Giulio Cesare",
+      "Alessandro Magno",
+      "Galileo Galilei",
+      "Plinio il Vecchio"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "I sec. a.C.",
+    "source_title": "De Bello Gallico, I, 1",
+    "source_link": "https://it.wikipedia.org/wiki/De_bello_Gallico",
+    "tags": [
+      "storia antica",
+      "Roma",
+      "storiografia"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Apertura celebre.",
+    "hint_more": "Incipit geografico-politico.",
+    "ambiguity_note": "Può essere confusa con altri autori latini per la fama dell'incipit.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Introduzione alla divisione della Gallia."
+  },
+  {
+    "id": "q98",
+    "quote": "Penso di poter dire con sicurezza che nessuno capisce la meccanica quantistica.",
+    "author": "Richard Feynman",
+    "choices": [
+      "Richard Feynman",
+      "Papa Giovanni Paolo II",
+      "Ronald Reagan",
+      "Niels Bohr"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "XX secolo",
+    "source_title": "Lezioni/interviste (parafrasi celebre)",
+    "source_link": "https://en.wikipedia.org/wiki/Richard_Feynman#Quotes",
+    "tags": [
+      "fisica",
+      "umiltà",
+      "epistemologia"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Paradossi quantistici.",
+    "hint_more": "Affermazione famosa sull’opacità concettuale.",
+    "ambiguity_note": "Talvolta attribuita a Bohr per la sua autorità in fisica quantistica; il tono umile può ricordare altri scienziati.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Feynman sottolinea quanto la teoria sia controintuitiva."
+  },
+  {
+    "id": "q99",
+    "quote": "Governo del popolo, dal popolo, per il popolo.",
+    "author": "Abraham Lincoln",
+    "choices": [
+      "Abraham Lincoln",
+      "Adolf Hitler",
+      "Thomas Jefferson",
+      "Mao Zedong"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1863",
+    "source_title": "Gettysburg Address",
+    "source_link": "https://en.wikipedia.org/wiki/Gettysburg_Address",
+    "tags": [
+      "democrazia",
+      "USA",
+      "retorica"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Guerra Civile americana.",
+    "hint_more": "Commemorazione dei caduti.",
+    "ambiguity_note": "Spesso confusa con frasi di Jefferson per il tema democratico; la retorica presidenziale può ricordare altri leader USA.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Sintesi del principio democratico."
+  },
+  {
+    "id": "q100",
+    "quote": "Impossibile è una parola che si trova solo nel dizionario degli sciocchi.",
+    "author": "Napoleone Bonaparte",
+    "choices": [
+      "Napoleone Bonaparte",
+      "Gaio Giulio Cesare",
+      "Winston Churchill",
+      "Elon Musk"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "XIX secolo (attrib.)",
+    "source_title": "Aforisma attribuito",
+    "source_link": "https://en.wikiquote.org/wiki/Napoleon_Bonaparte",
+    "tags": [
+      "motivazione",
+      "leadership",
+      "guerra"
+    ],
+    "difficulty": 4,
+    "spiciness": 0,
+    "hint_short": "Imperatore francese.",
+    "hint_more": "Aforisma spesso citato nello sport e in politica.",
+    "ambiguity_note": "Attribuzione non sempre documentata ma popolare; il tono motivazionale può ricordare Churchill o altri leader carismatici.",
+    "language_orig": "FR",
+    "sensitive": false,
+    "context": "Invita a non usare 'impossibile' come alibi."
+  },
+  {
+    "id": "q101",
+    "quote": "La semplicità è la massima sofisticazione.",
+    "author": "Leonardo da Vinci",
+    "choices": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Steve Jobs",
+      "Isaac Newton"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "Rinascimento (attrib.)",
+    "source_title": "Aforisma popolare (attribuzione discussa)",
+    "source_link": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci#Quotations",
+    "tags": [
+      "design",
+      "arte",
+      "pensiero"
+    ],
+    "difficulty": 3,
+    "spiciness": 0,
+    "hint_short": "Eleganza del semplice.",
+    "hint_more": "Resa celebre anche in epoca moderna.",
+    "ambiguity_note": "Attribuzione incerta; spesso legata ad Apple e Steve Jobs; il tema della semplicità può ricordare altri artisti o designer.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Esalta la forza della semplicità progettuale."
+  },
+  {
+    "id": "q102",
+    "quote": "La sola vera saggezza è sapere di non sapere.",
+    "author": "Socrate",
+    "choices": [
+      "Socrate",
+      "Platone",
+      "Aristotele",
+      "Eraclito"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "IV sec. a.C. (tramite Platone)",
+    "source_title": "Apologia di Socrate",
+    "source_link": "https://en.wikipedia.org/wiki/Apology_(Plato)",
+    "tags": [
+      "filosofia",
+      "sapienza",
+      "umiltà"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Paradosso socratico.",
+    "hint_more": "Ignoranza consapevole come origine del sapere.",
+    "ambiguity_note": "Spesso confusa con massime di Platone per la trasmissione scritta.",
+    "language_orig": "EL",
+    "sensitive": false,
+    "context": "Socrate fonda la ricerca sul riconoscimento dei propri limiti."
+  },
+  {
+    "id": "q103",
+    "quote": "E pur si muove.",
+    "author": "Galileo Galilei",
+    "choices": [
+      "Galileo Galilei",
+      "Isaac Newton",
+      "Leonardo da Vinci",
+      "Albert Einstein"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "XVII secolo (tradiz.)",
+    "source_title": "Aforisma attribuito dopo l'abiura",
+    "source_link": "https://it.wikipedia.org/wiki/E_pur_si_muove",
+    "tags": [
+      "scienza",
+      "astronomia",
+      "leggenda"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Moto della Terra.",
+    "hint_more": "Frase leggendaria dopo l’abiura.",
+    "ambiguity_note": "Attribuzione leggendaria ma iconica; può essere confusa con altri scienziati per il tema della resistenza scientifica.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Simbolo della forza della verità scientifica."
+  },
+  {
+    "id": "q104",
+    "quote": "Houston, we have a problem (\"Houston, abbiamo un problema\").",
+    "author": "Jim Lovell",
+    "choices": [
+      "Jim Lovell",
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Yuri Gagarin"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1970",
+    "source_title": "Missione Apollo 13",
+    "source_link": "https://en.wikipedia.org/wiki/Apollo_13#Oxygen_tank_incident",
+    "tags": [
+      "spazio",
+      "NASA",
+      "imprevisti"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Incidente in volo.",
+    "hint_more": "Variazione popolare dell’originale 'we’ve had'.",
+    "ambiguity_note": "Spesso attribuita ad Armstrong per la fama del primo uomo sulla Luna; la frase è diventata proverbiale per gli imprevisti.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Avviso a Houston dopo l’esplosione del serbatoio dell’ossigeno."
+  },
+  {
+    "id": "q105",
+    "quote": "Gott ist tot (\"Dio è morto\").",
+    "author": "Friedrich Nietzsche",
+    "choices": [
+      "Friedrich Nietzsche",
+      "Ludwig Feuerbach",
+      "Karl Marx",
+      "Arthur Schopenhauer"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1882",
+    "source_title": "La gaia scienza, §125",
+    "source_link": "https://it.wikipedia.org/wiki/La_gaia_scienza",
+    "tags": [
+      "filosofia",
+      "modernità",
+      "religione"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Crisi dei valori.",
+    "hint_more": "Metafora della perdita di fondamenti assoluti.",
+    "ambiguity_note": "Spesso travisata come semplice negazione di Dio; può essere confusa con altri filosofi materialisti o critici della religione.",
+    "language_orig": "DE",
+    "sensitive": false,
+    "context": "Denuncia il venir meno dei valori tradizionali nell’età moderna."
+  },
+  {
+    "id": "q106",
+    "quote": "Qu'ils mangent de la brioche (\"Date loro delle brioche\").",
+    "author": "Maria Antonietta",
+    "choices": [
+      "Maria Antonietta",
+      "Jean-Jacques Rousseau",
+      "Luigi XVI",
+      "Voltaire"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "XVIII secolo (attribuzione; formula attestata in Rousseau)",
+    "source_title": "Rousseau, \"Les Confessions\" VI; leggenda su Maria Antonietta",
+    "source_link": "https://it.wikipedia.org/wiki/Se_non_hanno_pane,_mangino_brioche",
+    "tags": [
+      "rivoluzione francese",
+      "monarchia",
+      "leggenda"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Una regina e una frase che fece infuriare il popolo.",
+    "hint_more": "L’aforisma circolava già prima, in Rousseau, riferito a una generica \"gran principessa\".",
+    "ambiguity_note": "Spesso citata come se fosse storicamente pronunciata da Maria Antonietta; l’attribuzione è molto dubbia.",
+    "language_orig": "FR",
+    "sensitive": false,
+    "context": "Usata come simbolo di insensibilità aristocratica verso la fame del popolo; storicamente l’attribuzione alla regina è probabilmente apocrifa."
+  },
+  {
+    "id": "q107",
+    "quote": "An iron curtain has descended across the Continent (\"Una cortina di ferro è calata sul continente\").",
+    "author": "Winston Churchill",
+    "choices": [
+      "Winston Churchill",
+      "Joseph Stalin",
+      "Franklin D. Roosevelt",
+      "Charles de Gaulle"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1946",
+    "source_title": "\"Sinews of Peace\" (Discorso di Fulton, Missouri)",
+    "source_link": "https://en.wikipedia.org/wiki/Iron_Curtain#Churchill's_use_of_the_term",
+    "tags": [
+      "guerra fredda",
+      "Europa",
+      "retorica politica"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Un discorso negli USA dopo la Seconda guerra mondiale.",
+    "hint_more": "L’oratore avverte della divisione dell’Europa in sfere d’influenza.",
+    "ambiguity_note": "Spesso confusa con discorsi di Stalin o Roosevelt per il tema della divisione europea; la metafora della 'cortina' può ricordare altri leader della Guerra fredda.",
+    "language_orig": "EN",
+    "sensitive": false,
+    "context": "Il discorso segna simbolicamente l’inizio della Guerra fredda, descrivendo la separazione tra blocco sovietico e Occidente."
   }
 ]
