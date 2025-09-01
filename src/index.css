@@ -98,8 +98,26 @@
   }
   
   .animate-float-delayed {
-    animation: float 3s ease-in-out infinite 1.5s;
+    animation: float 3s ease-in-out infinite 1s;
   }
+  
+  /* Animazione shimmer per progress bar */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+     .animate-shimmer {
+     animation: shimmer 2s infinite;
+   }
+   
+   .animate-float-delayed-2 {
+     animation: float 3s ease-in-out infinite 1.5s;
+   }
   
   .animate-glow {
     animation: glow 2s ease-in-out infinite alternate;

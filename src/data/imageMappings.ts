@@ -184,5 +184,7 @@ export const personaggiImageMap: Record<string, string> = {
   "Confucio": "images/personaggi/confucio.png",
   "Laozi": "images/personaggi/laozi.jpg",
   "Bruce Lee": "images/personaggi/bruce-lee.jpg",
-  "Antonio Gramsci": "images/personaggi/antonio-gramsci.jpg"
+  "Antonio Gramsci": "images/personaggi/antonio-gramsci.png",
+  "Marie Curie": "images/personaggi/marie-curie.jpg",
+  "Plinio il Vecchio": "images/personaggi/plinio-il-vecchio.jpg"
 };

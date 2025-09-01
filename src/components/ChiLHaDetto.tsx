@@ -4,6 +4,8 @@ import itemsRaw from "../data/quotes.json";
 import { personaggiImageMap } from "../data/imageMappings";
 import HeroImagePreloader from "./HeroImagePreloader";
 
+
+
 const ITEMS = itemsRaw as Item[];
 
 function shuffle<T>(arr: T[]) {
@@ -17,15 +19,19 @@ function shuffle<T>(arr: T[]) {
 
 export default function ChiLHaDetto({ 
   includeSensitive, 
+  gameMode,
+  backgroundImage,
   onBackToMenu 
 }: { 
   includeSensitive: boolean; 
+  gameMode: 'classic' | 'millionaire';
+  backgroundImage: string;
   onBackToMenu: () => void; 
 }) {
   const [historicalMode, setHistoricalMode] = useState(true);
   const [order, setOrder] = useState<number[]>([]);
   const [i, setI] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(45);
+  const [timeLeft, setTimeLeft] = useState(gameMode === 'millionaire' ? 60 : 45);
   const [revealed, setRevealed] = useState(false);
   const [selected, setSelected] = useState<number | null>(null);
   const [score, setScore] = useState(0);
@@ -34,17 +40,35 @@ export default function ChiLHaDetto({
   const [disabledOptions, setDisabledOptions] = useState<number[]>([]);
   const [usedHint, setUsedHint] = useState(false);
   const [usedSuperHint, setUsedSuperHint] = useState(false);
+  const [used2ndChance, setUsed2ndChance] = useState(false);
+  const [is2ndChanceActive, setIs2ndChanceActive] = useState(false);
   const [hintRevealed, setHintRevealed] = useState(false);
   const [superHintRevealed, setSuperHintRevealed] = useState(false);
+  const [showClimbingAnimation, setShowClimbingAnimation] = useState(false);
+  const [currentLevel, setCurrentLevel] = useState(0);
+  const [completedLevels, setCompletedLevels] = useState(0);
+  const [gameOver, setGameOver] = useState(false);
+  const [showGameOverAnimation, setShowGameOverAnimation] = useState(false);
+  const [isTimeoutGameOver, setIsTimeoutGameOver] = useState(false);
   
   // Costanti per la modalità di gioco
-  const QUESTIONS_PER_GAME = 10; // Ogni partita ha 10 domande
+  const QUESTIONS_PER_GAME = 12; // Ogni partita ha 12 domande
   
-  // TODO: Preparazione per modalità "Chi vuol essere milionario"
-  // - Sistema di livelli di difficoltà crescente
-  // - Premi progressivi (punti, streak bonus)
-  // - Aiuti limitati (50:50, hint, pubblico)
-  // - Possibilità di ritirarsi con il punteggio accumulato
+  // Configurazione modalità milionario
+  const MILLIONAIRE_DIFFICULTY_MAP = [
+    { min: 1, max: 1 },    // Q1: difficoltà 1
+    { min: 1, max: 2 },    // Q2: difficoltà 1-2
+    { min: 2, max: 2 },    // Q3: difficoltà 2
+    { min: 3, max: 3 },    // Q4: difficoltà 3
+    { min: 3, max: 4 },    // Q5: difficoltà 3-4
+    { min: 4, max: 4 },    // Q6: difficoltà 4
+    { min: 4, max: 5 },    // Q7: difficoltà 4-5
+    { min: 5, max: 5 },    // Q8: difficoltà 5
+    { min: 5, max: 6 },    // Q9: difficoltà 5-6
+    { min: 6, max: 6 },    // Q10: difficoltà 6
+    { min: 6, max: 7 },    // Q11: difficoltà 6-7
+    { min: 7, max: 7 }     // Q12: difficoltà 7
+  ];
 
   useEffect(() => {
     // Filtra le domande in base alla preferenza per contenuti sensibili
@@ -52,13 +76,86 @@ export default function ChiLHaDetto({
       ? ITEMS 
       : ITEMS.filter(item => !item.sensitive);
     
-    // Estrai casualmente solo 10 domande per ogni partita dal pool filtrato
-    const shuffledIndices = shuffle(filteredItems.map((_, k) => {
-      // Trova l'indice originale dell'item filtrato
-      return ITEMS.findIndex(originalItem => originalItem.id === filteredItems[k].id);
-    }));
-    setOrder(shuffledIndices.slice(0, QUESTIONS_PER_GAME));
-  }, [includeSensitive]);
+    if (gameMode === 'millionaire') {
+      // Modalità milionario: seleziona domande per difficoltà progressiva
+      const selectedQuestions: number[] = [];
+      
+      for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
+        const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
+        const availableQuestions = filteredItems.filter(item => 
+          item.difficulty >= difficultyRange.min && item.difficulty <= difficultyRange.max
+        );
+        
+        if (availableQuestions.length > 0) {
+          const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+          const originalIndex = ITEMS.findIndex(item => item.id === randomQuestion.id);
+          selectedQuestions.push(originalIndex);
+        } else {
+          // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
+          const randomIndex = Math.floor(Math.random() * filteredItems.length);
+          const fallbackQuestion = filteredItems[randomIndex];
+          const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
+          selectedQuestions.push(originalIndex);
+        }
+      }
+      
+      setOrder(selectedQuestions);
+    } else {
+      // Modalità Battaglia di Achille: selezione con difficoltà progressiva non equiprobabile
+      const selectedQuestions: number[] = [];
+      const totalQuestions = filteredItems.length;
+      
+      // Più si va avanti, più le domande tendono ad essere difficili
+      for (let i = 0; i < totalQuestions; i++) {
+        // Calcola la difficoltà target basata sulla progressione
+        const progressRatio = i / totalQuestions; // 0.0 a 1.0
+        const targetDifficulty = Math.min(7, Math.max(1, Math.floor(1 + progressRatio * 6))); // 1-7
+        
+        // Trova domande con difficoltà vicina alla target
+        const availableQuestions = filteredItems.filter(item => 
+          Math.abs(item.difficulty - targetDifficulty) <= 1 // ±1 dalla difficoltà target
+        );
+        
+        if (availableQuestions.length > 0) {
+          // Seleziona una domanda casuale tra quelle disponibili
+          const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+          const originalIndex = ITEMS.findIndex(item => item.id === randomQuestion.id);
+          selectedQuestions.push(originalIndex);
+        } else {
+          // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
+          const randomIndex = Math.floor(Math.random() * filteredItems.length);
+          const fallbackQuestion = filteredItems[randomIndex];
+          const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
+          selectedQuestions.push(originalIndex);
+        }
+      }
+      
+      setOrder(selectedQuestions);
+    }
+    
+    // Reset completo dello stato del gioco quando cambia la modalità
+    setI(0);
+    setScore(0);
+    setStreak(0);
+    setUsed5050(false);
+    setUsedHint(false);
+    setUsedSuperHint(false);
+    setUsed2ndChance(false);
+    setIs2ndChanceActive(false);
+    setHintRevealed(false);
+    setSuperHintRevealed(false);
+    setIs2ndChanceActive(false);
+    setDisabledOptions([]);
+    setGameOver(false);
+    setRevealed(false);
+    setSelected(null);
+    setTimeLeft(gameMode === 'millionaire' ? 60 : 45);
+    setShowClimbingAnimation(false);
+    setCurrentLevel(0);
+    setCompletedLevels(0);
+    setIsTimeoutGameOver(false);
+    // Non resettare showGameOverAnimation qui, viene gestito in onAnswer
+  }, [includeSensitive, gameMode]);
 
   const current: Item | null = useMemo(
     () => (order.length ? ITEMS[order[i]] : null),
@@ -69,7 +166,7 @@ export default function ChiLHaDetto({
   useEffect(() => {
     if (!current) return;
     setChoiceOrder(shuffle([0, 1, 2, 3]));
-    setTimeLeft(45);
+    setTimeLeft(gameMode === 'millionaire' ? 60 : 45);
     setRevealed(false);
     setSelected(null);
     setDisabledOptions([]);
@@ -86,17 +183,37 @@ export default function ChiLHaDetto({
   }, [choiceOrder, current]);
 
   useEffect(() => {
-    if (!current || revealed) return;
+    if (!current || revealed || gameOver) return;
     const id = setInterval(() => setTimeLeft((t) => (t > 0 ? t - 1 : 0)), 1000);
     return () => clearInterval(id);
-  }, [current, revealed]);
+  }, [current, revealed, gameOver]);
 
   useEffect(() => {
     if (timeLeft === 0 && !revealed) {
-      setRevealed(true);
       setStreak(0);
+      
+      // Entrambe le modalità: game over se il timer scade
+      setIsTimeoutGameOver(true); // Marca come game over per timeout
+      
+      if (gameMode === 'millionaire') {
+        // Modalità Le 12 Fatiche: mostra animazione game over e poi va in game over definitivo
+        setShowGameOverAnimation(true);
+        setTimeout(() => {
+          setShowGameOverAnimation(false);
+          setRevealed(true);
+          setGameOver(true); // Game over definitivo per Le 12 Fatiche
+        }, 2000);
+      } else {
+        // Modalità Battaglia di Achille: mostra animazione game over
+        setShowGameOverAnimation(true);
+        setTimeout(() => {
+          setShowGameOverAnimation(false);
+          setRevealed(true);
+          // Non impostare gameOver qui per permettere alla FASE 4 di rendersi
+        }, 2000);
+      }
     }
-  }, [timeLeft, revealed]);
+  }, [timeLeft, revealed, gameMode]);
 
   if (!current) {
     return (
@@ -113,44 +230,177 @@ export default function ChiLHaDetto({
   const spiciness =
     current.spiciness === 0 ? "" : current.spiciness === 1 ? "🌶️" : "🌶️🌶️";
 
+  // Funzione helper per calcolare il bonus tempo nella modalità Battaglia di Achille
+  function getTimeBonus(timeLeft: number): { multiplier: number; label: string; color: string } {
+    if (timeLeft >= 30) {
+      return { multiplier: 1.0, label: '100%', color: 'text-green-400' };
+    } else if (timeLeft >= 15) {
+      return { multiplier: 0.8, label: '80%', color: 'text-yellow-400' };
+    } else {
+      return { multiplier: 0.6, label: '60%', color: 'text-red-400' };
+    }
+  }
+
   function onAnswer(k: number) {
-    if (revealed) return;
+    if (revealed || gameOver) return;
     setSelected(k);
     const correct = mappedChoices[k]?.isCorrect;
     if (correct) {
       const newStreak = streak + 1;
-      const gained = 100 + timeLeft * 2 + streak * 10;
+      
+      // Sistema di punteggio diverso per ogni modalità
+      let gained;
+      if (gameMode === 'millionaire') {
+        // Modalità Verso l'Olimpo: punteggio fisso
+        gained = 100 + timeLeft * 2 + streak * 10;
+      } else {
+        // Modalità Battaglia di Achille: punteggio basato sulla difficoltà + moltiplicatore streak + bonus tempo
+        const basePoints = (current?.difficulty || 1) * 50; // 50 punti per livello di difficoltà
+        const streakMultiplier = Math.max(1, newStreak); // Moltiplicatore minimo 1
+        
+        // Bonus tempo: entro 15s = 100%, entro 30s = 80%, oltre = 60%
+        const timeBonus = getTimeBonus(timeLeft);
+        
+        gained = Math.round(basePoints * streakMultiplier * timeBonus.multiplier);
+      }
+      
       setScore((s) => s + gained);
       setStreak(newStreak);
+      
+              // Modalità Verso l'Olimpo: mostra animazione di scalata
+        if (gameMode === 'millionaire') {
+          const newLevel = i + 1;
+          setCurrentLevel(newLevel);
+          setCompletedLevels(newLevel); // Aggiorna i livelli completati
+          setShowClimbingAnimation(true);
+          setRevealed(true); // Importante: imposta revealed per mostrare l'animazione
+          
+          // Se 2nd Chance era attivo, ora è usato (anche se la risposta era giusta)
+          if (is2ndChanceActive) {
+            setUsed2ndChance(true);
+            setIs2ndChanceActive(false);
+          }
+          
+          // Durata diversa per vittoria finale (livello 12) vs livelli normali
+          const animationDuration = newLevel === 12 ? 2500 : 1500;
+          setTimeout(() => {
+            setShowClimbingAnimation(false);
+          }, animationDuration);
+        } else {
+        // Modalità Battaglia di Achille: mostra animazione di vittoria
+        setShowClimbingAnimation(true);
+        setRevealed(true); // Importante: imposta revealed per mostrare l'animazione
+        
+        // Animazione più breve per la battaglia (1000ms)
+        setTimeout(() => {
+          setShowClimbingAnimation(false);
+        }, 1000);
+      }
     } else {
       setStreak(0);
+      
+      if (gameMode === 'millionaire') {
+        // Modalità Verso l'Olimpo: gestisce 2nd Chance
+        if (is2ndChanceActive && !used2ndChance) {
+          // Seconda chance attiva e prima risposta errata: marca come usata e permette nuovo tentativo
+          setUsed2ndChance(true);
+          setIs2ndChanceActive(false);
+          setSelected(null); // Reset della selezione per permettere nuovo tentativo
+          
+          // Aggiungi l'opzione errata alle disabilitate per renderla evidente
+          setDisabledOptions([k]);
+          return; // Non mostra ancora la risposta, permette nuovo tentativo
+        } else {
+          // Nessun 2nd chance o già usato: game over definitivo
+          setShowGameOverAnimation(true);
+          
+          // Dopo 2 secondi di animazione game over, mostra la risposta corretta
+          setTimeout(() => {
+            setShowGameOverAnimation(false);
+            setRevealed(true);
+          }, 2000);
+          return;
+        }
+      } else {
+        // Modalità Battaglia di Achille: game over immediato
+        setShowGameOverAnimation(true); // Mostra animazione game over
+        
+        // Dopo 2 secondi di animazione, mostra la spiegazione
+        setTimeout(() => {
+          setShowGameOverAnimation(false);
+          setRevealed(true); // Imposta revealed solo dopo l'animazione
+          setGameOver(true); // Imposta game over solo dopo l'animazione
+        }, 2000);
+      }
     }
-    setRevealed(true);
   }
 
-  function next() {
-    if (i < QUESTIONS_PER_GAME - 1) {
-      setI((v) => v + 1);
+    function next() {
+    // Modalità Verso l'Olimpo: se si è sbagliato, non permettere di continuare
+    if (gameMode === 'millionaire' && selected !== null && !mappedChoices[selected]?.isCorrect) {
+      return;
+    }
+    
+    if (gameMode === 'millionaire') {
+      // Modalità Verso l'Olimpo: 12 domande fisse
+      if (i < QUESTIONS_PER_GAME - 1) {
+        setI((v) => v + 1);
+        
+        // Reset dello stato per la nuova domanda (mantiene punteggio e streak)
+        setRevealed(false);
+        setSelected(null);
+        setDisabledOptions([]);
+        setTimeLeft(60); // Reset timer per la nuova domanda
+      } else {
+        // Fine partita Verso l'Olimpo - ricarica le domande
+        const filteredItems = includeSensitive 
+          ? ITEMS 
+          : ITEMS.filter(item => !item.sensitive);
+        
+        // Modalità milionario: seleziona domande per difficoltà progressiva
+        const selectedQuestions: number[] = [];
+        
+        for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
+          const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
+          const availableQuestions = filteredItems.filter(item => 
+            item.difficulty >= difficultyRange.min && item.difficulty <= difficultyRange.max
+          );
+          
+          if (availableQuestions.length > 0) {
+            const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+            const originalIndex = ITEMS.findIndex(item => item.id === randomQuestion.id);
+            selectedQuestions.push(originalIndex);
+          } else {
+            // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
+            const randomIndex = Math.floor(Math.random() * filteredItems.length);
+            const fallbackQuestion = filteredItems[randomIndex];
+            const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
+            selectedQuestions.push(originalIndex);
+          }
+        }
+        
+        setOrder(selectedQuestions);
+        setI(0);
+        setScore(0);
+        setStreak(0);
+        setUsed5050(false);
+        setUsedHint(false);
+        setUsedSuperHint(false);
+        setUsed2ndChance(false);
+        setHintRevealed(false);
+        setSuperHintRevealed(false);
+        setDisabledOptions([]);
+        setGameOver(false);
+      }
     } else {
-      // Fine partita: estrai nuove 10 domande casuali filtrando per contenuti sensibili
-      const filteredItems = includeSensitive 
-        ? ITEMS 
-        : ITEMS.filter(item => !item.sensitive);
+      // Modalità Battaglia di Achille: partita infinita, continua con la prossima domanda
+      setI((v) => v + 1);
       
-      const shuffledIndices = shuffle(filteredItems.map((_, k) => {
-        // Trova l'indice originale dell'item filtrato
-        return ITEMS.findIndex(originalItem => originalItem.id === filteredItems[k].id);
-      }));
-      setOrder(shuffledIndices.slice(0, QUESTIONS_PER_GAME));
-      setI(0);
-      setScore(0);
-      setStreak(0);
-      setUsed5050(false);
-      setUsedHint(false);
-      setUsedSuperHint(false);
-      setHintRevealed(false);
-      setSuperHintRevealed(false);
+      // Reset dello stato per la nuova domanda (mantiene punteggio e streak)
+      setRevealed(false);
+      setSelected(null);
       setDisabledOptions([]);
+      setTimeLeft(45); // Reset timer per la nuova domanda
     }
   }
 
@@ -166,6 +416,11 @@ export default function ChiLHaDetto({
       (idx) => idx !== keepWrong && !mappedChoices[idx].isCorrect
     );
     setDisabledOptions(toDisable);
+  }
+
+  function use2ndChance() {
+    if (used2ndChance || revealed || gameOver) return;
+    setIs2ndChanceActive(true);
   }
 
   function useHint() {
@@ -194,10 +449,10 @@ export default function ChiLHaDetto({
   return (
     <HeroImagePreloader>
       <div className="relative min-h-screen optimize-mobile">
-        {/* Background Image */}
+        {/* Background Image dinamico */}
         <div className="absolute inset-0">
           <img 
-            src="images/hero-bg.png" 
+            src={backgroundImage} 
             alt="Personaggi e avvenimenti storici" 
             className="w-full h-full object-cover"
           />
@@ -208,145 +463,265 @@ export default function ChiLHaDetto({
         
         {/* Content Layer */}
         <div className="relative z-10 max-w-7xl mx-auto p-2 sm:p-4 md:p-6 lg:p-8">
-        {/* Header con layout responsive migliorato */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 sm:mb-6 bg-black/40 backdrop-blur-md p-3 sm:p-4 rounded-xl shadow-2xl border border-white/20">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-3 sm:mb-0 text-center sm:text-left"
-              style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
-            Chi l'ha detto? — 10 Domande
-          </h1>
-          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3 text-xs sm:text-sm">
-            <span
-                  style={{ 
-                    backgroundColor: '#b45309',
-                    color: 'white',
-                    border: '2px solid #d97706',
-                    padding: '8px 12px',
-                    borderRadius: '8px',
-                    fontWeight: '600',
-                    fontSize: '12px',
-                    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
-                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                    display: 'inline-block'
-                  }}>
-              Punteggio: {score}
-            </span>
-            <span
+                 {/* Header compatto ottimizzato - layout orizzontale su mobile */}
+         <div className="flex flex-row items-center justify-between mb-2 sm:mb-3 bg-black/40 backdrop-blur-md p-2 sm:p-3 rounded-xl shadow-2xl border border-white/20">
+           <h1 className="text-sm sm:text-lg md:text-xl font-extrabold tracking-tight text-white text-left truncate flex-1 mr-2"
+               style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
+             Chi l'ha detto? — {gameMode === 'millionaire' ? 'Le fatiche di Ercole' : 'Aristeia di Achille'}
+           </h1>
+           <div className="flex items-center gap-2 text-xs sm:text-sm flex-shrink-0">
+             {/* Bottone Torna al Menu - compatto */}
+             <button
+               onClick={onBackToMenu}
+               className="px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-r from-purple-600 to-indigo-700 hover:from-purple-700 hover:to-indigo-800 text-white border-2 border-purple-400/50 shadow-xl hover:shadow-2xl"
+             >
+               <span className="flex items-center gap-1">
+                 <span className="text-xs sm:text-sm">🏠</span>
+                 <span className="hidden sm:inline font-semibold">Menu</span>
+               </span>
+             </button>
+           </div>
+         </div>
+
+                 {historicalMode && isSensitive && (
+           <div className="mt-2 sm:mt-3 p-2 rounded-lg bg-black/30 backdrop-blur-sm border border-white/20 text-xs text-white shadow-lg">
+             <strong className="drop-shadow-lg">Avviso contenuti storici sensibili.</strong> 
+             <span className="drop-shadow-lg"> Questo elemento è mostrato per scopi storici e didattici.</span>
+           </div>
+         )}
+
+                 {/* Barra di progresso e timer responsive - compatta - layout orizzontale su mobile */}
+         <div className="mt-2 sm:mt-3 flex flex-row items-center justify-between gap-2 bg-black/20 backdrop-blur-sm p-2 rounded-lg border border-white/10">
+          <div className="text-xs sm:text-sm text-white font-semibold text-center sm:text-left drop-shadow-lg"
+               style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+            {gameMode === 'millionaire' ? (
+              <>
+                <div className="text-purple-300 font-bold text-lg sm:text-xl">Liv. {i + 1} di 12</div>
+              </>
+            ) : (
+              <div className="flex items-center gap-3">
+                {/* Streak con più rilevanza */}
+                <span
                   style={{ 
                     backgroundColor: '#c2410c',
                     color: 'white',
                     border: '2px solid #ea580c',
-                    padding: '8px 12px',
-                    borderRadius: '8px',
-                    fontWeight: '600',
-                    fontSize: '12px',
+                    padding: '10px 14px',
+                    borderRadius: '10px',
+                    fontWeight: '700',
+                    fontSize: '14px',
                     textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
-                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                     display: 'inline-block'
                   }}>
-              Streak: {streak}
-            </span>
-            <span
+                  🔥 Streak: {streak}
+                </span>
+                {/* Punteggio */}
+                <span
                   style={{ 
-                    backgroundColor: '#b91c1c',
+                    backgroundColor: '#7c3aed',
                     color: 'white',
-                    border: '2px solid #dc2626',
-                    padding: '8px 12px',
-                    borderRadius: '8px',
-                    fontWeight: '600',
-                    fontSize: '12px',
+                    border: '2px solid #a855f7',
+                    padding: '10px 14px',
+                    borderRadius: '10px',
+                    fontWeight: '700',
+                    fontSize: '14px',
                     textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
-                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                     display: 'inline-block'
                   }}>
-              Tempo: {timeLeft}s
-            </span>
+                  💎 Punteggio: {score}
+                </span>
+              </div>
+            )}
           </div>
-        </div>
-
-        {historicalMode && isSensitive && (
-          <div className="mt-3 sm:mt-4 p-2 sm:p-3 rounded-xl bg-black/30 backdrop-blur-sm border border-white/20 text-xs sm:text-sm text-white shadow-lg">
-            <strong className="drop-shadow-lg">Avviso contenuti storici sensibili.</strong> 
-            <span className="drop-shadow-lg"> Questo elemento è mostrato per scopi storici e didattici. Alcune citazioni/slogan sono legati a regimi autoritari e a crimini.</span>
-          </div>
-        )}
-
-        {/* Barra di progresso e timer responsive */}
-        <div className="mt-3 sm:mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 bg-black/20 backdrop-blur-sm p-3 rounded-xl border border-white/10">
-          <div className="text-xs sm:text-sm text-white font-semibold text-center sm:text-left drop-shadow-lg"
-               style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-            Domanda {i + 1} / {QUESTIONS_PER_GAME}
-          </div>
-          <div className="flex items-center justify-center sm:justify-end gap-2">
-            <div className="w-32 sm:w-40 h-3 bg-black/40 rounded-full overflow-hidden border border-white/20 shadow-inner">
-              <div className="h-full bg-gradient-to-r from-amber-500 to-orange-500 shadow-lg" style={{ width: `${(timeLeft / 45) * 100}%` }} />
+          
+                     {/* Progress bar accattivante per modalità Verso l'Olimpo - compatta */}
+           {gameMode === 'millionaire' && (
+             <div className="flex-1 mx-3">
+               <div className="w-full h-4 bg-black/50 rounded-full overflow-hidden border-2 border-purple-400/40 shadow-inner relative">
+                {/* Sfondo con pattern sottile */}
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 to-purple-800/30 opacity-50"></div>
+                
+                {/* Progresso principale con gradiente animato */}
+                <div className="h-full bg-gradient-to-r from-purple-400 via-purple-300 to-purple-500 shadow-lg transition-all duration-700 ease-out relative overflow-hidden"
+                     style={{ width: `${(completedLevels / 12) * 100}%` }}>
+                  
+                  {/* Effetto brillante che si muove */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
+                  
+                  {/* Bordo luminoso interno */}
+                  <div className="absolute inset-0 rounded-full border border-white/30"></div>
+                </div>
+                
+                {/* Indicatori di livello con piccoli punti - allineamento perfetto */}
+                <div className="absolute inset-0 flex items-center justify-between px-1">
+                  {Array.from({ length: 13 }, (_, index) => {
+                    // Calcola la posizione esatta del punto (0-12)
+                    const pointPosition = index;
+                    // Calcola la posizione corrente della progress bar (0-12) - si aggiorna solo dopo risposta corretta
+                    const currentProgress = completedLevels;
+                    // Il punto si illumina solo se la progress bar ha superato la sua posizione
+                    const shouldLightUp = pointPosition < currentProgress;
+                    
+                    return (
+                      <div key={index} className={`w-1 h-1 rounded-full transition-all duration-300 ${
+                        shouldLightUp ? 'bg-purple-200 shadow-sm' : 'bg-purple-800/50'
+                      }`}></div>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
-            <span className="text-xs sm:text-sm tabular-nums text-white font-semibold drop-shadow-lg"
-                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{timeLeft}s</span>
+          )}
+          
+                     <div className="flex items-center justify-end gap-2 sm:gap-3">
+            {/* Punteggio per modalità Verso l'Olimpo */}
+            {gameMode === 'millionaire' && (
+              <span
+                style={{ 
+                  backgroundColor: '#7c3aed',
+                  color: 'white',
+                  border: '2px solid #a855f7',
+                  padding: '8px 12px',
+                  borderRadius: '8px',
+                  fontWeight: '600',
+                  fontSize: '12px',
+                  textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
+                  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                  display: 'inline-block'
+                }}>
+                Punteggio: {score}
+              </span>
+            )}
+            
+                         {/* Timer circolare (tipo orologio) - compatto per mobile */}
+             <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12">
+              {/* Sfondo circolare */}
+              <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                {/* Sfondo grigio */}
+                <path
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="rgba(0, 0, 0, 0.3)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                {/* Progresso del tempo - calcolo corretto per cerchio */}
+                <path
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke={gameMode === 'millionaire' ? '#8b5cf6' : '#f59e0b'}
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeDasharray="100, 100"
+                  strokeDashoffset={100 - ((timeLeft / (gameMode === 'millionaire' ? 60 : 45)) * 100)}
+                  className="transition-all duration-1000 ease-linear"
+                />
+              </svg>
+              {/* Tempo al centro - compatto per mobile */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <span className="text-xs sm:text-sm tabular-nums text-white font-bold drop-shadow-lg leading-none"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+                  {timeLeft}
+                </span>
+                <span className="text-xs text-white font-semibold drop-shadow-lg leading-none"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+                  s
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Container principale della domanda */}
-        <div className="mt-3 sm:mt-4 p-3 sm:p-4 md:p-5 bg-black/30 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20">
-          {/* Citazione con font size responsive */}
-          <blockquote className="text-base sm:text-lg md:text-xl leading-relaxed font-serif text-white italic text-center sm:text-left drop-shadow-lg"
-                      style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
-            "{current.quote}"
-          </blockquote>
+                 {/* Container principale della domanda - compatto */}
+         <div className="mt-2 sm:mt-3 p-2 sm:p-3 bg-black/30 backdrop-blur-md rounded-xl shadow-2xl border border-white/20">
+                     {/* Citazione con font size responsive - compatto */}
+           <blockquote className="text-sm sm:text-base md:text-lg leading-relaxed font-serif text-white italic text-center sm:text-left drop-shadow-lg"
+                        style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
+             "{current.quote}"
+           </blockquote>
 
-                     {/* Bottoni degli aiuti con layout responsive e grafiche accattivanti */}
-           <div className="mt-3 sm:mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3 text-xs sm:text-sm">
+                                           {/* Bottoni degli aiuti con layout responsive e grafiche accattivanti - solo per Verso l'Olimpo - compatti */}
+            {gameMode === 'millionaire' && (
+              <div className="mt-2 sm:mt-3 flex flex-wrap items-center justify-center sm:justify-start gap-2 text-xs">
              <button
                onClick={use5050}
-               disabled={used5050 || revealed}
+               disabled={used5050 || revealed || gameOver}
                className={`relative px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
-                 used5050 || revealed
+                 used5050 || revealed || gameOver
                    ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                    : 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl'
                }`}
              >
                <span className="flex items-center gap-1">
-                 <span className="text-lg">🎯</span>
+                 <span className="text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(59, 130, 246, 0.7))' }}>🎯</span>
                  <span>50/50</span>
                </span>
              </button>
              
              <button
                onClick={useHint}
-               disabled={hintRevealed || revealed || usedHint}
+               disabled={hintRevealed || revealed || usedHint || gameOver}
                className={`relative px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
-                 hintRevealed || revealed || usedHint
+                 hintRevealed || revealed || usedHint || gameOver
                    ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                    : 'bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white border-0 shadow-lg hover:shadow-xl'
                }`}
              >
                <span className="flex items-center gap-1">
-                 <span className="text-lg">💡</span>
+                 <span className="text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(245, 158, 11, 0.7))' }}>💡</span>
                  <span>Hint</span>
                </span>
              </button>
              
              <button
                onClick={useSuperHint}
-               disabled={superHintRevealed || revealed || usedSuperHint}
+               disabled={superHintRevealed || revealed || usedSuperHint || gameOver}
                className={`relative px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
-                 superHintRevealed || revealed || usedSuperHint
+                 superHintRevealed || revealed || usedSuperHint || gameOver
                    ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
-                   : 'bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white border-0 shadow-lg hover:shadow-xl'
+                   : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white border-0 shadow-lg hover:shadow-xl'
                }`}
              >
                <span className="flex items-center gap-1">
-                 <span className="text-lg">🚀</span>
+                 <span className="text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.7))' }}>🚀</span>
                  <span>Super Hint</span>
                </span>
              </button>
+             
+             {/* Bottone 2nd Chance - solo per modalità Verso l'Olimpo */}
+             {gameMode === 'millionaire' && (
+               <button
+                 onClick={use2ndChance}
+                 disabled={used2ndChance || revealed || gameOver}
+                 className={`relative px-2 sm:px-3 py-1.5 rounded-lg font-bold text-xs transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+                   used2ndChance || revealed || gameOver
+                     ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
+                     : is2ndChanceActive
+                     ? 'bg-gradient-to-r from-pink-400 to-rose-500 text-white border-0 shadow-lg animate-pulse'
+                     : 'bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white border-0 shadow-lg hover:shadow-xl'
+                 }`}
+               >
+                 <span className="flex items-center gap-1">
+                                    <span className="text-lg drop-shadow-lg" style={{ filter: `drop-shadow(0 0 6px ${is2ndChanceActive ? 'rgba(236, 72, 153, 0.7)' : 'rgba(236, 72, 153, 0.7)'})` }}>{is2ndChanceActive ? '✨' : '💖'}</span>
+                 <span>{is2ndChanceActive ? 'Attivo' : '2nd Chance'}</span>
+                 </span>
+               </button>
+             )}
            </div>
+           )}
 
            {/* Visualizzazione degli hint con animazioni e stili migliorati */}
            {hintRevealed && (
              <div className="mt-3 animate-fadeIn">
                <div className="px-4 py-3 rounded-xl bg-black/40 backdrop-blur-sm border-2 border-amber-400/50 shadow-2xl">
                  <div className="flex items-center gap-2 mb-2">
-                   <span className="text-2xl">💡</span>
+                   <span className="text-2xl drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 8px rgba(245, 158, 11, 0.8))' }}>💡</span>
                    <span className="font-bold text-amber-300 text-sm drop-shadow-lg">Hint Attivo</span>
                  </div>
                  <p className="text-white text-sm leading-relaxed drop-shadow-lg"
@@ -357,41 +732,49 @@ export default function ChiLHaDetto({
            
            {superHintRevealed && (
              <div className="mt-3 animate-fadeIn">
-               <div className="px-4 py-3 rounded-xl bg-black/40 backdrop-blur-sm border-2 border-red-400/50 shadow-2xl">
+               <div className="px-4 py-3 rounded-xl bg-gradient-to-r from-green-900/60 to-emerald-800/60 backdrop-blur-sm border-2 border-green-400/50 shadow-2xl">
                  <div className="flex items-center gap-2 mb-2">
-                   <span className="text-2xl">🚀</span>
-                   <span className="font-bold text-red-300 text-sm drop-shadow-lg">Super Hint Attivo</span>
+                   <span className="text-2xl drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 8px rgba(34, 197, 94, 0.8))' }}>🚀</span>
+                   <span className="font-bold text-green-300 text-sm drop-shadow-lg">Super Hint Attivo</span>
                  </div>
-                 <div className="space-y-2">
-                   <div className="p-2 bg-black/20 backdrop-blur-sm rounded-lg border border-white/20">
-                     <span className="font-semibold text-amber-300 text-xs drop-shadow-lg">💡 Hint:</span>
-                     <p className="text-white text-sm mt-1 drop-shadow-lg"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_short}</p>
+                                    <div className="space-y-2">
+                     <div className="p-2 bg-green-800/30 backdrop-blur-sm rounded-lg border border-green-300/30">
+                       <span className="font-semibold text-green-200 text-xs drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.6))' }}>💡 Hint:</span>
+                       <p className="text-white text-sm mt-1 drop-shadow-lg"
+                          style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_short}</p>
+                     </div>
+                     <div className="p-2 bg-green-800/30 backdrop-blur-sm rounded-lg border border-green-300/30">
+                       <span className="font-semibold text-green-200 text-xs drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.6))' }}>🔍 Dettaglio:</span>
+                       <p className="text-white text-sm mt-1 drop-shadow-lg"
+                          style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_more}</p>
+                     </div>
                    </div>
-                   <div className="p-2 bg-black/20 backdrop-blur-sm rounded-lg border border-white/20">
-                     <span className="font-semibold text-red-300 text-xs drop-shadow-lg">🔍 Dettaglio:</span>
-                     <p className="text-white text-sm mt-1 drop-shadow-lg"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_more}</p>
-                   </div>
-                 </div>
                </div>
              </div>
            )}
+           
 
-          {/* Container delle opzioni con grid responsive migliorato */}
-          <div className="mt-4 sm:mt-5 relative">
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+
+                     {/* Container delle opzioni con grid responsive migliorato - compatto */}
+           <div className="mt-2 sm:mt-3 relative min-h-[350px]">
+            {/* FASE 1: Cards dei personaggi OPPURE Animazione Game Over */}
+            {!gameOver && !revealed && !showGameOverAnimation && (
+                         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 scale-80 sm:scale-100">
               {mappedChoices.map((c, idx) => {
-                const isDisabled = disabledOptions.includes(idx) || revealed;
-                const isCorrect = idx === correctness;
-                const isSelectedWrong = selected === idx && !c.isCorrect;
-                const ring = isCorrect ? "ring-2 ring-green-600" : isSelectedWrong ? "ring-2 ring-red-600" : "hover:ring-1 hover:ring-amber-400";
+                const isDisabled = disabledOptions.includes(idx);
+                const isWrongSelection = isDisabled && used2ndChance; // È l'opzione sbagliata selezionata
                 return (
                   <button
                     key={idx}
                     disabled={isDisabled}
                     onClick={() => onAnswer(idx)}
-                    className={`group overflow-hidden rounded-xl border border-white/20 bg-black/20 backdrop-blur-sm text-left disabled:opacity-60 transition ${ring} shadow-lg hover:shadow-2xl aspect-[3/4] flex flex-col hover:border-white/40`}
+                    className={`group overflow-hidden rounded-xl border transition shadow-lg aspect-[3/4] flex flex-col ${
+                      isWrongSelection 
+                        ? 'border-red-500 bg-red-900/40 backdrop-blur-sm text-left opacity-70 cursor-not-allowed' 
+                        : isDisabled 
+                        ? 'border-white/20 bg-black/20 backdrop-blur-sm text-left opacity-60 cursor-not-allowed'
+                        : 'border-white/20 bg-black/20 backdrop-blur-sm text-left hover:ring-1 hover:ring-amber-400 hover:shadow-2xl hover:border-white/40'
+                    }`}
                   >
                     <div className="w-full overflow-hidden relative flex-grow">
                       <img
@@ -400,6 +783,13 @@ export default function ChiLHaDetto({
                         className="h-full w-full object-cover"
                         loading="lazy"
                       />
+                      {/* Overlay per l'opzione sbagliata */}
+                      {isWrongSelection && (
+                        <div className="absolute inset-0 bg-red-600/50 backdrop-blur-sm flex items-center justify-center">
+                          <div className="text-4xl sm:text-5xl">❌</div>
+                        </div>
+                      )}
+                      
                       {/* Overlay per il nome con font size responsive */}
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-1 sm:p-2">
                         <div className="font-bold text-xs sm:text-sm md:text-base text-white drop-shadow-lg leading-tight"
@@ -412,13 +802,169 @@ export default function ChiLHaDetto({
                 );
               })}
             </div>
+            )}
 
-            {/* Overlay della risposta con layout responsive */}
-            {(selected !== null || revealed) && (
-              <div className="absolute inset-0 bg-black/80 backdrop-blur-md rounded-2xl border-2 border-white/30 shadow-2xl z-10 flex items-center justify-center p-3 sm:p-6">
+            {/* FASE 1.5: Animazione Game Over (sostituisce le cards quando si sbaglia) */}
+            {!revealed && showGameOverAnimation && (
+              <div className="w-full h-full bg-gradient-to-br from-red-900/95 via-red-800/90 to-red-600/95 backdrop-blur-xl rounded-3xl border-2 border-red-300/60 shadow-2xl flex items-center justify-center p-4 sm:p-8 relative overflow-hidden">
+                {/* Particelle animate di sfondo rosse */}
+                <div className="absolute inset-0 overflow-hidden">
+                  <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-red-300/60 rounded-full animate-ping" style={{ animationDelay: '0s' }}></div>
+                  <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-red-200/80 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute top-1/2 left-3/4 w-1.5 h-1.5 bg-red-400/50 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-red-300/70 rounded-full animate-ping" style={{ animationDelay: '0.3s' }}></div>
+                </div>
+                
+                {/* Contenuto principale */}
+                <div className="text-center relative z-10">
+                  {/* Emoji principale con animazione */}
+                  <div className="text-7xl mb-6 animate-bounce" style={{ animationDuration: '1s' }}>
+                    💀
+                  </div>
+                  
+                  {/* Testo del game over con effetto glow rosso */}
+                  <div className="text-4xl sm:text-5xl font-black text-white mb-4 drop-shadow-2xl"
+                       style={{ 
+                         textShadow: '0 0 20px rgba(239, 68, 68, 0.8), 0 0 40px rgba(239, 68, 68, 0.4)',
+                         animation: 'pulse 2s infinite'
+                       }}>
+                    GAME OVER!
+                  </div>
+                  
+                  {/* Messaggio di sconfitta */}
+                  <div className="text-xl sm:text-2xl text-red-100 font-semibold mb-6 drop-shadow-lg"
+                       style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
+                    {isTimeoutGameOver 
+                      ? (gameMode === 'millionaire' 
+                          ? `Tempo scaduto alla fatica ${i + 1}`
+                          : `Tempo scaduto alla domanda ${i + 1}`)
+                      : (gameMode === 'millionaire' 
+                          ? `Hai sbagliato alla fatica ${i + 1}`
+                          : `Hai sbagliato alla domanda ${i + 1}`)
+                    }
+                  </div>
+                  
+                  {/* Emoji finale */}
+                  <div className="text-5xl animate-bounce" style={{ animationDuration: '0.8s' }}>
+                    {gameMode === 'millionaire' ? '⚰️' : '⚔️'}
+                  </div>
+                  
+                  {/* Testo di consolazione */}
+                  <div className="mt-6 text-lg text-red-200 font-medium">
+                    {isTimeoutGameOver
+                      ? (gameMode === 'millionaire'
+                          ? 'Il tempo è scaduto! Nella modalità "Le 12 Fatiche" devi essere veloce!'
+                          : 'Il tempo è scaduto! Nella battaglia devi essere più rapido!')
+                      : (gameMode === 'millionaire'
+                          ? 'Nella modalità "Le 12 Fatiche" non ci sono seconde possibilità!'
+                          : 'La battaglia è finita, ma la gloria rimane!')
+                    }
+                  </div>
+                  
+                  {/* Indicatore di caricamento per la risposta corretta */}
+                  <div className="mt-4 flex justify-center">
+                    <div className="text-sm text-red-300">
+                      Mostrando risposta corretta...
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Bordo luminoso animato rosso */}
+                <div className="absolute inset-0 rounded-3xl border-2 border-red-300/40 animate-pulse"></div>
+              </div>
+            )}
+
+            {/* FASE 2: Animazione di scalata (risposta corretta) */}
+            {!gameOver && revealed && selected !== null && mappedChoices[selected]?.isCorrect && showClimbingAnimation && (
+              <div className="w-full h-full bg-gradient-to-br from-purple-900/95 via-purple-800/90 to-purple-600/95 backdrop-blur-xl rounded-3xl border-2 border-purple-300/60 shadow-2xl flex items-center justify-center p-4 sm:p-8 relative overflow-hidden">
+                {/* Particelle animate di sfondo */}
+                <div className="absolute inset-0 overflow-hidden">
+                  <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-purple-300/60 rounded-full animate-ping" style={{ animationDelay: '0s' }}></div>
+                  <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-purple-200/80 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute top-1/2 left-3/4 w-1.5 h-1.5 bg-purple-400/50 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-purple-300/70 rounded-full animate-ping" style={{ animationDelay: '0.3s' }}></div>
+                </div>
+                
+                {/* Contenuto principale */}
+                <div className="text-center relative z-10">
+                  {/* Emoji principale con animazione avanzata */}
+                  <div className="text-7xl mb-6 animate-bounce" style={{ animationDuration: '1s' }}>
+                    {gameMode === 'millionaire' 
+                      ? (currentLevel === 12 ? '👑' : '🏛️')
+                      : '⚔️'
+                    }
+                  </div>
+                  
+                  {/* Testo del livello con effetto glow */}
+                  <div className="text-4xl sm:text-5xl font-black text-white mb-4 drop-shadow-2xl"
+                       style={{ 
+                         textShadow: '0 0 20px rgba(168, 85, 247, 0.8), 0 0 40px rgba(168, 85, 247, 0.4)',
+                         animation: 'pulse 2s infinite'
+                       }}>
+                    {gameMode === 'millionaire'
+                      ? (currentLevel === 12 ? '🏆 VITTORIA FINALE! 🏆' : `Fatica ${currentLevel} Superata!`)
+                      : `🔥 Streak: ${streak} 🔥`
+                    }
+                  </div>
+                  
+                  {/* Messaggio motivazionale */}
+                  <div className="text-xl sm:text-2xl text-purple-100 font-semibold mb-6 drop-shadow-lg"
+                       style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
+                    {gameMode === 'millionaire'
+                      ? (currentLevel === 12 
+                          ? '🎉 Hai completato tutte le Dodici Fatiche! 🎉' 
+                          : 'Continua la scalata verso l\'Olimpo!')
+                      : `Continua la battaglia! Punteggio: ${score}`
+                    }
+                  </div>
+                  
+                  {/* Emoji finale con animazione */}
+                  <div className="text-5xl animate-bounce" style={{ animationDuration: '0.8s' }}>
+                    {gameMode === 'millionaire' 
+                      ? (currentLevel === 12 ? '🏆' : '⬆️')
+                      : '⚔️'
+                    }
+                  </div>
+                  
+                  {/* Barra di progresso animata - solo per Verso l'Olimpo */}
+                  {gameMode === 'millionaire' && (
+                    <>
+                      <div className="mt-6 w-48 h-2 bg-purple-800/50 rounded-full overflow-hidden mx-auto">
+                        <div className="h-full bg-gradient-to-r from-purple-400 to-purple-600 rounded-full animate-pulse"
+                             style={{ width: `${(currentLevel / 12) * 100}%` }}></div>
+                      </div>
+                      
+                      {/* Testo progresso */}
+                      <div className="mt-2 text-sm text-purple-200 font-medium">
+                        {currentLevel}/12 livelli completati
+                      </div>
+                    </>
+                  )}
+                  
+
+                </div>
+                
+                {/* Bordo luminoso animato */}
+                <div className="absolute inset-0 rounded-3xl border-2 border-purple-300/40 animate-pulse"></div>
+              </div>
+            )}
+
+
+
+
+
+
+
+            {/* FASE 4: Overlay della risposta con spiegazioni e bottoni (dopo l'animazione) */}
+            {revealed && (selected !== null || isTimeoutGameOver || (gameMode === 'millionaire' && gameOver)) && !showClimbingAnimation && !showGameOverAnimation && (
+              <div className="w-full h-full bg-black/80 backdrop-blur-md rounded-2xl border-2 border-white/30 shadow-2xl flex items-center justify-center p-3 sm:p-6">
                 <div className="text-center max-w-xs sm:max-w-2xl w-full">
                   <div className="mb-4 sm:mb-6">
-                    {selected !== null && mappedChoices[selected]?.isCorrect ? (
+                    {isTimeoutGameOver ? (
+                      <div className="text-2xl sm:text-3xl font-bold text-red-400 mb-2 drop-shadow-lg">⏰ Tempo Scaduto!</div>
+                    ) : (gameMode === 'millionaire' && gameOver) ? (
+                      <div className="text-2xl sm:text-3xl font-bold text-red-400 mb-2 drop-shadow-lg">⏰ Tempo Scaduto!</div>
+                    ) : (selected !== null && mappedChoices[selected]?.isCorrect) ? (
                       <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-2 drop-shadow-lg">✅ Corretto!</div>
                     ) : (
                       <div className="text-2xl sm:text-3xl font-bold text-red-400 mb-2 drop-shadow-lg">❌ Errato.</div>
@@ -448,6 +994,42 @@ export default function ChiLHaDetto({
                     </div>
                   )}
 
+                                    {/* Statistiche finali per Battaglia di Achille quando si sbaglia o scade il tempo, e per Verso l'Olimpo quando si sbaglia o scade il tempo */}
+                  {(gameMode !== 'millionaire' && (isTimeoutGameOver || (selected !== null && !mappedChoices[selected]?.isCorrect))) || 
+                   (gameMode === 'millionaire' && (gameOver || (selected !== null && !mappedChoices[selected]?.isCorrect))) ? (
+                      <div className="mb-4 sm:mb-6 text-center">
+                        <div className="text-xl sm:text-2xl font-bold text-red-400 mb-3 drop-shadow-lg">
+                          {gameMode === 'millionaire' ? '💀 GAME OVER!' : '💀 BATTAGLIA FINITA!'}
+                        </div>
+                        <div className="grid grid-cols-2 gap-4 mb-4">
+                          <div className="bg-gradient-to-r from-orange-900/60 to-red-800/60 backdrop-blur-sm rounded-lg border-2 border-orange-400/50 p-3">
+                            <div className="text-2xl mb-1">
+                              {gameMode === 'millionaire' ? '🏛️' : '🔥'}
+                            </div>
+                            <div className="text-sm text-orange-200 font-medium">
+                              {gameMode === 'millionaire' ? 'Fatica Raggiunta' : 'Streak Finale'}
+                            </div>
+                            <div className="text-xl font-bold text-orange-300">
+                              {gameMode === 'millionaire' ? (i + 1) : streak}
+                            </div>
+                          </div>
+                          <div className="bg-gradient-to-r from-blue-900/60 to-indigo-800/60 backdrop-blur-sm rounded-lg border-2 border-blue-400/50 p-3">
+                            <div className="text-2xl mb-1">💎</div>
+                            <div className="text-sm text-blue-200 font-medium">Punteggio Finale</div>
+                            <div className="text-xl font-bold text-blue-300">{score}</div>
+                          </div>
+                        </div>
+                        <div className="text-lg text-red-200 font-medium mb-3">
+                          {gameMode === 'millionaire' 
+                            ? (gameOver 
+                                ? 'Il tempo è scaduto! Nella modalità "Le 12 Fatiche" devi essere veloce!'
+                                : 'Hai sbagliato! Nella modalità "Le 12 Fatiche" non ci sono seconde possibilità!')
+                            : 'La battaglia è finita, ma la gloria rimane!'
+                          }
+                        </div>
+                      </div>
+                  ) : null}
+
                   {/* Bottoni di azione con layout responsive */}
                   <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center items-center">
                     <a
@@ -459,13 +1041,97 @@ export default function ChiLHaDetto({
                     >
                       📚 Fonte: {current.source_title}
                     </a>
-                    <button 
-                      onClick={next} 
-                      className="px-4 sm:px-6 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold hover:from-amber-600 hover:to-orange-600 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto drop-shadow-lg"
-                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
-                    >
-                      {i < QUESTIONS_PER_GAME - 1 ? "Prossima Domanda" : "Nuovo Round"}
-                    </button>
+                    
+                                        {/* Bottoni diversi per modalità Verso l'Olimpo se si è sbagliato O se si è vinto, e per Battaglia di Achille se si è sbagliato O se è scaduto il tempo */}
+                    {(gameMode === 'millionaire' && (gameOver || (selected !== null && (!mappedChoices[selected]?.isCorrect || (mappedChoices[selected]?.isCorrect && i === QUESTIONS_PER_GAME - 1))))) || 
+                     (gameMode !== 'millionaire' && (isTimeoutGameOver || (selected !== null && !mappedChoices[selected]?.isCorrect))) ? (
+                      <>
+                        <button 
+                          onClick={onBackToMenu} 
+                          className="px-4 sm:px-6 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold hover:from-red-600 hover:to-red-700 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto drop-shadow-lg"
+                          style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
+                        >
+                          🏠 Torna al Menu
+                        </button>
+                        <button 
+                          onClick={() => {
+                            // Reset completo dello stato
+                            setI(0);
+                            setScore(0);
+                            setStreak(0);
+                            setUsed5050(false);
+                            setUsedHint(false);
+                            setUsedSuperHint(false);
+                                                        setUsed2ndChance(false);
+                            setIs2ndChanceActive(false);
+                            setHintRevealed(false);
+                            setSuperHintRevealed(false);
+                            setDisabledOptions([]);
+                            setRevealed(false);
+                            setSelected(null);
+                            setTimeLeft(gameMode === 'millionaire' ? 60 : 45);
+                            setShowClimbingAnimation(false);
+                            setCurrentLevel(0);
+                            setCompletedLevels(0);
+                            setShowGameOverAnimation(false);
+                            setGameOver(false);
+                            setIsTimeoutGameOver(false);
+                            
+                            // Rimescola le domande per la nuova partita
+                            const filteredItems = includeSensitive 
+                              ? ITEMS 
+                              : ITEMS.filter(item => !item.sensitive);
+                            
+                            if (gameMode === 'millionaire') {
+                              // Modalità Verso l'Olimpo: seleziona nuove domande per difficoltà progressiva
+                              const selectedQuestions: number[] = [];
+                              
+                              for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
+                                const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
+                                const availableQuestions = filteredItems.filter(item => 
+                                  item.difficulty >= difficultyRange.min && item.difficulty <= difficultyRange.max
+                                );
+                                
+                                if (availableQuestions.length > 0) {
+                                  const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+                                  const originalIndex = ITEMS.findIndex(item => item.id === randomQuestion.id);
+                                  selectedQuestions.push(originalIndex);
+                                } else {
+                                  // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
+                                  const randomIndex = Math.floor(Math.random() * filteredItems.length);
+                                  const fallbackQuestion = filteredItems[randomIndex];
+                                  const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
+                                  selectedQuestions.push(originalIndex);
+                                }
+                              }
+                              
+                              setOrder(selectedQuestions);
+                            } else {
+                              // Modalità classica: estrai casualmente 10 nuove domande
+                              const shuffledIndices = shuffle(filteredItems.map((_, k) => {
+                                return ITEMS.findIndex(originalItem => originalItem.id === filteredItems[k].id);
+                              }));
+                              setOrder(shuffledIndices.slice(0, QUESTIONS_PER_GAME));
+                            }
+                          }} 
+                          className="px-4 sm:px-6 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold hover:from-purple-600 hover:to-purple-700 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto drop-shadow-lg"
+                          style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
+                        >
+                          🔄 Nuova Partita
+                        </button>
+                      </>
+                    ) : (
+                      <button 
+                        onClick={next} 
+                        className="px-4 sm:px-6 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold hover:from-amber-600 hover:to-orange-600 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto drop-shadow-lg"
+                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
+                      >
+                        {gameMode === 'millionaire' 
+                          ? (i < QUESTIONS_PER_GAME - 1 ? "Prossima Domanda" : "Nuovo Round")
+                          : (isTimeoutGameOver ? "Nuova Partita" : "Prossima Domanda")
+                        }
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -473,17 +1139,20 @@ export default function ChiLHaDetto({
           </div>
         </div>
 
-        {/* Footer con testo responsive */}
-        <div className="mt-4 sm:mt-6 text-xs text-center sm:text-left">
-          <div className="bg-black/20 backdrop-blur-sm rounded-xl p-3 border border-white/10">
-            <p className="px-2 sm:px-0 text-white drop-shadow-lg"
-               style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-              🎓 <strong>Contenuti a scopo educativo:</strong> Le citazioni storiche, anche quelle controverse, sono presentate nel loro contesto per favorire la comprensione critica della storia.
-            </p>
-          </div>
-        </div>
+                 {/* Footer con testo responsive - compatto */}
+         <div className="mt-2 sm:mt-3 text-xs text-center sm:text-left">
+           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-2 border border-white/10">
+             <p className="px-2 sm:px-0 text-white drop-shadow-lg"
+                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+               🎓 <strong>Contenuti a scopo educativo:</strong> Le citazioni storiche sono presentate nel loro contesto per favorire la comprensione critica della storia.
+             </p>
+           </div>
+         </div>
         </div>
       </div>
+      
+      
+      
       </HeroImagePreloader>
    );
  }
