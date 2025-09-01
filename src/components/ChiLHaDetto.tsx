@@ -58,12 +58,9 @@ export default function ChiLHaDetto() {
     setTimeLeft(45);
     setRevealed(false);
     setSelected(null);
-    setUsed5050(false);
     setDisabledOptions([]);
     setHintRevealed(false);
     setSuperHintRevealed(false);
-    setUsedHint(false);
-    setUsedSuperHint(false);
   }, [current?.id]);
 
   const mappedChoices = useMemo(() => {

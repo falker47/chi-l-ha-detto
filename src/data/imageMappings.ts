@@ -179,5 +179,7 @@ export const personaggiImageMap: Record<string, string> = {
   "Michelangelo Buonarroti": "images/personaggi/michelangelo-buonarroti.jpg",
   "Publio Flavio Vegetio Renato": "images/personaggi/flavio-vegetio-renato.jpg",
   "Madre Teresa di Calcutta": "images/personaggi/madre-teresa-di-calcutta.jpg",
-  "James Baldwin": "images/personaggi/james-baldwin.jpg"
+  "James Baldwin": "images/personaggi/james-baldwin.jpg",
+  "Dante Alighieri": "images/personaggi/dante-alighieri.jpg",
+  "Ludovico Ariosto": "images/personaggi/ludovico-ariosto.jpg"
 };
