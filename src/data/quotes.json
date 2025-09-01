@@ -2979,5 +2979,55 @@
     "language_orig": "EN",
     "sensitive": false,
     "context": "Il discorso segna simbolicamente l’inizio della Guerra fredda, descrivendo la separazione tra blocco sovietico e Occidente."
+  },
+  {
+    "id": "q108",
+    "quote": "Tu quoque, Brute, fili mi! (\"Anche tu, Bruto, figlio mio!\").",
+    "author": "Gaio Giulio Cesare",
+    "choices": [
+      "Gaio Giulio Cesare",
+      "Kanye West",
+      "Marco Tullio Cicerone",
+      "Pitagora"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "44 a.C. (attribuzione; tradizione latina successiva)",
+    "source_title": "Tradizione riportata da fonti tarde; Suetonio riferisce la versione in greco",
+    "source_link": "https://it.wikipedia.org/wiki/Tu_quoque,_Brute,_fili_mi",
+    "tags": ["Roma antica", "assassinio di Cesare", "frasi celebri"],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Le Idi di marzo.",
+    "hint_more": "Parole attribuite a un condottiero romano al momento del suo assassinio; la versione inglese \"Et tu, Brute?\" è resa celebre da Shakespeare.",
+    "ambiguity_note": "La forma famosa in inglese è di Shakespeare (\"Et tu, Brute?\"); la frase latina \"Tu quoque, Brute, fili mi\" è una tradizione successiva e spesso confuse tra loro.",
+    "language_orig": "LA",
+    "sensitive": false,
+    "context": "Secondo Suetonio, Cesare avrebbe pronunciato in greco «καὶ σύ, τέκνον;»; la versione latina circola in epoche successive. La battuta è divenuta simbolo del tradimento di Bruto."
+  },
+  {
+    "id": "q109",
+    "quote": "Crisi è quel momento in cui il vecchio muore ed il nuovo stenta a nascere.",
+    "author": "Antonio Gramsci",
+    "choices": [
+      "Antonio Gramsci",
+      "Winston Churchill",
+      "Leonardo da Vinci",
+      "Hannah Arendt"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1929–1935",
+    "source_title": "Quaderni del carcere (formulazione parafrasata)",
+    "source_link": "https://it.wikipedia.org/wiki/Antonio_Gramsci#Quaderni_del_carcere",
+    "tags": ["politica", "teoria", "cultura", "crisi"],
+    "difficulty": 5,
+    "spiciness": 0,
+    "hint_short": "Parola-chiave: “interregno”.",
+    "hint_more": "Segretario generale del Partito Comunista d'Italia.",
+    "ambiguity_note": "Spesso circola in versioni parafrasate e viene attribuita genericamente a “un filosofo del Novecento”, facendo pensare a Croce o Arendt.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Nei Quaderni del carcere, Gramsci descrive la ‘crisi’ come un interregno in cui si accumulano ‘fenomeni morbosi’ perché l’ordine vecchio è in disfacimento e quello nuovo non è ancora nato."
   }
+  
+  
 ]

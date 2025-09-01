@@ -181,5 +181,9 @@ export const personaggiImageMap: Record<string, string> = {
   "Madre Teresa di Calcutta": "images/personaggi/madre-teresa-di-calcutta.jpg",
   "James Baldwin": "images/personaggi/james-baldwin.jpg",
   "Dante Alighieri": "images/personaggi/dante-alighieri.jpg",
-  "Ludovico Ariosto": "images/personaggi/ludovico-ariosto.jpg"
+  "Ludovico Ariosto": "images/personaggi/ludovico-ariosto.jpg",
+  "Confucio": "images/personaggi/confucio.png",
+  "Laozi": "images/personaggi/laozi.jpg",
+  "Bruce Lee": "images/personaggi/bruce-lee.jpg",
+  "Antonio Gramsci": "images/personaggi/antonio-gramsci.jpg"
 };
