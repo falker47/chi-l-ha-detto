@@ -15,7 +15,13 @@ function shuffle<T>(arr: T[]) {
   return a;
 }
 
-export default function ChiLHaDetto() {
+export default function ChiLHaDetto({ 
+  includeSensitive, 
+  onBackToMenu 
+}: { 
+  includeSensitive: boolean; 
+  onBackToMenu: () => void; 
+}) {
   const [historicalMode, setHistoricalMode] = useState(true);
   const [order, setOrder] = useState<number[]>([]);
   const [i, setI] = useState(0);
@@ -41,10 +47,18 @@ export default function ChiLHaDetto() {
   // - Possibilità di ritirarsi con il punteggio accumulato
 
   useEffect(() => {
-    // Estrai casualmente solo 10 domande per ogni partita
-    const shuffledIndices = shuffle(ITEMS.map((_, k) => k));
+    // Filtra le domande in base alla preferenza per contenuti sensibili
+    const filteredItems = includeSensitive 
+      ? ITEMS 
+      : ITEMS.filter(item => !item.sensitive);
+    
+    // Estrai casualmente solo 10 domande per ogni partita dal pool filtrato
+    const shuffledIndices = shuffle(filteredItems.map((_, k) => {
+      // Trova l'indice originale dell'item filtrato
+      return ITEMS.findIndex(originalItem => originalItem.id === filteredItems[k].id);
+    }));
     setOrder(shuffledIndices.slice(0, QUESTIONS_PER_GAME));
-  }, []);
+  }, [includeSensitive]);
 
   const current: Item | null = useMemo(
     () => (order.length ? ITEMS[order[i]] : null),
@@ -118,8 +132,15 @@ export default function ChiLHaDetto() {
     if (i < QUESTIONS_PER_GAME - 1) {
       setI((v) => v + 1);
     } else {
-      // Fine partita: estrai nuove 10 domande casuali
-      const shuffledIndices = shuffle(ITEMS.map((_, k) => k));
+      // Fine partita: estrai nuove 10 domande casuali filtrando per contenuti sensibili
+      const filteredItems = includeSensitive 
+        ? ITEMS 
+        : ITEMS.filter(item => !item.sensitive);
+      
+      const shuffledIndices = shuffle(filteredItems.map((_, k) => {
+        // Trova l'indice originale dell'item filtrato
+        return ITEMS.findIndex(originalItem => originalItem.id === filteredItems[k].id);
+      }));
       setOrder(shuffledIndices.slice(0, QUESTIONS_PER_GAME));
       setI(0);
       setScore(0);
