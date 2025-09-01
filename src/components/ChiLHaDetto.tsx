@@ -193,50 +193,103 @@ export default function ChiLHaDetto({
 
   return (
     <HeroImagePreloader>
-      <div className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100 text-amber-900 optimize-mobile">
-      <div className="max-w-7xl mx-auto p-2 sm:p-4 md:p-6 lg:p-8">
+      <div className="relative min-h-screen optimize-mobile">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="images/hero-bg.png" 
+            alt="Personaggi e avvenimenti storici" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* Overlay scuro per migliorare la leggibilità */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+        
+        {/* Content Layer */}
+        <div className="relative z-10 max-w-7xl mx-auto p-2 sm:p-4 md:p-6 lg:p-8">
         {/* Header con layout responsive migliorato */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 sm:mb-6 bg-gradient-to-r from-amber-800 via-orange-800 to-amber-900 p-3 sm:p-4 rounded-xl shadow-lg border border-amber-700">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-amber-50 text-shadow-2xl mb-3 sm:mb-0 text-center sm:text-left">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 sm:mb-6 bg-black/40 backdrop-blur-md p-3 sm:p-4 rounded-xl shadow-2xl border border-white/20">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-3 sm:mb-0 text-center sm:text-left"
+              style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
             Chi l'ha detto? — 10 Domande
           </h1>
           <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3 text-xs sm:text-sm">
-            <span className="pill bg-amber-200 text-amber-800 border border-amber-300 px-2 py-1 rounded-lg">
+            <span
+                  style={{ 
+                    backgroundColor: '#b45309',
+                    color: 'white',
+                    border: '2px solid #d97706',
+                    padding: '8px 12px',
+                    borderRadius: '8px',
+                    fontWeight: '600',
+                    fontSize: '12px',
+                    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                    display: 'inline-block'
+                  }}>
               Punteggio: {score}
             </span>
-            <span className="pill bg-orange-200 text-orange-800 border border-orange-300 px-2 py-1 rounded-lg">
+            <span
+                  style={{ 
+                    backgroundColor: '#c2410c',
+                    color: 'white',
+                    border: '2px solid #ea580c',
+                    padding: '8px 12px',
+                    borderRadius: '8px',
+                    fontWeight: '600',
+                    fontSize: '12px',
+                    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                    display: 'inline-block'
+                  }}>
               Streak: {streak}
             </span>
-            <span className="pill bg-yellow-200 text-yellow-800 border border-yellow-300 px-2 py-1 rounded-lg">
+            <span
+                  style={{ 
+                    backgroundColor: '#b91c1c',
+                    color: 'white',
+                    border: '2px solid #dc2626',
+                    padding: '8px 12px',
+                    borderRadius: '8px',
+                    fontWeight: '600',
+                    fontSize: '12px',
+                    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                    display: 'inline-block'
+                  }}>
               Tempo: {timeLeft}s
             </span>
           </div>
         </div>
 
         {historicalMode && isSensitive && (
-          <div className="mt-3 sm:mt-4 p-2 sm:p-3 rounded-xl bg-amber-50 border border-amber-300 text-xs sm:text-sm text-amber-800">
-            <strong>Avviso contenuti storici sensibili.</strong> Questo elemento è mostrato per
-            scopi storici e didattici. Alcune citazioni/slogan sono legati a regimi autoritari e a crimini.
+          <div className="mt-3 sm:mt-4 p-2 sm:p-3 rounded-xl bg-black/30 backdrop-blur-sm border border-white/20 text-xs sm:text-sm text-white shadow-lg">
+            <strong className="drop-shadow-lg">Avviso contenuti storici sensibili.</strong> 
+            <span className="drop-shadow-lg"> Questo elemento è mostrato per scopi storici e didattici. Alcune citazioni/slogan sono legati a regimi autoritari e a crimini.</span>
           </div>
         )}
 
         {/* Barra di progresso e timer responsive */}
-        <div className="mt-3 sm:mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0">
-          <div className="text-xs sm:text-sm text-amber-700 font-medium text-center sm:text-left">
+        <div className="mt-3 sm:mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 bg-black/20 backdrop-blur-sm p-3 rounded-xl border border-white/10">
+          <div className="text-xs sm:text-sm text-white font-semibold text-center sm:text-left drop-shadow-lg"
+               style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
             Domanda {i + 1} / {QUESTIONS_PER_GAME}
           </div>
           <div className="flex items-center justify-center sm:justify-end gap-2">
-            <div className="w-32 sm:w-40 h-2 bg-amber-200 rounded-full overflow-hidden border border-amber-300">
-              <div className="h-full bg-gradient-to-r from-amber-600 to-orange-600" style={{ width: `${(timeLeft / 45) * 100}%` }} />
+            <div className="w-32 sm:w-40 h-3 bg-black/40 rounded-full overflow-hidden border border-white/20 shadow-inner">
+              <div className="h-full bg-gradient-to-r from-amber-500 to-orange-500 shadow-lg" style={{ width: `${(timeLeft / 45) * 100}%` }} />
             </div>
-            <span className="text-xs sm:text-sm tabular-nums text-amber-700 font-medium">{timeLeft}s</span>
+            <span className="text-xs sm:text-sm tabular-nums text-white font-semibold drop-shadow-lg"
+                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{timeLeft}s</span>
           </div>
         </div>
 
         {/* Container principale della domanda */}
-        <div className="mt-3 sm:mt-4 p-3 sm:p-4 md:p-5 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl shadow-lg border border-amber-200">
+        <div className="mt-3 sm:mt-4 p-3 sm:p-4 md:p-5 bg-black/30 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20">
           {/* Citazione con font size responsive */}
-          <blockquote className="text-base sm:text-lg md:text-xl leading-relaxed font-serif text-amber-900 italic text-center sm:text-left">
+          <blockquote className="text-base sm:text-lg md:text-xl leading-relaxed font-serif text-white italic text-center sm:text-left drop-shadow-lg"
+                      style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
             "{current.quote}"
           </blockquote>
 
@@ -255,9 +308,6 @@ export default function ChiLHaDetto({
                  <span className="text-lg">🎯</span>
                  <span>50/50</span>
                </span>
-               {used5050 && (
-                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-               )}
              </button>
              
              <button
@@ -273,9 +323,6 @@ export default function ChiLHaDetto({
                  <span className="text-lg">💡</span>
                  <span>Hint</span>
                </span>
-               {usedHint && (
-                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-               )}
              </button>
              
              <button
@@ -291,40 +338,40 @@ export default function ChiLHaDetto({
                  <span className="text-lg">🚀</span>
                  <span>Super Hint</span>
                </span>
-               {usedSuperHint && (
-                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-               )}
              </button>
            </div>
 
            {/* Visualizzazione degli hint con animazioni e stili migliorati */}
            {hintRevealed && (
              <div className="mt-3 animate-fadeIn">
-               <div className="px-4 py-3 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 shadow-lg">
+               <div className="px-4 py-3 rounded-xl bg-black/40 backdrop-blur-sm border-2 border-amber-400/50 shadow-2xl">
                  <div className="flex items-center gap-2 mb-2">
                    <span className="text-2xl">💡</span>
-                   <span className="font-bold text-amber-800 text-sm">Hint Attivo</span>
+                   <span className="font-bold text-amber-300 text-sm drop-shadow-lg">Hint Attivo</span>
                  </div>
-                 <p className="text-amber-900 text-sm leading-relaxed">{current.hint_short}</p>
+                 <p className="text-white text-sm leading-relaxed drop-shadow-lg"
+                    style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_short}</p>
                </div>
              </div>
            )}
            
            {superHintRevealed && (
              <div className="mt-3 animate-fadeIn">
-               <div className="px-4 py-3 rounded-xl bg-gradient-to-r from-red-50 to-pink-50 border-2 border-red-300 shadow-lg">
+               <div className="px-4 py-3 rounded-xl bg-black/40 backdrop-blur-sm border-2 border-red-400/50 shadow-2xl">
                  <div className="flex items-center gap-2 mb-2">
                    <span className="text-2xl">🚀</span>
-                   <span className="font-bold text-red-800 text-sm">Super Hint Attivo</span>
+                   <span className="font-bold text-red-300 text-sm drop-shadow-lg">Super Hint Attivo</span>
                  </div>
                  <div className="space-y-2">
-                   <div className="p-2 bg-white/50 rounded-lg border border-red-200">
-                     <span className="font-semibold text-red-700 text-xs">💡 Hint:</span>
-                     <p className="text-red-800 text-sm mt-1">{current.hint_short}</p>
+                   <div className="p-2 bg-black/20 backdrop-blur-sm rounded-lg border border-white/20">
+                     <span className="font-semibold text-amber-300 text-xs drop-shadow-lg">💡 Hint:</span>
+                     <p className="text-white text-sm mt-1 drop-shadow-lg"
+                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_short}</p>
                    </div>
-                   <div className="p-2 bg-white/50 rounded-lg border border-red-200">
-                     <span className="font-semibold text-red-700 text-xs">🔍 Dettaglio:</span>
-                     <p className="text-red-800 text-sm mt-1">{current.hint_more}</p>
+                   <div className="p-2 bg-black/20 backdrop-blur-sm rounded-lg border border-white/20">
+                     <span className="font-semibold text-red-300 text-xs drop-shadow-lg">🔍 Dettaglio:</span>
+                     <p className="text-white text-sm mt-1 drop-shadow-lg"
+                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_more}</p>
                    </div>
                  </div>
                </div>
@@ -344,9 +391,9 @@ export default function ChiLHaDetto({
                     key={idx}
                     disabled={isDisabled}
                     onClick={() => onAnswer(idx)}
-                    className={`group overflow-hidden rounded-xl border border-amber-200 bg-amber-50 text-left disabled:opacity-60 transition ${ring} shadow-sm hover:shadow aspect-[3/4] flex flex-col hover:border-amber-300`}
+                    className={`group overflow-hidden rounded-xl border border-white/20 bg-black/20 backdrop-blur-sm text-left disabled:opacity-60 transition ${ring} shadow-lg hover:shadow-2xl aspect-[3/4] flex flex-col hover:border-white/40`}
                   >
-                    <div className="w-full bg-amber-100 overflow-hidden relative flex-grow">
+                    <div className="w-full overflow-hidden relative flex-grow">
                       <img
                         src={getPortrait(c.label)}
                         alt={c.label}
@@ -354,8 +401,9 @@ export default function ChiLHaDetto({
                         loading="lazy"
                       />
                       {/* Overlay per il nome con font size responsive */}
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-1 sm:p-2">
-                        <div className="font-bold text-xs sm:text-sm md:text-base text-white drop-shadow-lg leading-tight">
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-1 sm:p-2">
+                        <div className="font-bold text-xs sm:text-sm md:text-base text-white drop-shadow-lg leading-tight"
+                             style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
                           {c.label}
                         </div>
                       </div>
@@ -367,29 +415,34 @@ export default function ChiLHaDetto({
 
             {/* Overlay della risposta con layout responsive */}
             {(selected !== null || revealed) && (
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-50/95 via-orange-50/95 to-amber-100/95 backdrop-blur-sm rounded-2xl border-2 border-amber-300 shadow-2xl z-10 flex items-center justify-center p-3 sm:p-6">
+              <div className="absolute inset-0 bg-black/80 backdrop-blur-md rounded-2xl border-2 border-white/30 shadow-2xl z-10 flex items-center justify-center p-3 sm:p-6">
                 <div className="text-center max-w-xs sm:max-w-2xl w-full">
                   <div className="mb-4 sm:mb-6">
                     {selected !== null && mappedChoices[selected]?.isCorrect ? (
-                      <div className="text-2xl sm:text-3xl font-bold text-green-700 mb-2">✅ Corretto!</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-2 drop-shadow-lg">✅ Corretto!</div>
                     ) : (
-                      <div className="text-2xl sm:text-3xl font-bold text-red-700 mb-2">❌ Errato.</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-red-400 mb-2 drop-shadow-lg">❌ Errato.</div>
                     )}
-                    <div className="text-base sm:text-lg text-amber-800">
-                      Autore: <span className="font-bold text-amber-900">{current.author}</span>
+                    <div className="text-base sm:text-lg text-white drop-shadow-lg"
+                         style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+                      Autore: <span className="font-bold text-amber-300">{current.author}</span>
                     </div>
                   </div>
 
                   {historicalMode && (
                     <div className="mb-4 sm:mb-6 text-left space-y-2 sm:space-y-3">
-                      <div className="p-2 sm:p-3 bg-amber-100 rounded-lg border-l-4 border-amber-500 border border-amber-300">
+                      <div className="p-2 sm:p-3 bg-black/40 backdrop-blur-sm rounded-lg border-l-4 border-amber-500 border border-white/20">
                         <p className="text-xs sm:text-sm leading-relaxed">
-                          <span className="font-semibold text-amber-900">Contesto:</span> <span className="text-amber-800">{current.context}</span>
+                          <span className="font-semibold text-amber-300 drop-shadow-lg">Contesto:</span> 
+                          <span className="text-white drop-shadow-lg ml-1"
+                                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.context}</span>
                         </p>
                       </div>
-                      <div className="p-2 sm:p-3 bg-orange-100 rounded-lg border-l-4 border-orange-500 border border-orange-300">
+                      <div className="p-2 sm:p-3 bg-black/40 backdrop-blur-sm rounded-lg border-l-4 border-orange-500 border border-white/20">
                         <p className="text-xs sm:text-sm leading-relaxed">
-                          <span className="font-semibold text-orange-900">Perché trae in inganno:</span> <span className="text-orange-800">{current.ambiguity_note}</span>
+                          <span className="font-semibold text-orange-300 drop-shadow-lg">Perché trae in inganno:</span> 
+                          <span className="text-white drop-shadow-lg ml-1"
+                                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.ambiguity_note}</span>
                         </p>
                       </div>
                     </div>
@@ -401,13 +454,15 @@ export default function ChiLHaDetto({
                       href={current.source_link}
                       target="_blank"
                       rel="noreferrer"
-                      className="px-3 sm:px-4 py-2 rounded-lg border border-amber-400 bg-amber-50 hover:bg-amber-100 text-xs sm:text-sm font-medium transition-colors text-amber-800 text-center w-full sm:w-auto"
+                      className="px-3 sm:px-4 py-2 rounded-lg border border-white/30 bg-black/30 backdrop-blur-sm hover:bg-black/50 text-xs sm:text-sm font-medium transition-colors text-white text-center w-full sm:w-auto drop-shadow-lg"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
                     >
                       📚 Fonte: {current.source_title}
                     </a>
                     <button 
                       onClick={next} 
-                      className="px-4 sm:px-6 py-2 rounded-lg bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold hover:from-amber-700 hover:to-orange-700 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto"
+                      className="px-4 sm:px-6 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold hover:from-amber-600 hover:to-orange-600 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto drop-shadow-lg"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
                     >
                       {i < QUESTIONS_PER_GAME - 1 ? "Prossima Domanda" : "Nuovo Round"}
                     </button>
@@ -419,14 +474,16 @@ export default function ChiLHaDetto({
         </div>
 
         {/* Footer con testo responsive */}
-        <div className="mt-4 sm:mt-6 text-xs text-amber-600 text-center sm:text-left">
-          <p className="px-2 sm:px-0">
-            Modalità Historical/Context attiva: le citazioni controverse sono presentate con finalità
-            educative e contestualizzate. Evitiamo slogan d'odio non contestualizzati e incitazioni.
-          </p>
-                 </div>
-       </div>
-     </div>
+        <div className="mt-4 sm:mt-6 text-xs text-center sm:text-left">
+          <div className="bg-black/20 backdrop-blur-sm rounded-xl p-3 border border-white/10">
+            <p className="px-2 sm:px-0 text-white drop-shadow-lg"
+               style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+              🎓 <strong>Contenuti a scopo educativo:</strong> Le citazioni storiche, anche quelle controverse, sono presentate nel loro contesto per favorire la comprensione critica della storia.
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
       </HeroImagePreloader>
    );
  }

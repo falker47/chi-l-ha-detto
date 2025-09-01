@@ -152,7 +152,6 @@ export const personaggiImageMap: Record<string, string> = {
   "Pitagora": "images/personaggi/pitagora.jpg",
   "Papa Giovanni Paolo II": "images/personaggi/giovanni-paolo-ii.jpg",
   "Leonardo da Vinci": "images/personaggi/leonardo-davinci.jpeg",
-  "Michelangelo": "images/personaggi/michelangelo.jpg",
   "Steve Jobs": "images/personaggi/steve-jobs.jpeg",
   "Eraclito": "images/personaggi/eraclito.jpeg",
   "Jim Lovell": "images/personaggi/jim-lovell.jpg",

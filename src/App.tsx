@@ -57,27 +57,29 @@ function MainMenu({
           
           {/* Toggle per contenuti sensibili */}
           <div className="mb-8 flex items-center justify-center gap-4">
-            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-3 bg-black/40 backdrop-blur-md rounded-2xl px-4 sm:px-6 py-4 border border-white/20 shadow-2xl">
+            <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3 bg-black/40 backdrop-blur-md rounded-2xl px-4 sm:px-6 py-4 border border-white/20 shadow-2xl">
               <span className="text-white font-semibold text-base sm:text-lg drop-shadow-lg text-center sm:text-left"
                     style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
                 Includi contenuti storici sensibili
               </span>
-              <button
-                onClick={() => setIncludeSensitive(!includeSensitive)}
-                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-black/20 shadow-lg ${
-                  includeSensitive ? 'bg-amber-500' : 'bg-gray-600'
-                }`}
-              >
-                <span
-                  className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform shadow-sm ${
-                    includeSensitive ? 'translate-x-6' : 'translate-x-1'
+              <div className="flex items-center space-x-2">
+                <button
+                  onClick={() => setIncludeSensitive(!includeSensitive)}
+                  className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-black/20 shadow-lg ${
+                    includeSensitive ? 'bg-amber-500' : 'bg-gray-600'
                   }`}
-                />
-              </button>
-              <span className="text-sm text-white font-medium drop-shadow-lg"
-                    style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                {includeSensitive ? '✓ Attivo' : '✗ Disattivo'}
-              </span>
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform shadow-sm ${
+                      includeSensitive ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+                <span className="text-sm text-white font-medium drop-shadow-lg whitespace-nowrap"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+                  {includeSensitive ? '✓ Attivo' : '✗ Disattivo'}
+                </span>
+              </div>
             </div>
           </div>
           
