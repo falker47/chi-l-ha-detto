@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, useCallback } from "react";
 import type { Item } from "../types";
 import itemsRaw from "../data/quotes.json";
 import { personaggiImageMap } from "../data/imageMappings";
@@ -36,6 +36,8 @@ export default function ChiLHaDetto({
   const [selected, setSelected] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
+  const [finalStreak, setFinalStreak] = useState(0);
+  const [usedQuestions, setUsedQuestions] = useState<Set<number>>(new Set());
   const [used5050, setUsed5050] = useState(false);
   const [disabledOptions, setDisabledOptions] = useState<number[]>([]);
   const [usedHint, setUsedHint] = useState(false);
@@ -101,42 +103,16 @@ export default function ChiLHaDetto({
       
       setOrder(selectedQuestions);
     } else {
-      // Modalità Battaglia di Achille: selezione con difficoltà progressiva non equiprobabile
-      const selectedQuestions: number[] = [];
-      const totalQuestions = filteredItems.length;
-      
-      // Più si va avanti, più le domande tendono ad essere difficili
-      for (let i = 0; i < totalQuestions; i++) {
-        // Calcola la difficoltà target basata sulla progressione
-        const progressRatio = i / totalQuestions; // 0.0 a 1.0
-        const targetDifficulty = Math.min(7, Math.max(1, Math.floor(1 + progressRatio * 6))); // 1-7
-        
-        // Trova domande con difficoltà vicina alla target
-        const availableQuestions = filteredItems.filter(item => 
-          Math.abs(item.difficulty - targetDifficulty) <= 1 // ±1 dalla difficoltà target
-        );
-        
-        if (availableQuestions.length > 0) {
-          // Seleziona una domanda casuale tra quelle disponibili
-          const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
-          const originalIndex = ITEMS.findIndex(item => item.id === randomQuestion.id);
-          selectedQuestions.push(originalIndex);
-        } else {
-          // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
-          const randomIndex = Math.floor(Math.random() * filteredItems.length);
-          const fallbackQuestion = filteredItems[randomIndex];
-          const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
-          selectedQuestions.push(originalIndex);
-        }
-      }
-      
-      setOrder(selectedQuestions);
+      // Modalità Battaglia di Achille: inizializza con array vuoto, le domande verranno selezionate dinamicamente
+      setOrder([]);
     }
     
     // Reset completo dello stato del gioco quando cambia la modalità
     setI(0);
     setScore(0);
     setStreak(0);
+    setFinalStreak(0);
+    setUsedQuestions(new Set());
     setUsed5050(false);
     setUsedHint(false);
     setUsedSuperHint(false);
@@ -157,10 +133,52 @@ export default function ChiLHaDetto({
     // Non resettare showGameOverAnimation qui, viene gestito in onAnswer
   }, [includeSensitive, gameMode]);
 
-  const current: Item | null = useMemo(
-    () => (order.length ? ITEMS[order[i]] : null),
-    [order, i]
-  );
+  // Funzione per selezionare la prossima domanda nella modalità classic
+  const selectNextQuestion = useCallback(() => {
+    if (gameMode !== 'classic') return;
+    
+    const filteredItems = includeSensitive ? ITEMS : ITEMS.filter(item => !item.sensitive);
+    const availableItems = filteredItems.filter((_, index) => !usedQuestions.has(index));
+    
+    if (availableItems.length === 0) {
+      // Se non ci sono più domande disponibili, resetta le domande usate
+      setUsedQuestions(new Set());
+      return;
+    }
+    
+    // Calcola la difficoltà target basata sulla progressione
+    const progressRatio = i / Math.max(1, filteredItems.length);
+    const targetDifficulty = Math.min(7, Math.max(1, Math.floor(1 + progressRatio * 6)));
+    
+    // Trova domande con difficoltà vicina alla target
+    const availableQuestions = availableItems.filter(item => 
+      Math.abs(item.difficulty - targetDifficulty) <= 1
+    );
+    
+    let selectedQuestion;
+    if (availableQuestions.length > 0) {
+      selectedQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+    } else {
+      selectedQuestion = availableItems[Math.floor(Math.random() * availableItems.length)];
+    }
+    
+    const originalIndex = ITEMS.findIndex(item => item.id === selectedQuestion.id);
+    setOrder([originalIndex]);
+  }, [gameMode, includeSensitive, usedQuestions, i]);
+
+  const current: Item | null = useMemo(() => {
+    if (gameMode === 'classic') {
+      // Per la modalità classic, seleziona dinamicamente la domanda
+      if (order.length === 0) {
+        selectNextQuestion();
+        return null;
+      }
+      return ITEMS[order[0]];
+    } else {
+      // Per la modalità millionaire, usa l'ordine predefinito
+      return order.length ? ITEMS[order[i]] : null;
+    }
+  }, [order, i, gameMode, selectNextQuestion]);
 
   const [choiceOrder, setChoiceOrder] = useState<number[]>([]);
   useEffect(() => {
@@ -190,6 +208,8 @@ export default function ChiLHaDetto({
 
   useEffect(() => {
     if (timeLeft === 0 && !revealed) {
+      // Salva la streak finale prima di resettarla
+      setFinalStreak(streak);
       setStreak(0);
       
       // Entrambe le modalità: game over se il timer scade
@@ -206,6 +226,13 @@ export default function ChiLHaDetto({
       } else {
         // Modalità Battaglia di Achille: mostra animazione game over
         setShowGameOverAnimation(true);
+        
+        // Marca la domanda corrente come usata anche in caso di timeout
+        if (current) {
+          const currentIndex = ITEMS.findIndex(item => item.id === current.id);
+          setUsedQuestions(prev => new Set([...prev, currentIndex]));
+        }
+        
         setTimeout(() => {
           setShowGameOverAnimation(false);
           setRevealed(true);
@@ -213,7 +240,7 @@ export default function ChiLHaDetto({
         }, 2000);
       }
     }
-  }, [timeLeft, revealed, gameMode]);
+  }, [timeLeft, revealed, gameMode, streak]);
 
   if (!current) {
     return (
@@ -297,6 +324,8 @@ export default function ChiLHaDetto({
         }, 1000);
       }
     } else {
+      // Salva la streak finale prima di resettarla
+      setFinalStreak(streak);
       setStreak(0);
       
       if (gameMode === 'millionaire') {
@@ -314,6 +343,12 @@ export default function ChiLHaDetto({
           // Nessun 2nd chance o già usato: game over definitivo
           setShowGameOverAnimation(true);
           
+          // Marca la domanda corrente come usata anche in caso di errore
+          if (current) {
+            const currentIndex = ITEMS.findIndex(item => item.id === current.id);
+            setUsedQuestions(prev => new Set([...prev, currentIndex]));
+          }
+          
           // Dopo 2 secondi di animazione game over, mostra la risposta corretta
           setTimeout(() => {
             setShowGameOverAnimation(false);
@@ -324,6 +359,12 @@ export default function ChiLHaDetto({
       } else {
         // Modalità Battaglia di Achille: game over immediato
         setShowGameOverAnimation(true); // Mostra animazione game over
+        
+        // Marca la domanda corrente come usata anche in caso di timeout
+        if (current) {
+          const currentIndex = ITEMS.findIndex(item => item.id === current.id);
+          setUsedQuestions(prev => new Set([...prev, currentIndex]));
+        }
         
         // Dopo 2 secondi di animazione, mostra la spiegazione
         setTimeout(() => {
@@ -396,11 +437,20 @@ export default function ChiLHaDetto({
       // Modalità Battaglia di Achille: partita infinita, continua con la prossima domanda
       setI((v) => v + 1);
       
+      // Marca la domanda corrente come usata
+      if (current) {
+        const currentIndex = ITEMS.findIndex(item => item.id === current.id);
+        setUsedQuestions(prev => new Set([...prev, currentIndex]));
+      }
+      
       // Reset dello stato per la nuova domanda (mantiene punteggio e streak)
       setRevealed(false);
       setSelected(null);
       setDisabledOptions([]);
       setTimeLeft(45); // Reset timer per la nuova domanda
+      
+      // Seleziona la prossima domanda
+      selectNextQuestion();
     }
   }
 
@@ -470,21 +520,37 @@ export default function ChiLHaDetto({
              Chi l'ha detto? — {gameMode === 'millionaire' ? 'Le fatiche di Ercole' : 'Aristeia di Achille'}
            </h1>
            <div className="flex items-center gap-2 text-xs sm:text-sm flex-shrink-0">
-             {/* Bottone Torna al Menu - compatto */}
-             <button
-               onClick={onBackToMenu}
-               className="px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-r from-purple-600 to-indigo-700 hover:from-purple-700 hover:to-indigo-800 text-white border-2 border-purple-400/50 shadow-xl hover:shadow-2xl"
-             >
-               <span className="flex items-center gap-1">
-                 <span className="text-xs sm:text-sm">🏠</span>
-                 <span className="hidden sm:inline font-semibold">Menu</span>
-               </span>
-             </button>
+                           {/* Bottone Torna al Menu - freccia curva */}
+              <button
+                onClick={onBackToMenu}
+                className="group relative px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 text-white border border-slate-500/30 shadow-lg hover:shadow-xl backdrop-blur-sm"
+              >
+                <div className="flex items-center justify-center gap-2">
+                  {/* Freccia curva che torna indietro */}
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 relative flex items-center justify-center">
+                    <svg 
+                      className="w-full h-full text-white/90 group-hover:text-white transition-colors duration-300" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2.5" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    >
+                      <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                  </div>
+                  <span className="hidden sm:inline font-medium">Esci</span>
+                </div>
+                
+                {/* Effetto hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </button>
            </div>
          </div>
 
                  {historicalMode && isSensitive && (
-           <div className="mt-2 sm:mt-2 p-2 rounded-lg bg-black/30 backdrop-blur-sm border border-white/20 text-xs text-white shadow-lg">
+           <div className="mt-2 sm:mt-2 py-1 sm:py-2 px-2 rounded-lg bg-black/30 backdrop-blur-sm border border-white/20 text-xs text-white shadow-lg">
              <strong className="drop-shadow-lg">Avviso contenuti storici sensibili.</strong> 
              <span className="drop-shadow-lg"> Questo elemento è mostrato per scopi storici e didattici.</span>
            </div>
@@ -652,14 +718,14 @@ export default function ChiLHaDetto({
              <button
                onClick={use5050}
                disabled={used5050 || revealed || gameOver}
-               className={`relative px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+               className={`relative px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                  used5050 || revealed || gameOver
                    ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                    : 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl'
                }`}
              >
                <span className="flex items-center gap-1">
-                 <span className="text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(59, 130, 246, 0.7))' }}>🎯</span>
+                 <span className="text-sm sm:text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(59, 130, 246, 0.7))' }}>🎯</span>
                  <span>50/50</span>
                </span>
              </button>
@@ -667,14 +733,14 @@ export default function ChiLHaDetto({
              <button
                onClick={useHint}
                disabled={hintRevealed || revealed || usedHint || gameOver}
-               className={`relative px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+               className={`relative px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                  hintRevealed || revealed || usedHint || gameOver
                    ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                    : 'bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white border-0 shadow-lg hover:shadow-xl'
                }`}
              >
                <span className="flex items-center gap-1">
-                 <span className="text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(245, 158, 11, 0.7))' }}>💡</span>
+                 <span className="text-sm sm:text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(245, 158, 11, 0.7))' }}>💡</span>
                  <span>Hint</span>
                </span>
              </button>
@@ -682,24 +748,24 @@ export default function ChiLHaDetto({
              <button
                onClick={useSuperHint}
                disabled={superHintRevealed || revealed || usedSuperHint || gameOver}
-               className={`relative px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+               className={`relative px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                  superHintRevealed || revealed || usedSuperHint || gameOver
                    ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                    : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white border-0 shadow-lg hover:shadow-xl'
                }`}
              >
                <span className="flex items-center gap-1">
-                 <span className="text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.7))' }}>🚀</span>
+                 <span className="text-sm sm:text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.7))' }}>🚀</span>
                  <span>Super Hint</span>
                </span>
              </button>
              
              {/* Bottone 2nd Chance - solo per modalità Verso l'Olimpo */}
              {gameMode === 'millionaire' && (
-               <button
+                              <button
                  onClick={use2ndChance}
                  disabled={used2ndChance || revealed || gameOver}
-                 className={`relative px-2 sm:px-3 py-1.5 rounded-lg font-bold text-xs transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+                 className={`relative px-1 sm:px-3 py-0.5 sm:py-1.5 rounded-md font-bold text-xs transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                    used2ndChance || revealed || gameOver
                      ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                      : is2ndChanceActive
@@ -708,8 +774,8 @@ export default function ChiLHaDetto({
                  }`}
                >
                  <span className="flex items-center gap-1">
-                                    <span className="text-lg drop-shadow-lg" style={{ filter: `drop-shadow(0 0 6px ${is2ndChanceActive ? 'rgba(236, 72, 153, 0.7)' : 'rgba(236, 72, 153, 0.7)'})` }}>{is2ndChanceActive ? '✨' : '💖'}</span>
-                 <span>{is2ndChanceActive ? 'Attivo' : '2nd Chance'}</span>
+                                     <span className="text-sm sm:text-lg drop-shadow-lg" style={{ filter: `drop-shadow(0 0 6px ${is2ndChanceActive ? 'rgba(236, 72, 153, 0.7)' : 'rgba(236, 72, 153, 0.7)'})` }}>{is2ndChanceActive ? '✨' : '💖'}</span>
+                  <span>{is2ndChanceActive ? 'Attivo' : '2nd Chance'}</span>
                  </span>
                </button>
              )}
@@ -816,14 +882,7 @@ export default function ChiLHaDetto({
                 </div>
                 
                 {/* Contenuto principale */}
-                <div className="text-center relative z-10">
-                  {/* Emoji principale con animazione */}
-                  <div className="text-7xl mb-4 animate-bounce" style={{ animationDuration: '1s' }}>
-                    💀
-                  </div>
-                  
-
-                  
+                <div className="text-center relative z-10 flex flex-col items-center justify-center h-full">
                   {/* Messaggio di sconfitta */}
                   <div className="text-xl sm:text-2xl text-red-100 font-semibold mb-4 drop-shadow-lg"
                        style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
@@ -839,7 +898,7 @@ export default function ChiLHaDetto({
                   
                   {/* Emoji finale */}
                   <div className="text-5xl animate-bounce" style={{ animationDuration: '0.8s' }}>
-                    {gameMode === 'millionaire' ? '⚰️' : '⚔️'}
+                    {gameMode === 'millionaire' ? '💀' : '⚔️'}
                   </div>
                   
 
@@ -869,15 +928,7 @@ export default function ChiLHaDetto({
                 </div>
                 
                 {/* Contenuto principale */}
-                <div className="text-center relative z-10">
-                  {/* Emoji principale con animazione avanzata */}
-                  <div className="text-7xl mb-4 animate-bounce" style={{ animationDuration: '1s' }}>
-                    {gameMode === 'millionaire' 
-                      ? (currentLevel === 12 ? '👑' : '🏛️')
-                      : '⚔️'
-                    }
-                  </div>
-                  
+                <div className="text-center relative z-10 flex flex-col items-center justify-center h-full">
                   {/* Testo del livello con effetto glow */}
                   <div className="text-4xl sm:text-5xl font-black text-white mb-3 drop-shadow-2xl"
                        style={{ 
@@ -977,28 +1028,45 @@ export default function ChiLHaDetto({
                     </div>
                   )}
 
+                  {/* Fonte della citazione */}
+                  <div className="mb-3 sm:mb-4 text-center">
+                    <a
+                      href={current.source_link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-3 sm:px-4 py-2 rounded-lg border border-white/30 bg-black/30 backdrop-blur-sm hover:bg-black/50 text-xs sm:text-sm font-medium transition-colors text-white text-center w-full sm:w-auto drop-shadow-lg"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
+                    >
+                      📚 Fonte: {current.source_title}
+                    </a>
+                  </div>
+
                                     {/* Statistiche finali per Battaglia di Achille quando si sbaglia o scade il tempo, e per Verso l'Olimpo quando si sbaglia o scade il tempo */}
                   {(gameMode !== 'millionaire' && (isTimeoutGameOver || (selected !== null && !mappedChoices[selected]?.isCorrect))) || 
                    (gameMode === 'millionaire' && (gameOver || (selected !== null && !mappedChoices[selected]?.isCorrect))) ? (
                       <div className="mb-3 sm:mb-4 text-center">
                         <div className="grid grid-cols-2 gap-3 mb-3">
-                          <div className="bg-gradient-to-r from-orange-900/60 to-red-800/60 backdrop-blur-sm rounded-lg border-2 border-orange-400/50 p-2 flex items-center justify-between">
+                          <div className={`backdrop-blur-sm rounded-lg border-2 p-2 flex items-center justify-between ${
+                            gameMode === 'millionaire' 
+                              ? 'bg-gradient-to-r from-purple-900/60 to-blue-800/60 border-purple-400/50' 
+                              : 'bg-gradient-to-r from-orange-900/60 to-red-800/60 border-orange-400/50'
+                          }`}>
                             <div className="flex items-center gap-2">
-                              <div className="text-lg">
-                                {gameMode === 'millionaire' ? '🏛️' : '🔥'}
-                              </div>
-                              <div className="text-xs text-orange-200 font-medium">
-                                {gameMode === 'millionaire' ? 'Fatica Raggiunta' : 'Streak Finale'}
+                              <div className={`text-xs font-medium ${
+                                gameMode === 'millionaire' ? 'text-purple-200' : 'text-orange-200'
+                              }`}>
+                                {gameMode === 'millionaire' ? 'Fatica' : 'Streak'}
                               </div>
                             </div>
-                            <div className="text-lg font-bold text-orange-300">
-                              {gameMode === 'millionaire' ? (i + 1) : streak}
+                            <div className={`text-lg font-bold ${
+                              gameMode === 'millionaire' ? 'text-purple-300' : 'text-orange-300'
+                            }`}>
+                              {gameMode === 'millionaire' ? (i + 1) : finalStreak}
                             </div>
                           </div>
                           <div className="bg-gradient-to-r from-blue-900/60 to-indigo-800/60 backdrop-blur-sm rounded-lg border-2 border-blue-400/50 p-2 flex items-center justify-between">
                             <div className="flex items-center gap-2">
-                              <div className="text-lg">💎</div>
-                              <div className="text-xs text-blue-200 font-medium">Punteggio Finale</div>
+                              <div className="text-xs text-blue-200 font-medium">Punteggio</div>
                             </div>
                             <div className="text-lg font-bold text-blue-300">{score}</div>
                           </div>
@@ -1009,16 +1077,6 @@ export default function ChiLHaDetto({
 
                   {/* Bottoni di azione con layout responsive */}
                   <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center items-center">
-                    <a
-                      href={current.source_link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="px-3 sm:px-4 py-2 rounded-lg border border-white/30 bg-black/30 backdrop-blur-sm hover:bg-black/50 text-xs sm:text-sm font-medium transition-colors text-white text-center w-full sm:w-auto drop-shadow-lg"
-                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
-                    >
-                      📚 Fonte: {current.source_title}
-                    </a>
-                    
                                         {/* Bottoni diversi per modalità Verso l'Olimpo se si è sbagliato O se si è vinto, e per Battaglia di Achille se si è sbagliato O se è scaduto il tempo */}
                     {(gameMode === 'millionaire' && (gameOver || (selected !== null && (!mappedChoices[selected]?.isCorrect || (mappedChoices[selected]?.isCorrect && i === QUESTIONS_PER_GAME - 1))))) || 
                      (gameMode !== 'millionaire' && (isTimeoutGameOver || (selected !== null && !mappedChoices[selected]?.isCorrect))) ? (
