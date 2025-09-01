@@ -2143,9 +2143,9 @@
   {
     "id": "q78",
     "quote": "Si vis pacem, para bellum (\"Se vuoi la pace, prepara la guerra\").",
-    "author": "Flavio Vegetio Renato",
+    "author": "Publio Flavio Vegetio Renato",
     "choices": [
-      "Flavio Vegetio Renato",
+      "Publio Flavio Vegetio Renato",
       "Tacito",
       "Marco Tullio Cicerone",
       "Seneca"
@@ -2790,7 +2790,7 @@
     "author": "Leonardo da Vinci",
     "choices": [
       "Leonardo da Vinci",
-      "Michelangelo",
+      "Michelangelo Buonarroti",
       "Steve Jobs",
       "Isaac Newton"
     ],
@@ -2863,7 +2863,7 @@
     "spiciness": 0,
     "hint_short": "Moto della Terra.",
     "hint_more": "Frase leggendaria dopo l’abiura.",
-    "ambiguity_note": "Attribuzione leggendaria ma iconica; può essere confusa con altri scienziati per il tema della resistenza scientifica.",
+    "ambiguity_note": "Attribuzione leggendaria e iconica; può essere confusa con altri scienziati per il tema della resistenza scientifica.",
     "language_orig": "IT",
     "sensitive": false,
     "context": "Simbolo della forza della verità scientifica."

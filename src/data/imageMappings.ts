@@ -153,7 +153,7 @@ export const personaggiImageMap: Record<string, string> = {
   "Papa Giovanni Paolo II": "images/personaggi/giovanni-paolo-ii.jpg",
   "Leonardo da Vinci": "images/personaggi/leonardo-davinci.jpeg",
   "Michelangelo": "images/personaggi/michelangelo.jpg",
-  "Steve Jobs": "images/personaggi/steve-jobs.jpg",
+  "Steve Jobs": "images/personaggi/steve-jobs.jpeg",
   "Eraclito": "images/personaggi/eraclito.jpeg",
   "Jim Lovell": "images/personaggi/jim-lovell.jpg",
   "Neil Armstrong": "images/personaggi/neil-armstrong.webp",
@@ -176,4 +176,8 @@ export const personaggiImageMap: Record<string, string> = {
   "Dwight D. Eisenhower": "images/personaggi/dwight-d-eisenhower.jpg",
   "Publio Virgilio Marone": "images/personaggi/virgilio.jpg",
   "Quinto Orazio Flacco": "images/personaggi/quinto-orazio-flacco.jpg",
+  "Michelangelo Buonarroti": "images/personaggi/michelangelo-buonarroti.jpg",
+  "Publio Flavio Vegetio Renato": "images/personaggi/flavio-vegetio-renato.jpg",
+  "Madre Teresa di Calcutta": "images/personaggi/madre-teresa-di-calcutta.jpg",
+  "James Baldwin": "images/personaggi/james-baldwin.jpg"
 };
