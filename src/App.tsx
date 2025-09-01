@@ -6,13 +6,17 @@ function MainMenu({
   includeSensitive, 
   setIncludeSensitive,
   gameMode,
-  setGameMode
+  setGameMode,
+  showTutorial,
+  setShowTutorial
 }: { 
   onStartGame: (backgroundImage: string) => void;
   includeSensitive: boolean;
   setIncludeSensitive: (value: boolean) => void;
   gameMode: 'classic' | 'millionaire' | null;
   setGameMode: (mode: 'classic' | 'millionaire' | null) => void;
+  showTutorial: boolean;
+  setShowTutorial: (value: boolean) => void;
 }) {
   // Determina l'immagine di background in base alla modalità selezionata
   const getBackgroundImage = () => {
@@ -72,8 +76,9 @@ function MainMenu({
             <div className="absolute inset-0 bg-black/20 backdrop-blur-sm rounded-2xl -m-3"></div>
           </div>
           
-                                         {/* Toggle per contenuti sensibili - Design accattivante */}
-           <div className="mb-6 flex items-center justify-center gap-4">
+                                         {/* Toggle per contenuti sensibili e Tutorial - Design accattivante */}
+           <div className="mb-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            {/* Container contenuti sensibili */}
             <div className="relative group">
               {/* Container principale con effetti avanzati */}
               <div className="flex flex-row items-center space-x-3 sm:space-x-4 bg-gradient-to-r from-amber-900/40 via-orange-900/30 to-red-900/40 backdrop-blur-lg rounded-2xl px-4 sm:px-6 py-3 border-2 border-amber-400/30 shadow-2xl transition-all duration-300 hover:border-amber-400/50 hover:shadow-amber-500/20">
@@ -110,6 +115,35 @@ function MainMenu({
               {/* Effetto glow al hover */}
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
             </div>
+
+            {/* Bottone Tutorial */}
+            <button
+              onClick={() => setShowTutorial(true)}
+              className="group relative px-4 sm:px-6 py-3 rounded-2xl font-semibold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-r from-blue-700 to-indigo-800 hover:from-blue-600 hover:to-indigo-700 text-white border-2 border-blue-400/50 shadow-xl hover:shadow-2xl backdrop-blur-sm"
+            >
+              <div className="flex items-center justify-center gap-2">
+                {/* Icona tutorial */}
+                <div className="w-4 h-4 sm:w-5 sm:h-5 relative flex items-center justify-center">
+                  <svg 
+                    className="w-full h-full text-white/90 group-hover:text-white transition-colors duration-300" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2.5" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                    <path d="M12 17h.01"/>
+                  </svg>
+                </div>
+                <span className="font-medium">Tutorial</span>
+              </div>
+              
+              {/* Effetto hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </button>
           </div>
 
                      {/* Selezione Modalità di Gioco - PRINCIPALE */}
@@ -120,10 +154,10 @@ function MainMenu({
                 Scegli la tua Modalità
               </span>
               
-                                                                                     <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-3">
+                                                                                     <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3">
                                     <button
                      onClick={() => setGameMode('millionaire')}
-                     className={`w-54 h-28 px-5 py-3 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center relative overflow-hidden ${
+                     className={`w-40 h-20 px-3 py-1.5 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center relative overflow-hidden ${
                        gameMode === 'millionaire' 
                          ? 'text-white shadow-xl scale-105 ring-4 ring-purple-400/50' 
                          : 'text-purple-300 border-2 border-purple-300/50 hover:scale-105 hover:bg-purple-500/10'
@@ -143,14 +177,14 @@ function MainMenu({
                      
                      {/* Contenuto del bottone */}
                      <div className="relative z-10 text-center">
-                       <div className="text-xl font-black mb-1 drop-shadow-lg">Eracle</div>
+                       <div className="text-base font-black mb-1 drop-shadow-lg">Eracle</div>
                        <div className="text-xs font-semibold opacity-95">Scala l'Olimpo, diventa un Dio. </div>
                      </div>
                    </button>
                                    
                                     <button
                      onClick={() => setGameMode('classic')}
-                     className={`w-54 h-28 px-5 py-3 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center relative overflow-hidden ${
+                     className={`w-40 h-20 px-3 py-1.5 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center relative overflow-hidden ${
                        gameMode === 'classic' 
                          ? 'text-white shadow-xl scale-105 ring-4 ring-amber-400/50' 
                          : 'text-amber-300 border-2 border-amber-300/50 hover:scale-105 hover:bg-amber-500/10'
@@ -170,7 +204,7 @@ function MainMenu({
                      
                      {/* Contenuto del bottone */}
                      <div className="relative z-10 text-center">
-                       <div className="text-xl font-black mb-1 drop-shadow-lg">Achille</div>
+                       <div className="text-base font-black mb-1 drop-shadow-lg">Achille</div>
                      <div className="text-xs font-semibold opacity-95">Porta la tua aristeia nell'Iliade.</div>
                    </div>
                  </button>
@@ -227,12 +261,186 @@ function MainMenu({
   );
 }
 
+function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
+  // Determina l'immagine di background per il tutorial
+  const getTutorialBackgroundImage = () => {
+    const isMobile = window.innerWidth < 768; // Breakpoint sm di Tailwind
+    return isMobile ? 'images/hero-bg-mobile.png' : 'images/hero-bg.png';
+  };
+
+  return (
+    <div className="min-h-screen relative flex items-center justify-center p-4">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={getTutorialBackgroundImage()} 
+          alt="Background" 
+          className="w-full h-full object-cover"
+        />
+        {/* Overlay scuro per migliorare la leggibilità */}
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+      <div className="max-w-4xl w-full relative z-10">
+        {/* Header con bottone torna al menu */}
+        <div className="mb-8 flex items-center justify-between">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg"
+              style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
+            📚 Tutorial
+          </h1>
+          
+          {/* Bottone Torna al Menu - identico a quello nella schermata di gioco */}
+          <button
+            onClick={onBackToMenu}
+            className="group relative px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 text-white border border-slate-500/30 shadow-lg hover:shadow-xl backdrop-blur-sm"
+          >
+            <div className="flex items-center justify-center gap-2">
+              {/* Freccia curva che torna indietro */}
+              <div className="w-4 h-4 sm:w-5 sm:h-5 relative flex items-center justify-center">
+                <svg 
+                  className="w-full h-full text-white/90 group-hover:text-white transition-colors duration-300" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2.5" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                >
+                  <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+              </div>
+              <span className="hidden sm:inline font-medium">Esci</span>
+            </div>
+            
+            {/* Effetto hover */}
+            <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </button>
+        </div>
+
+        {/* Contenuto del tutorial */}
+        <div className="bg-black/80 backdrop-blur-sm rounded-3xl p-4 sm:p-6 shadow-2xl border border-white/30">
+          <div className="space-y-4">
+            <div className="text-center mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 drop-shadow-lg"
+                  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
+                Benvenuto in "Chi l'ha detto?"
+              </h2>
+              <p className="text-lg text-white/90 drop-shadow-lg"
+                 style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+                Scopri come giocare e diventare un maestro delle citazioni storiche!
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              {/* Modalità Eracle */}
+              <div className="bg-gradient-to-br from-purple-900/60 to-blue-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-purple-400/50">
+                <h3 className="text-xl font-bold text-purple-200 mb-3 flex items-center gap-2">
+                  🏛️ Modalità Eracle - "Le 12 Fatiche"
+                </h3>
+                <ul className="space-y-2 text-purple-100">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-300 font-bold">•</span>
+                    <span>12 domande progressive con difficoltà crescente</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-300 font-bold">•</span>
+                    <span>4 aiuti disponibili: 50/50, Hint, Super Hint, 2nd Chance</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-300 font-bold">•</span>
+                    <span>Un errore = game over (tranne con 2nd Chance)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-300 font-bold">•</span>
+                    <span>Obiettivo: Completare tutte le 12 fatiche</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Modalità Achille */}
+              <div className="bg-gradient-to-br from-orange-900/60 to-red-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-orange-400/50">
+                <h3 className="text-xl font-bold text-orange-200 mb-3 flex items-center gap-2">
+                  ⚔️ Modalità Achille - "Aristeia"
+                </h3>
+                <ul className="space-y-2 text-orange-100">
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-300 font-bold">•</span>
+                    <span>Partita infinita senza aiuti</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-300 font-bold">•</span>
+                    <span>Difficoltà progressiva automatica</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-300 font-bold">•</span>
+                    <span>Sistema di streak per tracciare i successi</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-300 font-bold">•</span>
+                    <span>Obiettivo: Resistire il più a lungo possibile</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Come giocare */}
+            <div className="bg-gradient-to-r from-green-900/60 to-emerald-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-green-400/50">
+              <h3 className="text-xl font-bold text-green-200 mb-3 flex items-center gap-2">
+                🎯 Come Giocare
+              </h3>
+              <div className="grid md:grid-cols-2 gap-3 text-green-100">
+                <div>
+                  <h4 className="font-bold mb-1">📖 Leggi la Citazione</h4>
+                  <p className="text-sm">Ogni domanda presenta una citazione storica famosa</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1">🤔 Scegli l'Autore</h4>
+                  <p className="text-sm">Seleziona tra 4 opzioni chi ha pronunciato quelle parole</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1">⏰ Attenzione al Tempo</h4>
+                  <p className="text-sm">Hai 45-60 secondi per rispondere</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1">📚 Impara la Storia</h4>
+                  <p className="text-sm">Scopri il contesto e perché la citazione è ingannevole</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Contenuti sensibili */}
+            <div className="bg-gradient-to-r from-amber-900/60 to-orange-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-amber-400/50">
+              <h3 className="text-xl font-bold text-amber-200 mb-3 flex items-center gap-2">
+                ⚠️ Contenuti Sensibili
+              </h3>
+              <p className="text-amber-100 mb-2">
+                Il gioco include citazioni di figure storiche controverse. Puoi attivare/disattivare questa modalità:
+              </p>
+              <ul className="space-y-1 text-amber-100">
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-300 font-bold">•</span>
+                  <span><strong>Modalità Sicura:</strong> Solo citazioni di figure generalmente positive</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-300 font-bold">•</span>
+                  <span><strong>Modalità Avanzata:</strong> Tutte le citazioni, incluse quelle di figure controverse</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [gameStarted, setGameStarted] = useState(false);
   const [includeSensitive, setIncludeSensitive] = useState(false); // Default: disattivo
   const [gameMode, setGameMode] = useState<'classic' | 'millionaire' | null>(null); // Default: nessuna modalità selezionata
   const [backgroundImage, setBackgroundImage] = useState<string>('images/hero-bg.png'); // Immagine di background selezionata
   const [imagesPreloaded, setImagesPreloaded] = useState(false);
+  const [showTutorial, setShowTutorial] = useState(false);
 
   // Preload delle immagini delle modalità per evitare lag su mobile
   useEffect(() => {
@@ -295,6 +503,8 @@ function App() {
             backgroundImage={backgroundImage}
             onBackToMenu={() => setGameStarted(false)}
           />
+        ) : showTutorial ? (
+          <TutorialScreen onBackToMenu={() => setShowTutorial(false)} />
         ) : (
          <MainMenu 
            onStartGame={(bgImage: string) => {
@@ -305,6 +515,8 @@ function App() {
            setIncludeSensitive={setIncludeSensitive}
            gameMode={gameMode}
            setGameMode={setGameMode}
+           showTutorial={showTutorial}
+           setShowTutorial={setShowTutorial}
          />
        )}
       </div>
