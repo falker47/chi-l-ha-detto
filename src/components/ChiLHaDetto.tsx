@@ -464,7 +464,7 @@ export default function ChiLHaDetto({
         {/* Content Layer */}
         <div className="relative z-10 max-w-7xl mx-auto p-2 sm:p-4 md:p-6 lg:p-8">
                  {/* Header compatto ottimizzato - layout orizzontale su mobile */}
-         <div className="flex flex-row items-center justify-between mb-2 sm:mb-3 bg-black/40 backdrop-blur-md p-2 sm:p-3 rounded-xl shadow-2xl border border-white/20">
+         <div className="flex flex-row items-center justify-between mb-2 sm:mb-2 bg-black/40 backdrop-blur-md p-2 sm:p-3 rounded-xl shadow-2xl border border-white/20">
            <h1 className="text-sm sm:text-lg md:text-xl font-extrabold tracking-tight text-white text-left truncate flex-1 mr-2"
                style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
              Chi l'ha detto? — {gameMode === 'millionaire' ? 'Le fatiche di Ercole' : 'Aristeia di Achille'}
@@ -484,14 +484,14 @@ export default function ChiLHaDetto({
          </div>
 
                  {historicalMode && isSensitive && (
-           <div className="mt-2 sm:mt-3 p-2 rounded-lg bg-black/30 backdrop-blur-sm border border-white/20 text-xs text-white shadow-lg">
+           <div className="mt-2 sm:mt-2 p-2 rounded-lg bg-black/30 backdrop-blur-sm border border-white/20 text-xs text-white shadow-lg">
              <strong className="drop-shadow-lg">Avviso contenuti storici sensibili.</strong> 
              <span className="drop-shadow-lg"> Questo elemento è mostrato per scopi storici e didattici.</span>
            </div>
          )}
 
                  {/* Barra di progresso e timer responsive - compatta - layout orizzontale su mobile */}
-         <div className="mt-2 sm:mt-3 flex flex-row items-center justify-between gap-2 bg-black/20 backdrop-blur-sm p-2 rounded-lg border border-white/10">
+         <div className="mt-2 sm:mt-2 flex flex-row items-center justify-between gap-2 bg-black/20 backdrop-blur-sm p-2 rounded-lg border border-white/10">
           <div className="text-xs sm:text-sm text-white font-semibold text-center sm:text-left drop-shadow-lg"
                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
             {gameMode === 'millionaire' ? (
@@ -639,7 +639,7 @@ export default function ChiLHaDetto({
         </div>
 
                  {/* Container principale della domanda - compatto */}
-         <div className="mt-2 sm:mt-3 p-2 sm:p-3 bg-black/30 backdrop-blur-md rounded-xl shadow-2xl border border-white/20">
+         <div className="mt-2 sm:mt-2 p-2 sm:p-3 bg-black/30 backdrop-blur-md rounded-xl shadow-2xl border border-white/20">
                      {/* Citazione con font size responsive - compatto */}
            <blockquote className="text-sm sm:text-base md:text-lg leading-relaxed font-serif text-white italic text-center sm:text-left drop-shadow-lg"
                         style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
@@ -648,7 +648,7 @@ export default function ChiLHaDetto({
 
                                            {/* Bottoni degli aiuti con layout responsive e grafiche accattivanti - solo per Verso l'Olimpo - compatti */}
             {gameMode === 'millionaire' && (
-              <div className="mt-2 sm:mt-3 flex flex-wrap items-center justify-center sm:justify-start gap-2 text-xs">
+              <div className="mt-2 sm:mt-2 flex flex-wrap items-center justify-center sm:justify-start gap-2 text-xs">
              <button
                onClick={use5050}
                disabled={used5050 || revealed || gameOver}
@@ -718,7 +718,7 @@ export default function ChiLHaDetto({
 
            {/* Visualizzazione degli hint con animazioni e stili migliorati */}
            {hintRevealed && (
-             <div className="mt-3 animate-fadeIn">
+             <div className="mt-2 animate-fadeIn">
                <div className="px-4 py-3 rounded-xl bg-black/40 backdrop-blur-sm border-2 border-amber-400/50 shadow-2xl">
                  <div className="flex items-center gap-2 mb-2">
                    <span className="text-2xl drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 8px rgba(245, 158, 11, 0.8))' }}>💡</span>
@@ -731,7 +731,7 @@ export default function ChiLHaDetto({
            )}
            
            {superHintRevealed && (
-             <div className="mt-3 animate-fadeIn">
+             <div className="mt-2 animate-fadeIn">
                <div className="px-4 py-3 rounded-xl bg-gradient-to-r from-green-900/60 to-emerald-800/60 backdrop-blur-sm border-2 border-green-400/50 shadow-2xl">
                  <div className="flex items-center gap-2 mb-2">
                    <span className="text-2xl drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 8px rgba(34, 197, 94, 0.8))' }}>🚀</span>
@@ -818,21 +818,14 @@ export default function ChiLHaDetto({
                 {/* Contenuto principale */}
                 <div className="text-center relative z-10">
                   {/* Emoji principale con animazione */}
-                  <div className="text-7xl mb-6 animate-bounce" style={{ animationDuration: '1s' }}>
+                  <div className="text-7xl mb-4 animate-bounce" style={{ animationDuration: '1s' }}>
                     💀
                   </div>
                   
-                  {/* Testo del game over con effetto glow rosso */}
-                  <div className="text-4xl sm:text-5xl font-black text-white mb-4 drop-shadow-2xl"
-                       style={{ 
-                         textShadow: '0 0 20px rgba(239, 68, 68, 0.8), 0 0 40px rgba(239, 68, 68, 0.4)',
-                         animation: 'pulse 2s infinite'
-                       }}>
-                    GAME OVER!
-                  </div>
+
                   
                   {/* Messaggio di sconfitta */}
-                  <div className="text-xl sm:text-2xl text-red-100 font-semibold mb-6 drop-shadow-lg"
+                  <div className="text-xl sm:text-2xl text-red-100 font-semibold mb-4 drop-shadow-lg"
                        style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
                     {isTimeoutGameOver 
                       ? (gameMode === 'millionaire' 
@@ -849,17 +842,7 @@ export default function ChiLHaDetto({
                     {gameMode === 'millionaire' ? '⚰️' : '⚔️'}
                   </div>
                   
-                  {/* Testo di consolazione */}
-                  <div className="mt-6 text-lg text-red-200 font-medium">
-                    {isTimeoutGameOver
-                      ? (gameMode === 'millionaire'
-                          ? 'Il tempo è scaduto! Nella modalità "Le 12 Fatiche" devi essere veloce!'
-                          : 'Il tempo è scaduto! Nella battaglia devi essere più rapido!')
-                      : (gameMode === 'millionaire'
-                          ? 'Nella modalità "Le 12 Fatiche" non ci sono seconde possibilità!'
-                          : 'La battaglia è finita, ma la gloria rimane!')
-                    }
-                  </div>
+
                   
                   {/* Indicatore di caricamento per la risposta corretta */}
                   <div className="mt-4 flex justify-center">
@@ -888,7 +871,7 @@ export default function ChiLHaDetto({
                 {/* Contenuto principale */}
                 <div className="text-center relative z-10">
                   {/* Emoji principale con animazione avanzata */}
-                  <div className="text-7xl mb-6 animate-bounce" style={{ animationDuration: '1s' }}>
+                  <div className="text-7xl mb-4 animate-bounce" style={{ animationDuration: '1s' }}>
                     {gameMode === 'millionaire' 
                       ? (currentLevel === 12 ? '👑' : '🏛️')
                       : '⚔️'
@@ -896,7 +879,7 @@ export default function ChiLHaDetto({
                   </div>
                   
                   {/* Testo del livello con effetto glow */}
-                  <div className="text-4xl sm:text-5xl font-black text-white mb-4 drop-shadow-2xl"
+                  <div className="text-4xl sm:text-5xl font-black text-white mb-3 drop-shadow-2xl"
                        style={{ 
                          textShadow: '0 0 20px rgba(168, 85, 247, 0.8), 0 0 40px rgba(168, 85, 247, 0.4)',
                          animation: 'pulse 2s infinite'
@@ -908,7 +891,7 @@ export default function ChiLHaDetto({
                   </div>
                   
                   {/* Messaggio motivazionale */}
-                  <div className="text-xl sm:text-2xl text-purple-100 font-semibold mb-6 drop-shadow-lg"
+                  <div className="text-xl sm:text-2xl text-purple-100 font-semibold mb-4 drop-shadow-lg"
                        style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
                     {gameMode === 'millionaire'
                       ? (currentLevel === 12 
@@ -929,7 +912,7 @@ export default function ChiLHaDetto({
                   {/* Barra di progresso animata - solo per Verso l'Olimpo */}
                   {gameMode === 'millionaire' && (
                     <>
-                      <div className="mt-6 w-48 h-2 bg-purple-800/50 rounded-full overflow-hidden mx-auto">
+                      <div className="mt-4 w-48 h-2 bg-purple-800/50 rounded-full overflow-hidden mx-auto">
                         <div className="h-full bg-gradient-to-r from-purple-400 to-purple-600 rounded-full animate-pulse"
                              style={{ width: `${(currentLevel / 12) * 100}%` }}></div>
                       </div>
@@ -959,7 +942,7 @@ export default function ChiLHaDetto({
             {revealed && (selected !== null || isTimeoutGameOver || (gameMode === 'millionaire' && gameOver)) && !showClimbingAnimation && !showGameOverAnimation && (
               <div className="w-full h-full bg-black/80 backdrop-blur-md rounded-2xl border-2 border-white/30 shadow-2xl flex items-center justify-center p-3 sm:p-6">
                 <div className="text-center max-w-xs sm:max-w-2xl w-full">
-                  <div className="mb-4 sm:mb-6">
+                  <div className="mb-3 sm:mb-4">
                     {isTimeoutGameOver ? (
                       <div className="text-2xl sm:text-3xl font-bold text-red-400 mb-2 drop-shadow-lg">⏰ Tempo Scaduto!</div>
                     ) : (gameMode === 'millionaire' && gameOver) ? (
@@ -976,7 +959,7 @@ export default function ChiLHaDetto({
                   </div>
 
                   {historicalMode && (
-                    <div className="mb-4 sm:mb-6 text-left space-y-2 sm:space-y-3">
+                    <div className="mb-3 sm:mb-4 text-left space-y-2 sm:space-y-2">
                       <div className="p-2 sm:p-3 bg-black/40 backdrop-blur-sm rounded-lg border-l-4 border-amber-500 border border-white/20">
                         <p className="text-xs sm:text-sm leading-relaxed">
                           <span className="font-semibold text-amber-300 drop-shadow-lg">Contesto:</span> 
@@ -997,36 +980,30 @@ export default function ChiLHaDetto({
                                     {/* Statistiche finali per Battaglia di Achille quando si sbaglia o scade il tempo, e per Verso l'Olimpo quando si sbaglia o scade il tempo */}
                   {(gameMode !== 'millionaire' && (isTimeoutGameOver || (selected !== null && !mappedChoices[selected]?.isCorrect))) || 
                    (gameMode === 'millionaire' && (gameOver || (selected !== null && !mappedChoices[selected]?.isCorrect))) ? (
-                      <div className="mb-4 sm:mb-6 text-center">
-                        <div className="text-xl sm:text-2xl font-bold text-red-400 mb-3 drop-shadow-lg">
-                          {gameMode === 'millionaire' ? '💀 GAME OVER!' : '💀 BATTAGLIA FINITA!'}
-                        </div>
-                        <div className="grid grid-cols-2 gap-4 mb-4">
-                          <div className="bg-gradient-to-r from-orange-900/60 to-red-800/60 backdrop-blur-sm rounded-lg border-2 border-orange-400/50 p-3">
-                            <div className="text-2xl mb-1">
-                              {gameMode === 'millionaire' ? '🏛️' : '🔥'}
+                      <div className="mb-3 sm:mb-4 text-center">
+                        <div className="grid grid-cols-2 gap-3 mb-3">
+                          <div className="bg-gradient-to-r from-orange-900/60 to-red-800/60 backdrop-blur-sm rounded-lg border-2 border-orange-400/50 p-2 flex items-center justify-between">
+                            <div className="flex items-center gap-2">
+                              <div className="text-lg">
+                                {gameMode === 'millionaire' ? '🏛️' : '🔥'}
+                              </div>
+                              <div className="text-xs text-orange-200 font-medium">
+                                {gameMode === 'millionaire' ? 'Fatica Raggiunta' : 'Streak Finale'}
+                              </div>
                             </div>
-                            <div className="text-sm text-orange-200 font-medium">
-                              {gameMode === 'millionaire' ? 'Fatica Raggiunta' : 'Streak Finale'}
-                            </div>
-                            <div className="text-xl font-bold text-orange-300">
+                            <div className="text-lg font-bold text-orange-300">
                               {gameMode === 'millionaire' ? (i + 1) : streak}
                             </div>
                           </div>
-                          <div className="bg-gradient-to-r from-blue-900/60 to-indigo-800/60 backdrop-blur-sm rounded-lg border-2 border-blue-400/50 p-3">
-                            <div className="text-2xl mb-1">💎</div>
-                            <div className="text-sm text-blue-200 font-medium">Punteggio Finale</div>
-                            <div className="text-xl font-bold text-blue-300">{score}</div>
+                          <div className="bg-gradient-to-r from-blue-900/60 to-indigo-800/60 backdrop-blur-sm rounded-lg border-2 border-blue-400/50 p-2 flex items-center justify-between">
+                            <div className="flex items-center gap-2">
+                              <div className="text-lg">💎</div>
+                              <div className="text-xs text-blue-200 font-medium">Punteggio Finale</div>
+                            </div>
+                            <div className="text-lg font-bold text-blue-300">{score}</div>
                           </div>
                         </div>
-                        <div className="text-lg text-red-200 font-medium mb-3">
-                          {gameMode === 'millionaire' 
-                            ? (gameOver 
-                                ? 'Il tempo è scaduto! Nella modalità "Le 12 Fatiche" devi essere veloce!'
-                                : 'Hai sbagliato! Nella modalità "Le 12 Fatiche" non ci sono seconde possibilità!')
-                            : 'La battaglia è finita, ma la gloria rimane!'
-                          }
-                        </div>
+
                       </div>
                   ) : null}
 
