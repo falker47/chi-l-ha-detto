@@ -276,9 +276,9 @@
     "author": "Albert Einstein",
     "choices": [
       "Albert Einstein",
-      "Friedrich Nietzsche",
+      "Sant'Agostino",
       "Erwin Schrödinger",
-      "Max Born"
+      "Adam Smith"
     ],
     "correctIndex": 0,
     "year_or_period": "1926",
@@ -1759,7 +1759,7 @@
     "author": "Benjamin Franklin",
     "choices": [
       "Benjamin Franklin",
-      "Thomas Jefferson",
+      "Gesù Cristo",
       "David Hume",
       "Jean-Jacques Rousseau"
     ],
@@ -1883,7 +1883,7 @@
       "boxe",
       "cultura pop"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "spiciness": 0,
     "hint_short": "Sport del XX secolo",
     "hint_more": "Pugile americano del XX secolo, considerato uno dei più grandi pugili della storia, noto per la sua velocità, per i suoi slogan e per aver cambiato nome da Cassius Clay.",
@@ -1994,7 +1994,7 @@
       "URSS",
       "prima orbita"
     ],
-    "difficulty": 1,
+    "difficulty": 3,
     "spiciness": 0,
     "hint_short": "Storia spaziale del XX secolo",
     "hint_more": "Cosmonauta sovietico del XX secolo, primo uomo a viaggiare nello spazio durante la missione Vostok 1, noto per aver descritto la Terra come 'blu' dall'orbita.",
@@ -2175,7 +2175,7 @@
     "author": "J. Robert Oppenheimer",
     "choices": [
       "J. Robert Oppenheimer",
-      "Albert Einstein",
+      "Gesù Cristo",
       "Adolf Hitler",
       "Alessandro Magno"
     ],
@@ -2289,7 +2289,7 @@
       "Barack Obama",
       "Winston Churchill",
       "Albert Einstein",
-      "Ronald Reagan"
+      "San Francesco d'Assisi"
     ],
     "correctIndex": 0,
     "year_or_period": "2008",
@@ -2455,7 +2455,7 @@
     "author": "Steve Jobs",
     "choices": [
       "Steve Jobs",
-      "Bill Gates",
+      "Desmond Tutu",
       "Elon Musk",
       "Mahatma Gandhi"
     ],
@@ -2524,7 +2524,7 @@
       "coraggio",
       "conoscenza"
     ],
-    "difficulty": 1,
+    "difficulty": 3,
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisica polacca naturalizzata francese del XX secolo, prima donna a vincere un premio Nobel e prima persona a vincerne due, nota per le sue ricerche sulla radioattività.",
@@ -2596,7 +2596,7 @@
     "choices": [
       "Dante Alighieri",
       "Seneca",
-      "Ludovico Ariosto",
+      "Gabriele D'Annunzio",
       "William Shakespeare"
     ],
     "correctIndex": 0,
@@ -2819,9 +2819,9 @@
     "author": "Socrate",
     "choices": [
       "Socrate",
-      "Platone",
-      "Aristotele",
-      "Eraclito"
+      "Plinio il Vecchio",
+      "Ludwig Feuerbach",
+      "Kanye West"
     ],
     "correctIndex": 0,
     "year_or_period": "IV sec. a.C. (tramite Platone)",
@@ -2848,7 +2848,7 @@
     "choices": [
       "Galileo Galilei",
       "Isaac Newton",
-      "Leonardo da Vinci",
+      "Rosa Parks",
       "Albert Einstein"
     ],
     "correctIndex": 0,
@@ -2905,7 +2905,7 @@
       "Friedrich Nietzsche",
       "Ludwig Feuerbach",
       "Karl Marx",
-      "Arthur Schopenhauer"
+      "Gesù Cristo"
     ],
     "correctIndex": 0,
     "year_or_period": "1882",
@@ -2932,8 +2932,8 @@
     "choices": [
       "Maria Antonietta",
       "Jean-Jacques Rousseau",
-      "Luigi XVI",
-      "Voltaire"
+      "Nelson Mandela",
+      "Decimo Giunio Giovenale"
     ],
     "correctIndex": 0,
     "year_or_period": "XVIII secolo (attribuzione; formula attestata in Rousseau)",
@@ -2960,8 +2960,8 @@
     "choices": [
       "Winston Churchill",
       "Joseph Stalin",
-      "Franklin D. Roosevelt",
-      "Charles de Gaulle"
+      "Adolf Hitler",
+      "Albert Einstein"
     ],
     "correctIndex": 0,
     "year_or_period": "1946",
@@ -2987,7 +2987,7 @@
     "author": "Gaio Giulio Cesare",
     "choices": [
       "Gaio Giulio Cesare",
-      "Kanye West",
+      "Bill Gates",
       "Marco Tullio Cicerone",
       "Pitagora"
     ],
@@ -3204,7 +3204,7 @@
     "choices": [
       "Winston Churchill",
       "Joseph Stalin",
-      "Franklin D. Roosevelt",
+      "San Francesco d'Assisi",
       "Charles de Gaulle"
     ],
     "correctIndex": 0,
@@ -3229,7 +3229,7 @@
       "Giuseppe Garibaldi",
       "Cesare Borgia",
       "Kanye West",
-      "Lorenzo de' Medici"
+      "Madre Teresa di Calcutta"
     ],
     "correctIndex": 0,
     "year_or_period": "1860",
@@ -3253,7 +3253,7 @@
       "Albert Einstein",
       "John F. Kennedy",
       "Jean-Paul Sartre",
-      "Enrico Fermi"
+      "Eraclito"
     ],
     "correctIndex": 0,
     "year_or_period": "1945-1955",
@@ -3300,7 +3300,7 @@
     "choices": [
       "Niccolò Machiavelli",
       "Carl von Clausewitz",
-      "Lorenzo de' Medici",
+      "Joseph Stalin",
       "J. Robert Oppenheimer"
     ],
     "correctIndex": 0,
@@ -3364,5 +3364,29 @@
     "language_orig": "GR",
     "sensitive": false,
     "context": "La filosofia di Socrate: la conoscenza è la base di ogni virtù."
+  },
+  {
+    "id": "q124",
+    "quote": "Chi senza peccato scagli la prima pietra.",
+    "author": "Gesù Cristo",
+    "choices": [
+      "Gesù Cristo",
+      "San Francesco d'Assisi",
+      "Nelson Mandela",
+      "Donald Trump"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "I secolo d.C.",
+    "source_title": "Vangelo di Giovanni 8:7",
+    "source_link": "https://it.wikipedia.org/wiki/Gesù",
+    "tags": ["religione", "Bibbia", "perdono"],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Figura centrale del Cristianesimo",
+    "hint_more": "Figura centrale del Cristianesimo, noto per i suoi insegnamenti di amore, perdono e misericordia, e per aver pronunciato questa frase durante il processo di una donna adultera.",
+    "ambiguity_note": "Spesso attribuita genericamente a 'un santo' o 'un profeta', ma è specificamente di Gesù nel Vangelo di Giovanni.",
+    "language_orig": "GR",
+    "sensitive": false,
+    "context": "L'insegnamento di Gesù: la misericordia e il perdono prima del giudizio."
   }
 ]

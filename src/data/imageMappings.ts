@@ -58,7 +58,6 @@ export const personaggiImageMap: Record<string, string> = {
   "Albert Einstein": "images/personaggi/albert-einstein.jpg",
   "Niels Bohr": "images/personaggi/niels-bohr.jpg",
   "Erwin Schrödinger": "images/personaggi/erwin-schrodinger.jpg",
-  "Max Born": "images/personaggi/max-born.jpg",
   "Adam Smith": "images/personaggi/adam-smith.jpg",
   "David Ricardo": "images/personaggi/david-ricardo.jpg",
   "John Locke": "images/personaggi/john-locke.png",
@@ -195,9 +194,10 @@ export const personaggiImageMap: Record<string, string> = {
   "Ponzio Pilato": "images/personaggi/ponzio-pilato.jpg",
   "Emiliano Zapata": "images/personaggi/emiliano-zapata.jpg",
   "Giuseppe Garibaldi": "images/personaggi/giuseppe-garibaldi.jpg",
-  "Donald Trump": "images/personaggi/donald-trump.jpg",
+  "Donald Trump": "images/personaggi/donald-trump.webp",
   "George Bernard Shaw": "images/personaggi/george-bernard-shaw.jpg",
   "San Francesco d'Assisi": "images/personaggi/san-francesco-d-assisi.jpg",
   "Ernesto 'Che' Guevara": "images/personaggi/che-guevara.jpg",
-  "Enrico Fermi": "images/personaggi/enrico-fermi.jpg"
+  "Enrico Fermi": "images/personaggi/enrico-fermi.jpg",
+  "Gesù Cristo": "images/personaggi/gesu-cristo.jpg"
 };

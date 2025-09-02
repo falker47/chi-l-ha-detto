@@ -939,7 +939,7 @@ export default function ChiLHaDetto({
                 </div>
                 
                 {/* Contenuto principale */}
-                <div className="text-center relative z-10 flex flex-col items-center justify-center h-full">
+                <div className="text-center relative z-10 flex flex-col items-center justify-center h-full py-8">
                   {/* Messaggio di sconfitta */}
                   <div className="text-xl sm:text-2xl text-red-100 font-semibold mb-4 drop-shadow-lg"
                        style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
@@ -985,7 +985,7 @@ export default function ChiLHaDetto({
                 </div>
                 
                 {/* Contenuto principale */}
-                <div className="text-center relative z-10 flex flex-col items-center justify-center h-full">
+                <div className="text-center relative z-10 flex flex-col items-center justify-center h-full py-8">
                   {/* Testo del livello con effetto glow */}
                   <div className="text-4xl sm:text-5xl font-black text-white mb-3 drop-shadow-2xl"
                        style={{ 
@@ -1049,7 +1049,7 @@ export default function ChiLHaDetto({
             {/* FASE 4: Overlay della risposta con spiegazioni e bottoni (dopo l'animazione) */}
             {revealed && (selected !== null || isTimeoutGameOver || (gameMode === 'millionaire' && gameOver)) && !showClimbingAnimation && !showGameOverAnimation && (
               <div className="w-full h-full bg-black/80 backdrop-blur-md rounded-2xl border-2 border-white/30 shadow-2xl flex items-center justify-center p-3 sm:p-6">
-                <div className="text-center max-w-xs sm:max-w-2xl w-full">
+                <div className="text-center max-w-xs sm:max-w-2xl w-full py-8">
                   <div className="mb-3 sm:mb-4">
                     {isTimeoutGameOver ? (
                       <div className="text-2xl sm:text-3xl font-bold text-red-400 mb-2 drop-shadow-lg">⏰ Tempo Scaduto!</div>
