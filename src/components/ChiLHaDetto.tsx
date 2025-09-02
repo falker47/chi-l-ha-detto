@@ -180,6 +180,15 @@ export default function ChiLHaDetto({
     }
   }, [order, i, gameMode, selectNextQuestion]);
 
+  // Funzione per preload delle immagini dei personaggi
+  const preloadCharacterImages = useCallback((choices: string[]) => {
+    choices.forEach(characterName => {
+      const imageUrl = getPortrait(characterName);
+      const img = new Image();
+      img.src = imageUrl;
+    });
+  }, []);
+
   const [choiceOrder, setChoiceOrder] = useState<number[]>([]);
   useEffect(() => {
     if (!current) return;
@@ -190,7 +199,10 @@ export default function ChiLHaDetto({
     setDisabledOptions([]);
     setHintRevealed(false);
     setSuperHintRevealed(false);
-  }, [current?.id]);
+    
+    // Preload delle immagini dei personaggi per questa domanda
+    preloadCharacterImages(current.choices);
+  }, [current?.id, preloadCharacterImages]);
 
   const mappedChoices = useMemo(() => {
     if (!current) return [] as { label: string; isCorrect: boolean }[];
@@ -582,7 +594,7 @@ export default function ChiLHaDetto({
                   }}>
                   🔥 Streak: {streak}
                 </span>
-                {/* Punteggio */}
+                {/* Score */}
                 <span
                   style={{ 
                     backgroundColor: '#7c3aed',
@@ -596,7 +608,7 @@ export default function ChiLHaDetto({
                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                     display: 'inline-block'
                   }}>
-                  💎 Punteggio: {score}
+                  💎 Score: {score}
                 </span>
               </div>
             )}
@@ -642,7 +654,7 @@ export default function ChiLHaDetto({
           )}
           
                      <div className="flex items-center justify-end gap-2 sm:gap-3">
-            {/* Punteggio per modalità Verso l'Olimpo */}
+            {/* Score per modalità Verso l'Olimpo */}
             {gameMode === 'millionaire' && (
               <span
                 style={{ 
@@ -657,7 +669,7 @@ export default function ChiLHaDetto({
                   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
                   display: 'inline-block'
                 }}>
-                Punteggio: {score}
+                Score: {score}
               </span>
             )}
             
@@ -803,18 +815,8 @@ export default function ChiLHaDetto({
                    <span className="text-2xl drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 8px rgba(34, 197, 94, 0.8))' }}>🚀</span>
                    <span className="font-bold text-green-300 text-sm drop-shadow-lg">Super Hint Attivo</span>
                  </div>
-                                    <div className="space-y-2">
-                     <div className="p-2 bg-green-800/30 backdrop-blur-sm rounded-lg border border-green-300/30">
-                       <span className="font-semibold text-green-200 text-xs drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.6))' }}>💡 Hint:</span>
-                       <p className="text-white text-sm mt-1 drop-shadow-lg"
-                          style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_short}</p>
-                     </div>
-                     <div className="p-2 bg-green-800/30 backdrop-blur-sm rounded-lg border border-green-300/30">
-                       <span className="font-semibold text-green-200 text-xs drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.6))' }}>🔍 Dettaglio:</span>
-                       <p className="text-white text-sm mt-1 drop-shadow-lg"
-                          style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_more}</p>
-                     </div>
-                   </div>
+                 <p className="text-white text-sm leading-relaxed drop-shadow-lg"
+                    style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{current.hint_more}</p>
                </div>
              </div>
            )}
@@ -948,7 +950,7 @@ export default function ChiLHaDetto({
                       ? (currentLevel === 12 
                           ? '🎉 Hai completato tutte le Dodici Fatiche! 🎉' 
                           : 'Continua la scalata verso l\'Olimpo!')
-                      : `Continua la battaglia! Punteggio: ${score}`
+                      : `Continua la battaglia! Score: ${score}`
                     }
                   </div>
                   
@@ -1066,7 +1068,7 @@ export default function ChiLHaDetto({
                           </div>
                           <div className="bg-gradient-to-r from-blue-900/60 to-indigo-800/60 backdrop-blur-sm rounded-lg border-2 border-blue-400/50 p-2 flex items-center justify-between">
                             <div className="flex items-center gap-2">
-                              <div className="text-xs text-blue-200 font-medium">Punteggio</div>
+                              <div className="text-xs text-blue-200 font-medium">Score</div>
                             </div>
                             <div className="text-lg font-bold text-blue-300">{score}</div>
                           </div>

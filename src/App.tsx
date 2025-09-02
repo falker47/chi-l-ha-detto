@@ -66,7 +66,7 @@ function MainMenu({
            </div>
            
            <div className="relative mb-8">
-            <p className="text-xs sm:text-sm md:text-base text-center max-w-3xl leading-relaxed text-white font-medium relative z-10 px-3"
+            <p className="text-xs sm:text-xs md:text-sm text-center max-w-3xl leading-relaxed text-white font-medium relative z-10 px-3"
                style={{ 
                  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1), 0 0 15px rgba(0, 0, 0, 0.7)' 
                }}>
@@ -77,59 +77,81 @@ function MainMenu({
           </div>
           
                                          {/* Toggle per contenuti sensibili e Tutorial - Design accattivante */}
-           <div className="mb-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+           <div className="mb-6 flex flex-row items-center justify-center gap-2 sm:gap-3">
             {/* Container contenuti sensibili */}
-            <div className="relative group">
-              {/* Container principale con effetti avanzati */}
-              <div className="flex flex-row items-center space-x-3 sm:space-x-4 bg-gradient-to-r from-amber-900/40 via-orange-900/30 to-red-900/40 backdrop-blur-lg rounded-2xl px-4 sm:px-6 py-3 border-2 border-amber-400/30 shadow-2xl transition-all duration-300 hover:border-amber-400/50 hover:shadow-amber-500/20">
+            <div className="w-48 sm:w-56">
+              {/* Container principale - design pulito */}
+              <div className="flex flex-row items-center justify-center space-x-3 bg-black/60 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/20 h-12 sm:h-14">
                 {/* Testo principale */}
                 <div className="flex flex-col">
-                  <span className="text-white font-bold text-xs sm:text-sm drop-shadow-lg"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+                  <span className="text-white font-semibold text-xs">
                     Contenuti Sensibili
                   </span>
-                  <span className="text-amber-200 text-xs font-medium">
-                    {includeSensitive ? 'Modalità Avanzata' : 'Modalità Sicura'}
+                  <span className="text-gray-300 text-xs">
+                    {includeSensitive ? 'Avanzata' : 'Sicura'}
                   </span>
                 </div>
                 
-                {/* Toggle switch migliorato */}
+                {/* Bottone con icona dinamica */}
                 <button
                   onClick={() => setIncludeSensitive(!includeSensitive)}
-                  className={`relative inline-flex h-6 w-12 sm:h-7 sm:w-14 items-center rounded-full transition-all duration-300 focus:outline-none shadow-lg transform hover:scale-105 ${
+                  className={`inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg transition-all duration-200 focus:outline-none ${
                     includeSensitive 
-                      ? 'bg-gradient-to-r from-amber-500 to-orange-500 shadow-amber-500/30' 
-                      : 'bg-gradient-to-r from-gray-600 to-gray-700 shadow-gray-600/30'
+                      ? 'bg-orange-500 hover:bg-orange-600' 
+                      : 'bg-gray-600 hover:bg-gray-700'
                   }`}
                 >
-                  <span
-                    className={`inline-block h-4 w-4 sm:h-5 sm:w-5 transform rounded-full bg-white transition-all duration-300 shadow-md ${
-                      includeSensitive ? 'translate-x-7 sm:translate-x-8' : 'translate-x-1'
-                    }`}
-                  />
+                  {/* Icona dinamica */}
+                  <div className="w-4 h-4 sm:w-5 sm:h-5">
+                    {includeSensitive ? (
+                      // Icona "ON" - triangolo di alert
+                      <svg 
+                        className="w-full h-full text-white" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                      >
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <path d="M12 9v4"/>
+                        <path d="M12 17h.01"/>
+                      </svg>
+                    ) : (
+                      // Icona "OFF" - scudo
+                      <svg 
+                        className="w-full h-full text-white" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                      >
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M9 12l2 2 4-4"/>
+                      </svg>
+                    )}
+                  </div>
                 </button>
-                
-                
               </div>
-              
-              {/* Effetto glow al hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
             </div>
 
             {/* Bottone Tutorial */}
             <button
               onClick={() => setShowTutorial(true)}
-              className="group relative px-4 sm:px-6 py-3 rounded-2xl font-semibold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-r from-blue-700 to-indigo-800 hover:from-blue-600 hover:to-indigo-700 text-white border-2 border-blue-400/50 shadow-xl hover:shadow-2xl backdrop-blur-sm"
+              className="px-3 sm:px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 h-12 sm:h-14 flex items-center justify-center w-24 sm:w-28"
             >
               <div className="flex items-center justify-center gap-2">
                 {/* Icona tutorial */}
-                <div className="w-4 h-4 sm:w-5 sm:h-5 relative flex items-center justify-center">
+                <div className="w-4 h-4 sm:w-5 sm:h-5">
                   <svg 
-                    className="w-full h-full text-white/90 group-hover:text-white transition-colors duration-300" 
+                    className="w-full h-full text-white" 
                     viewBox="0 0 24 24" 
                     fill="none" 
                     stroke="currentColor" 
-                    strokeWidth="2.5" 
+                    strokeWidth="2" 
                     strokeLinecap="round" 
                     strokeLinejoin="round"
                   >
@@ -140,9 +162,6 @@ function MainMenu({
                 </div>
                 <span className="font-medium">Tutorial</span>
               </div>
-              
-              {/* Effetto hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
           </div>
 
