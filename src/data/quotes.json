@@ -22,9 +22,9 @@
     "spiciness": 1,
     "hint_short": "Strategia militare del XX secolo",
     "hint_more": "Leader britannico che orchestrò operazioni di depistaggio per confondere il nemico durante la Seconda guerra mondiale, incluso il celebre piano Bodyguard per il D-Day.",
-    "ambiguity_note": "Anche altri leader parlarono di propaganda in guerra.",
+    "ambiguity_note": "Altri leader usavano propaganda bellica, ma Churchill la teorizzò come arte militare.",
     "language_orig": "EN",
-    "context": "L'idea riecheggia nelle operazioni di depistaggio alleate (es. Bodyguard) che confusero i comandi tedeschi sullo sbarco."
+    "context": "Riflette la strategia di disinformazione alleata che rese possibile lo sbarco in Normandia."
   },
   {
     "id": "q2",
@@ -49,9 +49,9 @@
     "spiciness": 0,
     "hint_short": "Letteratura inglese del XIX secolo",
     "hint_more": "Scrittore irlandese di commedie teatrali, noto per il suo estetismo e per aver trasformato la propria vita in un'opera d'arte, autore di 'Il ritratto di Dorian Gray'.",
-    "ambiguity_note": "Il tono brillante può ricordare d'Annunzio o Nietzsche.",
+    "ambiguity_note": "Il paradosso brillante ricorda d'Annunzio, ma Wilde lo fa con autoironia.",
     "language_orig": "EN",
-    "context": "Battuta dalla commedia di Wilde: paradosso e autoironia estetizzante."
+    "context": "Esempio perfetto del wit vittoriano: trasformare un vizio in virtù con eleganza."
   },
   {
     "id": "q3",
@@ -76,9 +76,9 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco che scrisse 'Al di là del bene e del male', noto per aver proclamato la 'morte di Dio' e per aver influenzato profondamente il pensiero del Novecento con le sue critiche alla morale tradizionale.",
-    "ambiguity_note": "Lessico 'oscuro' può ricordare Jung o Lovecraft.",
+    "ambiguity_note": "Il linguaggio 'oscuro' ricorda Jung, ma Nietzsche parla di morale, non psicologia.",
     "language_orig": "DE",
-    "context": "Avverte della metamorfosi morale: combattere il male può contaminare chi combatte."
+    "context": "Uno dei suoi aforismi più citati: il rischio di diventare ciò che si combatte."
   },
   {
     "id": "q4",
@@ -103,9 +103,9 @@
     "spiciness": 1,
     "hint_short": "Storiografia inglese del XIX secolo",
     "hint_more": "Storico inglese cattolico, primo barone, noto per aver studiato la storia della libertà.",
-    "ambiguity_note": "Spesso confusa con Machiavelli per il tema del potere.",
+    "ambiguity_note": "Machiavelli studia il potere, Acton ne denuncia i pericoli morali.",
     "language_orig": "EN",
-    "context": "Acton critica l'indulgenza verso i potenti: più potere, più rischio di corruzione."
+    "context": "La massima più famosa di Acton, ancora oggi citata per criticare l'autoritarismo."
   },
   {
     "id": "q5",
@@ -129,9 +129,9 @@
     "spiciness": 0,
     "hint_short": "Politica tedesca del XIX secolo",
     "hint_more": "Cancelliere prussiano soprannominato 'Cancelliere di ferro', architetto dell'unificazione tedesca e maestro della Realpolitik, noto per aver affermato che 'la politica è l'arte del possibile'.",
-    "ambiguity_note": "Il pragmatismo politico ricorda Cavour e Machiavelli.",
+    "ambiguity_note": "Cavour e Machiavelli erano pragmatici, ma Bismarck coniò il termine 'Realpolitik'.",
     "language_orig": "DE",
-    "context": "Sintesi della Realpolitik: agire entro vincoli reali più che ideali."
+    "context": "Il motto che definì la politica tedesca del XIX secolo: realismo sopra ideologia."
   },
   {
     "id": "q6",
@@ -157,9 +157,9 @@
     "sensitive": true,
     "hint_short": "Storia tedesca del XX secolo",
     "hint_more": "Autore tedesco del XIX secolo che scrisse un romanzo dal titolo 'Arbeit macht frei', frase che venne poi utilizzata come slogan sui cancelli dei campi di concentramento nazisti.",
-    "ambiguity_note": "Spesso (erroneamente) attribuito a Hitler; era slogan imposto dal regime.",
+    "ambiguity_note": "Molti credono sia di Hitler, ma era uno slogan del regime, non sua invenzione.",
     "language_orig": "DE",
-    "context": "Origine in un romanzo moralistico (1873); il regime nazista lo pose sui cancelli di vari campi (es. Auschwitz) come strumento di umiliazione e propaganda."
+    "context": "Frase innocente del 1873 che il nazismo trasformò in strumento di tortura psicologica."
   },
   {
     "id": "q7",
@@ -184,9 +184,9 @@
     "sensitive": true,
     "hint_short": "Storia italiana del XX secolo",
     "hint_more": "Leader politico italiano che guidò il movimento fascista, noto per i suoi discorsi infuocati e per aver utilizzato questo slogan nel clima nazionalista del primo dopoguerra.",
-    "ambiguity_note": "Spesso associato a d'Annunzio; attribuzione storica non univoca.",
+    "ambiguity_note": "D'Annunzio usava linguaggio simile, ma Mussolini lo rese slogan di massa.",
     "language_orig": "IT",
-    "context": "Circolante nel clima nazionalista del primo dopoguerra; il fascismo ne favorì la diffusione come retorica virilista."
+    "context": "Slogan che catturò lo spirito del tempo: dalla guerra alla politica, sempre virilità."
   },
   {
     "id": "q8",
@@ -211,9 +211,9 @@
     "spiciness": 1,
     "hint_short": "Musica hip-hop contemporanea",
     "hint_more": "Rapper e produttore musicale americano, noto per i suoi album 'My Beautiful Dark Twisted Fantasy' e per aver spesso affrontato temi di potere e celebrità nei suoi testi.",
-    "ambiguity_note": "Tema del potere richiama Machiavelli/Nietzsche; la cultura pop depista.",
+    "ambiguity_note": "Machiavelli e Nietzsche parlavano di potere, ma Kanye lo fa in un rap.",
     "language_orig": "IT",
-    "context": "Gioco tra egotrip e critica sociale: il ritornello ammonisce contro il potere in una sola persona."
+    "context": "Kanye trasforma l'egotrip in critica sociale: il potere assoluto corrompe anche i rapper."
   },
   {
     "id": "q9",
@@ -238,9 +238,9 @@
     "spiciness": 0,
     "hint_short": "Strategia militare antico",
     "hint_more": "Stratega militare cinese del VI secolo a.C., autore del celebre trattato 'L'arte della guerra', considerato uno dei più influenti manuali di strategia mai scritti.",
-    "ambiguity_note": "Massime simili compaiono in altri contesti militari.",
+    "ambiguity_note": "Altri generali usavano l'inganno, ma Sun Tzu lo teorizzò per primo.",
     "language_orig": "IT",
-    "context": "Principio di dissimulazione: indurre l'avversario in errore sulla propria forza."
+    "context": "Una delle strategie più antiche della guerra: nascondere la propria forza reale."
   },
   {
     "id": "q10",
@@ -265,9 +265,9 @@
     "spiciness": 0,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano che guidò il paese durante la Grande Depressione e la Seconda guerra mondiale, noto per i suoi 'Fireside Chats' e per aver istituito il New Deal.",
-    "ambiguity_note": "Lo stile oratorio fa pensare a Churchill o JFK.",
+    "ambiguity_note": "Churchill e JFK erano oratori potenti, ma FDR parlava di economia, non guerra.",
     "language_orig": "IT",
-    "context": "Discorso inaugurale del 1933: superare la paralisi della paura per reagire alla crisi."
+    "context": "La frase che rassicurò l'America durante la Grande Depressione: coraggio contro paura."
   },
   {
     "id": "q11",
@@ -291,10 +291,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico tedesco naturalizzato americano, autore della teoria della relatività, che espresse scetticismo verso l'interpretazione probabilistica della meccanica quantistica nelle sue lettere con Max Born.",
-    "ambiguity_note": "Il tema del caso/la misura fa pensare a Schrödinger.",
+    "ambiguity_note": "Schrödinger lavorava sulla quantistica, ma Einstein la criticava per il caso.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "Einstein esprimeva scetticismo verso l’interpretazione probabilistica della meccanica quantistica, sostenendo una realtà fisica più deterministica rispetto alla lettura di Copenaghen."
+    "context": "La frase che riassume il suo rifiuto del caso nella fisica: Dio non è un giocatore."
   },
   {
     "id": "q12",
@@ -319,10 +319,10 @@
     "spiciness": 1,
     "hint_short": "Pensiero politico rinascimentale",
     "hint_more": "Politico e filosofo fiorentino del Rinascimento, autore de 'Il Principe', considerato il fondatore del pensiero politico moderno per il suo realismo e la separazione tra etica e politica.",
-    "ambiguity_note": "Il tema del timore richiama Hobbes o la prassi di Borgia.",
+    "ambiguity_note": "Hobbes teorizzava il timore, Machiavelli lo applicava alla politica pratica.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Machiavelli distingue tra etica privata e necessità del potere, argomentando che la stabilità del principato talvolta richiede durezza più che consenso affettivo."
+    "context": "Il consiglio più controverso del Principe: meglio la paura del popolo che il suo amore."
   },
   {
     "id": "q13",
@@ -347,10 +347,10 @@
     "spiciness": 1,
     "hint_short": "Letteratura inglese del XX secolo",
     "hint_more": "Scrittore inglese del Novecento, autore di '1984' e 'La fattoria degli animali', noto per le sue critiche al totalitarismo e per aver coniato termini come 'Grande Fratello' e 'Neolingua'.",
-    "ambiguity_note": "La distopia sociale può ricordare Huxley o la teoria marxiana.",
+    "ambiguity_note": "Huxley scriveva distopie, Orwell denunciava il tradimento degli ideali.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Orwell denuncia come gli ideali di uguaglianza possano essere traditi da élite che riscrivono le regole per mantenere il potere."
+    "context": "La frase che svela l'ipocrisia del potere: tutti uguali, ma alcuni più uguali."
   },
   {
     "id": "q14",
@@ -375,10 +375,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia francese del XX secolo",
     "hint_more": "Filosofa francese esistenzialista, compagna di Sartre, autrice de 'Il secondo sesso', considerata una delle fondatrici del pensiero femminista moderno.",
-    "ambiguity_note": "L’analisi culturale del ruolo femminile può far pensare a Woolf.",
+    "ambiguity_note": "Woolf analizzava la condizione femminile, de Beauvoir la teorizzò come costruzione sociale.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "De Beauvoir mostra come l’identità di genere sia plasmata dalle strutture sociali e culturali, non solo da fattori biologici."
+    "context": "La frase che rivoluzionò il femminismo: l'identità di genere è una costruzione culturale."
   },
   {
     "id": "q15",
@@ -403,10 +403,10 @@
     "spiciness": 0,
     "hint_short": "Letteratura latina antica",
     "hint_more": "Commediografo latino del III-II secolo a.C., autore di commedie come 'Asinaria', che coniò questa celebre espressione molto prima che Hobbes la utilizzasse nel 'Leviatano'.",
-    "ambiguity_note": "Spesso creduta di Hobbes per l’uso nello Stato di natura.",
+    "ambiguity_note": "Hobbes la rese famosa, ma Plauto la inventò nel teatro comico romano.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La formula appare in Plauto e verrà ripresa secoli dopo in filosofia politica per descrivere conflitto e diffidenza nello stato di natura."
+    "context": "La frase latina che descrive la natura umana: conflitto e diffidenza reciproca."
   },
   {
     "id": "q16",
@@ -431,10 +431,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XVII secolo",
     "hint_more": "Matematico e filosofo francese, inventore della calcolatrice meccanica, noto per i suoi 'Pensieri' e per aver difeso la fede cristiana contro il razionalismo cartesiano.",
-    "ambiguity_note": "Il contrasto cuore/ragione può ricordare Rousseau o Descartes.",
+    "ambiguity_note": "Rousseau e Descartes parlavano di ragione, Pascal la contrapponeva al cuore.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "Pascal evidenzia i limiti della ragione nel cogliere aspetti esistenziali e religiosi, proponendo un sapere ‘del cuore’ non riducibile alla logica."
+    "context": "La difesa della fede contro il razionalismo: il cuore conosce ciò che la mente ignora."
   },
   {
     "id": "q17",
@@ -459,10 +459,10 @@
     "spiciness": 0,
     "hint_short": "Diritto romano antico",
     "hint_more": "Oratore e politico romano del I secolo a.C., autore di 'De Legibus', noto per le sue orazioni contro Catilina e per aver difeso la repubblica romana contro Cesare.",
-    "ambiguity_note": "Attribuita talvolta a Cesare per contesto politico.",
+    "ambiguity_note": "Cesare agiva per il popolo, Cicerone teorizzava il principio giuridico.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Per Cicerone la legittimità delle leggi si misura con l’interesse pubblico: la sicurezza e il bene dei cittadini prevalgono."
+    "context": "Il principio del diritto romano: il bene pubblico prevale su ogni altra legge."
   },
   {
     "id": "q18",
@@ -487,10 +487,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia greca antica",
     "hint_more": "Filosofo greco del IV secolo a.C., allievo di Socrate e maestro di Aristotele, autore di dialoghi come 'La Repubblica' e 'L'Apologia di Socrate'.",
-    "ambiguity_note": "Molti la citano come di Socrate; l’autore scritto è Platone.",
+    "ambiguity_note": "Socrate la pronunciò, ma Platone la scrisse nell'Apologia.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "Nel resoconto platonico del processo, Socrate difende l’esame critico di sé e della polis come dovere morale dell’uomo."
+    "context": "La difesa di Socrate: la vita senza esame critico non vale la pena di essere vissuta."
   },
   {
     "id": "q19",
@@ -515,10 +515,10 @@
     "spiciness": 0,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano del primo Novecento, noto per la sua politica del 'Big Stick' e per aver promosso la costruzione del Canale di Panama.",
-    "ambiguity_note": "La retorica vigorosa può ricordare Churchill.",
+    "ambiguity_note": "Churchill era vigoroso in guerra, Roosevelt in diplomazia panamericana.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "TR riassumeva così la sua politica estera: toni moderati accompagnati dalla capacità effettiva di agire, specie nel contesto panamericano."
+    "context": "La filosofia del 'Big Stick': diplomazia pacifica ma con la forza pronta all'uso."
   },
   {
     "id": "q20",
@@ -543,10 +543,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore del 'Manifesto del Partito Comunista' insieme a Engels, noto per la sua critica del capitalismo e per aver influenzato il pensiero socialista.",
-    "ambiguity_note": "Talvolta attribuita a Lenin per il tono politico.",
+    "ambiguity_note": "Lenin usava toni simili, ma Marx teorizzò la critica della religione.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "Marx interpreta la religione come espressione della sofferenza reale e insieme come consolazione che può ostacolare il cambiamento materiale."
+    "context": "La critica più famosa della religione: consolazione che impedisce la rivoluzione."
   },
   {
     "id": "q21",
@@ -571,10 +571,10 @@
     "spiciness": 0,
     "hint_short": "Economia del XVIII secolo",
     "hint_more": "Filosofo scozzese del XVIII secolo, considerato il padre dell'economia moderna, autore de 'La ricchezza delle nazioni' e teorico della 'mano invisibile' del mercato.",
-    "ambiguity_note": "Può essere confusa con Locke per temi affini.",
+    "ambiguity_note": "Locke teorizzava i diritti naturali, Smith la mano invisibile del mercato.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Smith descrive come l’interesse personale, entro regole e concorrenza, generi cooperazione e beni utili alla collettività."
+    "context": "La metafora che spiega il capitalismo: l'interesse personale serve il bene comune."
   },
   {
     "id": "q22",
@@ -599,10 +599,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia romana del I secolo",
     "hint_more": "Filosofo stoico romano del I secolo d.C., precettore di Nerone, autore delle 'Lettere a Lucilio' e noto per i suoi insegnamenti sulla virtù e la saggezza.",
-    "ambiguity_note": "Spesso confusa con massime di Marco Aurelio.",
+    "ambiguity_note": "Marco Aurelio scriveva meditazioni, Seneca lettere di consiglio pratico.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Seneca esorta a superare l’inerzia e l’auto-sabotaggio: il coraggio rende affrontabili le difficoltà."
+    "context": "La saggezza stoica: il coraggio trasforma le difficoltà in opportunità."
   },
   {
     "id": "q23",
@@ -627,10 +627,10 @@
     "spiciness": 0,
     "hint_short": "Informatica del XX secolo",
     "hint_more": "Matematico britannico del XX secolo, considerato il padre dell'informatica, noto per aver decifrato il codice Enigma durante la Seconda guerra mondiale e per aver teorizzato l'intelligenza artificiale.",
-    "ambiguity_note": "Il tema potrebbe far pensare a Shannon o Wiener.",
+    "ambiguity_note": "Shannon e Wiener lavoravano su informazione, Turing sull'intelligenza artificiale.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Turing riflette sui limiti e sulle opportunità immediate dell’IA, enfatizzando il lavoro concreto più che le previsioni lontane."
+    "context": "Il padre dell'informatica: concentrarsi sul presente invece di sognare il futuro."
   },
   {
     "id": "q24",
@@ -655,10 +655,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia americana del XX secolo",
     "hint_more": "Filosofo spagnolo naturalizzato americano, autore de 'La vita della ragione', noto per questa celebre massima sulla memoria storica che è stata ripresa da molti politici e storici.",
-    "ambiguity_note": "Spesso citata come di Churchill per la fama oratoria.",
+    "ambiguity_note": "Churchill la citava spesso, ma Santayana la formulò per primo.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Santayana sottolinea il valore civile della memoria storica per evitare la ripetizione di errori collettivi."
+    "context": "La massima più citata sulla storia: chi ignora il passato lo ripete."
   },
   {
     "id": "q25",
@@ -683,10 +683,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia politica del XX secolo",
     "hint_more": "Filosofa tedesca naturalizzata americana, allieva di Heidegger, nota per le sue analisi sul totalitarismo e per aver distinto tra potere, violenza e autorità nel pensiero politico moderno.",
-    "ambiguity_note": "L’argomento richiama Weber (monopolio della forza) o Fanon.",
+    "ambiguity_note": "Weber teorizzava il monopolio della forza, Arendt distingueva potere e violenza.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Per Arendt il potere nasce dall’azione collettiva e dal consenso; la violenza può sovvertirlo ma non sostituirlo in modo duraturo."
+    "context": "La distinzione fondamentale: il potere nasce dal consenso, la violenza lo distrugge."
   },
   {
     "id": "q26",
@@ -711,10 +711,10 @@
     "spiciness": 0,
     "hint_short": "Storia romana antica",
     "hint_more": "Generale e politico romano del I secolo a.C., noto per aver attraversato il Rubicone, per le sue conquiste in Gallia e per aver pronunciato questa frase dopo una rapida vittoria in Asia Minore.",
-    "ambiguity_note": "Può essere confusa con Augusto per i trionfi imperiali.",
+    "ambiguity_note": "Augusto consolidò l'impero, Cesare lo conquistò con questa formula.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Celebre formula con cui Cesare comunicò la rapidità di una vittoria militare (Zela), divenuta simbolo di efficienza bellica e politica."
+    "context": "La frase latina più famosa: tre parole che sintetizzano una vittoria lampo."
   },
   {
     "id": "q27",
@@ -739,10 +739,10 @@
     "spiciness": 0,
     "hint_short": "Teoria della comunicazione del XX secolo",
     "hint_more": "Teorico canadese della comunicazione del XX secolo, noto per aver studiato l'impatto dei media sulla società e per aver coniato la celebre frase 'il mezzo è il messaggio'.",
-    "ambiguity_note": "Spesso associata a Postman per affinità tematiche.",
+    "ambiguity_note": "Postman criticava i media, McLuhan ne studiava l'impatto sociale.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "McLuhan sostiene che la struttura del mezzo altera percezioni e relazioni sociali più del contenuto veicolato."
+    "context": "La teoria che rivoluzionò la comunicazione: il medium plasma la società più del messaggio."
   },
   {
     "id": "q28",
@@ -767,10 +767,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XVII secolo",
     "hint_more": "Filosofo francese del XVII secolo, considerato il padre della filosofia moderna, autore del 'Discorso sul metodo' e noto per il celebre 'cogito ergo sum'.",
-    "ambiguity_note": "Può essere confusa con Pascal per coerenza storica francese.",
+    "ambiguity_note": "Pascal criticava il razionalismo, Descartes lo fondava con il cogito.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "Descartes formula il principio del 'cogito' come certezza indubitabile da cui fondare il sapere."
+    "context": "Il fondamento della filosofia moderna: la certezza del pensiero contro il dubbio."
   },
   {
     "id": "q29",
@@ -795,10 +795,10 @@
     "spiciness": 1,
     "hint_short": "Storia americana del XVIII secolo",
     "hint_more": "Patriota americano del XVIII secolo, noto per i suoi discorsi infuocati durante la Rivoluzione americana e per aver pronunciato questa celebre frase alla Convenzione della Virginia nel 1775.",
-    "ambiguity_note": "Spesso confusa con Jefferson per la Dichiarazione d’Indipendenza.",
+    "ambiguity_note": "Jefferson scrisse la Dichiarazione, Henry la difese con questa frase.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Henry conclude con un appello alla libertà personale come bene supremo nel contesto pre‑rivoluzionario americano."
+    "context": "Il grido che infiammò la Rivoluzione americana: libertà o morte, senza compromessi."
   },
   {
     "id": "q30",
@@ -823,10 +823,10 @@
     "spiciness": 1,
     "hint_short": "Storiografia americana del XX secolo",
     "hint_more": "Storico americano del XX secolo, autore de 'La storia della civiltà' insieme alla moglie Ariel, noto per aver reso popolare questa parafrasi del pensiero aristotelico sull'abitudine e la virtù.",
-    "ambiguity_note": "Comunemente attribuita ad Aristotele per il tema dell’habitus.",
+    "ambiguity_note": "Aristotele teorizzava l'habitus, Durant lo rese aforisma popolare.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Durant riassume in forma aforistica il pensiero etico aristotelico sull’abitudine e la virtù; l’attribuzione diretta ad Aristotele è impropria."
+    "context": "La parafrasi più famosa di Aristotele: l'eccellenza nasce dalla ripetizione quotidiana."
   },
   {
     "id": "q31",
@@ -851,10 +851,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore de 'Al di là del bene e del male' e 'Così parlò Zarathustra', noto per aver influenzato profondamente il pensiero del Novecento con le sue critiche alla morale tradizionale.",
-    "ambiguity_note": "Spesso associata a Frankl per l’uso in 'Uno psicologo nei lager'.",
+    "ambiguity_note": "Frankl la usò nei lager, Nietzsche la teorizzò nella filosofia.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "Nietzsche lega la capacità di sopportare la sofferenza al possesso di un senso, un 'perché' esistenziale."
+    "context": "La saggezza che unisce filosofia e psicologia: il senso dà forza per sopportare tutto."
   },
   {
     "id": "q32",
@@ -879,10 +879,10 @@
     "spiciness": 0,
     "hint_short": "Semantica del XX secolo",
     "hint_more": "Linguista e filosofo polacco naturalizzato americano, fondatore della semantica generale, noto per aver sviluppato la teoria che distingue tra rappresentazioni mentali e realtà oggettiva.",
-    "ambiguity_note": "Confusa con Bateson per discipline affini.",
+    "ambiguity_note": "Bateson studiava la comunicazione, Korzybski la semantica generale.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Korzybski distingue rappresentazioni e realtà: le mappe guidano ma non coincidono con il territorio."
+    "context": "Il principio della semantica: la rappresentazione non è mai la realtà."
   },
   {
     "id": "q33",
@@ -907,10 +907,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XVII secolo",
     "hint_more": "Fisico e matematico inglese del XVII secolo, autore dei 'Principia Mathematica', scopritore della legge di gravitazione universale e considerato uno dei più grandi scienziati della storia.",
-    "ambiguity_note": "Spesso associata a Galilei per l’immaginario copernicano.",
+    "ambiguity_note": "Galilei rivoluzionò l'astronomia, Newton riconobbe i suoi debiti verso i predecessori.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Newton accredita i progressi ai contributi precedenti, diventando simbolo di cumulatività del sapere."
+    "context": "L'umiltà del genio: ogni scoperta poggia sui giganti del passato."
   },
   {
     "id": "q34",
@@ -935,10 +935,10 @@
     "spiciness": 1,
     "hint_short": "Storia indiana del XX secolo",
     "hint_more": "Leader spirituale e politico indiano del XX secolo, noto per la sua filosofia della nonviolenza e per aver guidato il movimento per l'indipendenza dell'India attraverso la disobbedienza civile.",
-    "ambiguity_note": "Talvolta associata a MLK o Mandela per affinità di lotta.",
+    "ambiguity_note": "MLK e Mandela lottavano per diritti, Gandhi per l'indipendenza dell'India.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Il motto invita alla responsabilità personale come leva del cambiamento sociale; l’attribuzione testuale è discussa ma il messaggio è coerente con Gandhi."
+    "context": "Il principio della nonviolenza: cambiare il mondo iniziando da se stessi."
   },
   {
     "id": "q35",
@@ -963,10 +963,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia del linguaggio del XX secolo",
     "hint_more": "Filosofo austriaco del XX secolo, autore del 'Tractatus Logico-Philosophicus', noto per aver rivoluzionato la filosofia del linguaggio e per aver influenzato il pensiero analitico.",
-    "ambiguity_note": "Può ricordare Heidegger o Foucault per il linguaggio.",
+    "ambiguity_note": "Heidegger e Foucault studiavano il linguaggio, Wittgenstein ne definiva i limiti.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Wittgenstein lega il pensabile e il dicibile: ciò che non si può dire, su quello si deve tacere."
+    "context": "La rivoluzione della filosofia: il mondo è limitato dalle parole che possediamo."
   },
   {
     "id": "q36",
@@ -991,10 +991,10 @@
     "spiciness": 1,
     "hint_short": "Storia sudafricana del XX secolo",
     "hint_more": "Leader politico sudafricano del XX secolo, primo presidente nero del Sudafrica, noto per aver guidato la lotta contro l'apartheid e per aver trascorso 27 anni in prigione.",
-    "ambiguity_note": "Potrebbe essere confusa con MLK o Gandhi.",
+    "ambiguity_note": "MLK e Gandhi lottavano per diritti, Mandela per la fine dell'apartheid.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Messaggio di fiducia nell’azione collettiva e nella possibilità di superare barriere considerate insormontabili."
+    "context": "La speranza del leader: l'impossibile diventa possibile con la determinazione."
   },
   {
     "id": "q37",
@@ -1019,10 +1019,10 @@
     "spiciness": 2,
     "hint_short": "Storia cinese del XX secolo",
     "hint_more": "Leader rivoluzionario cinese del XX secolo, fondatore della Repubblica Popolare Cinese, noto per aver guidato la Rivoluzione cinese e per aver sviluppato il maoismo.",
-    "ambiguity_note": "Spesso confusa con Lenin o Stalin per il contesto rivoluzionario.",
+    "ambiguity_note": "Lenin e Stalin teorizzavano la rivoluzione, Mao la praticava con le armi.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "Mao esplicita il ruolo delle armi nella conquista del potere politico, elemento centrale della sua strategia rivoluzionaria."
+    "context": "La strategia maoista: il potere si conquista con la forza, non con le elezioni."
   },
   {
     "id": "q38",
@@ -1047,10 +1047,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, noto per la sua critica della religione e per aver influenzato Marx, autore di opere come 'L'essenza del cristianesimo' e 'Il mistero del sacrificio'.",
-    "ambiguity_note": "Talvolta confusa con Marx/Engels per il materialismo.",
+    "ambiguity_note": "Marx e Engels erano materialisti, Feuerbach lo espresse con questa metafora.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "Feuerbach sottolinea la radice materiale dell’uomo e dei suoi pensieri; l’alimentazione diventa metafora della formazione dell’essere."
+    "context": "Il materialismo filosofico: l'uomo è ciò che mangia, corpo e mente sono una cosa sola."
   },
   {
     "id": "q39",
@@ -1075,10 +1075,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico americano del XX secolo, premio Nobel per la fisica, noto per i suoi contributi alla meccanica quantistica e per aver sviluppato i diagrammi di Feynman.",
-    "ambiguity_note": "Tema vicino a Popper e alla falsificabilità.",
+    "ambiguity_note": "Popper teorizzava la falsificabilità, Feynman la praticava con umorismo.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Feynman evidenzia l’atteggiamento critico della scienza: nessuna autorità è esente da verifica empirica."
+    "context": "L'umiltà del grande scienziato: dubitare sempre, anche degli esperti."
   },
   {
     "id": "q40",
@@ -1103,10 +1103,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore del 'Manifesto del Partito Comunista' insieme a Engels, noto per la sua critica del capitalismo e per aver influenzato il pensiero socialista.",
-    "ambiguity_note": "Può essere confusa con Proudhon o altri socialisti.",
+    "ambiguity_note": "Proudhon teorizzava l'anarchia, Marx il comunismo scientifico.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Marx descrive un principio di distribuzione post‑scarcity dove il contributo e il bisogno regolano la ripartizione."
+    "context": "Il principio del comunismo: ognuno contribuisce secondo le capacità, riceve secondo i bisogni."
   },
   {
     "id": "q41",
@@ -1131,10 +1131,10 @@
     "spiciness": 1,
     "hint_short": "Strategia militare del XIX secolo",
     "hint_more": "Generale e teorico militare prussiano del XIX secolo, autore di 'Della guerra', considerato uno dei più influenti teorici della strategia militare moderna.",
-    "ambiguity_note": "Spesso confusa con Sun Tzu per autorità strategica.",
+    "ambiguity_note": "Sun Tzu teorizzava la strategia, Clausewitz la subordinava alla politica.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Clausewitz interpreta la guerra come strumento subordinato a fini politici, non un evento separato dalla politica."
+    "context": "La teoria della guerra moderna: la politica decide, le armi eseguono."
   },
   {
     "id": "q42",
@@ -1159,10 +1159,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia tedesca del XVIII secolo",
     "hint_more": "Filosofo tedesco del XVIII secolo, considerato il massimo esponente dell'Illuminismo tedesco, autore della 'Critica della ragion pura' e noto per aver definito l'Illuminismo come 'uscita dallo stato di minorità'.",
-    "ambiguity_note": "Spesso associato a Voltaire per lo spirito dei Lumi.",
+    "ambiguity_note": "Voltaire combatteva l'oscurantismo, Kant teorizzava l'Illuminismo.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "Kant definisce l’Illuminismo come emancipazione dell’uomo attraverso l’uso pubblico della ragione."
+    "context": "Il motto dell'Illuminismo: abbi il coraggio di pensare con la tua testa."
   },
   {
     "id": "q43",
@@ -1187,10 +1187,10 @@
     "spiciness": 0,
     "hint_short": "Teatro inglese del XVI-XVII secolo",
     "hint_more": "Drammaturgo inglese del XVI-XVII secolo, considerato il più grande scrittore della letteratura inglese, autore di opere come 'Amleto', 'Romeo e Giulietta' e 'Macbeth'.",
-    "ambiguity_note": "Il tono aforistico può ricordare Wilde.",
+    "ambiguity_note": "Wilde scriveva aforismi brillanti, Shakespeare li metteva in bocca ai personaggi.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La frase allude al sospetto verso chi insiste troppo nel negare qualcosa, rivelando il contrario."
+    "context": "L'ironia shakespeariana: chi protesta troppo spesso nasconde la verità."
   },
   {
     "id": "q44",
@@ -1215,10 +1215,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia irlandese del XVIII secolo",
     "hint_more": "Filosofo irlandese del XVIII secolo, vescovo anglicano, noto per il suo idealismo empirico e per aver sostenuto che 'essere è essere percepito' (esse est percipi).",
-    "ambiguity_note": "Può essere confusa con Hume o Locke per l’empirismo.",
+    "ambiguity_note": "Hume e Locke erano empiristi, Berkeley idealista: tutto esiste solo se percepito.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Berkeley sostiene che la realtà degli oggetti dipenda dall’essere percepiti da menti; Dio garantisce la persistenza."
+    "context": "L'idealismo estremo: la realtà esiste solo nella percezione, Dio la mantiene."
   },
   {
     "id": "q45",
@@ -1243,10 +1243,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XX secolo",
     "hint_more": "Filosofo e scrittore francese del XX secolo, premio Nobel per la letteratura, noto per le sue opere sull'assurdo e per aver sviluppato la filosofia dell'esistenzialismo.",
-    "ambiguity_note": "Può ricordare Sartre o Nietzsche per temi affini.",
+    "ambiguity_note": "Sartre e Nietzsche affrontavano l'assurdo, Camus lo accettava con rivolta.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Camus propone una risposta all’assurdo: immaginare Sisifo felice nell’atto della rivolta quotidiana contro l’insensatezza."
+    "context": "La risposta all'assurdo: accettare l'insensatezza e trovare felicità nella rivolta."
   },
   {
     "id": "q46",
@@ -1271,10 +1271,10 @@
     "spiciness": 1,
     "hint_short": "Storia americana del XX secolo",
     "hint_more": "Pastore battista e attivista americano del XX secolo, leader del movimento per i diritti civili, noto per il suo discorso 'I have a dream' e per la sua filosofia della nonviolenza.",
-    "ambiguity_note": "Spesso attribuita a Parker o ad Obama per l’uso pubblico.",
+    "ambiguity_note": "Parker la formulò, Obama la citò, MLK la rese famosa nella lotta per i diritti.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "MLK rilancia una metafora teologico‑civile: la storia tende alla giustizia attraverso l’impegno umano."
+    "context": "La speranza del movimento per i diritti civili: la storia tende verso la giustizia."
   },
   {
     "id": "q47",
@@ -1299,10 +1299,10 @@
     "spiciness": 1,
     "hint_short": "Letteratura inglese del XX secolo",
     "hint_more": "Scrittore inglese del Novecento, autore di '1984' e 'La fattoria degli animali', noto per le sue critiche al totalitarismo e per aver coniato termini come 'Grande Fratello' e 'Neolingua'.",
-    "ambiguity_note": "Richiama Mill per il liberalismo della parola.",
+    "ambiguity_note": "Mill teorizzava la libertà di parola, Orwell la difendeva contro il totalitarismo.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Orwell difende il diritto di critica, specie contro i conformismi ideologici del suo tempo."
+    "context": "La difesa della libertà di espressione: dire la verità anche quando fa male."
   },
   {
     "id": "q48",
@@ -1327,10 +1327,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia inglese del XVII secolo",
     "hint_more": "Filosofo inglese del XVII secolo, considerato il padre dell'empirismo moderno, autore del 'Saggio sull'intelletto umano' e noto per la teoria della 'tabula rasa'.",
-    "ambiguity_note": "Spesso confusa con Hume per l’empirismo britannico.",
+    "ambiguity_note": "Hume sviluppò l'empirismo, Locke lo fondò con la tabula rasa.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Locke sostiene che le idee derivano dall’esperienza, contestando l’esistenza di idee innate."
+    "context": "Il fondamento dell'empirismo: la mente è una tabula rasa, tutto viene dall'esperienza."
   },
   {
     "id": "q49",
@@ -1355,10 +1355,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XVIII secolo",
     "hint_more": "Filosofo francese del XVIII secolo, autore del 'Contratto sociale' e dell'Emilio', noto per aver influenzato la Rivoluzione francese e per aver teorizzato la volontà generale.",
-    "ambiguity_note": "Può ricordare Montesquieu per i temi politici.",
+    "ambiguity_note": "Montesquieu studiava la separazione dei poteri, Rousseau la libertà naturale.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "Rousseau denuncia la perdita della libertà naturale a favore di catene sociali: la legittimità politica richiede consenso e volontà generale."
+    "context": "Il paradosso della società: l'uomo nasce libero ma vive in catene sociali."
   },
   {
     "id": "q50",
@@ -1383,10 +1383,10 @@
     "spiciness": 1,
     "hint_short": "Letteratura inglese del XX secolo",
     "hint_more": "Scrittrice inglese del XX secolo, membro del Bloomsbury Group, autrice di 'Mrs Dalloway' e 'Orlando', nota per aver rivoluzionato il romanzo moderno con la tecnica del flusso di coscienza.",
-    "ambiguity_note": "Può ricordare de Beauvoir o Wollstonecraft.",
+    "ambiguity_note": "De Beauvoir teorizzava la condizione femminile, Woolf la praticava nella letteratura.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Woolf analizza gli ostacoli materiali e culturali alla produzione letteraria femminile, indicando denaro e spazio come prerequisiti."
+    "context": "Il femminismo letterario: per scrivere servono indipendenza economica e spazio privato."
   },
   {
     "id": "q51",
@@ -1412,10 +1412,10 @@
     "spiciness": 2,
     "hint_short": "Storia tedesca del XX secolo",
     "hint_more": "Leader politico tedesco del XX secolo, cancelliere del Reich e Führer della Germania nazista, noto per aver guidato il Terzo Reich e per aver scatenato la Seconda guerra mondiale.",
-    "ambiguity_note": "Il tono aforistico potrebbe sembrare di un leader democratico che investe sui giovani. Le opzioni includono figure positive come MLK e Churchill che potrebbero confondere.",
+    "ambiguity_note": "MLK e Churchill investivano sui giovani, Hitler li indottrinava per il nazismo.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "Estratto da un discorso del 1935; usato ai processi di Norimberga come prova delle politiche di indottrinamento giovanile del regime."
+    "context": "La strategia nazista: conquistare il futuro attraverso l'indottrinamento della gioventù."
   },
   {
     "id": "q52",
@@ -1440,10 +1440,10 @@
     "spiciness": 2,
     "hint_short": "Storia italiana del XX secolo",
     "hint_more": "Leader politico italiano del XX secolo, fondatore del fascismo e capo del governo italiano, noto per aver instaurato una dittatura e per aver alleato l'Italia con la Germania nazista.",
-    "ambiguity_note": "Potrebbe sembrare cinismo da saggista o provocazione filosofica, non un manifesto autoritario. Le opzioni includono Machiavelli e Nietzsche che potrebbero depistare.",
+    "ambiguity_note": "Machiavelli e Nietzsche erano filosofi, Mussolini usava questa frase per giustificare la dittatura.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "Slogan ricorrente nel primo fascismo per giustificare la compressione delle libertà liberali in nome dell’ordine e dell’efficienza."
+    "context": "La giustificazione fascista: la libertà è un peso, l'autorità un sollievo."
   },
   {
     "id": "q53",
@@ -1468,10 +1468,10 @@
     "spiciness": 1,
     "hint_short": "Politica britannica del XX secolo",
     "hint_more": "Primo ministro britannico degli anni '80, nota come 'Lady di ferro', che guidò il Regno Unito durante la Guerra fredda e promosse politiche neoliberiste.",
-    "ambiguity_note": "Spesso citata senza contesto, può sembrare nichilismo sociale.",
+    "ambiguity_note": "Sembra nichilismo, ma Thatcher teorizzava il primato dell'individuo sulla collettività.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Dichiarazione diventata emblema della stagione di privatizzazioni e del primato dell’individuo sul welfare universale."
+    "context": "Il credo neoliberista: esistono solo individui, non la società come entità collettiva."
   },
   {
     "id": "q54",
@@ -1497,10 +1497,10 @@
     "spiciness": 2,
     "hint_short": "Storia americana del XIX secolo",
     "hint_more": "Presidente americano del XIX secolo, noto per aver guidato il paese durante la Guerra civile e per aver emanato la Proclamazione di emancipazione, considerato uno dei più grandi presidenti americani.",
-    "ambiguity_note": "Detto da una figura simbolo dell’abolizionismo: spiazza.",
+    "ambiguity_note": "Lincoln cambiò idea dopo, ma questa frase mostra il razzismo dell'epoca anche tra abolizionisti.",
     "language_orig": "EN",
     "sensitive": true,
-    "context": "Citazione spesso usata senza il percorso successivo di Lincoln; mostra come la politica antebellum fosse intrisa di razzismo anche tra antischiavisti."
+    "context": "Il paradosso di Lincoln: abolizionista ma inizialmente contrario all'uguaglianza razziale."
   },
   {
     "id": "q55",
@@ -1525,10 +1525,10 @@
     "spiciness": 2,
     "hint_short": "Filosofia greca antica",
     "hint_more": "Filosofo greco del IV secolo a.C., allievo di Platone e maestro di Alessandro Magno, autore della 'Politica' e considerato uno dei più influenti pensatori della storia occidentale.",
-    "ambiguity_note": "Molti associano l’autore al pensiero nobile greco; qui la tesi è urtante.",
+    "ambiguity_note": "Aristotele teorizzava la democrazia, ma anche la schiavitù 'naturale'.",
     "language_orig": "EL",
     "sensitive": true,
-    "context": "Aristotele legittima la schiavitù ‘naturale’, posizione oggi respinta; utile per capire i limiti etici dell’antichità."
+    "context": "Il paradosso di Aristotele: filosofo della democrazia ma teorico della schiavitù naturale."
   },
   {
     "id": "q56",
@@ -1553,10 +1553,10 @@
     "spiciness": 1,
     "hint_short": "Storia americana del XX secolo",
     "hint_more": "Pastore battista e attivista americano del XX secolo, leader del movimento per i diritti civili, noto per il suo discorso 'I have a dream' e per la sua filosofia della nonviolenza.",
-    "ambiguity_note": "Spesso estrapolata per farlo sembrare favorevole al caos.",
+    "ambiguity_note": "MLK capiva le rivolte ma predicava la nonviolenza, non il caos.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "MLK analizza le rivolte urbane come risposta alla sistematica esclusione; nello stesso discorso insiste sulla via nonviolenta."
+    "context": "L'analisi di MLK: le rivolte sono grida di chi non viene ascoltato, ma la nonviolenza resta la via."
   },
   {
     "id": "q57",
@@ -1581,10 +1581,10 @@
     "spiciness": 2,
     "hint_short": "Storia britannica del XX secolo",
     "hint_more": "Primo ministro britannico durante la Seconda guerra mondiale, noto per i suoi discorsi infuocati e per aver guidato il Regno Unito nella resistenza contro il nazismo.",
-    "ambiguity_note": "Il prestigio dell’autore porta a sottostimare la durezza coloniale del linguaggio.",
+    "ambiguity_note": "Churchill era un eroe di guerra, ma anche un difensore dell'impero coloniale.",
     "language_orig": "EN",
     "sensitive": true,
-    "context": "Frase citata dalla sua deposizione del 1937: mostra come certe giustificazioni imperiali fossero espresse apertamente da leader rispettati."
+    "context": "Il Churchill coloniale: eroe della libertà in Europa, difensore dell'impero altrove."
   },
   {
     "id": "q58",
@@ -1609,10 +1609,10 @@
     "spiciness": 0,
     "hint_short": "Storia americana del XX secolo",
     "hint_more": "Pastore battista e attivista americano del XX secolo, leader del movimento per i diritti civili, noto per il suo discorso 'I have a dream' e per la sua filosofia della nonviolenza.",
-    "ambiguity_note": "Citazione iconica di MLK.",
+    "ambiguity_note": "La frase più famosa di MLK, simbolo della lotta per i diritti civili.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Manifesto della lotta per i diritti civili negli USA."
+    "context": "Il sogno che cambiò l'America: uguaglianza e giustizia per tutti i cittadini."
   },
   {
     "id": "q59",
@@ -1637,10 +1637,10 @@
     "spiciness": 0,
     "hint_short": "Teatro inglese del XVI-XVII secolo",
     "hint_more": "Drammaturgo inglese del XVI-XVII secolo, considerato il più grande scrittore della letteratura inglese, autore di opere come 'Amleto', 'Romeo e Giulietta' e 'Macbeth'.",
-    "ambiguity_note": "Tra le frasi più note della letteratura.",
+    "ambiguity_note": "La frase più famosa di Shakespeare, monologo di Amleto sulla vita e la morte.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Riflessione sulla vita, il dolore e l’azione."
+    "context": "Il dilemma eterno di Amleto: vivere con il dolore o morire per sfuggirvi."
   },
   {
     "id": "q60",
@@ -1664,10 +1664,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico tedesco naturalizzato americano, autore della teoria della relatività, che espresse scetticismo verso l'interpretazione probabilistica della meccanica quantistica nelle sue lettere con Max Born.",
-    "ambiguity_note": "Aforisma motivazionale spesso citato.",
+    "ambiguity_note": "Einstein teorizzava la relatività, ma valorizzava anche l'immaginazione creativa.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Sottolinea il ruolo della fantasia nel progresso scientifico."
+    "context": "Il paradosso del genio: la conoscenza serve, ma l'immaginazione crea il futuro."
   },
   {
     "id": "q61",
@@ -1692,10 +1692,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XX secolo",
     "hint_more": "Filosofo francese del XX secolo, premio Nobel per la letteratura, noto per aver sviluppato l'esistenzialismo e per aver scritto opere come 'L'essere e il nulla' e 'A porte chiuse'.",
-    "ambiguity_note": "Spesso confusa con Camus.",
+    "ambiguity_note": "Camus scriveva dell'assurdo, Sartre dell'inferno delle relazioni umane.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "L’altro come specchio ineludibile del sé."
+    "context": "L'esistenzialismo di Sartre: l'inferno non è un luogo, ma gli altri che ci giudicano."
   },
   {
     "id": "q62",
@@ -1719,10 +1719,10 @@
     "spiciness": 0,
     "hint_short": "Storia romana antica",
     "hint_more": "Generale e politico romano del I secolo a.C., noto per aver attraversato il Rubicone, per le sue conquiste in Gallia e per aver pronunciato questa frase dopo una rapida vittoria in Asia Minore.",
-    "ambiguity_note": "Massima latina tra le più famose.",
+    "ambiguity_note": "La frase latina più famosa, pronunciata attraversando il Rubicone.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Segna il punto di non ritorno politico di Cesare."
+    "context": "Il momento della decisione: Cesare attraversa il Rubicone e scatena la guerra civile."
   },
   {
     "id": "q63",
@@ -1747,10 +1747,10 @@
     "spiciness": 0,
     "hint_short": "Poesia latina antica",
     "hint_more": "Poeta latino del I secolo a.C., autore delle 'Odi' e delle 'Satire', noto per aver sviluppato la poesia lirica latina e per aver influenzato la letteratura occidentale.",
-    "ambiguity_note": "Attribuzione scolastica classica.",
+    "ambiguity_note": "Orazio la scrisse nelle Odi, diventando il motto dell'edonismo classico.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Sintesi dell’etica oraziana del presente."
+    "context": "La filosofia di Orazio: cogliere il presente perché il futuro è incerto."
   },
   {
     "id": "q64",
@@ -1775,10 +1775,10 @@
     "spiciness": 0,
     "hint_short": "Storia americana del XVIII secolo",
     "hint_more": "Scienziato e politico americano del XVIII secolo, uno dei padri fondatori degli Stati Uniti, noto per i suoi esperimenti con l'elettricità e per aver contribuito alla stesura della Dichiarazione d'indipendenza.",
-    "ambiguity_note": "Aforisma molto diffuso.",
+    "ambiguity_note": "Franklin la scrisse per i commercianti, diventando il motto del capitalismo americano.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Sottolinea il valore economico del tempo."
+    "context": "L'etica del lavoro americana: il tempo è denaro, ogni minuto ha valore economico."
   },
   {
     "id": "q65",
@@ -1803,10 +1803,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia inglese del XVI-XVII secolo",
     "hint_more": "Filosofo inglese del XVI-XVII secolo, considerato il padre del metodo scientifico moderno, autore del 'Novum Organum' e noto per aver sviluppato l'empirismo.",
-    "ambiguity_note": "Talvolta confuso con Hobbes.",
+    "ambiguity_note": "Hobbes teorizzava il potere politico, Bacon quello della conoscenza scientifica.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Il sapere abilita azione e controllo."
+    "context": "Il motto della rivoluzione scientifica: la conoscenza dà potere di controllare la natura."
   },
   {
     "id": "q66",
@@ -1831,10 +1831,10 @@
     "spiciness": 0,
     "hint_short": "Storia spaziale del XX secolo",
     "hint_more": "Astronauta americano del XX secolo, primo uomo a camminare sulla Luna durante la missione Apollo 11, noto per aver pronunciato questa celebre frase durante l'allunaggio.",
-    "ambiguity_note": "Frase simbolo dell’era spaziale.",
+    "ambiguity_note": "Armstrong pronunciò la frase più famosa dell'esplorazione spaziale.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Annuncia il primo passo umano sulla Luna."
+    "context": "Il momento storico: il primo uomo sulla Luna, un piccolo passo per Armstrong, un balzo per l'umanità."
   },
   {
     "id": "q67",
@@ -1858,10 +1858,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia cinese antica",
     "hint_more": "Filosofo cinese del VI-IV secolo a.C., considerato il fondatore del taoismo, autore del 'Tao Te Ching' e noto per la sua filosofia del 'wu wei' (non-azione).",
-    "ambiguity_note": "Spesso confusa con Confucio.",
+    "ambiguity_note": "Confucio insegnava l'etica sociale, Laozi la saggezza del Tao.",
     "language_orig": "ZH",
     "sensitive": false,
-    "context": "Invito all’azione concreta come inizio di ogni impresa."
+    "context": "La saggezza taoista: ogni grande impresa inizia con un piccolo passo."
   },
   {
     "id": "q68",
@@ -1886,10 +1886,10 @@
     "spiciness": 0,
     "hint_short": "Sport del XX secolo",
     "hint_more": "Pugile americano del XX secolo, considerato uno dei più grandi pugili della storia, noto per la sua velocità, per i suoi slogan e per aver cambiato nome da Cassius Clay.",
-    "ambiguity_note": "Può essere associata a Tyson.",
+    "ambiguity_note": "Tyson era potente e diretto, Ali elegante e veloce come una farfalla.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Descrive agilità e potenza del campione."
+    "context": "La filosofia di Ali: eleganza e velocità come una farfalla, potenza come un'ape."
   },
   {
     "id": "q69",
@@ -1914,10 +1914,10 @@
     "spiciness": 0,
     "hint_short": "Inventori del XIX-XX secolo",
     "hint_more": "Inventore americano del XIX-XX secolo, noto per aver inventato la lampadina, il fonografo e per aver fondato il laboratorio di Menlo Park, considerato uno dei più prolifici inventori della storia.",
-    "ambiguity_note": "Spesso attribuita genericamente agli inventori.",
+    "ambiguity_note": "Edison la pronunciò, diventando il motto di tutti gli inventori e imprenditori.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Sottolinea il peso della perseveranza pratica."
+    "context": "La formula del successo: l'ispirazione conta poco, la dedizione tutto."
   },
   {
     "id": "q70",
@@ -1941,10 +1941,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia greca presocratica",
     "hint_more": "Filosofo greco presocratico del VI-V secolo a.C., noto per la sua dottrina del divenire e per aver sostenuto che 'tutto scorre' (panta rhei), considerato il filosofo del cambiamento.",
-    "ambiguity_note": "Massime spesso confuse tra presocratici.",
+    "ambiguity_note": "Eraclito teorizzava il divenire, altri presocratici cercavano l'essere immutabile.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "Il mondo è flusso e mutamento costante."
+    "context": "La filosofia del divenire: tutto scorre, solo il cambiamento è eterno."
   },
   {
     "id": "q71",
@@ -1969,10 +1969,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia cinese antica",
     "hint_more": "Filosofo cinese del VI-V secolo a.C., considerato il fondatore del confucianesimo, autore degli 'Analetti' e noto per aver influenzato profondamente la cultura cinese.",
-    "ambiguity_note": "Avvicinata spesso al socratismo.",
+    "ambiguity_note": "Socrate diceva 'so di non sapere', Confucio 'conosco i miei limiti'.",
     "language_orig": "ZH",
     "sensitive": false,
-    "context": "Invita a riconoscere i propri limiti."
+    "context": "La saggezza confuciana: la vera conoscenza è riconoscere la propria ignoranza."
   },
   {
     "id": "q72",
@@ -1997,10 +1997,10 @@
     "spiciness": 0,
     "hint_short": "Storia spaziale del XX secolo",
     "hint_more": "Cosmonauta sovietico del XX secolo, primo uomo a viaggiare nello spazio durante la missione Vostok 1, noto per aver descritto la Terra come 'blu' dall'orbita.",
-    "ambiguity_note": "Talvolta attribuita genericamente agli astronauti.",
+    "ambiguity_note": "Gagarin fu il primo uomo nello spazio, Armstrong il primo sulla Luna.",
     "language_orig": "RU",
     "sensitive": false,
-    "context": "Gagarin commentò il colore del pianeta visto dall’orbita."
+    "context": "Il primo uomo nello spazio: Gagarin vede la Terra blu dall'orbita."
   },
   {
     "id": "q73",
@@ -2025,10 +2025,10 @@
     "spiciness": 0,
     "hint_short": "Strategia militare antica",
     "hint_more": "Stratega militare cinese del VI secolo a.C., autore del celebre trattato 'L'arte della guerra', considerato uno dei più influenti manuali di strategia mai scritti.",
-    "ambiguity_note": "Spesso associata a generali moderni.",
+    "ambiguity_note": "Sun Tzu teorizzava l'inganno militare, i generali moderni lo praticano.",
     "language_orig": "ZH",
     "sensitive": false,
-    "context": "La dissimulazione è chiave nella condotta bellica."
+    "context": "La strategia di Sun Tzu: l'inganno è l'arma più potente in guerra."
   },
   {
     "id": "q74",
@@ -2052,10 +2052,10 @@
     "spiciness": 0,
     "hint_short": "Storia americana del XX secolo",
     "hint_more": "Pastore battista e attivista americano del XX secolo, leader del movimento per i diritti civili, noto per il suo discorso 'I have a dream' e per la sua filosofia della nonviolenza.",
-    "ambiguity_note": "Citazione frequente in ambito civile.",
+    "ambiguity_note": "MLK teorizzava la giustizia universale, Gandhi la praticava in India.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La giustizia è un bene indivisibile."
+    "context": "La filosofia di MLK: l'ingiustizia ovunque minaccia la giustizia ovunque."
   },
   {
     "id": "q75",
@@ -2079,10 +2079,10 @@
     "spiciness": 0,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano del primo Novecento, noto per la sua politica del 'Big Stick' e per aver promosso la costruzione del Canale di Panama.",
-    "ambiguity_note": "Talvolta confusa con altri presidenti USA.",
+    "ambiguity_note": "Roosevelt la pronunciò, diventando il motto del pragmatismo americano.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Esorta a iniziare con i mezzi disponibili."
+    "context": "Il pragmatismo di Roosevelt: agire con quello che si ha, dove si è."
   },
   {
     "id": "q76",
@@ -2107,10 +2107,10 @@
     "spiciness": 1,
     "hint_short": "Storia britannica del XX secolo",
     "hint_more": "Primo ministro britannico durante la Seconda guerra mondiale, noto per i suoi discorsi infuocati e per aver guidato il Regno Unito nella resistenza contro il nazismo.",
-    "ambiguity_note": "Formula storica riconoscibilissima.",
+    "ambiguity_note": "Churchill pronunciò la frase più famosa della resistenza britannica al nazismo.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Impegno alla resistenza totale contro il nazismo."
+    "context": "Il discorso che mobilitò la Gran Bretagna: solo sangue, fatica, lacrime e sudore contro Hitler."
   },
   {
     "id": "q77",
@@ -2135,10 +2135,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore del 'Manifesto del Partito Comunista' insieme a Engels, noto per la sua critica del capitalismo e per aver influenzato il pensiero socialista.",
-    "ambiguity_note": "Talvolta attribuito solo a Marx.",
+    "ambiguity_note": "Marx e Engels scrissero insieme il Manifesto, Lenin lo mise in pratica.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "Invito internazionale alla solidarietà operaia."
+    "context": "Il grido del Manifesto comunista: l'internazionalismo proletario contro il capitalismo."
   },
   {
     "id": "q78",
@@ -2163,10 +2163,10 @@
     "spiciness": 1,
     "hint_short": "Letteratura militare romana",
     "hint_more": "Scrittore militare romano del IV-V secolo d.C., autore dell'Epitoma Rei Militaris, noto per aver compilato un trattato sulla guerra che influenzò la strategia militare medievale.",
-    "ambiguity_note": "Spesso scambiata per Tacito o Cicerone.",
+    "ambiguity_note": "Vegetio scrisse il trattato militare, Tacito e Cicerone erano politici e storici.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Deterrenza per preservare la pace."
+    "context": "La strategia della deterrenza: la pace si mantiene preparando la guerra."
   },
   {
     "id": "q79",
@@ -2191,10 +2191,10 @@
     "spiciness": 1,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico americano del XX secolo, direttore scientifico del Progetto Manhattan, noto per aver guidato lo sviluppo della bomba atomica e per aver citato la Bhagavadgītā dopo il test Trinity.",
-    "ambiguity_note": "Spesso citata senza il riferimento religioso induista (Bhagavadgītā).",
+    "ambiguity_note": "Oppenheimer citava la Bhagavadgītā, Einstein teorizzava la relatività.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Confronto morale con la potenza distruttiva dell’atomo."
+    "context": "Il padre della bomba atomica: diventare Morte, distruttore di mondi."
   },
   {
     "id": "q80",
@@ -2219,10 +2219,10 @@
     "spiciness": 0,
     "hint_short": "Matematica e fisica antica",
     "hint_more": "Matematico e fisico greco del III secolo a.C., noto per il principio di Archimede, per aver inventato la vite di Archimede e per aver gridato 'Eureka!' dopo aver scoperto il principio della spinta idrostatica.",
-    "ambiguity_note": "Spesso associato genericamente agli 'antichi scienziati'.",
+    "ambiguity_note": "Archimede gridò 'Eureka!' per la spinta idrostatica, diventando il grido di ogni scoperta.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "Esclamazione attribuita ad Archimede dopo l’intuizione sul principio della spinta idrostatica."
+    "context": "Il grido della scoperta: Archimede trova il principio della spinta idrostatica."
   },
   {
     "id": "q81",
@@ -2247,10 +2247,10 @@
     "spiciness": 0,
     "hint_short": "Teatro inglese del XVI-XVII secolo",
     "hint_more": "Drammaturgo inglese del XVI-XVII secolo, considerato il più grande scrittore della letteratura inglese, autore di opere come 'Amleto', 'Romeo e Giulietta' e 'Macbeth'.",
-    "ambiguity_note": "Spesso presa per una frase storica di Cesare, ma è teatrale.",
+    "ambiguity_note": "Shakespeare la scrisse per Cesare, ma Cesare storico non la pronunciò mai.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Shakespeare mette in scena il tradimento di Bruto con una frase divenuta proverbiale."
+    "context": "Il tradimento più famoso: Cesare scopre che anche Bruto lo ha tradito."
   },
   {
     "id": "q82",
@@ -2275,10 +2275,10 @@
     "spiciness": 0,
     "hint_short": "Poesia latina del I-II secolo",
     "hint_more": "Poeta satirico latino del I-II secolo d.C., autore delle 'Satire', noto per la sua critica della società romana e per aver coniato questa celebre massima sulla salute.",
-    "ambiguity_note": "Spesso attribuita genericamente ai 'Romani'.",
+    "ambiguity_note": "Giovenale la scrisse nelle Satire, diventando il motto dello sport e della salute.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Giovenale propone desideri saggi, tra cui salute fisica e mentale."
+    "context": "La saggezza di Giovenale: corpo sano e mente sana, l'ideale dell'uomo completo."
   },
   {
     "id": "q83",
@@ -2303,10 +2303,10 @@
     "spiciness": 1,
     "hint_short": "Politica americana del XXI secolo",
     "hint_more": "Presidente americano del XXI secolo, primo presidente afroamericano degli Stati Uniti, noto per la sua campagna del 2008 e per aver utilizzato questo slogan motivazionale.",
-    "ambiguity_note": "Talvolta confuso con slogan sindacali precedenti.",
+    "ambiguity_note": "Obama lo rese famoso, ma slogan simili esistevano già nei movimenti sindacali.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Sintetizza il messaggio mobilitante della campagna di Obama."
+    "context": "Lo slogan che portò Obama alla Casa Bianca: sì, possiamo cambiare l'America."
   },
   {
     "id": "q84",
@@ -2331,10 +2331,10 @@
     "spiciness": 1,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano del XX secolo, noto per la sua politica estera durante la Guerra fredda e per aver pronunciato questo celebre appello alla Porta di Brandeburgo nel 1987.",
-    "ambiguity_note": "Talvolta confuso con discorsi di altri leader.",
+    "ambiguity_note": "Reagan pronunciò la frase più famosa della Guerra fredda alla Porta di Brandeburgo.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Invito pubblico al leader sovietico a rimuovere il Muro."
+    "context": "Il grido di Reagan: Gorbaciov, abbatti questo muro di Berlino."
   },
   {
     "id": "q85",
@@ -2359,10 +2359,10 @@
     "spiciness": 0,
     "hint_short": "Storia indiana del XX secolo",
     "hint_more": "Leader spirituale e politico indiano del XX secolo, noto per la sua filosofia della nonviolenza e per aver guidato il movimento per l'indipendenza dell'India attraverso la disobbedienza civile.",
-    "ambiguity_note": "Spesso confusa con frasi di Mandela o MLK.",
+    "ambiguity_note": "Gandhi teorizzava la libertà completa, Mandela e MLK la praticavano per i diritti.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Concezione non paternalistica della libertà."
+    "context": "La filosofia di Gandhi: la vera libertà include anche il diritto di sbagliare."
   },
   {
     "id": "q86",
@@ -2387,10 +2387,10 @@
     "spiciness": 0,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano del XX secolo, noto per aver guidato il paese durante la Guerra fredda e per aver pronunciato questo celebre discorso di insediamento nel 1961.",
-    "ambiguity_note": "A volte confusa con frasi di altri presidenti.",
+    "ambiguity_note": "JFK pronunciò la frase più famosa del discorso inaugurale presidenziale.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Richiamo alla responsabilità civica in piena Guerra fredda."
+    "context": "Il richiamo di JFK: non chiedere cosa fa il paese per te, ma cosa fai tu per il paese."
   },
   {
     "id": "q87",
@@ -2415,10 +2415,10 @@
     "spiciness": 0,
     "hint_short": "Letteratura inglese del XIX secolo",
     "hint_more": "Scrittore inglese del XIX secolo, autore di romanzi e drammi storici, noto per aver scritto 'Gli ultimi giorni di Pompei' e per aver coniato questa celebre massima sul potere della parola scritta.",
-    "ambiguity_note": "Spesso attribuito a Shakespeare per 'aura' classica.",
+    "ambiguity_note": "Bulwer-Lytton la scrisse, ma molti la attribuiscono a Shakespeare per la fama.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Sottolinea la forza delle idee rispetto alla violenza."
+    "context": "Il potere della parola scritta: la penna vince sulla spada, le idee sulla violenza."
   },
   {
     "id": "q88",
@@ -2443,10 +2443,10 @@
     "spiciness": 0,
     "hint_short": "Matematica e fisica antica",
     "hint_more": "Matematico e fisico greco del III secolo a.C., noto per il principio di Archimede, per aver inventato la vite di Archimede e per aver gridato 'Eureka!' dopo aver scoperto il principio della spinta idrostatica.",
-    "ambiguity_note": "Talvolta confuso con Leonardo.",
+    "ambiguity_note": "Archimede teorizzava la leva, Leonardo la applicava nelle macchine.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "Esprime il principio del braccio di leva."
+    "context": "Il principio di Archimede: con la leva giusta si può sollevare il mondo."
   },
   {
     "id": "q89",
@@ -2471,10 +2471,10 @@
     "spiciness": 0,
     "hint_short": "Tecnologia del XX-XXI secolo",
     "hint_more": "Imprenditore americano del XX-XXI secolo, co-fondatore di Apple, noto per aver rivoluzionato l'industria tecnologica e per aver pronunciato questo celebre discorso agli studenti di Stanford nel 2005.",
-    "ambiguity_note": "Spesso associata genericamente al mondo startup.",
+    "ambiguity_note": "Jobs la pronunciò a Stanford, diventando il motto del mondo tech e startup.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Chiusura del celebre discorso, ripresa da Whole Earth Catalog."
+    "context": "Il motto di Jobs: rimanere affamati e folli per cambiare il mondo."
   },
   {
     "id": "q90",
@@ -2499,10 +2499,10 @@
     "spiciness": 0,
     "hint_short": "Arti marziali del XX secolo",
     "hint_more": "Attore e artista marziale americano del XX secolo, noto per aver rivoluzionato le arti marziali e per aver sviluppato il Jeet Kune Do, considerato uno dei più influenti maestri di arti marziali.",
-    "ambiguity_note": "Spesso confusa con detti zen/taoisti.",
+    "ambiguity_note": "Bruce Lee univa arti marziali e filosofia, non era solo un maestro zen.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Metafora della flessibilità mentale e fisica."
+    "context": "La filosofia di Bruce Lee: essere fluidi come l'acqua, adattarsi a tutto."
   },
   {
     "id": "q91",
@@ -2527,10 +2527,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisica polacca naturalizzata francese del XX secolo, prima donna a vincere un premio Nobel e prima persona a vincerne due, nota per le sue ricerche sulla radioattività.",
-    "ambiguity_note": "Talvolta attribuita ad altri scienziati.",
+    "ambiguity_note": "Marie Curie la pronunciò, diventando il motto di tutti gli scienziati coraggiosi.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Invito ad affrontare l’ignoto con studio, non con timore."
+    "context": "La filosofia di Marie Curie: non temere l'ignoto, comprenderlo con la scienza."
   },
   {
     "id": "q92",
@@ -2555,10 +2555,10 @@
     "spiciness": 0,
     "hint_short": "Storia del XX secolo",
     "hint_more": "Religiosa albanese naturalizzata indiana del XX secolo, fondatrice delle Missionarie della Carità, premio Nobel per la pace, nota per il suo lavoro con i poveri e i malati.",
-    "ambiguity_note": "Spesso associata ad altri leader spirituali.",
+    "ambiguity_note": "Madre Teresa la pronunciò, diventando il motto di tutti i volontari e missionari.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Sottolinea il valore delle azioni umili."
+    "context": "La filosofia di Madre Teresa: fare piccole cose con grande amore per cambiare il mondo."
   },
   {
     "id": "q93",
@@ -2583,10 +2583,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico tedesco naturalizzato americano del XX secolo, autore della teoria della relatività, che espresse scetticismo verso l'interpretazione probabilistica della meccanica quantistica nelle sue lettere con Max Born.",
-    "ambiguity_note": "Talvolta attribuita genericamente agli scienziati.",
+    "ambiguity_note": "Einstein la pronunciò, diventando la metafora più famosa sulla vita e il movimento.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Metafora del movimento continuo come condizione di stabilità."
+    "context": "La metafora di Einstein: la vita è come la bicicletta, l'equilibrio richiede movimento."
   },
   {
     "id": "q94",
@@ -2611,10 +2611,10 @@
     "spiciness": 0,
     "hint_short": "Letteratura italiana del XIV secolo",
     "hint_more": "Poeta italiano del XIV secolo, autore della 'Divina Commedia', considerato il padre della letteratura italiana e uno dei più grandi poeti della storia occidentale.",
-    "ambiguity_note": "Iconica terzina dantesca.",
+    "ambiguity_note": "Dante la scrisse all'ingresso dell'Inferno, diventando la frase più famosa della Divina Commedia.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Accoglie Dante e Virgilio all’ingresso dell’Inferno."
+    "context": "L'ingresso dell'Inferno: abbandonate ogni speranza, voi che entrate."
   },
   {
     "id": "q95",
@@ -2639,10 +2639,10 @@
     "spiciness": 0,
     "hint_short": "Poesia latina del I secolo a.C.",
     "hint_more": "Poeta latino del I secolo a.C., autore dell'Eneide, considerato il più grande poeta dell'antichità romana e noto per aver celebrato la grandezza di Roma attraverso il mito di Enea.",
-    "ambiguity_note": "Esistono varianti proverbiali.",
+    "ambiguity_note": "Virgilio la scrisse nell'Eneide, diventando il motto di tutti gli audaci.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Idea che l’audacia sia premiata dalla sorte."
+    "context": "La saggezza di Virgilio: la fortuna aiuta chi ha il coraggio di osare."
   },
   {
     "id": "q96",
@@ -2667,10 +2667,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia romana del I secolo",
     "hint_more": "Filosofo stoico romano del I secolo d.C., precettore di Nerone, autore delle 'Lettere a Lucilio' e noto per i suoi insegnamenti sulla virtù e la saggezza.",
-    "ambiguity_note": "Attribuzione variabile; spesso associata anche a Virgilio e Cicerone.",
+    "ambiguity_note": "Seneca la scrisse, ma molti la attribuiscono anche a Virgilio e Cicerone.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Conquista di traguardi attraverso le prove."
+    "context": "Il motto della perseveranza: attraverso le difficoltà si raggiungono le stelle."
   },
   {
     "id": "q97",
@@ -2695,10 +2695,10 @@
     "spiciness": 0,
     "hint_short": "Storia romana antica",
     "hint_more": "Generale e politico romano del I secolo a.C., noto per aver attraversato il Rubicone, per le sue conquiste in Gallia e per aver pronunciato questa frase dopo una rapida vittoria in Asia Minore.",
-    "ambiguity_note": "Può essere confusa con altri autori latini per la fama dell'incipit.",
+    "ambiguity_note": "Cesare scrisse l'incipit più famoso del De Bello Gallico, non altri autori latini.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Introduzione alla divisione della Gallia."
+    "context": "L'incipit più famoso di Cesare: tutta la Gallia è divisa in tre parti."
   },
   {
     "id": "q98",
@@ -2723,10 +2723,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico americano del XX secolo, premio Nobel per la fisica, noto per i suoi contributi alla meccanica quantistica e per aver sviluppato i diagrammi di Feynman.",
-    "ambiguity_note": "Talvolta attribuita a Bohr per la sua autorità in fisica quantistica; il tono umile può ricordare altri scienziati.",
+    "ambiguity_note": "Feynman la pronunciò con umorismo, Bohr teorizzava la meccanica quantistica.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Feynman sottolinea quanto la teoria sia controintuitiva."
+    "context": "L'umiltà di Feynman: nessuno capisce davvero la meccanica quantistica, nemmeno i fisici."
   },
   {
     "id": "q99",
@@ -2751,10 +2751,10 @@
     "spiciness": 0,
     "hint_short": "Storia americana del XIX secolo",
     "hint_more": "Presidente americano del XIX secolo, noto per aver guidato il paese durante la Guerra civile e per aver emanato la Proclamazione di emancipazione, considerato uno dei più grandi presidenti americani.",
-    "ambiguity_note": "Spesso confusa con frasi di Jefferson per il tema democratico; la retorica presidenziale può ricordare altri leader USA.",
+    "ambiguity_note": "Lincoln la pronunciò a Gettysburg, Jefferson scrisse la Dichiarazione d'Indipendenza.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Sintesi del principio democratico."
+    "context": "La definizione di Lincoln: democrazia è governo del popolo, dal popolo, per il popolo."
   },
   {
     "id": "q100",
@@ -2779,10 +2779,10 @@
     "spiciness": 0,
     "hint_short": "Storia francese del XIX secolo",
     "hint_more": "Imperatore francese del XIX secolo, noto per le sue campagne militari in Europa e per aver rivoluzionato la strategia militare, considerato uno dei più grandi generali della storia.",
-    "ambiguity_note": "Attribuzione non sempre documentata ma popolare; il tono motivazionale può ricordare Churchill o altri leader carismatici.",
+    "ambiguity_note": "Napoleone la pronunciò, diventando il motto di tutti i leader carismatici e motivatori.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "Invita a non usare 'impossibile' come alibi."
+    "context": "La filosofia di Napoleone: impossibile è una parola da sciocchi, tutto è possibile."
   },
   {
     "id": "q101",
@@ -2807,10 +2807,10 @@
     "spiciness": 0,
     "hint_short": "Rinascimento italiano",
     "hint_more": "Artista e inventore italiano del Rinascimento, noto per opere come 'La Gioconda' e 'L'Ultima Cena', considerato uno dei più grandi geni della storia per i suoi contributi all'arte, alla scienza e all'ingegneria.",
-    "ambiguity_note": "Attribuzione incerta; spesso legata ad Apple e Steve Jobs; il tema della semplicità può ricordare altri artisti o designer.",
+    "ambiguity_note": "Leonardo la teorizzò, Jobs la applicò al design di Apple.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Esalta la forza della semplicità progettuale."
+    "context": "La filosofia di Leonardo: la semplicità è la forma più alta di sofisticazione."
   },
   {
     "id": "q102",
@@ -2835,10 +2835,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia greca antica",
     "hint_more": "Filosofo greco del V secolo a.C., maestro di Platone, noto per il metodo socratico e per aver sostenuto che la vera saggezza consiste nel riconoscere la propria ignoranza.",
-    "ambiguity_note": "Spesso confusa con massime di Platone per la trasmissione scritta.",
+    "ambiguity_note": "Socrate la pronunciò, Platone la scrisse nei dialoghi.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "Socrate fonda la ricerca sul riconoscimento dei propri limiti."
+    "context": "La saggezza di Socrate: la vera conoscenza è riconoscere la propria ignoranza."
   },
   {
     "id": "q103",
@@ -2863,10 +2863,10 @@
     "spiciness": 0,
     "hint_short": "Scienza del XVII secolo",
     "hint_more": "Scienziato italiano del XVII secolo, noto per aver sostenuto la teoria eliocentrica, per aver inventato il telescopio e per aver subito il processo dell'Inquisizione per le sue idee scientifiche.",
-    "ambiguity_note": "Attribuzione leggendaria e iconica; può essere confusa con altri scienziati per il tema della resistenza scientifica.",
+    "ambiguity_note": "Galileo la pronunciò dopo l'abiura, diventando il simbolo della resistenza scientifica.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Simbolo della forza della verità scientifica."
+    "context": "Il grido di Galileo: eppur si muove, la Terra gira intorno al Sole."
   },
   {
     "id": "q104",
@@ -2891,10 +2891,10 @@
     "spiciness": 0,
     "hint_short": "Storia spaziale del XX secolo",
     "hint_more": "Astronauta americano del XX secolo, comandante della missione Apollo 13, noto per aver pronunciato questa celebre frase durante l'emergenza che colpì la missione spaziale.",
-    "ambiguity_note": "Spesso attribuita ad Armstrong per la fama del primo uomo sulla Luna; la frase è diventata proverbiale per gli imprevisti.",
+    "ambiguity_note": "Lovell la pronunciò durante Apollo 13, Armstrong fu il primo sulla Luna.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Avviso a Houston dopo l’esplosione del serbatoio dell’ossigeno."
+    "context": "La frase di Lovell: Houston, abbiamo un problema con Apollo 13."
   },
   {
     "id": "q105",
@@ -2919,10 +2919,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore de 'Al di là del bene e del male' e 'Così parlò Zarathustra', noto per aver influenzato profondamente il pensiero del Novecento con le sue critiche alla morale tradizionale.",
-    "ambiguity_note": "Spesso travisata come semplice negazione di Dio; può essere confusa con altri filosofi materialisti o critici della religione.",
+    "ambiguity_note": "Nietzsche la pronunciò, non era negazione di Dio ma critica dei valori tradizionali.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "Denuncia il venir meno dei valori tradizionali nell’età moderna."
+    "context": "La provocazione di Nietzsche: Dio è morto, i valori tradizionali sono crollati."
   },
   {
     "id": "q106",
@@ -2947,10 +2947,10 @@
     "spiciness": 1,
     "hint_short": "Storia francese del XVIII secolo",
     "hint_more": "Regina di Francia del XVIII secolo, moglie di Luigi XVI, nota per aver vissuto nel lusso durante la crisi economica e per essere stata ghigliottinata durante la Rivoluzione francese.",
-    "ambiguity_note": "Spesso citata come se fosse storicamente pronunciata da Maria Antonietta; l’attribuzione è molto dubbia.",
+    "ambiguity_note": "Maria Antonietta non la pronunciò mai, ma divenne il simbolo dell'insensibilità aristocratica.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "Usata come simbolo di insensibilità aristocratica verso la fame del popolo; storicamente l’attribuzione alla regina è probabilmente apocrifa."
+    "context": "La frase apocrifa più famosa: se non hanno pane, mangino brioche."
   },
   {
     "id": "q107",
@@ -2975,10 +2975,10 @@
     "spiciness": 1,
     "hint_short": "Storia britannica del XX secolo",
     "hint_more": "Primo ministro britannico durante la Seconda guerra mondiale, noto per i suoi discorsi infuocati e per aver guidato il Regno Unito nella resistenza contro il nazismo.",
-    "ambiguity_note": "Spesso confusa con discorsi di Stalin o Roosevelt per il tema della divisione europea; la metafora della 'cortina' può ricordare altri leader della Guerra fredda.",
+    "ambiguity_note": "Churchill coniò la metafora della cortina di ferro, Stalin e Roosevelt non la usarono mai.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il discorso segna simbolicamente l’inizio della Guerra fredda, descrivendo la separazione tra blocco sovietico e Occidente."
+    "context": "Il discorso di Churchill: una cortina di ferro divide l'Europa tra Est e Ovest."
   },
   {
     "id": "q108",
@@ -2999,10 +2999,10 @@
     "spiciness": 1,
     "hint_short": "Storia romana antica",
     "hint_more": "Generale e politico romano del I secolo a.C., noto per aver attraversato il Rubicone, per le sue conquiste in Gallia e per aver pronunciato questa frase dopo una rapida vittoria in Asia Minore.",
-    "ambiguity_note": "La forma famosa in inglese è di Shakespeare (\"Et tu, Brute?\"); la frase latina \"Tu quoque, Brute, fili mi\" è una tradizione successiva e spesso confuse tra loro.",
+    "ambiguity_note": "Cesare pronunciò la versione greca, Shakespeare la rese famosa in inglese.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Secondo Suetonio, Cesare avrebbe pronunciato in greco «καὶ σύ, τέκνον;»; la versione latina circola in epoche successive. La battuta è divenuta simbolo del tradimento di Bruto."
+    "context": "Il tradimento di Bruto: anche tu, Bruto, figlio mio, mi hai tradito."
   },
   {
     "id": "q109",
@@ -3026,7 +3026,7 @@
     "ambiguity_note": "Spesso circola in versioni parafrasate e viene attribuita genericamente a “un filosofo del Novecento”, facendo pensare a Croce o Arendt.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Nei Quaderni del carcere, Gramsci descrive la ‘crisi’ come un interregno in cui si accumulano ‘fenomeni morbosi’ perché l’ordine vecchio è in disfacimento e quello nuovo non è ancora nato."
+    "context": "La definizione di Gramsci: la crisi è quando il vecchio muore e il nuovo non nasce ancora."
   }
   
   

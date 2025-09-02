@@ -18,6 +18,8 @@ function MainMenu({
   showTutorial: boolean;
   setShowTutorial: (value: boolean) => void;
 }) {
+  
+
   // Determina l'immagine di background in base alla modalità selezionata
   const getBackgroundImage = () => {
     const isMobile = window.innerWidth < 768; // Breakpoint sm di Tailwind
@@ -50,9 +52,9 @@ function MainMenu({
       <div className="absolute bottom-20 right-20 w-40 h-40 bg-white/5 rounded-full blur-xl animate-pulse delay-1000"></div>
       
       {/* Content Layer */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white p-4 sm:p-6 md:p-8">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white p-4 sm:p-6 md:p-8 pb-16">
         <div className="text-center max-w-7xl mx-auto scale-96 sm:scale-100">
-                     <div className="relative mb-6">
+                     <div className="relative mb-3 sm:mb-6">
              <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-white drop-shadow-2xl relative z-10" 
                  style={{ 
                    textShadow: '4px 4px 8px rgba(0, 0, 0, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.5)' 
@@ -163,6 +165,8 @@ function MainMenu({
                 <span className="font-medium">Tutorial</span>
               </div>
             </button>
+
+
           </div>
 
                      {/* Selezione Modalità di Gioco - PRINCIPALE */}
@@ -276,6 +280,20 @@ function MainMenu({
               </button>
         </div>
       </div>
+      
+      {/* Footer */}
+      <footer className="fixed bottom-0 left-0 right-0 bg-black py-3 z-50">
+        <div className="text-center">
+          <a 
+            href="https://falker47.github.io/Nexus-portfolio/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-amber-300 transition-colors duration-300 hover:underline focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:ring-offset-2 focus:ring-offset-black rounded-sm px-1 py-0.5 active:scale-95 transform transition-transform duration-150 text-sm"
+          >
+            © {new Date().getFullYear()} Maurizio Falconi - falker47
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
@@ -299,7 +317,7 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
         {/* Overlay scuro per migliorare la leggibilità */}
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
-      <div className="max-w-4xl w-full relative z-10">
+      <div className="max-w-4xl w-full relative z-10 pb-16">
         {/* Header con bottone torna al menu */}
         <div className="mb-8 flex items-center justify-between">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg"
@@ -449,6 +467,20 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
           </div>
         </div>
       </div>
+      
+      {/* Footer */}
+      <footer className="fixed bottom-0 left-0 right-0 bg-black py-3 z-50">
+        <div className="text-center">
+          <a 
+            href="https://falker47.github.io/Nexus-portfolio/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-amber-300 transition-colors duration-300 hover:underline focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:ring-offset-2 focus:ring-offset-black rounded-sm px-1 py-0.5 active:scale-95 transform transition-transform duration-150 text-sm"
+          >
+            © {new Date().getFullYear()} Maurizio Falconi - falker47
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
