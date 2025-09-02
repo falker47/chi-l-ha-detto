@@ -80,6 +80,7 @@ export default function ChiLHaDetto({
   const [currentLevel, setCurrentLevel] = useState(0);
   const [completedLevels, setCompletedLevels] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [imagesPreloaded, setImagesPreloaded] = useState(false);
   const [showGameOverAnimation, setShowGameOverAnimation] = useState(false);
   const [isTimeoutGameOver, setIsTimeoutGameOver] = useState(false);
   
@@ -177,6 +178,7 @@ export default function ChiLHaDetto({
     setCurrentLevel(0);
     setCompletedLevels(0);
     setIsTimeoutGameOver(false);
+    setImagesPreloaded(false);
     // Non resettare showGameOverAnimation qui, viene gestito in onAnswer
   }, [includeSensitive, gameMode, loadUsedQuestions, saveUsedQuestions, resetUsedQuestions]);
 
@@ -229,10 +231,19 @@ export default function ChiLHaDetto({
 
   // Funzione per preload delle immagini dei personaggi
   const preloadCharacterImages = useCallback((choices: string[]) => {
-    choices.forEach(characterName => {
-      const imageUrl = getPortrait(characterName);
-      const img = new Image();
-      img.src = imageUrl;
+    setImagesPreloaded(false);
+    const imagePromises = choices.map(characterName => {
+      return new Promise<void>((resolve) => {
+        const imageUrl = getPortrait(characterName);
+        const img = new Image();
+        img.onload = () => resolve();
+        img.onerror = () => resolve(); // Anche in caso di errore, continua
+        img.src = imageUrl;
+      });
+    });
+    
+    Promise.all(imagePromises).then(() => {
+      setImagesPreloaded(true);
     });
   }, []);
 
@@ -303,7 +314,7 @@ export default function ChiLHaDetto({
     }
   }, [timeLeft, revealed, gameMode, streak]);
 
-  if (!current) {
+  if (!current || !imagesPreloaded) {
     return (
       <div className="p-6 max-w-3xl mx-auto">
         <h1 className="text-2xl font-bold">Chi l'ha detto? — Ambiguità Edition</h1>
@@ -370,7 +381,7 @@ export default function ChiLHaDetto({
           }
           
           // Durata diversa per vittoria finale (livello 12) vs livelli normali
-          const animationDuration = newLevel === 12 ? 2500 : 1500;
+          const animationDuration = newLevel === 12 ? 3000 : 1500;
           setTimeout(() => {
             setShowClimbingAnimation(false);
           }, animationDuration);
@@ -457,6 +468,7 @@ export default function ChiLHaDetto({
         setSelected(null);
         setDisabledOptions([]);
         setTimeLeft(60); // Reset timer per la nuova domanda
+        setImagesPreloaded(false);
       } else {
         // Fine partita Verso l'Olimpo - ricarica le domande
         const filteredItems = includeSensitive 
@@ -515,6 +527,7 @@ export default function ChiLHaDetto({
       setSelected(null);
       setDisabledOptions([]);
       setTimeLeft(45); // Reset timer per la nuova domanda
+      setImagesPreloaded(false);
       
       // Seleziona la prossima domanda
       selectNextQuestion();
@@ -993,7 +1006,7 @@ export default function ChiLHaDetto({
                          animation: 'pulse 2s infinite'
                        }}>
                     {gameMode === 'millionaire'
-                      ? (currentLevel === 12 ? '🏆 VITTORIA FINALE! 🏆' : `Fatica ${currentLevel} Superata!`)
+                      ? (currentLevel === 12 ? '🏆 VITTORIA FINALE!' : `Fatica ${currentLevel} Superata!`)
                       : `🔥 Streak: ${streak} 🔥`
                     }
                   </div>
