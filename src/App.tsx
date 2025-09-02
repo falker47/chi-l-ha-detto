@@ -172,15 +172,11 @@ function MainMenu({
                      {/* Selezione Modalità di Gioco - PRINCIPALE */}
            <div className="mb-10 flex items-center justify-center gap-4">
                          <div className="flex flex-col items-center space-y-3 bg-gradient-to-b from-black/50 to-black/40 backdrop-blur-lg rounded-3xl px-6 py-5 border-2 border-white/30 shadow-2xl transform hover:scale-105 transition-transform duration-300">
-              <span className="text-white font-bold text-xl drop-shadow-lg text-center"
-                    style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
-                Scegli la tua Modalità
-              </span>
               
                                                                                      <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3">
                                     <button
                      onClick={() => setGameMode('millionaire')}
-                     className={`w-40 h-20 px-3 py-1.5 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center relative overflow-hidden ${
+                     className={`w-65 h-32 px-3 py-1.5 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center relative overflow-hidden ${
                        gameMode === 'millionaire' 
                          ? 'text-white shadow-xl scale-105 ring-4 ring-purple-400/50' 
                          : 'text-purple-300 border-2 border-purple-300/50 hover:scale-105 hover:bg-purple-500/10'
@@ -200,14 +196,14 @@ function MainMenu({
                      
                      {/* Contenuto del bottone */}
                      <div className="relative z-10 text-center">
-                       <div className="text-base font-black mb-1 drop-shadow-lg">Eracle</div>
-                       <div className="text-xs font-semibold opacity-95">Scala l'Olimpo, diventa un Dio. </div>
+                       <div className="text-2xl font-black mb-1 drop-shadow-lg">Eracle</div>
+                       <div className="text-base font-semibold opacity-95">Scala l'Olimpo, diventa un Dio. </div>
                      </div>
                    </button>
                                    
                                     <button
                      onClick={() => setGameMode('classic')}
-                     className={`w-40 h-20 px-3 py-1.5 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center relative overflow-hidden ${
+                     className={`w-65 h-32 px-3 py-1.5 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 flex flex-col items-center justify-center relative overflow-hidden ${
                        gameMode === 'classic' 
                          ? 'text-white shadow-xl scale-105 ring-4 ring-amber-400/50' 
                          : 'text-amber-300 border-2 border-amber-300/50 hover:scale-105 hover:bg-amber-500/10'
@@ -227,15 +223,15 @@ function MainMenu({
                      
                      {/* Contenuto del bottone */}
                      <div className="relative z-10 text-center">
-                       <div className="text-base font-black mb-1 drop-shadow-lg">Achille</div>
-                     <div className="text-xs font-semibold opacity-95">Porta la tua aristeia nell'Iliade.</div>
+                       <div className="text-2xl font-black mb-1 drop-shadow-lg">Achille</div>
+                     <div className="text-base font-semibold opacity-95">Porta la tua aristeia nell'Iliade.</div>
                    </div>
                  </button>
                 </div>
               
                                                            {/* Descrizione della modalità - sempre visibile con grandezza fissa */}
                                  <div className="text-center bg-black/20 rounded-2xl p-2 border border-white/10 w-full max-w-2xl h-24 flex items-center justify-center">
-                  <p className="text-white text-xs leading-relaxed font-medium"
+                  <p className="text-white text-base leading-relaxed font-medium"
                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.9)' }}>
                     {gameMode === 'millionaire' ? (
                       <>

@@ -249,7 +249,7 @@ export default function ChiLHaDetto({
     
     // Preload delle immagini dei personaggi per questa domanda
     preloadCharacterImages(current.choices);
-  }, [current?.id, preloadCharacterImages]);
+  }, [current, preloadCharacterImages]);
 
   const mappedChoices = useMemo(() => {
     if (!current) return [] as { label: string; isCorrect: boolean }[];

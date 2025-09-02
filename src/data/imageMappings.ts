@@ -187,5 +187,17 @@ export const personaggiImageMap: Record<string, string> = {
   "Antonio Gramsci": "images/personaggi/antonio-gramsci.png",
   "Marie Curie": "images/personaggi/marie-curie.jpg",
   "Plinio il Vecchio": "images/personaggi/plinio-il-vecchio.jpg",
-  "Ignazio Pisciotta": "images/personaggi/ignazio-pisciotta.jpg"
+  "Ignazio Pisciotta": "images/personaggi/ignazio-pisciotta.jpg",
+  "Paulo Coelho": "images/personaggi/paulo-coelho.jpg",
+  "Samuel Butler": "images/personaggi/samuel-butler.jpg",
+  "François de la Rochefoucauld": "images/personaggi/francois-de-la-rochefoucauld.jpg",
+  "Thomas More": "images/personaggi/thomas-more.jpg",
+  "Ponzio Pilato": "images/personaggi/ponzio-pilato.jpg",
+  "Emiliano Zapata": "images/personaggi/emiliano-zapata.jpg",
+  "Giuseppe Garibaldi": "images/personaggi/giuseppe-garibaldi.jpg",
+  "Donald Trump": "images/personaggi/donald-trump.jpg",
+  "George Bernard Shaw": "images/personaggi/george-bernard-shaw.jpg",
+  "San Francesco d'Assisi": "images/personaggi/san-francesco-d-assisi.jpg",
+  "Ernesto 'Che' Guevara": "images/personaggi/che-guevara.jpg",
+  "Enrico Fermi": "images/personaggi/enrico-fermi.jpg"
 };
