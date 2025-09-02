@@ -201,7 +201,7 @@ export const personaggiImageMap: Record<string, string> = {
   "Enrico Fermi": "images/personaggi/enrico-fermi.jpg",
   "Gesù Cristo": "images/personaggi/gesu-cristo.jpg",
   "Klemens von Metternich": "images/personaggi/klemens-von-metternich.jpeg",
-  "Luigi Pirandello": "images/personaggi/luigi-pirandello.jpg",
+  "Luigi Pirandello": "images/personaggi/luigi-pirandello.jpeg",
   "Edgar Allan Poe": "images/personaggi/edgar-allan-poe.jpg",
   "Sandro Pertini": "images/personaggi/sandro-pertini.jpg",
   "Enrico IV di Borbone": "images/personaggi/enrico-iv.jpg",
