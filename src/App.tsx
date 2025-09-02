@@ -322,7 +322,7 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
         <div className="mb-8 flex items-center justify-between">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg"
               style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
-            📚 Tutorial
+            Tutorial
           </h1>
           
           {/* Bottone Torna al Menu - identico a quello nella schermata di gioco */}
@@ -357,11 +357,11 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
         <div className="bg-black/80 backdrop-blur-sm rounded-3xl p-4 sm:p-6 shadow-2xl border border-white/30">
           <div className="space-y-4">
             <div className="text-center mb-6">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 drop-shadow-lg"
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-3 drop-shadow-lg"
                   style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
                 Benvenuto in "Chi l'ha detto?"
               </h2>
-              <p className="text-lg text-white/90 drop-shadow-lg"
+              <p className="text-sm md:text-base text-white/90 drop-shadow-lg"
                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
                 Scopri come giocare e diventare un maestro delle citazioni storiche!
               </p>
@@ -370,10 +370,10 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
             <div className="grid md:grid-cols-2 gap-4">
               {/* Modalità Eracle */}
               <div className="bg-gradient-to-br from-purple-900/60 to-blue-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-purple-400/50">
-                <h3 className="text-xl font-bold text-purple-200 mb-3 flex items-center gap-2">
+                <h3 className="text-xs md:text-base font-bold text-purple-200 mb-3 flex items-center gap-2">
                   🏛️ Modalità Eracle - "Le 12 Fatiche"
                 </h3>
-                <ul className="space-y-2 text-purple-100">
+                <ul className="space-y-2 text-xs md:text-xs text-purple-100">
                   <li className="flex items-start gap-2">
                     <span className="text-purple-300 font-bold">•</span>
                     <span>12 domande progressive con difficoltà crescente</span>
@@ -395,10 +395,10 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
 
               {/* Modalità Achille */}
               <div className="bg-gradient-to-br from-orange-900/60 to-red-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-orange-400/50">
-                <h3 className="text-xl font-bold text-orange-200 mb-3 flex items-center gap-2">
+                <h3 className="text-xs md:text-base font-bold text-orange-200 mb-3 flex items-center gap-2">
                   ⚔️ Modalità Achille - "Aristeia"
                 </h3>
-                <ul className="space-y-2 text-orange-100">
+                <ul className="space-y-2 text-xs md:text-xs text-orange-100">
                   <li className="flex items-start gap-2">
                     <span className="text-orange-300 font-bold">•</span>
                     <span>Partita infinita senza aiuti</span>
@@ -421,38 +421,38 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
 
             {/* Come giocare */}
             <div className="bg-gradient-to-r from-green-900/60 to-emerald-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-green-400/50">
-              <h3 className="text-xl font-bold text-green-200 mb-3 flex items-center gap-2">
+              <h3 className="text-sm md:text-lg font-bold text-green-200 mb-3 flex items-center gap-2">
                 🎯 Come Giocare
               </h3>
-              <div className="grid md:grid-cols-2 gap-3 text-green-100">
+              <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm text-green-100">
                 <div>
                   <h4 className="font-bold mb-1">📖 Leggi la Citazione</h4>
-                  <p className="text-sm">Ogni domanda presenta una citazione storica famosa</p>
+                  <p className="text-xs">Ogni domanda presenta una citazione storica famosa</p>
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">🤔 Scegli l'Autore</h4>
-                  <p className="text-sm">Seleziona tra 4 opzioni chi ha pronunciato quelle parole</p>
+                  <p className="text-xs">Seleziona tra 4 opzioni chi ha pronunciato quelle parole</p>
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">⏰ Attenzione al Tempo</h4>
-                  <p className="text-sm">Hai 45-60 secondi per rispondere</p>
+                  <p className="text-xs">Hai 45-60 secondi per rispondere</p>
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">📚 Impara la Storia</h4>
-                  <p className="text-sm">Scopri il contesto e perché la citazione è ingannevole</p>
+                  <p className="text-xs">Scopri il contesto e perché la citazione è ingannevole</p>
                 </div>
               </div>
             </div>
 
             {/* Contenuti sensibili */}
             <div className="bg-gradient-to-r from-amber-900/60 to-orange-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-amber-400/50">
-              <h3 className="text-xl font-bold text-amber-200 mb-3 flex items-center gap-2">
+              <h3 className="text-xs md:text-sm font-bold text-amber-200 mb-3 flex items-center gap-2">
                 ⚠️ Contenuti Sensibili
               </h3>
-              <p className="text-amber-100 mb-2">
+              <p className="text-xs md:text-xs text-amber-100 mb-2">
                 Il gioco include citazioni di figure storiche controverse. Puoi attivare/disattivare questa modalità:
               </p>
-              <ul className="space-y-1 text-amber-100">
+              <ul className="space-y-1 text-xs md:text-xs text-amber-100">
                 <li className="flex items-start gap-2">
                   <span className="text-amber-300 font-bold">•</span>
                   <span><strong>Modalità Sicura:</strong> Solo citazioni di figure generalmente positive</span>

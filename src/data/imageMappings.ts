@@ -92,7 +92,7 @@ export const personaggiImageMap: Record<string, string> = {
   "Patrick Henry": "images/personaggi/patrick-henry.jpeg",
   "Thomas Jefferson": "images/personaggi/thomas-jefferson.jpg",
   "Benjamin Franklin": "images/personaggi/benjamin-franklin.jpg",
-  "Will Durant": "images/personaggi/will-durant.jpg",
+  "Will Durant": "images/personaggi/will-durant.jpeg",
   "Plutarco": "images/personaggi/plutarco.jpg",
   "Epitteto": "images/personaggi/epitteto.jpeg",
   "Viktor Frankl": "images/personaggi/viktor-frankl.jpg",
