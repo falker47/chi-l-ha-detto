@@ -231,7 +231,7 @@ function MainMenu({
               
                                                            {/* Descrizione della modalità - sempre visibile con grandezza fissa */}
                                  <div className="text-center bg-black/20 rounded-2xl p-2 border border-white/10 w-full max-w-2xl h-24 flex items-center justify-center">
-                  <p className="text-white text-base leading-relaxed font-medium"
+                  <p className="text-white text-xs sm:text-base leading-relaxed font-medium"
                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.9)' }}>
                     {gameMode === 'millionaire' ? (
                       <>

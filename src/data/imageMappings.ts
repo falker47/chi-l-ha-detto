@@ -200,5 +200,14 @@ export const personaggiImageMap: Record<string, string> = {
   "Ernesto 'Che' Guevara": "images/personaggi/che-guevara.jpg",
   "Enrico Fermi": "images/personaggi/enrico-fermi.jpg",
   "Gesù Cristo": "images/personaggi/gesu-cristo.jpg",
-  "Klemens von Metternich": "images/personaggi/klemens-von-metternich.jpeg"
+  "Klemens von Metternich": "images/personaggi/klemens-von-metternich.jpeg",
+  "Luigi Pirandello": "images/personaggi/luigi-pirandello.jpg",
+  "Edgar Allan Poe": "images/personaggi/edgar-allan-poe.jpg",
+  "Sandro Pertini": "images/personaggi/sandro-pertini.jpg",
+  "Enrico IV di Borbone": "images/personaggi/enrico-iv.jpg",
+  "Vespasiano": "images/personaggi/vespasiano.jpg",
+  "Annibale": "images/personaggi/annibale.jpg",
+  "Eleanor Roosevelt": "images/personaggi/eleanor-roosevelt.jpg",
+  "Papa Urbano II": "images/personaggi/papa-urbano-ii.jpg",
+  "Giacomo Leopardi": "images/personaggi/giacomo-leopardi.jpg"
 };
