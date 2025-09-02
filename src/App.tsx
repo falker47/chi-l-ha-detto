@@ -52,7 +52,7 @@ function MainMenu({
       <div className="absolute bottom-20 right-20 w-40 h-40 bg-white/5 rounded-full blur-xl animate-pulse delay-1000"></div>
       
       {/* Content Layer */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white p-4 sm:p-6 md:p-8 pb-16">
+      <div className="relative z-10 flex flex-col items-center justify-start pt-8 sm:justify-center min-h-screen text-white p-4 sm:p-6 md:p-8 pb-16">
         <div className="text-center max-w-7xl mx-auto scale-96 sm:scale-100">
                      <div className="relative mb-3 sm:mb-6">
              <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-white drop-shadow-2xl relative z-10" 
@@ -413,7 +413,7 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-orange-300 font-bold">•</span>
-                    <span>Obiettivo: Resistire il più a lungo possibile</span>
+                    <span>Obiettivo: Resistere il più a lungo possibile</span>
                   </li>
                 </ul>
               </div>
@@ -431,7 +431,7 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">🤔 Scegli l'Autore</h4>
-                  <p className="text-xs">Seleziona tra 4 opzioni chi ha pronunciato quelle parole</p>
+                  <p className="text-xs">Indovina fra 4 opzioni l'autore della citazione</p>
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">⏰ Attenzione al Tempo</h4>
@@ -439,7 +439,7 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">📚 Impara la Storia</h4>
-                  <p className="text-xs">Scopri il contesto e perché la citazione è ingannevole</p>
+                  <p className="text-xs">Scopri il contesto e ed eventualmente perché la citazione è ingannevole</p>
                 </div>
               </div>
             </div>

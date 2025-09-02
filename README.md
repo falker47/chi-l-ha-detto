@@ -1,19 +1,31 @@
-# Chi l'ha detto? - Quiz Storico
+# Chi l'ha detto? - Ambiguità Edition
 
-Un'applicazione interattiva per testare la conoscenza delle citazioni storiche e del loro vero contesto.
+Un quiz interattivo che mette alla prova la tua conoscenza delle citazioni storiche e del loro vero contesto. Scopri chi ha davvero pronunciato le frasi più famose della storia!
 
 ## 🎯 Caratteristiche
 
-- **Quiz interattivo** con citazioni storiche
-- **Modalità Historical/Context** per contenuti educativi
+- **Due modalità di gioco**: Eracle (Le 12 Fatiche) e Achille (Aristeia)
+- **Quiz interattivo** con citazioni storiche autentiche
+- **Sistema anti-duplicati** per esperienza sempre fresca
+- **Contenuti educativi** con contesto storico e note di ambiguità
 - **Immagini dei personaggi** storici
 - **Sistema di punteggio** e streak
 - **Hint e aiuti** durante il gioco
-- **Design responsive** con palette seppia storica
+- **Design responsive** ottimizzato per mobile e desktop
+- **Favicon e meta tag** per condivisione social
 
-## 🚀 Deploy su GitHub Pages
+## 🚀 Deploy
 
-### Metodo 1: Deploy Manuale (Raccomandato)
+### 🌐 Vercel (Raccomandato)
+
+Il progetto è attualmente deployato su Vercel:
+- **URL**: [https://chi-l-ha-detto.vercel.app/](https://chi-l-ha-detto.vercel.app/)
+- **Deploy automatico** ad ogni push su main
+- **Performance ottimizzate** per mobile e desktop
+
+### 📄 GitHub Pages (Alternativo)
+
+#### Metodo 1: Deploy Manuale
 
 1. **Build locale:**
    ```bash
@@ -42,6 +54,14 @@ Un'applicazione interattiva per testare la conoscenza delle citazioni storiche e
 2. **Seleziona** "Manual Deploy to GitHub Pages"
 3. **Clicca** "Run workflow"
 4. **Configura Pages** per usare branch `gh-pages`
+
+## 🛠️ Tecnologie
+
+- **React 18** con TypeScript
+- **Vite** per build e sviluppo
+- **Tailwind CSS** per styling responsive
+- **Vercel** per deploy e hosting
+- **GitHub** per version control
 
 ## 🛠️ Sviluppo Locale
 
@@ -75,16 +95,20 @@ npm run validate
 └── vite.config.ts     # Configurazione Vite
 ```
 
-## 🎨 Palette Colori
+## 🎨 Design
 
-L'applicazione utilizza una palette seppia storica coerente con l'immagine hero:
-- **Sfondo**: Gradiente amber-orange
-- **Testi**: Marroni scuri e dorati
-- **Accenti**: Seppia caldo e arancioni
+L'applicazione utilizza un design moderno e responsive:
+- **Sfondo**: Immagini storiche con overlay scuri
+- **Modalità Eracle**: Palette viola/indaco per "Le 12 Fatiche"
+- **Modalità Achille**: Palette amber/arancione per "Aristeia"
+- **Testi**: Bianco con ombre per leggibilità
+- **Footer**: Nero fisso con link al portfolio
 
 ## 🌐 Live Demo
 
-[Chi l'ha detto?](https://[username].github.io/chi-l-ha-detto/)
+🎮 **[Gioca ora su Vercel](https://chi-l-ha-detto.vercel.app/)**
+
+Testa la tua conoscenza delle citazioni storiche direttamente online!
 
 ## 📝 Licenza
 

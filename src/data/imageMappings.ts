@@ -182,9 +182,10 @@ export const personaggiImageMap: Record<string, string> = {
   "Dante Alighieri": "images/personaggi/dante-alighieri.jpg",
   "Ludovico Ariosto": "images/personaggi/ludovico-ariosto.jpg",
   "Confucio": "images/personaggi/confucio.png",
-  "Laozi": "images/personaggi/laozi.jpg",
+  "Lao-Tzu": "images/personaggi/laozi.jpg",
   "Bruce Lee": "images/personaggi/bruce-lee.jpg",
   "Antonio Gramsci": "images/personaggi/antonio-gramsci.png",
   "Marie Curie": "images/personaggi/marie-curie.jpg",
-  "Plinio il Vecchio": "images/personaggi/plinio-il-vecchio.jpg"
+  "Plinio il Vecchio": "images/personaggi/plinio-il-vecchio.jpg",
+  "Ignazio Pisciotta": "images/personaggi/ignazio-pisciotta.jpg"
 };

@@ -164,29 +164,30 @@
   {
     "id": "q7",
     "quote": "Meglio vivere un giorno da leoni che cent'anni da pecora.",
-    "author": "Benito Mussolini",
+    "author": "Ignazio Pisciotta",
     "choices": [
+      "Ignazio Pisciotta",
       "Benito Mussolini",
       "Gabriele D'Annunzio",
-      "Julius Evola",
       "Ottaviano Augusto"
     ],
     "correctIndex": 0,
-    "year_or_period": "1918–1920 (diffusione)",
-    "source_title": "Slogan bellico/propagandistico (origine precedente e controversa)",
-    "source_link": "https://it.wikipedia.org/wiki/Meglio_un_giorno_da_leone_che_cent%27anni_da_pecora",
+    "year_or_period": "XIX secolo",
+    "source_title": "Opere di Ignazio Pisciotta",
+    "source_link": "https://it.wikipedia.org/wiki/Ignazio_Pisciotta",
     "tags": [
-      "propaganda",
-      "nazionalismo"
+      "letteratura",
+      "poesia",
+      "filosofia"
     ],
-    "difficulty": 2,
-    "spiciness": 2,
-    "sensitive": true,
-    "hint_short": "Storia italiana del XX secolo",
-    "hint_more": "Leader politico italiano che guidò il movimento fascista, noto per i suoi discorsi infuocati e per aver utilizzato questo slogan nel clima nazionalista del primo dopoguerra.",
-    "ambiguity_note": "D'Annunzio usava linguaggio simile, ma Mussolini lo rese slogan di massa.",
+    "difficulty": 4,
+    "spiciness": 1,
+    "sensitive": false,
+    "hint_short": "Generale e scultore italiano",
+    "hint_more": "Generale e scultore italiano del XIX secolo, noto anche per la frase «Tutti eroi! O il Piave, o tutti accoppati!».",
+    "ambiguity_note": "Spesso attribuita a Mussolini, in realtà è di Pisciotta, ma viene ripresa dal fascismo.",
     "language_orig": "IT",
-    "context": "Slogan che catturò lo spirito del tempo: dalla guerra alla politica, sempre virilità."
+    "context": "Una delle massime più famose della letteratura italiana, spesso fraintesa nella sua origine."
   },
   {
     "id": "q8",
@@ -1839,9 +1840,9 @@
   {
     "id": "q67",
     "quote": "千里之行，始于足下 (\"Un viaggio di mille miglia comincia con un solo passo\").",
-    "author": "Laozi",
+    "author": "Lao-Tzu",
     "choices": [
-      "Laozi",
+      "Lao-Tzu",
       "Confucio",
       "Sun Tzu",
       "Mao Zedong"
@@ -1858,7 +1859,7 @@
     "spiciness": 0,
     "hint_short": "Filosofia cinese antica",
     "hint_more": "Filosofo cinese del VI-IV secolo a.C., considerato il fondatore del taoismo, autore del 'Tao Te Ching' e noto per la sua filosofia del 'wu wei' (non-azione).",
-    "ambiguity_note": "Confucio insegnava l'etica sociale, Laozi la saggezza del Tao.",
+    "ambiguity_note": "Confucio insegnava l'etica sociale, Lao-Tzu la saggezza del Tao.",
     "language_orig": "ZH",
     "sensitive": false,
     "context": "La saggezza taoista: ogni grande impresa inizia con un piccolo passo."
@@ -1953,7 +1954,7 @@
     "choices": [
       "Confucio",
       "Socrate",
-      "Laozi",
+      "Lao-Tzu",
       "Aristotele"
     ],
     "correctIndex": 0,
