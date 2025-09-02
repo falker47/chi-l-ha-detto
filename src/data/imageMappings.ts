@@ -199,5 +199,6 @@ export const personaggiImageMap: Record<string, string> = {
   "San Francesco d'Assisi": "images/personaggi/san-francesco-d-assisi.jpg",
   "Ernesto 'Che' Guevara": "images/personaggi/che-guevara.jpg",
   "Enrico Fermi": "images/personaggi/enrico-fermi.jpg",
-  "Gesù Cristo": "images/personaggi/gesu-cristo.jpg"
+  "Gesù Cristo": "images/personaggi/gesu-cristo.jpg",
+  "Klemens von Metternich": "images/personaggi/klemens-von-metternich.jpeg"
 };

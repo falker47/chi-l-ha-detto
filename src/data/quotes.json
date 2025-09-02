@@ -3367,7 +3367,7 @@
   },
   {
     "id": "q124",
-    "quote": "Chi senza peccato scagli la prima pietra.",
+    "quote": "Chi tra voi è senza peccato scagli la prima pietra.",
     "author": "Gesù Cristo",
     "choices": [
       "Gesù Cristo",
@@ -3388,5 +3388,30 @@
     "language_orig": "GR",
     "sensitive": false,
     "context": "L'insegnamento di Gesù: la misericordia e il perdono prima del giudizio."
+  },
+
+  {
+    "id": "q125",
+    "quote": "L'Italia non è altro che una espressione geografica.",
+    "author": "Klemens von Metternich",
+    "choices": [
+      "Klemens von Metternich",
+      "Giuseppe Garibaldi",
+      "Camillo Benso, Cavour",
+      "Napoleone Bonaparte"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1814-1848",
+    "source_title": "Memorie e documenti diplomatici",
+    "source_link": "https://it.wikipedia.org/wiki/Klemens_von_Metternich",
+    "tags": ["storia", "Risorgimento", "Austria"],
+    "difficulty": 5,
+    "spiciness": 0,
+    "hint_short": "Cancelliere austriaco del XIX secolo",
+    "hint_more": "Cancelliere austriaco del XIX secolo, noto per la sua politica conservatrice e per aver pronunciato questa frase durante il Congresso di Vienna, esprimendo scetticismo sull'unità italiana.",
+    "ambiguity_note": "Spesso attribuita a politici italiani, ma è di Metternich, che negava l'esistenza di un'identità nazionale italiana.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "La visione di Metternich: l'Italia come semplice territorio senza unità politica o culturale."
   }
 ]

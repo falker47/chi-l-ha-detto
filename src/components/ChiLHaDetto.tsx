@@ -785,14 +785,14 @@ export default function ChiLHaDetto({
              <button
                onClick={use5050}
                disabled={used5050 || revealed || gameOver}
-               className={`relative px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+               className={`relative px-1.5 sm:px-4 py-0.5 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                  used5050 || revealed || gameOver
                    ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                    : 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl'
                }`}
              >
                <span className="flex items-center gap-1">
-                 <span className="text-sm sm:text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(59, 130, 246, 0.7))' }}>🎯</span>
+                 <span className="text-xs sm:text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(59, 130, 246, 0.7))' }}>🎯</span>
                  <span>50/50</span>
                </span>
              </button>
@@ -800,14 +800,14 @@ export default function ChiLHaDetto({
              <button
                onClick={useHint}
                disabled={hintRevealed || revealed || usedHint || gameOver}
-               className={`relative px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+               className={`relative px-1.5 sm:px-4 py-0.5 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                  hintRevealed || revealed || usedHint || gameOver
                    ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                    : 'bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white border-0 shadow-lg hover:shadow-xl'
                }`}
              >
                <span className="flex items-center gap-1">
-                 <span className="text-sm sm:text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(245, 158, 11, 0.7))' }}>💡</span>
+                 <span className="text-xs sm:text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(245, 158, 11, 0.7))' }}>💡</span>
                  <span>Hint</span>
                </span>
              </button>
@@ -815,14 +815,14 @@ export default function ChiLHaDetto({
              <button
                onClick={useSuperHint}
                disabled={superHintRevealed || revealed || usedSuperHint || gameOver}
-               className={`relative px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+               className={`relative px-1.5 sm:px-4 py-0.5 sm:py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                  superHintRevealed || revealed || usedSuperHint || gameOver
                    ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                    : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white border-0 shadow-lg hover:shadow-xl'
                }`}
              >
                <span className="flex items-center gap-1">
-                 <span className="text-sm sm:text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.7))' }}>🚀</span>
+                 <span className="text-xs sm:text-lg drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 6px rgba(34, 197, 94, 0.7))' }}>🚀</span>
                  <span>Super Hint</span>
                </span>
              </button>
@@ -832,7 +832,7 @@ export default function ChiLHaDetto({
                               <button
                  onClick={use2ndChance}
                  disabled={used2ndChance || revealed || gameOver}
-                 className={`relative px-1 sm:px-3 py-0.5 sm:py-1.5 rounded-md font-bold text-xs transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+                 className={`relative px-0.5 sm:px-3 py-0.5 sm:py-1.5 rounded-md font-bold text-xs transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                    used2ndChance || revealed || gameOver
                      ? 'opacity-50 cursor-not-allowed bg-gray-100 border-gray-300 text-gray-500'
                      : is2ndChanceActive
@@ -841,7 +841,7 @@ export default function ChiLHaDetto({
                  }`}
                >
                  <span className="flex items-center gap-1">
-                                     <span className="text-sm sm:text-lg drop-shadow-lg" style={{ filter: `drop-shadow(0 0 6px ${is2ndChanceActive ? 'rgba(236, 72, 153, 0.7)' : 'rgba(236, 72, 153, 0.7)'})` }}>{is2ndChanceActive ? '✨' : '💖'}</span>
+                                     <span className="text-xs sm:text-lg drop-shadow-lg" style={{ filter: `drop-shadow(0 0 6px ${is2ndChanceActive ? 'rgba(236, 72, 153, 0.7)' : 'rgba(236, 72, 153, 0.7)'})` }}>{is2ndChanceActive ? '✨' : '💖'}</span>
                   <span>{is2ndChanceActive ? 'Attivo' : '2nd Chance'}</span>
                  </span>
                </button>
