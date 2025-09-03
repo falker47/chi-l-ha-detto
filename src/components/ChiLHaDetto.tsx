@@ -344,8 +344,15 @@ export default function ChiLHaDetto({
 
   useEffect(() => {
     if (timeLeft === 0 && !revealed) {
-      // Salva la streak finale prima di resettarla
-      setFinalStreak(streak);
+      console.log('⏰ TIMEOUT - Debug punteggi:');
+      console.log('streak:', streak);
+      console.log('score:', score);
+      console.log('finalStreak:', finalStreak);
+      
+      // Salva la streak finale prima di resettarla (solo se è maggiore di 0)
+      if (streak > 0) {
+        setFinalStreak(streak);
+      }
       setStreak(0);
       
       // Entrambe le modalità: game over se il timer scade
@@ -373,7 +380,11 @@ export default function ChiLHaDetto({
         setTimeout(() => {
           setShowGameOverAnimation(false);
           setRevealed(true);
-          // Non impostare gameOver qui per permettere alla FASE 4 di rendersi
+          setGameOver(true); // Imposta game over per mostrare la leaderboard
+          // Mostra la leaderboard dopo un breve delay
+          setTimeout(() => {
+            setShowLeaderboard(true);
+          }, 1000);
         }, 2000);
       }
     }
@@ -1550,6 +1561,15 @@ export default function ChiLHaDetto({
       </HeroImagePreloader>
       
       {/* Leaderboard */}
+      {showLeaderboard && (() => {
+        console.log('📊 LEADERBOARD - Debug punteggi:');
+        console.log('gameMode:', gameMode);
+        console.log('currentLevel:', currentLevel);
+        console.log('finalStreak:', finalStreak);
+        console.log('score:', score);
+        console.log('currentStreak passato:', gameMode === 'millionaire' ? currentLevel : finalStreak);
+        return null;
+      })()}
       {showLeaderboard && (
         <Leaderboard
           onClose={() => setShowLeaderboard(false)}
