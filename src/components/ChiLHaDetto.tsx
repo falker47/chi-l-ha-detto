@@ -243,6 +243,13 @@ export default function ChiLHaDetto({
     
     // Altrimenti, mostra il preload e carica le immagini
     setImagesPreloaded(false);
+    
+    // Timeout di sicurezza per evitare caricamento infinito
+    const safetyTimeout = setTimeout(() => {
+      console.warn('Timeout del preload immagini, forzando il caricamento');
+      setImagesPreloaded(true);
+    }, 6000); // 6 secondi di timeout
+    
     const imagePromises = choices.map(characterName => {
       return new Promise<void>((resolve) => {
         const imageUrl = getPortrait(characterName);
@@ -252,12 +259,20 @@ export default function ChiLHaDetto({
           setLoadedImagesCache(prev => new Set([...prev, imageUrl]));
           resolve();
         };
-        img.onerror = () => resolve(); // Anche in caso di errore, continua
+        img.onerror = () => {
+          console.warn(`Errore nel caricamento dell'immagine: ${imageUrl}`);
+          resolve(); // Anche in caso di errore, continua
+        };
         img.src = imageUrl;
       });
     });
     
     Promise.all(imagePromises).then(() => {
+      clearTimeout(safetyTimeout);
+      setImagesPreloaded(true);
+    }).catch((error) => {
+      console.error('Errore nel preload delle immagini:', error);
+      clearTimeout(safetyTimeout);
       setImagesPreloaded(true);
     });
   }, [loadedImagesCache]);
@@ -275,7 +290,7 @@ export default function ChiLHaDetto({
     
     // Preload delle immagini dei personaggi per questa domanda
     preloadCharacterImages(current.choices);
-  }, [current, preloadCharacterImages]);
+  }, [current]); // Rimossa la dipendenza preloadCharacterImages per evitare loop infiniti
 
   const mappedChoices = useMemo(() => {
     if (!current) return [] as { label: string; isCorrect: boolean }[];
@@ -783,7 +798,7 @@ export default function ChiLHaDetto({
                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
                     display: 'inline-block'
                   }}>
-                  💎 Score: {score}
+                  💎 Pts: {score}
                 </span>
               </div>
             )}
@@ -844,7 +859,7 @@ export default function ChiLHaDetto({
                   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
                   display: 'inline-block'
                 }}>
-                Score: {score}
+                Pts: {score}
               </span>
             )}
             
@@ -1125,7 +1140,7 @@ export default function ChiLHaDetto({
                       ? (currentLevel === 12 
                           ? '🎉 Hai completato tutte le Dodici Fatiche! 🎉' 
                           : 'Continua la scalata verso l\'Olimpo!')
-                      : `Continua la battaglia! Score: ${score}`
+                      : `Continua la battaglia! Pts: ${score}`
                     }
                   </div>
                   
@@ -1243,7 +1258,7 @@ export default function ChiLHaDetto({
                           </div>
                           <div className="bg-gradient-to-r from-blue-900/60 to-indigo-800/60 backdrop-blur-sm rounded-lg border-2 border-blue-400/50 p-2 flex items-center justify-between">
                             <div className="flex items-center gap-2">
-                              <div className="text-xs text-blue-200 font-medium">Score</div>
+                              <div className="text-xs text-blue-200 font-medium">Pts</div>
                             </div>
                             <div className="text-lg font-bold text-blue-300">{score}</div>
                           </div>

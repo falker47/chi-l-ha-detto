@@ -65,16 +65,26 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
           : 'https://chi-l-ha-detto.onrender.com/api/leaderboard';
         
         const response = await fetch(apiUrl, {
-          // Timeout di 10 secondi per evitare attese eccessive
-          signal: AbortSignal.timeout(10000)
+          // Timeout di 4 secondi per evitare attese eccessive
+          signal: AbortSignal.timeout(4000)
         });
         const data = await response.json();
         
         if (data.success) {
-          setLeaderboard(data.data);
-          // Salva il backup locale
-          localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(data.data));
-          console.log('💾 Backup locale aggiornato');
+          // Controlla se il server ha dati validi (non vuoti)
+          const hasValidData = data.data && 
+            ((data.data.achille && data.data.achille.length > 0) || 
+             (data.data.eracle && data.data.eracle.length > 0));
+          
+          if (hasValidData) {
+            setLeaderboard(data.data);
+            // Salva il backup locale solo se il server ha dati validi
+            localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(data.data));
+            console.log('💾 Backup locale aggiornato con dati del server');
+          } else {
+            console.log('⚠️ Server restituisce leaderboard vuota, mantenendo backup locale');
+            // Non sovrascrivere il backup locale se il server è vuoto
+          }
         } else {
           setError('Errore nel caricamento della leaderboard');
         }
@@ -211,8 +221,47 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         setError(data.error || 'Errore nel salvataggio del record');
       }
     } catch (err) {
-      setError('Impossibile salvare il record');
       console.error('Errore nel salvataggio:', err);
+      
+      // Fallback: salva localmente anche se il server non risponde
+      const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
+      const currentModeLeaderboard = leaderboard[modeKey] || [];
+      
+      // Crea il nuovo record
+      const newRecord = {
+        id: Date.now(), // ID temporaneo
+        name: playerName.trim(),
+        streak: currentStreak,
+        score: currentScore,
+        timestamp: new Date().toISOString()
+      };
+      
+      // Aggiungi il record alla leaderboard locale
+      const updatedLeaderboard = [...currentModeLeaderboard, newRecord]
+        .sort((a, b) => {
+          if (b.streak !== a.streak) return b.streak - a.streak;
+          if (b.score !== a.score) return b.score - a.score;
+          return new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime();
+        })
+        .slice(0, 5); // Mantieni solo i top 5
+      
+      const newLeaderboard = {
+        ...leaderboard,
+        [modeKey]: updatedLeaderboard
+      };
+      
+      setLeaderboard(newLeaderboard);
+      localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(newLeaderboard));
+      
+      setShowSaveForm(false);
+      setPlayerName('');
+      setRecordAlreadySaved(true);
+      
+      setError('Server non disponibile - record salvato localmente');
+      
+      if (onSaveRecord) {
+        onSaveRecord(playerName.trim());
+      }
     } finally {
       setSaving(false);
     }
