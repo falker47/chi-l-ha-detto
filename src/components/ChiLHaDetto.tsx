@@ -569,7 +569,9 @@ export default function ChiLHaDetto({
         const newQuestionScores = [...questionScores, questionScore];
         if (newStreak === 12) {
           // Vittoria: applica moltiplicatore hints
+          const baseScore = newQuestionScores.reduce((sum, score) => sum + score, 0);
           const finalScore = calculateEracleFinalScore(newQuestionScores, hintsUnused);
+          console.log(`🏆 VITTORIA! Punteggio base: ${baseScore}, Hints non utilizzati: ${hintsUnused}, Moltiplicatore: ${1 + (0.5 * hintsUnused)}, Punteggio finale: ${finalScore}`);
           setScore(finalScore);
         } else {
           // Durante il gioco: somma semplice
@@ -708,10 +710,8 @@ export default function ChiLHaDetto({
         // Non resettare imagesPreloaded qui - viene gestito dal preloadCharacterImages
         
         // Reset degli hints per la nuova domanda (mantiene il contatore hintsUnused)
-        setUsedHint(false);
-        setUsedSuperHint(false);
-        setUsed5050(false);
-        setUsed2ndChance(false);
+        // NON resettare gli aiuti in modalità Eracle - devono essere tracciati per tutta la partita
+        // In modalità Eracle (millionaire) gli aiuti non si resettano tra le domande
         setIs2ndChanceActive(false);
         setHintRevealed(false);
         setSuperHintRevealed(false);
@@ -758,12 +758,7 @@ export default function ChiLHaDetto({
         setDisabledOptions([]);
         setGameOver(false);
         
-        // Reset del contatore hints per modalità Eracle
-        if (gameMode === 'millionaire') {
-          setHintsUnused(4);
-        } else {
-          setHintsUnused(0);
-        }
+        // NON resettare il contatore hints - deve rimanere per tutta la partita
       }
     } else {
       // Modalità Battaglia di Achille: partita infinita, continua con la prossima domanda
@@ -784,10 +779,7 @@ export default function ChiLHaDetto({
       // Non resettare imagesPreloaded qui - viene gestito dal preloadCharacterImages
       
       // Reset degli hints per la nuova domanda (modalità Achille non ha hints)
-      setUsedHint(false);
-      setUsedSuperHint(false);
-      setUsed5050(false);
-      setUsed2ndChance(false);
+      // In modalità Achille non ci sono hints, quindi non serve resettare
       setIs2ndChanceActive(false);
       setHintRevealed(false);
       setSuperHintRevealed(false);
@@ -813,6 +805,7 @@ export default function ChiLHaDetto({
     // Decrementa il contatore hints non utilizzati (modalità Eracle)
     if (gameMode === 'millionaire') {
       setHintsUnused(prev => Math.max(0, prev - 1));
+      console.log(`50/50 utilizzato! Hints rimanenti: ${hintsUnused - 1}`);
     }
   }
 
@@ -823,6 +816,7 @@ export default function ChiLHaDetto({
     // Decrementa il contatore hints non utilizzati (modalità Eracle)
     if (gameMode === 'millionaire') {
       setHintsUnused(prev => Math.max(0, prev - 1));
+      console.log(`2nd Chance utilizzato! Hints rimanenti: ${hintsUnused - 1}`);
     }
   }
 
@@ -834,6 +828,7 @@ export default function ChiLHaDetto({
     // Decrementa il contatore hints non utilizzati (modalità Eracle)
     if (gameMode === 'millionaire') {
       setHintsUnused(prev => Math.max(0, prev - 1));
+      console.log(`Hint utilizzato! Hints rimanenti: ${hintsUnused - 1}`);
     }
   }
 
@@ -845,6 +840,7 @@ export default function ChiLHaDetto({
     // Decrementa il contatore hints non utilizzati (modalità Eracle)
     if (gameMode === 'millionaire') {
       setHintsUnused(prev => Math.max(0, prev - 1));
+      console.log(`Super Hint utilizzato! Hints rimanenti: ${hintsUnused - 1}`);
     }
   }
 
@@ -1468,7 +1464,7 @@ export default function ChiLHaDetto({
                             setGameOver(false);
                             setIsTimeoutGameOver(false);
                             
-                            // Reset del contatore hints per modalità Eracle
+                            // Reset del contatore hints per modalità Eracle (solo per nuova partita)
                             if (gameMode === 'millionaire') {
                               setHintsUnused(4);
                             } else {
