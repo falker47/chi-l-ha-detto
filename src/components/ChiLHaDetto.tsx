@@ -42,6 +42,7 @@ export default function ChiLHaDetto({
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [recordSaved, setRecordSaved] = useState(false);
+  const [hintsUnused, setHintsUnused] = useState(0); // Contatore hints non utilizzati (modalità Eracle)
   
   // Funzione per caricare le domande usate dal localStorage
   const loadUsedQuestions = useCallback((): Set<string> => {
@@ -183,6 +184,14 @@ export default function ChiLHaDetto({
     setIsTimeoutGameOver(false);
     setImagesPreloaded(false);
     setLoadedImagesCache(new Set()); // Reset del cache delle immagini
+    
+    // Inizializza il contatore hints per modalità Eracle (4 hints disponibili)
+    if (gameMode === 'millionaire') {
+      setHintsUnused(4);
+    } else {
+      setHintsUnused(0);
+    }
+    
     // Non resettare showGameOverAnimation qui, viene gestito in onAnswer
   }, [includeSensitive, gameMode, loadUsedQuestions, saveUsedQuestions, resetUsedQuestions]);
 
@@ -479,6 +488,23 @@ export default function ChiLHaDetto({
     }
   }
 
+  // Funzione helper per calcolare il time ladder (modalità Eracle)
+  function getTimeLadder(timeLeft: number): number {
+    if (timeLeft < 5) {
+      return 5; // Minimo per evitare moltiplicazione per zero
+    }
+    return Math.floor(timeLeft / 5) * 5; // Arrotondato per difetto al multiplo di 5 più vicino
+  }
+
+  // Funzione per calcolare il punteggio di una singola domanda (modalità Eracle)
+  function calculateEracleQuestionScore(fatiche: number, timeLeft: number): number {
+    const levelMultiplier = 0.75 + (0.25 * fatiche);
+    const timeLadder = getTimeLadder(timeLeft);
+    const timeMultiplier = 0.01 * timeLadder + 0.45;
+    
+    return Math.round(100 * levelMultiplier * timeMultiplier);
+  }
+
   // Funzione per calcolare il punteggio di una singola domanda (modalità Achille)
   function calculateQuestionScore(difficulty: number, timeLeft: number): number {
     const difficultyMultiplier = 0.9 + (0.1 * difficulty);
@@ -486,7 +512,7 @@ export default function ChiLHaDetto({
     return Math.round(50 * difficultyMultiplier * timeBonus.multiplier);
   }
 
-  // Funzione per calcolare il punteggio finale con moltiplicatore streak
+  // Funzione per calcolare il punteggio finale con moltiplicatore streak (modalità Achille)
   function calculateFinalScore(questionScores: number[], streak: number): number {
     const sumQuestions = questionScores.reduce((sum, score) => sum + score, 0);
     
@@ -504,6 +530,14 @@ export default function ChiLHaDetto({
     return Math.round(sumQuestions * streakMultiplier);
   }
 
+  // Funzione per calcolare il punteggio finale con moltiplicatore hints (modalità Eracle)
+  function calculateEracleFinalScore(questionScores: number[], hintsUnused: number): number {
+    const sumQuestions = questionScores.reduce((sum, score) => sum + score, 0);
+    const hintsMultiplier = 1 + (0.5 * hintsUnused);
+    
+    return Math.round(sumQuestions * hintsMultiplier);
+  }
+
   function onAnswer(k: number) {
     if (revealed || gameOver) return;
     setSelected(k);
@@ -513,11 +547,25 @@ export default function ChiLHaDetto({
       
       // Sistema di punteggio diverso per ogni modalità
       if (gameMode === 'millionaire') {
-        // Modalità Verso l'Olimpo: punteggio fisso
-        const gained = 100 + timeLeft * 2 + streak * 10;
-        setScore((s) => s + gained);
+        // Modalità Verso l'Olimpo: nuovo sistema rivoluzionario
+        const questionScore = calculateEracleQuestionScore(newStreak, timeLeft);
+        
+        // Aggiungi il punteggio della domanda all'array
+        setQuestionScores(prev => [...prev, questionScore]);
+        
+        // Calcola il punteggio finale con il moltiplicatore hints (solo se vittoria)
+        const newQuestionScores = [...questionScores, questionScore];
+        if (newStreak === 12) {
+          // Vittoria: applica moltiplicatore hints
+          const finalScore = calculateEracleFinalScore(newQuestionScores, hintsUnused);
+          setScore(finalScore);
+        } else {
+          // Durante il gioco: somma semplice
+          const currentScore = newQuestionScores.reduce((sum, score) => sum + score, 0);
+          setScore(currentScore);
+        }
       } else {
-        // Modalità Battaglia di Achille: nuovo sistema
+        // Modalità Battaglia di Achille: sistema esistente
         const questionScore = calculateQuestionScore(current?.difficulty || 1, timeLeft);
         
         // Aggiungi il punteggio della domanda all'array
@@ -646,6 +694,15 @@ export default function ChiLHaDetto({
         setDisabledOptions([]);
         setTimeLeft(60); // Reset timer per la nuova domanda
         setImagesPreloaded(false);
+        
+        // Reset degli hints per la nuova domanda (mantiene il contatore hintsUnused)
+        setUsedHint(false);
+        setUsedSuperHint(false);
+        setUsed5050(false);
+        setUsed2ndChance(false);
+        setIs2ndChanceActive(false);
+        setHintRevealed(false);
+        setSuperHintRevealed(false);
       } else {
         // Fine partita Verso l'Olimpo - ricarica le domande
         const filteredItems = includeSensitive 
@@ -688,6 +745,13 @@ export default function ChiLHaDetto({
         setSuperHintRevealed(false);
         setDisabledOptions([]);
         setGameOver(false);
+        
+        // Reset del contatore hints per modalità Eracle
+        if (gameMode === 'millionaire') {
+          setHintsUnused(4);
+        } else {
+          setHintsUnused(0);
+        }
       }
     } else {
       // Modalità Battaglia di Achille: partita infinita, continua con la prossima domanda
@@ -707,6 +771,15 @@ export default function ChiLHaDetto({
       setTimeLeft(45); // Reset timer per la nuova domanda
       setImagesPreloaded(false);
       
+      // Reset degli hints per la nuova domanda (modalità Achille non ha hints)
+      setUsedHint(false);
+      setUsedSuperHint(false);
+      setUsed5050(false);
+      setUsed2ndChance(false);
+      setIs2ndChanceActive(false);
+      setHintRevealed(false);
+      setSuperHintRevealed(false);
+      
       // Seleziona la prossima domanda
       selectNextQuestion();
     }
@@ -724,23 +797,43 @@ export default function ChiLHaDetto({
       (idx) => idx !== keepWrong && !mappedChoices[idx].isCorrect
     );
     setDisabledOptions(toDisable);
+    
+    // Decrementa il contatore hints non utilizzati (modalità Eracle)
+    if (gameMode === 'millionaire') {
+      setHintsUnused(prev => Math.max(0, prev - 1));
+    }
   }
 
   function use2ndChance() {
     if (used2ndChance || revealed || gameOver) return;
     setIs2ndChanceActive(true);
+    
+    // Decrementa il contatore hints non utilizzati (modalità Eracle)
+    if (gameMode === 'millionaire') {
+      setHintsUnused(prev => Math.max(0, prev - 1));
+    }
   }
 
   function useHint() {
     if (revealed || hintRevealed || usedHint) return;
     setHintRevealed(true);
     setUsedHint(true);
+    
+    // Decrementa il contatore hints non utilizzati (modalità Eracle)
+    if (gameMode === 'millionaire') {
+      setHintsUnused(prev => Math.max(0, prev - 1));
+    }
   }
 
   function useSuperHint() {
     if (revealed || superHintRevealed || usedSuperHint) return;
     setSuperHintRevealed(true);
     setUsedSuperHint(true);
+    
+    // Decrementa il contatore hints non utilizzati (modalità Eracle)
+    if (gameMode === 'millionaire') {
+      setHintsUnused(prev => Math.max(0, prev - 1));
+    }
   }
 
   function getPortrait(name: string) {
@@ -1362,6 +1455,13 @@ export default function ChiLHaDetto({
                             setShowGameOverAnimation(false);
                             setGameOver(false);
                             setIsTimeoutGameOver(false);
+                            
+                            // Reset del contatore hints per modalità Eracle
+                            if (gameMode === 'millionaire') {
+                              setHintsUnused(4);
+                            } else {
+                              setHintsUnused(0);
+                            }
                             
                             // Rimescola le domande per la nuova partita
                             const filteredItems = includeSensitive 

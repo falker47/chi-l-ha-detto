@@ -105,69 +105,97 @@ function MainMenu({
           
                                          {/* Toggle per contenuti sensibili e Tutorial - Design accattivante */}
            <div className="mb-6 flex flex-row items-center justify-center gap-2 sm:gap-3">
-            {/* Container contenuti sensibili */}
-            <div className="w-32 sm:w-56 flex-shrink-0">
-              {/* Container principale - design pulito */}
-              <div className="flex flex-row items-center justify-center space-x-2 sm:space-x-3 bg-black/60 backdrop-blur-sm rounded-xl px-2 sm:px-4 py-3 border border-white/20 h-12 sm:h-14">
-                {/* Testo principale */}
-                <div className="flex flex-col">
-                  <span className="text-white font-semibold text-xs sm:text-xs">
-                    <span className="hidden sm:inline">Contenuti Sensibili</span>
-                    <span className="sm:hidden">Sensibili</span>
-                  </span>
-                  <span className="text-gray-300 text-xs">
-                    {includeSensitive ? 'Avanzata' : 'Sicura'}
-                  </span>
-                </div>
-                
-                {/* Bottone con icona dinamica */}
-                <button
-                  onClick={() => setIncludeSensitive(!includeSensitive)}
-                  className={`inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg transition-all duration-200 focus:outline-none ${
-                    includeSensitive 
-                      ? 'bg-orange-500 hover:bg-orange-600' 
-                      : 'bg-gray-600 hover:bg-gray-700'
-                  }`}
-                >
-                  {/* Icona dinamica */}
-                  <div className="w-4 h-4 sm:w-5 sm:h-5">
-                    {includeSensitive ? (
-                      // Icona "ON" - triangolo di alert
-                      <svg 
-                        className="w-full h-full text-white" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        strokeWidth="2" 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round"
-                      >
-                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-                        <path d="M12 9v4"/>
-                        <path d="M12 17h.01"/>
-                      </svg>
-                    ) : (
-                      // Icona "OFF" - scudo
-                      <svg 
-                        className="w-full h-full text-white" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        strokeWidth="2" 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round"
-                      >
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        <path d="M9 12l2 2 4-4"/>
-                      </svg>
-                    )}
-                  </div>
-                </button>
-              </div>
-            </div>
-
-            {/* Container bottoni Tutorial e Leaderboard */}
+            {/* Container bottoni Top 5, Contenuti Sensibili e Tutorial */}
             <div className="flex flex-row items-center justify-center gap-1 sm:gap-3">
+              {/* Bottone Leaderboard */}
+              <button
+                onClick={() => setShowLeaderboard(true)}
+                className="px-2 sm:px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 h-12 sm:h-14 flex items-center justify-center w-20 sm:w-28"
+              >
+                <div className="flex items-center justify-center gap-1 sm:gap-2">
+                  {/* Icona leaderboard - nuova e migliorata */}
+                  <div className="w-3 h-3 sm:w-5 sm:h-5">
+                    <svg 
+                      className="w-full h-full text-white" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    >
+                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                      <line x1="3" y1="6" x2="21" y2="6"/>
+                      <path d="M16 10a4 4 0 0 1-8 0"/>
+                      <path d="M12 10v4"/>
+                      <path d="M8 14h8"/>
+                    </svg>
+                  </div>
+                  <span className="font-medium text-xs sm:text-sm">Top 5</span>
+                </div>
+              </button>
+
+              {/* Container contenuti sensibili */}
+              <div className="w-32 sm:w-56 flex-shrink-0">
+                {/* Container principale - design pulito */}
+                <div className="flex flex-row items-center justify-center space-x-2 sm:space-x-3 bg-black/60 backdrop-blur-sm rounded-xl px-2 sm:px-4 py-3 border border-white/20 h-12 sm:h-14">
+                  {/* Testo principale */}
+                  <div className="flex flex-col">
+                    <span className="text-white font-semibold text-xs sm:text-xs">
+                      <span className="hidden sm:inline">Contenuti Sensibili</span>
+                      <span className="sm:hidden">Sensibili</span>
+                    </span>
+                    <span className="text-gray-300 text-xs">
+                      {includeSensitive ? 'Avanzata' : 'Sicura'}
+                    </span>
+                  </div>
+                  
+                  {/* Bottone con icona dinamica */}
+                  <button
+                    onClick={() => setIncludeSensitive(!includeSensitive)}
+                    className={`inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg transition-all duration-200 focus:outline-none ${
+                      includeSensitive 
+                        ? 'bg-orange-500 hover:bg-orange-600' 
+                        : 'bg-gray-600 hover:bg-gray-700'
+                    }`}
+                  >
+                    {/* Icona dinamica */}
+                    <div className="w-4 h-4 sm:w-5 sm:h-5">
+                      {includeSensitive ? (
+                        // Icona "ON" - triangolo di alert
+                        <svg 
+                          className="w-full h-full text-white" 
+                          viewBox="0 0 24 24" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        >
+                          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                          <path d="M12 9v4"/>
+                          <path d="M12 17h.01"/>
+                        </svg>
+                      ) : (
+                        // Icona "OFF" - scudo
+                        <svg 
+                          className="w-full h-full text-white" 
+                          viewBox="0 0 24 24" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        >
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                          <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                      )}
+                    </div>
+                  </button>
+                </div>
+              </div>
+
               {/* Bottone Tutorial */}
               <button
                 onClick={() => setShowTutorial(true)}
@@ -191,36 +219,6 @@ function MainMenu({
                     </svg>
                   </div>
                   <span className="font-medium text-xs sm:text-sm">Tutorial</span>
-                </div>
-              </button>
-
-              {/* Bottone Leaderboard */}
-              <button
-                onClick={() => setShowLeaderboard(true)}
-                className="px-2 sm:px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 h-12 sm:h-14 flex items-center justify-center w-20 sm:w-28"
-              >
-                <div className="flex items-center justify-center gap-1 sm:gap-2">
-                  {/* Icona leaderboard */}
-                  <div className="w-3 h-3 sm:w-5 sm:h-5">
-                    <svg 
-                      className="w-full h-full text-white" 
-                      viewBox="0 0 24 24" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      strokeWidth="2" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round"
-                    >
-                      <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
-                      <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
-                      <path d="M4 22h16"/>
-                      <path d="M10 14.66V17c0 .55-.47.98-.97 1.21l-1.25.5c-.5.2-1.28.2-1.78 0l-1.25-.5A1.25 1.25 0 0 1 4 17v-2.34"/>
-                      <path d="M20 14.66V17c0 .55.47.98.97 1.21l1.25.5c.5.2 1.28.2 1.78 0l1.25-.5A1.25 1.25 0 0 0 24 17v-2.34"/>
-                      <path d="M12 14.66V17c0 .55.47.98.97 1.21l1.25.5c.5.2 1.28.2 1.78 0l1.25-.5A1.25 1.25 0 0 0 18 17v-2.34"/>
-                      <path d="M12 14.66V17c0 .55-.47.98-.97 1.21l-1.25.5c-.5.2-1.28.2-1.78 0l-1.25-.5A1.25 1.25 0 0 1 6 17v-2.34"/>
-                    </svg>
-                  </div>
-                  <span className="font-medium text-xs sm:text-sm">Top 5</span>
                 </div>
               </button>
             </div>

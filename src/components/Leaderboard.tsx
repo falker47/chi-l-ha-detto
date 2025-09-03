@@ -28,6 +28,9 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   const [playerName, setPlayerName] = useState('');
   const [saving, setSaving] = useState(false);
   const [recordAlreadySaved, setRecordAlreadySaved] = useState(false);
+  const [showMode, setShowMode] = useState<'achille' | 'eracle'>(
+    (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'eracle'
+  );
 
   // Carica la leaderboard
   useEffect(() => {
@@ -235,7 +238,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     return (gameMode === 'millionaire' || gameMode === 'classic') ? 'Fatica' : 'Streak';
   };
 
-  const currentModeLeaderboard = (gameMode === 'millionaire' || gameMode === 'classic') ? leaderboard.eracle : leaderboard.achille;
+  const currentModeLeaderboard = showMode === 'eracle' ? leaderboard.eracle : leaderboard.achille;
 
   if (loading) {
     const isEracleMode = (gameMode === 'millionaire' || gameMode === 'classic');
@@ -261,8 +264,8 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     );
   }
 
-  // Determina i colori in base alla modalità
-  const isEracleMode = (gameMode === 'millionaire' || gameMode === 'classic');
+  // Determina i colori in base alla modalità visualizzata
+  const isEracleMode = showMode === 'eracle';
   const containerGradient = isEracleMode 
     ? 'bg-gradient-to-br from-purple-900 to-blue-900' 
     : 'bg-gradient-to-br from-amber-900 to-orange-900';
@@ -280,10 +283,10 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-3xl font-black text-white mb-2 drop-shadow-lg">
-              Leaderboard {getModeTitle()}
+              Leaderboard {showMode === 'eracle' ? 'Eracle' : 'Achille'}
             </h2>
             <p className={`${accentColor} font-medium`}>
-              {getModeDescription()}
+              {showMode === 'eracle' ? 'Le 12 Fatiche - Top 5' : 'Aristeia Infinita - Top 5'}
             </p>
           </div>
           
@@ -295,6 +298,28 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
+        </div>
+
+        {/* Mode Switch */}
+        <div className="flex items-center justify-center mb-6">
+          <div className="bg-white/10 rounded-2xl p-1 backdrop-blur-sm">
+            <button 
+              onClick={() => setShowMode('eracle')}
+              className={`px-8 py-3 rounded-xl font-semibold transition-all duration-200 ${
+                showMode === 'eracle' ? 'bg-purple-500 text-white shadow-lg' : 'text-white/70 hover:text-white/90'
+              }`}
+            >
+              🏛️ Eracle
+            </button>
+            <button 
+              onClick={() => setShowMode('achille')}
+              className={`px-8 py-3 rounded-xl font-semibold transition-all duration-200 ${
+                showMode === 'achille' ? 'bg-amber-500 text-white shadow-lg' : 'text-white/70 hover:text-white/90'
+              }`}
+            >
+              ⚡ Achille
+            </button>
+          </div>
         </div>
 
         {/* Form per salvare nuovo record */}
@@ -385,7 +410,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                 {/* Statistiche */}
                 <div className="text-right">
                   <p className="text-white font-bold text-lg">
-                    {entry.streak} {isEracleMode ? (entry.streak === 1 ? 'Fatica' : 'Fatiche') : 'Streak'}
+                    {entry.streak} {showMode === 'eracle' ? (entry.streak === 1 ? 'Fatica' : 'Fatiche') : 'Streak'}
                   </p>
                   <p className={`${accentColor} text-sm`}>
                     {entry.score.toLocaleString()} pts
@@ -399,7 +424,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         {/* Footer */}
         <div className={`mt-6 pt-4 border-t ${isEracleMode ? 'border-purple-400/20' : 'border-amber-400/20'}`}>
           <p className={`${accentColor} text-sm text-center`}>
-            {isEracleMode 
+            {showMode === 'eracle' 
               ? 'Ordinati per fatiche superate, poi per punteggio.'
               : 'Ordinati per streak raggiunta, poi per punteggio.'
             }
