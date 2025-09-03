@@ -21,7 +21,7 @@ export const personaggiImageMap: Record<string, string> = {
   "John F. Kennedy": "images/personaggi/john-kennedy.jpg",
   "Franklin D. Roosevelt": "images/personaggi/franklin-roosevelt.jpg",
   "F. D. Roosevelt": "images/personaggi/franklin-roosevelt.jpg",
-  "Martin Luther King Jr.": "images/personaggi/martin-luther-king.jpg",
+  "Martin Luther King": "images/personaggi/martin-luther-king.jpg",
   "Miyamoto Musashi": "images/personaggi/miyamoto-musashi.png",
   "Kanye West": "images/personaggi/kanye-west.jpg",
   "Elon Musk": "images/personaggi/elon-musk.jpg",

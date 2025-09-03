@@ -251,7 +251,7 @@
       "Franklin D. Roosevelt",
       "John F. Kennedy",
       "Winston Churchill",
-      "Martin Luther King Jr."
+      "Martin Luther King"
     ],
     "correctIndex": 0,
     "year_or_period": "1933",
@@ -919,7 +919,7 @@
     "author": "Mahatma Gandhi",
     "choices": [
       "Mahatma Gandhi",
-      "Martin Luther King Jr.",
+      "Martin Luther King",
       "Nelson Mandela",
       "Rabindranath Tagore"
     ],
@@ -976,7 +976,7 @@
     "choices": [
       "Nelson Mandela",
       "Mahatma Gandhi",
-      "Martin Luther King Jr.",
+      "Martin Luther King",
       "Desmond Tutu"
     ],
     "correctIndex": 0,
@@ -1252,9 +1252,9 @@
   {
     "id": "q46",
     "quote": "L'arco dell'universo morale è lungo, ma si piega verso la giustizia.",
-    "author": "Martin Luther King Jr.",
+    "author": "Martin Luther King",
     "choices": [
-      "Martin Luther King Jr.",
+      "Martin Luther King",
       "Theodore Parker",
       "Barack Obama",
       "Frederick Douglass"
@@ -1395,7 +1395,7 @@
     "author": "Adolf Hitler",
     "choices": [
       "Adolf Hitler",
-      "Martin Luther King Jr.",
+      "Martin Luther King",
       "Karl Popper",
       "Winston Churchill"
     ],
@@ -1534,9 +1534,9 @@
   {
     "id": "q56",
     "quote": "Una rivolta è il linguaggio di chi non viene ascoltato.",
-    "author": "Martin Luther King Jr.",
+    "author": "Martin Luther King",
     "choices": [
-      "Martin Luther King Jr.",
+      "Martin Luther King",
       "Malcolm X",
       "Rosa Parks",
       "Angela Davis"
@@ -1590,9 +1590,9 @@
   {
     "id": "q58",
     "quote": "I have a dream (\"Ho un sogno\").",
-    "author": "Martin Luther King Jr.",
+    "author": "Martin Luther King",
     "choices": [
-      "Martin Luther King Jr.",
+      "Martin Luther King",
       "Malcolm X",
       "Nelson Mandela",
       "John F. Kennedy"
@@ -2034,9 +2034,9 @@
   {
     "id": "q74",
     "quote": "Injustice anywhere is a threat to justice everywhere (\"L'ingiustizia in qualunque luogo è una minaccia alla giustizia ovunque\").",
-    "author": "Martin Luther King Jr.",
+    "author": "Martin Luther King",
     "choices": [
-      "Martin Luther King Jr.",
+      "Martin Luther King",
       "Mahatma Gandhi",
       "James Baldwin",
       "Nelson Mandela"
@@ -2341,7 +2341,7 @@
     "choices": [
       "Mahatma Gandhi",
       "Nelson Mandela",
-      "Martin Luther King Jr.",
+      "Martin Luther King",
       "Rabindranath Tagore"
     ],
     "correctIndex": 0,
@@ -3130,7 +3130,7 @@
       "Thomas More",
       "San Francesco d'Assisi",
       "Otto von Bismarck",
-      "Martin Luther King Jr."
+      "Martin Luther King"
     ],
     "correctIndex": 0,
     "year_or_period": "XVI secolo",
