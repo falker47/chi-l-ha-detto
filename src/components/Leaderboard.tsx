@@ -42,7 +42,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         setLoading(true);
         // Usa l'URL di Render in produzione, localhost in sviluppo
         const apiUrl = process.env.NODE_ENV === 'production' 
-          ? 'https://chi-l-ha-detto-leaderboard.onrender.com/api/leaderboard'
+          ? 'https://chi-l-ha-detto.onrender.com/api/leaderboard'
           : 'http://localhost:3001/api/leaderboard';
         const response = await fetch(apiUrl);
         const data = await response.json();
@@ -87,7 +87,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       
       // Usa l'URL di Render in produzione, localhost in sviluppo
       const apiUrl = process.env.NODE_ENV === 'production' 
-        ? 'https://chi-l-ha-detto-leaderboard.onrender.com/api/leaderboard'
+        ? 'https://chi-l-ha-detto.onrender.com/api/leaderboard'
         : 'http://localhost:3001/api/leaderboard';
       
       const response = await fetch(apiUrl, {
