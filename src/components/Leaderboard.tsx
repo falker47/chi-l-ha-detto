@@ -1,17 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-interface LeaderboardEntry {
-  id: number;
-  name: string;
-  streak: number;
-  score: number;
-  timestamp: string;
-}
-
-interface LeaderboardData {
-  achille: LeaderboardEntry[];
-  eracle: LeaderboardEntry[];
-}
+import { leaderboardApi, type LeaderboardData, type LeaderboardEntry } from '../lib/supabase';
 
 interface LeaderboardProps {
   onClose: () => void;
@@ -59,49 +47,28 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
           }
         }
         
-        // Usa l'URL di Render in produzione, localhost in sviluppo
-        const apiUrl = window.location.hostname === 'localhost' 
-          ? 'http://localhost:3001/api/leaderboard'
-          : 'https://chi-l-ha-detto.onrender.com/api/leaderboard';
+        // Carica da Supabase
+        const data = await leaderboardApi.getAll();
+        setLeaderboard(data);
         
-        const response = await fetch(apiUrl, {
-          // Timeout di 4 secondi per evitare attese eccessive
-          signal: AbortSignal.timeout(4000)
-        });
-        const data = await response.json();
+        // Salva il backup locale
+        localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(data));
+        console.log('💾 Backup locale aggiornato con dati da Supabase');
         
-        if (data.success) {
-          // Controlla se il server ha dati validi (non vuoti)
-          const hasValidData = data.data && 
-            ((data.data.achille && data.data.achille.length > 0) || 
-             (data.data.eracle && data.data.eracle.length > 0));
-          
-          if (hasValidData) {
-            setLeaderboard(data.data);
-            // Salva il backup locale solo se il server ha dati validi
-            localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(data.data));
-            console.log('💾 Backup locale aggiornato con dati del server');
-          } else {
-            console.log('⚠️ Server restituisce leaderboard vuota, mantenendo backup locale');
-            // Non sovrascrivere il backup locale se il server è vuoto
-          }
-        } else {
-          setError('Errore nel caricamento della leaderboard');
-        }
       } catch (err) {
-        console.warn('Server non disponibile, usando backup locale:', err);
-        // Se il server non risponde, usa il backup locale se disponibile
+        console.warn('Supabase non disponibile, usando backup locale:', err);
+        // Se Supabase non risponde, usa il backup locale se disponibile
         const localBackup = localStorage.getItem('chiLHaDetto_leaderboard_backup');
         if (localBackup) {
           try {
             const backupData = JSON.parse(localBackup);
             setLeaderboard(backupData);
-            setError('Server temporaneamente non disponibile - usando dati locali');
+            setError('Supabase temporaneamente non disponibile - usando dati locali');
           } catch (e) {
-            setError('Impossibile connettersi al server e nessun backup disponibile');
+            setError('Impossibile connettersi a Supabase e nessun backup disponibile');
           }
         } else {
-          setError('Impossibile connettersi al server');
+          setError('Impossibile connettersi a Supabase');
         }
       } finally {
         setLoading(false);
@@ -171,40 +138,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     };
   }, []);
 
-  // Funzione per sincronizzare i dati locali con il server quando il server è vuoto
-  const syncLocalDataToServer = async (modeKey: string) => {
-    try {
-      const localBackup = localStorage.getItem('chiLHaDetto_leaderboard_backup');
-      if (localBackup) {
-        const localData = JSON.parse(localBackup);
-        const modeData = localData[modeKey] || [];
-        
-        if (modeData.length > 0) {
-          console.log('🔄 Sincronizzazione dati locali con il server...');
-          
-          // Invia ogni record locale al server
-          for (const record of modeData) {
-            await fetch(window.location.hostname === 'localhost' 
-              ? 'http://localhost:3001/api/leaderboard'
-              : 'https://chi-l-ha-detto.onrender.com/api/leaderboard', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                mode: modeKey,
-                name: record.name,
-                streak: record.streak,
-                score: record.score
-              })
-            });
-          }
-          
-          console.log('✅ Dati locali sincronizzati con il server');
-        }
-      }
-    } catch (error) {
-      console.warn('Errore nella sincronizzazione:', error);
-    }
-  };
+
 
   const handleSaveRecord = async () => {
     if (!playerName.trim()) return;
@@ -213,79 +147,37 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       setSaving(true);
       const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
       
-      // Controlla se il server è vuoto ma abbiamo dati locali
-      const localBackup = localStorage.getItem('chiLHaDetto_leaderboard_backup');
-      if (localBackup) {
-        const localData = JSON.parse(localBackup);
-        const currentModeLeaderboard = leaderboard[modeKey] || [];
-        const localModeData = localData[modeKey] || [];
-        
-        // Se il server è vuoto ma abbiamo dati locali, sincronizza prima
-        if (currentModeLeaderboard.length === 0 && localModeData.length > 0) {
-          console.log('🔄 Server vuoto rilevato, sincronizzazione dati locali...');
-          await syncLocalDataToServer(modeKey);
-          
-          // Ricarica la leaderboard dal server dopo la sincronizzazione
-          const apiUrl = window.location.hostname === 'localhost' 
-            ? 'http://localhost:3001/api/leaderboard'
-            : 'https://chi-l-ha-detto.onrender.com/api/leaderboard';
-          
-          const response = await fetch(apiUrl);
-          const data = await response.json();
-          
-          if (data.success) {
-            setLeaderboard(data.data);
-            console.log('📥 Leaderboard ricaricata dopo sincronizzazione');
-          }
-        }
+      // Salva su Supabase
+      const updatedRecords = await leaderboardApi.addRecord(
+        modeKey,
+        playerName.trim(),
+        currentStreak,
+        currentScore
+      );
+      
+      // Aggiorna la leaderboard locale
+      const newLeaderboard = {
+        ...leaderboard,
+        [modeKey]: updatedRecords
+      };
+      setLeaderboard(newLeaderboard);
+      
+      // Aggiorna anche il backup locale
+      localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(newLeaderboard));
+      console.log('💾 Record salvato su Supabase e backup locale aggiornato');
+      
+      setShowSaveForm(false);
+      setPlayerName('');
+      setRecordAlreadySaved(true); // Previene salvataggi duplicati
+      
+      if (onSaveRecord) {
+        onSaveRecord(playerName.trim());
       }
       
-      // Usa l'URL di Render in produzione, localhost in sviluppo
-      const apiUrl = window.location.hostname === 'localhost' 
-        ? 'http://localhost:3001/api/leaderboard'
-        : 'https://chi-l-ha-detto.onrender.com/api/leaderboard';
-      
-      const response = await fetch(apiUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          mode: modeKey,
-          name: playerName.trim(),
-          streak: currentStreak,
-          score: currentScore
-        })
-      });
-      
-      const data = await response.json();
-      
-      if (data.success) {
-        // Aggiorna la leaderboard locale
-        const newLeaderboard = {
-          ...leaderboard,
-          [modeKey]: data.data
-        };
-        setLeaderboard(newLeaderboard);
-        
-        // Aggiorna anche il backup locale
-        localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(newLeaderboard));
-        console.log('💾 Backup locale aggiornato dopo salvataggio');
-        
-        setShowSaveForm(false);
-        setPlayerName('');
-        setRecordAlreadySaved(true); // Previene salvataggi duplicati
-        
-        if (onSaveRecord) {
-          onSaveRecord(playerName.trim());
-        }
-      } else {
-        setError(data.error || 'Errore nel salvataggio del record');
-      }
     } catch (err) {
       console.error('Errore nel salvataggio:', err);
       
-      // Fallback: salva localmente anche se il server non risponde
+      // Fallback: salva localmente anche se Supabase non risponde
       const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
       const currentModeLeaderboard = leaderboard[modeKey] || [];
       
@@ -319,7 +211,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       setPlayerName('');
       setRecordAlreadySaved(true);
       
-      setError('Server non disponibile - record salvato localmente');
+      setError('Supabase non disponibile - record salvato localmente');
       
       if (onSaveRecord) {
         onSaveRecord(playerName.trim());
@@ -412,7 +304,10 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
               🎉 Nuovo Record!
             </h3>
             <p className={`${isEracleMode ? 'text-purple-100' : 'text-green-100'} text-sm mb-4`}>
-              Hai raggiunto {currentStreak} {getStreakLabel().toLowerCase()} con {currentScore} punti!
+              {isEracleMode 
+                ? `Hai superato ${currentStreak} ${currentStreak === 1 ? 'fatica' : 'fatiche'} con ${currentScore} punti!`
+                : `Hai totalizzato una streak di ${currentStreak} con ${currentScore} punti!`
+              }
               Inserisci il tuo nome per entrare nella leaderboard:
             </p>
             
@@ -503,7 +398,10 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         {/* Footer */}
         <div className={`mt-6 pt-4 border-t ${isEracleMode ? 'border-purple-400/20' : 'border-amber-400/20'}`}>
           <p className={`${accentColor} text-sm text-center`}>
-            La leaderboard ordina per {getStreakLabel().toLowerCase()}, poi per punteggio.
+            {isEracleMode 
+              ? 'La leaderboard ordina per fatiche superate, poi per punteggio.'
+              : 'La leaderboard ordina per streak raggiunta, poi per punteggio.'
+            }
           </p>
         </div>
       </div>

@@ -88,6 +88,7 @@ export default function ChiLHaDetto({
   const [showGameOverAnimation, setShowGameOverAnimation] = useState(false);
   const [isTimeoutGameOver, setIsTimeoutGameOver] = useState(false);
   const [loadedImagesCache, setLoadedImagesCache] = useState<Set<string>>(new Set());
+  const [isPreloading, setIsPreloading] = useState(false);
   
   // Costanti per la modalità di gioco
   const QUESTIONS_PER_GAME = 12; // Ogni partita ha 12 domande
@@ -162,6 +163,7 @@ export default function ChiLHaDetto({
     setStreak(0);
     setFinalStreak(0);
     setQuestionScores([]);
+    setIsPreloading(false);
     setUsed5050(false);
     setUsedHint(false);
     setUsedSuperHint(false);
@@ -233,22 +235,32 @@ export default function ChiLHaDetto({
 
   // Funzione per preload delle immagini dei personaggi
   const preloadCharacterImages = useCallback((choices: string[]) => {
+    // Evita chiamate multiple contemporanee
+    if (isPreloading) {
+      console.log('Preload già in corso, salto...');
+      return;
+    }
+    
     // Controlla se tutte le immagini sono già nel cache
     const imageUrls = choices.map(characterName => getPortrait(characterName));
     const allImagesCached = imageUrls.every(url => loadedImagesCache.has(url));
     
     if (allImagesCached) {
       // Se tutte le immagini sono già caricate, non mostrare il preload
+      console.log('Tutte le immagini sono già in cache');
       setImagesPreloaded(true);
       return;
     }
     
     // Altrimenti, mostra il preload e carica le immagini
+    console.log('Avvio preload immagini...');
+    setIsPreloading(true);
     setImagesPreloaded(false);
     
     // Timeout di sicurezza per evitare caricamento infinito
     const safetyTimeout = setTimeout(() => {
       console.warn('Timeout del preload immagini, forzando il caricamento');
+      setIsPreloading(false);
       setImagesPreloaded(true);
     }, 6000); // 6 secondi di timeout
     
@@ -256,12 +268,22 @@ export default function ChiLHaDetto({
       return new Promise<void>((resolve) => {
         const imageUrl = getPortrait(characterName);
         const img = new Image();
+        
+        // Timeout individuale per ogni immagine
+        const imageTimeout = setTimeout(() => {
+          console.warn(`Timeout immagine: ${imageUrl}`);
+          resolve();
+        }, 3000);
+        
         img.onload = () => {
+          clearTimeout(imageTimeout);
           // Aggiungi l'immagine al cache
           setLoadedImagesCache(prev => new Set([...prev, imageUrl]));
+          console.log(`Immagine caricata: ${imageUrl}`);
           resolve();
         };
         img.onerror = () => {
+          clearTimeout(imageTimeout);
           console.warn(`Errore nel caricamento dell'immagine: ${imageUrl}`);
           resolve(); // Anche in caso di errore, continua
         };
@@ -271,13 +293,16 @@ export default function ChiLHaDetto({
     
     Promise.all(imagePromises).then(() => {
       clearTimeout(safetyTimeout);
+      setIsPreloading(false);
       setImagesPreloaded(true);
+      console.log('Preload immagini completato');
     }).catch((error) => {
       console.error('Errore nel preload delle immagini:', error);
       clearTimeout(safetyTimeout);
+      setIsPreloading(false);
       setImagesPreloaded(true);
     });
-  }, [loadedImagesCache]);
+  }, []); // Rimossa la dipendenza loadedImagesCache per evitare loop infiniti
 
   const [choiceOrder, setChoiceOrder] = useState<number[]>([]);
   useEffect(() => {
@@ -654,6 +679,7 @@ export default function ChiLHaDetto({
         setScore(0);
         setStreak(0);
         setQuestionScores([]);
+        setIsPreloading(false);
         setUsed5050(false);
         setUsedHint(false);
         setUsedSuperHint(false);
@@ -1318,6 +1344,7 @@ export default function ChiLHaDetto({
                             setScore(0);
                             setStreak(0);
                             setQuestionScores([]);
+                            setIsPreloading(false);
                             setUsed5050(false);
                             setUsedHint(false);
                             setUsedSuperHint(false);
