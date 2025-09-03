@@ -3898,12 +3898,12 @@
     ],
     "difficulty": 2,
     "spiciness": 1,
-    "hint_short": "Metodo deduttivo di un celebre investigatore",
-    "hint_more": "Frase programmatica del metodo di Sherlock Holmes: esclusione dell'impossibile.",
-    "ambiguity_note": "Conan Doyle non inventò il metodo deduttivo, ma lo rese celebre: Sherlock Holmes lo applica sistematicamente. Poe creò Dupin, Doyle perfezionò il detective razionale.",
+    "hint_short": "La logica di un detective geniale",
+    "hint_more": "Scrittore scozzese del XIX secolo, medico e autore di romanzi gialli. Creatore del detective più famoso della letteratura.",
+    "ambiguity_note": "Sherlock Holmes in realtà dice: 'Quando hai eliminato l'impossibile, ciò che resta, per quanto improbabile, dev'essere la verità'. La versione abbreviata è più famosa dell'originale.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il metodo di Sherlock Holmes: eliminare l'impossibile per trovare la verità. La deduzione diventa arte."
+    "context": "La logica di Holmes: scartare l'impossibile per scoprire l'improbabile. Un metodo che funziona anche nella vita reale."
   },
   {
     "id": "q141",
@@ -4006,12 +4006,12 @@
     ],
     "difficulty": 5,
     "spiciness": 2,
-    "hint_short": "Letteratura russa e salvezza",
-    "hint_more": "Idea centrale attribuita al principe Myškin: la bellezza (anche morale) come via di redenzione.",
-    "ambiguity_note": "Dostoevskij non inventò l'estetica morale, ma la rivoluzionò: la bellezza non è solo estetica, è etica. Tolstoj condannava l'arte, Dostoevskij la redimeva.",
+    "hint_short": "Il dilemma della bellezza",
+    "hint_more": "Scrittore russo dell'800, autore di romanzi psicologici. Questa frase è attribuita a un personaggio di un suo celebre romanzo del 1869.",
+    "ambiguity_note": "Nel romanzo 'L'Idiota', il principe Myškin dice che 'la bellezza salverà il mondo', ma Dostoevskij stesso dubitava. La bellezza può salvare o corrompere?",
     "language_orig": "RU",
     "sensitive": false,
-    "context": "La rivoluzione di Dostoevskij: la bellezza salverà il mondo perché è anche morale, non solo estetica."
+    "context": "Il dilemma di Dostoevskij: la bellezza può salvare il mondo o corromperlo? Una domanda che divide ancora oggi."
   },
   {
     "id": "q145",
@@ -4090,5 +4090,29 @@
     "language_orig": "IT",
     "sensitive": true,
     "context": "Esempio paradossale di invito alla fratellanza pronunciato dall’imputato in un processo per numerosi omicidi; usata spesso come ‘trabocchetto’ per riflettere su autore e contenuto."
-    }
+    },
+    {
+      "id": "q148",
+      "quote": "La guerra è pace. La libertà è schiavitù. L’ignoranza è forza.",
+      "author": "George Orwell",
+      "choices": [
+      "George Orwell",
+      "Giacomo Leopardi",
+      "Alessandro Magno",
+      "Niccolò Machiavelli"
+      ],
+      "correctIndex": 0,
+      "year_or_period": "1949 (Nineteen Eighty-Four)",
+      "source_title": "Nineteen Eighty-Four (Parte I, cap. 1)",
+      "source_link": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+      "tags": ["letteratura", "totalitarismo", "propaganda"],
+      "difficulty": 1,
+      "spiciness": 2,
+      "hint_short": "Tre paradossi che distruggono la logica",
+      "hint_more": "Scrittore britannico del '900, scrisse '1984' e 'La fattoria degli animali'. Critico del totalitarismo e del controllo del pensiero.",
+      "ambiguity_note": "Tre paradossi che definiscono il totalitarismo moderno. Orwell li scrisse nel 1949, ma sembrano profetici: oggi viviamo in un'epoca dove la verità è 'relativa' e i fatti sono 'alternativi'.",
+      "language_orig": "EN",
+      "sensitive": false,
+      "context": "Il manifesto del doppio pensiero: tre frasi che distruggono la logica umana. Orwell aveva previsto l'era della post-verità."
+      }
 ]
