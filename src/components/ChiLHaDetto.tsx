@@ -1189,14 +1189,14 @@ export default function ChiLHaDetto({
                         ? 'border-red-500 bg-red-900/40 backdrop-blur-sm text-left opacity-70 cursor-not-allowed' 
                         : isDisabled 
                         ? 'border-white/20 bg-black/20 backdrop-blur-sm text-left opacity-60 cursor-not-allowed'
-                        : 'border-white/20 bg-black/20 backdrop-blur-sm text-left hover:ring-1 hover:ring-amber-400 hover:shadow-2xl hover:border-white/40'
+                        : 'border-white/20 bg-black/20 backdrop-blur-sm text-left hover:shadow-2xl hover:border-white/40 hover:scale-105 hover:bg-black/30 transition-all duration-300'
                     }`}
                   >
                     <div className="w-full overflow-hidden relative flex-grow">
                       <img
                         src={getPortrait(c.label)}
                         alt={c.label}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300"
                         loading="lazy"
                       />
                       {/* Overlay per l'opzione sbagliata */}
@@ -1207,8 +1207,8 @@ export default function ChiLHaDetto({
                       )}
                       
                       {/* Overlay per il nome con font size responsive */}
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-1 sm:p-2">
-                        <div className="font-bold text-xs sm:text-sm md:text-base text-white drop-shadow-lg leading-tight"
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-1 sm:p-2 group-hover:from-black/95 group-hover:via-black/70 transition-all duration-300">
+                        <div className="font-bold text-xs sm:text-sm md:text-base text-white drop-shadow-lg leading-tight group-hover:text-amber-100 transition-colors duration-300"
                              style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1)' }}>
                           {c.label}
                         </div>

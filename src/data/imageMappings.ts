@@ -209,5 +209,14 @@ export const personaggiImageMap: Record<string, string> = {
   "Annibale": "images/personaggi/annibale.jpg",
   "Eleanor Roosevelt": "images/personaggi/eleanor-roosevelt.jpg",
   "Papa Urbano II": "images/personaggi/papa-urbano-ii.jpg",
-  "Giacomo Leopardi": "images/personaggi/giacomo-leopardi.jpg"
+  "Giacomo Leopardi": "images/personaggi/giacomo-leopardi.jpg",
+  "Arthur Conan Doyle": "images/personaggi/arthur-conan-doyle.jpg",
+  "Antoine de Saint-Exupéry": "images/personaggi/antoine-de-saint-exupery.jpg",
+  "Lev Tolstoj": "images/personaggi/lev-tolstoj.jpg",
+  "Fëdor Dostoevskij": "images/personaggi/fedor-dostoevskij.jpg",
+  "Primo Levi": "images/personaggi/primo-levi.jpg",
+  "Pietro Pacciani": "images/personaggi/pietro-pacciani.jpg",
+  "Pier Paolo Pasolini": "images/personaggi/pier-paolo-pasolini.jpg",
+  "Cecco Angiolieri": "images/personaggi/cecco-angiolieri.jpg",
+  "Francesco Petrarca": "images/personaggi/francesco-petrarca.jpg",
 };
