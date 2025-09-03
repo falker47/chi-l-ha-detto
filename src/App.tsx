@@ -84,15 +84,16 @@ function MainMenu({
           </div>
           
                                          {/* Toggle per contenuti sensibili e Tutorial - Design accattivante */}
-           <div className="mb-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-3">
+           <div className="mb-6 flex flex-row items-center justify-center gap-2 sm:gap-3">
             {/* Container contenuti sensibili */}
-            <div className="w-48 sm:w-56">
+            <div className="w-32 sm:w-56 flex-shrink-0">
               {/* Container principale - design pulito */}
-              <div className="flex flex-row items-center justify-center space-x-3 bg-black/60 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/20 h-12 sm:h-14">
+              <div className="flex flex-row items-center justify-center space-x-2 sm:space-x-3 bg-black/60 backdrop-blur-sm rounded-xl px-2 sm:px-4 py-3 border border-white/20 h-12 sm:h-14">
                 {/* Testo principale */}
                 <div className="flex flex-col">
-                  <span className="text-white font-semibold text-xs">
-                    Contenuti Sensibili
+                  <span className="text-white font-semibold text-xs sm:text-xs">
+                    <span className="hidden sm:inline">Contenuti Sensibili</span>
+                    <span className="sm:hidden">Sensibili</span>
                   </span>
                   <span className="text-gray-300 text-xs">
                     {includeSensitive ? 'Avanzata' : 'Sicura'}
@@ -146,15 +147,15 @@ function MainMenu({
             </div>
 
             {/* Container bottoni Tutorial e Leaderboard */}
-            <div className="flex flex-row items-center justify-center gap-2 sm:gap-3">
+            <div className="flex flex-row items-center justify-center gap-1 sm:gap-3">
               {/* Bottone Tutorial */}
               <button
                 onClick={() => setShowTutorial(true)}
-                className="px-3 sm:px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 h-12 sm:h-14 flex items-center justify-center w-24 sm:w-28"
+                className="px-2 sm:px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 h-12 sm:h-14 flex items-center justify-center w-20 sm:w-28"
               >
-                <div className="flex items-center justify-center gap-2">
+                <div className="flex items-center justify-center gap-1 sm:gap-2">
                   {/* Icona tutorial */}
-                  <div className="w-4 h-4 sm:w-5 sm:h-5">
+                  <div className="w-3 h-3 sm:w-5 sm:h-5">
                     <svg 
                       className="w-full h-full text-white" 
                       viewBox="0 0 24 24" 
@@ -169,18 +170,18 @@ function MainMenu({
                       <path d="M12 17h.01"/>
                     </svg>
                   </div>
-                  <span className="font-medium">Tutorial</span>
+                  <span className="font-medium text-xs sm:text-sm">Tutorial</span>
                 </div>
               </button>
 
               {/* Bottone Leaderboard */}
               <button
                 onClick={() => setShowLeaderboard(true)}
-                className="px-3 sm:px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 h-12 sm:h-14 flex items-center justify-center w-24 sm:w-28"
+                className="px-2 sm:px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 h-12 sm:h-14 flex items-center justify-center w-20 sm:w-28"
               >
-                <div className="flex items-center justify-center gap-2">
+                <div className="flex items-center justify-center gap-1 sm:gap-2">
                   {/* Icona leaderboard */}
-                  <div className="w-4 h-4 sm:w-5 sm:h-5">
+                  <div className="w-3 h-3 sm:w-5 sm:h-5">
                     <svg 
                       className="w-full h-full text-white" 
                       viewBox="0 0 24 24" 
@@ -199,7 +200,7 @@ function MainMenu({
                       <path d="M12 14.66V17c0 .55-.47.98-.97 1.21l-1.25.5c-.5.2-1.28.2-1.78 0l-1.25-.5A1.25 1.25 0 0 1 6 17v-2.34"/>
                     </svg>
                   </div>
-                  <span className="font-medium">Top 5</span>
+                  <span className="font-medium text-xs sm:text-sm">Top 5</span>
                 </div>
               </button>
             </div>

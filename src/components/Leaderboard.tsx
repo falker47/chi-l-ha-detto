@@ -34,6 +34,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   const [showSaveForm, setShowSaveForm] = useState(false);
   const [playerName, setPlayerName] = useState('');
   const [saving, setSaving] = useState(false);
+  const [recordAlreadySaved, setRecordAlreadySaved] = useState(false);
 
   // Carica la leaderboard
   useEffect(() => {
@@ -65,18 +66,29 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
 
   // Controlla se il punteggio attuale merita di essere salvato
   useEffect(() => {
-    if (currentStreak > 0 && currentScore > 0) {
+    if (currentStreak > 0 && currentScore > 0 && !recordAlreadySaved) {
       const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
       const currentModeLeaderboard = leaderboard[modeKey];
       
       // Controlla se c'è spazio nella top 5 o se il punteggio è migliore del 5° posto
-      if (currentModeLeaderboard.length < 5 || 
-          currentStreak > currentModeLeaderboard[4]?.streak ||
-          (currentStreak === currentModeLeaderboard[4]?.streak && currentScore > currentModeLeaderboard[4]?.score)) {
+      const isTop5 = currentModeLeaderboard.length < 5 || 
+          (currentModeLeaderboard.length >= 5 && (
+            currentStreak > currentModeLeaderboard[4]?.streak ||
+            (currentStreak === currentModeLeaderboard[4]?.streak && currentScore > currentModeLeaderboard[4]?.score)
+          ));
+      
+      if (isTop5) {
         setShowSaveForm(true);
       }
     }
-  }, [leaderboard, currentStreak, currentScore, gameMode]);
+  }, [leaderboard, currentStreak, currentScore, gameMode, recordAlreadySaved]);
+
+  // Reset del flag quando si chiude la leaderboard
+  useEffect(() => {
+    return () => {
+      setRecordAlreadySaved(false);
+    };
+  }, []);
 
   const handleSaveRecord = async () => {
     if (!playerName.trim()) return;
@@ -114,6 +126,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         
         setShowSaveForm(false);
         setPlayerName('');
+        setRecordAlreadySaved(true); // Previene salvataggi duplicati
         
         if (onSaveRecord) {
           onSaveRecord(playerName.trim());
@@ -188,7 +201,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-3xl font-black text-white mb-2 drop-shadow-lg">
-              🏆 Leaderboard {getModeTitle()}
+              Leaderboard {getModeTitle()}
             </h2>
             <p className={`${accentColor} font-medium`}>
               {getModeDescription()}
@@ -216,20 +229,20 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
               Inserisci il tuo nome per entrare nella leaderboard:
             </p>
             
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <input
                 type="text"
                 value={playerName}
                 onChange={(e) => setPlayerName(e.target.value)}
                 placeholder="Il tuo nome..."
-                className={`flex-1 px-4 py-2 bg-black/40 border ${isEracleMode ? 'border-purple-400/30 focus:border-purple-400' : 'border-green-400/30 focus:border-green-400'} rounded-xl text-white placeholder-gray-400 focus:outline-none`}
+                className={`w-full sm:flex-1 px-4 py-2 bg-black/40 border ${isEracleMode ? 'border-purple-400/30 focus:border-purple-400' : 'border-green-400/30 focus:border-green-400'} rounded-xl text-white placeholder-gray-400 focus:outline-none text-sm sm:text-base`}
                 maxLength={20}
                 onKeyPress={(e) => e.key === 'Enter' && handleSaveRecord()}
               />
               <button
                 onClick={handleSaveRecord}
                 disabled={!playerName.trim() || saving}
-                className={`px-6 py-2 ${isEracleMode ? 'bg-purple-600 hover:bg-purple-700' : 'bg-green-600 hover:bg-green-700'} disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-colors duration-200`}
+                className={`w-full sm:w-auto px-6 py-2 ${isEracleMode ? 'bg-purple-600 hover:bg-purple-700' : 'bg-green-600 hover:bg-green-700'} disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-colors duration-200 text-sm sm:text-base`}
               >
                 {saving ? 'Salvando...' : 'Salva'}
               </button>
@@ -303,7 +316,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         {/* Footer */}
         <div className={`mt-6 pt-4 border-t ${isEracleMode ? 'border-purple-400/20' : 'border-amber-400/20'}`}>
           <p className={`${accentColor} text-sm text-center`}>
-            La leaderboard ordina per {getStreakLabel().toLowerCase()}, poi per punteggio, infine per data
+            La leaderboard ordina per {getStreakLabel().toLowerCase()}, poi per punteggio.
           </p>
         </div>
       </div>

@@ -38,26 +38,26 @@ export default function ChiLHaDetto({
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [finalStreak, setFinalStreak] = useState(0);
-  const [usedQuestions, setUsedQuestions] = useState<Set<number>>(new Set());
+  const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [recordSaved, setRecordSaved] = useState(false);
   
   // Funzione per caricare le domande usate dal localStorage
-  const loadUsedQuestions = useCallback((): Set<number> => {
+  const loadUsedQuestions = useCallback((): Set<string> => {
     try {
       const stored = localStorage.getItem('chiLHaDetto_usedQuestions');
       if (stored) {
-        const parsed = JSON.parse(stored) as number[];
+        const parsed = JSON.parse(stored) as string[];
         return new Set(parsed);
       }
     } catch (error) {
       console.warn('Errore nel caricamento delle domande usate:', error);
     }
-    return new Set<number>();
+    return new Set<string>();
   }, []);
   
   // Funzione per salvare le domande usate nel localStorage
-  const saveUsedQuestions = useCallback((questions: Set<number>) => {
+  const saveUsedQuestions = useCallback((questions: Set<string>) => {
     try {
       localStorage.setItem('chiLHaDetto_usedQuestions', JSON.stringify([...questions]));
     } catch (error) {
@@ -67,7 +67,7 @@ export default function ChiLHaDetto({
   
   // Funzione per resettare le domande usate
   const resetUsedQuestions = useCallback(() => {
-    const resetUsedQuestions = new Set<number>();
+    const resetUsedQuestions = new Set<string>();
     setUsedQuestions(resetUsedQuestions);
     saveUsedQuestions(resetUsedQuestions);
   }, [saveUsedQuestions]);
@@ -107,9 +107,8 @@ export default function ChiLHaDetto({
   ];
 
   useEffect(() => {
-    // Carica le domande usate dal localStorage
-    const loadedUsedQuestions = loadUsedQuestions();
-    setUsedQuestions(loadedUsedQuestions);
+    // Reset delle domande usate per ogni nuova partita
+    resetUsedQuestions();
     
     // Filtra le domande in base alla preferenza per contenuti sensibili
     const filteredItems = includeSensitive 
@@ -122,10 +121,9 @@ export default function ChiLHaDetto({
       
       for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
         const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
-        const availableQuestions = filteredItems.filter((item, index) => 
+        const availableQuestions = filteredItems.filter(item => 
           item.difficulty >= difficultyRange.min && 
-          item.difficulty <= difficultyRange.max &&
-          !loadedUsedQuestions.has(index)
+          item.difficulty <= difficultyRange.max
         );
         
         if (availableQuestions.length > 0) {
@@ -133,18 +131,15 @@ export default function ChiLHaDetto({
           const originalIndex = ITEMS.findIndex(item => item.id === randomQuestion.id);
           selectedQuestions.push(originalIndex);
         } else {
-          // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale non usata
-          const availableFallback = filteredItems.filter((_, index) => !loadedUsedQuestions.has(index));
+          // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
+          const availableFallback = filteredItems;
           if (availableFallback.length > 0) {
             const randomIndex = Math.floor(Math.random() * availableFallback.length);
             const fallbackQuestion = availableFallback[randomIndex];
             const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
             selectedQuestions.push(originalIndex);
           } else {
-            // Se tutte le domande sono state usate, resetta e ricomincia
-            resetUsedQuestions();
-            
-            // Riprova con domande non usate
+            // Se non ci sono domande disponibili, prendi una casuale
             const randomIndex = Math.floor(Math.random() * filteredItems.length);
             const fallbackQuestion = filteredItems[randomIndex];
             const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
@@ -190,7 +185,7 @@ export default function ChiLHaDetto({
     if (gameMode !== 'classic') return;
     
     const filteredItems = includeSensitive ? ITEMS : ITEMS.filter(item => !item.sensitive);
-    const availableItems = filteredItems.filter((_, index) => !usedQuestions.has(index));
+    const availableItems = filteredItems.filter(item => !usedQuestions.has(item.id));
     
     if (availableItems.length === 0) {
       // Se non ci sono più domande disponibili, resetta le domande usate
@@ -216,7 +211,7 @@ export default function ChiLHaDetto({
     
     const originalIndex = ITEMS.findIndex(item => item.id === selectedQuestion.id);
     setOrder([originalIndex]);
-  }, [gameMode, includeSensitive, usedQuestions, i, saveUsedQuestions, resetUsedQuestions]);
+  }, [gameMode, includeSensitive, usedQuestions, i, resetUsedQuestions]);
 
   const current: Item | null = useMemo(() => {
     if (gameMode === 'classic') {
@@ -302,8 +297,7 @@ export default function ChiLHaDetto({
         
         // Marca la domanda corrente come usata anche in caso di timeout
         if (current) {
-          const currentIndex = ITEMS.findIndex(item => item.id === current.id);
-          const newUsedQuestions = new Set([...usedQuestions, currentIndex]);
+          const newUsedQuestions = new Set([...usedQuestions, current.id]);
           setUsedQuestions(newUsedQuestions);
           saveUsedQuestions(newUsedQuestions);
         }
@@ -507,8 +501,7 @@ export default function ChiLHaDetto({
           
           // Marca la domanda corrente come usata anche in caso di errore
           if (current) {
-            const currentIndex = ITEMS.findIndex(item => item.id === current.id);
-            const newUsedQuestions = new Set([...usedQuestions, currentIndex]);
+            const newUsedQuestions = new Set([...usedQuestions, current.id]);
             setUsedQuestions(newUsedQuestions);
             saveUsedQuestions(newUsedQuestions);
           }
@@ -530,8 +523,7 @@ export default function ChiLHaDetto({
         
         // Marca la domanda corrente come usata anche in caso di timeout
         if (current) {
-          const currentIndex = ITEMS.findIndex(item => item.id === current.id);
-          const newUsedQuestions = new Set([...usedQuestions, currentIndex]);
+          const newUsedQuestions = new Set([...usedQuestions, current.id]);
           setUsedQuestions(newUsedQuestions);
           saveUsedQuestions(newUsedQuestions);
         }
@@ -614,8 +606,7 @@ export default function ChiLHaDetto({
       
       // Marca la domanda corrente come usata
       if (current) {
-        const currentIndex = ITEMS.findIndex(item => item.id === current.id);
-        const newUsedQuestions = new Set([...usedQuestions, currentIndex]);
+        const newUsedQuestions = new Set([...usedQuestions, current.id]);
         setUsedQuestions(newUsedQuestions);
         saveUsedQuestions(newUsedQuestions);
       }
