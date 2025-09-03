@@ -316,9 +316,93 @@ export default function ChiLHaDetto({
 
   if (!current || !imagesPreloaded) {
     return (
-      <div className="p-6 max-w-3xl mx-auto">
-        <h1 className="text-2xl font-bold">Chi l'ha detto? — Ambiguità Edition</h1>
-        <p className="mt-2">Caricamento…</p>
+      <div className="relative min-h-screen overflow-hidden flex items-center justify-center">
+        {/* Background Image dinamico */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+        
+        {/* Container principale */}
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+          {/* Titolo principale */}
+          <div className="mb-8">
+            <h1 className="text-4xl sm:text-6xl font-black text-white mb-4 drop-shadow-2xl"
+                style={{ textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.3)' }}>
+              Chi l'ha detto?
+            </h1>
+            <p className="text-lg sm:text-xl text-gray-200 font-medium drop-shadow-lg">
+              Ambiguità Edition
+            </p>
+          </div>
+          
+          {/* Loading animation */}
+          <div className="mb-8">
+            <div className="inline-flex items-center space-x-3 bg-black/40 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20">
+              {/* Spinner animato */}
+              <div className="relative">
+                <div className="w-8 h-8 border-4 border-purple-300/30 border-t-purple-400 rounded-full animate-spin"></div>
+                <div className="absolute inset-0 w-8 h-8 border-4 border-transparent border-t-purple-200 rounded-full animate-spin" 
+                     style={{ animationDirection: 'reverse', animationDuration: '0.8s' }}></div>
+              </div>
+              
+              {/* Testo di caricamento */}
+              <div className="text-white font-semibold">
+                <span className="inline-block animate-pulse">Caricamento</span>
+                <span className="inline-block animate-bounce ml-1" style={{ animationDelay: '0.1s' }}>.</span>
+                <span className="inline-block animate-bounce ml-1" style={{ animationDelay: '0.2s' }}>.</span>
+                <span className="inline-block animate-bounce ml-1" style={{ animationDelay: '0.3s' }}>.</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* Indicatore di progresso */}
+          <div className="mb-6">
+            <div className="w-full max-w-md mx-auto bg-black/30 backdrop-blur-sm rounded-full h-2 border border-white/20 overflow-hidden">
+              <div className="h-full bg-gradient-to-r from-purple-500 via-purple-400 to-purple-300 rounded-full animate-pulse"
+                   style={{ 
+                     width: '100%',
+                     background: 'linear-gradient(90deg, #8b5cf6, #a78bfa, #c4b5fd, #ddd6fe)',
+                     backgroundSize: '200% 100%',
+                     animation: 'shimmer 2s ease-in-out infinite'
+                   }}>
+              </div>
+            </div>
+          </div>
+          
+          {/* Messaggio motivazionale */}
+          <div className="text-gray-300 text-sm sm:text-base">
+            <p className="animate-fade-in">
+              Preparando la prossima sfida...
+            </p>
+          </div>
+        </div>
+        
+        {/* Particelle animate di sfondo */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-purple-300/40 rounded-full animate-ping" style={{ animationDelay: '0s' }}></div>
+          <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-purple-200/60 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute top-1/2 left-3/4 w-1.5 h-1.5 bg-purple-400/30 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-purple-300/50 rounded-full animate-ping" style={{ animationDelay: '0.3s' }}></div>
+          <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-purple-200/40 rounded-full animate-ping" style={{ animationDelay: '0.8s' }}></div>
+        </div>
+        
+        {/* CSS per animazioni personalizzate */}
+        <style>{`
+          @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+          }
+          @keyframes fade-in {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+          }
+          .animate-fade-in {
+            animation: fade-in 1s ease-out;
+          }
+        `}</style>
       </div>
     );
   }
