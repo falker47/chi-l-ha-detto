@@ -308,6 +308,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                 ? `Hai superato ${currentStreak} ${currentStreak === 1 ? 'fatica' : 'fatiche'} con ${currentScore} punti!`
                 : `Hai totalizzato una streak di ${currentStreak} con ${currentScore} punti!`
               }
+              <br />
               Inserisci il tuo nome per entrare nella leaderboard:
             </p>
             
@@ -318,7 +319,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                 onChange={(e) => setPlayerName(e.target.value)}
                 placeholder="Il tuo nome..."
                 className={`w-full sm:flex-1 px-4 py-2 bg-black/40 border ${isEracleMode ? 'border-purple-400/30 focus:border-purple-400' : 'border-green-400/30 focus:border-green-400'} rounded-xl text-white placeholder-gray-400 focus:outline-none text-sm sm:text-base`}
-                maxLength={20}
+                maxLength={13}
                 onKeyPress={(e) => e.key === 'Enter' && handleSaveRecord()}
               />
               <button
@@ -384,7 +385,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                 {/* Statistiche */}
                 <div className="text-right">
                   <p className="text-white font-bold text-lg">
-                    {entry.streak} {getStreakLabel()}
+                    {entry.streak} {isEracleMode ? (entry.streak === 1 ? 'Fatica' : 'Fatiche') : 'Streak'}
                   </p>
                   <p className={`${accentColor} text-sm`}>
                     {entry.score.toLocaleString()} pts
@@ -399,8 +400,8 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         <div className={`mt-6 pt-4 border-t ${isEracleMode ? 'border-purple-400/20' : 'border-amber-400/20'}`}>
           <p className={`${accentColor} text-sm text-center`}>
             {isEracleMode 
-              ? 'La leaderboard ordina per fatiche superate, poi per punteggio.'
-              : 'La leaderboard ordina per streak raggiunta, poi per punteggio.'
+              ? 'Ordinati per fatiche superate, poi per punteggio.'
+              : 'Ordinati per streak raggiunta, poi per punteggio.'
             }
           </p>
         </div>
