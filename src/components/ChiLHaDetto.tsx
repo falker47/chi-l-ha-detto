@@ -86,6 +86,7 @@ export default function ChiLHaDetto({
   const [imagesPreloaded, setImagesPreloaded] = useState(false);
   const [showGameOverAnimation, setShowGameOverAnimation] = useState(false);
   const [isTimeoutGameOver, setIsTimeoutGameOver] = useState(false);
+  const [loadedImagesCache, setLoadedImagesCache] = useState<Set<string>>(new Set());
   
   // Costanti per la modalità di gioco
   const QUESTIONS_PER_GAME = 12; // Ogni partita ha 12 domande
@@ -177,6 +178,7 @@ export default function ChiLHaDetto({
     setCompletedLevels(0);
     setIsTimeoutGameOver(false);
     setImagesPreloaded(false);
+    setLoadedImagesCache(new Set()); // Reset del cache delle immagini
     // Non resettare showGameOverAnimation qui, viene gestito in onAnswer
   }, [includeSensitive, gameMode, loadUsedQuestions, saveUsedQuestions, resetUsedQuestions]);
 
@@ -229,12 +231,27 @@ export default function ChiLHaDetto({
 
   // Funzione per preload delle immagini dei personaggi
   const preloadCharacterImages = useCallback((choices: string[]) => {
+    // Controlla se tutte le immagini sono già nel cache
+    const imageUrls = choices.map(characterName => getPortrait(characterName));
+    const allImagesCached = imageUrls.every(url => loadedImagesCache.has(url));
+    
+    if (allImagesCached) {
+      // Se tutte le immagini sono già caricate, non mostrare il preload
+      setImagesPreloaded(true);
+      return;
+    }
+    
+    // Altrimenti, mostra il preload e carica le immagini
     setImagesPreloaded(false);
     const imagePromises = choices.map(characterName => {
       return new Promise<void>((resolve) => {
         const imageUrl = getPortrait(characterName);
         const img = new Image();
-        img.onload = () => resolve();
+        img.onload = () => {
+          // Aggiungi l'immagine al cache
+          setLoadedImagesCache(prev => new Set([...prev, imageUrl]));
+          resolve();
+        };
         img.onerror = () => resolve(); // Anche in caso di errore, continua
         img.src = imageUrl;
       });
@@ -243,7 +260,7 @@ export default function ChiLHaDetto({
     Promise.all(imagePromises).then(() => {
       setImagesPreloaded(true);
     });
-  }, []);
+  }, [loadedImagesCache]);
 
   const [choiceOrder, setChoiceOrder] = useState<number[]>([]);
   useEffect(() => {

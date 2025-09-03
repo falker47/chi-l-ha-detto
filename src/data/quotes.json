@@ -2225,33 +2225,30 @@
     "sensitive": false,
     "context": "Il grido della scoperta: Archimede trova il principio della spinta idrostatica."
   },
+  
   {
     "id": "q81",
-    "quote": "Et tu, Brute? (\"Anche tu, Bruto?\").",
-    "author": "William Shakespeare",
+    "quote": "Diventiamo ridicoli solo quando vogliamo apparire ciò che non siamo.",
+    "author": "Giacomo Leopardi",
     "choices": [
-      "William Shakespeare",
-      "Gaio Giulio Cesare",
-      "Marco Tullio Cicerone",
-      "Seneca"
+      "Giacomo Leopardi",
+      "Bill Gates",
+      "Patrick Henry",
+      "Dante Alighieri"
     ],
     "correctIndex": 0,
-    "year_or_period": "1599",
-    "source_title": "Julius Caesar",
-    "source_link": "https://en.wikipedia.org/wiki/Julius_Caesar_(play)",
-    "tags": [
-      "teatro",
-      "Inghilterra",
-      "classici"
-    ],
-    "difficulty": 6,
+    "year_or_period": "1819-1837",
+    "source_title": "Pensieri",
+    "source_link": "https://it.wikipedia.org/wiki/Giacomo_Leopardi",
+    "tags": ["filosofia", "politica", "letteratura"],
+    "difficulty": 3,
     "spiciness": 0,
-    "hint_short": "Teatro inglese del XVI-XVII secolo",
-    "hint_more": "Drammaturgo inglese del XVI-XVII secolo, considerato il più grande scrittore della letteratura inglese, autore di opere come 'Amleto', 'Romeo e Giulietta' e 'Macbeth'.",
-    "ambiguity_note": "Shakespeare la scrisse per Cesare, ma Cesare storico non la pronunciò mai.",
-    "language_orig": "EN",
+    "hint_short": "Poeta e filosofo italiano del XIX secolo",
+    "hint_more": "Poeta e filosofo italiano del XIX secolo, noto per le sue riflessioni pessimistiche sulla natura umana e per aver pronunciato questa frase sull'autenticità.",
+    "ambiguity_note": "Spesso attribuita a imprenditori come Gates o a filosofi come Patrick Henry, ma è di Leopardi.",
+    "language_orig": "IT",
     "sensitive": false,
-    "context": "Il tradimento più famoso: Cesare scopre che anche Bruto lo ha tradito."
+    "context": "La saggezza di Leopardi: l'autenticità come antidoto al ridicolo."
   },
   {
     "id": "q82",
@@ -3751,29 +3748,5 @@
     "language_orig": "LA",
     "sensitive": false,
     "context": "La chiamata di Urbano II: la volontà divina come giustificazione delle crociate."
-  },
-  {
-    "id": "q140",
-    "quote": "Diventiamo ridicoli solo quando vogliamo apparire ciò che non siamo.",
-    "author": "Giacomo Leopardi",
-    "choices": [
-      "Giacomo Leopardi",
-      "Bill Gates",
-      "Patrick Henry",
-      "Dante Alighieri"
-    ],
-    "correctIndex": 0,
-    "year_or_period": "1819-1837",
-    "source_title": "Pensieri",
-    "source_link": "https://it.wikipedia.org/wiki/Giacomo_Leopardi",
-    "tags": ["filosofia", "politica", "letteratura"],
-    "difficulty": 3,
-    "spiciness": 0,
-    "hint_short": "Poeta e filosofo italiano del XIX secolo",
-    "hint_more": "Poeta e filosofo italiano del XIX secolo, noto per le sue riflessioni pessimistiche sulla natura umana e per aver pronunciato questa frase sull'autenticità.",
-    "ambiguity_note": "Spesso attribuita a imprenditori come Gates o a filosofi come Patrick Henry, ma è di Leopardi.",
-    "language_orig": "IT",
-    "sensitive": false,
-    "context": "La saggezza di Leopardi: l'autenticità come antidoto al ridicolo."
   }
 ]

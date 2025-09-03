@@ -70,12 +70,21 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
       const currentModeLeaderboard = leaderboard[modeKey];
       
-      // Controlla se c'è spazio nella top 5 o se il punteggio è migliore del 5° posto
-      const isTop5 = currentModeLeaderboard.length < 5 || 
-          (currentModeLeaderboard.length >= 5 && (
-            currentStreak > currentModeLeaderboard[4]?.streak ||
-            (currentStreak === currentModeLeaderboard[4]?.streak && currentScore > currentModeLeaderboard[4]?.score)
-          ));
+      let isTop5 = false;
+      
+      if (currentModeLeaderboard.length < 5) {
+        // Se ci sono meno di 5 record, c'è spazio
+        isTop5 = true;
+      } else if (currentModeLeaderboard.length >= 5) {
+        // Se ci sono già 5 record, controlla se il punteggio è migliore del 5° posto
+        const fifthPlace = currentModeLeaderboard[4];
+        
+        if (currentStreak > fifthPlace.streak) {
+          isTop5 = true;
+        } else if (currentStreak === fifthPlace.streak && currentScore > fifthPlace.score) {
+          isTop5 = true;
+        }
+      }
       
       if (isTop5) {
         setShowSaveForm(true);
