@@ -50,18 +50,10 @@ export default function HeroImagePreloader({ children }: HeroImagePreloaderProps
         type="image/png"
       />
       
-      {/* Indicatore di caricamento sottile */}
-      {!imageLoaded && (
-        <div className="fixed inset-0 bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100 z-50 flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-16 h-16 border-4 border-amber-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-            <p className="text-amber-800 font-medium">Caricamento...</p>
-          </div>
-        </div>
-      )}
+      {/* Rimossa la vecchia schermata di preload per evitare flash */}
       
-      {/* Contenuto principale */}
-      <div className={`transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}>
+      {/* Contenuto principale - sempre visibile per evitare flash */}
+      <div>
         {children}
       </div>
     </>

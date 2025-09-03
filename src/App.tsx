@@ -24,6 +24,26 @@ function MainMenu({
   setShowLeaderboard: (value: boolean) => void;
 }) {
   
+  // Sveglia il server Render all'apertura del menu per evitare attese
+  useEffect(() => {
+    const wakeUpServer = async () => {
+      try {
+        // Solo in produzione, non in sviluppo
+        if (window.location.hostname !== 'localhost') {
+          const apiUrl = 'https://chi-l-ha-detto.onrender.com/api/health';
+          await fetch(apiUrl, { 
+            method: 'GET',
+            signal: AbortSignal.timeout(5000) // Timeout di 5 secondi
+          });
+          console.log('🌅 Server Render svegliato');
+        }
+      } catch (err) {
+        console.warn('Impossibile svegliare il server:', err);
+      }
+    };
+
+    wakeUpServer();
+  }, []);
 
   // Determina l'immagine di background in base alla modalità selezionata
   const getBackgroundImage = () => {

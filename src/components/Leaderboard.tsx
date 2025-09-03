@@ -46,21 +46,53 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     const fetchLeaderboard = async () => {
       try {
         setLoading(true);
+        
+        // Prima prova a caricare dal localStorage come fallback
+        const localBackup = localStorage.getItem('chiLHaDetto_leaderboard_backup');
+        if (localBackup) {
+          try {
+            const backupData = JSON.parse(localBackup);
+            setLeaderboard(backupData);
+            console.log('📦 Caricata leaderboard dal backup locale');
+          } catch (e) {
+            console.warn('Errore nel parsing del backup locale:', e);
+          }
+        }
+        
         // Usa l'URL di Render in produzione, localhost in sviluppo
         const apiUrl = window.location.hostname === 'localhost' 
           ? 'http://localhost:3001/api/leaderboard'
           : 'https://chi-l-ha-detto.onrender.com/api/leaderboard';
-        const response = await fetch(apiUrl);
+        
+        const response = await fetch(apiUrl, {
+          // Timeout di 10 secondi per evitare attese eccessive
+          signal: AbortSignal.timeout(10000)
+        });
         const data = await response.json();
         
         if (data.success) {
           setLeaderboard(data.data);
+          // Salva il backup locale
+          localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(data.data));
+          console.log('💾 Backup locale aggiornato');
         } else {
           setError('Errore nel caricamento della leaderboard');
         }
       } catch (err) {
-        setError('Impossibile connettersi al server');
-        console.error('Errore nel caricamento della leaderboard:', err);
+        console.warn('Server non disponibile, usando backup locale:', err);
+        // Se il server non risponde, usa il backup locale se disponibile
+        const localBackup = localStorage.getItem('chiLHaDetto_leaderboard_backup');
+        if (localBackup) {
+          try {
+            const backupData = JSON.parse(localBackup);
+            setLeaderboard(backupData);
+            setError('Server temporaneamente non disponibile - usando dati locali');
+          } catch (e) {
+            setError('Impossibile connettersi al server e nessun backup disponibile');
+          }
+        } else {
+          setError('Impossibile connettersi al server');
+        }
       } finally {
         setLoading(false);
       }
@@ -158,10 +190,15 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       
       if (data.success) {
         // Aggiorna la leaderboard locale
-        setLeaderboard(prev => ({
-          ...prev,
+        const newLeaderboard = {
+          ...leaderboard,
           [modeKey]: data.data
-        }));
+        };
+        setLeaderboard(newLeaderboard);
+        
+        // Aggiorna anche il backup locale
+        localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(newLeaderboard));
+        console.log('💾 Backup locale aggiornato dopo salvataggio');
         
         setShowSaveForm(false);
         setPlayerName('');
