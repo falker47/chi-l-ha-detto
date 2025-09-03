@@ -7,6 +7,7 @@ interface LeaderboardProps {
   currentStreak?: number;
   currentScore?: number;
   onSaveRecord?: (name: string) => void;
+  disableModeSwitch?: boolean; // Nuovo parametro per disabilitare i bottoni di switch
 }
 
 const Leaderboard: React.FC<LeaderboardProps> = ({ 
@@ -14,7 +15,8 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   gameMode, 
   currentStreak = 0, 
   currentScore = 0,
-  onSaveRecord 
+  onSaveRecord,
+  disableModeSwitch = false
 }) => {
   const [leaderboard, setLeaderboard] = useState<LeaderboardData>({ achille: [], eracle: [] });
   const [loading, setLoading] = useState(true);
@@ -29,8 +31,16 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   const [saving, setSaving] = useState(false);
   const [recordAlreadySaved, setRecordAlreadySaved] = useState(false);
   const [showMode, setShowMode] = useState<'achille' | 'eracle'>(
-    (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'eracle'
+    (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille'
   );
+
+  // Blocca il cambio di modalità se disableModeSwitch è true
+  useEffect(() => {
+    if (disableModeSwitch) {
+      const currentMode = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
+      setShowMode(currentMode);
+    }
+  }, [disableModeSwitch, gameMode]);
 
   // Carica la leaderboard
   useEffect(() => {
@@ -253,11 +263,11 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       : 'border-amber-300/30 border-t-amber-400';
 
     return (
-      <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center">
-        <div className={`${containerGradient} rounded-3xl p-8 border-2 ${borderColor} shadow-2xl`}>
+      <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4">
+        <div className={`${containerGradient} rounded-2xl p-4 sm:p-6 border-2 ${borderColor} shadow-2xl`}>
           <div className="text-center">
-            <div className={`w-12 h-12 border-4 ${spinnerColor} rounded-full animate-spin mx-auto mb-4`}></div>
-            <p className="text-white font-semibold">Caricamento leaderboard...</p>
+            <div className={`w-8 h-8 sm:w-10 sm:h-10 border-4 ${spinnerColor} rounded-full animate-spin mx-auto mb-3`}></div>
+            <p className="text-white font-semibold text-sm sm:text-base">Caricamento leaderboard...</p>
           </div>
         </div>
       </div>
@@ -277,58 +287,60 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     : 'text-amber-200';
 
   return (
-    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className={`${containerGradient} rounded-3xl p-6 border-2 ${borderColor} shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto`}>
+    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4">
+      <div className={`${containerGradient} rounded-2xl p-3 sm:p-4 border-2 ${borderColor} shadow-2xl max-w-xl w-full max-h-[95vh] overflow-y-auto`}>
         {/* Header */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-3 sm:mb-4">
           <div>
-            <h2 className="text-3xl font-black text-white mb-2 drop-shadow-lg">
+            <h2 className="text-xl sm:text-2xl font-black text-white mb-1 drop-shadow-lg">
               Leaderboard {showMode === 'eracle' ? 'Eracle' : 'Achille'}
             </h2>
-            <p className={`${accentColor} font-medium`}>
+            <p className={`${accentColor} font-medium text-sm`}>
               {showMode === 'eracle' ? 'Le 12 Fatiche - Top 5' : 'Aristeia Infinita - Top 5'}
             </p>
           </div>
           
           <button
             onClick={onClose}
-            className="text-white/70 hover:text-white transition-colors duration-200 p-2 hover:bg-white/10 rounded-full"
+            className="text-white/70 hover:text-white transition-colors duration-200 p-1 sm:p-2 hover:bg-white/10 rounded-full"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
 
-        {/* Mode Switch */}
-        <div className="flex items-center justify-center mb-6">
-          <div className="bg-white/10 rounded-2xl p-1 backdrop-blur-sm">
-            <button 
-              onClick={() => setShowMode('eracle')}
-              className={`px-8 py-3 rounded-xl font-semibold transition-all duration-200 ${
-                showMode === 'eracle' ? 'bg-purple-500 text-white shadow-lg' : 'text-white/70 hover:text-white/90'
-              }`}
-            >
-              🏛️ Eracle
-            </button>
-            <button 
-              onClick={() => setShowMode('achille')}
-              className={`px-8 py-3 rounded-xl font-semibold transition-all duration-200 ${
-                showMode === 'achille' ? 'bg-amber-500 text-white shadow-lg' : 'text-white/70 hover:text-white/90'
-              }`}
-            >
-              ⚡ Achille
-            </button>
+        {/* Mode Switch - Solo se non disabilitato */}
+        {!disableModeSwitch && (
+          <div className="flex items-center justify-center mb-3 sm:mb-4">
+            <div className="bg-white/10 rounded-xl p-1 backdrop-blur-sm">
+              <button 
+                onClick={() => setShowMode('eracle')}
+                className={`px-4 sm:px-6 py-2 rounded-lg font-semibold transition-all duration-200 text-sm ${
+                  showMode === 'eracle' ? 'bg-purple-500 text-white shadow-lg' : 'text-white/70 hover:text-white/90'
+                }`}
+              >
+                🏛️ Eracle
+              </button>
+              <button 
+                onClick={() => setShowMode('achille')}
+                className={`px-4 sm:px-6 py-2 rounded-lg font-semibold transition-all duration-200 text-sm ${
+                  showMode === 'achille' ? 'bg-amber-500 text-white shadow-lg' : 'text-white/70 hover:text-white/90'
+                }`}
+              >
+                ⚡ Achille
+              </button>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Form per salvare nuovo record */}
         {showSaveForm && (
-          <div className={`mb-6 p-4 ${isEracleMode ? 'bg-gradient-to-r from-purple-900/60 to-blue-800/60 border-purple-400/50' : 'bg-gradient-to-r from-green-900/60 to-emerald-800/60 border-green-400/50'} rounded-2xl border-2`}>
-            <h3 className={`${isEracleMode ? 'text-purple-200' : 'text-green-200'} font-bold mb-3 flex items-center gap-2`}>
+          <div className={`mb-3 sm:mb-4 p-3 ${isEracleMode ? 'bg-gradient-to-r from-purple-900/60 to-blue-800/60 border-purple-400/50' : 'bg-gradient-to-r from-green-900/60 to-emerald-800/60 border-green-400/50'} rounded-xl border-2`}>
+            <h3 className={`${isEracleMode ? 'text-purple-200' : 'text-green-200'} font-bold mb-2 flex items-center gap-2 text-sm`}>
               🎉 Nuovo Record!
             </h3>
-            <p className={`${isEracleMode ? 'text-purple-100' : 'text-green-100'} text-sm mb-4`}>
+            <p className={`${isEracleMode ? 'text-purple-100' : 'text-green-100'} text-xs mb-3`}>
               {isEracleMode 
                 ? `Hai superato ${currentStreak} ${currentStreak === 1 ? 'fatica' : 'fatiche'} con ${currentScore} punti!`
                 : `Hai totalizzato una streak di ${currentStreak} con ${currentScore} punti!`
@@ -337,20 +349,20 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
               Inserisci il tuo nome per entrare nella leaderboard:
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-2">
               <input
                 type="text"
                 value={playerName}
                 onChange={(e) => setPlayerName(e.target.value)}
                 placeholder="Il tuo nome..."
-                className={`w-full sm:flex-1 px-4 py-2 bg-black/40 border ${isEracleMode ? 'border-purple-400/30 focus:border-purple-400' : 'border-green-400/30 focus:border-green-400'} rounded-xl text-white placeholder-gray-400 focus:outline-none text-sm sm:text-base`}
+                className={`w-full sm:flex-1 px-3 py-2 bg-black/40 border ${isEracleMode ? 'border-purple-400/30 focus:border-purple-400' : 'border-green-400/30 focus:border-green-400'} rounded-lg text-white placeholder-gray-400 focus:outline-none text-sm`}
                 maxLength={13}
                 onKeyPress={(e) => e.key === 'Enter' && handleSaveRecord()}
               />
               <button
                 onClick={handleSaveRecord}
                 disabled={!playerName.trim() || saving}
-                className={`w-full sm:w-auto px-6 py-2 ${isEracleMode ? 'bg-purple-600 hover:bg-purple-700' : 'bg-green-600 hover:bg-green-700'} disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-colors duration-200 text-sm sm:text-base`}
+                className={`w-full sm:w-auto px-4 py-2 ${isEracleMode ? 'bg-purple-600 hover:bg-purple-700' : 'bg-green-600 hover:bg-green-700'} disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-semibold rounded-lg transition-colors duration-200 text-sm`}
               >
                 {saving ? 'Salvando...' : 'Salva'}
               </button>
@@ -360,16 +372,16 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
 
         {/* Errore */}
         {error && (
-          <div className="mb-6 p-4 bg-red-900/60 rounded-2xl border-2 border-red-400/50">
-            <p className="text-red-200 font-medium">{error}</p>
+          <div className="mb-3 sm:mb-4 p-3 bg-red-900/60 rounded-xl border-2 border-red-400/50">
+            <p className="text-red-200 font-medium text-sm">{error}</p>
           </div>
         )}
 
         {/* Leaderboard */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           {currentModeLeaderboard.length === 0 ? (
-            <div className="text-center py-8">
-              <p className={`${accentColor} text-lg font-medium`}>
+            <div className="text-center py-4">
+              <p className={`${accentColor} text-sm font-medium`}>
                 Nessun record ancora! Sii il primo a entrare nella leaderboard!
               </p>
             </div>
@@ -377,7 +389,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
             currentModeLeaderboard.map((entry, index) => (
               <div
                 key={entry.id}
-                className={`flex items-center justify-between p-4 rounded-2xl border-2 transition-all duration-200 ${
+                className={`flex items-center justify-between p-3 rounded-xl border-2 transition-all duration-200 ${
                   index === 0 
                     ? 'bg-gradient-to-r from-yellow-600/40 to-amber-600/40 border-yellow-400/50 shadow-lg' 
                     : index === 1
@@ -387,9 +399,9 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                     : 'bg-gradient-to-r from-amber-800/40 to-orange-800/40 border-amber-400/30'
                 }`}
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3">
                   {/* Posizione */}
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center font-black text-lg ${
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center font-black text-sm ${
                     index === 0 ? 'bg-yellow-500 text-black' :
                     index === 1 ? 'bg-gray-400 text-black' :
                     index === 2 ? 'bg-orange-500 text-white' :
@@ -400,8 +412,8 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                   
                   {/* Nome */}
                   <div>
-                    <p className="text-white font-bold text-lg">{entry.name}</p>
-                    <p className={`${accentColor} text-sm`}>
+                    <p className="text-white font-bold text-sm sm:text-base">{entry.name}</p>
+                    <p className={`${accentColor} text-xs`}>
                       {new Date(entry.timestamp).toLocaleDateString('it-IT')}
                     </p>
                   </div>
@@ -409,10 +421,10 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                 
                 {/* Statistiche */}
                 <div className="text-right">
-                  <p className="text-white font-bold text-lg">
+                  <p className="text-white font-bold text-sm sm:text-base">
                     {entry.streak} {showMode === 'eracle' ? (entry.streak === 1 ? 'Fatica' : 'Fatiche') : 'Streak'}
                   </p>
-                  <p className={`${accentColor} text-sm`}>
+                  <p className={`${accentColor} text-xs`}>
                     {entry.score.toLocaleString()} pts
                   </p>
                 </div>
@@ -422,8 +434,8 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         </div>
 
         {/* Footer */}
-        <div className={`mt-6 pt-4 border-t ${isEracleMode ? 'border-purple-400/20' : 'border-amber-400/20'}`}>
-          <p className={`${accentColor} text-sm text-center`}>
+        <div className={`mt-3 sm:mt-4 pt-2 sm:pt-3 border-t ${isEracleMode ? 'border-purple-400/20' : 'border-amber-400/20'}`}>
+          <p className={`${accentColor} text-xs text-center`}>
             {showMode === 'eracle' 
               ? 'Ordinati per fatiche superate, poi per punteggio.'
               : 'Ordinati per streak raggiunta, poi per punteggio.'

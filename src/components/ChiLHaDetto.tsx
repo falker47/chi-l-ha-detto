@@ -1552,6 +1552,7 @@ export default function ChiLHaDetto({
             setRecordSaved(true);
             console.log(`Record salvato per ${name}`);
           }}
+          disableModeSwitch={true} // Disabilita i bottoni di switch nella schermata game over
         />
       )}
     </>
