@@ -41,9 +41,9 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       try {
         setLoading(true);
         // Usa l'URL di Render in produzione, localhost in sviluppo
-        const apiUrl = process.env.NODE_ENV === 'production' 
-          ? 'https://chi-l-ha-detto.onrender.com/api/leaderboard'
-          : 'http://localhost:3001/api/leaderboard';
+        const apiUrl = window.location.hostname === 'localhost' 
+          ? 'http://localhost:3001/api/leaderboard'
+          : 'https://chi-l-ha-detto.onrender.com/api/leaderboard';
         const response = await fetch(apiUrl);
         const data = await response.json();
         
@@ -86,9 +86,9 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
       
       // Usa l'URL di Render in produzione, localhost in sviluppo
-      const apiUrl = process.env.NODE_ENV === 'production' 
-        ? 'https://chi-l-ha-detto.onrender.com/api/leaderboard'
-        : 'http://localhost:3001/api/leaderboard';
+      const apiUrl = window.location.hostname === 'localhost' 
+        ? 'http://localhost:3001/api/leaderboard'
+        : 'https://chi-l-ha-detto.onrender.com/api/leaderboard';
       
       const response = await fetch(apiUrl, {
         method: 'POST',
@@ -146,11 +146,22 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   const currentModeLeaderboard = (gameMode === 'millionaire' || gameMode === 'classic') ? leaderboard.eracle : leaderboard.achille;
 
   if (loading) {
+    const isEracleMode = (gameMode === 'millionaire' || gameMode === 'classic');
+    const containerGradient = isEracleMode 
+      ? 'bg-gradient-to-br from-purple-900 to-blue-900' 
+      : 'bg-gradient-to-br from-amber-900 to-orange-900';
+    const borderColor = isEracleMode 
+      ? 'border-purple-400/30' 
+      : 'border-amber-400/30';
+    const spinnerColor = isEracleMode 
+      ? 'border-purple-300/30 border-t-purple-400' 
+      : 'border-amber-300/30 border-t-amber-400';
+
     return (
       <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center">
-        <div className="bg-gradient-to-br from-amber-900 to-orange-900 rounded-3xl p-8 border-2 border-amber-400/30 shadow-2xl">
+        <div className={`${containerGradient} rounded-3xl p-8 border-2 ${borderColor} shadow-2xl`}>
           <div className="text-center">
-            <div className="w-12 h-12 border-4 border-amber-300/30 border-t-amber-400 rounded-full animate-spin mx-auto mb-4"></div>
+            <div className={`w-12 h-12 border-4 ${spinnerColor} rounded-full animate-spin mx-auto mb-4`}></div>
             <p className="text-white font-semibold">Caricamento leaderboard...</p>
           </div>
         </div>
@@ -158,16 +169,28 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     );
   }
 
+  // Determina i colori in base alla modalità
+  const isEracleMode = (gameMode === 'millionaire' || gameMode === 'classic');
+  const containerGradient = isEracleMode 
+    ? 'bg-gradient-to-br from-purple-900 to-blue-900' 
+    : 'bg-gradient-to-br from-amber-900 to-orange-900';
+  const borderColor = isEracleMode 
+    ? 'border-purple-400/30' 
+    : 'border-amber-400/30';
+  const accentColor = isEracleMode 
+    ? 'text-purple-200' 
+    : 'text-amber-200';
+
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-gradient-to-br from-amber-900 to-orange-900 rounded-3xl p-6 border-2 border-amber-400/30 shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div className={`${containerGradient} rounded-3xl p-6 border-2 ${borderColor} shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto`}>
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-3xl font-black text-white mb-2 drop-shadow-lg">
               🏆 Leaderboard {getModeTitle()}
             </h2>
-            <p className="text-amber-200 font-medium">
+            <p className={`${accentColor} font-medium`}>
               {getModeDescription()}
             </p>
           </div>
@@ -184,11 +207,11 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
 
         {/* Form per salvare nuovo record */}
         {showSaveForm && (
-          <div className="mb-6 p-4 bg-gradient-to-r from-green-900/60 to-emerald-800/60 rounded-2xl border-2 border-green-400/50">
-            <h3 className="text-green-200 font-bold mb-3 flex items-center gap-2">
+          <div className={`mb-6 p-4 ${isEracleMode ? 'bg-gradient-to-r from-purple-900/60 to-blue-800/60 border-purple-400/50' : 'bg-gradient-to-r from-green-900/60 to-emerald-800/60 border-green-400/50'} rounded-2xl border-2`}>
+            <h3 className={`${isEracleMode ? 'text-purple-200' : 'text-green-200'} font-bold mb-3 flex items-center gap-2`}>
               🎉 Nuovo Record!
             </h3>
-            <p className="text-green-100 text-sm mb-4">
+            <p className={`${isEracleMode ? 'text-purple-100' : 'text-green-100'} text-sm mb-4`}>
               Hai raggiunto {currentStreak} {getStreakLabel().toLowerCase()} con {currentScore} punti!
               Inserisci il tuo nome per entrare nella leaderboard:
             </p>
@@ -199,14 +222,14 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                 value={playerName}
                 onChange={(e) => setPlayerName(e.target.value)}
                 placeholder="Il tuo nome..."
-                className="flex-1 px-4 py-2 bg-black/40 border border-green-400/30 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-green-400"
+                className={`flex-1 px-4 py-2 bg-black/40 border ${isEracleMode ? 'border-purple-400/30 focus:border-purple-400' : 'border-green-400/30 focus:border-green-400'} rounded-xl text-white placeholder-gray-400 focus:outline-none`}
                 maxLength={20}
                 onKeyPress={(e) => e.key === 'Enter' && handleSaveRecord()}
               />
               <button
                 onClick={handleSaveRecord}
                 disabled={!playerName.trim() || saving}
-                className="px-6 py-2 bg-green-600 hover:bg-green-700 disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-colors duration-200"
+                className={`px-6 py-2 ${isEracleMode ? 'bg-purple-600 hover:bg-purple-700' : 'bg-green-600 hover:bg-green-700'} disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-colors duration-200`}
               >
                 {saving ? 'Salvando...' : 'Salva'}
               </button>
@@ -225,7 +248,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         <div className="space-y-3">
           {currentModeLeaderboard.length === 0 ? (
             <div className="text-center py-8">
-              <p className="text-amber-200 text-lg font-medium">
+              <p className={`${accentColor} text-lg font-medium`}>
                 Nessun record ancora! Sii il primo a entrare nella leaderboard!
               </p>
             </div>
@@ -257,7 +280,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                   {/* Nome */}
                   <div>
                     <p className="text-white font-bold text-lg">{entry.name}</p>
-                    <p className="text-amber-200 text-sm">
+                    <p className={`${accentColor} text-sm`}>
                       {new Date(entry.timestamp).toLocaleDateString('it-IT')}
                     </p>
                   </div>
@@ -268,7 +291,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                   <p className="text-white font-bold text-lg">
                     {entry.streak} {getStreakLabel()}
                   </p>
-                  <p className="text-amber-200 text-sm">
+                  <p className={`${accentColor} text-sm`}>
                     {entry.score.toLocaleString()} pts
                   </p>
                 </div>
@@ -278,8 +301,8 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="mt-6 pt-4 border-t border-amber-400/20">
-          <p className="text-amber-200 text-sm text-center">
+        <div className={`mt-6 pt-4 border-t ${isEracleMode ? 'border-purple-400/20' : 'border-amber-400/20'}`}>
+          <p className={`${accentColor} text-sm text-center`}>
             La leaderboard ordina per {getStreakLabel().toLowerCase()}, poi per punteggio, infine per data
           </p>
         </div>
