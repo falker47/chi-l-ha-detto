@@ -533,11 +533,101 @@ function App() {
     <div className="min-h-screen">
       {/* Indicatore di caricamento per le immagini */}
       {!imagesPreloaded && (
-        <div className="fixed inset-0 bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100 z-50 flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-16 h-16 border-4 border-amber-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-            <p className="text-amber-800 font-medium">Caricamento immagini...</p>
+        <div className="fixed inset-0 bg-gradient-to-br from-amber-900 via-orange-900 to-red-900 z-50 flex items-center justify-center overflow-hidden">
+          {/* Background pattern */}
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-amber-400/20 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-orange-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
           </div>
+          
+          {/* Container principale */}
+          <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+            {/* Titolo principale */}
+            <div className="mb-12">
+              <h1 className="text-5xl sm:text-7xl font-black text-white mb-6 drop-shadow-2xl"
+                  style={{ textShadow: '0 0 40px rgba(255, 255, 255, 0.6), 0 0 80px rgba(255, 255, 255, 0.4)' }}>
+                Chi l'ha detto?
+              </h1>
+            </div>
+            
+            {/* Loading animation principale */}
+            <div className="mb-10">
+              <div className="inline-flex items-center space-x-4 bg-black/50 backdrop-blur-lg rounded-3xl px-8 py-6 border-2 border-amber-400/30 shadow-2xl">
+                {/* Spinner triplo */}
+                <div className="relative">
+                  <div className="w-12 h-12 border-4 border-amber-300/30 border-t-amber-400 rounded-full animate-spin"></div>
+                  <div className="absolute inset-0 w-12 h-12 border-4 border-transparent border-t-orange-300 rounded-full animate-spin" 
+                       style={{ animationDirection: 'reverse', animationDuration: '1.2s' }}></div>
+                  <div className="absolute inset-1 w-10 h-10 border-4 border-transparent border-t-red-300 rounded-full animate-spin" 
+                       style={{ animationDuration: '0.8s' }}></div>
+                </div>
+                
+                {/* Testo di caricamento */}
+                <div className="text-white font-bold text-lg">
+                  <span className="inline-block animate-pulse">Preparando l'epica</span>
+                  <span className="inline-block animate-bounce ml-1" style={{ animationDelay: '0.1s' }}>.</span>
+                  <span className="inline-block animate-bounce ml-1" style={{ animationDelay: '0.2s' }}>.</span>
+                  <span className="inline-block animate-bounce ml-1" style={{ animationDelay: '0.3s' }}>.</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Barra di progresso avanzata */}
+            <div className="mb-8">
+              <div className="w-full max-w-lg mx-auto bg-black/40 backdrop-blur-lg rounded-full h-3 border-2 border-amber-400/20 overflow-hidden shadow-inner">
+                <div className="h-full bg-gradient-to-r from-amber-500 via-orange-400 to-red-400 rounded-full animate-pulse"
+                     style={{ 
+                       width: '100%',
+                       background: 'linear-gradient(90deg, #f59e0b, #f97316, #ef4444, #dc2626)',
+                       backgroundSize: '300% 100%',
+                       animation: 'shimmer 3s ease-in-out infinite'
+                     }}>
+                </div>
+              </div>
+            </div>
+            
+            {/* Messaggi motivazionali rotanti */}
+            <div className="mb-6">
+              <div className="text-amber-200 text-base sm:text-lg font-medium">
+                <p className="animate-fade-in">
+                  Caricando le gesta degli eroi...
+                </p>
+              </div>
+            </div>
+            
+            {/* Elementi decorativi */}
+            <div className="flex justify-center space-x-4 mb-6">
+              <div className="w-3 h-3 bg-amber-400 rounded-full animate-ping" style={{ animationDelay: '0s' }}></div>
+              <div className="w-3 h-3 bg-orange-400 rounded-full animate-ping" style={{ animationDelay: '0.2s' }}></div>
+              <div className="w-3 h-3 bg-red-400 rounded-full animate-ping" style={{ animationDelay: '0.4s' }}></div>
+            </div>
+          </div>
+          
+          {/* Particelle animate di sfondo */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-amber-300/40 rounded-full animate-ping" style={{ animationDelay: '0s' }}></div>
+            <div className="absolute top-3/4 right-1/4 w-2 h-2 bg-orange-200/60 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+            <div className="absolute top-1/2 left-3/4 w-2.5 h-2.5 bg-red-400/30 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-amber-300/50 rounded-full animate-ping" style={{ animationDelay: '0.3s' }}></div>
+            <div className="absolute top-1/3 right-1/3 w-2.5 h-2.5 bg-orange-200/40 rounded-full animate-ping" style={{ animationDelay: '0.8s' }}></div>
+            <div className="absolute bottom-1/3 right-1/2 w-1.5 h-1.5 bg-red-300/60 rounded-full animate-ping" style={{ animationDelay: '1.2s' }}></div>
+          </div>
+          
+          {/* CSS per animazioni personalizzate */}
+          <style>{`
+            @keyframes shimmer {
+              0% { background-position: -300% 0; }
+              100% { background-position: 300% 0; }
+            }
+            @keyframes fade-in {
+              0% { opacity: 0; transform: translateY(15px); }
+              100% { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in {
+              animation: fade-in 1.5s ease-out;
+            }
+          `}</style>
         </div>
       )}
       

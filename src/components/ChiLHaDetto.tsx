@@ -333,9 +333,6 @@ export default function ChiLHaDetto({
                 style={{ textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.3)' }}>
               Chi l'ha detto?
             </h1>
-            <p className="text-lg sm:text-xl text-gray-200 font-medium drop-shadow-lg">
-              Ambiguità Edition
-            </p>
           </div>
           
           {/* Loading animation */}
