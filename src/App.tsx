@@ -487,12 +487,77 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">⏰ Attenzione al Tempo</h4>
-                  <p className="text-xs">Hai 45-60 secondi per rispondere</p>
+                  <p className="text-xs">Hai 60 secondi per rispondere (Achille) o tempo variabile (Eracle)</p>
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">📚 Impara la Storia</h4>
-                  <p className="text-xs">Scopri il contesto e ed eventualmente perché la citazione è ingannevole</p>
+                  <p className="text-xs">Scopri il contesto e eventualmente perché la citazione è ingannevole</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Sistema di Punteggio */}
+            <div className="bg-gradient-to-r from-blue-900/60 to-indigo-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-blue-400/50">
+              <h3 className="text-sm md:text-lg font-bold text-blue-200 mb-3 flex items-center gap-2">
+                🏆 Sistema di Punteggio
+              </h3>
+              <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm text-blue-100">
+                <div>
+                  <h4 className="font-bold mb-1 text-purple-200">🏛️ Modalità Eracle</h4>
+                  <p className="text-xs mb-1">Punti base: 100 × moltiplicatore livello × moltiplicatore tempo</p>
+                  <p className="text-xs">Bonus finale: +50% per ogni aiuto non utilizzato</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1 text-orange-200">⚔️ Modalità Achille</h4>
+                  <p className="text-xs mb-1">Punti base: 50 × difficoltà × velocità di risposta</p>
+                  <p className="text-xs">Moltiplicatore streak: cresce con i successi consecutivi</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Aiuti Disponibili */}
+            <div className="bg-gradient-to-r from-cyan-900/60 to-teal-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-cyan-400/50">
+              <h3 className="text-sm md:text-lg font-bold text-cyan-200 mb-3 flex items-center gap-2">
+                🛠️ Aiuti Disponibili (Solo Eracle)
+              </h3>
+              <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm text-cyan-100">
+                <div>
+                  <h4 className="font-bold mb-1">🎯 50/50</h4>
+                  <p className="text-xs">Elimina 2 risposte sbagliate</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1">💡 Hint</h4>
+                  <p className="text-xs">Suggerimento breve sull'autore</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1">🔍 Super Hint</h4>
+                  <p className="text-xs">Suggerimento dettagliato</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1">🔄 2nd Chance</h4>
+                  <p className="text-xs">Seconda possibilità dopo un errore</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Leaderboard */}
+            <div className="bg-gradient-to-r from-violet-900/60 to-purple-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-violet-400/50">
+              <h3 className="text-sm md:text-lg font-bold text-violet-200 mb-3 flex items-center gap-2">
+                🏅 Classifica Top 5
+              </h3>
+              <div className="text-xs md:text-sm text-violet-100">
+                <p className="mb-2">Ogni modalità ha la sua classifica separata:</p>
+                <ul className="space-y-1">
+                  <li className="flex items-start gap-2">
+                    <span className="text-violet-300 font-bold">•</span>
+                    <span><strong>Eracle:</strong> Ordinata per fatiche superate, poi per punteggio</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-violet-300 font-bold">•</span>
+                    <span><strong>Achille:</strong> Ordinata per streak raggiunta, poi per punteggio</span>
+                  </li>
+                </ul>
+                <p className="mt-2 text-xs">Se entri nella Top 5, potrai salvare il tuo record!</p>
               </div>
             </div>
 
@@ -501,10 +566,10 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
               <h3 className="text-xs md:text-sm font-bold text-amber-200 mb-3 flex items-center gap-2">
                 ⚠️ Contenuti Sensibili
               </h3>
-              <p className="text-xs md:text-xs text-amber-100 mb-2">
-                Il gioco include citazioni di figure storiche controverse. Puoi attivare/disattivare questa modalità:
+              <p className="text-xs md:text-sm text-amber-100 mb-2">
+                Il gioco include citazioni di figure storiche controverse. Puoi attivare o disattivare questa modalità:
               </p>
-              <ul className="space-y-1 text-xs md:text-xs text-amber-100">
+              <ul className="space-y-1 text-xs md:text-sm text-amber-100">
                 <li className="flex items-start gap-2">
                   <span className="text-amber-300 font-bold">•</span>
                   <span><strong>Modalità Sicura:</strong> Solo citazioni di figure generalmente positive</span>
