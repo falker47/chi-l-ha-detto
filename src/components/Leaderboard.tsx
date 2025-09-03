@@ -171,12 +171,74 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     };
   }, []);
 
+  // Funzione per sincronizzare i dati locali con il server quando il server è vuoto
+  const syncLocalDataToServer = async (modeKey: string) => {
+    try {
+      const localBackup = localStorage.getItem('chiLHaDetto_leaderboard_backup');
+      if (localBackup) {
+        const localData = JSON.parse(localBackup);
+        const modeData = localData[modeKey] || [];
+        
+        if (modeData.length > 0) {
+          console.log('🔄 Sincronizzazione dati locali con il server...');
+          
+          // Invia ogni record locale al server
+          for (const record of modeData) {
+            await fetch(window.location.hostname === 'localhost' 
+              ? 'http://localhost:3001/api/leaderboard'
+              : 'https://chi-l-ha-detto.onrender.com/api/leaderboard', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                mode: modeKey,
+                name: record.name,
+                streak: record.streak,
+                score: record.score
+              })
+            });
+          }
+          
+          console.log('✅ Dati locali sincronizzati con il server');
+        }
+      }
+    } catch (error) {
+      console.warn('Errore nella sincronizzazione:', error);
+    }
+  };
+
   const handleSaveRecord = async () => {
     if (!playerName.trim()) return;
     
     try {
       setSaving(true);
       const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
+      
+      // Controlla se il server è vuoto ma abbiamo dati locali
+      const localBackup = localStorage.getItem('chiLHaDetto_leaderboard_backup');
+      if (localBackup) {
+        const localData = JSON.parse(localBackup);
+        const currentModeLeaderboard = leaderboard[modeKey] || [];
+        const localModeData = localData[modeKey] || [];
+        
+        // Se il server è vuoto ma abbiamo dati locali, sincronizza prima
+        if (currentModeLeaderboard.length === 0 && localModeData.length > 0) {
+          console.log('🔄 Server vuoto rilevato, sincronizzazione dati locali...');
+          await syncLocalDataToServer(modeKey);
+          
+          // Ricarica la leaderboard dal server dopo la sincronizzazione
+          const apiUrl = window.location.hostname === 'localhost' 
+            ? 'http://localhost:3001/api/leaderboard'
+            : 'https://chi-l-ha-detto.onrender.com/api/leaderboard';
+          
+          const response = await fetch(apiUrl);
+          const data = await response.json();
+          
+          if (data.success) {
+            setLeaderboard(data.data);
+            console.log('📥 Leaderboard ricaricata dopo sincronizzazione');
+          }
+        }
+      }
       
       // Usa l'URL di Render in produzione, localhost in sviluppo
       const apiUrl = window.location.hostname === 'localhost' 

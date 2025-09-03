@@ -38,6 +38,7 @@ export default function ChiLHaDetto({
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [finalStreak, setFinalStreak] = useState(0);
+  const [questionScores, setQuestionScores] = useState<number[]>([]); // Punteggi delle singole domande
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [recordSaved, setRecordSaved] = useState(false);
@@ -160,6 +161,7 @@ export default function ChiLHaDetto({
     setScore(0);
     setStreak(0);
     setFinalStreak(0);
+    setQuestionScores([]);
     setUsed5050(false);
     setUsedHint(false);
     setUsedSuperHint(false);
@@ -441,13 +443,40 @@ export default function ChiLHaDetto({
 
   // Funzione helper per calcolare il bonus tempo nella modalità Battaglia di Achille
   function getTimeBonus(timeLeft: number): { multiplier: number; label: string; color: string } {
-    if (timeLeft >= 30) {
+    if (timeLeft >= 40) {
       return { multiplier: 1.0, label: '100%', color: 'text-green-400' };
-    } else if (timeLeft >= 15) {
+    } else if (timeLeft >= 30) {
       return { multiplier: 0.8, label: '80%', color: 'text-yellow-400' };
+    } else if (timeLeft >= 20) {
+      return { multiplier: 0.7, label: '70%', color: 'text-orange-400' };
     } else {
       return { multiplier: 0.6, label: '60%', color: 'text-red-400' };
     }
+  }
+
+  // Funzione per calcolare il punteggio di una singola domanda (modalità Achille)
+  function calculateQuestionScore(difficulty: number, timeLeft: number): number {
+    const difficultyMultiplier = 0.9 + (0.1 * difficulty);
+    const timeBonus = getTimeBonus(timeLeft);
+    return Math.round(50 * difficultyMultiplier * timeBonus.multiplier);
+  }
+
+  // Funzione per calcolare il punteggio finale con moltiplicatore streak
+  function calculateFinalScore(questionScores: number[], streak: number): number {
+    const sumQuestions = questionScores.reduce((sum, score) => sum + score, 0);
+    
+    let streakMultiplier;
+    if (streak <= 5) {
+      // Streak 1-5: formula originale
+      streakMultiplier = 0.75 + (0.25 * streak);
+    } else {
+      // Streak 6+: moltiplicatore base + incremento di 0.1 per ogni streak oltre la 5
+      const baseMultiplier = 0.75 + (0.25 * 5); // = 2.0 per streak 5
+      const additionalStreak = streak - 5;
+      streakMultiplier = baseMultiplier + (0.2 * additionalStreak);
+    }
+    
+    return Math.round(sumQuestions * streakMultiplier);
   }
 
   function onAnswer(k: number) {
@@ -458,22 +487,23 @@ export default function ChiLHaDetto({
       const newStreak = streak + 1;
       
       // Sistema di punteggio diverso per ogni modalità
-      let gained;
       if (gameMode === 'millionaire') {
         // Modalità Verso l'Olimpo: punteggio fisso
-        gained = 100 + timeLeft * 2 + streak * 10;
+        const gained = 100 + timeLeft * 2 + streak * 10;
+        setScore((s) => s + gained);
       } else {
-        // Modalità Battaglia di Achille: punteggio basato sulla difficoltà + moltiplicatore streak + bonus tempo
-        const basePoints = (current?.difficulty || 1) * 50; // 50 punti per livello di difficoltà
-        const streakMultiplier = Math.max(1, newStreak); // Moltiplicatore minimo 1
+        // Modalità Battaglia di Achille: nuovo sistema
+        const questionScore = calculateQuestionScore(current?.difficulty || 1, timeLeft);
         
-        // Bonus tempo: entro 15s = 100%, entro 30s = 80%, oltre = 60%
-        const timeBonus = getTimeBonus(timeLeft);
+        // Aggiungi il punteggio della domanda all'array
+        setQuestionScores(prev => [...prev, questionScore]);
         
-        gained = Math.round(basePoints * streakMultiplier * timeBonus.multiplier);
+        // Calcola il punteggio finale con il moltiplicatore streak
+        const newQuestionScores = [...questionScores, questionScore];
+        const finalScore = calculateFinalScore(newQuestionScores, newStreak);
+        setScore(finalScore);
       }
       
-      setScore((s) => s + gained);
       setStreak(newStreak);
       
               // Modalità Verso l'Olimpo: mostra animazione di scalata
@@ -623,6 +653,7 @@ export default function ChiLHaDetto({
         setI(0);
         setScore(0);
         setStreak(0);
+        setQuestionScores([]);
         setUsed5050(false);
         setUsedHint(false);
         setUsedSuperHint(false);
@@ -1286,6 +1317,7 @@ export default function ChiLHaDetto({
                             setI(0);
                             setScore(0);
                             setStreak(0);
+                            setQuestionScores([]);
                             setUsed5050(false);
                             setUsedHint(false);
                             setUsedSuperHint(false);
