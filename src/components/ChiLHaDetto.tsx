@@ -266,23 +266,23 @@ export default function ChiLHaDetto({
     setIsPreloading(true);
     setImagesPreloaded(false);
     
-    // Timeout di sicurezza per evitare caricamento infinito
+    // Timeout di sicurezza più lungo per evitare caricamento infinito
     const safetyTimeout = setTimeout(() => {
       console.warn('Timeout del preload immagini, forzando il caricamento');
       setIsPreloading(false);
       setImagesPreloaded(true);
-    }, 6000); // 6 secondi di timeout
+    }, 10000); // 10 secondi di timeout (aumentato da 6)
     
     const imagePromises = choices.map(characterName => {
       return new Promise<void>((resolve) => {
         const imageUrl = getPortrait(characterName);
         const img = new Image();
         
-        // Timeout individuale per ogni immagine
+        // Timeout individuale più lungo per ogni immagine
         const imageTimeout = setTimeout(() => {
           console.warn(`Timeout immagine: ${imageUrl}`);
           resolve();
-        }, 3000);
+        }, 5000); // 5 secondi per immagine (aumentato da 3)
         
         img.onload = () => {
           clearTimeout(imageTimeout);
@@ -311,7 +311,7 @@ export default function ChiLHaDetto({
       setIsPreloading(false);
       setImagesPreloaded(true);
     });
-  }, []); // Rimossa la dipendenza loadedImagesCache per evitare loop infiniti
+  }, [isPreloading, loadedImagesCache]); // Aggiunte le dipendenze necessarie
 
   const [choiceOrder, setChoiceOrder] = useState<number[]>([]);
   useEffect(() => {
@@ -378,6 +378,18 @@ export default function ChiLHaDetto({
       }
     }
   }, [timeLeft, revealed, gameMode, streak]);
+
+  // Fallback di sicurezza per evitare caricamento infinito
+  useEffect(() => {
+    if (current && !imagesPreloaded && !isPreloading) {
+      const fallbackTimeout = setTimeout(() => {
+        console.warn('Fallback: forzando imagesPreloaded a true dopo 15 secondi');
+        setImagesPreloaded(true);
+      }, 15000); // 15 secondi di fallback totale
+      
+      return () => clearTimeout(fallbackTimeout);
+    }
+  }, [current, imagesPreloaded, isPreloading]);
 
   if (!current || !imagesPreloaded) {
     return (
@@ -693,7 +705,7 @@ export default function ChiLHaDetto({
         setSelected(null);
         setDisabledOptions([]);
         setTimeLeft(60); // Reset timer per la nuova domanda
-        setImagesPreloaded(false);
+        // Non resettare imagesPreloaded qui - viene gestito dal preloadCharacterImages
         
         // Reset degli hints per la nuova domanda (mantiene il contatore hintsUnused)
         setUsedHint(false);
@@ -769,7 +781,7 @@ export default function ChiLHaDetto({
       setSelected(null);
       setDisabledOptions([]);
       setTimeLeft(45); // Reset timer per la nuova domanda
-      setImagesPreloaded(false);
+      // Non resettare imagesPreloaded qui - viene gestito dal preloadCharacterImages
       
       // Reset degli hints per la nuova domanda (modalità Achille non ha hints)
       setUsedHint(false);

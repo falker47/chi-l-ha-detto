@@ -419,6 +419,31 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
               </p>
             </div>
 
+            {/* Come giocare */}
+            <div className="bg-gradient-to-r from-green-900/60 to-emerald-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-green-400/50">
+              <h3 className="text-sm md:text-lg font-bold text-green-200 mb-3 flex items-center gap-2">
+                🎯 Come Giocare
+              </h3>
+              <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm text-green-100">
+                <div>
+                  <h4 className="font-bold mb-1">📖 Leggi la Citazione</h4>
+                  <p className="text-xs">Ogni domanda presenta una citazione storica famosa</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1">🤔 Scegli l'Autore</h4>
+                  <p className="text-xs">Indovina fra 4 opzioni l'autore della citazione</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1">⏰ Attenzione al Tempo</h4>
+                  <p className="text-xs">Hai 60s (Eracle) o 45s (Achille) per rispondere!</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1">📚 Impara la Storia</h4>
+                  <p className="text-xs">Scopri il contesto e approfondisci con le fonti allegate!</p>
+                </div>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-4">
               {/* Modalità Eracle */}
               <div className="bg-gradient-to-br from-purple-900/60 to-blue-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-purple-400/50">
@@ -471,50 +496,6 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
               </div>
             </div>
 
-            {/* Come giocare */}
-            <div className="bg-gradient-to-r from-green-900/60 to-emerald-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-green-400/50">
-              <h3 className="text-sm md:text-lg font-bold text-green-200 mb-3 flex items-center gap-2">
-                🎯 Come Giocare
-              </h3>
-              <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm text-green-100">
-                <div>
-                  <h4 className="font-bold mb-1">📖 Leggi la Citazione</h4>
-                  <p className="text-xs">Ogni domanda presenta una citazione storica famosa</p>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-1">🤔 Scegli l'Autore</h4>
-                  <p className="text-xs">Indovina fra 4 opzioni l'autore della citazione</p>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-1">⏰ Attenzione al Tempo</h4>
-                  <p className="text-xs">Hai 60 secondi per rispondere (Achille) o tempo variabile (Eracle)</p>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-1">📚 Impara la Storia</h4>
-                  <p className="text-xs">Scopri il contesto e eventualmente perché la citazione è ingannevole</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Sistema di Punteggio */}
-            <div className="bg-gradient-to-r from-blue-900/60 to-indigo-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-blue-400/50">
-              <h3 className="text-sm md:text-lg font-bold text-blue-200 mb-3 flex items-center gap-2">
-                🏆 Sistema di Punteggio
-              </h3>
-              <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm text-blue-100">
-                <div>
-                  <h4 className="font-bold mb-1 text-purple-200">🏛️ Modalità Eracle</h4>
-                  <p className="text-xs mb-1">Punti base: 100 × moltiplicatore livello × moltiplicatore tempo</p>
-                  <p className="text-xs">Bonus finale: +50% per ogni aiuto non utilizzato</p>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-1 text-orange-200">⚔️ Modalità Achille</h4>
-                  <p className="text-xs mb-1">Punti base: 50 × difficoltà × velocità di risposta</p>
-                  <p className="text-xs">Moltiplicatore streak: cresce con i successi consecutivi</p>
-                </div>
-              </div>
-            </div>
-
             {/* Aiuti Disponibili */}
             <div className="bg-gradient-to-r from-cyan-900/60 to-teal-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-cyan-400/50">
               <h3 className="text-sm md:text-lg font-bold text-cyan-200 mb-3 flex items-center gap-2">
@@ -539,6 +520,27 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
                 </div>
               </div>
             </div>
+
+            {/* Sistema di Punteggio */}
+            <div className="bg-gradient-to-r from-blue-900/60 to-indigo-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-blue-400/50">
+              <h3 className="text-sm md:text-lg font-bold text-blue-200 mb-3 flex items-center gap-2">
+                🏆 Sistema di Punteggio
+              </h3>
+              <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm text-blue-100">
+                <div>
+                  <h4 className="font-bold mb-1 text-purple-200">🏛️ Modalità Eracle</h4>
+                  <p className="text-xs mb-1">Punti base: 100 × moltiplicatore livello × moltiplicatore tempo</p>
+                  <p className="text-xs">Bonus finale: +50% per ogni aiuto non utilizzato</p>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-1 text-orange-200">⚔️ Modalità Achille</h4>
+                  <p className="text-xs mb-1">Punti base: 50 × difficoltà × velocità di risposta</p>
+                  <p className="text-xs">Moltiplicatore streak: cresce con i successi consecutivi</p>
+                </div>
+              </div>
+            </div>
+
+            
 
             {/* Leaderboard */}
             <div className="bg-gradient-to-r from-violet-900/60 to-purple-800/60 backdrop-blur-sm rounded-2xl p-4 border-2 border-violet-400/50">

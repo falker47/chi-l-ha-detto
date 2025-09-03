@@ -358,7 +358,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                   showMode === 'achille' ? 'bg-amber-500 text-white shadow-lg' : 'text-white/70 hover:text-white/90'
                 }`}
               >
-                ⚡ Achille
+                ⚔️ Achille
               </button>
             </div>
           </div>

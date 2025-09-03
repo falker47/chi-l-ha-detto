@@ -2873,7 +2873,7 @@
     "choices": [
       "Jim Lovell",
       "Neil Armstrong",
-      "Buzz Aldrin",
+      "Dwight D. Eisenhower",
       "Yuri Gagarin"
     ],
     "correctIndex": 0,
@@ -2887,7 +2887,7 @@
     ],
     "difficulty": 3,
     "spiciness": 0,
-    "hint_short": "Storia spaziale del XX secolo",
+    "hint_short": "Missione Apollo 13",
     "hint_more": "Astronauta americano del XX secolo, comandante della missione Apollo 13, noto per aver pronunciato questa celebre frase durante l'emergenza che colpì la missione spaziale.",
     "ambiguity_note": "Lovell la pronunciò durante Apollo 13, Armstrong fu il primo sulla Luna.",
     "language_orig": "EN",
