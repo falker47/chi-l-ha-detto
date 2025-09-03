@@ -3,6 +3,7 @@ import type { Item } from "../types";
 import itemsRaw from "../data/quotes.json";
 import { personaggiImageMap } from "../data/imageMappings";
 import HeroImagePreloader from "./HeroImagePreloader";
+import Leaderboard from "./Leaderboard";
 
 
 
@@ -38,6 +39,8 @@ export default function ChiLHaDetto({
   const [streak, setStreak] = useState(0);
   const [finalStreak, setFinalStreak] = useState(0);
   const [usedQuestions, setUsedQuestions] = useState<Set<number>>(new Set());
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
+  const [recordSaved, setRecordSaved] = useState(false);
   
   // Funzione per caricare le domande usate dal localStorage
   const loadUsedQuestions = useCallback((): Set<number> => {
@@ -465,6 +468,12 @@ export default function ChiLHaDetto({
           const animationDuration = newLevel === 12 ? 3000 : 1500;
           setTimeout(() => {
             setShowClimbingAnimation(false);
+            // Se è vittoria finale, mostra la leaderboard
+            if (newLevel === 12) {
+              setTimeout(() => {
+                setShowLeaderboard(true);
+              }, 1000);
+            }
           }, animationDuration);
         } else {
         // Modalità Battaglia di Achille: mostra animazione di vittoria
@@ -508,6 +517,10 @@ export default function ChiLHaDetto({
           setTimeout(() => {
             setShowGameOverAnimation(false);
             setRevealed(true);
+            // Mostra la leaderboard dopo un breve delay
+            setTimeout(() => {
+              setShowLeaderboard(true);
+            }, 1000);
           }, 2000);
           return;
         }
@@ -528,6 +541,10 @@ export default function ChiLHaDetto({
           setShowGameOverAnimation(false);
           setRevealed(true); // Imposta revealed solo dopo l'animazione
           setGameOver(true); // Imposta game over solo dopo l'animazione
+          // Mostra la leaderboard dopo un breve delay
+          setTimeout(() => {
+            setShowLeaderboard(true);
+          }, 1000);
         }, 2000);
       }
     }
@@ -658,6 +675,7 @@ export default function ChiLHaDetto({
   }
 
   return (
+    <>
     <HeroImagePreloader>
       <div className="relative min-h-screen optimize-mobile">
         {/* Background Image dinamico */}
@@ -1340,6 +1358,21 @@ export default function ChiLHaDetto({
       
       
       </HeroImagePreloader>
-   );
- }
+      
+      {/* Leaderboard */}
+      {showLeaderboard && (
+        <Leaderboard
+          onClose={() => setShowLeaderboard(false)}
+          gameMode={gameMode === 'classic' ? 'achille' : gameMode}
+          currentStreak={gameMode === 'millionaire' ? currentLevel : finalStreak}
+          currentScore={score}
+          onSaveRecord={(name) => {
+            setRecordSaved(true);
+            console.log(`Record salvato per ${name}`);
+          }}
+        />
+      )}
+    </>
+  );
+}
 

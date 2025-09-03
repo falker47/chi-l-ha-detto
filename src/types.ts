@@ -1,29 +1,20 @@
-export type Item = {
+export interface Item {
   id: string;
   quote: string;
-  author: string;               // DEVE coincidere con la scelta corretta
-  choices: [string, string, string, string];
-  correctIndex: 0 | 1 | 2 | 3;
+  choices: string[];
+  author: string;
+  correctIndex: number;
   year_or_period: string;
   source_title: string;
   source_link: string;
   tags: string[];
-  difficulty: 1 | 2 | 3 | 4 | 5;
-  spiciness: 0 | 1 | 2;         // 0=classic,1=mixed,2=spicy
-  hint_short: string;
-  hint_more: string;
+  difficulty: number;
+  spiciness: number;
+  context: string;
   ambiguity_note: string;
-  language_orig: string;
   sensitive?: boolean;
-  context: string;              // contestualizzazione educativa
-};
-
-
-
-
-
-
-
-
-
-
+  language_orig?: string;
+  quote_it?: string;
+  hint_short?: string;
+  hint_more?: string;
+}

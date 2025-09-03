@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ChiLHaDetto from "./components/ChiLHaDetto";
+import Leaderboard from "./components/Leaderboard";
 
 function MainMenu({ 
   onStartGame, 
@@ -8,7 +9,9 @@ function MainMenu({
   gameMode,
   setGameMode,
   showTutorial,
-  setShowTutorial
+  setShowTutorial,
+  showLeaderboard,
+  setShowLeaderboard
 }: { 
   onStartGame: (backgroundImage: string) => void;
   includeSensitive: boolean;
@@ -17,6 +20,8 @@ function MainMenu({
   setGameMode: (mode: 'classic' | 'millionaire' | null) => void;
   showTutorial: boolean;
   setShowTutorial: (value: boolean) => void;
+  showLeaderboard: boolean;
+  setShowLeaderboard: (value: boolean) => void;
 }) {
   
 
@@ -163,6 +168,36 @@ function MainMenu({
                   </svg>
                 </div>
                 <span className="font-medium">Tutorial</span>
+              </div>
+            </button>
+
+            {/* Bottone Leaderboard */}
+            <button
+              onClick={() => setShowLeaderboard(true)}
+              className="px-3 sm:px-4 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 h-12 sm:h-14 flex items-center justify-center w-24 sm:w-28"
+            >
+              <div className="flex items-center justify-center gap-2">
+                {/* Icona leaderboard */}
+                <div className="w-4 h-4 sm:w-5 sm:h-5">
+                  <svg 
+                    className="w-full h-full text-white" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                    <path d="M4 22h16"/>
+                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21l-1.25.5c-.5.2-1.28.2-1.78 0l-1.25-.5A1.25 1.25 0 0 1 4 17v-2.34"/>
+                    <path d="M20 14.66V17c0 .55.47.98.97 1.21l1.25.5c.5.2 1.28.2 1.78 0l1.25-.5A1.25 1.25 0 0 0 24 17v-2.34"/>
+                    <path d="M12 14.66V17c0 .55.47.98.97 1.21l1.25.5c.5.2 1.28.2 1.78 0l1.25-.5A1.25 1.25 0 0 0 18 17v-2.34"/>
+                    <path d="M12 14.66V17c0 .55-.47.98-.97 1.21l-1.25.5c-.5.2-1.28.2-1.78 0l-1.25-.5A1.25 1.25 0 0 1 6 17v-2.34"/>
+                  </svg>
+                </div>
+                <span className="font-medium">Top 5</span>
               </div>
             </button>
 
@@ -488,6 +523,7 @@ function App() {
   const [backgroundImage, setBackgroundImage] = useState<string>('images/hero-bg.png'); // Immagine di background selezionata
   const [imagesPreloaded, setImagesPreloaded] = useState(false);
   const [showTutorial, setShowTutorial] = useState(false);
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
 
   // Preload delle immagini delle modalità per evitare lag su mobile
   useEffect(() => {
@@ -654,9 +690,21 @@ function App() {
            setGameMode={setGameMode}
            showTutorial={showTutorial}
            setShowTutorial={setShowTutorial}
+           showLeaderboard={showLeaderboard}
+           setShowLeaderboard={setShowLeaderboard}
          />
        )}
       </div>
+      
+      {/* Leaderboard */}
+      {showLeaderboard && (
+        <Leaderboard
+          onClose={() => setShowLeaderboard(false)}
+          gameMode={gameMode === 'classic' ? 'achille' : (gameMode || 'achille')}
+          currentStreak={0}
+          currentScore={0}
+        />
+      )}
     </div>
   );
 }

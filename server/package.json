@@ -1,0 +1,21 @@
+{
+  "name": "chi-l-ha-detto-leaderboard",
+  "version": "1.0.0",
+  "description": "Backend per la leaderboard di Chi l'ha detto?",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["leaderboard", "game", "express"],
+  "author": "falker47",
+  "license": "MIT"
+}
