@@ -468,16 +468,16 @@
   {
     "id": "q18",
     "quote": "Una vita senza ricerca non è degna di essere vissuta.",
-    "author": "Platone",
+    "author": "Socrate",
     "choices": [
       "Platone",
       "Socrate",
       "Aristotele",
       "Epicuro"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "year_or_period": "399 a.C.",
-    "source_title": "Apologia di Socrate",
+    "source_title": "Apologia di Socrate (trascritta da Platone)",
     "source_link": "https://it.wikipedia.org/wiki/Apologia_di_Socrate_(Platone)",
     "tags": [
       "filosofia",
@@ -486,9 +486,9 @@
     ],
     "difficulty": 7,
     "spiciness": 0,
-    "hint_short": "Filosofia greca antica",
-    "hint_more": "Filosofo greco del IV secolo a.C., allievo di Socrate e maestro di Aristotele, autore di dialoghi come 'La Repubblica' e 'L'Apologia di Socrate'.",
-    "ambiguity_note": "Socrate la pronunciò nel processo, Platone la immortalò nella scrittura. La filosofia nasce dalla ricerca, non dalla certezza. Socrate praticava, Platone teorizzava.",
+    "hint_short": "Filosofo ateniese del V secolo a.C.",
+    "hint_more": "Filosofo greco del V secolo a.C., maestro di Platone, noto per il metodo socratico e per aver pronunciato questa frase durante il suo processo nel 399 a.C.",
+    "ambiguity_note": "Socrate la pronunciò nel processo, Platone la immortalò nella scrittura. La filosofia nasce dalla ricerca, non dalla certezza.",
     "language_orig": "EL",
     "sensitive": false,
     "context": "Il manifesto della filosofia: la vita senza ricerca è morte intellettuale. Socrate morì per difendere questo principio."
@@ -3800,7 +3800,7 @@
     "author": "Gaio Giulio Cesare",
     "choices": [
       "Gaio Giulio Cesare",
-      "Cicerone",
+      "Marco Tullio Cicerone",
       "Luigi Pirandello",
       "Ottaviano Augusto"
     ],
@@ -4019,7 +4019,7 @@
     "author": "Decimo Giunio Giovenale",
     "choices": [
       "Archimede",
-      "Cicerone",
+      "Marco Tullio Cicerone",
       "Dante Alighieri",
       "Decimo Giunio Giovenale"
     ],
