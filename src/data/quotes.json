@@ -1668,7 +1668,7 @@
     "ambiguity_note": "Le opzioni includono Feynman (altro fisico) e Musk (imprenditore moderno), entrambi associati al tema della creatività. Mao è fuorviante perché è un leader politico. Einstein pronunciò questa frase durante un'intervista.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Nell'America del 1929, Einstein sviluppò una filosofia della scienza basata sull'immaginazione. Credeva che l'immaginazione fosse più importante della conoscenza, trasformando la creatività in metodo scientifico e influenzando il pensiero scientifico moderno."
+    "context": "Nell'America del 1929, Einstein sviluppò una filosofia della scienza basata sull'immaginazione. Credeva che l'immaginazione fosse più importante della conoscenza perché la conoscenza è limitata a ciò che sappiamo, mentre l'immaginazione abbraccia tutto il mondo e stimola il progresso, trasformando la creatività in motore della scoperta scientifica."
   },
   {
     "id": "q61",
@@ -1693,10 +1693,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XX secolo",
     "hint_more": "Filosofo francese del XX secolo, premio Nobel per la letteratura, noto per aver sviluppato l'esistenzialismo e per aver scritto opere come 'L'essere e il nulla' e 'A porte chiuse'.",
-    "ambiguity_note": "Sartre non inventò l'esistenzialismo, ma lo sistematizzò: l'inferno sono gli altri, non un luogo. Camus scriveva dell'assurdo, Sartre delle relazioni umane.",
+    "ambiguity_note": "Le opzioni includono de Beauvoir (compagna di Sartre) e Camus (altro esistenzialista), entrambi associati al tema dell'esistenzialismo. Cavour è fuorviante perché è un politico italiano. Sartre scrisse questo per la sua opera teatrale.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "La rivoluzione di Sartre: l'inferno non è un luogo, ma gli altri che ci giudicano. L'esistenzialismo diventa psicologia sociale."
+    "context": "Nella Francia del 1944, Sartre sviluppò una filosofia esistenzialista basata sulle relazioni umane. Credeva che l'inferno fossero gli altri, trasformando l'esistenzialismo in analisi delle relazioni umane e influenzando il pensiero filosofico del Novecento."
   },
   {
     "id": "q62",
@@ -1710,7 +1710,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "49 a.C.",
-    "source_title": "Attraversamento del Rubicone",
+    "source_title": "Attraversamento del Rubicone (49 a.C.) - Cit. storica",
     "source_link": "https://en.wikipedia.org/wiki/Alea_iacta_est",
     "tags": [
       "roma",
@@ -1720,10 +1720,10 @@
     "spiciness": 0,
     "hint_short": "Storia romana antica",
     "hint_more": "Generale e politico romano del I secolo a.C., noto per aver attraversato il Rubicone, per le sue conquiste in Gallia e per aver pronunciato questa frase dopo una rapida vittoria in Asia Minore.",
-    "ambiguity_note": "Cesare non inventò il concetto di punto di non ritorno, ma lo rese celebre: 'Alea iacta est' è diventato il simbolo della decisione irrevocabile. Il dado è tratto, non si può tornare indietro.",
+    "ambiguity_note": "Le opzioni includono Augusto (successore di Cesare) e Alessandro Magno (altro conquistatore), entrambi associati al tema della decisione. Cicerone è fuorviante perché è un oratore. Cesare pronunciò questa frase attraversando il Rubicone.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Il momento della decisione: Cesare attraversa il Rubicone e scatena la guerra civile. Il dado è tratto, non si può tornare indietro."
+    "context": "Nell'antica Roma del 49 a.C., Cesare sviluppò una filosofia della decisione basata sul punto di non ritorno. Credeva che 'Alea iacta est' rappresentasse la decisione irrevocabile, trasformando il momento decisivo in simbolo della determinazione e influenzando il linguaggio politico per secoli."
   },
   {
     "id": "q63",
@@ -1737,7 +1737,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "23 a.C.",
-    "source_title": "Odi I, 11",
+    "source_title": "Odi I, 11 (23 a.C.) - Libro I",
     "source_link": "https://en.wikipedia.org/wiki/Carpe_diem",
     "tags": [
       "latino",
@@ -1748,10 +1748,10 @@
     "spiciness": 0,
     "hint_short": "Poesia latina antica",
     "hint_more": "Poeta latino del I secolo a.C., autore delle 'Odi' e delle 'Satire', noto per aver sviluppato la poesia lirica latina e per aver influenzato la letteratura occidentale.",
-    "ambiguity_note": "Orazio non inventò l'edonismo, ma lo sistematizzò: 'Carpe diem' è diventato il motto della vita intensa. La poesia diventa filosofia di vita.",
+    "ambiguity_note": "Le opzioni includono Virgilio (altro poeta latino) e Wilde (scrittore vittoriano), entrambi associati al tema dell'edonismo. Cesare è fuorviante perché è un generale. Orazio scrisse questo nelle sue Odi.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La filosofia di Orazio: cogliere il presente perché il futuro è incerto. La poesia diventa saggezza di vita."
+    "context": "Nell'antica Roma del 23 a.C., Orazio sviluppò una filosofia della vita basata sull'edonismo moderato. Credeva che 'Carpe diem' rappresentasse la saggezza di vivere intensamente il presente, trasformando la poesia in filosofia di vita e influenzando il pensiero occidentale per secoli."
   },
   {
     "id": "q64",
@@ -1765,7 +1765,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1748",
-    "source_title": "Advice to a Young Tradesman",
+    "source_title": "Advice to a Young Tradesman (1748) - Consigli",
     "source_link": "https://en.wikipedia.org/wiki/Time_is_money",
     "tags": [
       "economia",
@@ -1776,10 +1776,10 @@
     "spiciness": 0,
     "hint_short": "Storia americana del XVIII secolo",
     "hint_more": "Scienziato e politico americano del XVIII secolo, uno dei padri fondatori degli Stati Uniti, noto per i suoi esperimenti con l'elettricità e per aver contribuito alla stesura della Dichiarazione d'indipendenza.",
-    "ambiguity_note": "Franklin non inventò il capitalismo, ma lo sistematizzò: 'Time is money' è diventato il motto dell'etica del lavoro americana. Il tempo diventa merce.",
+    "ambiguity_note": "Le opzioni includono Hume (filosofo scozzese) e Rousseau (filosofo francese), entrambi associati al tema dell'etica. Gesù Cristo è fuorviante perché è una figura religiosa. Franklin scrisse questo per un giovane commerciante.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La rivoluzione di Franklin: il tempo è denaro, ogni minuto ha valore economico. L'etica del lavoro diventa filosofia di vita."
+    "context": "Nell'America del 1748, Franklin sviluppò una filosofia economica basata sull'etica del lavoro. Credeva che il tempo fosse denaro, trasformando il tempo in merce e fondando l'etica del lavoro americana che influenzò il capitalismo moderno."
   },
   {
     "id": "q65",
@@ -1793,7 +1793,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1597",
-    "source_title": "Meditationes Sacrae",
+    "source_title": "Meditationes Sacrae (1597)",
     "source_link": "https://en.wikipedia.org/wiki/Scientia_potentia_est",
     "tags": [
       "conoscenza",
@@ -1804,10 +1804,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia inglese del XVI-XVII secolo",
     "hint_more": "Filosofo inglese del XVI-XVII secolo, considerato il padre del metodo scientifico moderno, autore del 'Novum Organum' e noto per aver sviluppato l'empirismo.",
-    "ambiguity_note": "Bacon non inventò il metodo scientifico, ma lo sistematizzò: 'Scientia potentia est' è diventato il motto della rivoluzione scientifica. La conoscenza diventa potere.",
+    "ambiguity_note": "Le opzioni includono Hobbes e Locke (altri filosofi inglesi), entrambi associati al tema del potere. Newton è fuorviante perché è un fisico. Bacon scrisse questo per giustificare la rivoluzione scientifica.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La rivoluzione di Bacon: la conoscenza è potere, la scienza è controllo della natura. Il metodo scientifico trasforma la conoscenza in dominio."
+    "context": "Nell'Inghilterra del 1597, Bacon sviluppò una filosofia della conoscenza basata sul potere. Credeva che la conoscenza fosse potere perché permette di controllare la natura, trasformando la filosofia in metodo scientifico e fondando la rivoluzione scientifica moderna."
   },
   {
     "id": "q66",
@@ -1821,7 +1821,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1969",
-    "source_title": "Allunaggio Apollo 11",
+    "source_title": "Allunaggio Apollo 11 (1969)",
     "source_link": "https://en.wikipedia.org/wiki/Apollo_11",
     "tags": [
       "spazio",
@@ -1832,10 +1832,10 @@
     "spiciness": 0,
     "hint_short": "Storia spaziale del XX secolo",
     "hint_more": "Astronauta americano del XX secolo, primo uomo a camminare sulla Luna durante la missione Apollo 11, noto per aver pronunciato questa celebre frase durante l'allunaggio.",
-    "ambiguity_note": "Armstrong non inventò la frase, ma la rese celebre: 'One small step' è diventata la frase più famosa dell'esplorazione spaziale. Il momento che cambiò la storia.",
+    "ambiguity_note": "Le opzioni includono Aldrin (altro astronauta dell'Apollo 11) e Cesare/Alessandro (conquistatori), entrambi associati al tema della conquista. Armstrong pronunciò questa frase durante l'allunaggio.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il momento storico: il primo uomo sulla Luna, un piccolo passo per Armstrong, un balzo per l'umanità. La frase che cambiò la storia."
+    "context": "Nell'America del 1969, Armstrong sviluppò una filosofia dell'esplorazione basata sul significato storico. Credeva che un piccolo passo individuale potesse rappresentare un gigantesco balzo per l'umanità, trasformando l'esplorazione spaziale in simbolo del progresso umano e influenzando la percezione della storia."
   },
   {
     "id": "q67",
@@ -1849,7 +1849,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "VI–IV sec. a.C. (tradiz.)",
-    "source_title": "Tao Te Ching",
+    "source_title": "Tao Te Ching (VI-IV sec. a.C.)",
     "source_link": "https://en.wikipedia.org/wiki/Tao_Te_Ching",
     "tags": [
       "filosofia orientale",
@@ -1859,10 +1859,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia cinese antica",
     "hint_more": "Filosofo cinese del VI-IV secolo a.C., considerato il fondatore del taoismo, autore del 'Tao Te Ching' e noto per la sua filosofia del 'wu wei' (non-azione).",
-    "ambiguity_note": "Lao-Tzu non inventò il taoismo, ma lo sistematizzò: ogni grande impresa inizia con un piccolo passo. Confucio insegnava l'etica, Lao-Tzu la saggezza.",
+    "ambiguity_note": "Le opzioni includono de la Rochefoucauld (moralista francese) e Wilde (scrittore vittoriano), entrambi associati al tema della saggezza. Mao è fuorviante perché è un leader politico moderno. Lao-Tzu scrisse questo nel Tao Te Ching.",
     "language_orig": "ZH",
     "sensitive": false,
-    "context": "La saggezza taoista: ogni grande impresa inizia con un piccolo passo. Lao-Tzu trasformò la filosofia in saggezza pratica."
+    "context": "Nella Cina del VI-IV secolo a.C., Lao-Tzu sviluppò una filosofia taoista basata sulla saggezza pratica. Credeva che ogni grande impresa iniziasse con un piccolo passo, trasformando la filosofia in saggezza pratica e influenzando il pensiero orientale per millenni."
   },
   {
     "id": "q68",
@@ -1876,7 +1876,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1964",
-    "source_title": "Slogan pre-incontro",
+    "source_title": "Slogan pre-incontro (1964)",
     "source_link": "https://en.wikipedia.org/wiki/Muhammad_Ali#Quotes",
     "tags": [
       "sport",
@@ -1887,10 +1887,10 @@
     "spiciness": 0,
     "hint_short": "Sport del XX secolo",
     "hint_more": "Pugile americano del XX secolo, considerato uno dei più grandi pugili della storia, noto per la sua velocità, per i suoi slogan e per aver cambiato nome da Cassius Clay.",
-    "ambiguity_note": "Tyson era potente e diretto, Ali elegante e veloce come una farfalla.",
+    "ambiguity_note": "Le opzioni includono Tyson (altro pugile) e Sun Tzu (stratega antico), entrambi associati al tema della strategia. Woolf è fuorviante perché è una scrittrice. Ali pronunciò questo slogan prima di un incontro.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di Ali: eleganza e velocità come una farfalla, potenza come un'ape."
+    "context": "Nell'America del 1964, Ali sviluppò una filosofia della boxe basata sull'eleganza e la velocità. Credeva che bisognasse volare come una farfalla e pungere come un'ape, trasformando la boxe in arte e influenzando la cultura popolare con i suoi slogan."
   },
   {
     "id": "q69",
@@ -1904,7 +1904,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "c. 1902",
-    "source_title": "Interviste e scritti",
+    "source_title": "Interviste e scritti (c. 1902)",
     "source_link": "https://en.wikipedia.org/wiki/Thomas_Edison#Quotations",
     "tags": [
       "innovazione",
@@ -1915,10 +1915,10 @@
     "spiciness": 0,
     "hint_short": "Inventori del XIX-XX secolo",
     "hint_more": "Inventore americano del XIX-XX secolo, noto per aver inventato la lampadina, il fonografo e per aver fondato il laboratorio di Menlo Park, considerato uno dei più prolifici inventori della storia.",
-    "ambiguity_note": "Edison la pronunciò, diventando il motto di tutti gli inventori e imprenditori.",
+    "ambiguity_note": "Le opzioni includono Nietzsche (filosofo) e Musk (imprenditore moderno), entrambi associati al tema dell'innovazione. Pertini è fuorviante perché è un politico italiano. Edison pronunciò questa frase durante un'intervista.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La formula del successo: l'ispirazione conta poco, la dedizione tutto."
+    "context": "Nell'America del 1902, Edison sviluppò una filosofia dell'innovazione basata sulla dedizione. Credeva che il genio fosse per l'1% ispirazione e per il 99% dedizione, trasformando l'invenzione in metodo e influenzando il pensiero imprenditoriale moderno."
   },
   {
     "id": "q70",
@@ -1932,7 +1932,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "V sec. a.C.",
-    "source_title": "Frammenti (tradizione)",
+    "source_title": "Frammenti (V sec. a.C.) - Tradizione",
     "source_link": "https://en.wikipedia.org/wiki/Heraclitus",
     "tags": [
       "filosofia antica",
@@ -1942,10 +1942,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia greca presocratica",
     "hint_more": "Filosofo greco presocratico del VI-V secolo a.C., noto per la sua dottrina del divenire e per aver sostenuto che 'tutto scorre' (panta rhei), considerato il filosofo del cambiamento.",
-    "ambiguity_note": "Eraclito teorizzava il divenire, altri presocratici cercavano l'essere immutabile.",
+    "ambiguity_note": "Le opzioni includono Cesare e Machiavelli (statisti), entrambi associati al tema del cambiamento. Pitagora è fuorviante perché è un matematico. Eraclito scrisse questo nei suoi frammenti.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "La filosofia del divenire: tutto scorre, solo il cambiamento è eterno."
+    "context": "Nell'antica Grecia del V secolo a.C., Eraclito sviluppò una filosofia presocratica basata sul divenire. Credeva che nulla fosse permanente tranne il cambiamento, trasformando la filosofia in dottrina del divenire e influenzando il pensiero occidentale per millenni."
   },
   {
     "id": "q71",
@@ -1959,7 +1959,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "V sec. a.C.",
-    "source_title": "Analects",
+    "source_title": "Analects (V sec. a.C.)",
     "source_link": "https://en.wikipedia.org/wiki/Analects",
     "tags": [
       "filosofia",
@@ -1970,10 +1970,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia cinese antica",
     "hint_more": "Filosofo cinese del VI-V secolo a.C., considerato il fondatore del confucianesimo, autore degli 'Analetti' e noto per aver influenzato profondamente la cultura cinese.",
-    "ambiguity_note": "Socrate diceva 'so di non sapere', Confucio 'conosco i miei limiti'.",
+    "ambiguity_note": "Le opzioni includono Socrate (filosofo greco) e Lao-Tzu (filosofo taoista), entrambi associati al tema della saggezza. Aristotele è fuorviante perché è un filosofo greco. Confucio scrisse questo negli Analetti.",
     "language_orig": "ZH",
     "sensitive": false,
-    "context": "La saggezza confuciana: la vera conoscenza è riconoscere la propria ignoranza."
+    "context": "Nella Cina del V secolo a.C., Confucio sviluppò una filosofia etica basata sull'umiltà intellettuale. Credeva che la vera conoscenza fosse sapere i limiti della propria ignoranza, trasformando la filosofia in saggezza pratica e influenzando il pensiero cinese per millenni."
   },
   {
     "id": "q72",
@@ -1987,7 +1987,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1961",
-    "source_title": "Vostok 1 (resoconti)",
+    "source_title": "Missione Vostok 1 (12 aprile 1961)",
     "source_link": "https://it.wikipedia.org/wiki/Jurij_Gagarin",
     "tags": [
       "spazio",
@@ -1998,10 +1998,10 @@
     "spiciness": 0,
     "hint_short": "Storia spaziale del XX secolo",
     "hint_more": "Cosmonauta sovietico del XX secolo, primo uomo a viaggiare nello spazio durante la missione Vostok 1, noto per aver descritto la Terra come 'blu' dall'orbita.",
-    "ambiguity_note": "Gagarin fu il primo uomo nello spazio, Armstrong il primo sulla Luna.",
+    "ambiguity_note": "Le opzioni includono Armstrong (primo uomo sulla Luna) e Alessandro Magno (conquistatore antico), entrambi associati al tema dell'esplorazione. Gesù Cristo è fuorviante perché è una figura religiosa. Gagarin pronunciò questa frase durante la missione Vostok 1.",
     "language_orig": "RU",
     "sensitive": false,
-    "context": "Il primo uomo nello spazio: Gagarin vede la Terra blu dall'orbita."
+    "context": "Nell'URSS del 1961, durante la Guerra Fredda spaziale, Gagarin sviluppò una nuova perspettiva filosofica attraverso l'esplorazione cosmica. Come primo uomo nello spazio, credeva che vedere la Terra dall'orbita unisse tutti gli esseri umani oltre le divisioni politiche, trasformando l'esplorazione spaziale in simbolo di pace e unità universale."
   },
   {
     "id": "q73",
@@ -2015,7 +2015,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "VI sec. a.C. (tradiz.)",
-    "source_title": "The Art of War",
+    "source_title": "L'arte della guerra (VI sec. a.C.)",
     "source_link": "https://en.wikipedia.org/wiki/The_Art_of_War",
     "tags": [
       "strategia",
@@ -2026,10 +2026,10 @@
     "spiciness": 0,
     "hint_short": "Strategia militare antica",
     "hint_more": "Stratega militare cinese del VI secolo a.C., autore del celebre trattato 'L'arte della guerra', considerato uno dei più influenti manuali di strategia mai scritti.",
-    "ambiguity_note": "Sun Tzu teorizzava l'inganno militare, i generali moderni lo praticano.",
+    "ambiguity_note": "Le opzioni includono Churchill (leader bellico), Napoleone (strategia napoleonica) e Clausewitz (teorico militare), tutti associati al tema della strategia militare. Sun Tzu scrisse questo principio fondamentale nell'Arte della Guerra.",
     "language_orig": "ZH",
     "sensitive": false,
-    "context": "La strategia di Sun Tzu: l'inganno è l'arma più potente in guerra."
+    "context": "Nella Cina del VI secolo a.C., durante il periodo degli Stati Combattenti, Sun Tzu sviluppò una filosofia militare basata sulla strategia psicologica. Credeva che tutta la guerra si fondasse sull'inganno perché vincere senza combattere rappresenta l'eccellenza suprema, trasformando la strategia militare in arte dell'intelligence e influenzando il pensiero strategico per millenni."
   },
   {
     "id": "q74",
@@ -2043,7 +2043,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1963",
-    "source_title": "Letter from Birmingham Jail",
+    "source_title": "Letter from Birmingham Jail (16 aprile 1963)",
     "source_link": "https://en.wikipedia.org/wiki/Letter_from_Birmingham_Jail",
     "tags": [
       "diritti civili",
@@ -2053,10 +2053,10 @@
     "spiciness": 0,
     "hint_short": "Storia americana del XX secolo",
     "hint_more": "Pastore battista e attivista americano del XX secolo, leader del movimento per i diritti civili, noto per il suo discorso 'I have a dream' e per la sua filosofia della nonviolenza.",
-    "ambiguity_note": "MLK teorizzava la giustizia universale, Gandhi la praticava in India.",
+    "ambiguity_note": "Le opzioni includono Gandhi (leader della nonviolenza), Baldwin (scrittore afroamericano) e Mandela (leader sudafricano), tutti associati al tema dei diritti civili. King scrisse questa frase nella famosa lettera dal carcere di Birmingham.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di MLK: l'ingiustizia ovunque minaccia la giustizia ovunque."
+    "context": "Negli Stati Uniti del 1963, durante il movimento per i diritti civili, King sviluppò una filosofia della giustizia basata sull'interconnessione morale. Credeva che l'ingiustizia ovunque fosse una minaccia alla giustizia ovunque perché tutti sono legati in una rete di mutualità, trasformando la lotta locale in movimento universale per i diritti umani."
   },
   {
     "id": "q75",
@@ -2070,7 +2070,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "inizi XX secolo",
-    "source_title": "Discorsi e raccolte",
+    "source_title": "Discorsi pubblici (inizi XX secolo)",
     "source_link": "https://en.wikipedia.org/wiki/Theodore_Roosevelt#Quotes",
     "tags": [
       "leadership",
@@ -2080,10 +2080,10 @@
     "spiciness": 0,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano del primo Novecento, noto per la sua politica del 'Big Stick' e per aver promosso la costruzione del Canale di Panama.",
-    "ambiguity_note": "Roosevelt la pronunciò, diventando il motto del pragmatismo americano.",
+    "ambiguity_note": "Le opzioni includono Franklin D. Roosevelt (cugino di Theodore), Lincoln (altro presidente) e Churchill (leader bellico), tutti associati al tema della leadership. Theodore Roosevelt pronunciò questa frase durante i suoi discorsi pubblici.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il pragmatismo di Roosevelt: agire con quello che si ha, dove si è."
+    "context": "Negli Stati Uniti dei primi del XX secolo, Theodore Roosevelt sviluppò una filosofia pragmatica dell'azione. Credeva che bisognasse fare ciò che si può con ciò che si ha dove si è, trasformando il pragmatismo in ideologia politica americana e influenzando l'attivismo moderno."
   },
   {
     "id": "q76",
@@ -2097,7 +2097,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1940",
-    "source_title": "Discorso alla Camera dei Comuni",
+    "source_title": "Discorso alla Camera dei Comuni (13 maggio 1940)",
     "source_link": "https://en.wikipedia.org/wiki/Blood,_toil,_tears,_and_sweat",
     "tags": [
       "WWII",
@@ -2108,10 +2108,10 @@
     "spiciness": 1,
     "hint_short": "Storia britannica del XX secolo",
     "hint_more": "Primo ministro britannico durante la Seconda guerra mondiale, noto per i suoi discorsi infuocati e per aver guidato il Regno Unito nella resistenza contro il nazismo.",
-    "ambiguity_note": "Churchill pronunciò la frase più famosa della resistenza britannica al nazismo.",
+    "ambiguity_note": "Le opzioni includono Roosevelt (alleato americano), de Gaulle (leader della Resistenza francese) e Eisenhower (generale alleato), tutti associati al tema della leadership bellica. Churchill pronunciò questa frase nel suo primo discorso da Primo Ministro.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il discorso che mobilitò la Gran Bretagna: solo sangue, fatica, lacrime e sudore contro Hitler."
+    "context": "Nel Regno Unito del 1940, all'inizio della Seconda Guerra Mondiale, Churchill sviluppò una retorica bellica basata sul sacrificio. Credeva che la leadership richiedesse di offrire sangue, fatica, lacrime e sudore, trasformando la guerra in prova morale e influenzando la retorica politica moderna."
   },
   {
     "id": "q77",
@@ -2125,7 +2125,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1848",
-    "source_title": "Manifesto del Partito Comunista",
+    "source_title": "Manifesto del Partito Comunista (1848)",
     "source_link": "https://en.wikipedia.org/wiki/The_Communist_Manifesto",
     "tags": [
       "politica",
@@ -2136,10 +2136,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore del 'Manifesto del Partito Comunista' insieme a Engels, noto per la sua critica del capitalismo e per aver influenzato il pensiero socialista.",
-    "ambiguity_note": "Marx e Engels scrissero insieme il Manifesto, Lenin lo mise in pratica.",
+    "ambiguity_note": "Le opzioni includono Lenin (rivoluzionario russo), Voltaire (filosofo illuminista) e Gramsci (teorico marxista), tutti associati al tema della politica. Marx e Engels scrissero insieme questa frase finale del Manifesto.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "Il grido del Manifesto comunista: l'internazionalismo proletario contro il capitalismo."
+    "context": "Nell'Europa del 1848, durante le rivoluzioni democratiche, Marx e Engels svilupparono una filosofia rivoluzionaria basata sull'internazionalismo. Credevano che i proletari di tutti i paesi dovessero unirsi per abbattere il capitalismo, trasformando la lotta di classe in movimento globale e influenzando la storia del XX secolo."
   },
   {
     "id": "q78",
@@ -2153,7 +2153,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "IV–V sec. d.C.",
-    "source_title": "Epitoma Rei Militaris",
+    "source_title": "Epitoma Rei Militaris (IV-V sec. d.C.)",
     "source_link": "https://en.wikipedia.org/wiki/Si_vis_pacem,_para_bellum",
     "tags": [
       "militare",
@@ -2164,10 +2164,10 @@
     "spiciness": 1,
     "hint_short": "Letteratura militare romana",
     "hint_more": "Scrittore militare romano del IV-V secolo d.C., autore dell'Epitoma Rei Militaris, noto per aver compilato un trattato sulla guerra che influenzò la strategia militare medievale.",
-    "ambiguity_note": "Vegetio scrisse il trattato militare, Tacito e Cicerone erano politici e storici.",
+    "ambiguity_note": "Le opzioni includono Tacito (storico romano), Cicerone (oratore) e Seneca (filosofo stoico), tutti associati al tema della saggezza latina. Vegetio scrisse questa massima nel suo trattato militare.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La strategia della deterrenza: la pace si mantiene preparando la guerra."
+    "context": "Nell'Impero Romano tardivo del IV-V secolo d.C., Vegetio sviluppò una filosofia militare basata sulla deterrenza. Credeva che se si vuole la pace bisogna prepararsi alla guerra, trasformando la preparazione militare in garanzia di pace e influenzando la strategia difensiva per secoli."
   },
   {
     "id": "q79",
@@ -2181,7 +2181,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1965 (ricordo del 1945)",
-    "source_title": "Intervista TV; Bhagavadgītā 11:32",
+    "source_title": "Intervista TV (1965); citazione da Bhagavadgītā 11:32",
     "source_link": "https://en.wikipedia.org/wiki/J._Robert_Oppenheimer#Manhattan_Project",
     "tags": [
       "storia",
@@ -2192,10 +2192,10 @@
     "spiciness": 1,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico americano del XX secolo, direttore scientifico del Progetto Manhattan, noto per aver guidato lo sviluppo della bomba atomica e per aver citato la Bhagavadgītā dopo il test Trinity.",
-    "ambiguity_note": "Oppenheimer citava la Bhagavadgītā, Einstein teorizzava la relatività.",
+    "ambiguity_note": "Le opzioni includono Gesù Cristo e Alessandro Magno (figure storiche di potere), oltre a Hitler (figura distruttiva), tutti associati al tema della morte e del potere. Oppenheimer citò questa frase della Bhagavadgītā dopo il test nucleare.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il padre della bomba atomica: diventare Morte, distruttore di mondi."
+    "context": "Negli Stati Uniti del 1945, durante il Progetto Manhattan, Oppenheimer sviluppò una coscienza etica della scienza nucleare. Vedendo il primo test atomico, citò la Bhagavadgītā sentendosi come Morte, il distruttore di mondi, trasformando la fisica nucleare in questione morale e influenzando il dibattito etico sulla scienza."
   },
   {
     "id": "q80",
@@ -2209,7 +2209,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "III sec. a.C.",
-    "source_title": "Tradizione antica (Vitruvio)",
+    "source_title": "Tradizione antica - Vitruvio, De Architectura (I sec. a.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Eureka",
     "tags": [
       "scienza",
@@ -2220,10 +2220,10 @@
     "spiciness": 0,
     "hint_short": "Matematica e fisica antica",
     "hint_more": "Matematico e fisico greco del III secolo a.C., noto per il principio di Archimede, per aver inventato la vite di Archimede e per aver gridato 'Eureka!' dopo aver scoperto il principio della spinta idrostatica.",
-    "ambiguity_note": "Archimede gridò 'Eureka!' per la spinta idrostatica, diventando il grido di ogni scoperta.",
+    "ambiguity_note": "Le opzioni includono Churchill (leader moderno), Galileo (altro scienziato) e Cesare (figura storica), tutti associati al tema della scoperta o del successo. Archimede gridò 'Eureka!' secondo la tradizione antica.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "Il grido della scoperta: Archimede trova il principio della spinta idrostatica."
+    "context": "Nell'antica Grecia del III secolo a.C., Archimede sviluppò una filosofia della scoperta scientifica basata sull'intuizione. Credeva che la verità emergesse improvvisamente attraverso l'osservazione, trasformando 'Eureka!' nel grido universale della scoperta e influenzando il metodo scientifico."
   },
   {
     "id": "q81",
@@ -2237,7 +2237,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1819-1837",
-    "source_title": "Pensieri",
+    "source_title": "Pensieri (1819-1837)",
     "source_link": "https://it.wikipedia.org/wiki/Giacomo_Leopardi",
     "tags": [
       "filosofia",
@@ -2248,10 +2248,10 @@
     "spiciness": 0,
     "hint_short": "Poeta e filosofo italiano del XIX secolo",
     "hint_more": "Poeta e filosofo italiano del XIX secolo, noto per le sue riflessioni pessimistiche sulla natura umana e per aver pronunciato questa frase sull'autenticità.",
-    "ambiguity_note": "Spesso attribuita a imprenditori come Gates o a filosofi come Patrick Henry, ma è di Leopardi.",
+    "ambiguity_note": "Le opzioni includono Gates (imprenditore moderno), Patrick Henry (rivoluzionario americano) e Dante (poeta medievale), tutti associati al tema della leadership. Leopardi scrisse questo nei suoi Pensieri.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La saggezza di Leopardi: l'autenticità come antidoto al ridicolo."
+    "context": "Nell'Italia del XIX secolo, durante il Romanticismo, Leopardi sviluppò una filosofia dell'autenticità basata sulla naturalezza. Credeva che si diventi ridicoli solo quando si vuole apparire ciò che non si è, trasformando l'autenticità in valore morale e influenzando l'etica moderna."
   },
   {
     "id": "q82",
@@ -2265,7 +2265,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "I–II sec. d.C.",
-    "source_title": "Satire X, 356",
+    "source_title": "Satire X, 356 (I-II sec. d.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Mens_sana_in_corpore_sano",
     "tags": [
       "latino",
@@ -2276,10 +2276,10 @@
     "spiciness": 0,
     "hint_short": "Poesia latina del I-II secolo",
     "hint_more": "Poeta satirico latino del I-II secolo d.C., autore delle 'Satire', noto per la sua critica della società romana e per aver coniato questa celebre massima sulla salute.",
-    "ambiguity_note": "Giovenale la scrisse nelle Satire, diventando il motto dello sport e della salute.",
+    "ambiguity_note": "Le opzioni includono Seneca (filosofo stoico), Kanye West (artista moderno) e Hume (filosofo scozzese), tutti associati al tema della saggezza. Giovenale scrisse questa massima nelle sue Satire.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La saggezza di Giovenale: corpo sano e mente sana, l'ideale dell'uomo completo."
+    "context": "Nell'Impero Romano del I-II secolo d.C., Giovenale sviluppò una filosofia satirica dell'equilibrio. Credeva che mens sana in corpore sano rappresentasse l'ideale umano, trasformando l'equilibrio psicofisico in valore classico e influenzando l'educazione occidentale."
   },
   {
     "id": "q83",
@@ -2293,7 +2293,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "2008",
-    "source_title": "Campagna presidenziale USA",
+    "source_title": "Campagna presidenziale USA (2008)",
     "source_link": "https://en.wikipedia.org/wiki/Yes_We_Can_(slogan)",
     "tags": [
       "politica",
@@ -2304,10 +2304,10 @@
     "spiciness": 1,
     "hint_short": "Politica americana del XXI secolo",
     "hint_more": "Presidente americano del XXI secolo, primo presidente afroamericano degli Stati Uniti, noto per la sua campagna del 2008 e per aver utilizzato questo slogan motivazionale.",
-    "ambiguity_note": "Obama lo rese famoso, ma slogan simili esistevano già nei movimenti sindacali.",
+    "ambiguity_note": "Le opzioni includono Churchill (leader bellico), Einstein (scienziato) e San Francesco (santo), tutti associati al tema della speranza. Obama rese famoso questo slogan nella campagna del 2008.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Lo slogan che portò Obama alla Casa Bianca: sì, possiamo cambiare l'America."
+    "context": "Negli Stati Uniti del 2008, durante la crisi economica, Obama sviluppò una retorica della speranza basata sull'ottimismo. Credeva che 'Yes we can' rappresentasse la capacità americana di cambiare, trasformando lo slogan in simbolo di rinnovamento e influenzando la comunicazione politica moderna."
   },
   {
     "id": "q84",
@@ -2321,7 +2321,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1987",
-    "source_title": "Discorso alla Porta di Brandeburgo",
+    "source_title": "Discorso alla Porta di Brandeburgo (12 giugno 1987)",
     "source_link": "https://en.wikipedia.org/wiki/Tear_down_this_wall!",
     "tags": [
       "guerra fredda",
@@ -2332,10 +2332,10 @@
     "spiciness": 1,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano del XX secolo, noto per la sua politica estera durante la Guerra fredda e per aver pronunciato questo celebre appello alla Porta di Brandeburgo nel 1987.",
-    "ambiguity_note": "Reagan pronunciò la frase più famosa della Guerra fredda alla Porta di Brandeburgo.",
+    "ambiguity_note": "Le opzioni includono Lenin (rivoluzionario russo), Gandhi (leader della nonviolenza) e Papa Giovanni Paolo II (leader religioso), tutti associati al tema della libertà. Reagan pronunciò questa frase alla Porta di Brandeburgo.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il grido di Reagan: Gorbaciov, abbatti questo muro di Berlino."
+    "context": "Nella Germania del 1987, durante la Guerra Fredda, Reagan sviluppò una diplomazia pubblica basata sulla provocazione. Credeva che Gorbaciov dovesse abbattere il muro di Berlino come simbolo di libertà, trasformando la diplomazia in teatro pubblico e accelerando la fine della Guerra Fredda."
   },
   {
     "id": "q85",
@@ -2349,7 +2349,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XX secolo",
-    "source_title": "Scritti e discorsi",
+    "source_title": "Scritti e discorsi (XX secolo)",
     "source_link": "https://en.wikiquote.org/wiki/Mahatma_Gandhi",
     "tags": [
       "libertà",
@@ -2360,10 +2360,10 @@
     "spiciness": 0,
     "hint_short": "Storia indiana del XX secolo",
     "hint_more": "Leader spirituale e politico indiano del XX secolo, noto per la sua filosofia della nonviolenza e per aver guidato il movimento per l'indipendenza dell'India attraverso la disobbedienza civile.",
-    "ambiguity_note": "Gandhi teorizzava la libertà completa, Mandela e MLK la praticavano per i diritti.",
+    "ambiguity_note": "Le opzioni includono Mandela (leader sudafricano), King (leader afroamericano) e Tagore (poeta indiano), tutti associati al tema della libertà. Gandhi espresse questa filosofia nei suoi scritti.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di Gandhi: la vera libertà include anche il diritto di sbagliare."
+    "context": "Nell'India del XX secolo, durante la lotta per l'indipendenza, Gandhi sviluppò una filosofia della libertà basata sulla responsabilità individuale. Credeva che la libertà non valesse nulla se non includesse la libertà di sbagliare, trasformando l'errore in diritto fondamentale e influenzando il pensiero democratico."
   },
   {
     "id": "q86",
@@ -2377,7 +2377,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1961",
-    "source_title": "Inaugural Address",
+    "source_title": "Inaugural Address (20 gennaio 1961)",
     "source_link": "https://en.wikipedia.org/wiki/Inauguration_of_John_F._Kennedy#Address",
     "tags": [
       "politica",
@@ -2388,10 +2388,10 @@
     "spiciness": 0,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano del XX secolo, noto per aver guidato il paese durante la Guerra fredda e per aver pronunciato questo celebre discorso di insediamento nel 1961.",
-    "ambiguity_note": "JFK pronunciò la frase più famosa del discorso inaugurale presidenziale.",
+    "ambiguity_note": "Le opzioni includono Churchill (leader bellico), Mussolini (dittatore) e Marx (teorico politico), tutti associati al tema del servizio pubblico. Kennedy pronunciò questa frase nel suo discorso inaugurale.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il richiamo di JFK: non chiedere cosa fa il paese per te, ma cosa fai tu per il paese."
+    "context": "Negli Stati Uniti del 1961, durante la Guerra Fredda, Kennedy sviluppò una filosofia del servizio pubblico basata sul dovere civico. Credeva che i cittadini dovessero chiedersi cosa fare per il paese invece di cosa ricevere, trasformando il civismo in responsabilità nazionale."
   },
   {
     "id": "q87",
@@ -2405,7 +2405,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1839",
-    "source_title": "Richelieu; Or the Conspiracy",
+    "source_title": "Richelieu; Or the Conspiracy (1839)",
     "source_link": "https://en.wikipedia.org/wiki/The_pen_is_mightier_than_the_sword",
     "tags": [
       "letteratura",
@@ -2416,10 +2416,10 @@
     "spiciness": 0,
     "hint_short": "Letteratura inglese del XIX secolo",
     "hint_more": "Scrittore inglese del XIX secolo, autore di romanzi e drammi storici, noto per aver scritto 'Gli ultimi giorni di Pompei' e per aver coniato questa celebre massima sul potere della parola scritta.",
-    "ambiguity_note": "Bulwer-Lytton la scrisse, ma molti la attribuiscono a Shakespeare per la fama.",
+    "ambiguity_note": "Le opzioni includono Wilde (scrittore vittoriano), Shakespeare (drammaturgo) e Socrate (filosofo), tutti associati al tema della saggezza. Bulwer-Lytton scrisse questa frase nel suo dramma 'Richelieu'.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il potere della parola scritta: la penna vince sulla spada, le idee sulla violenza."
+    "context": "Nell'Inghilterra del 1839, durante l'era vittoriana, Bulwer-Lytton sviluppò una filosofia del potere intellettuale. Credeva che la penna fosse più potente della spada perché le idee vincono sulla violenza, trasformando la letteratura in arma politica e influenzando il pensiero democratico."
   },
   {
     "id": "q88",
@@ -2433,7 +2433,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "III sec. a.C. (tradiz.)",
-    "source_title": "Aforisma attribuito (principio della leva)",
+    "source_title": "Aforisma attribuito - Principio della leva (III sec. a.C.)",
     "source_link": "https://en.wikipedia.org/wiki/Archimedes#Engineering",
     "tags": [
       "fisica",
@@ -2444,10 +2444,10 @@
     "spiciness": 0,
     "hint_short": "Matematica e fisica antica",
     "hint_more": "Matematico e fisico greco del III secolo a.C., noto per il principio di Archimede, per aver inventato la vite di Archimede e per aver gridato 'Eureka!' dopo aver scoperto il principio della spinta idrostatica.",
-    "ambiguity_note": "Archimede teorizzava la leva, Leonardo la applicava nelle macchine.",
+    "ambiguity_note": "Le opzioni includono Alessandro Magno (conquistatore), Musk (innovatore moderno) e Leonardo (ingegnere rinascimentale), tutti associati al tema dell'ambizione. Archimede espresse questo principio della meccanica.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "Il principio di Archimede: con la leva giusta si può sollevare il mondo."
+    "context": "Nell'antica Grecia del III secolo a.C., Archimede sviluppò una filosofia della meccanica basata sulla leva. Credeva che con un punto d'appoggio e una leva si potesse sollevare il mondo, trasformando la fisica in metafora del potere della conoscenza e influenzando l'ingegneria."
   },
   {
     "id": "q89",
@@ -2461,7 +2461,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "2005",
-    "source_title": "Commencement, Stanford University",
+    "source_title": "Commencement Stanford University (12 giugno 2005)",
     "source_link": "https://en.wikipedia.org/wiki/Steve_Jobs#Stanford_commencement_speech",
     "tags": [
       "innovazione",
@@ -2472,10 +2472,10 @@
     "spiciness": 0,
     "hint_short": "Tecnologia del XX-XXI secolo",
     "hint_more": "Imprenditore americano del XX-XXI secolo, co-fondatore di Apple, noto per aver rivoluzionato l'industria tecnologica e per aver pronunciato questo celebre discorso agli studenti di Stanford nel 2005.",
-    "ambiguity_note": "Jobs la pronunciò a Stanford, diventando il motto del mondo tech e startup.",
+    "ambiguity_note": "Le opzioni includono Tutu (leader religioso), Musk (altro innovatore) e Gandhi (leader spirituale), tutti associati al tema della determinazione. Jobs pronunciò questa frase nel suo discorso a Stanford.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il motto di Jobs: rimanere affamati e folli per cambiare il mondo."
+    "context": "Negli Stati Uniti del 2005, nell'era digitale, Jobs sviluppò una filosofia dell'innovazione basata sulla curiosità insaziabile. Credeva che bisognasse rimanere affamati e folli per cambiare il mondo, trasformando l'innovazione in stile di vita e influenzando la cultura startup."
   },
   {
     "id": "q90",
@@ -2489,7 +2489,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "c. 1971",
-    "source_title": "Intervista/spot (parafrasi)",
+    "source_title": "Intervista TV/spot pubblicitario (c. 1971)",
     "source_link": "https://en.wikipedia.org/wiki/Bruce_Lee_philosophy",
     "tags": [
       "filosofia pratica",
@@ -2500,10 +2500,10 @@
     "spiciness": 0,
     "hint_short": "Arti marziali del XX secolo",
     "hint_more": "Attore e artista marziale americano del XX secolo, noto per aver rivoluzionato le arti marziali e per aver sviluppato il Jeet Kune Do, considerato uno dei più influenti maestri di arti marziali.",
-    "ambiguity_note": "Bruce Lee univa arti marziali e filosofia, non era solo un maestro zen.",
+    "ambiguity_note": "Le opzioni includono Confucio (filosofo cinese), Musashi (samurai) e Sun Tzu (stratega), tutti associati al tema della saggezza orientale. Bruce Lee combinò arti marziali e filosofia in questa metafora.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di Bruce Lee: essere fluidi come l'acqua, adattarsi a tutto."
+    "context": "Negli Stati Uniti del 1971, durante l'era hippie, Bruce Lee sviluppò una filosofia delle arti marziali basata sull'adattabilità. Credeva che bisognasse essere acqua, fluidi e adattabili, trasformando le arti marziali in filosofia di vita e influenzando la cultura pop occidentale."
   },
   {
     "id": "q91",
@@ -2517,7 +2517,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XX secolo",
-    "source_title": "Discorsi e scritti",
+    "source_title": "Discorsi e scritti (XX secolo)",
     "source_link": "https://en.wikipedia.org/wiki/Marie_Curie",
     "tags": [
       "scienza",
@@ -2528,10 +2528,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisica polacca naturalizzata francese del XX secolo, prima donna a vincere un premio Nobel e prima persona a vincerne due, nota per le sue ricerche sulla radioattività.",
-    "ambiguity_note": "Marie Curie la pronunciò, diventando il motto di tutti gli scienziati coraggiosi.",
+    "ambiguity_note": "Le opzioni includono Stalin (dittatore), Seneca (filosofo stoico) e Confucio (saggio cinese), tutti associati al tema della saggezza. Marie Curie espresse questa filosofia nei suoi scritti scientifici.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di Marie Curie: non temere l'ignoto, comprenderlo con la scienza."
+    "context": "Nella Francia del XX secolo, durante le scoperte scientifiche sui raggi X, Marie Curie sviluppò una filosofia della ricerca basata sulla comprensione. Credeva che nella vita nulla andasse temuto ma solo compreso, trasformando la scienza in coraggio intellettuale e influenzando la ricerca moderna."
   },
   {
     "id": "q92",
@@ -2545,7 +2545,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XX secolo",
-    "source_title": "Detti e interviste",
+    "source_title": "Detti e interviste (XX secolo)",
     "source_link": "https://en.wikipedia.org/wiki/Mother_Teresa#Legacy",
     "tags": [
       "carità",
@@ -2556,10 +2556,10 @@
     "spiciness": 0,
     "hint_short": "Storia del XX secolo",
     "hint_more": "Religiosa albanese naturalizzata indiana del XX secolo, fondatrice delle Missionarie della Carità, premio Nobel per la pace, nota per il suo lavoro con i poveri e i malati.",
-    "ambiguity_note": "Madre Teresa la pronunciò, diventando il motto di tutti i volontari e missionari.",
+    "ambiguity_note": "Le opzioni includono Papa Giovanni Paolo II (leader religioso), Tutu (vescovo sudafricano) e Hitler (figura negativa), tutti associati al tema del servizio. Madre Teresa espresse questa filosofia nel suo lavoro.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di Madre Teresa: fare piccole cose con grande amore per cambiare il mondo."
+    "context": "In India del XX secolo, tra i poveri di Calcutta, Madre Teresa sviluppò una filosofia del servizio basata sull'amore. Credeva che non tutti potessero fare grandi cose ma tutti potessero fare piccole cose con grande amore, trasformando la carità in missione di vita."
   },
   {
     "id": "q93",
@@ -2573,7 +2573,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1930",
-    "source_title": "Lettera a Eduard",
+    "source_title": "Lettera a Eduard (1930)",
     "source_link": "https://en.wikipedia.org/wiki/Albert_Einstein#Quotations",
     "tags": [
       "vita",
@@ -2584,10 +2584,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico tedesco naturalizzato americano del XX secolo, autore della teoria della relatività, che espresse scetticismo verso l'interpretazione probabilistica della meccanica quantistica nelle sue lettere con Max Born.",
-    "ambiguity_note": "Einstein la pronunciò, diventando la metafora più famosa sulla vita e il movimento.",
+    "ambiguity_note": "Le opzioni includono Confucio (filosofo cinese), Churchill (leader) e Sartre (esistenzialista), tutti associati al tema della vita. Einstein scrisse questa metafora in una lettera.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La metafora di Einstein: la vita è come la bicicletta, l'equilibrio richiede movimento."
+    "context": "Negli Stati Uniti del 1930, Einstein sviluppò una filosofia della vita basata sull'equilibrio dinamico. Credeva che la vita fosse come andare in bicicletta e che per mantenere l'equilibrio bisognasse muoversi, trasformando il movimento in metafora dell'esistenza attiva."
   },
   {
     "id": "q94",
@@ -2601,7 +2601,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1304–1321",
-    "source_title": "Divina Commedia, Inferno III",
+    "source_title": "Divina Commedia, Inferno III (1304-1321)",
     "source_link": "https://it.wikipedia.org/wiki/Divina_Commedia",
     "tags": [
       "letteratura",
@@ -2612,10 +2612,10 @@
     "spiciness": 0,
     "hint_short": "Letteratura italiana del XIV secolo",
     "hint_more": "Poeta italiano del XIV secolo, autore della 'Divina Commedia', considerato il padre della letteratura italiana e uno dei più grandi poeti della storia occidentale.",
-    "ambiguity_note": "Dante la scrisse all'ingresso dell'Inferno, diventando la frase più famosa della Divina Commedia.",
+    "ambiguity_note": "Le opzioni includono Seneca (filosofo stoico), D'Annunzio (poeta moderno) e Shakespeare (drammaturgo), tutti associati al tema letterario. Dante scrisse questa iscrizione sulla porta dell'Inferno.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "L'ingresso dell'Inferno: abbandonate ogni speranza, voi che entrate."
+    "context": "Nell'Italia del XIV secolo, durante l'esilio, Dante sviluppò una visione teologica dell'Oltretomba. Credeva che chi entrava nell'Inferno dovesse abbandonare ogni speranza, trasformando la dannazione in condizione definitiva e influenzando l'immaginario occidentale dell'Aldilà."
   },
   {
     "id": "q95",
@@ -2629,7 +2629,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "I sec. a.C.",
-    "source_title": "Eneide X, 284",
+    "source_title": "Eneide X, 284 (I sec. a.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Audentes_fortuna_iuvat",
     "tags": [
       "latino",
@@ -2640,10 +2640,10 @@
     "spiciness": 0,
     "hint_short": "Poesia latina del I secolo a.C.",
     "hint_more": "Poeta latino del I secolo a.C., autore dell'Eneide, considerato il più grande poeta dell'antichità romana e noto per aver celebrato la grandezza di Roma attraverso il mito di Enea.",
-    "ambiguity_note": "Virgilio la scrisse nell'Eneide, diventando il motto di tutti gli audaci.",
+    "ambiguity_note": "Le opzioni includono Musk (imprenditore moderno), Franklin (fondatore americano) e Cicerone (oratore romano), tutti associati al tema del coraggio. Virgilio scrisse questo nell'Eneide.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La saggezza di Virgilio: la fortuna aiuta chi ha il coraggio di osare."
+    "context": "Nell'antica Roma del I secolo a.C., Virgilio sviluppò una filosofia epica del coraggio. Credeva che la fortuna aiutasse gli audaci perché il destino favorisce chi osa, trasformando l'audacia in virtù eroica e influenzando l'etica occidentale del coraggio."
   },
   {
     "id": "q96",
@@ -2657,7 +2657,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "I sec. d.C. (tradiz.)",
-    "source_title": "Massima latina (vari autori)",
+    "source_title": "Massima latina - attribuzione tradizionale (I sec. d.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Per_aspera_ad_astra",
     "tags": [
       "latino",
@@ -2668,10 +2668,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia romana del I secolo",
     "hint_more": "Filosofo stoico romano del I secolo d.C., precettore di Nerone, autore delle 'Lettere a Lucilio' e noto per i suoi insegnamenti sulla virtù e la saggezza.",
-    "ambiguity_note": "Seneca la scrisse, ma molti la attribuiscono anche a Virgilio e Cicerone.",
+    "ambiguity_note": "Le opzioni includono Mussolini (dittatore moderno), Marco Aurelio (imperatore filosofo) e Sun Tzu (stratega), tutti associati al tema della perseveranza. Tradizionalmente attribuita a Seneca.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Il motto della perseveranza: attraverso le difficoltà si raggiungono le stelle."
+    "context": "Nell'Impero Romano del I secolo d.C., Seneca sviluppò una filosofia stoica della resilienza. Credeva che per aspera ad astra significasse che attraverso le difficoltà si raggiungessero le stelle, trasformando la sofferenza in via verso l'eccellenza e influenzando il pensiero occidentale sulla perseveranza."
   },
   {
     "id": "q97",
@@ -2685,7 +2685,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "I sec. a.C.",
-    "source_title": "De Bello Gallico, I, 1",
+    "source_title": "De Bello Gallico, I, 1 (I sec. a.C.)",
     "source_link": "https://it.wikipedia.org/wiki/De_bello_Gallico",
     "tags": [
       "storia antica",
@@ -2696,10 +2696,10 @@
     "spiciness": 0,
     "hint_short": "Storia romana antica",
     "hint_more": "Generale e politico romano del I secolo a.C., noto per aver attraversato il Rubicone, per le sue conquiste in Gallia e per aver pronunciato questa frase dopo una rapida vittoria in Asia Minore.",
-    "ambiguity_note": "Cesare scrisse l'incipit più famoso del De Bello Gallico, non altri autori latini.",
+    "ambiguity_note": "Le opzioni includono Alessandro Magno (conquistatore antico), Galileo (scienziato) e Plinio (naturalista), tutti associati al tema della descrizione. Cesare scrisse questo famoso incipit del suo resoconto bellico.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "L'incipit più famoso di Cesare: tutta la Gallia è divisa in tre parti."
+    "context": "Nell'antica Roma del I secolo a.C., durante le guerre galliche, Cesare sviluppò una storiografia militare basata sulla descrizione geografica. Credeva che descrivere la Gallia divisa in tre parti fosse essenziale per comprendere la strategia, trasformando la geografia in strumento bellico."
   },
   {
     "id": "q98",
@@ -2713,7 +2713,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XX secolo",
-    "source_title": "Lezioni/interviste (parafrasi celebre)",
+    "source_title": "Lezioni/interviste - parafrasi celebre (XX secolo)",
     "source_link": "https://en.wikipedia.org/wiki/Richard_Feynman#Quotes",
     "tags": [
       "fisica",
@@ -2724,10 +2724,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico americano del XX secolo, premio Nobel per la fisica, noto per i suoi contributi alla meccanica quantistica e per aver sviluppato i diagrammi di Feynman.",
-    "ambiguity_note": "Feynman la pronunciò con umorismo, Bohr teorizzava la meccanica quantistica.",
+    "ambiguity_note": "Le opzioni includono Papa Giovanni Paolo II (leader religioso), Reagan (politico) e Bohr (altro fisico quantistico), tutti associati al tema della complessità. Feynman pronunciò questa frase con il suo caratteristico umorismo.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "L'umiltà di Feynman: nessuno capisce davvero la meccanica quantistica, nemmeno i fisici."
+    "context": "Negli Stati Uniti del XX secolo, durante lo sviluppo della fisica quantistica, Feynman sviluppò una filosofia dell'umiltà scientifica. Credeva che nessuno capisse veramente la meccanica quantistica, trasformando l'ignoranza in onestà intellettuale e influenzando l'epistemologia scientifica moderna."
   },
   {
     "id": "q99",
@@ -2741,7 +2741,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1863",
-    "source_title": "Gettysburg Address",
+    "source_title": "Gettysburg Address (19 novembre 1863)",
     "source_link": "https://en.wikipedia.org/wiki/Gettysburg_Address",
     "tags": [
       "democrazia",
@@ -2752,10 +2752,10 @@
     "spiciness": 0,
     "hint_short": "Storia americana del XIX secolo",
     "hint_more": "Presidente americano del XIX secolo, noto per aver guidato il paese durante la Guerra civile e per aver emanato la Proclamazione di emancipazione, considerato uno dei più grandi presidenti americani.",
-    "ambiguity_note": "Lincoln la pronunciò a Gettysburg, Jefferson scrisse la Dichiarazione d'Indipendenza.",
+    "ambiguity_note": "Le opzioni includono Hitler (dittatore), Jefferson (fondatore) e Mao (leader comunista), tutti associati al tema del governo. Lincoln pronunciò questa definizione di democrazia a Gettysburg.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La definizione di Lincoln: democrazia è governo del popolo, dal popolo, per il popolo."
+    "context": "Negli Stati Uniti del 1863, durante la Guerra Civile, Lincoln sviluppò una filosofia democratica basata sulla sovranità popolare. Credeva che il governo dovesse essere del popolo, dal popolo e per il popolo, trasformando la democrazia in ideale universale e influenzando i sistemi politici moderni."
   },
   {
     "id": "q100",
@@ -2769,7 +2769,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XIX secolo (attrib.)",
-    "source_title": "Aforisma attribuito",
+    "source_title": "Aforisma attribuito (XIX secolo)",
     "source_link": "https://en.wikiquote.org/wiki/Napoleon_Bonaparte",
     "tags": [
       "motivazione",
@@ -2780,10 +2780,10 @@
     "spiciness": 0,
     "hint_short": "Storia francese del XIX secolo",
     "hint_more": "Imperatore francese del XIX secolo, noto per le sue campagne militari in Europa e per aver rivoluzionato la strategia militare, considerato uno dei più grandi generali della storia.",
-    "ambiguity_note": "Napoleone la pronunciò, diventando il motto di tutti i leader carismatici e motivatori.",
+    "ambiguity_note": "Le opzioni includono Cesare (generale romano), Churchill (leader bellico) e Musk (imprenditore moderno), tutti associati al tema della determinazione. Napoleone pronunciò questo aforisma motivazionale.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "La filosofia di Napoleone: impossibile è una parola da sciocchi, tutto è possibile."
+    "context": "Nella Francia del XIX secolo, durante l'Impero napoleonico, Napoleone sviluppò una filosofia della volontà basata sulla determinazione. Credeva che 'impossibile' fosse una parola per sciocchi, trasformando l'ambizione in ideologia e influenzando la mentalità del successo moderno."
   },
   {
     "id": "q101",
@@ -2797,7 +2797,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "Rinascimento (attrib.)",
-    "source_title": "Aforisma popolare (attribuzione discussa)",
+    "source_title": "Aforisma popolare - attribuzione discussa (Rinascimento)",
     "source_link": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci#Quotations",
     "tags": [
       "design",
@@ -2808,10 +2808,10 @@
     "spiciness": 0,
     "hint_short": "Rinascimento italiano",
     "hint_more": "Artista e inventore italiano del Rinascimento, noto per opere come 'La Gioconda' e 'L'Ultima Cena', considerato uno dei più grandi geni della storia per i suoi contributi all'arte, alla scienza e all'ingegneria.",
-    "ambiguity_note": "Leonardo la teorizzò, Jobs la applicò al design di Apple.",
+    "ambiguity_note": "Le opzioni includono Michelangelo (altro artista rinascimentale), Jobs (designer moderno) e Newton (scienziato), tutti associati al tema dell'innovazione. Aforisma tradizionalmente attribuito a Leonardo.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La filosofia di Leonardo: la semplicità è la forma più alta di sofisticazione."
+    "context": "Nel Rinascimento italiano, Leonardo sviluppò una filosofia del design basata sull'essenzialità. Credeva che la semplicità fosse la massima sofisticazione, trasformando l'arte in scienza dell'eleganza e influenzando il design moderno per secoli."
   },
   {
     "id": "q102",
@@ -2825,7 +2825,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "IV sec. a.C. (tramite Platone)",
-    "source_title": "Apologia di Socrate",
+    "source_title": "Apologia di Socrate (IV sec. a.C.)",
     "source_link": "https://en.wikipedia.org/wiki/Apology_(Plato)",
     "tags": [
       "filosofia",
@@ -2836,10 +2836,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia greca antica",
     "hint_more": "Filosofo greco del V secolo a.C., maestro di Platone, noto per il metodo socratico e per aver sostenuto che la vera saggezza consiste nel riconoscere la propria ignoranza.",
-    "ambiguity_note": "Socrate la pronunciò, Platone la scrisse nei dialoghi.",
+    "ambiguity_note": "Le opzioni includono Plinio (naturalista romano), Feuerbach (filosofo tedesco) e Kanye West (artista moderno), tutti associati al tema della conoscenza. Socrate espresse questa filosofia, riportata da Platone.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "La saggezza di Socrate: la vera conoscenza è riconoscere la propria ignoranza."
+    "context": "Nell'antica Grecia del V secolo a.C., Socrate sviluppò una filosofia dell'umilità intellettuale. Credeva che la sola vera saggezza fosse sapere di non sapere, trasformando l'ignoranza consapevole in virtù filosofica e fondando il metodo critico occidentale."
   },
   {
     "id": "q103",
@@ -2853,7 +2853,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XVII secolo (tradiz.)",
-    "source_title": "Aforisma attribuito dopo l'abiura",
+    "source_title": "Aforisma attribuito - dopo l'abiura (XVII secolo)",
     "source_link": "https://it.wikipedia.org/wiki/E_pur_si_muove",
     "tags": [
       "scienza",
@@ -2864,10 +2864,10 @@
     "spiciness": 0,
     "hint_short": "Scienza del XVII secolo",
     "hint_more": "Scienziato italiano del XVII secolo, noto per aver sostenuto la teoria eliocentrica, per aver inventato il telescopio e per aver subito il processo dell'Inquisizione per le sue idee scientifiche.",
-    "ambiguity_note": "Galileo la pronunciò dopo l'abiura, diventando il simbolo della resistenza scientifica.",
+    "ambiguity_note": "Le opzioni includono Newton (altro fisico), Rosa Parks (attivista) e Einstein (scienziato moderno), tutti associati al tema della resistenza. Galileo avrebbe pronunciato questa frase dopo l'abiura secondo la leggenda.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Il grido di Galileo: eppur si muove, la Terra gira intorno al Sole."
+    "context": "Nell'Italia del XVII secolo, durante l'Inquisizione, Galileo sviluppò una coscienza scientifica basata sulla verità oggettiva. Secondo la leggenda, dopo aver abiurato l'eliocentrismo mormorò 'E pur si muove', trasformando la scienza in atto di resistenza morale."
   },
   {
     "id": "q104",
@@ -2881,7 +2881,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1970",
-    "source_title": "Missione Apollo 13",
+    "source_title": "Missione Apollo 13 (13-17 aprile 1970)",
     "source_link": "https://en.wikipedia.org/wiki/Apollo_13#Oxygen_tank_incident",
     "tags": [
       "spazio",
@@ -2892,10 +2892,10 @@
     "spiciness": 0,
     "hint_short": "Missione Apollo 13",
     "hint_more": "Astronauta americano del XX secolo, comandante della missione Apollo 13, noto per aver pronunciato questa celebre frase durante l'emergenza che colpì la missione spaziale.",
-    "ambiguity_note": "Lovell la pronunciò durante Apollo 13, Armstrong fu il primo sulla Luna.",
+    "ambiguity_note": "Le opzioni includono Armstrong (primo uomo sulla Luna), Eisenhower (generale e presidente) e Gagarin (primo uomo nello spazio), tutti associati al tema dell'esplorazione spaziale. Lovell pronunciò questa frase durante l'emergenza dell'Apollo 13.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La frase di Lovell: Houston, abbiamo un problema con Apollo 13."
+    "context": "Negli Stati Uniti del 1970, durante l'era spaziale, Lovell sviluppò una comunicazione di emergenza basata sulla chiarezza. Credeva che 'Houston, we have a problem' fosse il modo più diretto di comunicare un'emergenza, trasformando la comunicazione spaziale in modello di efficienza e influenzando la cultura popolare."
   },
   {
     "id": "q105",
@@ -2909,7 +2909,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1882",
-    "source_title": "La gaia scienza, §125",
+    "source_title": "La gaia scienza, §125 (1882)",
     "source_link": "https://it.wikipedia.org/wiki/La_gaia_scienza",
     "tags": [
       "filosofia",
@@ -2920,10 +2920,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore de 'Al di là del bene e del male' e 'Così parlò Zarathustra', noto per aver influenzato profondamente il pensiero del Novecento con le sue critiche alla morale tradizionale.",
-    "ambiguity_note": "Nietzsche la pronunciò, non era negazione di Dio ma critica dei valori tradizionali.",
+    "ambiguity_note": "Le opzioni includono Feuerbach (filosofo materialista), Marx (teorico politico) e Gesù Cristo (figura religiosa), tutti associati al tema della religione. Nietzsche scrisse questa frase nella Gaia Scienza come metafora della morte dei valori tradizionali.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "La provocazione di Nietzsche: Dio è morto, i valori tradizionali sono crollati."
+    "context": "Nella Germania del 1882, durante la crisi della modernità, Nietzsche sviluppò una filosofia della trasvalutazione basata sulla critica dei valori. Credeva che 'Dio è morto' significasse il crollo dei valori tradizionali, trasformando la filosofia in diagnosi della modernità e influenzando il pensiero del Novecento."
   },
   {
     "id": "q106",
@@ -2937,7 +2937,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XVIII secolo (attribuzione; formula attestata in Rousseau)",
-    "source_title": "Rousseau, \"Les Confessions\" VI; leggenda su Maria Antonietta",
+    "source_title": "Rousseau, Les Confessions VI (1782); leggenda su Maria Antonietta",
     "source_link": "https://it.wikipedia.org/wiki/Se_non_hanno_pane,_mangino_brioche",
     "tags": [
       "rivoluzione francese",
@@ -2948,10 +2948,10 @@
     "spiciness": 1,
     "hint_short": "Storia francese del XVIII secolo",
     "hint_more": "Regina di Francia del XVIII secolo, moglie di Luigi XVI, nota per aver vissuto nel lusso durante la crisi economica e per essere stata ghigliottinata durante la Rivoluzione francese.",
-    "ambiguity_note": "Maria Antonietta non la pronunciò mai, ma divenne il simbolo dell'insensibilità aristocratica.",
+    "ambiguity_note": "Le opzioni includono Rousseau (filosofo che la scrisse), Mandela (leader moderno) e Giovenale (satirico romano), tutti associati al tema della giustizia sociale. Maria Antonietta non pronunciò mai questa frase, ma divenne il simbolo dell'insensibilità aristocratica.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "La frase apocrifa più famosa: se non hanno pane, mangino brioche."
+    "context": "Nella Francia del XVIII secolo, durante la Rivoluzione, Maria Antonietta divenne il simbolo dell'insensibilità aristocratica attraverso questa frase apocrifa. Anche se non la pronunciò mai, la leggenda la associò all'idea che i poveri potessero mangiare brioche invece del pane, trasformando l'aneddoto in simbolo della disconnessione monarchica."
   },
   {
     "id": "q107",
@@ -2965,7 +2965,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1946",
-    "source_title": "\"Sinews of Peace\" (Discorso di Fulton, Missouri)",
+    "source_title": "Sinews of Peace - Discorso di Fulton, Missouri (5 marzo 1946)",
     "source_link": "https://en.wikipedia.org/wiki/Iron_Curtain#Churchill's_use_of_the_term",
     "tags": [
       "guerra fredda",
@@ -2976,10 +2976,10 @@
     "spiciness": 1,
     "hint_short": "Storia britannica del XX secolo",
     "hint_more": "Primo ministro britannico durante la Seconda guerra mondiale, noto per i suoi discorsi infuocati e per aver guidato il Regno Unito nella resistenza contro il nazismo.",
-    "ambiguity_note": "Churchill coniò la metafora della cortina di ferro, Stalin e Roosevelt non la usarono mai.",
+    "ambiguity_note": "Le opzioni includono Stalin (leader sovietico), Hitler (dittatore nazista) e Einstein (scienziato), tutti associati al tema del potere. Churchill coniò questa metafora nel famoso discorso di Fulton.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il discorso di Churchill: una cortina di ferro divide l'Europa tra Est e Ovest."
+    "context": "Negli Stati Uniti del 1946, all'inizio della Guerra Fredda, Churchill sviluppò una retorica geopolitica basata sulla divisione ideologica. Credeva che una cortina di ferro fosse calata sul continente europeo, trasformando la metafora in definizione della Guerra Fredda e influenzando la percezione geopolitica mondiale."
   },
   {
     "id": "q108",
@@ -2993,7 +2993,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "44 a.C. (attribuzione; tradizione latina successiva)",
-    "source_title": "Tradizione riportata da fonti tarde; Suetonio riferisce la versione in greco",
+    "source_title": "Tradizione riportata da fonti tarde - Suetonio (I-II sec. d.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Tu_quoque,_Brute,_fili_mi",
     "tags": [
       "Roma antica",
@@ -3004,10 +3004,10 @@
     "spiciness": 1,
     "hint_short": "Storia romana antica",
     "hint_more": "Generale e politico romano del I secolo a.C., noto per aver attraversato il Rubicone, per le sue conquiste in Gallia e per aver pronunciato questa frase dopo una rapida vittoria in Asia Minore.",
-    "ambiguity_note": "Cesare pronunciò la versione greca, Shakespeare la rese famosa in inglese.",
+    "ambiguity_note": "Le opzioni includono Gates (imprenditore moderno), Cicerone (oratore romano) e Pitagora (filosofo greco), tutti associati al tema del tradimento o della saggezza. Cesare pronunciò questa frase secondo la tradizione, resa famosa da Shakespeare.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Il tradimento di Bruto: anche tu, Bruto, figlio mio, mi hai tradito."
+    "context": "Nell'antica Roma del 44 a.C., durante le Idi di Marzo, Cesare sviluppò una consapevolezza del tradimento basata sulla delusione familiare. Credeva che Bruto, suo figlio adottivo, lo avesse tradito, trasformando il tradimento in tragedia personale e influenzando la letteratura occidentale per secoli."
   },
   {
     "id": "q109",
@@ -3021,7 +3021,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1929–1935",
-    "source_title": "Quaderni del carcere (formulazione parafrasata)",
+    "source_title": "Quaderni del carcere (1929-1935) - formulazione parafrasata",
     "source_link": "https://it.wikipedia.org/wiki/Antonio_Gramsci#Quaderni_del_carcere",
     "tags": [
       "politica",
@@ -3033,10 +3033,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia italiana del XX secolo",
     "hint_more": "Filosofo e politico italiano del XX secolo, segretario del Partito Comunista d'Italia, autore dei 'Quaderni del carcere' e noto per aver sviluppato il concetto di egemonia culturale.",
-    "ambiguity_note": "Spesso circola in versioni parafrasate e viene attribuita genericamente a “un filosofo del Novecento”, facendo pensare a Croce o Arendt.",
+    "ambiguity_note": "Le opzioni includono Churchill (leader bellico), Leonardo (artista rinascimentale) e Arendt (filosofa politica), tutti associati al tema della crisi. Gramsci scrisse questa definizione nei Quaderni del carcere.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La definizione di Gramsci: la crisi è quando il vecchio muore e il nuovo non nasce ancora."
+    "context": "Nell'Italia del 1929-1935, durante la prigionia fascista, Gramsci sviluppò una filosofia della crisi basata sulla transizione storica. Credeva che la crisi fosse il momento in cui il vecchio muore e il nuovo stenta a nascere, trasformando la crisi in categoria filosofica e influenzando il pensiero politico moderno."
   },
   {
     "id": "q110",
@@ -3050,7 +3050,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XX-XXI secolo",
-    "source_title": "Opere di Paulo Coelho",
+    "source_title": "Opere di Paulo Coelho (XX-XXI secolo)",
     "source_link": "https://it.wikipedia.org/wiki/Paulo_Coelho",
     "tags": [
       "letteratura",
@@ -3061,10 +3061,10 @@
     "spiciness": 0,
     "hint_short": "Scrittore brasiliano contemporaneo",
     "hint_more": "Scrittore brasiliano contemporaneo, autore de 'L'Alchimista' e di numerosi romanzi di successo mondiale, noto per le sue riflessioni spirituali e filosofiche.",
-    "ambiguity_note": "Altri scrittori latinoamericani hanno scritto di felicità, ma Coelho ha reso famosa questa distinzione.",
+    "ambiguity_note": "Le opzioni includono Spinoza (filosofo olandese), Confucio (saggio cinese) e Papa Giovanni Paolo II (leader religioso), tutti associati al tema della saggezza. Coelho espresse questa filosofia nelle sue opere.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La filosofia di Coelho: la felicità non è casuale, ma frutto di impegno e crescita personale."
+    "context": "Nel Brasile contemporaneo, Coelho sviluppò una filosofia della felicità basata sull'autodeterminazione. Credeva che a volte la felicità fosse una benedizione ma generalmente fosse una conquista, trasformando la felicità in obiettivo raggiungibile attraverso l'impegno personale."
   },
   {
     "id": "q111",
@@ -3078,7 +3078,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "I-II secolo d.C.",
-    "source_title": "Manuale di Epitteto",
+    "source_title": "Manuale di Epitteto (I-II secolo d.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Epitteto",
     "tags": [
       "filosofia",
@@ -3089,10 +3089,10 @@
     "spiciness": 0,
     "hint_short": "Filosofo stoico greco-romano",
     "hint_more": "Filosofo stoico greco-romano del I-II secolo d.C., ex schiavo che divenne maestro di filosofia, autore del 'Manuale' e noto per i suoi insegnamenti sulla saggezza pratica.",
-    "ambiguity_note": "Altri stoici come Marco Aurelio e Seneca parlavano di saggezza, ma Epitteto teorizzò questa progressione.",
+    "ambiguity_note": "Le opzioni includono Wilde (scrittore vittoriano), Marco Aurelio (imperatore stoico) e Stalin (dittatore), tutti associati al tema della saggezza o del potere. Epitteto scrisse questa progressione nel suo Manuale.",
     "language_orig": "GR",
     "sensitive": false,
-    "context": "La saggezza stoica: tre livelli di maturità nel gestire le difficoltà della vita."
+    "context": "Nell'Impero Romano del I-II secolo d.C., Epitteto sviluppò una filosofia stoica basata sulla responsabilità personale. Credeva che accusare gli altri fosse ignoranza, accusare se stessi fosse comprensione, e non accusare nessuno fosse vera saggezza, trasformando la saggezza in progressione morale."
   },
   {
     "id": "q112",
@@ -3106,7 +3106,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XIX secolo",
-    "source_title": "Opere di Samuel Butler",
+    "source_title": "Opere di Samuel Butler (XIX secolo)",
     "source_link": "https://it.wikipedia.org/wiki/Samuel_Butler_(scrittore)",
     "tags": [
       "letteratura",
@@ -3117,10 +3117,10 @@
     "spiciness": 0,
     "hint_short": "Scrittore e umorista inglese",
     "hint_more": "Scrittore e umorista inglese del XIX secolo, autore di 'Erewhon' e noto per le sue osservazioni satiriche sulla società vittoriana e sui comportamenti umani.",
-    "ambiguity_note": "Wilde e Twain erano umoristi, ma Butler aveva uno stile più filosofico e tagliente.",
+    "ambiguity_note": "Le opzioni includono Wilde (scrittore vittoriano), Shaw (drammaturgo irlandese) e Trump (politico moderno), tutti associati al tema dell'umorismo o della critica sociale. Butler scrisse questa osservazione satirica.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "L'umorismo di Butler: una riflessione cinica ma realistica sui rapporti sociali."
+    "context": "Nell'Inghilterra vittoriana del XIX secolo, Butler sviluppò una satira sociale basata sull'osservazione umana. Credeva che al mondo ci fossero più idioti che furfanti perché altrimenti i furfanti non avrebbero di che vivere, trasformando l'umorismo in critica sociale."
   },
   {
     "id": "q113",
@@ -3134,7 +3134,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XVII secolo",
-    "source_title": "Massime",
+    "source_title": "Massime (XVII secolo)",
     "source_link": "https://it.wikipedia.org/wiki/François_de_La_Rochefoucauld",
     "tags": [
       "filosofia",
@@ -3145,10 +3145,10 @@
     "spiciness": 0,
     "hint_short": "Moralista francese del XVII secolo",
     "hint_more": "Moralista e scrittore francese del XVII secolo, autore delle 'Massime' e noto per le sue osservazioni acute e ciniche sulla natura umana e sui comportamenti sociali.",
-    "ambiguity_note": "Pascal e Montaigne erano moralisti, ma La Rochefoucauld aveva uno stile più tagliente e cinico.",
+    "ambiguity_note": "Le opzioni includono Churchill (leader bellico), San Francesco (santo) e Pascal (filosofo), tutti associati al tema della saggezza. La Rochefoucauld scrisse questa massima nelle sue riflessioni.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "La psicologia di La Rochefoucauld: l'ipocrisia umana nel giudicare gli altri."
+    "context": "Nella Francia del XVII secolo, durante l'età classica, La Rochefoucauld sviluppò una psicologia morale basata sull'autoanalisi. Credeva che biasimassimo facilmente i difetti altrui ma ce ne servissimo di rado per correggere i nostri, trasformando l'osservazione sociale in critica dell'ipocrisia umana."
   },
   {
     "id": "q114",
@@ -3162,7 +3162,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XVI secolo",
-    "source_title": "Preghiera della Serenità (attribuita)",
+    "source_title": "Preghiera della Serenità - attribuita (XVI secolo)",
     "source_link": "https://it.wikipedia.org/wiki/Thomas_More",
     "tags": [
       "filosofia",
@@ -3173,10 +3173,10 @@
     "spiciness": 0,
     "hint_short": "Umanista e santo inglese",
     "hint_more": "Umanista, politico e santo inglese del XVI secolo, cancelliere di Enrico VIII, autore di 'Utopia' e martire della Chiesa cattolica per aver difeso la fede.",
-    "ambiguity_note": "Spesso attribuita a San Francesco, ma la formulazione è più tarda e legata alla tradizione umanistica.",
+    "ambiguity_note": "Le opzioni includono San Francesco (santo medievale), Bismarck (statista tedesco) e King (leader afroamericano), tutti associati al tema della saggezza. Tradizionalmente attribuita a Thomas More.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La saggezza di More: l'equilibrio tra azione, accettazione e discernimento."
+    "context": "Nell'Inghilterra del XVI secolo, durante l'Umanesimo, Thomas More sviluppò una filosofia della saggezza basata sul discernimento. Credeva che bisognasse avere la forza di cambiare ciò che si può, la pazienza di accettare ciò che non si può, e l'intelligenza di distinguerli, trasformando la saggezza in equilibrio pratico."
   },
   {
     "id": "q115",
@@ -3190,7 +3190,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "I secolo d.C.",
-    "source_title": "Vangelo di Giovanni",
+    "source_title": "Vangelo di Giovanni (I secolo d.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Ponzio_Pilato",
     "tags": [
       "storia",
@@ -3201,10 +3201,10 @@
     "spiciness": 0,
     "hint_short": "Prefetto romano della Giudea",
     "hint_more": "Prefetto romano della Giudea nel I secolo d.C., noto per aver presieduto il processo di Gesù e per aver pronunciato questa frase presentandolo alla folla.",
-    "ambiguity_note": "Spesso confusa con parole di Gesù, ma è la presentazione di Pilato ai Giudei.",
+    "ambiguity_note": "Le opzioni includono Himmler (leader nazista), Archimede (scienziato) e Seneca (filosofo), tutti associati al tema del potere o della saggezza. Pilato pronunciò questa frase presentando Gesù alla folla.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Il momento cruciale del processo: Pilato presenta Gesù flagellato alla folla."
+    "context": "Nella Giudea del I secolo d.C., durante il dominio romano, Pilato sviluppò una strategia politica basata sulla presentazione pubblica. Credeva che 'Ecce Homo' fosse il modo più efficace di presentare Gesù alla folla, trasformando il processo in spettacolo politico e influenzando la narrazione evangelica."
   },
   {
     "id": "q116",
@@ -3218,7 +3218,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1910-1919",
-    "source_title": "Rivoluzione messicana",
+    "source_title": "Rivoluzione messicana (1910-1919)",
     "source_link": "https://it.wikipedia.org/wiki/Emiliano_Zapata",
     "tags": [
       "rivoluzione",
@@ -3229,10 +3229,10 @@
     "spiciness": 0,
     "hint_short": "Rivoluzionario messicano",
     "hint_more": "Rivoluzionario e leader contadino messicano, protagonista della Rivoluzione messicana, noto per la lotta per la riforma agraria e per la difesa dei diritti dei campesinos.",
-    "ambiguity_note": "Che Guevara usava frasi simili, ma Zapata coniò questa durante la rivoluzione messicana.",
+    "ambiguity_note": "Le opzioni includono Che Guevara (rivoluzionario cubano), Garibaldi (eroe italiano) e Malcolm X (attivista afroamericano), tutti associati al tema della libertà. Zapata pronunciò questa frase durante la rivoluzione messicana.",
     "language_orig": "ES",
     "sensitive": false,
-    "context": "Lo spirito rivoluzionario di Zapata: la dignità vale più della sopravvivenza."
+    "context": "Nel Messico del 1910-1919, durante la Rivoluzione messicana, Zapata sviluppò una filosofia rivoluzionaria basata sulla dignità. Credeva che fosse meglio morire in piedi che vivere in ginocchio, trasformando la libertà in valore supremo e influenzando i movimenti di liberazione latinoamericani."
   },
   {
     "id": "q117",
@@ -3246,7 +3246,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1938",
-    "source_title": "Discorso alla Camera dei Comuni",
+    "source_title": "Discorso alla Camera dei Comuni (1938)",
     "source_link": "https://it.wikipedia.org/wiki/Winston_Churchill",
     "tags": [
       "politica",
@@ -3257,10 +3257,10 @@
     "spiciness": 0,
     "hint_short": "Primo ministro britannico",
     "hint_more": "Primo ministro britannico durante la Seconda guerra mondiale, noto per i suoi discorsi infuocati e per aver guidato la Gran Bretagna nella lotta contro il nazismo.",
-    "ambiguity_note": "Chamberlain era per l'appeasement, Churchill denunciava la politica di pacificazione.",
+    "ambiguity_note": "Le opzioni includono Stalin (leader sovietico), San Francesco (santo) e de Gaulle (leader francese), tutti associati al tema del potere. Churchill pronunciò questa frase criticando la politica di appeasement.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La critica di Churchill all'appeasement: il disonore non evita la guerra."
+    "context": "Nel Regno Unito del 1938, durante la crisi di Monaco, Churchill sviluppò una critica dell'appeasement basata sulla realpolitik. Credeva che scegliere il disonore non evitasse la guerra ma la rendesse inevitabile, trasformando la diplomazia in questione morale e influenzando la percezione storica dell'anteguerra."
   },
   {
     "id": "q118",
@@ -3274,7 +3274,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1860",
-    "source_title": "Spedizione dei Mille",
+    "source_title": "Spedizione dei Mille (1860)",
     "source_link": "https://it.wikipedia.org/wiki/Giuseppe_Garibaldi",
     "tags": [
       "Risorgimento",
@@ -3285,10 +3285,10 @@
     "spiciness": 0,
     "hint_short": "Eroe del Risorgimento italiano",
     "hint_more": "Generale e patriota italiano, protagonista del Risorgimento, noto per la Spedizione dei Mille e per aver contribuito all'unificazione d'Italia.",
-    "ambiguity_note": "Cavour e Mazzini erano politici, Garibaldi era l'uomo d'azione del Risorgimento.",
+    "ambiguity_note": "Le opzioni includono Cesare Borgia (condottiero rinascimentale), Kanye West (artista moderno) e Madre Teresa (santa), tutti associati al tema dell'azione o della dedizione. Garibaldi pronunciò questa frase durante la Spedizione dei Mille.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Il momento cruciale della Spedizione dei Mille: tutto o niente per l'Italia unita."
+    "context": "Nell'Italia del 1860, durante il Risorgimento, Garibaldi sviluppò una filosofia patriottica basata sull'azione determinata. Credeva che 'Qui si fa l'Italia o si muore' rappresentasse l'essenza della lotta per l'unità, trasformando il patriottismo in sacrificio supremo e influenzando l'identità nazionale italiana."
   },
   {
     "id": "q119",
@@ -3302,7 +3302,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1945-1955",
-    "source_title": "Interviste e dichiarazioni",
+    "source_title": "Interviste e dichiarazioni (1945-1955)",
     "source_link": "https://it.wikipedia.org/wiki/Albert_Einstein",
     "tags": [
       "scienza",
@@ -3313,10 +3313,10 @@
     "spiciness": 0,
     "hint_short": "Fisico tedesco-americano",
     "hint_more": "Fisico tedesco-americano, premio Nobel per la fisica, noto per la teoria della relatività e per aver contribuito allo sviluppo della bomba atomica.",
-    "ambiguity_note": "Oppenheimer lavorò al Progetto Manhattan, ma Einstein teorizzò le conseguenze della guerra nucleare.",
+    "ambiguity_note": "Le opzioni includono Kennedy (presidente americano), Sartre (filosofo esistenzialista) e Eraclito (filosofo presocratico), tutti associati al tema della guerra o della saggezza. Einstein pronunciò questa frase durante interviste post-belliche.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il monito di Einstein: la guerra nucleare distruggerebbe la civiltà moderna."
+    "context": "Negli Stati Uniti del 1945-1955, durante l'era nucleare, Einstein sviluppò una coscienza etica della scienza basata sulla responsabilità. Credeva che la terza guerra mondiale distruggerebbe la civiltà e la quarta sarebbe combattuta con pietre e bastoni, trasformando la scienza nucleare in questione di sopravvivenza umana."
   },
   {
     "id": "q120",
@@ -3330,7 +3330,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XVIII-XIX secolo",
-    "source_title": "Lettere e scritti",
+    "source_title": "Lettere e scritti (XVIII-XIX secolo)",
     "source_link": "https://it.wikipedia.org/wiki/Thomas_Jefferson",
     "tags": [
       "filosofia",
@@ -3341,10 +3341,10 @@
     "spiciness": 0,
     "hint_short": "Padre fondatore degli Stati Uniti",
     "hint_more": "Terzo presidente degli Stati Uniti, autore della Dichiarazione d'Indipendenza e noto per le sue riflessioni filosofiche sulla natura umana e sulla società.",
-    "ambiguity_note": "Franklin e Washington erano pragmatici, Jefferson era più filosofo e riflessivo.",
+    "ambiguity_note": "Le opzioni includono Sun Tzu (stratega antico), Malcolm X (attivista) e Maria Antonietta (regina francese), tutti associati al tema della saggezza o del potere. Jefferson espresse questa riflessione nei suoi scritti.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La saggezza di Jefferson: l'orgoglio è il vizio più costoso dell'umanità."
+    "context": "Negli Stati Uniti del XVIII-XIX secolo, durante la fondazione della repubblica, Jefferson sviluppò una filosofia morale basata sull'umiltà. Credeva che l'orgoglio costasse più della fame, della sete e del freddo, trasformando l'umiltà in virtù fondamentale e influenzando l'etica repubblicana americana."
   },
   {
     "id": "q121",
@@ -3358,7 +3358,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XVI secolo",
-    "source_title": "Il Principe",
+    "source_title": "Il Principe (XVI secolo)",
     "source_link": "https://it.wikipedia.org/wiki/Niccolò_Machiavelli",
     "tags": [
       "filosofia",
@@ -3369,10 +3369,10 @@
     "spiciness": 0,
     "hint_short": "Filosofo e politico fiorentino",
     "hint_more": "Filosofo, politico e scrittore fiorentino del Rinascimento, autore de 'Il Principe' e noto per aver teorizzato la separazione tra etica privata e politica.",
-    "ambiguity_note": "Machiavelli non ha mai scritto questa frase, ma gli è stata attribuita essendo una sintesi moderna e semplificata del suo pensiero; probabilmente è una parafrasi di 'Exitus acta probat' (Ovidio) o di concetti simili in altri autori classici.",
+    "ambiguity_note": "Le opzioni includono Clausewitz (teorico militare), Stalin (dittatore) e Oppenheimer (fisico nucleare), tutti associati al tema del potere. Questa frase è una sintesi moderna del pensiero di Machiavelli, non scritta direttamente da lui.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Questa espressione controversa sintetizza il realismo politico rinascimentale: l'efficacia del governo prevale sui principi morali assoluti. Nel 'Principe', Machiavelli teorizzava che un sovrano deve essere pragmatico per mantenere lo stato e il potere, anche se questo richiede azioni moralmente discutibili."
+    "context": "Nell'Italia del XVI secolo, durante il Rinascimento, Machiavelli sviluppò una filosofia politica basata sul realismo. Credeva che il fine giustificasse i mezzi perché l'efficacia del governo prevale sui principi morali assoluti, trasformando la politica in arte del potere e influenzando il pensiero politico moderno."
   },
   {
     "id": "q122",
@@ -3386,7 +3386,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1940-1943",
-    "source_title": "Discorsi e dichiarazioni",
+    "source_title": "Discorsi e dichiarazioni (1940-1943)",
     "source_link": "https://it.wikipedia.org/wiki/Benito_Mussolini",
     "tags": [
       "fascismo",
@@ -3398,9 +3398,9 @@
     "sensitive": true,
     "hint_short": "Leader fascista italiano",
     "hint_more": "Leader politico italiano, fondatore del fascismo e capo del governo durante la Seconda guerra mondiale, noto per i suoi discorsi aggressivi e per l'alleanza con Hitler.",
-    "ambiguity_note": "Mentre Hitler giustificava la guerra per obiettivi geopolitici e di supremazia razziale, Mussolini usava questo cinismo per giustificare la guerra.",
+    "ambiguity_note": "Le opzioni includono Hitler (dittatore nazista), Churchill (leader alleato) e Kanye West (artista moderno), tutti associati al tema del potere. Mussolini pronunciò questa frase cinica durante la guerra.",
     "language_orig": "IT",
-    "context": "Il cinismo di Mussolini: la guerra come strumento di negoziazione politica."
+    "context": "Nell'Italia del 1940-1943, durante la Seconda Guerra Mondiale, Mussolini sviluppò una retorica bellica basata sul cinismo politico. Credeva che servissero migliaia di morti per sedersi al tavolo delle trattative, trasformando la guerra in strumento di negoziazione e rivelando la brutalità del fascismo."
   },
   {
     "id": "q123",
@@ -3414,7 +3414,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "V secolo a.C.",
-    "source_title": "Dialoghi platonici",
+    "source_title": "Dialoghi platonici (V sec. a.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Socrate",
     "tags": [
       "filosofia",
@@ -3425,10 +3425,10 @@
     "spiciness": 0,
     "hint_short": "Filosofo greco antico",
     "hint_more": "Filosofo greco del V secolo a.C., maestro di Platone, noto per il metodo socratico e per aver posto la conoscenza al centro della filosofia etica.",
-    "ambiguity_note": "Platone scrisse i dialoghi, ma questa massima è attribuita a Socrate.",
+    "ambiguity_note": "Le opzioni includono Musk (imprenditore moderno), Leonardo (artista rinascimentale) e Austen (scrittrice), tutti associati al tema della conoscenza. Socrate espresse questa filosofia, riportata da Platone nei dialoghi.",
     "language_orig": "GR",
     "sensitive": false,
-    "context": "La filosofia di Socrate: la conoscenza è la base di ogni virtù."
+    "context": "Nell'antica Grecia del V secolo a.C., Socrate sviluppò una filosofia etica basata sull'intellettualismo morale. Credeva che esistesse un solo bene, la conoscenza, e un solo male, l'ignoranza, trasformando la conoscenza in virtù suprema e fondando l'intellettualismo etico occidentale."
   },
   {
     "id": "q124",
@@ -3442,7 +3442,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "I secolo d.C.",
-    "source_title": "Vangelo di Giovanni 8:7",
+    "source_title": "Vangelo di Giovanni 8:7 (I secolo d.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Gesù",
     "tags": [
       "religione",
@@ -3453,10 +3453,10 @@
     "spiciness": 0,
     "hint_short": "Figura centrale del Cristianesimo",
     "hint_more": "Figura centrale del Cristianesimo, noto per i suoi insegnamenti di amore, perdono e misericordia, e per aver pronunciato questa frase durante il processo di una donna adultera.",
-    "ambiguity_note": "Spesso attribuita genericamente a 'un santo' o 'un profeta', ma è specificamente di Gesù nel Vangelo di Giovanni.",
+    "ambiguity_note": "Le opzioni includono San Francesco (santo medievale), Mandela (leader sudafricano) e Trump (politico moderno), tutti associati al tema della giustizia. Gesù pronunciò questa frase nel Vangelo di Giovanni.",
     "language_orig": "GR",
     "sensitive": false,
-    "context": "L'insegnamento di Gesù: la misericordia e il perdono prima del giudizio."
+    "context": "Nella Giudea del I secolo d.C., durante il dominio romano, Gesù sviluppò una teologia della misericordia basata sul perdono. Credeva che chi fosse senza peccato potesse scagliare la prima pietra, trasformando la giustizia in questione di coscienza e influenzando l'etica cristiana per millenni."
   },
   {
     "id": "q125",
@@ -3470,7 +3470,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1814-1848",
-    "source_title": "Memorie e documenti diplomatici",
+    "source_title": "Memorie e documenti diplomatici (1814-1848)",
     "source_link": "https://it.wikipedia.org/wiki/Klemens_von_Metternich",
     "tags": [
       "storia",
@@ -3481,10 +3481,10 @@
     "spiciness": 0,
     "hint_short": "Cancelliere austriaco del XIX secolo",
     "hint_more": "Cancelliere austriaco del XIX secolo, noto per la sua politica conservatrice e per aver pronunciato questa frase durante il Congresso di Vienna, esprimendo scetticismo sull'unità italiana.",
-    "ambiguity_note": "Spesso attribuita a politici italiani, ma è di Metternich, che negava l'esistenza di un'identità nazionale italiana.",
+    "ambiguity_note": "Le opzioni includono Garibaldi (eroe del Risorgimento), Cavour (statista italiano) e Napoleone (imperatore), tutti associati al tema dell'Italia. Metternich pronunciò questa frase negando l'identità nazionale italiana.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La visione di Metternich: l'Italia come semplice territorio senza unità politica o culturale."
+    "context": "Nell'Austria del 1814-1848, durante il Congresso di Vienna, Metternich sviluppò una diplomazia conservatrice basata sulla negazione del nazionalismo. Credeva che l'Italia non fosse altro che un'espressione geografica, trasformando la geopolitica in strumento di controllo e influenzando la percezione europea dell'Italia pre-unitaria."
   },
   {
     "id": "q126",
@@ -3498,7 +3498,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1599",
-    "source_title": "Come vi piace",
+    "source_title": "Come vi piace (1599)",
     "source_link": "https://it.wikipedia.org/wiki/William_Shakespeare",
     "tags": [
       "teatro",
@@ -3509,10 +3509,10 @@
     "spiciness": 0,
     "hint_short": "Drammaturgo inglese del XVI secolo",
     "hint_more": "Drammaturgo inglese del XVI secolo, considerato il più grande scrittore in lingua inglese, autore di questa celebre frase dal monologo di Jaques in 'Come vi piace'.",
-    "ambiguity_note": "Spesso attribuita a filosofi antichi come Seneca o a pensatori moderni, ma è specificamente di Shakespeare.",
+    "ambiguity_note": "Le opzioni includono Machiavelli (filosofo rinascimentale), Musk (imprenditore moderno) e Seneca (filosofo stoico), tutti associati al tema della vita. Shakespeare scrisse questa metafora in 'Come vi piace'.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La metafora shakespeariana: la vita come teatro e gli uomini come attori."
+    "context": "Nell'Inghilterra elisabettiana del 1599, Shakespeare sviluppò una filosofia teatrale basata sulla metafora del mondo come palcoscenico. Credeva che la vita fosse una commedia e gli uomini solo attori, trasformando il teatro in specchio dell'esistenza e influenzando la letteratura occidentale per secoli."
   },
   {
     "id": "q127",
@@ -3526,7 +3526,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1921",
-    "source_title": "Sei personaggi in cerca d'autore",
+    "source_title": "Sei personaggi in cerca d'autore (1921)",
     "source_link": "https://it.wikipedia.org/wiki/Luigi_Pirandello",
     "tags": [
       "teatro",
@@ -3537,10 +3537,10 @@
     "spiciness": 0,
     "hint_short": "Drammaturgo e scrittore siciliano",
     "hint_more": "Drammaturgo e scrittore siciliano, premio Nobel per la letteratura nel 1934, noto per le sue opere sul tema della maschera e dell'identità.",
-    "ambiguity_note": "Spesso attribuita a filosofi antichi come Eraclito o a scrittori moderni, ma è di Pirandello, maestro del teatro dell'assurdo.",
+    "ambiguity_note": "Le opzioni includono Wilde (scrittore vittoriano), Eleanor Roosevelt (first lady) e Eraclito (filosofo presocratico), tutti associati al tema della saggezza. Pirandello scrisse questa riflessione in 'Sei personaggi in cerca d'autore'.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La filosofia pirandelliana: la maschera come realtà e l'autenticità come illusione."
+    "context": "Nell'Italia del 1921, durante il periodo tra le due guerre, Pirandello sviluppò una filosofia dell'identità basata sulla maschera. Credeva che nel lungo tragitto della vita si incontrassero tante maschere e pochi volti, trasformando l'identità in questione filosofica e influenzando il teatro dell'assurdo."
   },
   {
     "id": "q128",
@@ -3554,7 +3554,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1849",
-    "source_title": "Eleonora",
+    "source_title": "Eleonora (1849)",
     "source_link": "https://it.wikipedia.org/wiki/Edgar_Allan_Poe",
     "tags": [
       "letteratura",
@@ -3565,10 +3565,10 @@
     "spiciness": 0,
     "hint_short": "Scrittore americano del XIX secolo",
     "hint_more": "Scrittore americano del XIX secolo, maestro del racconto gotico e del mistero, noto per le sue riflessioni sui sogni e l'inconscio.",
-    "ambiguity_note": "Spesso attribuita a scrittrici moderne come Ayn Rand o Virginia Woolf, ma è di Poe, precursore della letteratura psicologica.",
+    "ambiguity_note": "Le opzioni includono Lovecraft (scrittore horror), Ayn Rand (filosofa) e Virginia Woolf (scrittrice modernista), tutti associati al tema della letteratura. Poe scrisse questa riflessione in 'Eleonora'.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La visione di Poe: i sogni diurni come fonte di conoscenza superiore."
+    "context": "Negli Stati Uniti del 1849, durante l'era romantica, Poe sviluppò una filosofia del sogno basata sulla conoscenza intuitiva. Credeva che coloro che sognano di giorno sappiano molte cose che sfuggono a chi sogna soltanto di notte, trasformando il sogno diurno in fonte di saggezza e influenzando la letteratura psicologica."
   },
   {
     "id": "q129",
@@ -3582,7 +3582,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1978-1985",
-    "source_title": "Discorsi presidenziali",
+    "source_title": "Discorsi presidenziali (1978-1985)",
     "source_link": "https://it.wikipedia.org/wiki/Sandro_Pertini",
     "tags": [
       "politica",
@@ -3593,10 +3593,10 @@
     "spiciness": 1,
     "hint_short": "Presidente della Repubblica italiana",
     "hint_more": "Presidente della Repubblica italiana dal 1978 al 1985, partigiano e antifascista, noto per la sua ferma condanna del fascismo.",
-    "ambiguity_note": "Spesso attribuita a vari politici antifascisti, ma è specificamente di Pertini.",
+    "ambiguity_note": "Le opzioni includono Gramsci (filosofo marxista), Mussolini (dittatore fascista) e Churchill (leader alleato), tutti associati al tema del fascismo. Pertini pronunciò questa frase durante la sua presidenza.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "La condanna di Pertini: il fascismo come crimine contro l'umanità."
+    "context": "Nell'Italia del 1978-1985, durante la presidenza della Repubblica, Pertini sviluppò una filosofia antifascista basata sulla memoria storica. Credeva che il fascismo non fosse un'opinione ma un crimine, trasformando l'antifascismo in principio costituzionale e influenzando la cultura democratica italiana."
   },
   {
     "id": "q130",
@@ -3610,7 +3610,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1593",
-    "source_title": "Conversione al cattolicesimo",
+    "source_title": "Conversione al cattolicesimo (1593)",
     "source_link": "https://it.wikipedia.org/wiki/Enrico_IV_di_Francia",
     "tags": [
       "storia",
@@ -3621,10 +3621,10 @@
     "spiciness": 0,
     "hint_short": "Re di Francia del XVI secolo",
     "hint_more": "Re di Francia del XVI secolo, noto per aver pronunciato questa frase quando si convertì al cattolicesimo per ottenere il trono di Parigi.",
-    "ambiguity_note": "Spesso attribuita a un sovrano francese in via generica, ma è specificamente di Enrico IV.",
+    "ambiguity_note": "Le opzioni includono de Gaulle (leader francese moderno), Napoleone (imperatore) e Foucault (filosofo), tutti associati al tema del potere francese. Enrico IV pronunciò questa frase durante la sua conversione.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "Il pragmatismo di Enrico IV: la conversione religiosa come strumento politico."
+    "context": "Nella Francia del 1593, durante le guerre di religione, Enrico IV sviluppò una strategia politica basata sul pragmatismo religioso. Credeva che Parigi valesse bene una messa, trasformando la conversione religiosa in strumento politico e influenzando la diplomazia francese per secoli."
   },
   {
     "id": "q131",
@@ -3638,7 +3638,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1776-1826",
-    "source_title": "Lettere e discorsi",
+    "source_title": "Lettere e discorsi (1776-1826)",
     "source_link": "https://it.wikipedia.org/wiki/Thomas_Jefferson",
     "tags": [
       "filosofia",
@@ -3649,10 +3649,10 @@
     "spiciness": 0,
     "hint_short": "Presidente degli Stati Uniti",
     "hint_more": "Terzo presidente degli Stati Uniti, autore della Dichiarazione d'Indipendenza, noto per le sue riflessioni sul progresso e l'innovazione.",
-    "ambiguity_note": "Spesso attribuita a leader come Mandela o Kennedy, ma è di Jefferson, padre fondatore degli Stati Uniti.",
+    "ambiguity_note": "Le opzioni includono Mandela (leader sudafricano), Machiavelli (filosofo rinascimentale) e Kennedy (presidente americano), tutti associati al tema del cambiamento. Jefferson espresse questa filosofia nei suoi scritti.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di Jefferson: il cambiamento come prerequisito per il progresso."
+    "context": "Negli Stati Uniti del 1776-1826, durante la fondazione della repubblica, Jefferson sviluppò una filosofia del progresso basata sull'innovazione. Credeva che per ottenere qualcosa di nuovo bisognasse fare qualcosa di nuovo, trasformando il cambiamento in prerequisito del progresso e influenzando l'etica americana dell'innovazione."
   },
   {
     "id": "q132",
@@ -3666,7 +3666,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1920-1948",
-    "source_title": "Discorsi e scritti",
+    "source_title": "Discorsi e scritti (1920-1948)",
     "source_link": "https://it.wikipedia.org/wiki/Mahatma_Gandhi",
     "tags": [
       "filosofia",
@@ -3677,10 +3677,10 @@
     "spiciness": 0,
     "hint_short": "Leader della resistenza non violenta indiana",
     "hint_more": "Leader della resistenza non violenta indiana, noto per aver guidato l'indipendenza dell'India dal dominio britannico attraverso la disobbedienza civile.",
-    "ambiguity_note": "Spesso attribuita a leader controversi come Hitler o a imprenditori come Gates, ma è specificamente di Gandhi.",
+    "ambiguity_note": "Le opzioni includono King (leader afroamericano), Hitler (dittatore nazista) e Gates (imprenditore), tutti associati al tema della resistenza o del successo. Gandhi espresse questa strategia nei suoi scritti.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La strategia di Gandhi: la resistenza pacifica come via verso la vittoria."
+    "context": "Nell'India del 1920-1948, durante la lotta per l'indipendenza, Gandhi sviluppò una strategia di resistenza basata sulla progressione morale. Credeva che prima ti ignorano, poi ti deridono, poi ti combattono, poi vinci, trasformando la resistenza pacifica in strategia di vittoria e influenzando i movimenti di liberazione mondiali."
   },
   {
     "id": "q133",
@@ -3694,7 +3694,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "79 d.C.",
-    "source_title": "Svetonio, Vite dei Cesari",
+    "source_title": "Svetonio, Vite dei Cesari (I-II sec. d.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Vespasiano",
     "tags": [
       "storia",
@@ -3705,10 +3705,10 @@
     "spiciness": 0,
     "hint_short": "Imperatore romano del I secolo",
     "hint_more": "Imperatore romano del I secolo, noto per aver pronunciato questa frase morendo, dimostrando la dignità e il coraggio tipici di un vero imperatore.",
-    "ambiguity_note": "Spesso attribuita a vari imperatori romani, ma è specificamente di Vespasiano.",
+    "ambiguity_note": "Le opzioni includono Marco Aurelio (imperatore filosofo), Augusto (primo imperatore) e Cesare (dittatore), tutti associati al tema del potere romano. Vespasiano pronunciò questa frase morendo secondo Svetonio.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La dignità di Vespasiano: la morte come ultimo atto di coraggio imperiale."
+    "context": "Nell'Impero Romano del 79 d.C., durante la dinastia flavia, Vespasiano sviluppò una filosofia imperiale basata sulla dignità. Credeva che un imperatore romano dovesse morire in piedi, trasformando la morte in ultimo atto di coraggio e influenzando l'ideale romano della virtù imperiale."
   },
   {
     "id": "q134",
@@ -3722,7 +3722,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1819-1837",
-    "source_title": "Pensieri",
+    "source_title": "Pensieri (1819-1837)",
     "source_link": "https://it.wikipedia.org/wiki/Giacomo_Leopardi",
     "tags": [
       "filosofia",
@@ -3733,10 +3733,10 @@
     "spiciness": 0,
     "hint_short": "Poeta e filosofo italiano del XIX secolo",
     "hint_more": "Poeta e filosofo italiano del XIX secolo, noto per le sue riflessioni pessimistiche sulla natura umana e per aver pronunciato questa frase sulla saggezza del silenzio.",
-    "ambiguity_note": "Spesso attribuita a filosofi antichi come Dante o Seneca, ma è di Leopardi.",
+    "ambiguity_note": "Le opzioni includono Dante (poeta medievale), Seneca (filosofo stoico) e D'Annunzio (poeta moderno), tutti associati al tema della saggezza. Leopardi scrisse questa riflessione nei suoi Pensieri.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La saggezza di Leopardi: il silenzio come segno di vera sapienza."
+    "context": "Nell'Italia del 1819-1837, durante il Romanticismo, Leopardi sviluppò una filosofia della saggezza basata sul silenzio. Credeva che il maligno dicesse male dei buoni, lo stolto ora dei buoni ora dei malvagi, ma il saggio di nessuno mai, trasformando il silenzio in segno di vera sapienza e influenzando il pensiero italiano."
   },
   {
     "id": "q135",
@@ -3750,7 +3750,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "218 a.C.",
-    "source_title": "Tito Livio, Ab Urbe Condita",
+    "source_title": "Tito Livio, Ab Urbe Condita (I sec. a.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Annibale",
     "tags": [
       "storia",
@@ -3761,10 +3761,10 @@
     "spiciness": 0,
     "hint_short": "Generale cartaginese",
     "hint_more": "Generale cartaginese, noto per aver attraversato le Alpi con gli elefanti durante la Seconda Guerra Punica, pronunciando questa frase di determinazione.",
-    "ambiguity_note": "Spesso attribuita a generali romani come Cesare o a condottieri come Borgia, ma è specificamente di Annibale.",
+    "ambiguity_note": "Le opzioni includono Cesare Borgia (condottiero rinascimentale), Cesare (dittatore romano) e Alessandro Magno (conquistatore macedone), tutti associati al tema della determinazione militare. Annibale pronunciò questa frase secondo Tito Livio.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La determinazione di Annibale: trovare o creare la via verso la vittoria."
+    "context": "Nell'antica Cartagine del 218 a.C., durante la Seconda Guerra Punica, Annibale sviluppò una strategia militare basata sulla determinazione assoluta. Credeva che 'Aut inveniam viam aut faciam' rappresentasse l'essenza della leadership militare, trasformando l'ostinazione in strategia e influenzando l'arte della guerra per secoli."
   },
   {
     "id": "q136",
@@ -3778,7 +3778,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1888",
-    "source_title": "Crepuscolo degli idoli",
+    "source_title": "Crepuscolo degli idoli (1888)",
     "source_link": "https://it.wikipedia.org/wiki/Friedrich_Nietzsche",
     "tags": [
       "filosofia",
@@ -3789,10 +3789,10 @@
     "spiciness": 0,
     "hint_short": "Filosofo tedesco del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, noto per le sue riflessioni sulla volontà di potenza e per aver pronunciato questa celebre frase sulla resilienza umana.",
-    "ambiguity_note": "Spesso attribuita a vari filosofi o psicologi, ma è specificamente di Nietzsche, maestro del pensiero moderno.",
+    "ambiguity_note": "Le opzioni includono Schopenhauer (filosofo pessimista), Kierkegaard (filosofo esistenzialista) e Wittgenstein (filosofo del linguaggio), tutti associati al tema della filosofia. Nietzsche scrisse questa frase nel Crepuscolo degli idoli.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "La filosofia di Nietzsche: la sofferenza come strumento di crescita personale."
+    "context": "Nella Germania del 1888, durante la crisi della modernità, Nietzsche sviluppò una filosofia della resilienza basata sulla volontà di potenza. Credeva che ciò che non ti uccide ti rende più forte, trasformando la sofferenza in strumento di crescita e influenzando il pensiero psicologico moderno."
   },
   {
     "id": "q137",
@@ -3806,7 +3806,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "49 a.C.",
-    "source_title": "De Bello Gallico",
+    "source_title": "De Bello Gallico (49 a.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Giulio_Cesare",
     "tags": [
       "storia",
@@ -3817,10 +3817,10 @@
     "spiciness": 0,
     "hint_short": "Generale e dittatore romano",
     "hint_more": "Generale e dittatore romano, noto per aver pronunciato questa frase che significa 'Molti nemici, molto onore', riflettendo sulla natura del potere.",
-    "ambiguity_note": "Spesso attribuita a scrittori come Pirandello o a imperatori come Augusto, ma è specificamente di Gaio Giulio Cesare.",
+    "ambiguity_note": "Le opzioni includono Cicerone (oratore romano), Pirandello (scrittore moderno) e Augusto (primo imperatore), tutti associati al tema del potere. Cesare pronunciò questa frase nel De Bello Gallico.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La saggezza di Cesare: il potere porta sia nemici che onore."
+    "context": "Nell'antica Roma del 49 a.C., durante la guerra civile, Cesare sviluppò una filosofia del potere basata sulla realpolitik. Credeva che 'Multos inimicos, honorem multum' rappresentasse la natura del potere, trasformando i nemici in segno di successo e influenzando il pensiero politico romano."
   },
   {
     "id": "q138",
@@ -3834,7 +3834,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1933-1945",
-    "source_title": "Discorsi e scritti",
+    "source_title": "Discorsi e scritti (1933-1945)",
     "source_link": "https://it.wikipedia.org/wiki/Eleanor_Roosevelt",
     "tags": [
       "filosofia",
@@ -3845,10 +3845,10 @@
     "spiciness": 0,
     "hint_short": "First Lady degli Stati Uniti",
     "hint_more": "First Lady degli Stati Uniti, attivista per i diritti umani e autrice di questa frase sulla dignità personale e l'autostima.",
-    "ambiguity_note": "Spesso attribuita a filosofi come Sartre o Machiavelli, ma è di Eleanor Roosevelt, simbolo dell'emancipazione femminile.",
+    "ambiguity_note": "Le opzioni includono Sartre (filosofo esistenzialista), Machiavelli (filosofo rinascimentale) e Pitagora (filosofo antico), tutti associati al tema della saggezza. Eleanor Roosevelt pronunciò questa frase durante la sua attività di first lady.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La saggezza di Eleanor Roosevelt: la dignità personale come scelta individuale."
+    "context": "Negli Stati Uniti del 1933-1945, durante la presidenza di Franklin D. Roosevelt, Eleanor sviluppò una filosofia dell'autostima basata sull'empowerment personale. Credeva che nessuno potesse farti sentire inferiore senza il tuo consenso, trasformando la dignità in scelta individuale e influenzando il movimento per i diritti delle donne."
   },
   {
     "id": "q139",
@@ -3862,7 +3862,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1095",
-    "source_title": "Discorso di Clermont",
+    "source_title": "Discorso di Clermont (1095)",
     "source_link": "https://it.wikipedia.org/wiki/Papa_Urbano_II",
     "tags": [
       "storia",
@@ -3873,10 +3873,10 @@
     "spiciness": 0,
     "hint_short": "Papa del XI secolo",
     "hint_more": "Papa del XI secolo, noto per aver pronunciato questa frase latina 'Dio lo vuole' durante il discorso di Clermont che diede inizio alla Prima Crociata.",
-    "ambiguity_note": "Spesso attribuita a figure religiose come Sant'Agostino o Gesù Cristo, ma è specificamente di Papa Urbano II.",
+    "ambiguity_note": "Le opzioni includono Sant'Agostino (teologo), Gesù Cristo (figura religiosa) e Madre Teresa (santa), tutti associati al tema della religione. Papa Urbano II pronunciò questa frase nel discorso di Clermont.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La chiamata di Urbano II: la volontà divina come giustificazione delle crociate."
+    "context": "Nella Francia del 1095, durante il Concilio di Clermont, Papa Urbano II sviluppò una teologia della guerra santa basata sulla volontà divina. Credeva che 'Deus vult' giustificasse la Prima Crociata, trasformando la religione in strumento di guerra e influenzando la storia medievale per secoli."
   },
   {
     "id": "q140",
@@ -3888,9 +3888,9 @@
       "Arthur Conan Doyle",
       "Leonardo da Vinci"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "year_or_period": "1890",
-    "source_title": "The Sign of the Four (cap. 'Sherlock Holmes Gives a Demonstration')",
+    "source_title": "The Sign of the Four (1890)",
     "source_link": "https://www.gutenberg.org/files/2097/2097-h/2097-h.htm","tags": [
       "logica",
       "giallo",
@@ -3900,10 +3900,10 @@
     "spiciness": 1,
     "hint_short": "La logica di un detective geniale",
     "hint_more": "Scrittore scozzese del XIX secolo, medico e autore di romanzi gialli. Creatore del detective più famoso della letteratura.",
-    "ambiguity_note": "Sherlock Holmes in realtà dice: 'Quando hai eliminato l'impossibile, ciò che resta, per quanto improbabile, dev'essere la verità'. La versione abbreviata è più famosa dell'originale.",
+    "ambiguity_note": "Le opzioni includono Poe (pioniere del giallo), D'Annunzio (scrittore italiano) e da Vinci (genio rinascimentale), tutti associati al tema della logica. Conan Doyle scrisse questa frase per Sherlock Holmes nel 1890.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La logica di Holmes: scartare l'impossibile per scoprire l'improbabile. Un metodo che funziona anche nella vita reale."
+    "context": "Nell'Inghilterra vittoriana del 1890, durante l'epoca d'oro del giallo, Conan Doyle sviluppò un metodo investigativo basato sulla logica deduttiva. Credeva che eliminato l'impossibile, ciò che resta, per quanto improbabile, dev'essere la verità, trasformando la deduzione in arte e influenzando la letteratura poliziesca per oltre un secolo."
   },
   {
     "id": "q141",
@@ -3917,7 +3917,7 @@
     ],
     "correctIndex": 3,
     "year_or_period": "V sec. a.C. (tramandata in Platone, 'Cratilo' 402a)",
-    "source_title": "Plato, Cratylus 402a (riporta dottrina di Eraclito)",
+    "source_title": "Platone, Cratilo 402a (V sec. a.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Panta_rhei","tags": [
       "filosofia",
       "Grecia antica",
@@ -3927,10 +3927,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia del divenire",
     "hint_more": "Massima legata al flusso perenne del reale nella dottrina eraclitea.",
-    "ambiguity_note": "Eraclito non ha mai esplicitamente formulato in ciò: è Platone che nel suo Cratilo scrive: «Dice Eraclito 'che tutto si muove e nulla sta fermo'»",
+    "ambiguity_note": "Le opzioni includono Dante (poeta medievale), Vespasiano (imperatore romano) e Platone (filosofo ateniese), tutti associati al tema della filosofia. Eraclito formulò questa dottrina del divenire, tramandata da Platone nel Cratilo.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "Sottolinea che tutto muta: il fiume (e noi) non siamo mai gli stessi."
+    "context": "Nell'antica Grecia del V sec. a.C., durante la nascita della filosofia occidentale, Eraclito sviluppò una metafisica del divenire basata sul flusso perenne. Credeva che 'Panta rhei' e che non si potesse scendere due volte nello stesso fiume, trasformando il cambiamento in principio ontologico e influenzando il pensiero filosofico per millenni."
   },
   {
     "id": "q142",
@@ -3944,7 +3944,7 @@
     ],
     "correctIndex": 3,
     "year_or_period": "1943",
-    "source_title": "Le Petit Prince (capitolo della volpe)",
+    "source_title": "Le Petit Prince (1943)",
     "source_link": "https://en.wikipedia.org/wiki/The_Little_Prince","tags": [
       "letteratura",
       "infanzia",
@@ -3954,10 +3954,10 @@
     "spiciness": 1,
     "hint_short": "Una volpe insegna a vedere col cuore",
     "hint_more": "Massima centrale del 'Piccolo Principe' sul valore delle relazioni autentiche.",
-    "ambiguity_note": "La frase è spesso citata isolata; nel testo è rivelata dalla volpe al protagonista.",
+    "ambiguity_note": "Le opzioni includono San Francesco (santo), Gandhi (leader spirituale) e Sartre (filosofo esistenzialista), tutti associati al tema della saggezza. Saint-Exupéry scrisse questa frase nel Piccolo Principe, pronunciata dalla volpe.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "La saggezza del Piccolo Principe: l'essenziale è invisibile agli occhi, si vede solo con il cuore."
+    "context": "Nella Francia del 1943, durante l'occupazione nazista, Saint-Exupéry sviluppò una filosofia dell'infanzia basata sulla saggezza del cuore. Credeva che si vedesse bene solo con il cuore e che l'essenziale fosse invisibile agli occhi, trasformando l'innocenza in saggezza e influenzando la letteratura per l'infanzia mondiale."
   },
   {
     "id": "q143",
@@ -3971,7 +3971,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "Inferno XXVI (vv. 118–120)",
-    "source_title": "Divina Commedia, Inferno 26",
+    "source_title": "Divina Commedia, Inferno XXVI (1304-1321)",
     "source_link": "https://digitaldante.columbia.edu/dante/divine-comedy/inferno/inferno-26/","tags": [
       "letteratura",
       "etica",
@@ -3981,10 +3981,10 @@
     "spiciness": 1,
     "hint_short": "Monito di Ulisse ai compagni",
     "hint_more": "Esorta a vivere secondo virtù e conoscenza: umanesimo ante litteram.",
-    "ambiguity_note": "Versi famosissimi, spesso citati come simbolo della spinta a conoscere.",
+    "ambiguity_note": "Le opzioni includono Petrarca (poeta rinascimentale), Leopardi (poeta romantico) e Mussolini (dittatore fascista), tutti associati al tema dell'umanesimo. Dante scrisse questi versi nell'Inferno, pronunciati da Ulisse.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "Sintesi dell’aspirazione umana al sapere e al miglioramento."
+    "context": "Nell'Italia medievale del 1304-1321, durante l'esilio di Dante, il poeta sviluppò un'antropologia umanistica basata sulla dignità dell'uomo. Credeva che non fossimo fatti a viver come bruti, ma per seguir virtute e canoscenza, trasformando la conoscenza in vocazione umana e influenzando l'umanesimo rinascimentale."
   },
   {
     "id": "q144",
@@ -3998,7 +3998,7 @@
     ],
     "correctIndex": 1,
     "year_or_period": "1869",
-    "source_title": "The Idiot (riferita al principe Myškin)",
+    "source_title": "L'Idiota (1869)",
     "source_link": "https://www.sparknotes.com/lit/idiot/quotes/page/5/","tags": [
       "letteratura",
       "etica",
@@ -4008,10 +4008,10 @@
     "spiciness": 2,
     "hint_short": "Il dilemma della bellezza",
     "hint_more": "Scrittore russo dell'800, autore di romanzi psicologici. Questa frase è attribuita a un personaggio di un suo celebre romanzo del 1869.",
-    "ambiguity_note": "Nel romanzo 'L'Idiota', il principe Myškin dice che 'la bellezza salverà il mondo', ma Dostoevskij stesso dubitava. La bellezza può salvare o corrompere?",
+    "ambiguity_note": "Le opzioni includono Nietzsche (filosofo), Tolstoj (scrittore russo) e Eleanor Roosevelt (first lady), tutti associati al tema dell'etica. Dostoevskij scrisse questa frase nell'Idiota, pronunciata dal principe Myškin.",
     "language_orig": "RU",
     "sensitive": false,
-    "context": "Il dilemma di Dostoevskij: la bellezza può salvare il mondo o corromperlo? Una domanda che divide ancora oggi."
+    "context": "Nella Russia zarista del 1869, durante l'epoca del realismo psicologico, Dostoevskij sviluppò un'estetica etica basata sul potere salvifico della bellezza. Credeva che la bellezza potesse salvare il mondo, trasformando l'arte in strumento di redenzione e influenzando la letteratura russa e mondiale."
   },
   {
     "id": "q145",
@@ -4025,7 +4025,7 @@
     ],
     "correctIndex": 3,
     "year_or_period": "Satira VI (I–II sec. d.C.)",
-    "source_title": "Juvenal, Satires VI",
+    "source_title": "Giovenale, Satire VI (I-II sec. d.C.)",
     "source_link": "https://en.wikipedia.org/wiki/Quis_custodiet_ipsos_custodes%3F","tags": [
       "latino",
       "potere",
@@ -4035,10 +4035,10 @@
     "spiciness": 1,
     "hint_short": "Controllo dei controllori",
     "hint_more": "Domanda classica sul rischio di abuso da parte di chi vigila.",
-    "ambiguity_note": "Il senso moderno (controllo del potere) estende il contesto originario (fedeltà coniugale).",
+    "ambiguity_note": "Le opzioni includono Archimede (scienziato), Cicerone (oratore romano) e Dante (poeta medievale), tutti associati al tema del potere. Giovenale formulò questa domanda nelle Satire, ispirando riflessioni politiche moderne.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Ha ispirato riflessioni politiche, dallo Stato di diritto ai fumetti 'Watchmen'."
+    "context": "Nell'Impero Romano del I-II sec. d.C., durante l'epoca imperiale, Giovenale sviluppò una critica sociale basata sul controllo del potere. Credeva che 'Quis custodiet ipsos custodes?' fosse la domanda fondamentale della politica, trasformando la satira in riflessione costituzionale e influenzando il pensiero politico per millenni."
   },
   {
     "id": "q146",
@@ -4052,7 +4052,7 @@
     ],
     "correctIndex": 3,
     "year_or_period": "1986",
-    "source_title": "I sommersi e i salvati",
+    "source_title": "I sommersi e i salvati (1986)",
     "source_link": "https://www.einaudi.it/catalogo-libri/storia/storia-moderna/i-sommersi-e-i-salvati-primo-levi-9788858420416/","tags": [
       "memoria",
       "Shoah",
@@ -4062,10 +4062,10 @@
     "spiciness": 2,
     "hint_short": "Memoria come dovere civile",
     "hint_more": "Autore sopravvissuto all'Olocausto, richiama alla responsabilità di conoscere per prevenire il ripetersi degli orrori.",
-    "ambiguity_note": "Citazione spesso estesa con la frase sul possibile ritorno di quanto è accaduto.",
+    "ambiguity_note": "Le opzioni includono Nietzsche (filosofo), Arendt (filosofa politica) e Feuerbach (filosofo materialista), tutti associati al tema della comprensione. Levi scrisse questa frase in I sommersi e i salvati, riflettendo sull'Olocausto.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "È un invito alla vigilanza storica e morale dopo l’esperienza dei Lager."
+    "context": "Nell'Italia del 1986, durante la riflessione post-Shoah, Primo Levi sviluppò un'etica della memoria basata sulla responsabilità storica. Credeva che se comprendere è impossibile, conoscere è necessario, trasformando la memoria in dovere civile e influenzando la cultura della testimonianza."
   },
   {
     "id": "q147",
@@ -4103,16 +4103,16 @@
       ],
       "correctIndex": 0,
       "year_or_period": "1949 (Nineteen Eighty-Four)",
-      "source_title": "Nineteen Eighty-Four (Parte I, cap. 1)",
+      "source_title": "1984 (1949)",
       "source_link": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
       "tags": ["letteratura", "totalitarismo", "propaganda"],
       "difficulty": 1,
       "spiciness": 2,
       "hint_short": "Tre paradossi che distruggono la logica",
       "hint_more": "Scrittore britannico del '900, scrisse '1984' e 'La fattoria degli animali'. Critico del totalitarismo e del controllo del pensiero.",
-      "ambiguity_note": "Tre paradossi che definiscono il totalitarismo moderno. Orwell li scrisse nel 1949, ma sembrano profetici: oggi viviamo in un'epoca dove la verità è 'relativa' e i fatti sono 'alternativi'.",
+      "ambiguity_note": "Le opzioni includono Leopardi (poeta pessimista), Alessandro Magno (conquistatore) e Machiavelli (filosofo politico), tutti associati al tema del potere. Orwell scrisse questi paradossi in 1984, descrivendo il doppio pensiero totalitario.",
       "language_orig": "EN",
       "sensitive": false,
-      "context": "Il manifesto del doppio pensiero: tre frasi che distruggono la logica umana. Orwell aveva previsto l'era della post-verità."
+      "context": "Nell'Inghilterra del 1949, durante la Guerra Fredda, Orwell sviluppò una critica del totalitarismo basata sul controllo del linguaggio. Credeva che 'La guerra è pace, la libertà è schiavitù, l'ignoranza è forza' rappresentassero il doppio pensiero, trasformando la propaganda in arma di controllo e influenzando la critica politica moderna."
       }
 ]
