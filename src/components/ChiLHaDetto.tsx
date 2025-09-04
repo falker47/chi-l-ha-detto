@@ -208,25 +208,38 @@ export default function ChiLHaDetto({
       return;
     }
     
+    // Esclude la domanda corrente per evitare duplicati consecutivi
+    const currentQuestionId = order.length > 0 ? ITEMS[order[0]]?.id : null;
+    const availableItemsNoCurrent = availableItems.filter(item => item.id !== currentQuestionId);
+    
+    // Se dopo aver escluso la domanda corrente non ci sono più domande disponibili,
+    // usa tutte le domande disponibili (evitando solo quella corrente se possibile)
+    const finalAvailableItems = availableItemsNoCurrent.length > 0 ? availableItemsNoCurrent : availableItems;
+    
     // Calcola la difficoltà target basata sulla progressione
-    const progressRatio = i / Math.max(1, filteredItems.length);
-    const targetDifficulty = Math.min(7, Math.max(1, Math.floor(1 + progressRatio * 6)));
+    // Per la modalità Achille, raggiungiamo difficoltà 7 dopo 25 domande
+    const streakBonus = Math.min(2, Math.floor(streak / 8)); // Bonus difficoltà per streak alti (ridotto)
+    const baseDifficulty = Math.min(7, Math.max(1, Math.floor(1 + (i * 6) / 25))); // Progressione: 1->7 in 25 domande
+    const targetDifficulty = Math.min(7, baseDifficulty + streakBonus);
     
     // Trova domande con difficoltà vicina alla target
-    const availableQuestions = availableItems.filter(item => 
-      Math.abs(item.difficulty - targetDifficulty) <= 1
+    // Per le prime domande (difficoltà 1-3), accettiamo solo difficoltà esatta o +1
+    // Per le domande più difficili (4-7), accettiamo ±1
+    const tolerance = targetDifficulty <= 3 ? 1 : 1;
+    const availableQuestions = finalAvailableItems.filter(item => 
+      Math.abs(item.difficulty - targetDifficulty) <= tolerance
     );
     
     let selectedQuestion;
     if (availableQuestions.length > 0) {
       selectedQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
     } else {
-      selectedQuestion = availableItems[Math.floor(Math.random() * availableItems.length)];
+      selectedQuestion = finalAvailableItems[Math.floor(Math.random() * finalAvailableItems.length)];
     }
     
     const originalIndex = ITEMS.findIndex(item => item.id === selectedQuestion.id);
     setOrder([originalIndex]);
-  }, [gameMode, includeSensitive, usedQuestions, i, resetUsedQuestions]);
+  }, [gameMode, includeSensitive, usedQuestions, i, resetUsedQuestions, order, streak]);
 
   const current: Item | null = useMemo(() => {
     if (gameMode === 'classic') {
