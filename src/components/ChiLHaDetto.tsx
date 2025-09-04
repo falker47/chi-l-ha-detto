@@ -1366,7 +1366,7 @@ export default function ChiLHaDetto({
             {/* FASE 4: Overlay della risposta con spiegazioni e bottoni (dopo l'animazione) */}
             {revealed && (selected !== null || isTimeoutGameOver || (gameMode === 'millionaire' && gameOver)) && !showClimbingAnimation && !showGameOverAnimation && (
               <div className="w-full h-full bg-black/80 backdrop-blur-md rounded-2xl border-2 border-white/30 shadow-2xl flex items-center justify-center p-3 sm:p-6">
-                <div className="text-center max-w-xs sm:max-w-2xl w-full py-8">
+                                 <div className="text-center max-w-xs sm:max-w-2xl w-full py-1 sm:py-2">
                   <div className="mb-3 sm:mb-4">
                     {isTimeoutGameOver ? (
                       <div className="text-2xl sm:text-3xl font-bold text-red-400 mb-2 drop-shadow-lg">⏰ Tempo Scaduto!</div>
@@ -1557,15 +1557,6 @@ export default function ChiLHaDetto({
           </div>
         </div>
 
-                 {/* Footer con testo responsive - compatto */}
-         <div className="mt-2 sm:mt-3 text-xs text-center sm:text-left">
-           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-2 border border-white/10">
-             <p className="px-2 sm:px-0 text-white drop-shadow-lg"
-                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-               🎓 <strong>Contenuti a scopo educativo:</strong> Le citazioni storiche sono presentate nel loro contesto per favorire la comprensione critica della storia.
-             </p>
-           </div>
-         </div>
         </div>
       </div>
       
