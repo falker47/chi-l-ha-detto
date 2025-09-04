@@ -97,7 +97,7 @@ function MainMenu({
                style={{ 
                  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px rgba(0, 0, 0, 1), 0 0 15px rgba(0, 0, 0, 0.7)' 
                }}>
-              Testa la tua conoscenza delle citazioni e il loro vero contesto storico.
+              Testa la tua conoscenza su citazioni e il loro contesto storico.
             </p>
             {/* Background semi-trasparente dietro il testo */}
             <div className="absolute inset-0 bg-black/20 backdrop-blur-sm rounded-2xl -m-3"></div>

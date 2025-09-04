@@ -11,7 +11,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1943, Seconda guerra mondiale",
-    "source_title": "Riferita in contesto Operazione Bodyguard (depistaggi D-Day)",
+    "source_title": "Operazione Bodyguard - Piano di depistaggio per il D-Day",
     "source_link": "https://en.wikipedia.org/wiki/Operation_Bodyguard",
     "tags": [
       "guerra",
@@ -22,9 +22,9 @@
     "spiciness": 1,
     "hint_short": "Strategia militare del XX secolo",
     "hint_more": "Leader britannico che orchestrò operazioni di depistaggio per confondere il nemico durante la Seconda guerra mondiale, incluso il celebre piano Bodyguard per il D-Day.",
-    "ambiguity_note": "Churchill non inventò la propaganda, ma la elevò a strategia militare sofisticata: l'Operazione Bodyguard ingannò i nazisti facendo credere che lo sbarco sarebbe avvenuto a Calais, non in Normandia.",
+    "ambiguity_note": "Le opzioni includono Hitler e Stalin, che erano i nemici di Churchill. La frase potrebbe sembrare cinica, ma rifletteva la filosofia militare di Churchill: l'inganno come arma strategica.",
     "language_orig": "EN",
-    "context": "Il genio strategico di Churchill: trasformare le bugie in armi decisive. L'inganno sistematico che salvò migliaia di vite alleate."
+    "context": "Durante la Seconda guerra mondiale, Churchill sviluppò una filosofia militare basata sull'inganno sistematico. Credeva che in guerra la verità fosse così preziosa da dover essere protetta da una scorta di bugie, trasformando la propaganda in arma strategica."
   },
   {
     "id": "q2",
@@ -38,7 +38,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1892",
-    "source_title": "Lady Windermere's Fan",
+    "source_title": "Lady Windermere's Fan (1892)",
     "source_link": "https://en.wikipedia.org/wiki/Lady_Windermere%27s_Fan",
     "tags": [
       "aforismi",
@@ -49,9 +49,9 @@
     "spiciness": 0,
     "hint_short": "Letteratura inglese del XIX secolo",
     "hint_more": "Scrittore irlandese di commedie teatrali, noto per il suo estetismo e per aver trasformato la propria vita in un'opera d'arte, autore di 'Il ritratto di Dorian Gray'.",
-    "ambiguity_note": "Wilde non fu il primo a giocare con i paradossi morali, ma nessuno lo fece con tanta eleganza autoironica. D'Annunzio era drammatico, Wilde era divertente.",
+    "ambiguity_note": "Le opzioni includono Nietzsche (filosofo tedesco) e D'Annunzio (esteta italiano), entrambi noti per il loro edonismo. Kanye West è un'anomalia moderna che potrebbe confondere.",
     "language_orig": "EN",
-    "context": "Il paradosso perfetto: confessare la propria debolezza con orgoglio. Wilde trasforma l'ammissione di colpa in una dichiarazione di stile."
+    "context": "Nell'Inghilterra vittoriana del 1892, Wilde sviluppò una filosofia estetica basata sull'edonismo e l'autoironia. Credeva che la vita dovesse essere vissuta come un'opera d'arte, celebrando la bellezza e la tentazione."
   },
   {
     "id": "q3",
@@ -65,7 +65,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1886",
-    "source_title": "Al di là del bene e del male, §146",
+    "source_title": "Al di là del bene e del male (1886), §146",
     "source_link": "https://en.wikipedia.org/wiki/Beyond_Good_and_Evil",
     "tags": [
       "etica",
@@ -76,9 +76,9 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco che scrisse 'Al di là del bene e del male', noto per aver proclamato la 'morte di Dio' e per aver influenzato profondamente il pensiero del Novecento con le sue critiche alla morale tradizionale.",
-    "ambiguity_note": "Nietzsche non inventò il concetto di corruzione morale, ma lo applicò in modo unico: chi lotta contro il male rischia di assorbirne i metodi. Jung parlava di psicologia, Nietzsche di etica.",
+    "ambiguity_note": "Le opzioni includono Hitler, che potrebbe sembrare logico dato il tema dei 'mostri', ma Nietzsche morì nel 1900, prima dell'ascesa del nazismo. Jung e Lovecraft sono fuorvianti per il contesto filosofico.",
     "language_orig": "DE",
-    "context": "L'avvertimento profetico di Nietzsche: la lotta contro il male può trasformarti nel male stesso. Un monito che risuona ancora oggi."
+    "context": "Nella Germania del 1886, Nietzsche sviluppò una filosofia critica della morale tradizionale. Credeva che chi lotta contro il male rischia di assorbirne i metodi, trasformandosi nel male stesso."
   },
   {
     "id": "q4",
@@ -92,7 +92,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1887",
-    "source_title": "Lettera a Mandell Creighton",
+    "source_title": "Lettera a Mandell Creighton (1887)",
     "source_link": "https://en.wikipedia.org/wiki/John_Dalberg-Acton,_1st_Baron_Acton",
     "tags": [
       "potere",
@@ -103,9 +103,9 @@
     "spiciness": 1,
     "hint_short": "Storiografia inglese del XIX secolo",
     "hint_more": "Storico inglese cattolico, primo barone, noto per aver studiato la storia della libertà.",
-    "ambiguity_note": "Acton non fu il primo a notare la corruzione del potere, ma formulò la legge più precisa: il potere assoluto distrugge completamente la moralità. Machiavelli lo studiava, Acton lo condannava.",
+    "ambiguity_note": "Le opzioni includono Machiavelli e Stalin, entrambi associati al potere assoluto. Hobbes potrebbe confondere perché scrisse 'Il Leviatano' sul potere dello stato, ma con prospettiva diversa.",
     "language_orig": "EN",
-    "context": "La legge universale del potere: più hai potere, più perdi la tua umanità. Acton trasformò un'osservazione in una verità eterna."
+    "context": "Nell'Inghilterra vittoriana del 1887, Acton sviluppò una filosofia liberale basata sulla limitazione del potere. Credeva che il potere assoluto corrompesse inevitabilmente, anche le persone più virtuose."
   },
   {
     "id": "q5",
@@ -119,7 +119,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XIX secolo",
-    "source_title": "Aforisma attribuito (Realpolitik)",
+    "source_title": "Aforisma attribuito - Realpolitik (XIX secolo)",
     "source_link": "https://en.wikipedia.org/wiki/Realpolitik",
     "tags": [
       "realpolitik",
@@ -129,9 +129,9 @@
     "spiciness": 0,
     "hint_short": "Politica tedesca del XIX secolo",
     "hint_more": "Cancelliere prussiano soprannominato 'Cancelliere di ferro', architetto dell'unificazione tedesca e maestro della Realpolitik, noto per aver affermato che 'la politica è l'arte del possibile'.",
-    "ambiguity_note": "Bismarck non inventò il pragmatismo politico, ma lo elevò a filosofia di stato: la Realpolitik significa agire secondo la realtà, non secondo i sogni. Cavour era pragmatico, Bismarck era sistematico.",
+    "ambiguity_note": "Le opzioni includono Cavour (unificatore italiano) e Machiavelli (teorico del potere), entrambi associati al pragmatismo politico. Churchill è fuorviante perché è del XX secolo.",
     "language_orig": "DE",
-    "context": "La rivoluzione politica di Bismarck: abbandonare l'idealismo per il realismo. La politica diventa scienza, non arte."
+    "context": "Nella Germania del XIX secolo, Bismarck sviluppò la Realpolitik, una filosofia politica basata sul pragmatismo. Credeva che la politica dovesse adattarsi alla realtà, non agli ideali, privilegiando il possibile sull'ideale."
   },
   {
     "id": "q6",
@@ -145,7 +145,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1873 (origine) → 1933–45 (uso nazista)",
-    "source_title": "Romanzo 'Arbeit macht frei' (origine); uso propagandistico sui cancelli",
+    "source_title": "Romanzo 'Arbeit macht frei' (1873) - Origine della frase",
     "source_link": "https://en.wikipedia.org/wiki/Arbeit_macht_frei",
     "tags": [
       "nazismo",
@@ -157,9 +157,9 @@
     "sensitive": true,
     "hint_short": "Storia tedesca del XX secolo",
     "hint_more": "Autore tedesco del XIX secolo che scrisse un romanzo dal titolo 'Arbeit macht frei', frase che venne poi utilizzata come slogan sui cancelli dei campi di concentramento nazisti.",
-    "ambiguity_note": "Diefenbach scrisse un romanzo nel 1873 con questo titolo, ma i nazisti lo trasformarono in uno slogan (ingannevole) di morte.",
+    "ambiguity_note": "Le opzioni includono Hitler, Goebbels e Himmler, tutti leader nazisti. La frase è associata ai campi di concentramento, ma l'autore originale (Diefenbach) non aveva intenzioni malvagie.",
     "language_orig": "DE",
-    "context": "La perversione del linguaggio: una frase di speranza trasformata in strumento di inganno."
+    "context": "Nel 1873, Diefenbach scrisse un romanzo dal titolo 'Arbeit macht frei' per celebrare la dignità del lavoro. La frase fu poi appropriata dai nazisti e posta sui cancelli dei campi di concentramento come strumento di propaganda ingannevole."
   },
   {
     "id": "q7",
@@ -173,7 +173,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XIX secolo",
-    "source_title": "Opere di Ignazio Pisciotta",
+    "source_title": "Opere di Ignazio Pisciotta (XIX secolo)",
     "source_link": "https://it.wikipedia.org/wiki/Ignazio_Pisciotta",
     "tags": [
       "letteratura",
@@ -185,9 +185,9 @@
     "sensitive": false,
     "hint_short": "Generale e scultore italiano",
     "hint_more": "Generale e scultore italiano del XIX secolo, noto anche per la frase «Tutti eroi! O il Piave, o tutti accoppati!».",
-    "ambiguity_note": "Pisciotta la scrisse nel XIX secolo, ma Mussolini la rese famosa. Il fascismo si appropriò di molte frasi per trasformarle in propaganda.",
+    "ambiguity_note": "Le opzioni includono Mussolini e D'Annunzio, entrambi noti per il loro culto del coraggio e dell'eroismo. Augusto è fuorviante perché è dell'antichità. La frase è associata al fascismo ma l'autore originale non era fascista.",
     "language_orig": "IT",
-    "context": "La filosofia del coraggio: meglio una vita breve ma intensa che una lunga ma insignificante."
+    "context": "Nell'Italia del XIX secolo, Pisciotta sviluppò una filosofia basata sul culto del coraggio e dell'eroismo. Credeva che una vita breve ma intensa fosse preferibile a una lunga ma insignificante, celebrando il valore dell'azione audace."
   },
   {
     "id": "q8",
@@ -201,7 +201,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "2010",
-    "source_title": "Brano 'POWER' (My Beautiful Dark Twisted Fantasy)",
+    "source_title": "POWER (2010) - My Beautiful Dark Twisted Fantasy",
     "source_link": "https://en.wikipedia.org/wiki/Power_(Kanye_West_song)",
     "tags": [
       "musica",
@@ -212,9 +212,9 @@
     "spiciness": 1,
     "hint_short": "Musica hip-hop contemporanea",
     "hint_more": "Rapper e produttore musicale americano, noto per i suoi album 'My Beautiful Dark Twisted Fantasy' e per aver spesso affrontato temi di potere e celebrità nei suoi testi.",
-    "ambiguity_note": "Kanye non inventò la critica del potere, ma la portò nel rap mainstream. Machiavelli teorizzava, Nietzsche filosofava, Kanye rappava. Stesso messaggio, linguaggio diverso.",
+    "ambiguity_note": "Le opzioni includono Nietzsche (filosofo del potere) e Machiavelli (teorico del potere), entrambi associati al tema. Elon Musk è fuorviante perché è un imprenditore moderno. Kanye critica il potere che lui stesso possiede.",
     "language_orig": "IT",
-    "context": "Il paradosso di Kanye: celebrare il potere mentre lo critica. Il rap diventa filosofia: il potere assoluto distrugge anche chi lo possiede."
+    "context": "Nell'America del 2010, Kanye West sviluppò una filosofia critica del potere e della celebrità attraverso l'hip-hop. Credeva che il potere assoluto corrompesse inevitabilmente, anche chi lo possedeva, trasformando la musica in critica sociale."
   },
   {
     "id": "q9",
@@ -228,7 +228,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "VI sec. a.C. (attribuzione tradizionale)",
-    "source_title": "L'arte della guerra",
+    "source_title": "L'arte della guerra (VI sec. a.C.)",
     "source_link": "https://en.wikipedia.org/wiki/The_Art_of_War",
     "tags": [
       "strategia",
@@ -239,9 +239,9 @@
     "spiciness": 0,
     "hint_short": "Strategia militare antico",
     "hint_more": "Stratega militare cinese del VI secolo a.C., autore del celebre trattato 'L'arte della guerra', considerato uno dei più influenti manuali di strategia mai scritti.",
-    "ambiguity_note": "Sun Tzu non inventò l'inganno militare, ma lo sistematizzò in una scienza. Il paradosso strategico: la forza si nasconde, la debolezza si mostra.",
+    "ambiguity_note": "Le opzioni includono Musashi (samurai giapponese), Napoleone e Mao, tutti strategi militari. La frase è attribuita a Sun Tzu ma potrebbe essere di autori successivi. L'inganno come strategia è universale.",
     "language_orig": "IT",
-    "context": "La psicologia della guerra: l'inganno come arma suprema. Sun Tzu trasformò la menzogna in strategia scientifica."
+    "context": "Nella Cina del VI secolo a.C., Sun Tzu sviluppò una filosofia militare basata sull'inganno strategico. Credeva che la guerra si vincesse con l'intelligenza, non con la forza bruta, trasformando l'inganno in scienza militare."
   },
   {
     "id": "q10",
@@ -255,7 +255,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1933",
-    "source_title": "First Inaugural Address",
+    "source_title": "First Inaugural Address (1933)",
     "source_link": "https://en.wikipedia.org/wiki/First_inauguration_of_Franklin_D._Roosevelt",
     "tags": [
       "politica",
@@ -266,9 +266,9 @@
     "spiciness": 0,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano che guidò il paese durante la Grande Depressione e la Seconda guerra mondiale, noto per i suoi 'Fireside Chats' e per aver istituito il New Deal.",
-    "ambiguity_note": "FDR non inventò il concetto di paura della paura, ma lo applicò alla politica in modo unico. Churchill combatteva la paura con la guerra, FDR con la psicologia economica.",
+    "ambiguity_note": "Le opzioni includono JFK, Churchill e MLK, tutti leader carismatici. La frase è diventata famosa ma FDR non fu il primo a usarla. Il concetto di 'paura della paura' è universale.",
     "language_orig": "IT",
-    "context": "La terapia di massa di FDR: trasformare la paura in coraggio. La Grande Depressione si vince prima nella mente, poi nell'economia."
+    "context": "Nell'America del 1933, durante la Grande Depressione, FDR sviluppò una filosofia politica basata sulla psicologia di massa. Credeva che la paura fosse il vero nemico, non la crisi economica, e che vincere la paura fosse il primo passo per risolvere i problemi."
   },
   {
     "id": "q11",
@@ -282,7 +282,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1926",
-    "source_title": "Lettera a Max Born",
+    "source_title": "Lettera a Max Born (1926)",
     "source_link": "https://en.wikipedia.org/wiki/God_does_not_play_dice",
     "tags": [
       "fisica",
@@ -292,10 +292,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico tedesco naturalizzato americano, autore della teoria della relatività, che espresse scetticismo verso l'interpretazione probabilistica della meccanica quantistica nelle sue lettere con Max Born.",
-    "ambiguity_note": "Einstein non rifiutò la meccanica quantistica, ma il suo aspetto probabilistico. Schrödinger accettava il caso, Einstein cercava l'ordine deterministico. La fisica moderna ha dato ragione a Schrödinger.",
+    "ambiguity_note": "Le opzioni includono Sant'Agostino (teologo) e Schrödinger (fisico quantistico), entrambi associati al determinismo. Adam Smith è fuorviante perché è un economista. Einstein si sbagliava sulla meccanica quantistica.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "La battaglia di Einstein contro il caso: l'universo deve essere deterministico, non probabilistico. La sua fede nell'ordine cosmico contro la rivoluzione quantistica."
+    "context": "Nella Germania del 1926, Einstein sviluppò una filosofia della scienza basata sul determinismo. Credeva che l'universo fosse governato da leggi deterministiche, non probabilistiche, rifiutando l'interpretazione probabilistica della meccanica quantistica."
   },
   {
     "id": "q12",
@@ -309,7 +309,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1513",
-    "source_title": "Il Principe, cap. XVII",
+    "source_title": "Il Principe (1513), cap. XVII",
     "source_link": "https://it.wikipedia.org/wiki/Il_Principe",
     "tags": [
       "politica",
@@ -320,10 +320,10 @@
     "spiciness": 1,
     "hint_short": "Pensiero politico rinascimentale",
     "hint_more": "Politico e filosofo fiorentino del Rinascimento, autore de 'Il Principe', considerato il fondatore del pensiero politico moderno per il suo realismo e la separazione tra etica e politica.",
-    "ambiguity_note": "Machiavelli non inventò il concetto di timore politico, ma lo sistematizzò: l'amore è volubile, la paura è costante. Hobbes teorizzava, Machiavelli praticava.",
+    "ambiguity_note": "Le opzioni includono Hobbes (teorico del potere) e Cesare Borgia (modello di Machiavelli), entrambi associati al tema. Voltaire è fuorviante perché è dell'Illuminismo. Machiavelli si basava sull'osservazione della politica fiorentina.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La psicologia del potere: la paura è più affidabile dell'amore. Machiavelli scoprì che governare significa controllare le emozioni, non conquistarle."
+    "context": "Nell'Italia rinascimentale del 1513, Machiavelli sviluppò una filosofia politica basata sul realismo. Credeva che governare significasse controllare le emozioni, privilegiando la paura (più stabile) sull'amore (più volubile)."
   },
   {
     "id": "q13",
@@ -337,7 +337,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1945",
-    "source_title": "La fattoria degli animali",
+    "source_title": "La fattoria degli animali (1945)",
     "source_link": "https://it.wikipedia.org/wiki/La_fattoria_degli_animali",
     "tags": [
       "satira",
@@ -348,10 +348,10 @@
     "spiciness": 1,
     "hint_short": "Letteratura inglese del XX secolo",
     "hint_more": "Scrittore inglese del Novecento, autore di '1984' e 'La fattoria degli animali', noto per le sue critiche al totalitarismo e per aver coniato termini come 'Grande Fratello' e 'Neolingua'.",
-    "ambiguity_note": "Orwell non inventò il concetto di ipocrisia politica, ma lo espresse con genio: l'uguaglianza che nasconde la disuguaglianza. Huxley immaginava il futuro, Orwell denunciava il presente.",
+    "ambiguity_note": "Le opzioni includono Huxley (autore di 'Il mondo nuovo') e Marx (teorico del comunismo), entrambi associati al tema dell'uguaglianza. Malcolm X è fuorviante perché è un attivista per i diritti civili. Orwell critica l'ipocrisia del potere.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il paradosso perfetto dell'ipocrisia: l'uguaglianza che giustifica la disuguaglianza. Orwell svela come il potere corrompe anche i principi più nobili."
+    "context": "Nell'Inghilterra del 1945, Orwell sviluppò una filosofia politica basata sulla critica del totalitarismo. Credeva che il potere corrompesse anche i principi più nobili, trasformando l'uguaglianza in ipocrisia attraverso la satira."
   },
   {
     "id": "q14",
@@ -365,7 +365,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1949",
-    "source_title": "Il secondo sesso",
+    "source_title": "Il secondo sesso (1949)",
     "source_link": "https://it.wikipedia.org/wiki/Il_secondo_sesso",
     "tags": [
       "femminismo",
@@ -376,10 +376,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia francese del XX secolo",
     "hint_more": "Filosofa francese esistenzialista, compagna di Sartre, autrice de 'Il secondo sesso', considerata una delle fondatrici del pensiero femminista moderno.",
-    "ambiguity_note": "De Beauvoir non inventò il femminismo, ma lo rivoluzionò: il genere non è biologia, è cultura. Woolf descriveva, de Beauvoir teorizzava. Sartre influenzò il suo esistenzialismo.",
+    "ambiguity_note": "Le opzioni includono Woolf, Arendt e Wollstonecraft, tutte femministe. La frase è diventata famosa ma il concetto esisteva già. De Beauvoir lo sistematizzò in una teoria filosofica completa.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "La rivoluzione del femminismo: l'identità di genere è una scelta, non un destino. De Beauvoir liberò le donne dalla biologia."
+    "context": "Nella Francia del 1949, De Beauvoir sviluppò una filosofia femminista basata sull'esistenzialismo. Credeva che l'identità di genere fosse una costruzione sociale, non biologica, liberando le donne dalla determinazione naturale."
   },
   {
     "id": "q15",
@@ -393,7 +393,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "III–II sec. a.C.",
-    "source_title": "Asinaria (v. 495)",
+    "source_title": "Asinaria (III-II sec. a.C.), v. 495",
     "source_link": "https://it.wikipedia.org/wiki/Homo_homini_lupus",
     "tags": [
       "latino",
@@ -404,10 +404,10 @@
     "spiciness": 0,
     "hint_short": "Letteratura latina antica",
     "hint_more": "Commediografo latino del III-II secolo a.C., autore di commedie come 'Asinaria', che coniò questa celebre espressione molto prima che Hobbes la utilizzasse nel 'Leviatano'.",
-    "ambiguity_note": "Plauto la scrisse in una commedia, Hobbes la trasformò in filosofia politica. Il teatro romano anticipò il pessimismo moderno: l'uomo è naturalmente aggressivo.",
+    "ambiguity_note": "Le opzioni includono Hobbes (che rese famosa la frase nel 'Leviatano') e Seneca (filosofo stoico), entrambi associati al pessimismo. Cicerone è fuorviante perché è un ottimista. Plauto la scrisse in una commedia, non in un trattato filosofico.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La verità eterna del teatro romano: l'uomo è il peggior nemico dell'uomo. Plauto scoprì la natura umana nel riso, Hobbes nella paura."
+    "context": "Nell'antica Roma del III-II secolo a.C., Plauto sviluppò una visione pessimistica della natura umana attraverso il teatro. Credeva che l'uomo fosse naturalmente aggressivo e competitivo, anticipando il pessimismo moderno."
   },
   {
     "id": "q16",
@@ -421,7 +421,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1670",
-    "source_title": "Pensieri",
+    "source_title": "Pensieri (1670)",
     "source_link": "https://it.wikipedia.org/wiki/Pensieri_(Pascal)",
     "tags": [
       "filosofia",
@@ -432,10 +432,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XVII secolo",
     "hint_more": "Matematico e filosofo francese, inventore della calcolatrice meccanica, noto per i suoi 'Pensieri' e per aver difeso la fede cristiana contro il razionalismo cartesiano.",
-    "ambiguity_note": "Pascal non rifiutò la ragione, ma la limitò: ci sono verità che solo il cuore può conoscere. Descartes era razionalista, Pascal era mistico. La fede ha la sua logica.",
+    "ambiguity_note": "Le opzioni includono Descartes (razionalista) e Rousseau (romantico), entrambi associati al tema ragione/sentimento. Voltaire è fuorviante perché è un illuminista. Pascal difendeva la fede contro il razionalismo.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "La rivoluzione di Pascal: la ragione ha i suoi limiti, il cuore ha le sue verità. La fede non è irrazionale, è oltre la ragione."
+    "context": "Nella Francia del 1670, Pascal sviluppò una filosofia basata sulla limitazione della ragione. Credeva che esistessero verità che solo il cuore poteva conoscere, difendendo la fede cristiana contro il razionalismo cartesiano."
   },
   {
     "id": "q17",
@@ -449,7 +449,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "I sec. a.C.",
-    "source_title": "De Legibus (III, 3, 8)",
+    "source_title": "De Legibus (I sec. a.C.), III, 3, 8",
     "source_link": "https://it.wikipedia.org/wiki/Salus_populi_suprema_lex_esto",
     "tags": [
       "diritto",
@@ -460,10 +460,10 @@
     "spiciness": 0,
     "hint_short": "Diritto romano antico",
     "hint_more": "Oratore e politico romano del I secolo a.C., autore di 'De Legibus', noto per le sue orazioni contro Catilina e per aver difeso la repubblica romana contro Cesare.",
-    "ambiguity_note": "Cicerone non inventò il concetto di bene pubblico, ma lo sistematizzò in diritto: la salvezza del popolo giustifica ogni legge. Cesare agiva, Cicerone teorizzava.",
+    "ambiguity_note": "Le opzioni includono Cesare (rivale di Cicerone) e Tacito (storico), entrambi associati al tema del potere. Sant'Agostino è fuorviante perché è un teologo cristiano. Cicerone difendeva la repubblica contro Cesare.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La base del diritto romano: il popolo è la fonte di ogni legittimità. Cicerone trasformò la politica in giurisprudenza."
+    "context": "Nell'antica Roma del I secolo a.C., Cicerone sviluppò una filosofia politica basata sul diritto naturale. Credeva che la salvezza del popolo fosse la legge suprema, trasformando la politica in giurisprudenza e difendendo la repubblica contro il cesarismo."
   },
   {
     "id": "q18",
@@ -488,10 +488,10 @@
     "spiciness": 0,
     "hint_short": "Filosofo ateniese del V secolo a.C.",
     "hint_more": "Filosofo greco del V secolo a.C., maestro di Platone, noto per il metodo socratico e per aver pronunciato questa frase durante il suo processo nel 399 a.C.",
-    "ambiguity_note": "Socrate la pronunciò nel processo, Platone la immortalò nella scrittura. La filosofia nasce dalla ricerca, non dalla certezza.",
+    "ambiguity_note": "Le opzioni includono Platone (allievo di Socrate), Aristotele (allievo di Platone) e Epicuro (filosofo successivo), tutti associati alla filosofia greca. La frase è attribuita a Socrate ma è stata trascritta da Platone.",
     "language_orig": "EL",
     "sensitive": false,
-    "context": "Il manifesto della filosofia: la vita senza ricerca è morte intellettuale. Socrate morì per difendere questo principio."
+    "context": "Nell'Atene del V secolo a.C., Socrate sviluppò una filosofia basata sulla ricerca continua della verità. Credeva che una vita senza ricerca intellettuale non fosse degna di essere vissuta, trasformando la filosofia in pratica esistenziale."
   },
   {
     "id": "q19",
@@ -505,7 +505,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1901",
-    "source_title": "Big Stick ideology",
+    "source_title": "Big Stick ideology (1901)",
     "source_link": "https://en.wikipedia.org/wiki/Big_Stick_ideology",
     "tags": [
       "diplomazia",
@@ -516,10 +516,10 @@
     "spiciness": 0,
     "hint_short": "Politica americana del XX secolo",
     "hint_more": "Presidente americano del primo Novecento, noto per la sua politica del 'Big Stick' e per aver promosso la costruzione del Canale di Panama.",
-    "ambiguity_note": "Roosevelt non inventò la diplomazia della forza, ma la sistematizzò: la pace si mantiene con la minaccia credibile. Churchill combatteva, Roosevelt negoziava.",
+    "ambiguity_note": "Le opzioni includono Thatcher (Iron Lady) e Churchill (leader di guerra), entrambi associati al tema della forza. Wilson è fuorviante perché è un idealista. Roosevelt combinava diplomazia e minaccia militare.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La diplomazia del bastone: la forza nascosta è più efficace della forza mostrata. Roosevelt trasformò la minaccia in arte diplomatica."
+    "context": "Nell'America del 1901, Roosevelt sviluppò una filosofia diplomatica basata sulla 'Big Stick ideology'. Credeva che la pace si mantenesse con la minaccia credibile della forza, combinando diplomazia e potenza militare."
   },
   {
     "id": "q20",
@@ -533,7 +533,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1843–1844",
-    "source_title": "Per la critica della filosofia del diritto di Hegel",
+    "source_title": "Per la critica della filosofia del diritto di Hegel (1843-1844)",
     "source_link": "https://it.wikipedia.org/wiki/L%27oppio_dei_popoli",
     "tags": [
       "filosofia",
@@ -544,10 +544,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore del 'Manifesto del Partito Comunista' insieme a Engels, noto per la sua critica del capitalismo e per aver influenzato il pensiero socialista.",
-    "ambiguity_note": "Marx non inventò la critica della religione, ma la rivoluzionò: la fede non è solo illusione, è strumento di controllo sociale. Lenin praticava, Marx teorizzava.",
+    "ambiguity_note": "Le opzioni includono Lenin (rivoluzionario marxista) e Weber (sociologo della religione), entrambi associati al tema. Kant è fuorviante perché è un filosofo morale. Marx critica la religione come strumento di oppressione.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "La rivoluzione di Marx: la religione non è solo oppio, è arma del potere. La fede addormenta le coscienze e impedisce la ribellione."
+    "context": "Nella Germania del 1843-1844, Marx sviluppò una filosofia critica della religione basata sul materialismo storico. Credeva che la religione fosse un oppio che addormentava le coscienze dei popoli, impedendo la ribellione sociale."
   },
   {
     "id": "q21",
@@ -561,7 +561,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1776",
-    "source_title": "La ricchezza delle nazioni",
+    "source_title": "La ricchezza delle nazioni (1776)",
     "source_link": "https://it.wikipedia.org/wiki/La_ricchezza_delle_nazioni",
     "tags": [
       "economia",
@@ -572,10 +572,10 @@
     "spiciness": 0,
     "hint_short": "Economia del XVIII secolo",
     "hint_more": "Filosofo scozzese del XVIII secolo, considerato il padre dell'economia moderna, autore de 'La ricchezza delle nazioni' e teorico della 'mano invisibile' del mercato.",
-    "ambiguity_note": "Smith non inventò il concetto di interesse personale, ma lo trasformò in teoria economica: l'egoismo individuale produce benessere collettivo. Locke parlava di diritti, Smith di mercati.",
+    "ambiguity_note": "Le opzioni includono Locke (teorico dei diritti naturali) e Kant (filosofo morale), entrambi associati al tema dell'interesse. Voltaire è fuorviante perché è un illuminista francese. Smith teorizzò la 'mano invisibile' del mercato.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La rivoluzione di Smith: l'egoismo diventa virtù sociale. Il mercato trasforma l'interesse personale in bene comune attraverso la mano invisibile."
+    "context": "Nella Scozia del 1776, Smith sviluppò una filosofia economica basata sull'interesse personale. Credeva che l'egoismo individuale producesse benessere collettivo attraverso la 'mano invisibile' del mercato, trasformando l'interesse privato in bene pubblico."
   },
   {
     "id": "q22",
@@ -589,7 +589,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "I sec. d.C.",
-    "source_title": "Lettere a Lucilio",
+    "source_title": "Lettere a Lucilio (I sec. d.C.)",
     "source_link": "https://it.wikipedia.org/wiki/Epistulae_morales_ad_Lucilium",
     "tags": [
       "stoicismo",
@@ -600,10 +600,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia romana del I secolo",
     "hint_more": "Filosofo stoico romano del I secolo d.C., precettore di Nerone, autore delle 'Lettere a Lucilio' e noto per i suoi insegnamenti sulla virtù e la saggezza.",
-    "ambiguity_note": "Seneca non inventò lo stoicismo, ma lo rese pratico: la paura crea le difficoltà, non le difficoltà creano la paura. Marco Aurelio meditava, Seneca consigliava.",
+    "ambiguity_note": "Le opzioni includono Marco Aurelio (altro stoico) e Alessandro Magno (conquistatore), entrambi associati al coraggio. Hitler è fuorviante perché è un dittatore moderno. Seneca era precettore di Nerone.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La psicologia dello stoicismo: la difficoltà è nella mente, non nella realtà. Seneca scoprì che il coraggio è una scelta, non un destino."
+    "context": "Nella Roma del I secolo d.C., Seneca sviluppò una filosofia stoica basata sulla psicologia del coraggio. Credeva che la paura fosse il vero ostacolo, non la difficoltà oggettiva, trasformando la filosofia in terapia morale."
   },
   {
     "id": "q23",
@@ -617,7 +617,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1950",
-    "source_title": "Computing Machinery and Intelligence",
+    "source_title": "Computing Machinery and Intelligence (1950)",
     "source_link": "https://en.wikipedia.org/wiki/Computing_Machinery_and_Intelligence",
     "tags": [
       "informatica",
@@ -628,10 +628,10 @@
     "spiciness": 0,
     "hint_short": "Informatica del XX secolo",
     "hint_more": "Matematico britannico del XX secolo, considerato il padre dell'informatica, noto per aver decifrato il codice Enigma durante la Seconda guerra mondiale e per aver teorizzato l'intelligenza artificiale.",
-    "ambiguity_note": "Turing non inventò l'informatica, ma la rivoluzionò: l'intelligenza artificiale nasce dalla ricerca pratica, non dalla speculazione teorica. Shannon studiava l'informazione, Turing l'intelligenza.",
+    "ambiguity_note": "Le opzioni includono Sun Yat-sen (rivoluzionario cinese) e Sun Tzu (stratega antico), entrambi associati al tema della visione. Wiener è fuorviante perché è un cibernetico. Turing scrisse questo mentre lavorava sull'intelligenza artificiale.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di Turing: il futuro si costruisce passo dopo passo. L'intelligenza artificiale nasce dalla ricerca concreta, non dai sogni."
+    "context": "Nell'Inghilterra del 1950, Turing sviluppò una filosofia della ricerca basata sull'umiltà intellettuale. Credeva che l'ignoranza non fosse un limite ma un'opportunità, trasformando l'incertezza in creatività scientifica per l'intelligenza artificiale."
   },
   {
     "id": "q24",
@@ -645,7 +645,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1905",
-    "source_title": "The Life of Reason",
+    "source_title": "The Life of Reason (1905)",
     "source_link": "https://en.wikipedia.org/wiki/George_Santayana",
     "tags": [
       "storia",
@@ -656,10 +656,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia americana del XX secolo",
     "hint_more": "Filosofo spagnolo naturalizzato americano, autore de 'La vita della ragione', noto per questa celebre massima sulla memoria storica che è stata ripresa da molti politici e storici.",
-    "ambiguity_note": "Santayana non inventò il concetto di memoria storica, ma lo formulò in modo perfetto: l'oblio è condanna alla ripetizione. Churchill la citava, Santayana la teorizzava.",
+    "ambiguity_note": "Le opzioni includono Churchill (che citava spesso questa frase) e Arendt (filosofa della storia), entrambi associati al tema della memoria storica. Orwell è fuorviante perché è un romanziere. Santayana era spagnolo naturalizzato americano.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La legge della storia: l'oblio genera la ripetizione. Santayana scoprì che la memoria è la chiave per evitare gli errori del passato."
+    "context": "Nell'America del 1905, Santayana sviluppò una filosofia della storia basata sulla memoria. Credeva che l'oblio del passato condannasse inevitabilmente alla ripetizione degli errori, trasformando l'esperienza storica in saggezza filosofica."
   },
   {
     "id": "q25",
@@ -673,7 +673,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1970",
-    "source_title": "On Violence",
+    "source_title": "On Violence (1970)",
     "source_link": "https://en.wikipedia.org/wiki/On_Violence",
     "tags": [
       "politica",
@@ -684,10 +684,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia politica del XX secolo",
     "hint_more": "Filosofa tedesca naturalizzata americana, allieva di Heidegger, nota per le sue analisi sul totalitarismo e per aver distinto tra potere, violenza e autorità nel pensiero politico moderno.",
-    "ambiguity_note": "Arendt non inventò la distinzione tra potere e violenza, ma la sistematizzò: il potere è consenso, la violenza è coercizione. Weber studiava lo stato, Arendt la politica.",
+    "ambiguity_note": "Le opzioni includono Fanon (teorico della violenza rivoluzionaria) e Weber (sociologo del potere), entrambi associati al tema. Gandhi è fuorviante perché è un pacifista. Arendt distingueva tra potere (consenso) e violenza (coercizione).",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La rivoluzione di Arendt: il potere non è violenza, è consenso. La violenza può distruggere, ma solo il consenso può costruire."
+    "context": "Nell'America del 1970, Arendt sviluppò una filosofia politica basata sulla distinzione tra potere e violenza. Credeva che il potere fosse basato sul consenso, mentre la violenza fosse solo coercizione, trasformando la politica in teoria del consenso."
   },
   {
     "id": "q26",
@@ -701,7 +701,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "47 a.C.",
-    "source_title": "Commentarii e corrispondenze; formula trionfale",
+    "source_title": "Commentarii (47 a.C.) - Formula trionfale",
     "source_link": "https://it.wikipedia.org/wiki/Veni,_vidi,_vici",
     "tags": [
       "roma",
@@ -712,10 +712,10 @@
     "spiciness": 0,
     "hint_short": "Storia romana antica",
     "hint_more": "Generale e politico romano del I secolo a.C., noto per aver attraversato il Rubicone, per le sue conquiste in Gallia e per aver pronunciato questa frase dopo una rapida vittoria in Asia Minore.",
-    "ambiguity_note": "Cesare non inventò la retorica militare, ma la perfezionò: tre parole per una vittoria. Augusto costruì l'impero, Cesare lo conquistò con la velocità.",
+    "ambiguity_note": "Le opzioni includono Augusto (successore di Cesare) e Alessandro Magno (altro conquistatore), entrambi associati al tema della conquista. Cicerone è fuorviante perché è un oratore, non un generale. Cesare scrisse questa frase dopo una rapida vittoria.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "Il genio della comunicazione: tre parole per una vittoria. Cesare trasformò la guerra in spettacolo e la vittoria in leggenda."
+    "context": "Nell'antica Roma del 47 a.C., durante la guerra civile contro Pompeo, Cesare sviluppò una filosofia militare basata sulla velocità e l'efficacia. Dopo la vittoria di Zela contro Farnace II del Ponto, pronunciò questa frase per comunicare la rapidità del successo. Credeva che la vittoria si ottenesse con rapidità e precisione, trasformando la guerra in arte della comunicazione attraverso la retorica."
   },
   {
     "id": "q27",
@@ -729,7 +729,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1964",
-    "source_title": "Understanding Media",
+    "source_title": "Understanding Media (1964)",
     "source_link": "https://en.wikipedia.org/wiki/The_medium_is_the_message",
     "tags": [
       "media",
@@ -740,10 +740,10 @@
     "spiciness": 0,
     "hint_short": "Teoria della comunicazione del XX secolo",
     "hint_more": "Teorico canadese della comunicazione del XX secolo, noto per aver studiato l'impatto dei media sulla società e per aver coniato la celebre frase 'il mezzo è il messaggio'.",
-    "ambiguity_note": "McLuhan non inventò la teoria dei media, ma la rivoluzionò: il medium non trasporta solo il messaggio, lo trasforma. Postman criticava, McLuhan analizzava.",
+    "ambiguity_note": "Le opzioni includono Postman (critico dei media) e Stalin/Marx (teorici del controllo), entrambi associati al tema della comunicazione. La frase è diventata famosa ma il concetto esisteva già. McLuhan era canadese.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di McLuhan: il medium è il vero messaggio. La televisione non trasporta solo contenuti, plasma la mente."
+    "context": "Nel Canada del 1964, McLuhan sviluppò una teoria della comunicazione basata sull'impatto dei media. Credeva che il medium non trasportasse solo contenuti ma plasmasse la mente, trasformando la comunicazione in teoria della cultura."
   },
   {
     "id": "q28",
@@ -757,7 +757,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1637",
-    "source_title": "Discorso sul metodo",
+    "source_title": "Discorso sul metodo (1637)",
     "source_link": "https://it.wikipedia.org/wiki/Cogito_ergo_sum",
     "tags": [
       "filosofia",
@@ -768,10 +768,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XVII secolo",
     "hint_more": "Filosofo francese del XVII secolo, considerato il padre della filosofia moderna, autore del 'Discorso sul metodo' e noto per il celebre 'cogito ergo sum'.",
-    "ambiguity_note": "Descartes non inventò il dubbio, ma lo sistematizzò: dal dubbio radicale nasce la certezza del pensiero. Pascal criticava il razionalismo, Descartes lo fondava.",
+    "ambiguity_note": "Le opzioni includono Pascal (altro filosofo francese) e Spinoza/Kant (filosofi moderni), entrambi associati al tema della certezza. La frase è famosa ma il concetto esisteva già. Descartes era matematico oltre che filosofo.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "La rivoluzione di Descartes: il dubbio diventa certezza. Se dubito, penso; se penso, esisto. La filosofia moderna nasce da questa verità."
+    "context": "Nella Francia del 1637, durante la rivoluzione scientifica, Descartes sviluppò una filosofia basata sul dubbio metodico. Credeva che dal dubbio radicale nascesse la certezza del pensiero, trasformando la filosofia in scienza del pensiero e fondando il razionalismo moderno."
   },
   {
     "id": "q29",
@@ -785,7 +785,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1775",
-    "source_title": "Discorso alla Convenzione della Virginia",
+    "source_title": "Discorso alla Convenzione della Virginia (1775)",
     "source_link": "https://en.wikipedia.org/wiki/Give_me_liberty,_or_give_me_death!",
     "tags": [
       "politica",
@@ -796,10 +796,10 @@
     "spiciness": 1,
     "hint_short": "Storia americana del XVIII secolo",
     "hint_more": "Patriota americano del XVIII secolo, noto per i suoi discorsi infuocati durante la Rivoluzione americana e per aver pronunciato questa celebre frase alla Convenzione della Virginia nel 1775.",
-    "ambiguity_note": "Henry non inventò il patriottismo americano, ma lo infiammò: la libertà vale più della vita. Jefferson teorizzava, Henry combatteva.",
+    "ambiguity_note": "Le opzioni includono Jefferson (autore della Dichiarazione) e Washington (comandante), entrambi associati alla Rivoluzione. Franklin è fuorviante perché è un diplomatico. Henry pronunciò questo discorso per convincere la Virginia a prepararsi alla guerra.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il manifesto della Rivoluzione: la libertà non si negozia, si conquista. Henry trasformò la retorica in azione."
+    "context": "Nell'America del 1775, durante la Rivoluzione americana, Henry sviluppò una filosofia politica basata sulla priorità della libertà. Credeva che la libertà valesse più della vita stessa, trasformando il patriottismo in passione rivoluzionaria e infiammando le colonie contro la Gran Bretagna."
   },
   {
     "id": "q30",
@@ -813,7 +813,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1926",
-    "source_title": "The Story of Philosophy (parafrasi di Aristotele)",
+    "source_title": "The Story of Philosophy (1926) - Parafrasi di Aristotele",
     "source_link": "https://en.wikipedia.org/wiki/Will_Durant#Misattributed_to_Aristotle",
     "tags": [
       "filosofia",
@@ -824,10 +824,10 @@
     "spiciness": 1,
     "hint_short": "Storiografia americana del XX secolo",
     "hint_more": "Storico americano del XX secolo, autore de 'La storia della civiltà' insieme alla moglie Ariel, noto per aver reso popolare questa parafrasi del pensiero aristotelico sull'abitudine e la virtù.",
-    "ambiguity_note": "Durant non inventò il concetto di abitudine, ma lo rese popolare: l'eccellenza è ripetizione, non genio. Aristotele teorizzava, Durant divulgava.",
+    "ambiguity_note": "Le opzioni includono Aristotele (filosofo originale) e Einstein (genio moderno), entrambi associati al tema dell'eccellenza. Kanye West è fuorviante perché è un rapper. Durant parafrasò Aristotele rendendolo popolare.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La democratizzazione dell'eccellenza: tutti possono diventare virtuosi attraverso la pratica. Durant trasformò la filosofia in saggezza popolare."
+    "context": "Nell'America del 1926, Durant sviluppò una filosofia della divulgazione basata sulla saggezza antica. Credeva che l'eccellenza fosse frutto dell'abitudine, non del genio, trasformando la filosofia aristotelica in saggezza moderna accessibile al grande pubblico."
   },
   {
     "id": "q31",
@@ -841,7 +841,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1889",
-    "source_title": "Götzen-Dämmerung (Massime e frecce)",
+    "source_title": "Götzen-Dämmerung (1889) - Massime e frecce",
     "source_link": "https://en.wikipedia.org/wiki/Twilight_of_the_Idols",
     "tags": [
       "senso",
@@ -852,10 +852,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore de 'Al di là del bene e del male' e 'Così parlò Zarathustra', noto per aver influenzato profondamente il pensiero del Novecento con le sue critiche alla morale tradizionale.",
-    "ambiguity_note": "Nietzsche non inventò la psicologia del senso, ma la anticipò: il perché trasforma il come. Frankl la applicò nei lager, Nietzsche la teorizzò.",
+    "ambiguity_note": "Le opzioni includono Frankl (psicologo che applicò questo concetto nei lager) e Gandhi (che praticò la resistenza), entrambi associati al tema della resilienza. Wollstonecraft è fuorviante perché è una femminista. Nietzsche scrisse questo prima del crollo mentale.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "La psicologia di Nietzsche: il senso della vita trasforma la sofferenza in forza. Chi sa perché vive, può sopportare qualsiasi come."
+    "context": "Nella Germania del 1889, Nietzsche sviluppò una filosofia basata sulla psicologia del senso. Credeva che il 'perché' trasformasse il 'come', anticipando la logoterapia di Frankl e trasformando la sofferenza in forza attraverso il significato."
   },
   {
     "id": "q32",
@@ -869,7 +869,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1931",
-    "source_title": "A Non-Aristotelian System and Its Necessity for Rigour in Mathematics and Physics",
+    "source_title": "A Non-Aristotelian System (1931)",
     "source_link": "https://en.wikipedia.org/wiki/Map–territory_relation",
     "tags": [
       "semantica",
@@ -880,10 +880,10 @@
     "spiciness": 0,
     "hint_short": "Semantica del XX secolo",
     "hint_more": "Linguista e filosofo polacco naturalizzato americano, fondatore della semantica generale, noto per aver sviluppato la teoria che distingue tra rappresentazioni mentali e realtà oggettiva.",
-    "ambiguity_note": "Korzybski non inventò la distinzione tra mappa e territorio, ma la sistematizzò: la rappresentazione non è mai la realtà. Bateson studiava la comunicazione, Korzybski la semantica.",
+    "ambiguity_note": "Le opzioni includono Bateson (antropologo della comunicazione) e Bismarck (statista), entrambi associati al tema della rappresentazione. Alessandro Magno è fuorviante perché è un conquistatore antico. Korzybski era polacco naturalizzato americano.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di Korzybski: la mappa non è il territorio. Le nostre rappresentazioni mentali non sono mai la realtà, ma solo modelli utili."
+    "context": "Nell'America del 1931, Korzybski sviluppò una filosofia della semantica basata sulla distinzione tra rappresentazione e realtà. Credeva che la mappa non fosse mai il territorio, trasformando la semantica in epistemologia e fondando la semantica generale."
   },
   {
     "id": "q33",
@@ -897,7 +897,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1675",
-    "source_title": "Lettera a Robert Hooke",
+    "source_title": "Lettera a Robert Hooke (1675)",
     "source_link": "https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants",
     "tags": [
       "scienza",
@@ -908,10 +908,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XVII secolo",
     "hint_more": "Fisico e matematico inglese del XVII secolo, autore dei 'Principia Mathematica', scopritore della legge di gravitazione universale e considerato uno dei più grandi scienziati della storia.",
-    "ambiguity_note": "Newton non inventò la metafora dei giganti, ma la rese celebre: la scienza progredisce per accumulo. Galilei rivoluzionava, Newton riconosceva i debiti.",
+    "ambiguity_note": "Le opzioni includono Platone (filosofo antico) e Kepler (astronomo), entrambi associati al tema della conoscenza. Hooke è fuorviante perché era un rivale di Newton. La frase è diventata proverbiale ma il concetto esisteva già.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia della scienza: ogni genio poggia sui giganti del passato. Newton trasformò l'umiltà in metodo scientifico."
+    "context": "Nell'Inghilterra del 1675, Newton sviluppò una filosofia della scienza basata sull'umiltà intellettuale. Credeva che la scienza progredisse per accumulo di conoscenze, riconoscendo i debiti verso i predecessori e trasformando l'orgoglio in gratitudine."
   },
   {
     "id": "q34",
@@ -925,7 +925,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XX secolo (attribuzione popolare)",
-    "source_title": "Detto popolare attribuito a Gandhi",
+    "source_title": "Detto popolare attribuito a Gandhi (XX secolo)",
     "source_link": "https://en.wikipedia.org/wiki/Mahatma_Gandhi#Inspiration",
     "tags": [
       "etica",
@@ -936,10 +936,10 @@
     "spiciness": 1,
     "hint_short": "Storia indiana del XX secolo",
     "hint_more": "Leader spirituale e politico indiano del XX secolo, noto per la sua filosofia della nonviolenza e per aver guidato il movimento per l'indipendenza dell'India attraverso la disobbedienza civile.",
-    "ambiguity_note": "Gandhi non inventò la nonviolenza, ma la sistematizzò: il cambiamento inizia da se stessi. MLK e Mandela applicarono i suoi metodi, Gandhi li teorizzò.",
+    "ambiguity_note": "Le opzioni includono MLK e Mandela (che applicarono i suoi metodi), entrambi associati al tema della nonviolenza. Tagore è fuorviante perché è un poeta. La frase è attribuita a Gandhi ma non è documentata nei suoi scritti.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di Gandhi: il cambiamento del mondo inizia dal cambiamento di se stessi. La nonviolenza è prima di tutto una trasformazione interiore."
+    "context": "Nell'India del XX secolo, Gandhi sviluppò una filosofia della nonviolenza basata sull'auto-trasformazione. Credeva che il cambiamento sociale iniziasse dal cambiamento personale, trasformando la nonviolenza in metodo di liberazione e ispirando movimenti in tutto il mondo."
   },
   {
     "id": "q35",
@@ -953,7 +953,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1922",
-    "source_title": "Tractatus Logico-Philosophicus",
+    "source_title": "Tractatus Logico-Philosophicus (1922)",
     "source_link": "https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus",
     "tags": [
       "linguaggio",
@@ -964,10 +964,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia del linguaggio del XX secolo",
     "hint_more": "Filosofo austriaco del XX secolo, autore del 'Tractatus Logico-Philosophicus', noto per aver rivoluzionato la filosofia del linguaggio e per aver influenzato il pensiero analitico.",
-    "ambiguity_note": "Wittgenstein non inventò la filosofia del linguaggio, ma la rivoluzionò: i limiti del linguaggio sono i limiti del mondo. Heidegger studiava l'essere, Wittgenstein il dire.",
+    "ambiguity_note": "Le opzioni includono Heidegger (filosofo dell'essere) e Chomsky (linguista), entrambi associati al tema del linguaggio. Foucault è fuorviante perché è un post-strutturalista. Wittgenstein scrisse questo durante la Prima Guerra Mondiale.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di Wittgenstein: il linguaggio non descrive il mondo, lo crea. I limiti delle nostre parole sono i limiti della nostra realtà."
+    "context": "Nell'Austria del 1922, Wittgenstein sviluppò una filosofia del linguaggio basata sui limiti della rappresentazione. Credeva che i limiti del linguaggio fossero i limiti del mondo, trasformando la filosofia in analisi del linguaggio e fondando la filosofia analitica."
   },
   {
     "id": "q36",
@@ -981,7 +981,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "XX secolo",
-    "source_title": "Citazione attribuita a Mandela",
+    "source_title": "Citazione attribuita a Mandela (XX secolo)",
     "source_link": "https://en.wikipedia.org/wiki/Nelson_Mandela",
     "tags": [
       "leadership",
@@ -992,10 +992,10 @@
     "spiciness": 1,
     "hint_short": "Storia sudafricana del XX secolo",
     "hint_more": "Leader politico sudafricano del XX secolo, primo presidente nero del Sudafrica, noto per aver guidato la lotta contro l'apartheid e per aver trascorso 27 anni in prigione.",
-    "ambiguity_note": "Mandela non inventò la resilienza, ma la incarnò: 27 anni di prigione per un sogno impossibile. MLK e Gandhi lottavano per diritti, Mandela per la libertà.",
+    "ambiguity_note": "Le opzioni includono Gandhi e MLK (altri leader della nonviolenza), entrambi associati al tema della resilienza. Tutu è fuorviante perché è un arcivescovo. La frase è attribuita a Mandela ma non è documentata nei suoi discorsi ufficiali.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La filosofia di Mandela: l'impossibile diventa possibile quando si crede abbastanza. La speranza trasforma i sogni in realtà."
+    "context": "Nel Sudafrica del XX secolo, Mandela sviluppò una filosofia della resilienza basata sulla speranza. Credeva che l'impossibile diventasse possibile attraverso la perseveranza, trasformando 27 anni di prigione in scuola di leadership e guidando la fine dell'apartheid."
   },
   {
     "id": "q37",
@@ -1009,7 +1009,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1938",
-    "source_title": "Selected Works of Mao Tse-tung",
+    "source_title": "Selected Works of Mao Tse-tung (1938)",
     "source_link": "https://en.wikipedia.org/wiki/Political_power_grows_out_of_the_barrel_of_a_gun",
     "tags": [
       "politica",
@@ -1020,10 +1020,10 @@
     "spiciness": 2,
     "hint_short": "Storia cinese del XX secolo",
     "hint_more": "Leader rivoluzionario cinese del XX secolo, fondatore della Repubblica Popolare Cinese, noto per aver guidato la Rivoluzione cinese e per aver sviluppato il maoismo.",
-    "ambiguity_note": "Mao non inventò la rivoluzione armata, ma la sistematizzò: il potere politico nasce dalla violenza organizzata. Lenin teorizzava, Mao praticava.",
+    "ambiguity_note": "Le opzioni includono Lenin e Stalin (altri leader rivoluzionari), entrambi associati al tema della rivoluzione armata. Sun Yat-sen è fuorviante perché è un nazionalista moderato. Mao pronunciò questa frase durante la guerra civile cinese.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "La filosofia di Mao: il potere non si vota, si conquista. La rivoluzione è guerra, la politica è violenza organizzata."
+    "context": "Nella Cina del 1938, durante la guerra civile, Mao sviluppò una filosofia della rivoluzione basata sulla violenza organizzata. Credeva che il potere politico nascesse dalla canna di un fucile, trasformando la teoria marxista in pratica rivoluzionaria e guidando la Rivoluzione cinese."
   },
   {
     "id": "q38",
@@ -1037,7 +1037,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1850",
-    "source_title": "Das Geheimnis des Opfers",
+    "source_title": "Das Geheimnis des Opfers (1850)",
     "source_link": "https://de.wikipedia.org/wiki/Ludwig_Feuerbach",
     "tags": [
       "filosofia",
@@ -1048,10 +1048,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, noto per la sua critica della religione e per aver influenzato Marx, autore di opere come 'L'essenza del cristianesimo' e 'Il mistero del sacrificio'.",
-    "ambiguity_note": "Feuerbach non inventò il materialismo, ma lo rese concreto: l'uomo è quello che mangia, non quello che pensa. Marx teorizzava, Feuerbach metaforizzava.",
+    "ambiguity_note": "Le opzioni includono Marx ed Engels (che furono influenzati da lui), entrambi associati al tema del materialismo. Schopenhauer è fuorviante perché è un idealista. Feuerbach influenzò Marx ma era più radicale nella critica della religione.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "La rivoluzione di Feuerbach: l'uomo non è spirito, è corpo. Il materialismo diventa antropologia: siamo quello che mangiamo."
+    "context": "Nella Germania del 1850, Feuerbach sviluppò una filosofia materialista basata sull'antropologia. Credeva che l'uomo fosse quello che mangia, non quello che pensa, trasformando la filosofia in antropologia materialista e influenzando profondamente Marx ed Engels."
   },
   {
     "id": "q39",
@@ -1065,7 +1065,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1966",
-    "source_title": "What is Science? (discorsi)",
+    "source_title": "What is Science? (1966) - Discorsi",
     "source_link": "https://en.wikipedia.org/wiki/Richard_Feynman",
     "tags": [
       "scienza",
@@ -1076,10 +1076,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico americano del XX secolo, premio Nobel per la fisica, noto per i suoi contributi alla meccanica quantistica e per aver sviluppato i diagrammi di Feynman.",
-    "ambiguity_note": "Feynman non inventò lo scetticismo scientifico, ma lo rese popolare: la scienza è dubbio, non certezza. Popper teorizzava, Feynman praticava.",
+    "ambiguity_note": "Le opzioni includono Popper (filosofo della scienza) e Kuhn (storico della scienza), entrambi associati al tema dell'epistemologia. Feyerabend è fuorviante perché è un anarchico epistemologico. Feynman era un fisico teorico, non un filosofo.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La filosofia di Feynman: la scienza è fede nell'ignoranza, non nella conoscenza. Il dubbio è il motore della scoperta."
+    "context": "Nell'America del 1966, Feynman sviluppò una filosofia della scienza basata sull'umiltà intellettuale. Credeva che la scienza fosse fede nell'ignoranza degli esperti, trasformando lo scetticismo in metodo scientifico e promuovendo il dubbio come motore della conoscenza."
   },
   {
     "id": "q40",
@@ -1093,7 +1093,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1875",
-    "source_title": "Critica al Programma di Gotha",
+    "source_title": "Critica al Programma di Gotha (1875)",
     "source_link": "https://en.wikipedia.org/wiki/From_each_according_to_his_ability,_to_each_according_to_his_needs",
     "tags": [
       "economia",
@@ -1104,10 +1104,10 @@
     "spiciness": 1,
     "hint_short": "Filosofia tedesca del XIX secolo",
     "hint_more": "Filosofo tedesco del XIX secolo, autore del 'Manifesto del Partito Comunista' insieme a Engels, noto per la sua critica del capitalismo e per aver influenzato il pensiero socialista.",
-    "ambiguity_note": "Marx non inventò il socialismo, ma lo sistematizzò: la società comunista distribuisce secondo i bisogni, non secondo il merito. Proudhon teorizzava l'anarchia, Marx il comunismo.",
+    "ambiguity_note": "Le opzioni includono Engels (collaboratore di Marx) e Proudhon (anarchico), entrambi associati al tema del socialismo. Mill è fuorviante perché è un liberale. Marx scrisse questo per criticare il programma del Partito Socialdemocratico tedesco.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di Marx: la società comunista elimina la disuguaglianza. Ognuno contribuisce secondo le capacità, riceve secondo i bisogni."
+    "context": "Nella Germania del 1875, Marx sviluppò una filosofia del socialismo basata sulla distribuzione equa. Credeva che la società comunista dovesse distribuire secondo i bisogni, non secondo il merito, trasformando il socialismo in teoria scientifica e influenzando movimenti rivoluzionari in tutto il mondo."
   },
   {
     "id": "q41",
@@ -1121,7 +1121,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1832",
-    "source_title": "Vom Kriege",
+    "source_title": "Vom Kriege (1832)",
     "source_link": "https://en.wikipedia.org/wiki/Carl_von_Clausewitz",
     "tags": [
       "guerra",
@@ -1132,10 +1132,10 @@
     "spiciness": 1,
     "hint_short": "Strategia militare del XIX secolo",
     "hint_more": "Generale e teorico militare prussiano del XIX secolo, autore di 'Della guerra', considerato uno dei più influenti teorici della strategia militare moderna.",
-    "ambiguity_note": "Clausewitz non inventò la teoria della guerra, ma la rivoluzionò: la guerra non è fine, è mezzo. Sun Tzu studiava la strategia, Clausewitz la politica.",
+    "ambiguity_note": "Le opzioni includono Sun Tzu (stratega antico) e Napoleone (generale), entrambi associati al tema della guerra. Arendt è fuorviante perché è una filosofa politica. Clausewitz scrisse questo dopo aver combattuto nelle guerre napoleoniche.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di Clausewitz: la guerra non è violenza fine a se stessa, è politica con altri mezzi. La strategia serve la politica, non viceversa."
+    "context": "Nella Prussia del 1832, Clausewitz sviluppò una filosofia della guerra basata sulla sua esperienza nelle guerre napoleoniche. Credeva che la guerra fosse la continuazione della politica con altri mezzi, trasformando la strategia militare in teoria politica e influenzando il pensiero strategico moderno."
   },
   {
     "id": "q42",
@@ -1149,7 +1149,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1784",
-    "source_title": "Risposta alla domanda: Che cos'è l'Illuminismo?",
+    "source_title": "Risposta alla domanda: Che cos'è l'Illuminismo? (1784)",
     "source_link": "https://it.wikipedia.org/wiki/Sapere_aude",
     "tags": [
       "illuminismo",
@@ -1160,10 +1160,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia tedesca del XVIII secolo",
     "hint_more": "Filosofo tedesco del XVIII secolo, considerato il massimo esponente dell'Illuminismo tedesco, autore della 'Critica della ragion pura' e noto per aver definito l'Illuminismo come 'uscita dallo stato di minorità'.",
-    "ambiguity_note": "Kant non inventò l'Illuminismo, ma lo definì: l'Illuminismo è coraggio di pensare autonomamente. Voltaire combatteva, Kant teorizzava.",
+    "ambiguity_note": "Le opzioni includono Voltaire (altro illuminista) e Machiavelli (filosofo politico), entrambi associati al tema dell'autonomia. Cesare è fuorviante perché è un generale antico. Kant scrisse questo per rispondere a una domanda su cosa fosse l'Illuminismo.",
     "language_orig": "DE",
     "sensitive": false,
-    "context": "La rivoluzione di Kant: l'Illuminismo è uscita dalla minorità intellettuale. Abbi il coraggio di servirti della tua propria intelligenza."
+    "context": "Nella Prussia del 1784, Kant sviluppò una filosofia dell'Illuminismo basata sull'autonomia intellettuale. Credeva che l'Illuminismo fosse coraggio di pensare autonomamente, trasformando la filosofia in critica della ragione e definendo l'uscita dallo stato di minorità."
   },
   {
     "id": "q43",
@@ -1177,7 +1177,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "c. 1600",
-    "source_title": "Hamlet, Atto III",
+    "source_title": "Hamlet, Atto III (c. 1600)",
     "source_link": "https://en.wikipedia.org/wiki/The_lady_doth_protest_too_much,_methinks",
     "tags": [
       "teatro",
@@ -1188,10 +1188,10 @@
     "spiciness": 0,
     "hint_short": "Teatro inglese del XVI-XVII secolo",
     "hint_more": "Drammaturgo inglese del XVI-XVII secolo, considerato il più grande scrittore della letteratura inglese, autore di opere come 'Amleto', 'Romeo e Giulietta' e 'Macbeth'.",
-    "ambiguity_note": "Shakespeare non inventò l'ironia drammatica, ma la perfezionò: chi protesta troppo spesso mente. Wilde scriveva aforismi, Shakespeare li metteva in bocca ai personaggi.",
+    "ambiguity_note": "Le opzioni includono Wilde (scrittore di aforismi) e Austen (romanziera), entrambi associati al tema dell'ironia. Davis è fuorviante perché è un'attivista moderna. Shakespeare scrisse questa frase per la regina Gertrude in Amleto.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La psicologia di Shakespeare: l'eccesso di protesta rivela la menzogna. Chi insiste troppo spesso nasconde la verità."
+    "context": "Nell'Inghilterra del 1600, Shakespeare sviluppò una filosofia del teatro basata sulla psicologia umana. Credeva che chi protesta troppo spesso menta, trasformando l'ironia in arte drammatica e creando personaggi che rivelano la verità attraverso le loro contraddizioni."
   },
   {
     "id": "q44",
@@ -1205,7 +1205,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1710",
-    "source_title": "A Treatise Concerning the Principles of Human Knowledge",
+    "source_title": "A Treatise Concerning the Principles of Human Knowledge (1710)",
     "source_link": "https://en.wikipedia.org/wiki/George_Berkeley",
     "tags": [
       "filosofia",
@@ -1216,10 +1216,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia irlandese del XVIII secolo",
     "hint_more": "Filosofo irlandese del XVIII secolo, vescovo anglicano, noto per il suo idealismo empirico e per aver sostenuto che 'essere è essere percepito' (esse est percipi).",
-    "ambiguity_note": "Berkeley non inventò l'idealismo, ma lo portò all'estremo: essere è essere percepito. Hume e Locke erano empiristi, Berkeley idealista.",
+    "ambiguity_note": "Le opzioni includono Hume e Locke (altri empiristi), entrambi associati al tema della percezione. Kant è fuorviante perché è un idealista trascendentale. Berkeley era vescovo anglicano oltre che filosofo.",
     "language_orig": "LA",
     "sensitive": false,
-    "context": "La rivoluzione di Berkeley: la realtà non esiste indipendentemente dalla percezione. L'essere è essere percepito, Dio mantiene l'universo."
+    "context": "Nell'Irlanda del 1710, Berkeley sviluppò una filosofia idealista basata sulla percezione. Credeva che essere fosse essere percepito, trasformando l'empirismo in idealismo e sostenendo che la realtà esiste solo nella mente di Dio."
   },
   {
     "id": "q45",
@@ -1233,7 +1233,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1942",
-    "source_title": "Le Mythe de Sisyphe",
+    "source_title": "Le Mythe de Sisyphe (1942)",
     "source_link": "https://en.wikipedia.org/wiki/The_Myth_of_Sisyphus",
     "tags": [
       "assurdo",
@@ -1244,10 +1244,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XX secolo",
     "hint_more": "Filosofo e scrittore francese del XX secolo, premio Nobel per la letteratura, noto per le sue opere sull'assurdo e per aver sviluppato la filosofia dell'esistenzialismo.",
-    "ambiguity_note": "Camus non inventò l'esistenzialismo, ma lo rivoluzionò: l'assurdo non è disperazione, è rivolta. Sartre teorizzava, Camus praticava.",
+    "ambiguity_note": "Le opzioni includono Sartre e de Beauvoir (altri esistenzialisti), entrambi associati al tema dell'assurdo. Nietzsche è fuorviante perché è un filosofo del XIX secolo. Camus scrisse questo durante la Seconda Guerra Mondiale.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di Camus: l'assurdo non è disperazione, è rivolta. Sisifo è felice perché accetta il suo destino e lo trasforma in scelta."
+    "context": "Nella Francia del 1942, durante la Seconda Guerra Mondiale, Camus sviluppò una filosofia dell'assurdo basata sulla rivolta. Credeva che l'assurdo non fosse disperazione ma rivolta, trasformando l'esistenzialismo in filosofia della rivolta e immaginando Sisifo felice nella sua lotta."
   },
   {
     "id": "q46",
@@ -1261,7 +1261,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1950s–1960s (ripresa)",
-    "source_title": "Sermoni di MLK (ripresa da Theodore Parker, 1853)",
+    "source_title": "Sermoni di MLK (1950s-1960s) - Ripresa da Theodore Parker (1853)",
     "source_link": "https://en.wikipedia.org/wiki/The_arc_of_the_moral_universe_is_long",
     "tags": [
       "diritti civili",
@@ -1272,10 +1272,10 @@
     "spiciness": 1,
     "hint_short": "Storia americana del XX secolo",
     "hint_more": "Pastore battista e attivista americano del XX secolo, leader del movimento per i diritti civili, noto per il suo discorso 'I have a dream' e per la sua filosofia della nonviolenza.",
-    "ambiguity_note": "MLK non inventò questa frase, ma la rese celebre: Theodore Parker la formulò, Obama la citò, MLK la trasformò in speranza. La giustizia arriva, ma lentamente.",
+    "ambiguity_note": "Le opzioni includono Parker (autore originale) e Obama (che la citò), entrambi associati al tema della giustizia. Douglass è fuorviante perché è un abolizionista del XIX secolo. MLK riprese questa frase da Parker rendendola famosa.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di MLK: la storia ha un arco morale che si piega verso la giustizia. La lotta per i diritti civili è lunga, ma inevitabile."
+    "context": "Nell'America degli anni '50-'60, MLK sviluppò una filosofia dei diritti civili basata sulla speranza. Credeva che l'arco dell'universo morale si piegasse verso la giustizia, trasformando la retorica in speranza rivoluzionaria e guidando il movimento per i diritti civili."
   },
   {
     "id": "q47",
@@ -1289,7 +1289,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1945",
-    "source_title": "Prefazione (censurata) a Animal Farm",
+    "source_title": "Prefazione (censurata) a Animal Farm (1945)",
     "source_link": "https://en.wikipedia.org/wiki/George_Orwell",
     "tags": [
       "libertà di espressione",
@@ -1300,10 +1300,10 @@
     "spiciness": 1,
     "hint_short": "Letteratura inglese del XX secolo",
     "hint_more": "Scrittore inglese del Novecento, autore di '1984' e 'La fattoria degli animali', noto per le sue critiche al totalitarismo e per aver coniato termini come 'Grande Fratello' e 'Neolingua'.",
-    "ambiguity_note": "Orwell non inventò la libertà di espressione, ma la difese: la libertà è dire la verità scomoda. Mill teorizzava, Orwell combatteva.",
+    "ambiguity_note": "Le opzioni includono Mill (filosofo della libertà) e Arendt (filosofa politica), entrambi associati al tema della libertà. Russell è fuorviante perché è un logico. Orwell scrisse questo per una prefazione censurata.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di Orwell: la libertà non è dire quello che piace, è dire quello che fa male. La verità scomoda è il test della libertà."
+    "context": "Nell'Inghilterra del 1945, Orwell sviluppò una filosofia della libertà basata sulla verità scomoda. Credeva che la libertà significasse dire alla gente quello che non vuole sentire, trasformando la libertà di espressione in lotta contro il totalitarismo e la censura."
   },
   {
     "id": "q48",
@@ -1317,7 +1317,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1689",
-    "source_title": "An Essay Concerning Human Understanding",
+    "source_title": "An Essay Concerning Human Understanding (1689)",
     "source_link": "https://en.wikipedia.org/wiki/An_Essay_Concerning_Human_Understanding",
     "tags": [
       "empirismo",
@@ -1328,10 +1328,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia inglese del XVII secolo",
     "hint_more": "Filosofo inglese del XVII secolo, considerato il padre dell'empirismo moderno, autore del 'Saggio sull'intelletto umano' e noto per la teoria della 'tabula rasa'.",
-    "ambiguity_note": "Locke non inventò l'empirismo, ma lo sistematizzò: la conoscenza nasce dall'esperienza, non dalle idee innate. Hume sviluppò, Locke fondò.",
+    "ambiguity_note": "Le opzioni includono Hume (altro empirista) e Hobbes (filosofo politico), entrambi associati al tema della conoscenza. Voltaire è fuorviante perché è un illuminista francese. Locke era medico oltre che filosofo.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La rivoluzione di Locke: la mente è una tabula rasa, la conoscenza nasce dall'esperienza. L'empirismo diventa filosofia della conoscenza."
+    "context": "Nell'Inghilterra del 1689, Locke sviluppò una filosofia empirista basata sull'esperienza. Credeva che la conoscenza nascesse dall'esperienza, non dalle idee innate, trasformando la filosofia in empirismo moderno e fondando la teoria della tabula rasa."
   },
   {
     "id": "q49",
@@ -1345,7 +1345,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1762",
-    "source_title": "Du contrat social",
+    "source_title": "Du contrat social (1762)",
     "source_link": "https://fr.wikipedia.org/wiki/Du_Contrat_social",
     "tags": [
       "contratto sociale",
@@ -1356,10 +1356,10 @@
     "spiciness": 0,
     "hint_short": "Filosofia francese del XVIII secolo",
     "hint_more": "Filosofo francese del XVIII secolo, autore del 'Contratto sociale' e dell'Emilio', noto per aver influenzato la Rivoluzione francese e per aver teorizzato la volontà generale.",
-    "ambiguity_note": "Rousseau non inventò il contratto sociale, ma lo rivoluzionò: l'uomo nasce libero, la società lo incatena. Montesquieu studiava i poteri, Rousseau la libertà.",
+    "ambiguity_note": "Le opzioni includono Montesquieu (altro filosofo francese) e Voltaire (illuminista), entrambi associati al tema della libertà. Seneca è fuorviante perché è un filosofo antico. Rousseau scrisse questo per giustificare la Rivoluzione francese.",
     "language_orig": "FR",
     "sensitive": false,
-    "context": "La rivoluzione di Rousseau: l'uomo nasce libero, la società lo incatena. Il contratto sociale deve restituire la libertà perduta."
+    "context": "Nella Francia del 1762, Rousseau sviluppò una filosofia del contratto sociale basata sulla libertà naturale. Credeva che l'uomo nascesse libero ma fosse incatenato dalla società, trasformando il contratto sociale in filosofia della libertà e influenzando la Rivoluzione francese."
   },
   {
     "id": "q50",
@@ -1373,7 +1373,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1929",
-    "source_title": "A Room of One's Own",
+    "source_title": "A Room of One's Own (1929)",
     "source_link": "https://en.wikipedia.org/wiki/A_Room_of_One%27s_Own",
     "tags": [
       "letteratura",
@@ -1384,10 +1384,10 @@
     "spiciness": 1,
     "hint_short": "Letteratura inglese del XX secolo",
     "hint_more": "Scrittrice inglese del XX secolo, membro del Bloomsbury Group, autrice di 'Mrs Dalloway' e 'Orlando', nota per aver rivoluzionato il romanzo moderno con la tecnica del flusso di coscienza.",
-    "ambiguity_note": "Woolf non inventò il femminismo letterario, ma lo sistematizzò: per scrivere servono denaro e spazio. De Beauvoir teorizzava, Woolf praticava.",
+    "ambiguity_note": "Le opzioni includono de Beauvoir e Wollstonecraft (altre femministe), entrambe associate al tema dell'autonomia femminile. Dickinson è fuorviante perché è una poetessa americana. Woolf scrisse questo come saggio femminista.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di Woolf: la creatività femminile richiede indipendenza economica e spazio privato. Una stanza tutta per sé e denaro per scrivere."
+    "context": "Nell'Inghilterra del 1929, Woolf sviluppò una filosofia femminista basata sull'autonomia economica e spaziale. Credeva che per scrivere narrativa una donna avesse bisogno di denaro e di una stanza tutta sua, trasformando il femminismo in pratica letteraria e influenzando il pensiero femminista moderno."
   },
   {
     "id": "q51",
@@ -1401,7 +1401,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1935",
-    "source_title": "HLS Nuremberg Trials Project, Doc. PS-2656",
+    "source_title": "HLS Nuremberg Trials Project, Doc. PS-2656 (1935)",
     "source_link": "https://nuremberg.law.harvard.edu/documents/1168-extract-from-a-speech?mode=text",
     "tags": [
       "propaganda",
@@ -1413,10 +1413,10 @@
     "spiciness": 2,
     "hint_short": "Storia tedesca del XX secolo",
     "hint_more": "Leader politico tedesco del XX secolo, cancelliere del Reich e Führer della Germania nazista, noto per aver guidato il Terzo Reich e per aver scatenato la Seconda guerra mondiale.",
-    "ambiguity_note": "Hitler non inventò l'indottrinamento giovanile, ma lo sistematizzò: la gioventù è il futuro, la propaganda è il presente. MLK educava, Hitler indottrinava.",
+    "ambiguity_note": "Le opzioni includono MLK (educatore) e Churchill (statista), entrambi associati al tema della leadership. Popper è fuorviante perché è un filosofo della scienza. Hitler pronunciò questa frase per giustificare l'indottrinamento giovanile.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "La perversione di Hitler: la gioventù diventa strumento di conquista. Il futuro si conquista indottrinando il presente."
+    "context": "Nella Germania del 1935, Hitler sviluppò una filosofia della propaganda basata sull'indottrinamento giovanile. Credeva che solo chi possedesse la gioventù conquistasse il futuro, trasformando l'educazione in indottrinamento e creando la Gioventù Hitleriana per controllare le nuove generazioni."
   },
   {
     "id": "q52",
@@ -1430,7 +1430,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1923–1925 (attribuzione in stampa coeva)",
-    "source_title": "TIME (archivio): \"Italy: Tired of Liberty\"",
+    "source_title": "TIME (archivio): \"Italy: Tired of Liberty\" (1923-1925)",
     "source_link": "https://content.time.com/time/subscriber/article/0,33009,711306,00.html",
     "tags": [
       "fascismo",
@@ -1441,10 +1441,10 @@
     "spiciness": 2,
     "hint_short": "Storia italiana del XX secolo",
     "hint_more": "Leader politico italiano del XX secolo, fondatore del fascismo e capo del governo italiano, noto per aver instaurato una dittatura e per aver alleato l'Italia con la Germania nazista.",
-    "ambiguity_note": "Mussolini non inventò l'autoritarismo, ma lo giustificò: la libertà è fatica, l'autorità è comodità. Machiavelli teorizzava, Mussolini praticava.",
+    "ambiguity_note": "Le opzioni includono Machiavelli (teorico del potere) e Nietzsche (filosofo della volontà), entrambi associati al tema dell'autorità. Napoleone è fuorviante perché è un generale francese. Mussolini pronunciò questa frase per giustificare il fascismo.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "La perversione di Mussolini: la libertà diventa fardello, l'autorità diventa sollievo. Il fascismo trasforma la responsabilità in sottomissione."
+    "context": "Nell'Italia del 1923-1925, Mussolini sviluppò una filosofia fascista basata sull'autoritarismo. Credeva che gli uomini fossero stanchi della libertà, trasformando la democrazia in dittatura e giustificando il fascismo come risposta al caos democratico."
   },
   {
     "id": "q53",
@@ -1458,7 +1458,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1987",
-    "source_title": "Intervista a Woman’s Own (trascrizione ufficiale)",
+    "source_title": "Intervista a Woman's Own (1987) - Trascrizione ufficiale",
     "source_link": "https://www.margaretthatcher.org/document/106689",
     "tags": [
       "neoliberismo",
@@ -1469,10 +1469,10 @@
     "spiciness": 1,
     "hint_short": "Politica britannica del XX secolo",
     "hint_more": "Primo ministro britannico degli anni '80, nota come 'Lady di ferro', che guidò il Regno Unito durante la Guerra fredda e promosse politiche neoliberiste.",
-    "ambiguity_note": "Thatcher non inventò il neoliberismo, ma lo sistematizzò: la società non esiste, esistono solo individui. Reagan praticava, Thatcher teorizzava.",
+    "ambiguity_note": "Le opzioni includono Reagan (altro neoliberista) e Rand (filosofa dell'individualismo), entrambi associati al tema dell'individualismo. Blair è fuorviante perché è un laburista. Thatcher pronunciò questa frase durante un'intervista controversa.",
     "language_orig": "IT",
     "sensitive": false,
-    "context": "La rivoluzione di Thatcher: la società non esiste, esistono solo individui. Il neoliberismo elimina la solidarietà collettiva."
+    "context": "Nel Regno Unito del 1987, Thatcher sviluppò una filosofia neoliberista basata sull'individualismo. Credeva che la società non esistesse, esistessero solo individui, trasformando il neoliberismo in politica di governo e promuovendo la deregolamentazione e la privatizzazione."
   },
   {
     "id": "q54",
@@ -1486,7 +1486,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1858",
-    "source_title": "Lincoln–Douglas Debates (Quincy, 13 ottobre 1858)",
+    "source_title": "Lincoln–Douglas Debates (1858) - Quincy, 13 ottobre",
     "source_link": "https://teachingamericanhistory.org/document/the-sixth-joint-debate-at-quincy/",
     "tags": [
       "USA",
@@ -1498,10 +1498,10 @@
     "spiciness": 2,
     "hint_short": "Storia americana del XIX secolo",
     "hint_more": "Presidente americano del XIX secolo, noto per aver guidato il paese durante la Guerra civile e per aver emanato la Proclamazione di emancipazione, considerato uno dei più grandi presidenti americani.",
-    "ambiguity_note": "Lincoln non era sempre progressista: questa frase rivela il razzismo dell'epoca anche tra abolizionisti. La storia è complessa, i personaggi anche.",
+    "ambiguity_note": "Le opzioni includono Washington e Johnson (altri presidenti), entrambi associati al tema della schiavitù. Nixon è fuorviante perché è un presidente del XX secolo. Lincoln pronunciò questa frase durante i dibattiti con Douglas.",
     "language_orig": "EN",
     "sensitive": true,
-    "context": "Il paradosso di Lincoln: abolizionista ma razzista. La storia non è bianca o nera, è grigia. Anche i grandi uomini hanno contraddizioni."
+    "context": "Nell'America del 1858, Lincoln sviluppò una filosofia politica complessa basata sulla strategia elettorale. Credeva che l'abolizione della schiavitù fosse prioritaria ma non l'uguaglianza sociale, rivelando la complessità del razzismo dell'epoca anche tra gli abolizionisti."
   },
   {
     "id": "q55",
@@ -1515,7 +1515,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "IV sec. a.C.",
-    "source_title": "Politics, Book I (trad. Angl.)",
+    "source_title": "Politics, Book I (IV sec. a.C.) - Trad. Angl.",
     "source_link": "https://classics.mit.edu/Aristotle/politics.1.one.html",
     "tags": [
       "filosofia antica",
@@ -1526,10 +1526,10 @@
     "spiciness": 2,
     "hint_short": "Filosofia greca antica",
     "hint_more": "Filosofo greco del IV secolo a.C., allievo di Platone e maestro di Alessandro Magno, autore della 'Politica' e considerato uno dei più influenti pensatori della storia occidentale.",
-    "ambiguity_note": "Aristotele non inventò la schiavitù, ma la giustificò: alcuni nascono per comandare, altri per obbedire. La democrazia per i liberi, la schiavitù per i 'naturalmente' inferiori.",
+    "ambiguity_note": "Le opzioni includono Machiavelli (teorico del potere) e Mussolini (dittatore), entrambi associati al tema dell'autorità. Borgia è fuorviante perché è un condottiero rinascimentale. Aristotele scrisse questo per giustificare la schiavitù nell'antica Grecia.",
     "language_orig": "EL",
     "sensitive": true,
-    "context": "Il paradosso di Aristotele: filosofo della democrazia ma teorico della schiavitù naturale. Anche i grandi pensatori hanno i loro pregiudizi."
+    "context": "Nell'antica Grecia del IV secolo a.C., Aristotele sviluppò una filosofia politica basata sulla gerarchia naturale. Credeva che alcuni nascessero per comandare e altri per obbedire, trasformando la filosofia in giustificazione dell'ordine sociale e influenzando il pensiero occidentale per secoli."
   },
   {
     "id": "q56",
@@ -1543,7 +1543,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1967",
-    "source_title": "Interview on NBC/Reportage (ampia documentazione)",
+    "source_title": "Interview on NBC/Reportage (1967) - Ampla documentazione",
     "source_link": "https://www.nbcnews.com/news/nbcblk/martin-luther-king-jr-riot-language-unheard-n782271",
     "tags": [
       "diritti civili",
@@ -1554,10 +1554,10 @@
     "spiciness": 1,
     "hint_short": "Storia americana del XX secolo",
     "hint_more": "Pastore battista e attivista americano del XX secolo, leader del movimento per i diritti civili, noto per il suo discorso 'I have a dream' e per la sua filosofia della nonviolenza.",
-    "ambiguity_note": "MLK non giustificava la violenza, ma la comprendeva: le rivolte sono grida di chi non viene ascoltato. La nonviolenza è la via, ma la rabbia è comprensibile.",
+    "ambiguity_note": "Le opzioni includono Malcolm X e Davis (altri attivisti), entrambi associati al tema della protesta. Parks è fuorviante perché è un'attivista pacifica. MLK pronunciò questa frase durante un'intervista televisiva.",
     "language_orig": "IT",
     "sensitive": true,
-    "context": "La saggezza di MLK: le rivolte sono grida di chi non viene ascoltato. La nonviolenza è la via, ma la rabbia è comprensibile."
+    "context": "Nell'America del 1967, MLK sviluppò una filosofia della protesta basata sulla comprensione. Credeva che le rivolte fossero il linguaggio di chi non viene ascoltato, trasformando la rabbia in comprensione e promuovendo la nonviolenza come risposta alla frustrazione sociale."
   },
   {
     "id": "q57",
@@ -1571,7 +1571,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1937",
-    "source_title": "Testimonianza alla Palestine Royal Commission (cit.)",
+    "source_title": "Testimonianza alla Palestine Royal Commission (1937) - Cit.",
     "source_link": "https://publications.parliament.uk/pa/ld5802/ldselect/ldcond/38/3810.htm",
     "tags": [
       "impero britannico",
@@ -1582,10 +1582,10 @@
     "spiciness": 2,
     "hint_short": "Storia britannica del XX secolo",
     "hint_more": "Primo ministro britannico durante la Seconda guerra mondiale, noto per i suoi discorsi infuocati e per aver guidato il Regno Unito nella resistenza contro il nazismo.",
-    "ambiguity_note": "Churchill non era sempre progressista: eroe della libertà in Europa, difensore dell'impero coloniale altrove. La storia è complessa, i personaggi anche.",
+    "ambiguity_note": "Le opzioni includono Wilson e Washington (altri statisti), entrambi associati al tema del colonialismo. Attlee è fuorviante perché è un laburista. Churchill pronunciò questa frase durante una testimonianza ufficiale.",
     "language_orig": "EN",
     "sensitive": true,
-    "context": "Il paradosso di Churchill: eroe della libertà in Europa, difensore dell'impero coloniale altrove. Anche i grandi uomini hanno contraddizioni."
+    "context": "Nel Regno Unito del 1937, Churchill sviluppò una filosofia imperialista basata sulla difesa dell'impero coloniale. Credeva che non fosse stato fatto un grande torto agli indigeni, rivelando la complessità del razzismo dell'epoca anche tra i difensori della libertà in Europa."
   },
   {
     "id": "q58",
@@ -1599,7 +1599,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1963",
-    "source_title": "Discorso \"I Have a Dream\"",
+    "source_title": "Discorso \"I Have a Dream\" (1963)",
     "source_link": "https://en.wikipedia.org/wiki/I_Have_a_Dream",
     "tags": [
       "diritti civili",
@@ -1610,10 +1610,10 @@
     "spiciness": 0,
     "hint_short": "Storia americana del XX secolo",
     "hint_more": "Pastore battista e attivista americano del XX secolo, leader del movimento per i diritti civili, noto per il suo discorso 'I have a dream' e per la sua filosofia della nonviolenza.",
-    "ambiguity_note": "MLK non inventò il sogno dell'uguaglianza, ma lo rese celebre: 'I have a dream' è diventato il simbolo della lotta per i diritti civili. La speranza che cambiò l'America.",
+    "ambiguity_note": "Le opzioni includono Malcolm X e Mandela (altri leader della libertà), entrambi associati al tema dell'uguaglianza. Kennedy è fuorviante perché è un presidente bianco. MLK pronunciò questo discorso durante la Marcia su Washington.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il sogno che cambiò l'America: uguaglianza e giustizia per tutti i cittadini. MLK trasformò la speranza in azione."
+    "context": "Nell'America del 1963, MLK sviluppò una filosofia della speranza basata sul sogno dell'uguaglianza. Credeva che 'I have a dream' potesse cambiare l'America, trasformando la retorica in speranza rivoluzionaria e guidando il movimento per i diritti civili."
   },
   {
     "id": "q59",
@@ -1627,7 +1627,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "c. 1600",
-    "source_title": "Hamlet, Atto III",
+    "source_title": "Hamlet, Atto III (c. 1600)",
     "source_link": "https://en.wikipedia.org/wiki/To_be,_or_not_to_be",
     "tags": [
       "teatro",
@@ -1638,10 +1638,10 @@
     "spiciness": 0,
     "hint_short": "Teatro inglese del XVI-XVII secolo",
     "hint_more": "Drammaturgo inglese del XVI-XVII secolo, considerato il più grande scrittore della letteratura inglese, autore di opere come 'Amleto', 'Romeo e Giulietta' e 'Macbeth'.",
-    "ambiguity_note": "Shakespeare non inventò il dilemma esistenziale, ma lo rese celebre: 'To be or not to be' è diventato il simbolo della crisi esistenziale. Il monologo più famoso della letteratura.",
+    "ambiguity_note": "Le opzioni includono Marlowe (altro drammaturgo elisabettiano) e Wilde (scrittore vittoriano), entrambi associati al tema del teatro. Austen è fuorviante perché è una romanziera. Shakespeare scrisse questo monologo per Amleto.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "Il dilemma eterno di Amleto: vivere con il dolore o morire per sfuggirvi. Shakespeare trasformò la crisi esistenziale in poesia."
+    "context": "Nell'Inghilterra del 1600, Shakespeare sviluppò una filosofia del teatro basata sul dilemma esistenziale. Credeva che 'To be or not to be' rappresentasse la crisi esistenziale umana, trasformando il dilemma in arte e creando il monologo più famoso della letteratura mondiale."
   },
   {
     "id": "q60",
@@ -1655,7 +1655,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1929",
-    "source_title": "Intervista a G. Viereck",
+    "source_title": "Intervista a G. Viereck (1929)",
     "source_link": "https://en.wikipedia.org/wiki/Albert_Einstein#Quotations",
     "tags": [
       "scienza",
@@ -1665,10 +1665,10 @@
     "spiciness": 0,
     "hint_short": "Fisica del XX secolo",
     "hint_more": "Fisico tedesco naturalizzato americano, autore della teoria della relatività, che espresse scetticismo verso l'interpretazione probabilistica della meccanica quantistica nelle sue lettere con Max Born.",
-    "ambiguity_note": "Einstein non inventò l'immaginazione, ma la valorizzò: la conoscenza è limitata, l'immaginazione è infinita. La relatività nasce dall'immaginazione, non dalla logica.",
+    "ambiguity_note": "Le opzioni includono Feynman (altro fisico) e Musk (imprenditore moderno), entrambi associati al tema della creatività. Mao è fuorviante perché è un leader politico. Einstein pronunciò questa frase durante un'intervista.",
     "language_orig": "EN",
     "sensitive": false,
-    "context": "La filosofia di Einstein: l'immaginazione è più importante della conoscenza. La creatività supera la logica, l'intuizione supera la ragione."
+    "context": "Nell'America del 1929, Einstein sviluppò una filosofia della scienza basata sull'immaginazione. Credeva che l'immaginazione fosse più importante della conoscenza, trasformando la creatività in metodo scientifico e influenzando il pensiero scientifico moderno."
   },
   {
     "id": "q61",
@@ -1682,7 +1682,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "1944",
-    "source_title": "Huis clos (A porte chiuse)",
+    "source_title": "Huis clos (1944) - A porte chiuse",
     "source_link": "https://en.wikipedia.org/wiki/No_Exit",
     "tags": [
       "esistenzialismo",
