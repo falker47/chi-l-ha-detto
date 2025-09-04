@@ -226,7 +226,7 @@ function MainMenu({
           </div>
 
                      {/* Selezione Modalità di Gioco - PRINCIPALE */}
-           <div className="mb-10 flex items-center justify-center gap-4">
+           <div className="mb-4 flex items-center justify-center gap-4">
                          <div className="flex flex-col items-center space-y-3 bg-gradient-to-b from-black/50 to-black/40 backdrop-blur-lg rounded-3xl px-6 py-5 border-2 border-white/30 shadow-2xl transform hover:scale-105 transition-transform duration-300">
               
                                                                                      <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3">

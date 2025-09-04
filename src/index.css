@@ -211,6 +211,21 @@
     }
   }
   
+  /* Riduzione dimensioni per mobile */
+  @media (max-width: 768px) {
+    /* Footer ridotto del 15% */
+    footer {
+      transform: scale(0.85);
+      transform-origin: center bottom;
+    }
+    
+    /* Bottoni modalità Achille ed Eracle ridotti del 10% */
+    button.w-65.h-32 {
+      width: 16.25rem; /* 260px * 0.9 */
+      height: 7.2rem;  /* 128px * 0.9 */
+    }
+  }
+  
   /* Migliora la leggibilità su schermi ad alta densità */
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .text-shadow-2xl {
