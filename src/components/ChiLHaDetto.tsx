@@ -38,6 +38,7 @@ export default function ChiLHaDetto({
   const [finalStreak, setFinalStreak] = useState(0);
   const [questionScores, setQuestionScores] = useState<number[]>([]); // Punteggi delle singole domande
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
+  const [sessionUsedQuestions, setSessionUsedQuestions] = useState<Set<string>>(new Set()); // Domande usate nella sessione corrente
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [recordSaved, setRecordSaved] = useState(false);
   const [hintsUnused, setHintsUnused] = useState(0); // Contatore hints non utilizzati (modalità Eracle)
@@ -69,6 +70,7 @@ export default function ChiLHaDetto({
   const resetUsedQuestions = useCallback(() => {
     const resetUsedQuestions = new Set<string>();
     setUsedQuestions(resetUsedQuestions);
+    setSessionUsedQuestions(new Set()); // Reset anche delle domande della sessione
     saveUsedQuestions(resetUsedQuestions);
   }, [saveUsedQuestions]);
   const [used5050, setUsed5050] = useState(false);
@@ -192,11 +194,16 @@ export default function ChiLHaDetto({
   const selectNextQuestion = useCallback(() => {
     if (gameMode !== 'classic') return;
     
-    const availableItems = ITEMS.filter(item => !usedQuestions.has(item.id));
+    // Filtra le domande che non sono state usate né globalmente né in questa sessione
+    const availableItems = ITEMS.filter(item => 
+      !usedQuestions.has(item.id) && !sessionUsedQuestions.has(item.id)
+    );
     
     if (availableItems.length === 0) {
       // Se non ci sono più domande disponibili, resetta le domande usate
-      resetUsedQuestions();
+      // ma mantieni le domande della sessione per evitare duplicati nella stessa partita
+      setUsedQuestions(new Set());
+      saveUsedQuestions(new Set());
       return;
     }
     
@@ -230,8 +237,12 @@ export default function ChiLHaDetto({
     }
     
     const originalIndex = ITEMS.findIndex(item => item.id === selectedQuestion.id);
+    
+    // Aggiungi la domanda selezionata alle domande usate in questa sessione
+    setSessionUsedQuestions(prev => new Set([...prev, selectedQuestion.id]));
+    
     setOrder([originalIndex]);
-  }, [gameMode, usedQuestions, i, resetUsedQuestions, order, streak]);
+  }, [gameMode, usedQuestions, sessionUsedQuestions, i, resetUsedQuestions, order, streak]);
 
   const current: Item | null = useMemo(() => {
     if (gameMode === 'classic') {
@@ -379,6 +390,7 @@ export default function ChiLHaDetto({
         if (current) {
           const newUsedQuestions = new Set([...usedQuestions, current.id]);
           setUsedQuestions(newUsedQuestions);
+          setSessionUsedQuestions(prev => new Set([...prev, current.id]));
           saveUsedQuestions(newUsedQuestions);
         }
         
@@ -667,6 +679,7 @@ export default function ChiLHaDetto({
           if (current) {
             const newUsedQuestions = new Set([...usedQuestions, current.id]);
             setUsedQuestions(newUsedQuestions);
+            setSessionUsedQuestions(prev => new Set([...prev, current.id]));
             saveUsedQuestions(newUsedQuestions);
           }
           
@@ -689,6 +702,7 @@ export default function ChiLHaDetto({
         if (current) {
           const newUsedQuestions = new Set([...usedQuestions, current.id]);
           setUsedQuestions(newUsedQuestions);
+          setSessionUsedQuestions(prev => new Set([...prev, current.id]));
           saveUsedQuestions(newUsedQuestions);
         }
         
@@ -780,6 +794,7 @@ export default function ChiLHaDetto({
       if (current) {
         const newUsedQuestions = new Set([...usedQuestions, current.id]);
         setUsedQuestions(newUsedQuestions);
+        setSessionUsedQuestions(prev => new Set([...prev, current.id]));
         saveUsedQuestions(newUsedQuestions);
       }
       

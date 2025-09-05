@@ -85,7 +85,7 @@ export const personaggiImageMap: Record<string, string> = {
   "Walter Benjamin": "images/personaggi/walter-benjamin.jpg",
   "John Culkin": "images/personaggi/john-culkin.jpg",
   "René Descartes": "images/personaggi/rene-descartes.jpg",
-  "Blaise Pascal": "images/personaggi/blaise-pascal.jpg",
+  "Blaise Pascal": "images/personaggi/blaise-pascal.JPG",
   "Baruch Spinoza": "images/personaggi/baruch-spinoza.jpg",
   "Immanuel Kant": "images/personaggi/immanuel-kant.jpg",
   "Patrick Henry": "images/personaggi/patrick-henry.jpeg",
