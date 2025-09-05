@@ -222,4 +222,7 @@ export const personaggiImageMap: Record<string, string> = {
   "Jim Morrison": "images/personaggi/jim-morrison.jpg",
   "Charles Bukowski": "images/personaggi/charles-bukowski.jpg",
   "Georg Wilhelm Friedrich Hegel": "images/personaggi/georg-wilhelm-friedrich-hegel.jpg",
+  "Salvador Dalí": "images/personaggi/salvador-dali.jpeg",
+  "Pablo Picasso": "images/personaggi/pablo-picasso.jpg",
+  "Papa Leone X": "images/personaggi/papa-leone-x.jpg",
 };

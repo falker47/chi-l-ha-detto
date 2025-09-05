@@ -4207,5 +4207,86 @@
     "ambiguity_note": "Le opzioni includono Giulio Cesare (conquistatore romano), Napoleone Bonaparte (imperatore francese) e Ottaviano Augusto (primo imperatore romano). Alessandro Magno conquistò un impero che si estendeva dalla Grecia all'India.",
     "language_orig": "GR",
     "context": "Nel 323 a.C., alla morte di Alessandro Magno, il suo epitaffio rifletteva l'ironia della sua ambizione smisurata. Credeva che il mondo intero non fosse sufficiente per la sua sete di conquista, trasformando la morte in momento di riflessione sulla vanità del potere."
+  },
+  {
+    "id": "q157",
+    "quote": "Abbiamo fatto 30, ora facciamo 31",
+    "author": "Papa Leone X",
+    "choices": [
+      "Papa Leone X",
+      "Enrico IV di Borbone",
+      "Joseph Stalin",
+      "Gaio Giulio Cesare"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1517, Rinascimento papale",
+    "source_title": "Cronaca della nomina dei cardinali del 1517",
+    "source_link": "https://it.wikipedia.org/wiki/Papa_Leone_X",
+    "tags": [
+      "papato",
+      "rinascimento",
+      "politica"
+    ],
+    "difficulty": 5,
+    "spiciness": 1,
+    "hint_short": "Papa del Rinascimento italiano",
+    "hint_more": "Papa del Rinascimento italiano (1513-1521), membro della famiglia Medici. Noto per il suo mecenatismo artistico e la sua abilità diplomatica, pronunciò questa frase nel 1517 dopo aver nominato 30 cardinali.",
+    "ambiguity_note": "Le opzioni includono Enrico IV di Borbone (re di Francia), Joseph Stalin (dittatore sovietico) e Gaio Giulio Cesare (imperatore romano). Leone X pronunciò questa frase nel 1517 dopo aver nominato 30 cardinali e poi aggiungendone un 31esimo.",
+    "language_orig": "IT",
+    "context": "Nel 1517, Papa Leone X nominò una lista di 30 nuovi cardinali. Poco dopo, ricordandosi di aver escluso un prelato di grandi meriti, aggiunse un 31esimo nome pronunciando 'Tanto è trenta che trentuno!', da cui derivò il detto italiano 'Abbiamo fatto 30, ora facciamo 31' per indicare la volontà di andare oltre un traguardo già raggiunto."
+  },
+  {
+    "id": "q158",
+    "quote": "Tutti i bambini sono degli artisti nati, il difficile sta nel restarlo da grandi.",
+    "author": "Pablo Picasso",
+    "choices": [
+      "Pablo Picasso",
+      "Michelangelo Buonarroti",
+      "Leonardo da Vinci",
+      "Salvador Dalí"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1964, Arte moderna",
+    "source_title": "Conversazioni con Picasso (Brassaï, 1964)",
+    "source_link": "https://it.wikipedia.org/wiki/Pablo_Picasso",
+    "tags": [
+      "arte",
+      "infanzia",
+      "creatività"
+    ],
+    "difficulty": 6,
+    "spiciness": 1,
+    "hint_short": "Pittore spagnolo del XX secolo",
+    "hint_more": "Pittore spagnolo considerato uno dei più influenti artisti del XX secolo. Fondatore del cubismo e noto per la sua creatività rivoluzionaria e il suo approccio innovativo all'arte.",
+    "ambiguity_note": "Le opzioni includono Michelangelo (scultore rinascimentale), Leonardo da Vinci (genio del Rinascimento) e Dalí (surrealista). Picasso era noto per le sue riflessioni profonde sull'arte e la creatività infantile.",
+    "language_orig": "ES",
+    "context": "Negli anni '50, Picasso sviluppò una filosofia artistica basata sulla purezza creativa dell'infanzia. Credeva che tutti i bambini possedessero un talento artistico naturale che la società adulta tendeva a reprimere, trasformando l'osservazione pedagogica in riflessione estetica."
+  },
+  {
+    "id": "q159",
+    "quote": "La pittura è una poesia che si vede e non si sente.",
+    "author": "Leonardo da Vinci",
+    "choices": [
+      "Leonardo da Vinci",
+      "Michelangelo Buonarroti",
+      "Salvador Dalí",
+      "Pablo Picasso"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1510, Rinascimento italiano",
+    "source_title": "Trattato della pittura",
+    "source_link": "https://it.wikipedia.org/wiki/Leonardo_da_Vinci",
+    "tags": [
+      "rinascimento",
+      "arte",
+      "filosofia"
+    ],
+    "difficulty": 7,
+    "spiciness": 1,
+    "hint_short": "Genio del Rinascimento italiano",
+    "hint_more": "Genio universale del Rinascimento italiano, pittore, inventore, scienziato e filosofo. Autore della 'Gioconda' e del 'Trattato della pittura', noto per la sua visione interdisciplinare dell'arte.",
+    "ambiguity_note": "Le opzioni includono Michelangelo (scultore e pittore rinascimentale), Dalí (surrealista del XX secolo) e Picasso (cubista del XX secolo). Leonardo era noto per le sue riflessioni teoriche sull'arte e la sua concezione della pittura come 'scienza'.",
+    "language_orig": "IT",
+    "context": "Nel 1500, durante il pieno Rinascimento, Leonardo sviluppò una teoria artistica basata sull'unione tra arte e scienza. Credeva che la pittura fosse la forma più nobile di espressione umana, capace di comunicare attraverso la vista ciò che la poesia esprime attraverso l'udito, trasformando l'estetica in filosofia."
   }
 ]
