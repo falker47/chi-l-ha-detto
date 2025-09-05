@@ -19,12 +19,10 @@ function shuffle<T>(arr: T[]) {
 }
 
 export default function ChiLHaDetto({ 
-  includeSensitive, 
   gameMode,
   backgroundImage,
   onBackToMenu 
 }: { 
-  includeSensitive: boolean; 
   gameMode: 'classic' | 'millionaire';
   backgroundImage: string;
   onBackToMenu: () => void; 
@@ -114,18 +112,13 @@ export default function ChiLHaDetto({
     // Reset delle domande usate per ogni nuova partita
     resetUsedQuestions();
     
-    // Filtra le domande in base alla preferenza per contenuti sensibili
-    const filteredItems = includeSensitive 
-      ? ITEMS 
-      : ITEMS.filter(item => !item.sensitive);
-    
     if (gameMode === 'millionaire') {
       // Modalità milionario: seleziona domande per difficoltà progressiva
       const selectedQuestions: number[] = [];
       
       for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
         const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
-        const availableQuestions = filteredItems.filter(item => 
+        const availableQuestions = ITEMS.filter(item => 
           item.difficulty >= difficultyRange.min && 
           item.difficulty <= difficultyRange.max
         );
@@ -136,7 +129,7 @@ export default function ChiLHaDetto({
           selectedQuestions.push(originalIndex);
         } else {
           // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
-          const availableFallback = filteredItems;
+          const availableFallback = ITEMS;
           if (availableFallback.length > 0) {
             const randomIndex = Math.floor(Math.random() * availableFallback.length);
             const fallbackQuestion = availableFallback[randomIndex];
@@ -144,8 +137,8 @@ export default function ChiLHaDetto({
             selectedQuestions.push(originalIndex);
           } else {
             // Se non ci sono domande disponibili, prendi una casuale
-            const randomIndex = Math.floor(Math.random() * filteredItems.length);
-            const fallbackQuestion = filteredItems[randomIndex];
+            const randomIndex = Math.floor(Math.random() * ITEMS.length);
+            const fallbackQuestion = ITEMS[randomIndex];
             const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
             selectedQuestions.push(originalIndex);
           }
@@ -193,14 +186,13 @@ export default function ChiLHaDetto({
     }
     
     // Non resettare showGameOverAnimation qui, viene gestito in onAnswer
-  }, [includeSensitive, gameMode, loadUsedQuestions, saveUsedQuestions, resetUsedQuestions]);
+  }, [gameMode, loadUsedQuestions, saveUsedQuestions, resetUsedQuestions]);
 
   // Funzione per selezionare la prossima domanda nella modalità classic
   const selectNextQuestion = useCallback(() => {
     if (gameMode !== 'classic') return;
     
-    const filteredItems = includeSensitive ? ITEMS : ITEMS.filter(item => !item.sensitive);
-    const availableItems = filteredItems.filter(item => !usedQuestions.has(item.id));
+    const availableItems = ITEMS.filter(item => !usedQuestions.has(item.id));
     
     if (availableItems.length === 0) {
       // Se non ci sono più domande disponibili, resetta le domande usate
@@ -239,7 +231,7 @@ export default function ChiLHaDetto({
     
     const originalIndex = ITEMS.findIndex(item => item.id === selectedQuestion.id);
     setOrder([originalIndex]);
-  }, [gameMode, includeSensitive, usedQuestions, i, resetUsedQuestions, order, streak]);
+  }, [gameMode, usedQuestions, i, resetUsedQuestions, order, streak]);
 
   const current: Item | null = useMemo(() => {
     if (gameMode === 'classic') {
@@ -506,7 +498,6 @@ export default function ChiLHaDetto({
   }
 
   const answered = revealed || selected !== null;
-  const isSensitive = !!current.sensitive;
   const correctness = mappedChoices.findIndex((c) => c.isCorrect);
   const spiciness =
     current.spiciness === 0 ? "" : current.spiciness === 1 ? "🌶️" : "🌶️🌶️";
@@ -741,16 +732,13 @@ export default function ChiLHaDetto({
         setSuperHintRevealed(false);
       } else {
         // Fine partita Verso l'Olimpo - ricarica le domande
-        const filteredItems = includeSensitive 
-          ? ITEMS 
-          : ITEMS.filter(item => !item.sensitive);
         
         // Modalità milionario: seleziona domande per difficoltà progressiva
         const selectedQuestions: number[] = [];
         
         for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
           const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
-          const availableQuestions = filteredItems.filter(item => 
+          const availableQuestions = ITEMS.filter(item => 
             item.difficulty >= difficultyRange.min && item.difficulty <= difficultyRange.max
           );
           
@@ -760,8 +748,8 @@ export default function ChiLHaDetto({
             selectedQuestions.push(originalIndex);
           } else {
             // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
-            const randomIndex = Math.floor(Math.random() * filteredItems.length);
-            const fallbackQuestion = filteredItems[randomIndex];
+            const randomIndex = Math.floor(Math.random() * ITEMS.length);
+            const fallbackQuestion = ITEMS[randomIndex];
             const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
             selectedQuestions.push(originalIndex);
           }
@@ -933,12 +921,6 @@ export default function ChiLHaDetto({
            </div>
          </div>
 
-                 {historicalMode && isSensitive && (
-           <div className="mt-2 sm:mt-2 py-1 sm:py-2 px-2 rounded-lg bg-black/30 backdrop-blur-sm border border-white/20 text-xs text-white shadow-lg">
-             <strong className="drop-shadow-lg">Avviso contenuti storici sensibili.</strong> 
-             <span className="drop-shadow-lg"> Questo elemento è mostrato per scopi storici e didattici.</span>
-           </div>
-         )}
 
                  {/* Barra di progresso e timer responsive - compatta - layout orizzontale su mobile */}
          <div className="mt-2 sm:mt-2 flex flex-row items-center justify-between gap-2 bg-black/20 backdrop-blur-sm p-2 rounded-lg border border-white/10">
@@ -1496,9 +1478,6 @@ export default function ChiLHaDetto({
                             }
                             
                             // Rimescola le domande per la nuova partita
-                            const filteredItems = includeSensitive 
-                              ? ITEMS 
-                              : ITEMS.filter(item => !item.sensitive);
                             
                             if (gameMode === 'millionaire') {
                               // Modalità Verso l'Olimpo: seleziona nuove domande per difficoltà progressiva
@@ -1506,7 +1485,7 @@ export default function ChiLHaDetto({
                               
                               for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
                                 const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
-                                const availableQuestions = filteredItems.filter(item => 
+                                const availableQuestions = ITEMS.filter(item => 
                                   item.difficulty >= difficultyRange.min && item.difficulty <= difficultyRange.max
                                 );
                                 
@@ -1516,8 +1495,8 @@ export default function ChiLHaDetto({
                                   selectedQuestions.push(originalIndex);
                                 } else {
                                   // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
-                                  const randomIndex = Math.floor(Math.random() * filteredItems.length);
-                                  const fallbackQuestion = filteredItems[randomIndex];
+                                  const randomIndex = Math.floor(Math.random() * ITEMS.length);
+                                  const fallbackQuestion = ITEMS[randomIndex];
                                   const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
                                   selectedQuestions.push(originalIndex);
                                 }
@@ -1526,9 +1505,7 @@ export default function ChiLHaDetto({
                               setOrder(selectedQuestions);
                             } else {
                               // Modalità classica: estrai casualmente 10 nuove domande
-                              const shuffledIndices = shuffle(filteredItems.map((_, k) => {
-                                return ITEMS.findIndex(originalItem => originalItem.id === filteredItems[k].id);
-                              }));
+                              const shuffledIndices = shuffle(ITEMS.map((_, k) => k));
                               setOrder(shuffledIndices.slice(0, QUESTIONS_PER_GAME));
                             }
                           }} 

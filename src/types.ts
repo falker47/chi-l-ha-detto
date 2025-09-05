@@ -12,7 +12,6 @@ export interface Item {
   spiciness: number;
   context: string;
   ambiguity_note: string;
-  sensitive?: boolean;
   language_orig?: string;
   quote_it?: string;
   hint_short?: string;

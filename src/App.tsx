@@ -4,8 +4,6 @@ import Leaderboard from "./components/Leaderboard";
 
 function MainMenu({ 
   onStartGame, 
-  includeSensitive, 
-  setIncludeSensitive,
   gameMode,
   setGameMode,
   showTutorial,
@@ -14,8 +12,6 @@ function MainMenu({
   setShowLeaderboard
 }: { 
   onStartGame: (backgroundImage: string) => void;
-  includeSensitive: boolean;
-  setIncludeSensitive: (value: boolean) => void;
   gameMode: 'classic' | 'millionaire' | null;
   setGameMode: (mode: 'classic' | 'millionaire' | null) => void;
   showTutorial: boolean;
@@ -135,66 +131,6 @@ function MainMenu({
                 </div>
               </button>
 
-              {/* Container contenuti sensibili */}
-              <div className="w-32 sm:w-56 flex-shrink-0">
-                {/* Container principale - design pulito */}
-                <div className="flex flex-row items-center justify-center space-x-2 sm:space-x-3 bg-black/60 backdrop-blur-sm rounded-xl px-2 sm:px-4 py-3 border border-white/20 h-12 sm:h-14">
-                  {/* Testo principale */}
-                  <div className="flex flex-col">
-                    <span className="text-white font-semibold text-xs sm:text-xs">
-                      <span className="hidden sm:inline">Contenuti Sensibili</span>
-                      <span className="sm:hidden">Sensibili</span>
-                    </span>
-                    <span className="text-gray-300 text-xs">
-                      {includeSensitive ? 'Avanzata' : 'Sicura'}
-                    </span>
-                  </div>
-                  
-                  {/* Bottone con icona dinamica */}
-                  <button
-                    onClick={() => setIncludeSensitive(!includeSensitive)}
-                    className={`inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg transition-all duration-200 focus:outline-none ${
-                      includeSensitive 
-                        ? 'bg-orange-500 hover:bg-orange-600' 
-                        : 'bg-gray-600 hover:bg-gray-700'
-                    }`}
-                  >
-                    {/* Icona dinamica */}
-                    <div className="w-4 h-4 sm:w-5 sm:h-5">
-                      {includeSensitive ? (
-                        // Icona "ON" - triangolo di alert
-                        <svg 
-                          className="w-full h-full text-white" 
-                          viewBox="0 0 24 24" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round"
-                        >
-                          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-                          <path d="M12 9v4"/>
-                          <path d="M12 17h.01"/>
-                        </svg>
-                      ) : (
-                        // Icona "OFF" - scudo
-                        <svg 
-                          className="w-full h-full text-white" 
-                          viewBox="0 0 24 24" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round"
-                        >
-                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                          <path d="M9 12l2 2 4-4"/>
-                        </svg>
-                      )}
-                    </div>
-                  </button>
-                </div>
-              </div>
 
               {/* Bottone Tutorial */}
               <button
@@ -606,7 +542,6 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
 
 function App() {
   const [gameStarted, setGameStarted] = useState(false);
-  const [includeSensitive, setIncludeSensitive] = useState(false); // Default: disattivo
   const [gameMode, setGameMode] = useState<'classic' | 'millionaire' | null>(null); // Default: nessuna modalità selezionata
   const [backgroundImage, setBackgroundImage] = useState<string>('images/hero-bg.png'); // Immagine di background selezionata
   const [imagesPreloaded, setImagesPreloaded] = useState(false);
@@ -759,7 +694,6 @@ function App() {
       <div className={`transition-opacity duration-500 ${imagesPreloaded ? 'opacity-100' : 'opacity-0'}`}>
         {gameStarted && gameMode ? (
           <ChiLHaDetto 
-            includeSensitive={includeSensitive}
             gameMode={gameMode}
             backgroundImage={backgroundImage}
             onBackToMenu={() => setGameStarted(false)}
@@ -772,8 +706,6 @@ function App() {
              setBackgroundImage(bgImage);
              setGameStarted(true);
            }} 
-           includeSensitive={includeSensitive}
-           setIncludeSensitive={setIncludeSensitive}
            gameMode={gameMode}
            setGameMode={setGameMode}
            showTutorial={showTutorial}
