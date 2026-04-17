@@ -1,0 +1,3794 @@
+[
+  {
+    "id": "e1",
+    "quote": "Metti la cera, togli la cera",
+    "author": "Per vincere domani – The Karate Kid",
+    "choices": [
+      "Per vincere domani – The Karate Kid",
+      "Rocky",
+      "Rambo",
+      "Top Gun"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1984",
+    "source_title": "The Karate Kid",
+    "source_link": "https://en.wikipedia.org/wiki/The_Karate_Kid",
+    "tags": [
+      "cinema",
+      "sport",
+      "disciplina"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film di arti marziali con Ralph Macchio",
+    "hint_more": "Film del 1984 diretto da John G. Avildsen, con Ralph Macchio e Pat Morita. Racconta la storia di un ragazzo che impara il karate da un maestro saggio.",
+    "ambiguity_note": "Le opzioni includono Rocky (boxe), Rambo (azione) e Top Gun (aviazione). The Karate Kid è noto per questa frase che rappresenta la disciplina e la dedizione nell'apprendimento.",
+    "language_orig": "IT",
+    "context": "Nel film 'Per vincere domani – The Karate Kid' (1984), il maestro Miyagi (Pat Morita) pronunciò questa frase mentre insegnava a Daniel (Ralph Macchio) a lucidare le auto. La frase simboleggia la disciplina e la pazienza necessarie per padroneggiare il karate, dove ogni movimento apparentemente semplice nasconde un insegnamento profondo."
+  },
+  {
+    "id": "e2",
+    "quote": "Io ne ho viste cose che voi umani non potreste immaginarvi",
+    "author": "Blade Runner",
+    "choices": [
+      "Blade Runner",
+      "Alien",
+      "Terminator",
+      "Matrix"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1982",
+    "source_title": "Blade Runner",
+    "source_link": "https://en.wikipedia.org/wiki/Blade_Runner",
+    "tags": [
+      "cinema",
+      "fantascienza",
+      "filosofico"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Film di fantascienza di Ridley Scott con Harrison Ford",
+    "hint_more": "Film del 1982 diretto da Ridley Scott, con Harrison Ford, Rutger Hauer e Sean Young. Ambientato in un futuro distopico con replicanti.",
+    "ambiguity_note": "Le opzioni includono Alien (horror spaziale), Terminator (azione futuristico) e Matrix (realtà virtuale). Blade Runner è noto per questa frase poetica e malinconica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Blade Runner' (1982), il replicante Roy Batty (Rutger Hauer) pronunciò questa frase durante il suo monologo finale. La frase esprime la malinconia di un essere artificiale che ha vissuto esperienze incredibili ma che sta per morire, riflettendo sulla natura dell'esistenza e sulla fragilità della vita."
+  },
+  {
+    "id": "e3",
+    "quote": "No! Provare no! Fare, o non fare! Non c'è provare!",
+    "author": "L'Impero colpisce ancora",
+    "choices": [
+      "L'Impero colpisce ancora",
+      "Star Wars",
+      "Star Trek",
+      "Battlestar Galactica"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1980",
+    "source_title": "Star Wars: Episode V - The Empire Strikes Back",
+    "source_link": "https://en.wikipedia.org/wiki/The_Empire_Strikes_Back",
+    "tags": [
+      "cinema",
+      "fantascienza",
+      "saggezza"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Saga spaziale di George Lucas",
+    "hint_more": "Saga cinematografica creata da George Lucas, iniziata nel 1977. Racconta le avventure di Luke Skywalker e la lotta tra Jedi e Sith.",
+    "ambiguity_note": "Le opzioni includono Star Trek (serie TV), Battlestar Galactica (serie TV) e Dune (libro/film). Star Wars è noto per questa frase che incarna la filosofia Jedi.",
+    "language_orig": "IT",
+    "context": "Nel film 'L'Impero colpisce ancora' (1980) della saga Star Wars, il maestro Yoda pronunciò questa frase mentre addestrava Luke Skywalker su Dagobah. La frase esprime la filosofia Jedi: non esiste il 'provare', solo il 'fare' con determinazione assoluta, insegnando che l'incertezza porta al fallimento."
+  },
+  {
+    "id": "e4",
+    "quote": "Mi piace l'odore del napalm al mattino",
+    "author": "Apocalypse Now",
+    "choices": [
+      "Apocalypse Now",
+      "Platoon",
+      "Full Metal Jacket",
+      "The Deer Hunter"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1979",
+    "source_title": "Apocalypse Now",
+    "source_link": "https://en.wikipedia.org/wiki/Apocalypse_Now",
+    "tags": [
+      "cinema",
+      "guerra",
+      "drammatico"
+    ],
+    "difficulty": 3,
+    "spiciness": 2,
+    "hint_short": "Film di guerra di Francis Ford Coppola",
+    "hint_more": "Film del 1979 diretto da Francis Ford Coppola, con Robert Duvall, Martin Sheen e Marlon Brando. Ambientato durante la guerra del Vietnam.",
+    "ambiguity_note": "Le opzioni includono Platoon (guerra Vietnam), Full Metal Jacket (addestramento militare) e The Deer Hunter (dramma post-guerra). Apocalypse Now è noto per questa frase che esprime la follia della guerra.",
+    "language_orig": "IT",
+    "context": "Nel film 'Apocalypse Now' (1979), il tenente colonnello Kilgore (Robert Duvall) pronunciò questa frase mentre osservava un attacco aereo con napalm. La frase esprime la perversa fascinazione per la distruzione e la guerra, mostrando come il conflitto possa corrompere la mente umana e trasformare l'orrore in qualcosa di quasi poetico."
+  },
+  {
+    "id": "e5",
+    "quote": "Che la Forza sia con te",
+    "author": "Guerre Stellari",
+    "choices": [
+      "Guerre Stellari",
+      "Star Wars",
+      "Star Trek",
+      "Battlestar Galactica"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1977",
+    "source_title": "Star Wars: Episode IV - A New Hope",
+    "source_link": "https://en.wikipedia.org/wiki/Star_Wars",
+    "tags": [
+      "cinema",
+      "fantascienza",
+      "iconico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Saga spaziale più famosa del cinema",
+    "hint_more": "Saga cinematografica creata da George Lucas, iniziata nel 1977. La frase è pronunciata da Obi-Wan Kenobi per benedire Luke Skywalker.",
+    "ambiguity_note": "Le opzioni includono Star Trek (serie TV), Battlestar Galactica (serie TV) e Dune (libro/film). Star Wars è noto per questa frase che è diventata un simbolo universale di speranza.",
+    "language_orig": "IT",
+    "context": "Nel film 'Guerre Stellari' (1977) della saga Star Wars, Obi-Wan Kenobi (Alec Guinness) pronunciò questa frase per benedire Luke Skywalker prima della missione. La frase rappresenta un augurio di protezione e forza interiore, diventando il saluto tradizionale dei Jedi e un simbolo di speranza per milioni di fan in tutto il mondo."
+  },
+  {
+    "id": "e6",
+    "quote": "Tieni i tuoi amici vicini, ma i tuoi nemici più vicini",
+    "author": "Il padrino",
+    "choices": [
+      "Il padrino",
+      "Scarface",
+      "Goodfellas",
+      "Casino"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1974",
+    "source_title": "The Godfather: Part II",
+    "source_link": "https://en.wikipedia.org/wiki/The_Godfather_Part_II",
+    "tags": [
+      "cinema",
+      "gangster",
+      "drammatico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Saga cinematografica sulla mafia di Francis Ford Coppola",
+    "hint_more": "Saga cinematografica diretta da Francis Ford Coppola, con Al Pacino, Robert De Niro e Marlon Brando. Racconta la storia della famiglia Corleone.",
+    "ambiguity_note": "Le opzioni includono Scarface (gangster), Goodfellas (mafia) e Casino (casinò). Il padrino è noto per questa frase che esprime la saggezza del mondo criminale.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il padrino – Parte II' (1974), Michael Corleone (Al Pacino) pronunciò questa frase durante una conversazione strategica. La frase esprime la filosofia della mafia: mantenere gli amici sotto controllo e i nemici ancora più vicini per poterli monitorare e anticipare le loro mosse, riflettendo la paranoia e la strategia del potere criminale."
+  },
+  {
+    "id": "e7",
+    "quote": "Il mio nome è Bond, James Bond",
+    "author": "Agente 007 - Licenza di uccidere",
+    "choices": [
+      "Agente 007 - Licenza di uccidere",
+      "Mission: Impossible",
+      "Bourne",
+      "Kingsman"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1962",
+    "source_title": "Dr. No",
+    "source_link": "https://en.wikipedia.org/wiki/Dr._No_(film)",
+    "tags": [
+      "cinema",
+      "spionaggio",
+      "iconico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Saga di spionaggio con Sean Connery",
+    "hint_more": "Saga cinematografica di spionaggio creata da Ian Fleming, iniziata nel 1962. L'agente segreto più famoso del cinema, interpretato da vari attori.",
+    "ambiguity_note": "Le opzioni includono Mission: Impossible (spionaggio), Bourne (azione) e Kingsman (commedia spionaggio). James Bond è noto per questa frase di presentazione che è diventata iconica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Agente 007 – Licenza di uccidere' (1962), James Bond (Sean Connery) pronunciò questa frase durante la sua prima apparizione cinematografica. La frase è diventata la presentazione più famosa del cinema, simboleggiando eleganza, sicurezza e mistero, e viene ripetuta in ogni film della saga come un rituale di riconoscimento."
+  },
+  {
+    "id": "e8",
+    "quote": "Se vogliamo che tutto rimanga com'è, bisogna che tutto cambi: mi sono spiegato?",
+    "author": "Il gattopardo",
+    "choices": [
+      "Il gattopardo",
+      "Il conformista",
+      "La dolce vita",
+      "8½"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1963",
+    "source_title": "Il Gattopardo",
+    "source_link": "https://en.wikipedia.org/wiki/The_Leopard_(1963_film)",
+    "tags": [
+      "cinema",
+      "storico",
+      "drammatico"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Film storico di Luchino Visconti con Burt Lancaster",
+    "hint_more": "Film del 1963 diretto da Luchino Visconti, con Burt Lancaster, Alain Delon e Claudia Cardinale. Tratto dal romanzo di Giuseppe Tomasi di Lampedusa.",
+    "ambiguity_note": "Le opzioni includono Il conformista (dramma), La dolce vita (commedia) e 8½ (surrealismo). Il gattopardo è noto per questa frase che esprime la filosofia del cambiamento apparente.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il gattopardo' (1963), il principe Fabrizio Salina (Burt Lancaster) pronunciò questa frase durante una conversazione politica. La frase esprime la filosofia del trasformismo politico: per mantenere il potere e lo status quo, è necessario adattarsi ai cambiamenti esterni, anche se solo superficialmente, riflettendo l'ipocrisia e l'opportunismo della classe dirigente."
+  },
+  {
+    "id": "e9",
+    "quote": "Potrebbe andar peggio! Potrebbe... piovere!",
+    "author": "Frankenstein Junior",
+    "choices": [
+      "Frankenstein Junior",
+      "Spaceballs",
+      "Robin Hood - Uomini in calzamaglia",
+      "Alta tensione"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1974",
+    "source_title": "Young Frankenstein",
+    "source_link": "https://en.wikipedia.org/wiki/Young_Frankenstein",
+    "tags": [
+      "cinema",
+      "commedia",
+      "parodia"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Commedia di Mel Brooks con Gene Wilder",
+    "hint_more": "Film del 1974 diretto da Mel Brooks, con Gene Wilder, Marty Feldman e Teri Garr. Parodia del classico Frankenstein di Mary Shelley.",
+    "ambiguity_note": "Le opzioni includono Spaceballs (parodia Star Wars), Robin Hood (commedia medievale) e Alta tensione (commedia). Frankenstein Junior è noto per questa frase che esprime l'ottimismo anche nelle situazioni peggiori.",
+    "language_orig": "IT",
+    "context": "Nel film 'Frankenstein Junior' (1974), il dottor Frederick Frankenstein (Gene Wilder) pronunciò questa frase durante una situazione disastrosa. La frase esprime l'ottimismo irriducibile del personaggio, che riesce a trovare sempre un aspetto positivo anche nelle circostanze più terribili, riflettendo l'umorismo surreale e la resilienza che caratterizzano la commedia di Mel Brooks."
+  },
+  {
+    "id": "e10",
+    "quote": "Francamente, me ne infischio",
+    "author": "Via col Vento",
+    "choices": [
+      "Via col Vento",
+      "Casablanca",
+      "Il mago di Oz",
+      "Quarto potere"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1939",
+    "source_title": "Gone with the Wind",
+    "source_link": "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "storico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film epico del 1939 con Vivien Leigh e Clark Gable",
+    "hint_more": "Film del 1939 diretto da Victor Fleming, con Vivien Leigh, Clark Gable e Olivia De Havilland. Ambientato durante la guerra civile americana.",
+    "ambiguity_note": "Le opzioni includono Casablanca (romantico), Il mago di Oz (fantasy) e Quarto potere (dramma). Via col Vento è noto per questa frase che esprime l'indifferenza e la determinazione.",
+    "language_orig": "IT",
+    "context": "Nel film 'Via col Vento' (1939), Rhett Butler (Clark Gable) pronunciò questa frase durante la scena finale, rispondendo alla domanda di Scarlett O'Hara (Vivien Leigh) su cosa farà senza di lei. La frase esprime la rottura definitiva del loro rapporto, simboleggiando la fine di un'epoca e l'indifferenza di chi ha subito troppo dolore, diventando una delle frasi più iconiche del cinema."
+  },
+  {
+    "id": "e11",
+    "quote": "Strade? Dove stiamo andando non c'è bisogno di strade!",
+    "author": "Ritorno al futuro",
+    "choices": [
+      "Ritorno al futuro",
+      "Terminator",
+      "Blade Runner",
+      "Matrix"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1985",
+    "source_title": "Back to the Future",
+    "source_link": "https://en.wikipedia.org/wiki/Back_to_the_Future",
+    "tags": [
+      "cinema",
+      "fantascienza",
+      "commedia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film di fantascienza con Michael J. Fox e la DeLorean",
+    "hint_more": "Film del 1985 diretto da Robert Zemeckis, con Michael J. Fox e Christopher Lloyd. Racconta le avventure temporali di Marty McFly e il dottor Brown.",
+    "ambiguity_note": "Le opzioni includono Terminator (futuro distopico), Blade Runner (replicanti) e Matrix (realtà virtuale). Ritorno al futuro è noto per questa frase che esprime l'innovazione e l'avventura.",
+    "language_orig": "IT",
+    "context": "Nel film 'Ritorno al futuro' (1985), il dottor Emmett Brown (Christopher Lloyd) pronunciò questa frase mentre spiegava a Marty McFly (Michael J. Fox) come funziona la DeLorean volante. La frase esprime la genialità e l'innovazione del personaggio, che ha creato una macchina del tempo capace di volare, trasformando un'auto normale in un veicolo del futuro."
+  },
+  {
+    "id": "e12",
+    "quote": "Se io posso cambiare, e se voi potete cambiare, allora, tutto il mondo può cambiare!",
+    "author": "Rocky IV",
+    "choices": [
+      "Rocky IV",
+      "Rocky",
+      "Rambo",
+      "Creed"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1985",
+    "source_title": "Rocky IV",
+    "source_link": "https://en.wikipedia.org/wiki/Rocky_IV",
+    "tags": [
+      "cinema",
+      "sport",
+      "motivazionale"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film di boxe con Sylvester Stallone contro Dolph Lundgren",
+    "hint_more": "Film del 1985 diretto e interpretato da Sylvester Stallone, con Dolph Lundgren. Quarto capitolo della saga di Rocky Balboa, ambientato durante la Guerra Fredda.",
+    "ambiguity_note": "Le opzioni includono Rocky (primo film), Rambo (azione) e Creed (spin-off). Rocky IV è noto per questa frase che esprime la speranza e la determinazione.",
+    "language_orig": "IT",
+    "context": "Nel film 'Rocky IV' (1985), Rocky Balboa (Sylvester Stallone) pronunciò questa frase durante il suo discorso finale dopo aver sconfitto Ivan Drago (Dolph Lundgren). La frase esprime un messaggio di pace e speranza durante la Guerra Fredda, insegnando che il cambiamento individuale può portare al cambiamento globale, trasformando una rivalità sportiva in un simbolo di unità tra i popoli."
+  },
+  {
+    "id": "e13",
+    "quote": "Nessuno può mettere Baby in un angolo",
+    "author": "Dirty Dancing",
+    "choices": [
+      "Dirty Dancing",
+      "Flashdance",
+      "Saturday Night Fever",
+      "Grease"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1987",
+    "source_title": "Dirty Dancing",
+    "source_link": "https://en.wikipedia.org/wiki/Dirty_Dancing",
+    "tags": [
+      "cinema",
+      "musical",
+      "romantico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film musicale con Patrick Swayze e Jennifer Grey",
+    "hint_more": "Film del 1987 diretto da Emile Ardolino, con Patrick Swayze e Jennifer Grey. Racconta la storia d'amore tra un istruttore di ballo e una ragazza durante le vacanze estive.",
+    "ambiguity_note": "Le opzioni includono Flashdance (danza), Saturday Night Fever (disco) e Grease (musical). Dirty Dancing è noto per questa frase che esprime la protezione e l'amore.",
+    "language_orig": "IT",
+    "context": "Nel film 'Dirty Dancing – Balli proibiti' (1987), Johnny Castle (Patrick Swayze) pronunciò questa frase per difendere Baby (Jennifer Grey) dalle critiche del padre. La frase esprime la determinazione di Johnny nel proteggere la donna che ama, mostrando come l'amore vero non si arrende mai e lotta per quello in cui crede, diventando un simbolo di lealtà e coraggio."
+  },
+  {
+    "id": "e14",
+    "quote": "Sei solo chiacchiere e distintivo!",
+    "author": "Gli intoccabili",
+    "choices": [
+      "Gli intoccabili",
+      "Scarface",
+      "Il padrino",
+      "Casino"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1987",
+    "source_title": "The Untouchables",
+    "source_link": "https://en.wikipedia.org/wiki/The_Untouchables_(1987_film)",
+    "tags": [
+      "cinema",
+      "gangster",
+      "drammatico"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Film di gangster con Kevin Costner e Sean Connery",
+    "hint_more": "Film del 1987 diretto da Brian De Palma, con Kevin Costner, Sean Connery e Robert De Niro. Racconta la lotta di Eliot Ness contro Al Capone durante il proibizionismo.",
+    "ambiguity_note": "Le opzioni includono Scarface (gangster), Il padrino (mafia) e Casino (casinò). Gli intoccabili è noto per questa frase che esprime il disprezzo per l'autorità corrotta.",
+    "language_orig": "IT",
+    "context": "Nel film 'The Untouchables – Gli intoccabili' (1987), Al Capone (Robert De Niro) pronunciò questa frase durante una conversazione con un poliziotto corrotto. La frase esprime il disprezzo di Capone per l'autorità che si nasconde dietro simboli di potere senza avere la forza per usarli, riflettendo la sua filosofia criminale e la sua convinzione che solo la forza reale conti nel mondo del crimine."
+  },
+  {
+    "id": "e15",
+    "quote": "Io non sono cattiva. È che mi disegnano così",
+    "author": "Chi ha incastrato Roger Rabbit",
+    "choices": [
+      "Chi ha incastrato Roger Rabbit",
+      "Toy Story",
+      "Shrek",
+      "Monsters & Co."
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1989",
+    "source_title": "Who Framed Roger Rabbit",
+    "source_link": "https://en.wikipedia.org/wiki/Who_Framed_Roger_Rabbit",
+    "tags": [
+      "cinema",
+      "animazione",
+      "commedia"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Film con attori reali e cartoni animati di Robert Zemeckis",
+    "hint_more": "Film del 1989 diretto da Robert Zemeckis, con Bob Hoskins e Christopher Lloyd. Combina attori reali con personaggi animati in un giallo ambientato negli anni '40.",
+    "ambiguity_note": "Le opzioni includono Toy Story (animazione), Shrek (commedia) e Monsters & Co. (avventura). Chi ha incastrato Roger Rabbit è noto per questa frase che esprime la complessità dei personaggi.",
+    "language_orig": "IT",
+    "context": "Nel film 'Chi ha incastrato Roger Rabbit' (1989), Jessica Rabbit pronunciò questa frase durante una conversazione con Eddie Valiant (Bob Hoskins). La frase esprime la complessità del personaggio di Jessica, che nonostante il suo aspetto seducente e il ruolo di femme fatale, rivela una personalità più profonda e sfumata, mostrando come i pregiudizi possano nascondere la vera natura delle persone."
+  },
+  {
+    "id": "e16",
+    "quote": "Quello che ha preso la signorina",
+    "author": "Harry, ti presento Sally",
+    "choices": [
+      "Harry, ti presento Sally",
+      "Pretty Woman",
+      "Ghost",
+      "Sleepless in Seattle"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1989",
+    "source_title": "When Harry Met Sally...",
+    "source_link": "https://en.wikipedia.org/wiki/When_Harry_Met_Sally...",
+    "tags": [
+      "cinema",
+      "commedia",
+      "romantico"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Commedia romantica con Meg Ryan e Billy Crystal",
+    "hint_more": "Film del 1989 diretto da Rob Reiner, con Meg Ryan e Billy Crystal. Racconta l'evoluzione del rapporto tra Harry e Sally attraverso gli anni.",
+    "ambiguity_note": "Le opzioni includono Pretty Woman (romantico), Ghost (fantasmi) e Sleepless in Seattle (romantico). Harry, ti presento Sally è noto per questa scena iconica del ristorante.",
+    "language_orig": "IT",
+    "context": "Nel film 'Harry, ti presento Sally' (1989), Sally (Meg Ryan) pronunciò questa frase durante la famosa scena del ristorante, fingendo un orgasmo per dimostrare a Harry (Billy Crystal) che le donne possono simulare. La frase esprime l'ironia e l'umorismo della situazione, diventando una delle scene più iconiche del cinema romantico e un simbolo dell'emancipazione femminile nell'umorismo."
+  },
+  {
+    "id": "e17",
+    "quote": "Idem",
+    "author": "Ghost",
+    "choices": [
+      "Ghost",
+      "The Sixth Sense",
+      "Beetlejuice",
+      "Casper"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1990",
+    "source_title": "Ghost",
+    "source_link": "https://en.wikipedia.org/wiki/Ghost_(1990_film)",
+    "tags": [
+      "cinema",
+      "romantico",
+      "fantasmi"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film romantico con Patrick Swayze e Demi Moore",
+    "hint_more": "Film del 1990 diretto da Jerry Zucker, con Patrick Swayze, Demi Moore e Whoopi Goldberg. Racconta la storia d'amore tra Sam e Molly oltre la morte.",
+    "ambiguity_note": "Le opzioni includono The Sixth Sense (fantasmi), Beetlejuice (commedia) e Casper (animazione). Ghost è noto per questa scena commovente e romantica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Ghost – Fantasma' (1990), Sam (Patrick Swayze) pronunciò questa semplice parola 'Idem' mentre Molly (Demi Moore) modellava l'argilla e lui, come fantasma, la guidava. La frase esprime l'amore eterno che trascende la morte, mostrando come l'amore vero possa comunicare anche attraverso barriere apparentemente insormontabili, diventando un momento di profonda emozione e connessione spirituale."
+  },
+  {
+    "id": "e18",
+    "quote": "- Cos'hai intenzione di fare sabato sera? - Suicidarmi. E cosa mi dici di venerdì?",
+    "author": "Provaci ancora, Sam",
+    "choices": [
+      "Provaci ancora, Sam",
+      "Annie Hall",
+      "Manhattan",
+      "Hannah e le sue sorelle"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1992",
+    "source_title": "Play It Again, Sam",
+    "source_link": "https://en.wikipedia.org/wiki/Play_It_Again,_Sam",
+    "tags": [
+      "cinema",
+      "commedia",
+      "Woody Allen"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Commedia di Woody Allen con Diane Keaton",
+    "hint_more": "Film del 1992 diretto da Herbert Ross, con Woody Allen e Diane Keaton. Racconta le avventure sentimentali di Allan Felix, ispirato da Humphrey Bogart.",
+    "ambiguity_note": "Le opzioni includono Annie Hall (commedia), Manhattan (dramma) e Hannah e le sue sorelle (famiglia). Provaci ancora, Sam è noto per questo umorismo nero e ironico.",
+    "language_orig": "IT",
+    "context": "Nel film 'Provaci ancora, Sam' (1992), Allan Felix (Woody Allen) pronunciò questa battuta durante una conversazione con un amico. La frase esprime l'umorismo nero e l'ironia tipica di Woody Allen, trasformando un pensiero cupo in una battuta comica che riflette la sua visione cinica ma divertente della vita e delle relazioni, caratterizzando il suo stile comico unico."
+  },
+  {
+    "id": "e19",
+    "quote": "Se ami veramente una donna, lasciala libera. Se non tornerà, non è mai stata tua. Se ritornerà da te, sarà tua per sempre",
+    "author": "Proposta indecente",
+    "choices": [
+      "Proposta indecente",
+      "Pretty Woman",
+      "Ghost",
+      "Sleepless in Seattle"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1993",
+    "source_title": "Indecent Proposal",
+    "source_link": "https://en.wikipedia.org/wiki/Indecent_Proposal",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "romantico"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Robert Redford e Demi Moore",
+    "hint_more": "Film del 1993 diretto da Adrian Lyne, con Robert Redford, Demi Moore e Woody Harrelson. Racconta la storia di una coppia che accetta una proposta indecente per un milione di dollari.",
+    "ambiguity_note": "Le opzioni includono Pretty Woman (romantico), Ghost (fantasmi) e Sleepless in Seattle (romantico). Proposta indecente è noto per questa frase che esprime la filosofia dell'amore vero.",
+    "language_orig": "IT",
+    "context": "Nel film 'Proposta indecente' (1993), John Gage (Robert Redford) pronunciò questa frase durante una conversazione con David Murphy (Woody Harrelson). La frase esprime una profonda filosofia sull'amore: il vero amore non possiede, ma libera, e solo chi torna liberamente può essere considerato veramente amato, riflettendo la maturità emotiva e la saggezza che deriva dall'esperienza dell'amore vero."
+  },
+  {
+    "id": "e20",
+    "quote": "Vedo la gente morta",
+    "author": "The Sixth Sense",
+    "choices": [
+      "The Sixth Sense",
+      "Ghost",
+      "The Sixth Sense",
+      "Beetlejuice"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1999",
+    "source_title": "The Sixth Sense",
+    "source_link": "https://en.wikipedia.org/wiki/The_Sixth_Sense",
+    "tags": [
+      "cinema",
+      "thriller",
+      "soprannaturale"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Thriller soprannaturale di M. Night Shyamalan con Bruce Willis",
+    "hint_more": "Film del 1999 diretto da M. Night Shyamalan, con Bruce Willis e Haley Joel Osment. Racconta la storia di un bambino che vede i fantasmi e di uno psicologo che cerca di aiutarlo.",
+    "ambiguity_note": "Le opzioni includono Ghost (romantico), Beetlejuice (commedia) e altri film con fantasmi. The Sixth Sense è noto per questa frase iconica e per il colpo di scena finale.",
+    "language_orig": "IT",
+    "context": "Nel film 'The Sixth Sense – Il sesto senso' (1999), Cole Sear (Haley Joel Osment) pronunciò questa frase confidandosi con il dottor Malcolm Crowe (Bruce Willis). La frase esprime il dono soprannaturale del bambino di vedere e comunicare con i fantasmi, rivelando la sua capacità di percepire l'aldilà e diventando la chiave per comprendere la vera natura del film e il suo famoso colpo di scena finale."
+  },
+  {
+    "id": "e21",
+    "quote": "È stato bello conoscerla. Surreale, ma bello",
+    "author": "Notting Hill",
+    "choices": [
+      "Notting Hill",
+      "Pretty Woman",
+      "Sleepless in Seattle",
+      "You've Got Mail"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1999",
+    "source_title": "Notting Hill",
+    "source_link": "https://en.wikipedia.org/wiki/Notting_Hill_(film)",
+    "tags": [
+      "cinema",
+      "romantico",
+      "commedia"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Commedia romantica con Julia Roberts e Hugh Grant",
+    "hint_more": "Film del 1999 diretto da Roger Michell, con Julia Roberts e Hugh Grant. Racconta la storia d'amore tra una famosa attrice e un libraio di Londra.",
+    "ambiguity_note": "Le opzioni includono Pretty Woman (romantico), Sleepless in Seattle (romantico) e You've Got Mail (romantico). Notting Hill è noto per questa frase che esprime l'ironia e la dolcezza dell'amore.",
+    "language_orig": "IT",
+    "context": "Nel film 'Notting Hill' (1999), William Thacker (Hugh Grant) pronunciò questa frase durante una conversazione con Anna Scott (Julia Roberts). La frase esprime l'ironia e la dolcezza del personaggio di William, che descrive l'esperienza surreale di aver conosciuto una star del cinema come qualcosa di bello nonostante l'assurdità della situazione, riflettendo l'umorismo britannico e la capacità di trovare il positivo anche nelle circostanze più improbabili."
+  },
+  {
+    "id": "e22",
+    "quote": "Prima regola del Fight Club: non parlate mai del Fight Club. Seconda regola del Fight Club: non dovete parlare mai del Fight Club",
+    "author": "Fight Club",
+    "choices": [
+      "Fight Club",
+      "Pulp Fiction",
+      "Reservoir Dogs",
+      "Kill Bill"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1999",
+    "source_title": "Fight Club",
+    "source_link": "https://en.wikipedia.org/wiki/Fight_Club_(film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "thriller"
+    ],
+    "difficulty": 1,
+    "spiciness": 2,
+    "hint_short": "Film di David Fincher con Edward Norton e Brad Pitt",
+    "hint_more": "Film del 1999 diretto da David Fincher, con Edward Norton, Brad Pitt e Helena Bonham Carter. Racconta la storia di un impiegato che crea un club di combattimento clandestino.",
+    "ambiguity_note": "Le opzioni includono Pulp Fiction (crimine), Reservoir Dogs (crimine) e Kill Bill (azione). Fight Club è noto per queste regole iconiche e per la sua critica sociale.",
+    "language_orig": "IT",
+    "context": "Nel film 'Fight Club' (1999), Tyler Durden (Brad Pitt) pronunciò queste regole durante la presentazione del Fight Club. Le regole esprimono la filosofia anarchica e anti-sistema del film: il Fight Club deve rimanere segreto per preservare la sua purezza e la sua funzione di sfogo per la frustrazione maschile, diventando un simbolo di ribellione contro la società consumistica e un mantra per i fan del film."
+  },
+  {
+    "id": "e23",
+    "quote": "Chi dorme non piglia tempo, chi ha tempo non aspetti pesce",
+    "author": "The Truman Show",
+    "choices": [
+      "The Truman Show",
+      "Eternal Sunshine of the Spotless Mind",
+      "Being John Malkovich",
+      "The Matrix"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1998",
+    "source_title": "The Truman Show",
+    "source_link": "https://en.wikipedia.org/wiki/The_Truman_Show",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "fantascienza"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Film di Peter Weir con Jim Carrey sulla realtà televisiva",
+    "hint_more": "Film del 1998 diretto da Peter Weir, con Jim Carrey, Laura Linney e Ed Harris. Racconta la storia di Truman Burbank, inconsapevole protagonista di uno show televisivo 24/7.",
+    "ambiguity_note": "Le opzioni includono Eternal Sunshine (memoria), Being John Malkovich (surrealismo) e The Matrix (realtà virtuale). The Truman Show è noto per questa frase che esprime la filosofia del controllo mediatico.",
+    "language_orig": "IT",
+    "context": "Nel film 'The Truman Show' (1998), Christof (Ed Harris) pronunciò questa frase durante una conversazione sui controlli della sua creazione televisiva. La frase esprime la filosofia del controllo mediatico: chi è passivo (dorme) non può cogliere le opportunità, mentre chi ha il potere (tempo) non deve aspettare passivamente, riflettendo la manipolazione e il controllo esercitato sui telespettatori e sulla vita di Truman."
+  },
+  {
+    "id": "e24",
+    "quote": "Sono andato in overdose di me stesso",
+    "author": "Harry a pezzi",
+    "choices": [
+      "Harry a pezzi",
+      "Annie Hall",
+      "Manhattan",
+      "Hannah e le sue sorelle"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Deconstructing Harry",
+    "source_link": "https://en.wikipedia.org/wiki/Deconstructing_Harry",
+    "tags": [
+      "cinema",
+      "commedia",
+      "Woody Allen"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Commedia di Woody Allen con Billy Crystal e Elisabeth Shue",
+    "hint_more": "Film del 1997 diretto da Woody Allen, con Woody Allen, Billy Crystal e Elisabeth Shue. Racconta la storia di uno scrittore in crisi che analizza la sua vita attraverso i suoi personaggi.",
+    "ambiguity_note": "Le opzioni includono Annie Hall (commedia), Manhattan (dramma) e Hannah e le sue sorelle (famiglia). Harry a pezzi è noto per questo umorismo autoironico e introspettivo.",
+    "language_orig": "IT",
+    "context": "Nel film 'Harry a pezzi' (1997), Harry Block (Woody Allen) pronunciò questa frase durante una conversazione sulla sua crisi esistenziale. La frase esprime l'autoironia e l'introspezione tipica di Woody Allen: l'ossessione per se stesso e per la propria arte ha raggiunto livelli patologici, trasformando la creatività in una forma di autodistruzione, riflettendo la natura narcisistica e autodistruttiva del protagonista."
+  },
+  {
+    "id": "e25",
+    "quote": "Mi avevi già convinta al ciao",
+    "author": "Jerry Maguire",
+    "choices": [
+      "Jerry Maguire",
+      "Top Gun",
+      "Mission: Impossible",
+      "Days of Thunder"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1996",
+    "source_title": "Jerry Maguire",
+    "source_link": "https://en.wikipedia.org/wiki/Jerry_Maguire",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "romantico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Tom Cruise e Renée Zellweger",
+    "hint_more": "Film del 1996 diretto da Cameron Crowe, con Tom Cruise, Cuba Gooding Jr. e Renée Zellweger. Racconta la storia di un agente sportivo che riscopre i valori umani.",
+    "ambiguity_note": "Le opzioni includono Top Gun (aviazione), Mission: Impossible (spionaggio) e Days of Thunder (corse). Jerry Maguire è noto per questa frase romantica e per il famoso 'Show me the money!'",
+    "language_orig": "IT",
+    "context": "Nel film 'Jerry Maguire' (1996), Dorothy Boyd (Renée Zellweger) pronunciò questa frase durante una conversazione romantica con Jerry (Tom Cruise). La frase esprime la semplicità e l'autenticità dell'amore: Dorothy era già innamorata di Jerry dal loro primo incontro, mostrando come l'amore vero non abbia bisogno di grandi gesti o discorsi elaborati, ma si manifesti attraverso la connessione umana più semplice e genuina."
+  },
+  {
+    "id": "e26",
+    "quote": "Possono toglierci la vita, ma non ci toglieranno mai la libertà",
+    "author": "Braveheart",
+    "choices": [
+      "Braveheart",
+      "Gladiator",
+      "Troy",
+      "300"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1995",
+    "source_title": "Braveheart",
+    "source_link": "https://en.wikipedia.org/wiki/Braveheart",
+    "tags": [
+      "cinema",
+      "storico",
+      "epico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film epico storico con Mel Gibson sulla Scozia",
+    "hint_more": "Film del 1995 diretto e interpretato da Mel Gibson, con Sophie Marceau e Patrick McGoohan. Racconta la storia di William Wallace e la lotta per l'indipendenza scozzese.",
+    "ambiguity_note": "Le opzioni includono Gladiator (Roma), Troy (Grecia) e 300 (Sparta). Braveheart è noto per questa frase che esprime l'ideale di libertà e resistenza.",
+    "language_orig": "IT",
+    "context": "Nel film 'Braveheart – Cuore impavido' (1995), William Wallace (Mel Gibson) pronunciò questa frase durante il suo discorso prima della battaglia. La frase esprime l'ideale di libertà e resistenza che anima Wallace: la vita fisica può essere tolta, ma la libertà interiore e gli ideali per cui si combatte sono immortali, diventando un grido di battaglia che ispira i suoi uomini e simboleggia la lotta eterna per la libertà."
+  },
+  {
+    "id": "e27",
+    "quote": "Ora, se vuoi scusarmi, vado a casa a farmi venire un infarto",
+    "author": "Pulp Fiction",
+    "choices": [
+      "Pulp Fiction",
+      "Reservoir Dogs",
+      "Kill Bill",
+      "Django Unchained"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1994",
+    "source_title": "Pulp Fiction",
+    "source_link": "https://en.wikipedia.org/wiki/Pulp_Fiction",
+    "tags": [
+      "cinema",
+      "crimine",
+      "Tarantino"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film di Quentin Tarantino con John Travolta e Samuel L. Jackson",
+    "hint_more": "Film del 1994 diretto da Quentin Tarantino, con John Travolta, Samuel L. Jackson e Uma Thurman. Racconta storie intrecciate di criminali a Los Angeles.",
+    "ambiguity_note": "Le opzioni includono Reservoir Dogs (crimine), Kill Bill (vendetta) e Django Unchained (western). Pulp Fiction è noto per questo umorismo nero e per il suo stile unico.",
+    "language_orig": "IT",
+    "context": "Nel film 'Pulp Fiction' (1994), Vincent Vega (John Travolta) pronunciò questa frase durante una conversazione con Jules Winnfield (Samuel L. Jackson) dopo aver vissuto un'esperienza traumatica. La frase esprime l'umorismo nero tipico di Tarantino: Vincent reagisce all'orrore con ironia, trasformando una situazione drammatica in una battuta comica che riflette la sua personalità cinica e il suo modo di affrontare la violenza del mondo criminale."
+  },
+  {
+    "id": "e28",
+    "quote": "Non può piovere per sempre",
+    "author": "Il Corvo",
+    "choices": [
+      "Il Corvo",
+      "Blade",
+      "Constantine",
+      "Hellboy"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1994",
+    "source_title": "The Crow",
+    "source_link": "https://en.wikipedia.org/wiki/The_Crow_(1994_film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "soprannaturale"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Brandon Lee e temi soprannaturali",
+    "hint_more": "Film del 1994 diretto da Alex Proyas, con Brandon Lee e Michael Wincott. Racconta la storia di Eric Draven che torna dalla morte per vendicare la sua fidanzata.",
+    "ambiguity_note": "Le opzioni includono Blade (vampiri), Constantine (demoni) e Hellboy (supereroi). Il Corvo è noto per questa frase poetica e per la tragica morte di Brandon Lee.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il Corvo – The Crow' (1994), Eric Draven (Brandon Lee) pronunciò questa frase durante la sua ricerca di vendetta. La frase esprime la speranza e la determinazione del protagonista: anche nel dolore più profondo e nella notte più buia, c'è sempre la possibilità di un nuovo inizio, simboleggiando la sua trasformazione da vittima a vendicatore e la sua convinzione che la giustizia alla fine trionferà."
+  },
+  {
+    "id": "e29",
+    "quote": "Mamma diceva sempre: la vita è come a una scatola di cioccolatini, non sai mai quello che ti capita",
+    "author": "Forrest Gump",
+    "choices": [
+      "Forrest Gump",
+      "Big",
+      "Rain Man",
+      "The Curious Case of Benjamin Button"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1994",
+    "source_title": "Forrest Gump",
+    "source_link": "https://en.wikipedia.org/wiki/Forrest_Gump",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "storico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Tom Hanks che attraversa la storia americana",
+    "hint_more": "Film del 1994 diretto da Robert Zemeckis, con Tom Hanks, Robin Wright e Gary Sinise. Racconta la vita di Forrest Gump attraverso i decenni della storia americana.",
+    "ambiguity_note": "Le opzioni includono Big (fantasy), Rain Man (dramma) e The Curious Case of Benjamin Button (fantasy). Forrest Gump è noto per questa frase filosofica e per la sua semplicità.",
+    "language_orig": "IT",
+    "context": "Nel film 'Forrest Gump' (1994), Forrest Gump (Tom Hanks) pronunciò questa frase citando la saggezza di sua madre. La frase esprime una filosofia di vita semplice ma profonda: la vita è imprevedibile e piena di sorprese, proprio come una scatola di cioccolatini dove non sai mai quale sapore troverai, insegnando ad accettare l'incertezza e a trovare la bellezza nell'imprevisto, diventando una delle frasi più iconiche del cinema."
+  },
+  {
+    "id": "e30",
+    "quote": "O muori da eroe o vivi tanto a lungo da diventare il cattivo",
+    "author": "Il cavaliere oscuro",
+    "choices": [
+      "Il cavaliere oscuro",
+      "Batman Begins",
+      "The Dark Knight Rises",
+      "Joker"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2008",
+    "source_title": "The Dark Knight",
+    "source_link": "https://en.wikipedia.org/wiki/The_Dark_Knight_(film)",
+    "tags": [
+      "cinema",
+      "supereroi",
+      "drammatico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film di supereroi di Christopher Nolan con Christian Bale e Heath Ledger",
+    "hint_more": "Film del 2008 diretto da Christopher Nolan, con Christian Bale, Heath Ledger e Gary Oldman. Secondo capitolo della trilogia di Batman di Nolan.",
+    "ambiguity_note": "Le opzioni includono Batman Begins (primo film), The Dark Knight Rises (terzo film) e Joker (spin-off). Il cavaliere oscuro è noto per questa frase filosofica e per la performance di Heath Ledger.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il cavaliere oscuro' (2008), Harvey Dent (Aaron Eckhart) pronunciò questa frase durante una conversazione con Batman (Christian Bale). La frase esprime una profonda riflessione sulla natura del potere e della corruzione: chi combatte il male rischia di diventare esso stesso male se sopravvive troppo a lungo, riflettendo la complessità morale del film e la trasformazione di Dent in Two-Face."
+  },
+  {
+    "id": "e31",
+    "quote": "Correttezza politica… Mai sentito un esempio migliore di ossimoro",
+    "author": "La macchia umana",
+    "choices": [
+      "La macchia umana",
+      "Philadelphia",
+      "A Beautiful Mind",
+      "The Hours"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2003",
+    "source_title": "The Human Stain",
+    "source_link": "https://en.wikipedia.org/wiki/The_Human_Stain_(film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "letterario"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Anthony Hopkins e Nicole Kidman",
+    "hint_more": "Film del 2003 diretto da Robert Benton, con Anthony Hopkins, Nicole Kidman e Ed Harris. Tratto dal romanzo di Philip Roth, racconta la storia di un professore universitario.",
+    "ambiguity_note": "Le opzioni includono Philadelphia (dramma), A Beautiful Mind (biografico) e The Hours (dramma). La macchia umana è noto per questa frase che critica l'ipocrisia della correttezza politica.",
+    "language_orig": "IT",
+    "context": "Nel film 'La macchia umana' (2003), Coleman Silk (Anthony Hopkins) pronunciò questa frase durante una conversazione sulla sua situazione universitaria. La frase esprime la critica del protagonista verso l'ipocrisia della correttezza politica: un concetto che dovrebbe promuovere l'equità diventa invece un ossimoro quando viene usato per nascondere la verità e perpetuare l'ingiustizia, riflettendo la complessità delle questioni razziali e sociali."
+  },
+  {
+    "id": "e32",
+    "quote": "È la mia gioia… Il mio tessoro!",
+    "author": "Il Signore degli Anelli",
+    "choices": [
+      "Il Signore degli Anelli",
+      "Lo Hobbit",
+      "Harry Potter",
+      "Narnia"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2001",
+    "source_title": "The Lord of the Rings: The Fellowship of the Ring",
+    "source_link": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+    "tags": [
+      "cinema",
+      "fantasy",
+      "epico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Saga fantasy di Peter Jackson con Elijah Wood e Ian McKellen",
+    "hint_more": "Saga cinematografica fantasy diretta da Peter Jackson, iniziata nel 2001. Tratta dal romanzo di J.R.R. Tolkien, racconta la lotta per distruggere l'Anello del Potere.",
+    "ambiguity_note": "Le opzioni includono Lo Hobbit (prequel), Harry Potter (magia) e Narnia (fantasy). Il Signore degli Anelli è noto per questa frase iconica di Gollum e per la sua epicità.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il Signore degli Anelli – La Compagnia dell'Anello' (2001), Gollum (Andy Serkis) pronunciò questa frase parlando dell'Anello del Potere. La frase esprime l'ossessione patologica di Gollum per l'Anello: un oggetto che è diventato la sua ragione di vita e la sua dannazione, trasformando un hobbit in una creatura corrotta, simboleggiando il potere distruttivo dell'Anello e la natura additiva del male."
+  },
+  {
+    "id": "e33",
+    "quote": "Se restare qui a lavorare significa trovarmi a dieci metri da te, francamente preferirei andare a pulire il culo a Saddam Hussein",
+    "author": "Il diario di Bridget Jones",
+    "choices": [
+      "Il diario di Bridget Jones",
+      "Notting Hill",
+      "Love Actually",
+      "Four Weddings and a Funeral"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2001",
+    "source_title": "Bridget Jones's Diary",
+    "source_link": "https://en.wikipedia.org/wiki/Bridget_Jones%27s_Diary_(film)",
+    "tags": [
+      "cinema",
+      "commedia",
+      "romantico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Commedia romantica con Renée Zellweger e Hugh Grant",
+    "hint_more": "Film del 2001 diretto da Sharon Maguire, con Renée Zellweger, Hugh Grant e Colin Firth. Tratto dal romanzo di Helen Fielding, racconta le avventure sentimentali di Bridget Jones.",
+    "ambiguity_note": "Le opzioni includono Notting Hill (romantico), Love Actually (commedia) e Four Weddings and a Funeral (commedia). Il diario di Bridget Jones è noto per questa frase esilarante e per l'umorismo britannico.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il diario di Bridget Jones' (2001), Bridget Jones (Renée Zellweger) pronunciò questa frase durante una conversazione con il suo capo. La frase esprime l'umorismo e la frustrazione di Bridget: preferirebbe fare qualsiasi cosa, anche la più disgustosa, piuttosto che sopportare la presenza di qualcuno che detesta, riflettendo l'umorismo britannico e la capacità di trasformare situazioni imbarazzanti in momenti comici."
+  },
+  {
+    "id": "e34",
+    "quote": "Non esiste bene e male, esiste solo il potere... E quelli troppo deboli per averlo!",
+    "author": "Harry Potter",
+    "choices": [
+      "Harry Potter",
+      "Il Signore degli Anelli",
+      "Narnia",
+      "Percy Jackson"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2001",
+    "source_title": "Harry Potter and the Philosopher's Stone",
+    "source_link": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)",
+    "tags": [
+      "cinema",
+      "fantasy",
+      "magia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Saga fantasy di magia con Daniel Radcliffe e Emma Watson",
+    "hint_more": "Saga cinematografica fantasy basata sui romanzi di J.K. Rowling, iniziata nel 2001. Racconta le avventure di Harry Potter e i suoi amici alla scuola di magia Hogwarts.",
+    "ambiguity_note": "Le opzioni includono Il Signore degli Anelli (fantasy), Narnia (fantasy) e Percy Jackson (mitologia). Harry Potter è noto per questa frase di Voldemort e per la sua filosofia del potere.",
+    "language_orig": "IT",
+    "context": "Nel film 'Harry Potter e la pietra filosofale' (2001), Lord Voldemort (Richard Bremmer) pronunciò questa frase durante il suo confronto con Harry Potter (Daniel Radcliffe). La frase esprime la filosofia distorta di Voldemort: non esistono principi morali assoluti, solo la legge del più forte, dove chi ha potere domina e chi è debole soccombe, riflettendo la natura totalitaria e spietata del personaggio e la sua visione del mondo basata sulla supremazia."
+  },
+  {
+    "id": "e35",
+    "quote": "Lo sapete perché agli uomini piace farlo davanti allo specchio? Perché davanti allo specchio gli oggetti sembrano più grandi di quello che sono",
+    "author": "What Women Want",
+    "choices": [
+      "What Women Want",
+      "Pretty Woman",
+      "The Devil Wears Prada",
+      "Legally Blonde"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2000",
+    "source_title": "What Women Want",
+    "source_link": "https://en.wikipedia.org/wiki/What_Women_Want",
+    "tags": [
+      "cinema",
+      "commedia",
+      "romantico"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Commedia romantica con Mel Gibson e Helen Hunt",
+    "hint_more": "Film del 2000 diretto da Nancy Meyers, con Mel Gibson e Helen Hunt. Racconta la storia di un uomo che acquisisce la capacità di leggere i pensieri delle donne.",
+    "ambiguity_note": "Le opzioni includono Pretty Woman (romantico), The Devil Wears Prada (commedia) e Legally Blonde (commedia). What Women Want è noto per questa frase ironica e per l'umorismo sui generi.",
+    "language_orig": "IT",
+    "context": "Nel film 'What Women Want – Quello che le donne non dicono' (2000), Nick Marshall (Mel Gibson) pronunciò questa frase durante una conversazione con le sue colleghe. La frase esprime l'ironia e l'umorismo del film sui cliché maschili: l'illusione ottica dello specchio diventa una metafora per l'autoinganno maschile e la tendenza a sopravvalutare se stessi, riflettendo l'umorismo del film sui rapporti tra i sessi e la comunicazione."
+  },
+  {
+    "id": "e36",
+    "quote": "Al mio segnale scatenate l'Inferno",
+    "author": "Il gladiatore",
+    "choices": [
+      "Il gladiatore",
+      "Troy",
+      "300",
+      "Alexander"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2000",
+    "source_title": "Gladiator",
+    "source_link": "https://en.wikipedia.org/wiki/Gladiator_(2000_film)",
+    "tags": [
+      "cinema",
+      "storico",
+      "epico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film epico storico con Russell Crowe e Joaquin Phoenix",
+    "hint_more": "Film del 2000 diretto da Ridley Scott, con Russell Crowe, Joaquin Phoenix e Connie Nielsen. Racconta la storia di Massimo Decimo Meridio, un generale romano diventato gladiatore.",
+    "ambiguity_note": "Le opzioni includono Troy (Grecia), 300 (Sparta) e Alexander (Macedonia). Il gladiatore è noto per questa frase epica e per la sua grandiosità cinematografica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il gladiatore' (2000), Massimo Decimo Meridio (Russell Crowe) pronunciò questa frase prima di iniziare la battaglia nel Colosseo. La frase esprime la determinazione e la rabbia del protagonista: un generale romano tradito che ora combatte come gladiatore per vendicarsi, trasformando la sua sofferenza in forza distruttiva e simboleggiando la sua trasformazione da eroe a vendicatore implacabile."
+  },
+  {
+    "id": "e37",
+    "quote": "Un milione di dollari non è fico. Sai cos'è fico? Un miliardo di dollari",
+    "author": "The Social Network",
+    "choices": [
+      "The Social Network",
+      "The Big Short",
+      "Wall Street",
+      "The Wolf of Wall Street"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2010",
+    "source_title": "The Social Network",
+    "source_link": "https://en.wikipedia.org/wiki/The_Social_Network",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "biografico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film biografico su Mark Zuckerberg con Jesse Eisenberg",
+    "hint_more": "Film del 2010 diretto da David Fincher, con Jesse Eisenberg, Andrew Garfield e Armie Hammer. Racconta la creazione di Facebook e le controversie legali che ne seguirono.",
+    "ambiguity_note": "Le opzioni includono The Big Short (finanza), Wall Street (finanza) e The Wolf of Wall Street (finanza). The Social Network è noto per questa frase che esprime l'ambizione sfrenata di Zuckerberg.",
+    "language_orig": "IT",
+    "context": "Nel film 'The Social Network' (2010), Mark Zuckerberg (Jesse Eisenberg) pronunciò questa frase durante una conversazione con i suoi amici. La frase esprime la sua ambizione sfrenata e la sua visione del successo: un milione di dollari è considerato poco, mentre un miliardo rappresenta il vero obiettivo, riflettendo la mentalità imprenditoriale e la sete di potere del protagonista."
+  },
+  {
+    "id": "e38",
+    "quote": "Io voglio che la vita mi colpisca finché non si stanca, poi sarò io a colpire",
+    "author": "La La Land",
+    "choices": [
+      "La La Land",
+      "Whiplash",
+      "First Man",
+      "Baby Driver"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2016",
+    "source_title": "La La Land",
+    "source_link": "https://en.wikipedia.org/wiki/La_La_Land_(film)",
+    "tags": [
+      "cinema",
+      "musical",
+      "romantico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Musical romantico con Emma Stone e Ryan Gosling",
+    "hint_more": "Film del 2016 diretto da Damien Chazelle, con Emma Stone e Ryan Gosling. Musical romantico che racconta la storia d'amore tra un musicista jazz e un'aspirante attrice a Los Angeles.",
+    "ambiguity_note": "Le opzioni includono Whiplash (musica), First Man (spazio) e Baby Driver (azione). La La Land è noto per questa frase filosofica e per la sua atmosfera onirica.",
+    "language_orig": "IT",
+    "context": "Nel film 'La La Land' (2016), Mia (Emma Stone) pronunciò questa frase durante una conversazione con Sebastian (Ryan Gosling). La frase esprime la determinazione e la resilienza del protagonista: invece di arrendersi alle difficoltà della vita, vuole affrontarle fino a quando non avrà la forza per ribaltare la situazione, riflettendo la sua ambizione e la sua voglia di non arrendersi mai."
+  },
+  {
+    "id": "e39",
+    "quote": "Ho sempre pensato che la mia vita fosse una tragedia, ma ora mi rendo conto che è una cazzo di commedia",
+    "author": "Joker",
+    "choices": [
+      "Joker",
+      "The Dark Knight",
+      "Suicide Squad",
+      "Birds of Prey"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2019",
+    "source_title": "Joker",
+    "source_link": "https://en.wikipedia.org/wiki/Joker_(2019_film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "psicologico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico su Joker con Joaquin Phoenix",
+    "hint_more": "Film del 2019 diretto da Todd Phillips, con Joaquin Phoenix, Robert De Niro e Zazie Beetz. Racconta l'origine del personaggio Joker e la sua discesa nella follia.",
+    "ambiguity_note": "Le opzioni includono The Dark Knight (supereroi), Suicide Squad (supereroi) e Birds of Prey (supereroi). Joker è noto per questa frase che esprime la trasformazione del protagonista.",
+    "language_orig": "IT",
+    "context": "Nel film 'Joker' (2019), Arthur Fleck (Joaquin Phoenix) pronunciò questa frase durante il suo monologo finale. La frase esprime la sua trasformazione: da vittima di una tragedia a protagonista di una commedia, dove la sua sofferenza diventa spettacolo per gli altri, riflettendo la sua discesa nella follia e la sua accettazione del caos come forma di libertà."
+  },
+  {
+    "id": "e40",
+    "quote": "La virtù di un uomo non si misura dalla forza dei suoi muscoli, ma dalla forza del suo cuore",
+    "author": "Hercules",
+    "choices": [
+      "Hercules",
+      "Mulan",
+      "Pocahontas",
+      "Tarzan"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Hercules",
+    "source_link": "https://en.wikipedia.org/wiki/Hercules_(1997_film)",
+    "tags": [
+      "animazione",
+      "avventura",
+      "mitologia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Hercules",
+    "hint_more": "Film d'animazione Disney del 1997 diretto da Ron Clements e John Musker. Racconta la storia di Hercules, figlio di Zeus, che deve dimostrare di essere un vero eroe.",
+    "ambiguity_note": "Le opzioni includono Mulan (guerra), Pocahontas (storico) e Tarzan (avventura). Hercules è noto per questa frase che esprime i veri valori dell'eroismo.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Hercules' (1997), questa frase viene pronunciata durante il film per insegnare al protagonista che la vera forza non viene dalla potenza fisica ma dal coraggio e dalla bontà d'animo. La frase esprime un insegnamento morale fondamentale: l'eroismo si misura dalla capacità di fare la cosa giusta, non dalla forza muscolare, riflettendo i valori positivi del film Disney."
+  },
+  {
+    "id": "e41",
+    "quote": "L'uomo può vedere due tipi di luce a questo mondo. Una è la luce del sole e questa può essere facilmente vista dagli occhi dell'uomo. L'altra luce è il cuore, la fiamma interiore della speranza. E per nutrirsi di questa luce gli occhi non servono",
+    "author": "Lady Oscar",
+    "choices": [
+      "Lady Oscar",
+      "Cenerentola",
+      "Biancaneve",
+      "La bella addormentata"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1979",
+    "source_title": "Lady Oscar",
+    "source_link": "https://en.wikipedia.org/wiki/The_Rose_of_Versailles",
+    "tags": [
+      "animazione",
+      "storico",
+      "drammatico"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Anime storico giapponese su Lady Oscar",
+    "hint_more": "Anime del 1979 basato sul manga di Riyoko Ikeda. Racconta la storia di Oscar François de Jarjayes, una donna che vive come uomo nella corte di Versailles.",
+    "ambiguity_note": "Le opzioni includono Cenerentola (fiaba), Biancaneve (fiaba) e La bella addormentata (fiaba). Lady Oscar è noto per questa frase filosofica e per la sua profondità emotiva.",
+    "language_orig": "IT",
+    "context": "Nel cartone 'Lady Oscar' (1979), questa frase viene pronunciata per esprimere una profonda riflessione sulla natura umana. La frase distingue tra due tipi di luce: quella fisica del sole e quella spirituale del cuore, insegnando che la vera illuminazione viene dalla speranza interiore e non dalla vista fisica, riflettendo la profondità filosofica dell'anime."
+  },
+  {
+    "id": "e42",
+    "quote": "Questo è il problema di molta gente: sogna quello che vorrebbe fare invece di farlo davvero",
+    "author": "Cenerentola",
+    "choices": [
+      "Cenerentola",
+      "La bella e la bestia",
+      "Aladdin",
+      "La sirenetta"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1950",
+    "source_title": "Cenerentola",
+    "source_link": "https://en.wikipedia.org/wiki/Cinderella_(1950_film)",
+    "tags": [
+      "animazione",
+      "fiaba",
+      "musical"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Cenerentola",
+    "hint_more": "Film d'animazione Disney del 1950 diretto da Clyde Geronimi, Wilfred Jackson e Hamilton Luske. Racconta la storia di Cenerentola, una ragazza che sogna di andare al ballo del principe.",
+    "ambiguity_note": "Le opzioni includono La bella e la bestia (fiaba), Aladdin (fiaba) e La sirenetta (fiaba). Cenerentola è noto per questa frase che esprime l'importanza dell'azione rispetto al sogno.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Cenerentola' (1950), questa frase viene pronunciata per insegnare una lezione importante: invece di limitarsi a sognare, bisogna agire per realizzare i propri desideri. La frase esprime la filosofia del film: i sogni diventano realtà solo attraverso l'azione e la determinazione, riflettendo il messaggio positivo di Disney."
+  },
+  {
+    "id": "e43",
+    "quote": "Non possiamo permetterci di non fare niente per il nostro pianeta, perché è proprio questo che abbiamo fatto per tutto il tempo, niente, Auto, niente!",
+    "author": "WALL-E",
+    "choices": [
+      "WALL-E",
+      "Up",
+      "Monsters, Inc.",
+      "Finding Nemo"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2008",
+    "source_title": "WALL-E",
+    "source_link": "https://en.wikipedia.org/wiki/WALL-E",
+    "tags": [
+      "animazione",
+      "sci-fi",
+      "ecologico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Pixar su WALL-E",
+    "hint_more": "Film d'animazione Pixar del 2008 diretto da Andrew Stanton. Racconta la storia di WALL-E, un robot che pulisce la Terra inquinata e si innamora di EVE.",
+    "ambiguity_note": "Le opzioni includono Up (avventura), Monsters, Inc. (mostri) e Finding Nemo (oceano). WALL-E è noto per questa frase ecologica e per il suo messaggio ambientalista.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'WALL-E' (2008), questa frase viene pronunciata per esprimere l'urgenza della situazione ecologica. La frase sottolinea che l'inerzia e la passività hanno portato al disastro ambientale, e che ora è il momento di agire per salvare il pianeta, riflettendo il messaggio ambientalista del film."
+  },
+  {
+    "id": "e44",
+    "quote": "- È il vento che ci sta parlando! - Cosa dice? - Non lo so, non lo parlo il ventoso!",
+    "author": "L'era glaciale 3",
+    "choices": [
+      "L'era glaciale 3",
+      "L'era glaciale",
+      "L'era glaciale 2",
+      "L'era glaciale 4"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2009",
+    "source_title": "Ice Age: Dawn of the Dinosaurs",
+    "source_link": "https://en.wikipedia.org/wiki/Ice_Age:_Dawn_of_the_Dinosaurs",
+    "tags": [
+      "animazione",
+      "commedia",
+      "avventura"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione su Manny e i suoi amici",
+    "hint_more": "Film d'animazione del 2009 diretto da Carlos Saldanha. Terzo capitolo della saga L'era glaciale, racconta le avventure di Manny, Sid e Diego con i dinosauri.",
+    "ambiguity_note": "Le opzioni includono L'era glaciale (primo film), L'era glaciale 2 (secondo film) e L'era glaciale 4 (quarto film). L'era glaciale 3 è noto per questa battuta comica e per l'umorismo dei personaggi.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'L'era glaciale 3 - L'alba dei dinosauri' (2009), questa battuta viene pronunciata da Sid (il bradipo) durante una conversazione comica. La frase esprime l'umorismo del personaggio: invece di ammettere di non capire, inventa una scusa divertente, riflettendo la personalità comica e ingenua di Sid."
+  },
+  {
+    "id": "e45",
+    "quote": "Spesso ci si imbatte nel proprio destino, sulla strada presa per evitarlo",
+    "author": "Kung Fu Panda",
+    "choices": [
+      "Kung Fu Panda",
+      "Shrek",
+      "Madagascar",
+      "Madagascar 2"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2008",
+    "source_title": "Kung Fu Panda",
+    "source_link": "https://en.wikipedia.org/wiki/Kung_Fu_Panda",
+    "tags": [
+      "animazione",
+      "azione",
+      "commedia"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione su Po il panda",
+    "hint_more": "Film d'animazione del 2008 diretto da Mark Osborne e John Stevenson. Racconta la storia di Po, un panda che sogna di diventare un maestro di kung fu.",
+    "ambiguity_note": "Le opzioni includono Shrek (fiaba), Madagascar (avventura) e Madagascar 2 (avventura). Kung Fu Panda è noto per questa frase filosofica e per i suoi insegnamenti di vita.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Kung Fu Panda' (2008), questa frase viene pronunciata per esprimere una profonda verità sulla vita. La frase insegna che il destino non può essere evitato: spesso le persone incontrano il loro destino proprio mentre cercano di sfuggirgli, riflettendo la filosofia del film e l'idea che ognuno ha un percorso unico da seguire."
+  },
+  {
+    "id": "e46",
+    "quote": "Dove entra il bere, esce il parere",
+    "author": "I Simpson",
+    "choices": [
+      "I Simpson",
+      "I Griffin",
+      "South Park",
+      "Family Guy"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1989",
+    "source_title": "The Simpsons",
+    "source_link": "https://en.wikipedia.org/wiki/The_Simpsons",
+    "tags": [
+      "animazione",
+      "commedia",
+      "satira"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Serie TV animata su Homer e la sua famiglia",
+    "hint_more": "Serie TV animata creata da Matt Groening, iniziata nel 1989. Racconta le avventure della famiglia Simpson a Springfield, con Homer, Marge, Bart, Lisa e Maggie.",
+    "ambiguity_note": "Le opzioni includono I Griffin (commedia), South Park (satira) e Family Guy (commedia). I Simpson sono noti per questa frase ironica e per l'umorismo di Homer.",
+    "language_orig": "IT",
+    "context": "Nel cartone 'I Simpson' (1989), questa frase viene pronunciata da Homer Simpson per esprimere la sua filosofia di vita. La frase esprime l'idea che l'alcol può influenzare il giudizio e le opinioni, riflettendo l'umorismo del personaggio e la sua tendenza a trovare scuse per il suo comportamento."
+  },
+  {
+    "id": "e47",
+    "quote": "È bello da mozzare il fiato... Se solo lo avessi!",
+    "author": "La sposa cadavere",
+    "choices": [
+      "La sposa cadavere",
+      "Nightmare Before Christmas",
+      "Corpse Bride",
+      "Frankenweenie"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2005",
+    "source_title": "Corpse Bride",
+    "source_link": "https://en.wikipedia.org/wiki/Corpse_Bride",
+    "tags": [
+      "animazione",
+      "dark",
+      "musical"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione in stop-motion di Tim Burton",
+    "hint_more": "Film d'animazione del 2005 diretto da Tim Burton e Mike Johnson. Racconta la storia di Victor, un giovane che per sbaglio si sposa con una sposa cadavere.",
+    "ambiguity_note": "Le opzioni includono Nightmare Before Christmas (dark), Corpse Bride (dark) e Frankenweenie (dark). La sposa cadavere è noto per questa frase ironica e per l'umorismo macabro.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'La sposa cadavere' (2005), questa frase viene pronunciata dalla sposa cadavere per esprimere la sua condizione. La frase esprime l'ironia della situazione: qualcosa di bello ma impossibile da apprezzare pienamente perché è morta, riflettendo l'umorismo macabro del film e la sua atmosfera gotica."
+  },
+  {
+    "id": "e48",
+    "quote": "Mi hanno detto che tu ami gli animali, così ti ho preparato un combattimento di galli a sorpresa",
+    "author": "La principessa e il ranocchio",
+    "choices": [
+      "La principessa e il ranocchio",
+      "La bella e la bestia",
+      "Aladdin",
+      "Mulan"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2009",
+    "source_title": "The Princess and the Frog",
+    "source_link": "https://en.wikipedia.org/wiki/The_Princess_and_the_Frog",
+    "tags": [
+      "animazione",
+      "musical",
+      "fiaba"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Tiana e il ranocchio",
+    "hint_more": "Film d'animazione Disney del 2009 diretto da Ron Clements e John Musker. Racconta la storia di Tiana, una giovane che si trasforma in ranocchio e deve trovare un modo per tornare umana.",
+    "ambiguity_note": "Le opzioni includono La bella e la bestia (fiaba), Aladdin (fiaba) e Mulan (guerra). La principessa e il ranocchio è noto per questa frase comica e per l'umorismo del personaggio.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'La principessa e il ranocchio' (2009), questa frase viene pronunciata da un personaggio per esprimere un malinteso comico. La frase esprime l'ironia della situazione: l'amore per gli animali viene interpretato in modo completamente sbagliato, riflettendo l'umorismo del film e la sua capacità di trasformare situazioni serie in momenti comici."
+  },
+  {
+    "id": "e49",
+    "quote": "Il segreto del successo è pazientare un po'. Tra mille ostacoli ed impedimenti io ce la farò",
+    "author": "Madagascar 2",
+    "choices": [
+      "Madagascar 2",
+      "Madagascar",
+      "Madagascar 3",
+      "Penguins of Madagascar"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2008",
+    "source_title": "Madagascar: Escape 2 Africa",
+    "source_link": "https://en.wikipedia.org/wiki/Madagascar:_Escape_2_Africa",
+    "tags": [
+      "animazione",
+      "commedia",
+      "avventura"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione su Alex e i suoi amici",
+    "hint_more": "Film d'animazione del 2008 diretto da Eric Darnell e Tom McGrath. Secondo capitolo della saga Madagascar, racconta le avventure di Alex, Marty, Melman e Gloria in Africa.",
+    "ambiguity_note": "Le opzioni includono Madagascar (primo film), Madagascar 3 (terzo film) e Penguins of Madagascar (spin-off). Madagascar 2 è noto per questa frase motivazionale e per l'umorismo dei personaggi.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Madagascar 2 - Via dall'isola' (2008), questa frase viene pronunciata per esprimere determinazione e ottimismo. La frase esprime la filosofia del protagonista: il successo richiede pazienza e perseveranza, e nonostante gli ostacoli, alla fine ce la farà, riflettendo il messaggio positivo del film e la sua capacità di ispirare."
+  },
+  {
+    "id": "e50",
+    "quote": "In caso di depressurizzazione mettere la maschera sul viso per nascondere l'espressione terrorizzata agli altri passeggeri",
+    "author": "Chi ha incastrato Roger Rabbit",
+    "choices": [
+      "Chi ha incastrato Roger Rabbit",
+      "Who Framed Roger Rabbit",
+      "Roger Rabbit",
+      "The Roger Rabbit"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1988",
+    "source_title": "Who Framed Roger Rabbit",
+    "source_link": "https://en.wikipedia.org/wiki/Who_Framed_Roger_Rabbit",
+    "tags": [
+      "cinema",
+      "commedia",
+      "animazione"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Film live-action con animazione di Robert Zemeckis",
+    "hint_more": "Film del 1988 diretto da Robert Zemeckis, con Bob Hoskins e Christopher Lloyd. Combina live-action e animazione, racconta la storia di un detective che deve scagionare Roger Rabbit.",
+    "ambiguity_note": "Le opzioni includono Who Framed Roger Rabbit (titolo originale), Roger Rabbit (personaggio) e The Roger Rabbit (variante). Chi ha incastrato Roger Rabbit è noto per questa frase ironica e per l'umorismo del film.",
+    "language_orig": "IT",
+    "context": "Nel film 'Chi ha incastrato Roger Rabbit' (1988), questa frase viene pronunciata per esprimere un'ironia comica. La frase esprime l'idea che la maschera di ossigeno serve non solo per respirare ma anche per nascondere la paura, riflettendo l'umorismo del film e la sua capacità di trasformare situazioni serie in momenti comici."
+  },
+  {
+    "id": "e51",
+    "quote": "Una risata può essere una cosa molto potente. A volte, nella vita, è l'unica arma che ci rimane",
+    "author": "Luca",
+    "choices": [
+      "Luca",
+      "Coco",
+      "Soul",
+      "Onward"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2021",
+    "source_title": "Luca",
+    "source_link": "https://en.wikipedia.org/wiki/Luca_(2021_film)",
+    "tags": [
+      "animazione",
+      "avventura",
+      "amore"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Pixar su Luca e Alberto",
+    "hint_more": "Film d'animazione Pixar del 2021 diretto da Enrico Casarosa. Racconta la storia di Luca, un giovane mostro marino che sogna di esplorare il mondo umano.",
+    "ambiguity_note": "Le opzioni includono Coco (musica), Soul (filosofia) e Onward (magia). Luca è noto per questa frase filosofica e per il suo messaggio sull'amicizia.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Luca' (2021), questa frase viene pronunciata per esprimere una profonda verità sulla vita. La frase insegna che la risata è una forma di resistenza e di gioia che può aiutare a superare le difficoltà, riflettendo il messaggio positivo del film e la sua celebrazione dell'amicizia e della gioia di vivere."
+  },
+  {
+    "id": "e52",
+    "quote": "Noi sfigati dobbiamo aiutarci a vicenda",
+    "author": "I Griffin",
+    "choices": [
+      "I Griffin",
+      "I Simpson",
+      "South Park",
+      "Family Guy"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1999",
+    "source_title": "Family Guy",
+    "source_link": "https://en.wikipedia.org/wiki/Family_Guy",
+    "tags": [
+      "animazione",
+      "commedia",
+      "satira"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Serie TV animata su Peter Griffin e la sua famiglia",
+    "hint_more": "Serie TV animata creata da Seth MacFarlane, iniziata nel 1999. Racconta le avventure della famiglia Griffin a Quahog, con Peter, Lois, Chris, Meg e Stewie.",
+    "ambiguity_note": "Le opzioni includono I Simpson (commedia), South Park (satira) e Family Guy (commedia). I Griffin sono noti per questa frase solidale e per l'umorismo del personaggio.",
+    "language_orig": "IT",
+    "context": "Nel cartone 'I Griffin' (1999), questa frase viene pronunciata per esprimere un senso di solidarietà e di appartenenza. La frase esprime l'idea che le persone che si sentono emarginate o diverse devono sostenersi a vicenda, riflettendo l'umorismo del personaggio e la sua capacità di trovare conforto nell'amicizia."
+  },
+  {
+    "id": "e53",
+    "quote": "La bugia finché non la scopri come tale è verità. Scoprire la verità che si cela nella bugia forse è giusto ma non è detto che ciò ti dia la felicità",
+    "author": "Ergo Proxy",
+    "choices": [
+      "Ergo Proxy",
+      "Ghost in the Shell",
+      "Akira",
+      "Neon Genesis Evangelion"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2006",
+    "source_title": "Ergo Proxy",
+    "source_link": "https://en.wikipedia.org/wiki/Ergo_Proxy",
+    "tags": [
+      "animazione",
+      "sci-fi",
+      "filosofico"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Anime filosofico cyberpunk con Re-l Mayer",
+    "hint_more": "Anime del 2006 diretto da Shukou Murase. Serie cyberpunk che esplora temi filosofici sulla natura della realtà, dell'identità e della verità in un futuro distopico.",
+    "ambiguity_note": "Le opzioni includono Ghost in the Shell (cyberpunk), Akira (sci-fi) e Neon Genesis Evangelion (mecha). Ergo Proxy è noto per questa frase filosofica e per la sua complessità narrativa.",
+    "language_orig": "IT",
+    "context": "Nell'anime 'Ergo Proxy' (2006), questa frase viene pronunciata per esprimere una profonda riflessione sulla natura della verità e della felicità. La frase esplora il paradosso della conoscenza: scoprire la verità può essere doloroso e non garantisce la felicità, riflettendo i temi filosofici complessi dell'anime e la sua esplorazione della condizione umana."
+  },
+  {
+    "id": "e54",
+    "quote": "Fujiko, nel tuo vocabolario la parola amici è solo sinonimo di quattrini",
+    "author": "Lupin III",
+    "choices": [
+      "Lupin III",
+      "Detective Conan",
+      "City Hunter",
+      "Golgo 13"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1971",
+    "source_title": "Lupin III",
+    "source_link": "https://en.wikipedia.org/wiki/Lupin_III",
+    "tags": [
+      "animazione",
+      "avventura",
+      "commedia"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Anime su Lupin III e la sua banda di ladri",
+    "hint_more": "Anime del 1971 creato da Monkey Punch. Racconta le avventure di Lupin III, nipote del ladro gentiluomo Arsène Lupin, e della sua banda composta da Jigen, Goemon e Fujiko.",
+    "ambiguity_note": "Le opzioni includono Detective Conan (mistero), City Hunter (azione) e Golgo 13 (spionaggio). Lupin III è noto per questa frase ironica e per l'umorismo dei personaggi.",
+    "language_orig": "IT",
+    "context": "Nell'anime 'Lupin III' (1971), questa frase viene pronunciata da Lupin per commentare il comportamento di Fujiko Mine. La frase esprime l'ironia della situazione: Fujiko usa l'amicizia come strumento per ottenere denaro, riflettendo l'umorismo del personaggio e la sua capacità di vedere attraverso le motivazioni degli altri."
+  },
+  {
+    "id": "e55",
+    "quote": "A volte dimostra più forza una persona che insegue il suo sogno di una che lo afferra",
+    "author": "Gintama",
+    "choices": [
+      "Gintama",
+      "One Piece",
+      "Naruto",
+      "Dragon Ball"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2006",
+    "source_title": "Gintama",
+    "source_link": "https://en.wikipedia.org/wiki/Gintama",
+    "tags": [
+      "animazione",
+      "commedia",
+      "azione"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Anime comico con Gintoki e i suoi amici",
+    "hint_more": "Anime del 2006 basato sul manga di Hideaki Sorachi. Racconta le avventure di Gintoki Sakata e dei suoi amici in un Giappone alternativo invaso dagli alieni.",
+    "ambiguity_note": "Le opzioni includono One Piece (avventura), Naruto (ninja) e Dragon Ball (azione). Gintama è noto per questa frase motivazionale e per l'umorismo del personaggio.",
+    "language_orig": "IT",
+    "context": "Nell'anime 'Gintama' (2006), questa frase viene pronunciata per esprimere una profonda verità sulla vita. La frase insegna che la perseveranza e la determinazione nel perseguire i propri sogni sono più importanti del successo stesso, riflettendo la filosofia del personaggio e la sua capacità di ispirare gli altri."
+  },
+  {
+    "id": "e56",
+    "quote": "Un vero atto di bontà ne ispira sempre un altro",
+    "author": "Klaus: I segreti del Natale",
+    "choices": [
+      "Klaus: I segreti del Natale",
+      "Il Grinch",
+      "Polar Express",
+      "A Christmas Carol"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2019",
+    "source_title": "Klaus",
+    "source_link": "https://en.wikipedia.org/wiki/Klaus_(film)",
+    "tags": [
+      "animazione",
+      "natalizio",
+      "drammatico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione natalizio su Klaus e Jesper",
+    "hint_more": "Film d'animazione del 2019 diretto da Sergio Pablos. Racconta la storia di Jesper, un postino che deve consegnare 6000 lettere in un anno, e Klaus, un vecchio falegname che diventa Babbo Natale.",
+    "ambiguity_note": "Le opzioni includono Il Grinch (natalizio), Polar Express (natalizio) e A Christmas Carol (natalizio). Klaus è noto per questa frase che esprime il potere della bontà e della generosità.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Klaus: I segreti del Natale' (2019), questa frase viene pronunciata per esprimere il potere della bontà. La frase insegna che un atto di gentilezza può creare un effetto a catena, ispirando altri a fare altrettanto, riflettendo il messaggio positivo del film e la sua celebrazione dello spirito natalizio."
+  },
+  {
+    "id": "e57",
+    "quote": "La magia è ovunque, devi solo imparare a vederla",
+    "author": "Mary Poppins",
+    "choices": [
+      "Mary Poppins",
+      "Il Mago di Oz",
+      "Alice nel Paese delle Meraviglie",
+      "Peter Pan"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1964",
+    "source_title": "Mary Poppins",
+    "source_link": "https://en.wikipedia.org/wiki/Mary_Poppins_(film)",
+    "tags": [
+      "cinema",
+      "musical",
+      "fantasy"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Musical Disney con Julie Andrews e Dick Van Dyke",
+    "hint_more": "Film del 1964 diretto da Robert Stevenson, con Julie Andrews e Dick Van Dyke. Racconta la storia di Mary Poppins, una tata magica che porta gioia e magia nella famiglia Banks.",
+    "ambiguity_note": "Le opzioni includono Il Mago di Oz (fantasy), Alice nel Paese delle Meraviglie (fantasy) e Peter Pan (fantasy). Mary Poppins è noto per questa frase magica e per il suo messaggio positivo.",
+    "language_orig": "IT",
+    "context": "Nel film 'Mary Poppins' (1964), questa frase viene pronunciata da Mary Poppins (Julie Andrews) per insegnare ai bambini a vedere la magia nella vita quotidiana. La frase esprime la filosofia del personaggio: la magia non è solo nei luoghi straordinari ma in ogni momento, se si sa dove guardare, riflettendo il messaggio positivo del film e la sua celebrazione dell'immaginazione."
+  },
+  {
+    "id": "e58",
+    "quote": "Non importa da dove vieni, ma chi sei e da dove vuoi andare",
+    "author": "Il Re Leone",
+    "choices": [
+      "Il Re Leone",
+      "La Sirenetta",
+      "Aladdin",
+      "La Bella e la Bestia"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1994",
+    "source_title": "The Lion King",
+    "source_link": "https://en.wikipedia.org/wiki/The_Lion_King_(1994_film)",
+    "tags": [
+      "animazione",
+      "musical",
+      "drammatico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Simba e la sua famiglia",
+    "hint_more": "Film d'animazione Disney del 1994 diretto da Roger Allers e Rob Minkoff. Racconta la storia di Simba, un giovane leone che deve imparare a diventare re dopo la morte di suo padre Mufasa.",
+    "ambiguity_note": "Le opzioni includono La Sirenetta (fiaba), Aladdin (fiaba) e La Bella e la Bestia (fiaba). Il Re Leone è noto per questa frase motivazionale e per il suo messaggio sull'identità.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Il Re Leone' (1994), questa frase viene pronunciata da Rafiki (Robert Guillaume) per insegnare a Simba una lezione importante. La frase esprime la filosofia del personaggio: l'identità non è determinata dalle circostanze della nascita ma dalle scelte e dalle aspirazioni, riflettendo il messaggio positivo del film e la sua celebrazione della crescita personale."
+  },
+  {
+    "id": "e59",
+    "quote": "L'importante non è dove tu stai, ma dove ti stanno portando le tue scelte",
+    "author": "Alice nel Paese delle Meraviglie",
+    "choices": [
+      "Alice nel Paese delle Meraviglie",
+      "Il Mago di Oz",
+      "Peter Pan",
+      "Mary Poppins"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1951",
+    "source_title": "Alice in Wonderland",
+    "source_link": "https://en.wikipedia.org/wiki/Alice_in_Wonderland_(1951_film)",
+    "tags": [
+      "animazione",
+      "fantasy",
+      "avventura"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Alice e il Paese delle Meraviglie",
+    "hint_more": "Film d'animazione Disney del 1951 diretto da Clyde Geronimi, Wilfred Jackson e Hamilton Luske. Racconta la storia di Alice, una ragazza che cade in un mondo fantastico e deve trovare la strada di casa.",
+    "ambiguity_note": "Le opzioni includono Il Mago di Oz (fantasy), Peter Pan (fantasy) e Mary Poppins (fantasy). Alice nel Paese delle Meraviglie è noto per questa frase filosofica e per la sua esplorazione dell'identità.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Alice nel Paese delle Meraviglie' (1951), questa frase viene pronunciata per esprimere una profonda verità sulla vita. La frase insegna che il presente è meno importante del futuro che stiamo costruendo attraverso le nostre scelte, riflettendo la filosofia del film e la sua esplorazione della crescita personale."
+  },
+  {
+    "id": "e60",
+    "quote": "Le cose che importano davvero non sempre sono quelle che brillano",
+    "author": "La Sirenetta",
+    "choices": [
+      "La Sirenetta",
+      "Cenerentola",
+      "Biancaneve",
+      "La Bella e la Bestia"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1989",
+    "source_title": "The Little Mermaid",
+    "source_link": "https://en.wikipedia.org/wiki/The_Little_Mermaid_(1989_film)",
+    "tags": [
+      "animazione",
+      "musical",
+      "fiaba"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Ariel e la sua famiglia",
+    "hint_more": "Film d'animazione Disney del 1989 diretto da Ron Clements e John Musker. Racconta la storia di Ariel, una sirena che sogna di diventare umana per amore del principe Eric.",
+    "ambiguity_note": "Le opzioni includono Cenerentola (fiaba), Biancaneve (fiaba) e La Bella e la Bestia (fiaba). La Sirenetta è noto per questa frase che esprime i veri valori della vita.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'La Sirenetta' (1989), questa frase viene pronunciata da Sebastian (Samuel E. Wright) per insegnare ad Ariel una lezione importante. La frase esprime la filosofia del personaggio: i veri tesori della vita non sono materiali ma emotivi e spirituali, riflettendo il messaggio positivo del film e la sua celebrazione dell'amore e dell'amicizia."
+  },
+  {
+    "id": "e61",
+    "quote": "Non puoi cambiare il passato, ma puoi imparare da esso",
+    "author": "Cenerentola",
+    "choices": [
+      "Cenerentola",
+      "La Bella e la Bestia",
+      "Aladdin",
+      "La Sirenetta"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1950",
+    "source_title": "Cinderella",
+    "source_link": "https://en.wikipedia.org/wiki/Cinderella_(1950_film)",
+    "tags": [
+      "animazione",
+      "fiaba",
+      "musical"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Cenerentola",
+    "hint_more": "Film d'animazione Disney del 1950 diretto da Clyde Geronimi, Wilfred Jackson e Hamilton Luske. Racconta la storia di Cenerentola, una ragazza che sogna di andare al ballo del principe.",
+    "ambiguity_note": "Le opzioni includono La Bella e la Bestia (fiaba), Aladdin (fiaba) e La Sirenetta (fiaba). Cenerentola è noto per questa frase che esprime l'importanza dell'apprendimento dal passato.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Cenerentola' (1950), questa frase viene pronunciata per insegnare una lezione importante sulla vita. La frase esprime la filosofia del personaggio: il passato non può essere modificato ma può essere una fonte di saggezza per il futuro, riflettendo il messaggio positivo del film e la sua celebrazione della crescita personale."
+  },
+  {
+    "id": "e62",
+    "quote": "Non siamo mai troppo vecchi per essere giovani",
+    "author": "Ratatouille",
+    "choices": [
+      "Ratatouille",
+      "Up",
+      "WALL-E",
+      "Monsters, Inc."
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2007",
+    "source_title": "Ratatouille",
+    "source_link": "https://en.wikipedia.org/wiki/Ratatouille_(film)",
+    "tags": [
+      "animazione",
+      "commedia",
+      "cucina"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Pixar su Remy e la cucina",
+    "hint_more": "Film d'animazione Pixar del 2007 diretto da Brad Bird. Racconta la storia di Remy, un topo che sogna di diventare uno chef e collabora con Linguini, un giovane cuoco.",
+    "ambiguity_note": "Le opzioni includono Up (avventura), WALL-E (sci-fi) e Monsters, Inc. (mostri). Ratatouille è noto per questa frase motivazionale e per il suo messaggio sulla passione.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Ratatouille' (2007), questa frase viene pronunciata per esprimere una profonda verità sulla vita. La frase insegna che l'età non dovrebbe limitare i sogni e le aspirazioni, riflettendo il messaggio positivo del film e la sua celebrazione della passione e della determinazione."
+  },
+  {
+    "id": "e63",
+    "quote": "La forza non deriva dai titoli, ma dalla bontà e dal coraggio",
+    "author": "Il Libro della Giungla",
+    "choices": [
+      "Il Libro della Giungla",
+      "Tarzan",
+      "Pocahontas",
+      "Mulan"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1967",
+    "source_title": "The Jungle Book",
+    "source_link": "https://en.wikipedia.org/wiki/The_Jungle_Book_(1967_film)",
+    "tags": [
+      "animazione",
+      "avventura",
+      "musical"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Mowgli e gli animali della giungla",
+    "hint_more": "Film d'animazione Disney del 1967 diretto da Wolfgang Reitherman. Racconta la storia di Mowgli, un ragazzo cresciuto nella giungla che deve imparare a vivere tra gli umani.",
+    "ambiguity_note": "Le opzioni includono Tarzan (avventura), Pocahontas (storico) e Mulan (guerra). Il Libro della Giungla è noto per questa frase che esprime i veri valori dell'eroismo.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Il Libro della Giungla' (1967), questa frase viene pronunciata per insegnare una lezione importante sulla forza. La frase esprime la filosofia del personaggio: la vera forza viene dal carattere e dai valori, non dai titoli o dal potere, riflettendo il messaggio positivo del film e la sua celebrazione della bontà."
+  },
+  {
+    "id": "e64",
+    "quote": "A volte le piccole cose occupano il posto più grande nei nostri cuori",
+    "author": "Winnie the Pooh",
+    "choices": [
+      "Winnie the Pooh",
+      "Bambi",
+      "Dumbo",
+      "Pinocchio"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1977",
+    "source_title": "The Many Adventures of Winnie the Pooh",
+    "source_link": "https://en.wikipedia.org/wiki/The_Many_Adventures_of_Winnie_the_Pooh",
+    "tags": [
+      "animazione",
+      "commedia",
+      "famiglia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Winnie the Pooh e i suoi amici",
+    "hint_more": "Film d'animazione Disney del 1977 diretto da John Lounsbery e Wolfgang Reitherman. Racconta le avventure di Winnie the Pooh e dei suoi amici nella Foresta dei Cento Acri.",
+    "ambiguity_note": "Le opzioni includono Bambi (natura), Dumbo (circo) e Pinocchio (fiaba). Winnie the Pooh è noto per questa frase dolce e per il suo messaggio sull'amicizia.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Winnie the Pooh' (1977), questa frase viene pronunciata per esprimere una profonda verità sulla vita. La frase insegna che le cose più semplici e genuine sono spesso quelle che ci rendono più felici, riflettendo il messaggio positivo del film e la sua celebrazione dell'innocenza e dell'amicizia."
+  },
+  {
+    "id": "e65",
+    "quote": "Per cambiare il futuro, devi imparare dal passato",
+    "author": "Frozen",
+    "choices": [
+      "Frozen",
+      "Frozen 2",
+      "Moana",
+      "Encanto"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2013",
+    "source_title": "Frozen",
+    "source_link": "https://en.wikipedia.org/wiki/Frozen_(2013_film)",
+    "tags": [
+      "animazione",
+      "musical",
+      "fantasy"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Elsa e Anna",
+    "hint_more": "Film d'animazione Disney del 2013 diretto da Chris Buck e Jennifer Lee. Racconta la storia di Elsa e Anna, due sorelle che devono imparare a gestire i poteri magici di Elsa.",
+    "ambiguity_note": "Le opzioni includono Frozen 2 (sequel), Moana (avventura) e Encanto (magia). Frozen è noto per questa frase motivazionale e per il suo messaggio sulla crescita personale.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Frozen' (2013), questa frase viene pronunciata per esprimere una profonda verità sulla vita. La frase insegna che per costruire un futuro migliore è necessario comprendere e imparare dalle esperienze passate, riflettendo il messaggio positivo del film e la sua celebrazione della crescita personale."
+  },
+  {
+    "id": "e66",
+    "quote": "Il passato può ferire, ma dal modo in cui vedo le cose, puoi scappare da esso o imparare da esso",
+    "author": "Il Re Leone",
+    "choices": [
+      "Il Re Leone",
+      "La Sirenetta",
+      "Aladdin",
+      "La Bella e la Bestia"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1994",
+    "source_title": "The Lion King",
+    "source_link": "https://en.wikipedia.org/wiki/The_Lion_King_(1994_film)",
+    "tags": [
+      "animazione",
+      "musical",
+      "drammatico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Simba e la sua famiglia",
+    "hint_more": "Film d'animazione Disney del 1994 diretto da Roger Allers e Rob Minkoff. Racconta la storia di Simba, un giovane leone che deve imparare a diventare re dopo la morte di suo padre Mufasa.",
+    "ambiguity_note": "Le opzioni includono La Sirenetta (fiaba), Aladdin (fiaba) e La Bella e la Bestia (fiaba). Il Re Leone è noto per questa frase filosofica e per il suo messaggio sulla crescita personale.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Il Re Leone' (1994), questa frase viene pronunciata da Rafiki (Robert Guillaume) per insegnare a Simba una lezione importante. La frase esprime la filosofia del personaggio: il passato può essere doloroso ma offre anche l'opportunità di crescere e imparare, riflettendo il messaggio positivo del film e la sua celebrazione della resilienza."
+  },
+  {
+    "id": "e67",
+    "quote": "Se incontri la bestia, non diventare una bestia anche tu",
+    "author": "La Bella e la Bestia",
+    "choices": [
+      "La Bella e la Bestia",
+      "Cenerentola",
+      "Biancaneve",
+      "La Sirenetta"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1991",
+    "source_title": "Beauty and the Beast",
+    "source_link": "https://en.wikipedia.org/wiki/Beauty_and_the_Beast_(1991_film)",
+    "tags": [
+      "animazione",
+      "musical",
+      "fiaba"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Belle e la Bestia",
+    "hint_more": "Film d'animazione Disney del 1991 diretto da Gary Trousdale e Kirk Wise. Racconta la storia di Belle, una giovane che si innamora della Bestia e lo aiuta a rompere la maledizione.",
+    "ambiguity_note": "Le opzioni includono Cenerentola (fiaba), Biancaneve (fiaba) e La Sirenetta (fiaba). La Bella e la Bestia è noto per questa frase che esprime l'importanza di mantenere la propria umanità.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'La Bella e la Bestia' (1991), questa frase viene pronunciata per esprimere una profonda verità sulla vita. La frase insegna che di fronte alla crudeltà e alla malvagità, è importante mantenere la propria umanità e non scendere al loro livello, riflettendo il messaggio positivo del film e la sua celebrazione dell'amore e della compassione."
+  },
+  {
+    "id": "e68",
+    "quote": "L'amicizia è la formula magica che trasforma i giorni ordinari in avventure straordinarie",
+    "author": "Winnie the Pooh",
+    "choices": [
+      "Winnie the Pooh",
+      "Bambi",
+      "Dumbo",
+      "Pinocchio"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1977",
+    "source_title": "The Many Adventures of Winnie the Pooh",
+    "source_link": "https://en.wikipedia.org/wiki/The_Many_Adventures_of_Winnie_the_Pooh",
+    "tags": [
+      "animazione",
+      "commedia",
+      "famiglia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Winnie the Pooh e i suoi amici",
+    "hint_more": "Film d'animazione Disney del 1977 diretto da John Lounsbery e Wolfgang Reitherman. Racconta le avventure di Winnie the Pooh e dei suoi amici nella Foresta dei Cento Acri.",
+    "ambiguity_note": "Le opzioni includono Bambi (natura), Dumbo (circo) e Pinocchio (fiaba). Winnie the Pooh è noto per questa frase dolce e per il suo messaggio sull'amicizia.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Winnie the Pooh' (1977), questa frase viene pronunciata da Tigro per esprimere una profonda verità sull'amicizia. La frase insegna che l'amicizia ha il potere di trasformare anche i momenti più semplici in esperienze speciali, riflettendo il messaggio positivo del film e la sua celebrazione dell'amicizia e della gioia di vivere."
+  },
+  {
+    "id": "e69",
+    "quote": "Gli amici ti sostengono quando ti senti giù e ti incoraggiano a volare alto",
+    "author": "Dumbo",
+    "choices": [
+      "Dumbo",
+      "Bambi",
+      "Winnie the Pooh",
+      "Pinocchio"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1941",
+    "source_title": "Dumbo",
+    "source_link": "https://en.wikipedia.org/wiki/Dumbo",
+    "tags": [
+      "animazione",
+      "drammatico",
+      "musical"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Dumbo e Timoteo",
+    "hint_more": "Film d'animazione Disney del 1941 diretto da Ben Sharpsteen. Racconta la storia di Dumbo, un elefantino con orecchie enormi che impara a volare con l'aiuto del suo amico Timoteo.",
+    "ambiguity_note": "Le opzioni includono Bambi (natura), Winnie the Pooh (amicizia) e Pinocchio (fiaba). Dumbo è noto per questa frase motivazionale e per il suo messaggio sull'amicizia.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Dumbo' (1941), questa frase viene pronunciata da Timoteo per esprimere una profonda verità sull'amicizia. La frase insegna che i veri amici sono sempre pronti a sostenerti nei momenti difficili e a incoraggiarti a raggiungere i tuoi sogni, riflettendo il messaggio positivo del film e la sua celebrazione dell'amicizia e della determinazione."
+  },
+  {
+    "id": "e70",
+    "quote": "Non sono grasso, sono gonfio di felicità!",
+    "author": "Winnie the Pooh",
+    "choices": [
+      "Winnie the Pooh",
+      "Bambi",
+      "Dumbo",
+      "Pinocchio"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1977",
+    "source_title": "The Many Adventures of Winnie the Pooh",
+    "source_link": "https://en.wikipedia.org/wiki/The_Many_Adventures_of_Winnie_the_Pooh",
+    "tags": [
+      "animazione",
+      "commedia",
+      "famiglia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Winnie the Pooh e i suoi amici",
+    "hint_more": "Film d'animazione Disney del 1977 diretto da John Lounsbery e Wolfgang Reitherman. Racconta le avventure di Winnie the Pooh e dei suoi amici nella Foresta dei Cento Acri.",
+    "ambiguity_note": "Le opzioni includono Bambi (natura), Dumbo (circo) e Pinocchio (fiaba). Winnie the Pooh è noto per questa frase comica e per l'umorismo del personaggio.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Winnie the Pooh' (1977), questa frase viene pronunciata da Pooh per esprimere la sua filosofia di vita. La frase esprime l'ottimismo del personaggio: invece di vedere il lato negativo delle cose, trova sempre un modo positivo per interpretarle, riflettendo l'umorismo del film e la sua celebrazione della gioia di vivere."
+  },
+  {
+    "id": "e71",
+    "quote": "Sono un pesce, non ho bisogno di camminare!",
+    "author": "Alla ricerca di Nemo",
+    "choices": [
+      "Alla ricerca di Nemo",
+      "Finding Dory",
+      "Shark Tale",
+      "The Little Mermaid"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2003",
+    "source_title": "Finding Nemo",
+    "source_link": "https://en.wikipedia.org/wiki/Finding_Nemo",
+    "tags": [
+      "animazione",
+      "avventura",
+      "commedia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Pixar su Nemo e Dory",
+    "hint_more": "Film d'animazione Pixar del 2003 diretto da Andrew Stanton. Racconta la storia di Marlin, un pesce pagliaccio che deve trovare suo figlio Nemo, con l'aiuto di Dory, un pesce chirurgo con problemi di memoria.",
+    "ambiguity_note": "Le opzioni includono Finding Dory (sequel), Shark Tale (commedia) e The Little Mermaid (fiaba). Alla ricerca di Nemo è noto per questa frase comica e per l'umorismo di Dory.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Alla ricerca di Nemo' (2003), questa frase viene pronunciata da Dory (Ellen DeGeneres) per esprimere la sua logica semplice ma efficace. La frase esprime l'umorismo del personaggio: invece di complicare le cose, trova sempre una soluzione diretta e pratica, riflettendo l'umorismo del film e la sua celebrazione della semplicità."
+  },
+  {
+    "id": "e72",
+    "quote": "Sono troppo vecchio per queste cose. Inizia tu, io starò indietro a guardare",
+    "author": "Robin Hood",
+    "choices": [
+      "Robin Hood",
+      "Il Libro della Giungla",
+      "The Jungle Book",
+      "Tarzan"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1973",
+    "source_title": "Robin Hood",
+    "source_link": "https://en.wikipedia.org/wiki/Robin_Hood_(1973_film)",
+    "tags": [
+      "animazione",
+      "avventura",
+      "musical"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Robin Hood e Little John",
+    "hint_more": "Film d'animazione Disney del 1973 diretto da Wolfgang Reitherman. Racconta la storia di Robin Hood, un fuorilegge che ruba ai ricchi per dare ai poveri, con l'aiuto del suo amico Little John.",
+    "ambiguity_note": "Le opzioni includono Il Libro della Giungla (avventura), The Jungle Book (avventura) e Tarzan (avventura). Robin Hood è noto per questa frase comica e per l'umorismo di Little John.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Robin Hood' (1973), questa frase viene pronunciata da Little John per esprimere la sua filosofia di vita. La frase esprime l'umorismo del personaggio: invece di affrontare direttamente le sfide, preferisce osservare e lasciare che altri agiscano, riflettendo l'umorismo del film e la sua celebrazione dell'amicizia."
+  },
+  {
+    "id": "e73",
+    "quote": "Se non puoi fare nulla di bello, almeno fai qualcosa di divertente!",
+    "author": "Il Libro della Giungla",
+    "choices": [
+      "Il Libro della Giungla",
+      "Tarzan",
+      "Pocahontas",
+      "Mulan"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1967",
+    "source_title": "The Jungle Book",
+    "source_link": "https://en.wikipedia.org/wiki/The_Jungle_Book_(1967_film)",
+    "tags": [
+      "animazione",
+      "avventura",
+      "musical"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Mowgli e Baloo",
+    "hint_more": "Film d'animazione Disney del 1967 diretto da Wolfgang Reitherman. Racconta la storia di Mowgli, un ragazzo cresciuto nella giungla che deve imparare a vivere tra gli umani.",
+    "ambiguity_note": "Le opzioni includono Tarzan (avventura), Pocahontas (storico) e Mulan (guerra). Il Libro della Giungla è noto per questa frase motivazionale e per l'umorismo di Baloo.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Il Libro della Giungla' (1967), questa frase viene pronunciata da Baloo per esprimere la sua filosofia di vita. La frase esprime l'ottimismo del personaggio: anche quando le cose non vanno come previsto, è importante trovare il lato positivo e divertirsi, riflettendo il messaggio positivo del film e la sua celebrazione della gioia di vivere."
+  },
+  {
+    "id": "e74",
+    "quote": "Mi sono perso, ma sono in buona compagnia!",
+    "author": "Alice nel Paese delle Meraviglie",
+    "choices": [
+      "Alice nel Paese delle Meraviglie",
+      "Il Mago di Oz",
+      "Peter Pan",
+      "Mary Poppins"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1951",
+    "source_title": "Alice in Wonderland",
+    "source_link": "https://en.wikipedia.org/wiki/Alice_in_Wonderland_(1951_film)",
+    "tags": [
+      "animazione",
+      "fantasy",
+      "avventura"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Alice e il Paese delle Meraviglie",
+    "hint_more": "Film d'animazione Disney del 1951 diretto da Clyde Geronimi, Wilfred Jackson e Hamilton Luske. Racconta la storia di Alice, una ragazza che cade in un mondo fantastico e deve trovare la strada di casa.",
+    "ambiguity_note": "Le opzioni includono Il Mago di Oz (fantasy), Peter Pan (fantasy) e Mary Poppins (fantasy). Alice nel Paese delle Meraviglie è noto per questa frase ottimistica e per l'umorismo del personaggio.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Alice nel Paese delle Meraviglie' (1951), questa frase viene pronunciata da Alice per esprimere la sua filosofia di vita. La frase esprime l'ottimismo del personaggio: anche quando si trova in situazioni difficili, trova sempre il lato positivo e si concentra sulla compagnia degli amici, riflettendo il messaggio positivo del film e la sua celebrazione dell'amicizia."
+  },
+  {
+    "id": "e75",
+    "quote": "Non ti preoccupare, il mio piano è impeccabile. Impeccabilmente disastroso",
+    "author": "Aladdin",
+    "choices": [
+      "Aladdin",
+      "La Sirenetta",
+      "La Bella e la Bestia",
+      "Cenerentola"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1992",
+    "source_title": "Aladdin",
+    "source_link": "https://en.wikipedia.org/wiki/Aladdin_(1992_film)",
+    "tags": [
+      "animazione",
+      "musical",
+      "fiaba"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Aladdin e il Genio",
+    "hint_more": "Film d'animazione Disney del 1992 diretto da Ron Clements e John Musker. Racconta la storia di Aladdin, un ladruncolo che trova una lampada magica e diventa amico del Genio.",
+    "ambiguity_note": "Le opzioni includono La Sirenetta (fiaba), La Bella e la Bestia (fiaba) e Cenerentola (fiaba). Aladdin è noto per questa frase comica e per l'umorismo del Genio.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Aladdin' (1992), questa frase viene pronunciata dal Genio (Robin Williams) per esprimere la sua filosofia di vita. La frase esprime l'umorismo del personaggio: invece di nascondere i suoi errori, li ammette con ironia e trova sempre un modo per trasformarli in momenti comici, riflettendo l'umorismo del film e la sua celebrazione dell'amicizia."
+  },
+  {
+    "id": "e76",
+    "quote": "La cosa più divertente riguardo agli umani è quanto siano stupidi",
+    "author": "Hercules",
+    "choices": [
+      "Hercules",
+      "Mulan",
+      "Pocahontas",
+      "Tarzan"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Hercules",
+    "source_link": "https://en.wikipedia.org/wiki/Hercules_(1997_film)",
+    "tags": [
+      "animazione",
+      "avventura",
+      "mitologia"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Hercules e Filottete",
+    "hint_more": "Film d'animazione Disney del 1997 diretto da Ron Clements e John Musker. Racconta la storia di Hercules, figlio di Zeus, che deve dimostrare di essere un vero eroe.",
+    "ambiguity_note": "Le opzioni includono Mulan (guerra), Pocahontas (storico) e Tarzan (avventura). Hercules è noto per questa frase ironica e per l'umorismo di Filottete.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Hercules' (1997), questa frase viene pronunciata da Filottete per esprimere la sua filosofia di vita. La frase esprime l'ironia del personaggio: invece di prendere sul serio le situazioni, trova sempre un modo per riderci sopra e vedere il lato comico delle cose, riflettendo l'umorismo del film e la sua celebrazione dell'amicizia."
+  },
+  {
+    "id": "e77",
+    "quote": "Ohana significa famiglia. La famiglia significa che nessuno viene abbandonato né dimenticato",
+    "author": "Lilo & Stitch",
+    "choices": [
+      "Lilo & Stitch",
+      "Moana",
+      "Frozen",
+      "Encanto"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2002",
+    "source_title": "Lilo & Stitch",
+    "source_link": "https://en.wikipedia.org/wiki/Lilo_%26_Stitch",
+    "tags": [
+      "animazione",
+      "commedia",
+      "famiglia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Lilo e Stitch",
+    "hint_more": "Film d'animazione Disney del 2002 diretto da Chris Sanders e Dean DeBlois. Racconta la storia di Lilo, una ragazza hawaiana che adotta Stitch, un alieno che diventa parte della sua famiglia.",
+    "ambiguity_note": "Le opzioni includono Moana (avventura), Frozen (magia) e Encanto (magia). Lilo & Stitch è noto per questa frase motivazionale e per il suo messaggio sulla famiglia.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Lilo & Stitch' (2002), questa frase viene pronunciata da Lilo per esprimere una profonda verità sulla famiglia. La frase insegna che la famiglia non è solo legata dal sangue ma dall'amore e dalla lealtà, riflettendo il messaggio positivo del film e la sua celebrazione dell'amicizia e dell'accettazione."
+  },
+  {
+    "id": "e78",
+    "quote": "Hakuna Matata!",
+    "author": "Il Re Leone",
+    "choices": [
+      "Il Re Leone",
+      "La Sirenetta",
+      "Aladdin",
+      "La Bella e la Bestia"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1994",
+    "source_title": "The Lion King",
+    "source_link": "https://en.wikipedia.org/wiki/The_Lion_King_(1994_film)",
+    "tags": [
+      "animazione",
+      "musical",
+      "drammatico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Simba e la sua famiglia",
+    "hint_more": "Film d'animazione Disney del 1994 diretto da Roger Allers e Rob Minkoff. Racconta la storia di Simba, un giovane leone che deve imparare a diventare re dopo la morte di suo padre Mufasa.",
+    "ambiguity_note": "Le opzioni includono La Sirenetta (fiaba), Aladdin (fiaba) e La Bella e la Bestia (fiaba). Il Re Leone è noto per questa frase motivazionale e per il suo messaggio sulla gioia di vivere.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Il Re Leone' (1994), questa frase viene pronunciata da Timon e Pumbaa per esprimere la loro filosofia di vita. La frase insegna che non bisogna preoccuparsi eccessivamente per il futuro ma vivere il presente con gioia e serenità, riflettendo il messaggio positivo del film e la sua celebrazione della gioia di vivere."
+  },
+  {
+    "id": "e79",
+    "quote": "La vita è un'avventura, o niente affatto",
+    "author": "Peter Pan",
+    "choices": [
+      "Peter Pan",
+      "Alice nel Paese delle Meraviglie",
+      "Il Mago di Oz",
+      "Mary Poppins"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1953",
+    "source_title": "Peter Pan",
+    "source_link": "https://en.wikipedia.org/wiki/Peter_Pan_(1953_film)",
+    "tags": [
+      "animazione",
+      "fantasy",
+      "avventura"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Peter Pan e Wendy",
+    "hint_more": "Film d'animazione Disney del 1953 diretto da Clyde Geronimi, Wilfred Jackson e Hamilton Luske. Racconta la storia di Peter Pan, un ragazzo che non vuole crescere e porta Wendy e i suoi fratelli a Neverland.",
+    "ambiguity_note": "Le opzioni includono Alice nel Paese delle Meraviglie (fantasy), Il Mago di Oz (fantasy) e Mary Poppins (fantasy). Peter Pan è noto per questa frase motivazionale e per il suo messaggio sull'avventura.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Peter Pan' (1953), questa frase viene pronunciata da Peter Pan per esprimere la sua filosofia di vita. La frase insegna che la vita deve essere vissuta come un'avventura, con coraggio e curiosità, riflettendo il messaggio positivo del film e la sua celebrazione dell'immaginazione e della gioia di vivere."
+  },
+  {
+    "id": "e80",
+    "quote": "La felicità è la chiave per aprire qualsiasi porta",
+    "author": "Alice nel Paese delle Meraviglie",
+    "choices": [
+      "Alice nel Paese delle Meraviglie",
+      "Il Mago di Oz",
+      "Peter Pan",
+      "Mary Poppins"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1951",
+    "source_title": "Alice in Wonderland",
+    "source_link": "https://en.wikipedia.org/wiki/Alice_in_Wonderland_(1951_film)",
+    "tags": [
+      "animazione",
+      "fantasy",
+      "avventura"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Alice e il Paese delle Meraviglie",
+    "hint_more": "Film d'animazione Disney del 1951 diretto da Clyde Geronimi, Wilfred Jackson e Hamilton Luske. Racconta la storia di Alice, una ragazza che cade in un mondo fantastico e deve trovare la strada di casa.",
+    "ambiguity_note": "Le opzioni includono Il Mago di Oz (fantasy), Peter Pan (fantasy) e Mary Poppins (fantasy). Alice nel Paese delle Meraviglie è noto per questa frase filosofica e per il suo messaggio sulla felicità.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Alice nel Paese delle Meraviglie' (1951), questa frase viene pronunciata dal Mad Hatter per esprimere una profonda verità sulla vita. La frase insegna che la felicità è la chiave per superare qualsiasi ostacolo e raggiungere i propri obiettivi, riflettendo il messaggio positivo del film e la sua celebrazione dell'ottimismo."
+  },
+  {
+    "id": "e81",
+    "quote": "Nulla è impossibile, la parola stessa dice 'possibile'!",
+    "author": "Alice nel Paese delle Meraviglie",
+    "choices": [
+      "Alice nel Paese delle Meraviglie",
+      "Il Mago di Oz",
+      "Peter Pan",
+      "Mary Poppins"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1951",
+    "source_title": "Alice in Wonderland",
+    "source_link": "https://en.wikipedia.org/wiki/Alice_in_Wonderland_(1951_film)",
+    "tags": [
+      "animazione",
+      "fantasy",
+      "avventura"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney su Alice e il Paese delle Meraviglie",
+    "hint_more": "Film d'animazione Disney del 1951 diretto da Clyde Geronimi, Wilfred Jackson e Hamilton Luske. Racconta la storia di Alice, una ragazza che cade in un mondo fantastico e deve trovare la strada di casa.",
+    "ambiguity_note": "Le opzioni includono Il Mago di Oz (fantasy), Peter Pan (fantasy) e Mary Poppins (fantasy). Alice nel Paese delle Meraviglie è noto per questa frase motivazionale e per il suo messaggio sull'ottimismo.",
+    "language_orig": "IT",
+    "context": "Nel film d'animazione 'Alice nel Paese delle Meraviglie' (1951), questa frase viene pronunciata dalla Regina di Cuori per esprimere una profonda verità sulla vita. La frase insegna che con la giusta mentalità e determinazione, tutto è possibile, riflettendo il messaggio positivo del film e la sua celebrazione dell'ottimismo e della determinazione."
+  },
+  {
+    "id": "e82",
+    "quote": "Sono il re del mondo!",
+    "author": "Titanic",
+    "choices": [
+      "Titanic",
+      "Avatar",
+      "Inception",
+      "The Revenant"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Titanic",
+    "source_link": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "romantico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Leonardo DiCaprio e Kate Winslet",
+    "hint_more": "Film del 1997 diretto da James Cameron, con Leonardo DiCaprio e Kate Winslet. Racconta la storia d'amore tra Jack e Rose a bordo del Titanic durante il suo viaggio inaugurale.",
+    "ambiguity_note": "Le opzioni includono Avatar (sci-fi), Inception (sci-fi) e The Revenant (avventura). Titanic è noto per questa frase iconica e per la sua grandiosità cinematografica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Titanic' (1997), questa frase viene pronunciata da Jack Dawson (Leonardo DiCaprio) mentre si trova sulla prua della nave. La frase esprime la gioia e l'euforia del momento: Jack si sente libero e felice, come se avesse conquistato il mondo, riflettendo l'atmosfera romantica del film e la sua celebrazione della giovinezza e dell'amore."
+  },
+  {
+    "id": "e83",
+    "quote": "Non ti salverai! Io riuscirò a prendervi, te e il tuo odioso cagnolino!",
+    "author": "Il Mago di Oz",
+    "choices": [
+      "Il Mago di Oz",
+      "Alice nel Paese delle Meraviglie",
+      "Peter Pan",
+      "Mary Poppins"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1939",
+    "source_title": "The Wizard of Oz",
+    "source_link": "https://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)",
+    "tags": [
+      "cinema",
+      "fantasy",
+      "musical"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film fantasy con Judy Garland e Margaret Hamilton",
+    "hint_more": "Film del 1939 diretto da Victor Fleming, con Judy Garland e Margaret Hamilton. Racconta la storia di Dorothy, una ragazza che viene trasportata nel magico mondo di Oz e deve trovare la strada di casa.",
+    "ambiguity_note": "Le opzioni includono Alice nel Paese delle Meraviglie (fantasy), Peter Pan (fantasy) e Mary Poppins (fantasy). Il Mago di Oz è noto per questa frase minacciosa e per la sua atmosfera gotica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il Mago di Oz' (1939), questa frase viene pronunciata dalla Strega dell'Ovest (Margaret Hamilton) per esprimere la sua rabbia e determinazione. La frase esprime la malvagità del personaggio: la strega è decisa a catturare Dorothy e il suo cane Toto, riflettendo l'atmosfera gotica del film e la sua celebrazione del bene contro il male."
+  },
+  {
+    "id": "e84",
+    "quote": "Carpe diem, cogliete l'attimo ragazzi, rendete straordinaria la vostra vita",
+    "author": "L'attimo fuggente",
+    "choices": [
+      "L'attimo fuggente",
+      "Dead Poets Society",
+      "Good Will Hunting",
+      "Patch Adams"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1989",
+    "source_title": "Dead Poets Society",
+    "source_link": "https://en.wikipedia.org/wiki/Dead_Poets_Society",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "educativo"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Robin Williams come professore",
+    "hint_more": "Film del 1989 diretto da Peter Weir, con Robin Williams, Ethan Hawke e Robert Sean Leonard. Racconta la storia di un professore di lettere che ispira i suoi studenti a seguire i propri sogni.",
+    "ambiguity_note": "Le opzioni includono Dead Poets Society (titolo originale), Good Will Hunting (dramma) e Patch Adams (dramma). L'attimo fuggente è noto per questa frase motivazionale e per il suo messaggio sull'educazione.",
+    "language_orig": "IT",
+    "context": "Nel film 'L'attimo fuggente' (1989), questa frase viene pronunciata da John Keating (Robin Williams) per ispirare i suoi studenti. La frase esprime la filosofia del personaggio: la vita deve essere vissuta pienamente, cogliendo ogni opportunità e rendendo straordinario ogni momento, riflettendo il messaggio positivo del film e la sua celebrazione della passione per la vita."
+  },
+  {
+    "id": "e85",
+    "quote": "Ma noi saremo - sempre i più forti!",
+    "author": "Top Gun",
+    "choices": [
+      "Top Gun",
+      "Top Gun: Maverick",
+      "Days of Thunder",
+      "Mission: Impossible"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1986",
+    "source_title": "Top Gun",
+    "source_link": "https://en.wikipedia.org/wiki/Top_Gun_(film)",
+    "tags": [
+      "cinema",
+      "azione",
+      "drammatico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'azione con Tom Cruise e Anthony Edwards",
+    "hint_more": "Film del 1986 diretto da Tony Scott, con Tom Cruise, Anthony Edwards e Kelly McGillis. Racconta la storia di Pete 'Maverick' Mitchell, un pilota di caccia che frequenta la scuola Top Gun.",
+    "ambiguity_note": "Le opzioni includono Top Gun: Maverick (sequel), Days of Thunder (azione) e Mission: Impossible (azione). Top Gun è noto per questa frase motivazionale e per la sua atmosfera epica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Top Gun' (1986), questa frase viene pronunciata da Pete 'Maverick' Mitchell (Tom Cruise) e Nick 'Goose' Bradshaw (Anthony Edwards) per esprimere la loro determinazione. La frase esprime la fiducia e la forza del personaggio: nonostante le difficoltà, sono convinti di essere i migliori e di riuscire in qualsiasi impresa, riflettendo l'atmosfera epica del film e la sua celebrazione dell'eroismo."
+  },
+  {
+    "id": "e86",
+    "quote": "La vita è un banchetto e solo gli idioti muoiono di fame!",
+    "author": "La signora mia zia",
+    "choices": [
+      "La signora mia zia",
+      "Auntie Mame",
+      "Gypsy",
+      "The Women"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1958",
+    "source_title": "Auntie Mame",
+    "source_link": "https://en.wikipedia.org/wiki/Auntie_Mame_(film)",
+    "tags": [
+      "cinema",
+      "commedia",
+      "drammatico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film commedia con Rosalind Russell",
+    "hint_more": "Film del 1958 diretto da Morton DaCosta, con Rosalind Russell e Forrest Tucker. Racconta la storia di Mame Dennis, una zia eccentrica che cresce il nipote Patrick con la sua filosofia di vita.",
+    "ambiguity_note": "Le opzioni includono Auntie Mame (titolo originale), Gypsy (musical) e The Women (commedia). La signora mia zia è noto per questa frase filosofica e per il suo messaggio sulla vita.",
+    "language_orig": "IT",
+    "context": "Nel film 'La signora mia zia' (1958), questa frase viene pronunciata da Mame Dennis (Rosalind Russell) per esprimere la sua filosofia di vita. La frase esprime l'ottimismo del personaggio: la vita è piena di opportunità e solo chi non sa coglierle rimane indietro, riflettendo il messaggio positivo del film e la sua celebrazione della gioia di vivere."
+  },
+  {
+    "id": "e87",
+    "quote": "Agitato, non mescolato",
+    "author": "Agente 007 - Missione Goldfinger",
+    "choices": [
+      "Agente 007 - Missione Goldfinger",
+      "Goldfinger",
+      "Dr. No",
+      "From Russia with Love"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1964",
+    "source_title": "Goldfinger",
+    "source_link": "https://en.wikipedia.org/wiki/Goldfinger_(film)",
+    "tags": [
+      "cinema",
+      "azione",
+      "spionaggio"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film di spionaggio con Sean Connery come James Bond",
+    "hint_more": "Film del 1964 diretto da Guy Hamilton, con Sean Connery, Honor Blackman e Gert Fröbe. Terzo film della saga James Bond, racconta la missione di 007 contro Auric Goldfinger.",
+    "ambiguity_note": "Le opzioni includono Goldfinger (titolo originale), Dr. No (spionaggio) e From Russia with Love (spionaggio). Agente 007 - Missione Goldfinger è noto per questa frase iconica e per l'eleganza di Bond.",
+    "language_orig": "IT",
+    "context": "Nel film 'Agente 007 - Missione Goldfinger' (1964), questa frase viene pronunciata da James Bond (Sean Connery) per esprimere la sua preferenza per il martini. La frase esprime l'eleganza e la raffinatezza del personaggio: anche nei dettagli più piccoli, Bond ha le sue preferenze precise, riflettendo l'atmosfera sofisticata del film e la sua celebrazione dello stile."
+  },
+  {
+    "id": "e88",
+    "quote": "Ascoltali. I figli della notte. Quale dolce musica emettono",
+    "author": "Dracula",
+    "choices": [
+      "Dracula",
+      "Nosferatu",
+      "Frankenstein",
+      "The Mummy"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1931",
+    "source_title": "Dracula",
+    "source_link": "https://en.wikipedia.org/wiki/Dracula_(1931_film)",
+    "tags": [
+      "cinema",
+      "horror",
+      "gotico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film horror con Bela Lugosi come Dracula",
+    "hint_more": "Film del 1931 diretto da Tod Browning, con Bela Lugosi, Helen Chandler e David Manners. Primo film sonoro di Dracula, racconta la storia del conte vampiro che si trasferisce a Londra.",
+    "ambiguity_note": "Le opzioni includono Nosferatu (horror), Frankenstein (horror) e The Mummy (horror). Dracula è noto per questa frase gotica e per la sua atmosfera misteriosa.",
+    "language_orig": "IT",
+    "context": "Nel film 'Dracula' (1931), questa frase viene pronunciata dal Conte Dracula (Bela Lugosi) per esprimere la sua connessione con la notte. La frase esprime la natura vampirica del personaggio: Dracula si sente parte del mondo notturno e trova bellezza nel suono dei lupi, riflettendo l'atmosfera gotica del film e la sua celebrazione del mistero."
+  },
+  {
+    "id": "e89",
+    "quote": "Madre di misericordia, è questa la fine di Rico?",
+    "author": "Piccolo Cesare",
+    "choices": [
+      "Piccolo Cesare",
+      "Little Caesar",
+      "The Public Enemy",
+      "Scarface"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1930",
+    "source_title": "Little Caesar",
+    "source_link": "https://en.wikipedia.org/wiki/Little_Caesar_(film)",
+    "tags": [
+      "cinema",
+      "gangster",
+      "drammatico"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Film gangster con Edward G. Robinson",
+    "hint_more": "Film del 1930 diretto da Mervyn LeRoy, con Edward G. Robinson, Douglas Fairbanks Jr. e Glenda Farrell. Racconta la storia di Rico Bandello, un gangster che sale al potere nella criminalità organizzata.",
+    "ambiguity_note": "Le opzioni includono Little Caesar (titolo originale), The Public Enemy (gangster) e Scarface (gangster). Piccolo Cesare è noto per questa frase drammatica e per la sua atmosfera noir.",
+    "language_orig": "IT",
+    "context": "Nel film 'Piccolo Cesare' (1930), questa frase viene pronunciata da Cesare Enrico 'Rico' Bandello (Edward G. Robinson) durante la sua caduta. La frase esprime la disperazione del personaggio: Rico si rende conto che la sua fine è vicina e invoca la misericordia divina, riflettendo l'atmosfera drammatica del film e la sua celebrazione della tragedia."
+  },
+  {
+    "id": "e90",
+    "quote": "Niente grucce di ferro, che ci fanno le grucce di ferro in questo armadio, io te l'ho detto) no, perché, te l'ho detto, che ci fanno!",
+    "author": "Mammina cara",
+    "choices": [
+      "Mammina cara",
+      "Mommie Dearest",
+      "Whatever Happened to Baby Jane?",
+      "Sunset Boulevard"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1981",
+    "source_title": "Mommie Dearest",
+    "source_link": "https://en.wikipedia.org/wiki/Mommie_Dearest_(film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "biografico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Faye Dunaway come Joan Crawford",
+    "hint_more": "Film del 1981 diretto da Frank Perry, con Faye Dunaway, Diana Scarwid e Steve Forrest. Racconta la storia di Joan Crawford e del suo rapporto difficile con la figlia adottiva Christina.",
+    "ambiguity_note": "Le opzioni includono Mommie Dearest (titolo originale), Whatever Happened to Baby Jane? (dramma) e Sunset Boulevard (dramma). Mammina cara è noto per questa frase drammatica e per la sua atmosfera gotica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Mammina cara' (1981), questa frase viene pronunciata da Joan Crawford (Faye Dunaway) durante una delle sue crisi. La frase esprime la paranoia e l'instabilità del personaggio: Joan è ossessionata dalle grucce di ferro e non riesce a controllare le sue emozioni, riflettendo l'atmosfera drammatica del film e la sua esplorazione della psiche umana."
+  },
+  {
+    "id": "e91",
+    "quote": "Aspetta un minuto, aspetta un minuto. Non avete ancora sentito niente!",
+    "author": "Il cantante di jazz",
+    "choices": [
+      "Il cantante di jazz",
+      "The Jazz Singer",
+      "Singin' in the Rain",
+      "A Star Is Born"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1927",
+    "source_title": "The Jazz Singer",
+    "source_link": "https://en.wikipedia.org/wiki/The_Jazz_Singer_(1927_film)",
+    "tags": [
+      "cinema",
+      "musical",
+      "drammatico"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Primo film sonoro con Al Jolson",
+    "hint_more": "Film del 1927 diretto da Alan Crosland, con Al Jolson, May McAvoy e Warner Oland. Primo film sonoro della storia del cinema, racconta la storia di Jakie Rabinowitz che diventa cantante jazz.",
+    "ambiguity_note": "Le opzioni includono The Jazz Singer (titolo originale), Singin' in the Rain (musical) e A Star Is Born (musical). Il cantante di jazz è noto per questa frase storica e per la sua importanza nel cinema.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il cantante di jazz' (1927), questa frase viene pronunciata da Jakie Rabinowitz/Jack Robin (Al Jolson) per esprimere la sua determinazione. La frase esprime la passione del personaggio: Jakie è convinto che la sua performance sarà straordinaria e vuole che tutti la ascoltino, riflettendo l'importanza storica del film e la sua celebrazione della musica."
+  },
+  {
+    "id": "e92",
+    "quote": "Certamente non puoi essere serio! - Sono serio…e non chiamarmi Shirley",
+    "author": "L'aereo più pazzo del mondo",
+    "choices": [
+      "L'aereo più pazzo del mondo",
+      "Airplane!",
+      "The Naked Gun",
+      "Police Squad!"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1980",
+    "source_title": "Airplane!",
+    "source_link": "https://en.wikipedia.org/wiki/Airplane!",
+    "tags": [
+      "cinema",
+      "commedia",
+      "parodia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film comico con Robert Hays e Leslie Nielsen",
+    "hint_more": "Film del 1980 diretto da Jim Abrahams, David Zucker e Jerry Zucker, con Robert Hays, Julie Hagerty e Leslie Nielsen. Parodia dei film catastrofici, racconta la storia di un pilota che deve atterrare un aereo in emergenza.",
+    "ambiguity_note": "Le opzioni includono Airplane! (titolo originale), The Naked Gun (commedia) e Police Squad! (commedia). L'aereo più pazzo del mondo è noto per questa battuta comica e per l'umorismo di Leslie Nielsen.",
+    "language_orig": "IT",
+    "context": "Nel film 'L'aereo più pazzo del mondo' (1980), questa battuta viene pronunciata da Ted Striker (Robert Hays) e Rumack (Leslie Nielsen) per esprimere un malinteso comico. La battuta esprime l'umorismo del film: invece di rispondere seriamente, Rumack fa un gioco di parole divertente, riflettendo l'umorismo del film e la sua celebrazione della comicità."
+  },
+  {
+    "id": "e93",
+    "quote": "Apri la saracinesca esterna, HAL",
+    "author": "2001: Odissea nello spazio",
+    "choices": [
+      "2001: Odissea nello spazio",
+      "2001: A Space Odyssey",
+      "Blade Runner",
+      "Alien"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1968",
+    "source_title": "2001: A Space Odyssey",
+    "source_link": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+    "tags": [
+      "cinema",
+      "sci-fi",
+      "filosofico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film sci-fi di Stanley Kubrick con Keir Dullea",
+    "hint_more": "Film del 1968 diretto da Stanley Kubrick, con Keir Dullea, Gary Lockwood e Douglas Rain. Racconta la storia di un'astronave che viaggia verso Giove con l'aiuto del computer HAL 9000.",
+    "ambiguity_note": "Le opzioni includono 2001: A Space Odyssey (titolo originale), Blade Runner (sci-fi) e Alien (sci-fi). 2001: Odissea nello spazio è noto per questa frase iconica e per la sua atmosfera futuristica.",
+    "language_orig": "IT",
+    "context": "Nel film '2001: Odissea nello spazio' (1968), questa frase viene pronunciata da David Bowman (Keir Dullea) per comunicare con HAL 9000. La frase esprime la tensione del momento: Bowman sta cercando di riprendere il controllo dell'astronave dopo che HAL ha iniziato a comportarsi in modo strano, riflettendo l'atmosfera futuristica del film e la sua esplorazione della tecnologia."
+  },
+  {
+    "id": "e94",
+    "quote": "Il Soylent è fatto con i morti!",
+    "author": "2022: i sopravvissuti",
+    "choices": [
+      "2022: i sopravvissuti",
+      "Soylent Green",
+      "Planet of the Apes",
+      "The Omega Man"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1973",
+    "source_title": "Soylent Green",
+    "source_link": "https://en.wikipedia.org/wiki/Soylent_Green",
+    "tags": [
+      "cinema",
+      "sci-fi",
+      "distopico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film sci-fi distopico con Charlton Heston",
+    "hint_more": "Film del 1973 diretto da Richard Fleischer, con Charlton Heston, Leigh Taylor-Young e Chuck Connors. Racconta la storia di un detective che scopre la verità sul cibo sintetico in un futuro distopico.",
+    "ambiguity_note": "Le opzioni includono Soylent Green (titolo originale), Planet of the Apes (sci-fi) e The Omega Man (sci-fi). 2022: i sopravvissuti è noto per questa frase scioccante e per la sua atmosfera distopica.",
+    "language_orig": "IT",
+    "context": "Nel film '2022: i sopravvissuti' (1973), questa frase viene pronunciata da Robert Thorn (Charlton Heston) per rivelare la verità scioccante. La frase esprime l'orrore della scoperta: il cibo che tutti mangiano è fatto con i cadaveri umani, riflettendo l'atmosfera distopica del film e la sua critica sociale."
+  },
+  {
+    "id": "e95",
+    "quote": "Hasta la vista, baby",
+    "author": "Terminator",
+    "choices": [
+      "Terminator",
+      "The Terminator",
+      "Terminator 2: Judgment Day",
+      "Predator"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1984",
+    "source_title": "The Terminator",
+    "source_link": "https://en.wikipedia.org/wiki/The_Terminator",
+    "tags": [
+      "cinema",
+      "sci-fi",
+      "azione"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film sci-fi con Arnold Schwarzenegger come Terminator",
+    "hint_more": "Film del 1984 diretto da James Cameron, con Arnold Schwarzenegger, Linda Hamilton e Michael Biehn. Racconta la storia di un cyborg assassino inviato dal futuro per uccidere Sarah Connor.",
+    "ambiguity_note": "Le opzioni includono The Terminator (titolo originale), Terminator 2: Judgment Day (sequel) e Predator (azione). Terminator è noto per questa frase iconica e per l'umorismo di Schwarzenegger.",
+    "language_orig": "IT",
+    "context": "Nel film 'Terminator' (1984), questa frase viene pronunciata dal Terminator (Arnold Schwarzenegger) per esprimere la sua determinazione. La frase esprime l'umorismo del personaggio: anche se è un cyborg assassino, ha un senso dell'umorismo particolare, riflettendo l'atmosfera del film e la sua celebrazione dell'azione."
+  },
+  {
+    "id": "e96",
+    "quote": "Sono il lupo cattivo!",
+    "author": "Shining",
+    "choices": [
+      "Shining",
+      "The Shining",
+      "Carrie",
+      "The Exorcist"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1980",
+    "source_title": "The Shining",
+    "source_link": "https://en.wikipedia.org/wiki/The_Shining_(film)",
+    "tags": [
+      "cinema",
+      "horror",
+      "psicologico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film horror di Stanley Kubrick con Jack Nicholson",
+    "hint_more": "Film del 1980 diretto da Stanley Kubrick, con Jack Nicholson, Shelley Duvall e Danny Lloyd. Racconta la storia di Jack Torrance, uno scrittore che diventa custode di un hotel isolato e impazzisce.",
+    "ambiguity_note": "Le opzioni includono The Shining (titolo originale), Carrie (horror) e The Exorcist (horror). Shining è noto per questa frase inquietante e per la performance di Jack Nicholson.",
+    "language_orig": "IT",
+    "context": "Nel film 'Shining' (1980), questa frase viene pronunciata da Jack Torrance (Jack Nicholson) durante la sua discesa nella follia. La frase esprime la trasformazione del personaggio: Jack si identifica con il lupo cattivo delle fiabe, riflettendo l'atmosfera inquietante del film e la sua esplorazione della psiche umana."
+  },
+  {
+    "id": "e97",
+    "quote": "Con tanti ritrovi nel mondo, doveva venire proprio nel mio",
+    "author": "Casablanca",
+    "choices": [
+      "Casablanca",
+      "The Maltese Falcon",
+      "The Big Sleep",
+      "Double Indemnity"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1942",
+    "source_title": "Casablanca",
+    "source_link": "https://en.wikipedia.org/wiki/Casablanca_(film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "romantico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Humphrey Bogart e Ingrid Bergman",
+    "hint_more": "Film del 1942 diretto da Michael Curtiz, con Humphrey Bogart, Ingrid Bergman e Paul Henreid. Racconta la storia di Rick Blaine, proprietario di un bar a Casablanca durante la Seconda Guerra Mondiale.",
+    "ambiguity_note": "Le opzioni includono The Maltese Falcon (noir), The Big Sleep (noir) e Double Indemnity (noir). Casablanca è noto per questa frase ironica e per l'umorismo di Bogart.",
+    "language_orig": "IT",
+    "context": "Nel film 'Casablanca' (1942), questa frase viene pronunciata da Rick Blaine (Humphrey Bogart) per esprimere l'ironia della situazione. La frase esprime l'umorismo del personaggio: Rick si rende conto che il destino ha un senso dell'umorismo particolare, riflettendo l'atmosfera del film e la sua celebrazione dell'amore e del sacrificio."
+  },
+  {
+    "id": "e98",
+    "quote": "Toglimi quelle zampacce di dosso, maledetto sporco gorilla!",
+    "author": "Il pianeta delle scimmie",
+    "choices": [
+      "Il pianeta delle scimmie",
+      "Planet of the Apes",
+      "Conquest of the Planet of the Apes",
+      "Escape from the Planet of the Apes"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1968",
+    "source_title": "Planet of the Apes",
+    "source_link": "https://en.wikipedia.org/wiki/Planet_of_the_Apes_(1968_film)",
+    "tags": [
+      "cinema",
+      "sci-fi",
+      "drammatico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film sci-fi con Charlton Heston e le scimmie",
+    "hint_more": "Film del 1968 diretto da Franklin J. Schaffner, con Charlton Heston, Roddy McDowall e Kim Hunter. Racconta la storia di George Taylor, un astronauta che atterra su un pianeta dominato dalle scimmie.",
+    "ambiguity_note": "Le opzioni includono Planet of the Apes (titolo originale), Conquest of the Planet of the Apes (sequel) e Escape from the Planet of the Apes (sequel). Il pianeta delle scimmie è noto per questa frase drammatica e per la sua atmosfera distopica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il pianeta delle scimmie' (1968), questa frase viene pronunciata da George Taylor (Charlton Heston) per esprimere la sua rabbia e frustrazione. La frase esprime la disperazione del personaggio: Taylor si rende conto che il mondo che conosceva è cambiato e si sente impotente, riflettendo l'atmosfera distopica del film e la sua critica sociale."
+  },
+  {
+    "id": "e99",
+    "quote": "Elementare, Watson!",
+    "author": "Le avventure di Sherlock Holmes",
+    "choices": [
+      "Le avventure di Sherlock Holmes",
+      "The Adventures of Sherlock Holmes",
+      "Sherlock Holmes",
+      "The Hound of the Baskervilles"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1939",
+    "source_title": "The Adventures of Sherlock Holmes",
+    "source_link": "https://en.wikipedia.org/wiki/The_Adventures_of_Sherlock_Holmes_(film)",
+    "tags": [
+      "cinema",
+      "mistero",
+      "drammatico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film mistero con Basil Rathbone come Sherlock Holmes",
+    "hint_more": "Film del 1939 diretto da Alfred L. Werker, con Basil Rathbone, Nigel Bruce e Ida Lupino. Racconta le avventure del detective Sherlock Holmes e del suo assistente Dr. Watson.",
+    "ambiguity_note": "Le opzioni includono The Adventures of Sherlock Holmes (titolo originale), Sherlock Holmes (mistero) e The Hound of the Baskervilles (mistero). Le avventure di Sherlock Holmes è noto per questa frase iconica e per l'eleganza del personaggio.",
+    "language_orig": "IT",
+    "context": "Nel film 'Le avventure di Sherlock Holmes' (1939), questa frase viene pronunciata da Sherlock Holmes (Basil Rathbone) per esprimere la sua confidenza. La frase esprime l'eleganza del personaggio: Holmes è così sicuro delle sue deduzioni che le considera elementari, riflettendo l'atmosfera del film e la sua celebrazione dell'intelletto."
+  },
+  {
+    "id": "e100",
+    "quote": "Se lo costruisci, lui tornerà",
+    "author": "L'uomo dei sogni",
+    "choices": [
+      "L'uomo dei sogni",
+      "Field of Dreams",
+      "The Natural",
+      "Bull Durham"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1989",
+    "source_title": "Field of Dreams",
+    "source_link": "https://en.wikipedia.org/wiki/Field_of_Dreams",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "sport"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Kevin Costner e Ray Liotta",
+    "hint_more": "Film del 1989 diretto da Phil Alden Robinson, con Kevin Costner, Ray Liotta e James Earl Jones. Racconta la storia di un agricoltore che costruisce un campo da baseball nel suo mais.",
+    "ambiguity_note": "Le opzioni includono Field of Dreams (titolo originale), The Natural (sport) e Bull Durham (sport). L'uomo dei sogni è noto per questa frase mistica e per il suo messaggio sui sogni.",
+    "language_orig": "IT",
+    "context": "Nel film 'L'uomo dei sogni' (1989), questa frase viene pronunciata da Shoeless Joe Jackson (Ray Liotta) per ispirare Ray Kinsella. La frase esprime la filosofia del film: se credi nei tuoi sogni e li costruisci, tutto è possibile, riflettendo il messaggio positivo del film e la sua celebrazione della speranza."
+  },
+  {
+    "id": "e101",
+    "quote": "Oggi, mi considero l'uomo più fortunato sulla faccia della terra",
+    "author": "L'idolo delle folle",
+    "choices": [
+      "L'idolo delle folle",
+      "The Pride of the Yankees",
+      "The Natural",
+      "Field of Dreams"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1942",
+    "source_title": "The Pride of the Yankees",
+    "source_link": "https://en.wikipedia.org/wiki/The_Pride_of_the_Yankees",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "biografico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film biografico con Gary Cooper come Lou Gehrig",
+    "hint_more": "Film del 1942 diretto da Sam Wood, con Gary Cooper, Teresa Wright e Walter Brennan. Racconta la storia di Lou Gehrig, leggendario giocatore di baseball dei New York Yankees.",
+    "ambiguity_note": "Le opzioni includono The Pride of the Yankees (titolo originale), The Natural (sport) e Field of Dreams (sport). L'idolo delle folle è noto per questa frase commovente e per il suo messaggio sulla gratitudine.",
+    "language_orig": "IT",
+    "context": "Nel film 'L'idolo delle folle' (1942), questa frase viene pronunciata da Lou Gehrig (Gary Cooper) durante il suo discorso di addio al baseball. La frase esprime la gratitudine del personaggio: nonostante la malattia, Gehrig si considera fortunato per aver vissuto la sua vita, riflettendo il messaggio positivo del film e la sua celebrazione della forza d'animo."
+  },
+  {
+    "id": "e102",
+    "quote": "Aspetto fuori",
+    "author": "Terminator",
+    "choices": [
+      "Terminator",
+      "The Terminator",
+      "Terminator 2: Judgment Day",
+      "Predator"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1984",
+    "source_title": "The Terminator",
+    "source_link": "https://en.wikipedia.org/wiki/The_Terminator",
+    "tags": [
+      "cinema",
+      "sci-fi",
+      "azione"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film sci-fi con Arnold Schwarzenegger come Terminator",
+    "hint_more": "Film del 1984 diretto da James Cameron, con Arnold Schwarzenegger, Linda Hamilton e Michael Biehn. Racconta la storia di un cyborg assassino inviato dal futuro per uccidere Sarah Connor.",
+    "ambiguity_note": "Le opzioni includono The Terminator (titolo originale), Terminator 2: Judgment Day (sequel) e Predator (azione). Terminator è noto per questa frase minacciosa e per l'atmosfera del film.",
+    "language_orig": "IT",
+    "context": "Nel film 'Terminator' (1984), questa frase viene pronunciata dal Terminator (Arnold Schwarzenegger) per esprimere la sua determinazione. La frase esprime la minaccia del personaggio: il Terminator è paziente e aspetterà il momento giusto per colpire, riflettendo l'atmosfera del film e la sua celebrazione dell'azione."
+  },
+  {
+    "id": "e103",
+    "quote": "Documenti? No abbiamo documenti! Non ci occorrono documenti! E noi non dobbiamo mostrare documenti a nessuno!",
+    "author": "Il tesoro della Sierra Madre",
+    "choices": [
+      "Il tesoro della Sierra Madre",
+      "The Treasure of the Sierra Madre",
+      "The Maltese Falcon",
+      "The Big Sleep"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1948",
+    "source_title": "The Treasure of the Sierra Madre",
+    "source_link": "https://en.wikipedia.org/wiki/The_Treasure_of_the_Sierra_Madre",
+    "tags": [
+      "cinema",
+      "avventura",
+      "drammatico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film avventura con Humphrey Bogart e Walter Huston",
+    "hint_more": "Film del 1948 diretto da John Huston, con Humphrey Bogart, Walter Huston e Tim Holt. Racconta la storia di tre uomini che cercano oro in Messico e della loro discesa nella paranoia.",
+    "ambiguity_note": "Le opzioni includono The Treasure of the Sierra Madre (titolo originale), The Maltese Falcon (noir) e The Big Sleep (noir). Il tesoro della Sierra Madre è noto per questa frase comica e per l'umorismo del personaggio.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il tesoro della Sierra Madre' (1948), questa frase viene pronunciata da Gold Hat (Alfonso Bedoya) per esprimere la sua confusione. La frase esprime l'umorismo del personaggio: Gold Hat non capisce cosa siano i documenti e si rifiuta di mostrarli, riflettendo l'umorismo del film e la sua celebrazione dell'avventura."
+  },
+  {
+    "id": "e104",
+    "quote": "Ci serve una barca più grossa",
+    "author": "Lo squalo",
+    "choices": [
+      "Lo squalo",
+      "Jaws",
+      "Deep Blue Sea",
+      "The Meg"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1975",
+    "source_title": "Jaws",
+    "source_link": "https://en.wikipedia.org/wiki/Jaws_(film)",
+    "tags": [
+      "cinema",
+      "horror",
+      "thriller"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film horror con Roy Scheider e Robert Shaw",
+    "hint_more": "Film del 1975 diretto da Steven Spielberg, con Roy Scheider, Robert Shaw e Richard Dreyfuss. Racconta la storia di un grande squalo bianco che terrorizza una cittadina costiera.",
+    "ambiguity_note": "Le opzioni includono Jaws (titolo originale), Deep Blue Sea (horror) e The Meg (horror). Lo squalo è noto per questa frase drammatica e per la sua atmosfera di tensione.",
+    "language_orig": "IT",
+    "context": "Nel film 'Lo squalo' (1975), questa frase viene pronunciata da Martin Brody (Roy Scheider) per esprimere la sua realizzazione. La frase esprime la paura del personaggio: Brody si rende conto che lo squalo è molto più grande di quanto pensassero, riflettendo l'atmosfera di tensione del film e la sua celebrazione del terrore."
+  },
+  {
+    "id": "e105",
+    "quote": "Sai fischiare, no? Unisci le labbra… e soffia",
+    "author": "Acque del sud",
+    "choices": [
+      "Acque del sud",
+      "To Have and Have Not",
+      "The Big Sleep",
+      "Key Largo"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1944",
+    "source_title": "To Have and Have Not",
+    "source_link": "https://en.wikipedia.org/wiki/To_Have_and_Have_Not_(film)",
+    "tags": [
+      "cinema",
+      "noir",
+      "romantico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film noir con Humphrey Bogart e Lauren Bacall",
+    "hint_more": "Film del 1944 diretto da Howard Hawks, con Humphrey Bogart, Lauren Bacall e Walter Brennan. Racconta la storia di un capitano di barca che si innamora di una cantante durante la Seconda Guerra Mondiale.",
+    "ambiguity_note": "Le opzioni includono To Have and Have Not (titolo originale), The Big Sleep (noir) e Key Largo (noir). Acque del sud è noto per questa frase seducente e per la chimica tra i protagonisti.",
+    "language_orig": "IT",
+    "context": "Nel film 'Acque del sud' (1944), questa frase viene pronunciata da Marie 'Slim' Browning (Lauren Bacall) per sedurre Harry Morgan. La frase esprime la seduzione del personaggio: Slim usa il fischiare come metafora per insegnare a Harry come baciare, riflettendo l'atmosfera romantica del film e la sua celebrazione dell'amore."
+  },
+  {
+    "id": "e106",
+    "quote": "Noi rapiniamo banche",
+    "author": "Gangster Story",
+    "choices": [
+      "Gangster Story",
+      "Bonnie and Clyde",
+      "The Public Enemy",
+      "Little Caesar"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1967",
+    "source_title": "Bonnie and Clyde",
+    "source_link": "https://en.wikipedia.org/wiki/Bonnie_and_Clyde_(film)",
+    "tags": [
+      "cinema",
+      "gangster",
+      "drammatico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film gangster con Warren Beatty e Faye Dunaway",
+    "hint_more": "Film del 1967 diretto da Arthur Penn, con Warren Beatty, Faye Dunaway e Gene Hackman. Racconta la storia vera di Bonnie Parker e Clyde Barrow, una coppia di rapinatori durante la Grande Depressione.",
+    "ambiguity_note": "Le opzioni includono Bonnie and Clyde (titolo originale), The Public Enemy (gangster) e Little Caesar (gangster). Gangster Story è noto per questa frase diretta e per la sua atmosfera romantica.",
+    "language_orig": "IT",
+    "context": "Nel film 'Gangster Story' (1967), questa frase viene pronunciata da Clyde Barrow (Warren Beatty) per esprimere la sua filosofia di vita. La frase esprime la semplicità del personaggio: Clyde non ha bisogno di giustificazioni complicate per le sue azioni, riflettendo l'atmosfera del film e la sua celebrazione della libertà."
+  },
+  {
+    "id": "e107",
+    "quote": "Avremo sempre Parigi",
+    "author": "Casablanca",
+    "choices": [
+      "Casablanca",
+      "The Maltese Falcon",
+      "The Big Sleep",
+      "Double Indemnity"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1942",
+    "source_title": "Casablanca",
+    "source_link": "https://en.wikipedia.org/wiki/Casablanca_(film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "romantico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Humphrey Bogart e Ingrid Bergman",
+    "hint_more": "Film del 1942 diretto da Michael Curtiz, con Humphrey Bogart, Ingrid Bergman e Paul Henreid. Racconta la storia di Rick Blaine, proprietario di un bar a Casablanca durante la Seconda Guerra Mondiale.",
+    "ambiguity_note": "Le opzioni includono The Maltese Falcon (noir), The Big Sleep (noir) e Double Indemnity (noir). Casablanca è noto per questa frase romantica e per il suo messaggio sull'amore.",
+    "language_orig": "IT",
+    "context": "Nel film 'Casablanca' (1942), questa frase viene pronunciata da Rick Blaine (Humphrey Bogart) per consolare Ilsa Lund. La frase esprime la nostalgia del personaggio: Rick ricorda i bei momenti passati a Parigi con Ilsa, riflettendo l'atmosfera romantica del film e la sua celebrazione dell'amore perduto."
+  },
+  {
+    "id": "e108",
+    "quote": "Dopotutto, domani è un altro giorno",
+    "author": "Via col vento",
+    "choices": [
+      "Via col vento",
+      "Gone with the Wind",
+      "The Wizard of Oz",
+      "Casablanca"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1939",
+    "source_title": "Gone with the Wind",
+    "source_link": "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "romantico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Vivien Leigh e Clark Gable",
+    "hint_more": "Film del 1939 diretto da Victor Fleming, con Vivien Leigh, Clark Gable e Olivia de Havilland. Racconta la storia di Rossella O'Hara durante la Guerra Civile Americana e la Ricostruzione.",
+    "ambiguity_note": "Le opzioni includono Gone with the Wind (titolo originale), The Wizard of Oz (fantasy) e Gone with the Wind (dramma). Via col vento è noto per questa frase motivazionale e per il suo messaggio sulla speranza.",
+    "language_orig": "IT",
+    "context": "Nel film 'Via col vento' (1939), questa frase viene pronunciata da Rossella O'Hara (Vivien Leigh) per esprimere la sua determinazione. La frase esprime l'ottimismo del personaggio: nonostante le difficoltà, Rossella crede che il futuro possa essere migliore, riflettendo il messaggio positivo del film e la sua celebrazione della resilienza."
+  },
+  {
+    "id": "e109",
+    "quote": "Voglio essere sola",
+    "author": "Grand Hotel",
+    "choices": [
+      "Grand Hotel",
+      "Camille",
+      "Ninotchka",
+      "Anna Karenina"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1932",
+    "source_title": "Grand Hotel",
+    "source_link": "https://en.wikipedia.org/wiki/Grand_Hotel_(1932_film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "romantico"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Greta Garbo e John Barrymore",
+    "hint_more": "Film del 1932 diretto da Edmund Goulding, con Greta Garbo, John Barrymore e Joan Crawford. Racconta le storie intrecciate di diversi ospiti di un hotel di lusso a Berlino.",
+    "ambiguity_note": "Le opzioni includono Camille (dramma), Ninotchka (commedia) e Anna Karenina (dramma). Grand Hotel è noto per questa frase iconica e per la performance di Greta Garbo.",
+    "language_orig": "IT",
+    "context": "Nel film 'Grand Hotel' (1932), questa frase viene pronunciata da Grusinskaya (Greta Garbo) per esprimere il suo desiderio di solitudine. La frase esprime la malinconia del personaggio: Grusinskaya è una ballerina famosa ma si sente sola e vuole stare da sola, riflettendo l'atmosfera del film e la sua esplorazione della solitudine."
+  },
+  {
+    "id": "e110",
+    "quote": "Tu non puoi reggere la verità!",
+    "author": "Codice d'onore",
+    "choices": [
+      "Codice d'onore",
+      "A Few Good Men",
+      "The Firm",
+      "The Pelican Brief"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1992",
+    "source_title": "A Few Good Men",
+    "source_link": "https://en.wikipedia.org/wiki/A_Few_Good_Men_(film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "thriller"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Tom Cruise e Jack Nicholson",
+    "hint_more": "Film del 1992 diretto da Rob Reiner, con Tom Cruise, Jack Nicholson e Demi Moore. Racconta la storia di un avvocato militare che deve difendere due marines accusati di omicidio.",
+    "ambiguity_note": "Le opzioni includono A Few Good Men (titolo originale), The Firm (thriller) e The Pelican Brief (thriller). Codice d'onore è noto per questa frase drammatica e per la performance di Jack Nicholson.",
+    "language_orig": "IT",
+    "context": "Nel film 'Codice d'onore' (1992), questa frase viene pronunciata dal Col. Nathan R. Jessep (Jack Nicholson) durante il suo interrogatorio. La frase esprime la rabbia del personaggio: Jessep crede che la verità sia troppo dura per essere accettata, riflettendo l'atmosfera drammatica del film e la sua esplorazione della giustizia."
+  },
+  {
+    "id": "e111",
+    "quote": "Chi salva una vita, salva il mondo intero",
+    "author": "Schindler's List",
+    "choices": [
+      "Schindler's List",
+      "La lista di Schindler",
+      "The Pianist",
+      "Life is Beautiful"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1993",
+    "source_title": "Schindler's List",
+    "source_link": "https://en.wikipedia.org/wiki/Schindler%27s_List",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "storico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Liam Neeson e Ben Kingsley",
+    "hint_more": "Film del 1993 diretto da Steven Spielberg, con Liam Neeson, Ben Kingsley e Ralph Fiennes. Racconta la storia vera di Oskar Schindler, un industriale tedesco che salvò la vita di oltre 1000 ebrei durante l'Olocausto.",
+    "ambiguity_note": "Le opzioni includono La lista di Schindler (titolo italiano), The Pianist (dramma storico) e Life is Beautiful (dramma). Schindler's List è noto per questa frase commovente e per il suo messaggio sulla speranza.",
+    "language_orig": "IT",
+    "context": "Nel film 'Schindler's List' (1993), questa frase viene pronunciata da Itzhak Stern (Ben Kingsley) per esprimere la filosofia del film. La frase esprime il messaggio centrale: ogni vita salvata ha un valore inestimabile, riflettendo il messaggio positivo del film e la sua celebrazione dell'umanità."
+  },
+  {
+    "id": "e112",
+    "quote": "Stupido è chi lo stupido fa",
+    "author": "Forrest Gump",
+    "choices": [
+      "Forrest Gump",
+      "The Curious Case of Benjamin Button",
+      "Big Fish",
+      "The Green Mile"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1994",
+    "source_title": "Forrest Gump",
+    "source_link": "https://en.wikipedia.org/wiki/Forrest_Gump",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "commedia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Tom Hanks e Robin Wright",
+    "hint_more": "Film del 1994 diretto da Robert Zemeckis, con Tom Hanks, Robin Wright e Gary Sinise. Racconta la storia di Forrest Gump, un uomo con disabilità intellettiva che vive eventi storici importanti.",
+    "ambiguity_note": "Le opzioni includono The Curious Case of Benjamin Button (dramma), Big Fish (dramma) e The Green Mile (dramma). Forrest Gump è noto per questa frase saggia e per il suo messaggio sulla semplicità.",
+    "language_orig": "IT",
+    "context": "Nel film 'Forrest Gump' (1994), questa frase viene pronunciata da Forrest Gump (Tom Hanks) per esprimere la sua filosofia di vita. La frase esprime la saggezza del personaggio: la stupidità non è una condizione fisica ma una scelta, riflettendo il messaggio positivo del film e la sua celebrazione della semplicità."
+  },
+  {
+    "id": "e113",
+    "quote": "Non permettere mai a nessuno di dirti che non sai fare qualcosa. Se hai un sogno tu lo devi proteggere. Quando le persone non sanno fare qualcosa lo dicono a te che non la sai fare. Se vuoi qualcosa, vai e inseguila. Punto.",
+    "author": "La ricerca della felicità",
+    "choices": [
+      "La ricerca della felicità",
+      "The Pursuit of Happyness",
+      "Seven Pounds",
+      "I Am Legend"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2006",
+    "source_title": "The Pursuit of Happyness",
+    "source_link": "https://en.wikipedia.org/wiki/The_Pursuit_of_Happyness",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "biografico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Will Smith e Jaden Smith",
+    "hint_more": "Film del 2006 diretto da Gabriele Muccino, con Will Smith, Jaden Smith e Thandie Newton. Racconta la storia vera di Chris Gardner, un uomo che lotta per mantenere il figlio mentre cerca di diventare un broker di successo.",
+    "ambiguity_note": "Le opzioni includono The Pursuit of Happyness (titolo originale) ripetuto tre volte. La ricerca della felicità è noto per questa frase motivazionale e per il suo messaggio sulla perseveranza.",
+    "language_orig": "IT",
+    "context": "Nel film 'La ricerca della felicità' (2006), questa frase viene pronunciata da Chris Gardner (Will Smith) per motivare suo figlio. La frase esprime la determinazione del personaggio: non bisogna mai arrendersi ai sogni e alle aspirazioni, riflettendo il messaggio positivo del film e la sua celebrazione della perseveranza."
+  },
+  {
+    "id": "e114",
+    "quote": "Quando non sei in grado di combattere abbraccia il tuo nemico. Se ha le braccia intorno a te non può puntarti contro il fucile",
+    "author": "Sette anni in Tibet",
+    "choices": [
+      "Sette anni in Tibet",
+      "Seven Years in Tibet",
+      "Kundun",
+      "The Last Emperor"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Seven Years in Tibet",
+    "source_link": "https://en.wikipedia.org/wiki/Seven_Years_in_Tibet_(film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "biografico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film drammatico con Brad Pitt e David Thewlis",
+    "hint_more": "Film del 1997 diretto da Jean-Jacques Annaud, con Brad Pitt, David Thewlis e B.D. Wong. Racconta la storia vera di Heinrich Harrer, un alpinista austriaco che diventa amico del Dalai Lama.",
+    "ambiguity_note": "Le opzioni includono Seven Years in Tibet (titolo originale), Kundun (dramma) e The Last Emperor (dramma). Sette anni in Tibet è noto per questa frase saggia e per il suo messaggio sulla pace.",
+    "language_orig": "IT",
+    "context": "Nel film 'Sette anni in Tibet' (1997), questa frase viene pronunciata dal Dalai Lama per insegnare a Heinrich Harrer la saggezza tibetana. La frase esprime la filosofia del personaggio: la pace si ottiene attraverso la comprensione e l'empatia, riflettendo il messaggio positivo del film e la sua celebrazione della saggezza."
+  },
+  {
+    "id": "e115",
+    "quote": "Il cuore di una donna è un profondo oceano di segreti",
+    "author": "Titanic",
+    "choices": [
+      "Titanic",
+      "Romeo + Juliet",
+      "The Notebook",
+      "Casablanca"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Titanic",
+    "source_link": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+    "tags": [
+      "cinema",
+      "drammatico",
+      "romantico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film romantico con Leonardo DiCaprio e Kate Winslet",
+    "hint_more": "Film del 1997 diretto da James Cameron, con Leonardo DiCaprio, Kate Winslet e Billy Zane. Racconta la storia d'amore tra Jack e Rose a bordo del Titanic durante il suo viaggio inaugurale.",
+    "ambiguity_note": "Le opzioni includono Titanic (titolo originale) ripetuto due volte, The Notebook (romantico) e Casablanca (romantico). Titanic è noto per questa frase romantica e per il suo messaggio sull'amore.",
+    "language_orig": "IT",
+    "context": "Nel film 'Titanic' (1997), questa frase viene pronunciata da Rose DeWitt Bukater (Kate Winslet) per esprimere la complessità dell'amore femminile. La frase esprime la profondità del personaggio: l'amore di una donna è misterioso e profondo come un oceano, riflettendo l'atmosfera romantica del film e la sua celebrazione dell'amore."
+  },
+  {
+    "id": "e116",
+    "quote": "Questo non è il Vietnam, è il bowling: ci sono delle regole",
+    "author": "Il Grande Lebowski",
+    "choices": [
+      "Il Grande Lebowski",
+      "The Big Lebowski",
+      "Fargo",
+      "No Country for Old Men"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1998",
+    "source_title": "The Big Lebowski",
+    "source_link": "https://en.wikipedia.org/wiki/The_Big_Lebowski",
+    "tags": [
+      "cinema",
+      "commedia",
+      "noir"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Film commedia con Jeff Bridges e John Goodman",
+    "hint_more": "Film del 1998 diretto dai fratelli Coen, con Jeff Bridges, John Goodman e Steve Buscemi. Racconta la storia di Jeff 'The Dude' Lebowski, un uomo pigro coinvolto in un caso di rapimento.",
+    "ambiguity_note": "Le opzioni includono The Big Lebowski (titolo originale), Fargo (commedia) e No Country for Old Men (noir). Il Grande Lebowski è noto per questa frase comica e per il suo umorismo surreale.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il Grande Lebowski' (1998), questa frase viene pronunciata da Walter Sobchak (John Goodman) per esprimere la sua frustrazione. La frase esprime l'umorismo del personaggio: Walter confonde la guerra del Vietnam con il bowling, riflettendo l'umorismo surreale del film e la sua celebrazione dell'assurdità."
+  },
+  {
+    "id": "e117",
+    "quote": "Tutti abbiamo sia luce che oscurità dentro di noi. Ciò che conta è da che parte scegliamo di agire. È questo quello che siamo",
+    "author": "Harry Potter e l'ordine della Fenice",
+    "choices": [
+      "Harry Potter e l'ordine della Fenice",
+      "Harry Potter and the Order of the Phoenix",
+      "Harry Potter e la pietra filosofale",
+      "Harry Potter e il calice di fuoco"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2007",
+    "source_title": "Harry Potter and the Order of the Phoenix",
+    "source_link": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Order_of_the_Phoenix_(film)",
+    "tags": [
+      "cinema",
+      "fantasy",
+      "avventura"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film fantasy con Daniel Radcliffe e Emma Watson",
+    "hint_more": "Film del 2007 diretto da David Yates, con Daniel Radcliffe, Emma Watson e Rupert Grint. Racconta le avventure di Harry Potter durante il suo quinto anno a Hogwarts.",
+    "ambiguity_note": "Le opzioni includono Harry Potter and the Order of the Phoenix (titolo originale), Harry Potter e la pietra filosofale (fantasy) e Harry Potter e il calice di fuoco (fantasy). Harry Potter e l'ordine della Fenice è noto per questa frase saggia e per il suo messaggio sulla scelta.",
+    "language_orig": "IT",
+    "context": "Nel film 'Harry Potter e l'ordine della Fenice' (2007), questa frase viene pronunciata da Sirius Black per insegnare a Harry Potter la saggezza. La frase esprime la filosofia del personaggio: ognuno ha il potere di scegliere tra il bene e il male, riflettendo il messaggio positivo del film e la sua celebrazione della scelta."
+  },
+  {
+    "id": "e118",
+    "quote": "Se introduci un po' di anarchia…se stravolgi l'ordine prestabilito… tutto diventa improvvisamente caos. Io sono un agente del caos. E sai qual è il bello del caos? È equo",
+    "author": "Il Cavaliere Oscuro",
+    "choices": [
+      "Il Cavaliere Oscuro",
+      "The Dark Knight",
+      "Batman Begins",
+      "The Dark Knight Rises"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2008",
+    "source_title": "The Dark Knight",
+    "source_link": "https://en.wikipedia.org/wiki/The_Dark_Knight_(film)",
+    "tags": [
+      "cinema",
+      "azione",
+      "thriller"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'azione con Christian Bale e Heath Ledger",
+    "hint_more": "Film del 2008 diretto da Christopher Nolan, con Christian Bale, Heath Ledger e Aaron Eckhart. Racconta la storia di Batman che deve affrontare il Joker, un criminale psicopatico che vuole creare il caos a Gotham.",
+    "ambiguity_note": "Le opzioni includono The Dark Knight (titolo originale), Batman Begins (azione) e The Dark Knight Rises (azione). Il Cavaliere Oscuro è noto per questa frase filosofica e per la performance di Heath Ledger.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il Cavaliere Oscuro' (2008), questa frase viene pronunciata dal Joker (Heath Ledger) per esprimere la sua filosofia del caos. La frase esprime la malvagità del personaggio: il Joker crede che il caos sia l'unica forma di giustizia equa, riflettendo l'atmosfera del film e la sua esplorazione del male."
+  },
+  {
+    "id": "e119",
+    "quote": "Prima o poi capirai, come ho fatto anch'io, che una cosa è conoscere il sentiero giusto, un'altra è imboccarlo",
+    "author": "The Matrix",
+    "choices": [
+      "The Matrix",
+      "Matrix",
+      "The Matrix Reloaded",
+      "The Matrix Revolutions"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1999",
+    "source_title": "The Matrix",
+    "source_link": "https://en.wikipedia.org/wiki/The_Matrix",
+    "tags": [
+      "cinema",
+      "sci-fi",
+      "azione"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film sci-fi con Keanu Reeves e Laurence Fishburne",
+    "hint_more": "Film del 1999 diretto dalle sorelle Wachowski, con Keanu Reeves, Laurence Fishburne e Carrie-Anne Moss. Racconta la storia di Neo, un programmatore che scopre che la realtà è una simulazione computerizzata.",
+    "ambiguity_note": "Le opzioni includono Matrix (titolo italiano), The Matrix Reloaded (sequel) e The Matrix Revolutions (sequel). The Matrix è noto per questa frase filosofica e per il suo messaggio sulla scelta.",
+    "language_orig": "IT",
+    "context": "Nel film 'The Matrix' (1999), questa frase viene pronunciata da Morpheus (Laurence Fishburne) per insegnare a Neo la saggezza. La frase esprime la filosofia del personaggio: conoscere la verità non è sufficiente, bisogna anche agire, riflettendo il messaggio positivo del film e la sua celebrazione della scelta."
+  },
+  {
+    "id": "e120",
+    "quote": "Quanto mi secca avere sempre ragione",
+    "author": "Jurassic Park",
+    "choices": [
+      "Jurassic Park",
+      "Jurassic World",
+      "The Lost World: Jurassic Park",
+      "Jurassic Park III"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1993",
+    "source_title": "Jurassic Park",
+    "source_link": "https://en.wikipedia.org/wiki/Jurassic_Park_(film)",
+    "tags": [
+      "cinema",
+      "sci-fi",
+      "avventura"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film sci-fi con Sam Neill e Laura Dern",
+    "hint_more": "Film del 1993 diretto da Steven Spielberg, con Sam Neill, Laura Dern e Jeff Goldblum. Racconta la storia di un parco tematico con dinosauri clonati che va fuori controllo.",
+    "ambiguity_note": "Le opzioni includono Jurassic World (sequel), The Lost World: Jurassic Park (sequel) e Jurassic Park III (sequel). Jurassic Park è noto per questa frase ironica e per il suo umorismo.",
+    "language_orig": "IT",
+    "context": "Nel film 'Jurassic Park' (1993), questa frase viene pronunciata da Ian Malcolm (Jeff Goldblum) per esprimere la sua frustrazione. La frase esprime l'ironia del personaggio: Malcolm si lamenta di avere sempre ragione, riflettendo l'umorismo del film e la sua celebrazione dell'intelletto."
+  },
+  {
+    "id": "e121",
+    "quote": "Specchio specchio delle mie brame, chi è la più bella del reame?",
+    "author": "Biancaneve e i sette nani",
+    "choices": [
+      "Biancaneve e i sette nani",
+      "Snow White and the Seven Dwarfs",
+      "Cenerentola",
+      "La bella addormentata"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1937",
+    "source_title": "Snow White and the Seven Dwarfs",
+    "source_link": "https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs_(1937_film)",
+    "tags": [
+      "animazione",
+      "fantasy",
+      "classico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney del 1937",
+    "hint_more": "Film d'animazione del 1937 diretto da David Hand, con Adriana Caselotti e Lucille La Verne. Racconta la storia di Biancaneve, una principessa che deve fuggire dalla sua matrigna malvagia.",
+    "ambiguity_note": "Le opzioni includono Snow White and the Seven Dwarfs (titolo originale), Cenerentola (fantasy) e La bella addormentata (fantasy). Biancaneve e i sette nani è noto per questa frase iconica e per la sua atmosfera fiabesca.",
+    "language_orig": "IT",
+    "context": "Nel film 'Biancaneve e i sette nani' (1937), questa frase viene pronunciata dalla Regina Cattiva per esprimere la sua vanità. La frase esprime la malvagità del personaggio: la regina è ossessionata dalla sua bellezza e vuole essere la più bella del reame, riflettendo l'atmosfera fiabesca del film e la sua esplorazione della vanità."
+  },
+  {
+    "id": "e122",
+    "quote": "Non smettere di sognare, solo chi sogna può volare",
+    "author": "Le avventure di Peter Pan",
+    "choices": [
+      "Le avventure di Peter Pan",
+      "Peter Pan",
+      "Hook - Capitan Uncino",
+      "Tinker Bell"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1953",
+    "source_title": "Peter Pan",
+    "source_link": "https://en.wikipedia.org/wiki/Peter_Pan_(1953_film)",
+    "tags": [
+      "animazione",
+      "fantasy",
+      "avventura"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney del 1953",
+    "hint_more": "Film d'animazione del 1953 diretto da Clyde Geronimi, con Bobby Driscoll e Kathryn Beaumont. Racconta la storia di Peter Pan, un ragazzo che non vuole crescere e vive nell'Isola che non c'è.",
+    "ambiguity_note": "Le opzioni includono Peter Pan (titolo originale), Hook - Capitan Uncino (live-action) e Tinker Bell (spin-off). Le avventure di Peter Pan è noto per questa frase motivazionale e per il suo messaggio sui sogni.",
+    "language_orig": "IT",
+    "context": "Nel film 'Le avventure di Peter Pan' (1953), questa frase viene pronunciata da Peter Pan per ispirare Wendy e i suoi fratelli. La frase esprime la filosofia del personaggio: i sogni sono la chiave per volare e per vivere avventure straordinarie, riflettendo il messaggio positivo del film e la sua celebrazione dell'immaginazione."
+  },
+  {
+    "id": "e123",
+    "quote": "Verso l'infinito e oltre!",
+    "author": "Toy Story",
+    "choices": [
+      "Toy Story",
+      "Toy Story 2",
+      "Toy Story 3",
+      "Toy Story 4"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1995",
+    "source_title": "Toy Story",
+    "source_link": "https://en.wikipedia.org/wiki/Toy_Story",
+    "tags": [
+      "animazione",
+      "avventura",
+      "commedia"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Pixar del 1995",
+    "hint_more": "Film d'animazione del 1995 diretto da John Lasseter, con Tom Hanks e Tim Allen. Racconta la storia di Woody e Buzz Lightyear, due giocattoli che vivono avventure incredibili.",
+    "ambiguity_note": "Le opzioni includono Toy Story 2 (sequel), Toy Story 3 (sequel) e Toy Story 4 (sequel). Toy Story è noto per questa frase iconica e per il suo messaggio sull'amicizia.",
+    "language_orig": "IT",
+    "context": "Nel film 'Toy Story' (1995), questa frase viene pronunciata da Buzz Lightyear per esprimere la sua determinazione. La frase esprime l'ottimismo del personaggio: Buzz crede che tutto sia possibile e che si possa andare oltre i limiti, riflettendo il messaggio positivo del film e la sua celebrazione dell'amicizia."
+  },
+  {
+    "id": "e124",
+    "quote": "L'amore è una canzone che non finisce mai",
+    "author": "Bambi",
+    "choices": [
+      "Bambi",
+      "Cenerentola",
+      "Dumbo",
+      "Pinocchio"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1942",
+    "source_title": "Bambi",
+    "source_link": "https://en.wikipedia.org/wiki/Bambi_(1942_film)",
+    "tags": [
+      "animazione",
+      "drammatico",
+      "classico"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney del 1942",
+    "hint_more": "Film d'animazione del 1942 diretto da David Hand, con Hardie Albright e Stan Alexander. Racconta la storia di Bambi, un cerbiatto che impara a crescere nella foresta.",
+    "ambiguity_note": "Le opzioni includono Bambi (titolo originale) ripetuto due volte, Dumbo (dramma) e Pinocchio (avventura). Bambi è noto per questa frase romantica e per il suo messaggio sull'amore.",
+    "language_orig": "IT",
+    "context": "Nel film 'Bambi' (1942), questa frase viene pronunciata da Bambi per esprimere la sua comprensione dell'amore. La frase esprime la saggezza del personaggio: l'amore è eterno e non finisce mai, riflettendo l'atmosfera romantica del film e la sua celebrazione dell'amore."
+  },
+  {
+    "id": "e125",
+    "quote": "Quando il mondo ti volta le spalle non devi far altro che voltargli le spalle anche tu",
+    "author": "Il Re Leone",
+    "choices": [
+      "Il Re Leone",
+      "The Lion King",
+      "Il Re Leone 2",
+      "Il Re Leone 3"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1994",
+    "source_title": "The Lion King",
+    "source_link": "https://en.wikipedia.org/wiki/The_Lion_King_(1994_film)",
+    "tags": [
+      "animazione",
+      "drammatico",
+      "musical"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney del 1994",
+    "hint_more": "Film d'animazione del 1994 diretto da Roger Allers, con Matthew Broderick e James Earl Jones. Racconta la storia di Simba, un leoncino che deve diventare re della savana.",
+    "ambiguity_note": "Le opzioni includono The Lion King (titolo originale), Il Re Leone 2 (sequel) e Il Re Leone 3 (sequel). Il Re Leone è noto per questa frase saggia e per il suo messaggio sulla resilienza.",
+    "language_orig": "IT",
+    "context": "Nel film 'Il Re Leone' (1994), questa frase viene pronunciata da Timon e Pumbaa per insegnare a Simba la filosofia dell'Hakuna Matata. La frase esprime la saggezza dei personaggi: quando il mondo ti delude, devi imparare a voltargli le spalle e andare avanti, riflettendo il messaggio positivo del film e la sua celebrazione della resilienza."
+  },
+  {
+    "id": "e126",
+    "quote": "Lei lo avvertì di non lasciarsi ingannare dalle apparenze perché la vera bellezza si trova nel cuore",
+    "author": "La Bella e la Bestia",
+    "choices": [
+      "La Bella e la Bestia",
+      "Beauty and the Beast",
+      "Cenerentola",
+      "La Sirenetta"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1991",
+    "source_title": "Beauty and the Beast",
+    "source_link": "https://en.wikipedia.org/wiki/Beauty_and_the_Beast_(1991_film)",
+    "tags": [
+      "animazione",
+      "romantico",
+      "musical"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney del 1991",
+    "hint_more": "Film d'animazione del 1991 diretto da Gary Trousdale, con Paige O'Hara e Robby Benson. Racconta la storia di Belle, una ragazza che si innamora di una bestia che nasconde un principe.",
+    "ambiguity_note": "Le opzioni includono Beauty and the Beast (titolo originale) ripetuto tre volte. La Bella e la Bestia è noto per questa frase romantica e per il suo messaggio sulla bellezza interiore.",
+    "language_orig": "IT",
+    "context": "Nel film 'La Bella e la Bestia' (1991), questa frase viene pronunciata dalla voce narrante per insegnare la lezione del film. La frase esprime la morale della storia: la vera bellezza non è esteriore ma interiore, riflettendo il messaggio positivo del film e la sua celebrazione dell'amore vero."
+  },
+  {
+    "id": "e127",
+    "quote": "Sei matta, svitata, hai perso la testa… Ma ti dirò un segreto: tutti i migliori sono matti",
+    "author": "Alice nel paese delle meraviglie",
+    "choices": [
+      "Alice nel paese delle meraviglie",
+      "Alice in Wonderland",
+      "Alice attraverso lo specchio",
+      "Peter Pan"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1951",
+    "source_title": "Alice in Wonderland",
+    "source_link": "https://en.wikipedia.org/wiki/Alice_in_Wonderland_(1951_film)",
+    "tags": [
+      "animazione",
+      "fantasy",
+      "avventura"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney del 1951",
+    "hint_more": "Film d'animazione del 1951 diretto da Clyde Geronimi, con Kathryn Beaumont e Ed Wynn. Racconta la storia di Alice, una ragazza che cade in un mondo fantastico e surreale.",
+    "ambiguity_note": "Le opzioni includono Alice in Wonderland (titolo originale), Alice attraverso lo specchio (sequel) e Alice nel paese delle meraviglie (fantasy). Alice nel paese delle meraviglie è noto per questa frase saggia e per il suo messaggio sulla creatività.",
+    "language_orig": "IT",
+    "context": "Nel film 'Alice nel paese delle meraviglie' (1951), questa frase viene pronunciata dal Cappellaio Matto per consolare Alice. La frase esprime la saggezza del personaggio: la follia può essere una forma di genio e creatività, riflettendo il messaggio positivo del film e la sua celebrazione dell'immaginazione."
+  },
+  {
+    "id": "e128",
+    "quote": "Solo un atto di vero amore può sciogliere un cuore di ghiaccio",
+    "author": "Frozen",
+    "choices": [
+      "Frozen",
+      "Frozen - Il regno di ghiaccio",
+      "Frozen 2",
+      "Moana"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2013",
+    "source_title": "Frozen",
+    "source_link": "https://en.wikipedia.org/wiki/Frozen_(2013_film)",
+    "tags": [
+      "animazione",
+      "musical",
+      "fantasy"
+    ],
+    "difficulty": 1,
+    "spiciness": 1,
+    "hint_short": "Film d'animazione Disney del 2013",
+    "hint_more": "Film d'animazione del 2013 diretto da Chris Buck, con Kristen Bell e Idina Menzel. Racconta la storia di Elsa e Anna, due sorelle che devono salvare il loro regno dal ghiaccio eterno.",
+    "ambiguity_note": "Le opzioni includono Frozen - Il regno di ghiaccio (titolo italiano), Frozen 2 (sequel) e Frozen 2 (sequel). Frozen è noto per questa frase romantica e per il suo messaggio sull'amore.",
+    "language_orig": "IT",
+    "context": "Nel film 'Frozen' (2013), questa frase viene pronunciata dalla voce narrante per spiegare la magia dell'amore. La frase esprime la morale della storia: solo l'amore vero può sciogliere il ghiaccio del cuore, riflettendo il messaggio positivo del film e la sua celebrazione dell'amore fraterno."
+  },
+  {
+    "id": "e129",
+    "quote": "Allora, qui gente che entra, gente che esce... la facciamo diventare quello che vogliamo! ... [urla] La radiamo al suolo questa merda di casa!",
+    "author": "Chiedimi se sono felice",
+    "choices": [
+      "Chiedimi se sono felice",
+      "Tre uomini e una gamba",
+      "Così è la vita",
+      "Tu la conosci Claudia?"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2000",
+    "source_title": "Clip ufficiale – «La radiamo al suolo…»",
+    "source_link": "https://www.aldogiovanniegiacomo.it/video/la-radiamo-al-suolo-questa-merda-di-casa-chiedimi-se-sono-felice-di-aldo-giovanni-e-giacomo/",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Aldo fantastica sull’uso di una casa a Milano.",
+    "hint_more": "Scena domestica poco prima che si parli del loro «Cyrano».",
+    "ambiguity_note": "Può confondere con «Il cosmo sul comò» (ambienti domestici/milanesi).",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Aldo esagera l’entusiasmo per una casa disponibile, immaginando feste distruttive. Citazione cult del film."
+  },
+  {
+    "id": "e130",
+    "quote": "Non sono professionisti; sono presi dalla strada.",
+    "author": "Tre uomini e una gamba",
+    "choices": [
+      "Tre uomini e una gamba",
+      "Chiedimi se sono felice",
+      "Così è la vita",
+      "La leggenda di Al, John e Jack"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Movieplayer – Le battute cult (voce dedicata)",
+    "source_link": "https://movieplayer.it/articoli/aldo-giovanni-e-giacomo-migliori-battute-cinematografiche_28494/",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "È nel segmento «Biglietto amaro».",
+    "hint_more": "Parodia del neorealismo che i tre guardano in un cinema di provincia.",
+    "ambiguity_note": "Può sembrare teatrale/TV, ma la battuta è nel film d’esordio.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Nel film, i tre assistono a una pellicola fittizia; la frase è il commento ironico sugli attori."
+  },
+  {
+    "id": "e131",
+    "quote": "Peperonata, alle otto di mattina? E a mezzogiorno... topi morti?",
+    "author": "Tre uomini e una gamba",
+    "choices": [
+      "Tre uomini e una gamba",
+      "Così è la vita",
+      "Chiedimi se sono felice",
+      "La banda dei Babbi Natale"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Clip ufficiale – «Peperonata»",
+    "source_link": "https://www.youtube.com/watch?v=Ai_kG4RziaU",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "È uno sfogo surreale sulle abitudini alimentari.",
+    "hint_more": "Tono esasperato tipico del road-movie dei tre verso il Sud.",
+    "ambiguity_note": "Il nonsense ricorda altre scene del trio, ma è nel film del ’97.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Battuta iperbolica che è diventata proverbiale tra i fan."
+  },
+  {
+    "id": "e132",
+    "quote": "Acqua gassata... acqua gassata a garganella!",
+    "author": "Chiedimi se sono felice",
+    "choices": [
+      "Chiedimi se sono felice",
+      "Tre uomini e una gamba",
+      "Il cosmo sul comò",
+      "Tu la conosci Claudia?"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2000",
+    "source_title": "Clip ufficiale – «Acqua gassata a garganella»",
+    "source_link": "https://www.aldogiovanniegiacomo.it/video/acqua-gassata-a-garganella-chiedimi-se-sono-felice/",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "C’è di mezzo Zia Caterina.",
+    "hint_more": "Una «cura» casalinga che Aldo invoca più volte.",
+    "ambiguity_note": "Spesso attribuita per errore al film d’esordio.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Running gag del film che ha generato infinite citazioni sui social."
+  },
+  {
+    "id": "e133",
+    "quote": "— E così domani ti sposi? — Sì, ma niente di serio.",
+    "author": "Tre uomini e una gamba",
+    "choices": [
+      "Tre uomini e una gamba",
+      "Chiedimi se sono felice",
+      "Così è la vita",
+      "La leggenda di Al, John e Jack"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "MYmovies – Frasi dal film",
+    "source_link": "https://www.mymovies.it/film/1997/treuominieunagamba/frasi/",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Nasce parlando di un matrimonio «obbligato».",
+    "hint_more": "È una battuta di Giacomo legata al suocero Cecconi.",
+    "ambiguity_note": "Torna spesso in meme e può sembrare di film successivo.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Riassume l’ambivalenza di Giacomo verso nozze e carriera."
+  },
+  {
+    "id": "e134",
+    "quote": "— Fuori dal letto? — Nessuno è perfetto! — Nessuna pietà!",
+    "author": "Chiedimi se sono felice",
+    "choices": [
+      "Chiedimi se sono felice",
+      "Tre uomini e una gamba",
+      "Il cosmo sul comò",
+      "Tu la conosci Claudia?"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2000",
+    "source_title": "Wikiquote – «Chiedimi se sono felice» (dialogo del supermercato)",
+    "source_link": "https://it.wikiquote.org/wiki/Chiedimi_se_sono_felice",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Parodia del «Teorema» di Marco Ferradini.",
+    "hint_more": "Aldo «istruisce» Giacomo in corsia latticini.",
+    "ambiguity_note": "Spesso ricordata solo come «Nessuno è perfetto» (rimando a Wilder).",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Gag metamusicale che deforma un celebre brano anni ’80."
+  },
+  {
+    "id": "e135",
+    "quote": "«Buona questa cadrega.» — «Ah, la mela sarebbe la cadrega? La cadrega è la sedia.»",
+    "author": "Tre uomini e una gamba",
+    "choices": [
+      "Tre uomini e una gamba",
+      "I corti (Anplagghed al cinema)",
+      "Così è la vita",
+      "La leggenda di Al, John e Jack"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Sito ufficiale – «Il Conte Dracula (seconda parte)»",
+    "source_link": "https://www.aldogiovanniegiacomo.it/video/il-conte-dracula-seconda-parte-tre-uomini-e-una-gamba-di-aldo-giovanni-e-giacomo/",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Scena dell’incubo «Dracula».",
+    "hint_more": "Il dialettalismo «cadrega» (sedia) manda in tilt il vampiro.",
+    "ambiguity_note": "Molti la associano agli sketch TV, ma qui è nel film del ’97.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Celebre «inganno» linguistico ai danni del Conte Dracula/Aldo."
+  },
+  {
+    "id": "e136",
+    "quote": "Il mio falegname, con trentamila lire, la fa meglio.",
+    "author": "Tre uomini e una gamba",
+    "choices": [
+      "Tre uomini e una gamba",
+      "Chiedimi se sono felice",
+      "Così è la vita",
+      "Tu la conosci Claudia?"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Wikiquote – «Tre uomini e una gamba»",
+    "source_link": "https://it.wikiquote.org/wiki/Tre_uomini_e_una_gamba",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Riferimento al «Garpez».",
+    "hint_more": "Giovanni sminuisce la scultura che devono consegnare.",
+    "ambiguity_note": "È talmente proverbiale da sembrare uno sketch a sé.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Una delle linee più citate del cinema comico italiano anni ’90."
+  },
+  {
+    "id": "e137",
+    "quote": "— Preferisci essere sciolto nell’acido? — Certo che no, Johnny: lo sai che sono allergico!",
+    "author": "La leggenda di Al, John e Jack",
+    "choices": [
+      "La leggenda di Al, John e Jack",
+      "Tre uomini e una gamba",
+      "Così è la vita",
+      "Chiedimi se sono felice"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2002",
+    "source_title": "Wikiquote – «La leggenda di Al, John e Jack»",
+    "source_link": "https://it.wikiquote.org/wiki/La_leggenda_di_Al,_John_e_Jack",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Gangster pasticcioni a New York.",
+    "hint_more": "Dialogo surreale tra i tre sicari italo-americani.",
+    "ambiguity_note": "Il trio mafioso nasce come sketch ma qui è nel loro film del 2002.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Parodia dei noir: minacce «serissime» con esiti demenziali."
+  },
+  {
+    "id": "e138",
+    "quote": "— Certo che questa è una situazione kafkiana... — Ma precisamente, questo Kafkian, chi è?",
+    "author": "Chiedimi se sono felice",
+    "choices": [
+      "Chiedimi se sono felice",
+      "Tre uomini e una gamba",
+      "Il cosmo sul comò",
+      "Tu la conosci Claudia?"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2000",
+    "source_title": "Wikiquote – «Chiedimi se sono felice»",
+    "source_link": "https://it.wikiquote.org/wiki/Chiedimi_se_sono_felice",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Succede durante i provini per il «Cyrano».",
+    "hint_more": "Gag sul termine «kafkiano» storpiato da Aldo.",
+    "ambiguity_note": "Talvolta attribuita al film d’esordio perché i toni sono simili.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Gioco metalinguistico che ha diffuso il modo di dire tra i fan."
+  },
+  {
+    "id": "e139",
+    "quote": "— Ma chi l’è sto Schillaci? — Schillaci l’è el gran visir de tücc i terùn!",
+    "author": "Tre uomini e una gamba",
+    "choices": [
+      "Tre uomini e una gamba",
+      "La leggenda di Al, John e Jack",
+      "Così è la vita",
+      "Anplagghed al cinema"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Wikipedia – «Salvatore Schillaci» (citazione nella cultura di massa)",
+    "source_link": "https://it.wikipedia.org/wiki/Salvatore_Schillaci",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 2,
+    "spiciness": 0,
+    "hint_short": "Nasce nella sequenza «Dracula».",
+    "hint_more": "Battuta in dialetto che chiude il running-gag su Totò Schillaci.",
+    "ambiguity_note": "Spesso confusa con gli sketch TV su Dracula; qui è nel film ’97.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Il film integra sketch del repertorio; questo omaggia il mito di Italia ’90."
+  },
+  {
+    "id": "e140",
+    "quote": "A volte dorme più lo sveglio del dormiente.",
+    "author": "Tre uomini e una gamba",
+    "choices": [
+      "Tre uomini e una gamba",
+      "Chiedimi se sono felice",
+      "Così è la vita",
+      "Il cosmo sul comò"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1997",
+    "source_title": "Wikiquote – «Tre uomini e una gamba»",
+    "source_link": "https://it.wikiquote.org/wiki/Tre_uomini_e_una_gamba",
+    "tags": [
+      "intrattenimento",
+      "cinema",
+      "AGG"
+    ],
+    "difficulty": 1,
+    "spiciness": 0,
+    "hint_short": "Massima pseudo-filosofica di Aldo.",
+    "hint_more": "Scena on the road con proverbio storto ma memorabile.",
+    "ambiguity_note": "Sembra uno sketch teatrale, ma è nel road movie del ’97.",
+    "language_orig": "IT",
+    "sensitive": false,
+    "context": "Una «perla di saggezza» nonsense che è entrata nel parlato comune."
+  }
+]

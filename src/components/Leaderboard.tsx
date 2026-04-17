@@ -4,6 +4,7 @@ import { leaderboardApi, type LeaderboardData, type LeaderboardEntry } from '../
 interface LeaderboardProps {
   onClose: () => void;
   gameMode: 'achille' | 'millionaire' | 'classic';
+  currentTheme?: 'classica' | 'intrattenimento' | 'trash' | 'mista';
   currentStreak?: number;
   currentScore?: number;
   onSaveRecord?: (name: string) => void;
@@ -13,12 +14,22 @@ interface LeaderboardProps {
 const Leaderboard: React.FC<LeaderboardProps> = ({ 
   onClose, 
   gameMode, 
+  currentTheme = 'classica',
   currentStreak = 0, 
   currentScore = 0,
   onSaveRecord,
   disableModeSwitch = false
 }) => {
-  const [leaderboard, setLeaderboard] = useState<LeaderboardData>({ achille: [], eracle: [] });
+  const [leaderboard, setLeaderboard] = useState<LeaderboardData>({ 
+    achille: [], 
+    eracle: [],
+    intrattenimento_achille: [],
+    intrattenimento_eracle: [],
+    trash_achille: [],
+    trash_eracle: [],
+    mista_achille: [],
+    mista_eracle: []
+  });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [showSaveForm, setShowSaveForm] = useState(false);
@@ -33,6 +44,74 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   const [showMode, setShowMode] = useState<'achille' | 'eracle'>(
     (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille'
   );
+
+  // Funzione per ottenere la chiave della leaderboard in base al tema e modalità
+  const getLeaderboardKey = (theme: string, mode: 'achille' | 'eracle'): keyof LeaderboardData => {
+    if (theme === 'classica') {
+      return mode;
+    }
+    return `${theme}_${mode}` as keyof LeaderboardData;
+  };
+
+  // Funzione per ottenere i colori dei bottoni di switch in base al tema
+  const getSwitchButtonColors = (mode: 'achille' | 'eracle') => {
+    if (currentTheme === 'intrattenimento') {
+      if (mode === 'eracle') {
+        // HOLLYWOOD - viola
+        return {
+          selected: 'bg-purple-500 text-white shadow-lg',
+          unselected: 'text-white/70 hover:text-white/90 hover:bg-purple-500/20'
+        };
+      } else {
+        // Superstar - fucsia/rosa
+        return {
+          selected: 'bg-pink-500 text-white shadow-lg',
+          unselected: 'text-white/70 hover:text-white/90 hover:bg-pink-500/20'
+        };
+      }
+    } else if (currentTheme === 'trash') {
+      if (mode === 'eracle') {
+        // Memelord - blu elettrico
+        return {
+          selected: 'bg-blue-500 text-white shadow-lg',
+          unselected: 'text-white/70 hover:text-white/90 hover:bg-blue-500/20'
+        };
+      } else {
+        // Memegod - verde neon
+        return {
+          selected: 'bg-green-500 text-white shadow-lg',
+          unselected: 'text-white/70 hover:text-white/90 hover:bg-green-500/20'
+        };
+      }
+    } else if (currentTheme === 'mista') {
+      if (mode === 'eracle') {
+        // Gran Sapiarca - arancione
+        return {
+          selected: 'bg-orange-500 text-white shadow-lg',
+          unselected: 'text-white/70 hover:text-white/90 hover:bg-orange-500/20'
+        };
+      } else {
+        // Il Supremo - giallo
+        return {
+          selected: 'bg-yellow-500 text-white shadow-lg',
+          unselected: 'text-white/70 hover:text-white/90 hover:bg-yellow-500/20'
+        };
+      }
+    } else {
+      // Tema classica - colori originali
+      if (mode === 'eracle') {
+        return {
+          selected: 'bg-purple-500 text-white shadow-lg',
+          unselected: 'text-white/70 hover:text-white/90 hover:bg-purple-500/20'
+        };
+      } else {
+        return {
+          selected: 'bg-amber-500 text-white shadow-lg',
+          unselected: 'text-white/70 hover:text-white/90 hover:bg-amber-500/20'
+        };
+      }
+    }
+  };
 
   // Blocca il cambio di modalità se disableModeSwitch è true
   useEffect(() => {
@@ -101,10 +180,13 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     
     // Solo se abbiamo un punteggio valido, non è già stato salvato, e la leaderboard è stata caricata
     if (currentStreak > 0 && currentScore > 0 && !recordAlreadySaved && !loading) {
-      const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
-      const currentModeLeaderboard = leaderboard[modeKey];
+      const currentMode = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
+      const leaderboardKey = getLeaderboardKey(currentTheme, currentMode);
+      const currentModeLeaderboard = leaderboard[leaderboardKey];
       
-      console.log('Mode:', modeKey);
+      console.log('Mode:', currentMode);
+      console.log('Theme:', currentTheme);
+      console.log('Leaderboard key:', leaderboardKey);
       console.log('Leaderboard data:', currentModeLeaderboard);
       
       let isTop5 = false;
@@ -158,11 +240,12 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     
     try {
       setSaving(true);
-      const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
+      const currentMode = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
       
       // Salva su Supabase
       const updatedRecords = await leaderboardApi.addRecord(
-        modeKey,
+        currentMode,
+        currentTheme,
         playerName.trim(),
         currentStreak,
         currentScore
@@ -171,7 +254,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       // Aggiorna la leaderboard locale
       const newLeaderboard = {
         ...leaderboard,
-        [modeKey]: updatedRecords
+        [leaderboardKey]: updatedRecords
       };
       setLeaderboard(newLeaderboard);
       
@@ -191,8 +274,9 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       console.error('Errore nel salvataggio:', err);
       
       // Fallback: salva localmente anche se Supabase non risponde
-      const modeKey = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
-      const currentModeLeaderboard = leaderboard[modeKey] || [];
+      const currentMode = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
+      const leaderboardKey = getLeaderboardKey(currentTheme, currentMode);
+      const currentModeLeaderboard = leaderboard[leaderboardKey] || [];
       
       // Crea il nuovo record
       const newRecord = {
@@ -235,13 +319,28 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   };
 
   const getModeTitle = () => {
-    return (gameMode === 'millionaire' || gameMode === 'classic') ? 'Eracle' : 'Achille';
+    const baseMode = (gameMode === 'millionaire' || gameMode === 'classic') ? 'Eracle' : 'Achille';
+    
+    // Mappa i temi ai nomi delle modalità
+    const themeNames = {
+      'classica': { eracle: 'Eracle', achille: 'Achille' },
+      'intrattenimento': { eracle: 'Verso la Fama', achille: 'Superstar' },
+      'trash': { eracle: 'Verso la Fama', achille: 'Memelord' },
+      'mista': { eracle: 'Gran Sapiarca', achille: 'Il Supremo' }
+    };
+    
+    return themeNames[currentTheme][showMode] || baseMode;
   };
 
   const getModeDescription = () => {
-    return (gameMode === 'millionaire' || gameMode === 'classic')
-      ? 'Le 12 Fatiche - Top 5' 
-      : 'Aristeia Infinita - Top 5';
+    const descriptions = {
+      'classica': { eracle: '🏛️ Le 12 Fatiche - Top 5', achille: '🏛️ Aristeia Infinita - Top 5' },
+      'intrattenimento': { eracle: '🎬 Hollywood - Top 5', achille: '🎬 Superstar - Top 5' },
+      'trash': { eracle: '🗑️ Memelord - Top 5', achille: '🗑️ Memegod - Top 5' },
+      'mista': { eracle: '🌟 Gran Sapiarca - Top 5', achille: '🌟 Il Supremo - Top 5' }
+    };
+    
+    return descriptions[currentTheme][showMode] || '🌟 Top 5';
   };
 
   const getStreakLabel = () => {
@@ -250,7 +349,8 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
 
   // Crea una versione temporanea della leaderboard con il nuovo record se presente
   const getCurrentLeaderboard = () => {
-    const baseLeaderboard = showMode === 'eracle' ? leaderboard.eracle : leaderboard.achille;
+    const leaderboardKey = getLeaderboardKey(currentTheme, showMode);
+    const baseLeaderboard = leaderboard[leaderboardKey] || [];
     
     // Se c'è un nuovo record da salvare, inseriscilo temporaneamente nella classifica
     if (showSaveForm && currentStreak > 0 && currentScore > 0) {
@@ -304,17 +404,148 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     );
   }
 
-  // Determina i colori in base alla modalità visualizzata
+  // Determina i colori in base alla modalità visualizzata e al tema
   const isEracleMode = showMode === 'eracle';
-  const containerGradient = isEracleMode 
-    ? 'bg-gradient-to-br from-purple-900 to-blue-900' 
-    : 'bg-gradient-to-br from-amber-900 to-orange-900';
-  const borderColor = isEracleMode 
-    ? 'border-purple-400/30' 
-    : 'border-amber-400/30';
-  const accentColor = isEracleMode 
-    ? 'text-purple-200' 
-    : 'text-amber-200';
+  
+  // Colori specifici per tema
+  const getThemeColors = () => {
+    if (currentTheme === 'intrattenimento') {
+      return {
+        containerGradient: isEracleMode 
+          ? 'bg-gradient-to-br from-purple-900 to-indigo-900' // HOLLYWOOD - gradiente viola
+          : 'bg-gradient-to-br from-pink-900 to-rose-900', // superstar - gradiente fucsia/rosa
+        borderColor: isEracleMode 
+          ? 'border-purple-400/30' 
+          : 'border-pink-400/30',
+        accentColor: isEracleMode 
+          ? 'text-purple-200' 
+          : 'text-pink-200'
+      };
+    } else if (currentTheme === 'trash') {
+      return {
+        containerGradient: isEracleMode 
+          ? 'bg-gradient-to-br from-blue-900 to-cyan-900' // memelord - gradiente blu elettrico
+          : 'bg-gradient-to-br from-green-900 to-emerald-900', // memegod - gradiente verde neon
+        borderColor: isEracleMode 
+          ? 'border-blue-400/30' 
+          : 'border-green-400/30',
+        accentColor: isEracleMode 
+          ? 'text-blue-200' 
+          : 'text-green-200'
+      };
+    } else {
+      // Tema classica o mista - colori originali
+      return {
+        containerGradient: isEracleMode 
+          ? 'bg-gradient-to-br from-purple-900 to-blue-900' 
+          : 'bg-gradient-to-br from-amber-900 to-orange-900',
+        borderColor: isEracleMode 
+          ? 'border-purple-400/30' 
+          : 'border-amber-400/30',
+        accentColor: isEracleMode 
+          ? 'text-purple-200' 
+          : 'text-amber-200'
+      };
+    }
+  };
+  
+  const themeColors = getThemeColors();
+  const containerGradient = themeColors.containerGradient;
+  const borderColor = themeColors.borderColor;
+  const accentColor = themeColors.accentColor;
+
+  // Funzione per ottenere i colori delle posizioni in base al tema
+  const getPositionColors = (index: number) => {
+    if (currentTheme === 'intrattenimento') {
+      if (isEracleMode) {
+        // HOLLYWOOD - gradiente viola
+        return index === 0 
+          ? 'bg-gradient-to-r from-purple-600/40 to-indigo-600/40 border-purple-400/50 shadow-lg'
+          : index === 1
+          ? 'bg-gradient-to-r from-purple-500/40 to-indigo-500/40 border-purple-400/50'
+          : index === 2
+          ? 'bg-gradient-to-r from-purple-400/40 to-indigo-400/40 border-purple-300/50'
+          : 'bg-gradient-to-r from-purple-800/40 to-indigo-800/40 border-purple-400/30';
+      } else {
+        // superstar - gradiente fucsia/rosa
+        return index === 0 
+          ? 'bg-gradient-to-r from-pink-600/40 to-rose-600/40 border-pink-400/50 shadow-lg'
+          : index === 1
+          ? 'bg-gradient-to-r from-pink-500/40 to-rose-500/40 border-pink-400/50'
+          : index === 2
+          ? 'bg-gradient-to-r from-pink-400/40 to-rose-400/40 border-pink-300/50'
+          : 'bg-gradient-to-r from-pink-800/40 to-rose-800/40 border-pink-400/30';
+      }
+    } else if (currentTheme === 'trash') {
+      if (isEracleMode) {
+        // memelord - gradiente blu elettrico
+        return index === 0 
+          ? 'bg-gradient-to-r from-blue-600/40 to-cyan-600/40 border-blue-400/50 shadow-lg'
+          : index === 1
+          ? 'bg-gradient-to-r from-blue-500/40 to-cyan-500/40 border-blue-400/50'
+          : index === 2
+          ? 'bg-gradient-to-r from-blue-400/40 to-cyan-400/40 border-blue-300/50'
+          : 'bg-gradient-to-r from-blue-800/40 to-cyan-800/40 border-blue-400/30';
+      } else {
+        // memegod - gradiente verde neon
+        return index === 0 
+          ? 'bg-gradient-to-r from-green-600/40 to-emerald-600/40 border-green-400/50 shadow-lg'
+          : index === 1
+          ? 'bg-gradient-to-r from-green-500/40 to-emerald-500/40 border-green-400/50'
+          : index === 2
+          ? 'bg-gradient-to-r from-green-400/40 to-emerald-400/40 border-green-300/50'
+          : 'bg-gradient-to-r from-green-800/40 to-emerald-800/40 border-green-400/30';
+      }
+    } else {
+      // Tema classica o mista - colori originali
+      return index === 0 
+        ? 'bg-gradient-to-r from-yellow-600/40 to-amber-600/40 border-yellow-400/50 shadow-lg' 
+        : index === 1
+        ? 'bg-gradient-to-r from-gray-500/40 to-gray-600/40 border-gray-400/50'
+        : index === 2
+        ? 'bg-gradient-to-r from-orange-600/40 to-red-600/40 border-orange-400/50'
+        : 'bg-gradient-to-r from-amber-800/40 to-orange-800/40 border-amber-400/30';
+    }
+  };
+
+  // Funzione per ottenere i colori dei numeri di posizione
+  const getPositionNumberColors = (index: number) => {
+    if (currentTheme === 'intrattenimento') {
+      if (isEracleMode) {
+        // HOLLYWOOD - viola
+        return index === 0 ? 'bg-purple-500 text-white' :
+               index === 1 ? 'bg-purple-400 text-white' :
+               index === 2 ? 'bg-purple-300 text-black' :
+               'bg-purple-600 text-white';
+      } else {
+        // superstar - fucsia/rosa
+        return index === 0 ? 'bg-pink-500 text-white' :
+               index === 1 ? 'bg-pink-400 text-white' :
+               index === 2 ? 'bg-pink-300 text-black' :
+               'bg-pink-600 text-white';
+      }
+    } else if (currentTheme === 'trash') {
+      if (isEracleMode) {
+        // memelord - blu elettrico
+        return index === 0 ? 'bg-blue-500 text-white' :
+               index === 1 ? 'bg-blue-400 text-white' :
+               index === 2 ? 'bg-blue-300 text-black' :
+               'bg-blue-600 text-white';
+      } else {
+        // memegod - verde neon
+        return index === 0 ? 'bg-green-500 text-white' :
+               index === 1 ? 'bg-green-400 text-white' :
+               index === 2 ? 'bg-green-300 text-black' :
+               'bg-green-600 text-white';
+      }
+    } else {
+      // Tema classica o mista - colori originali
+      return index === 0 ? 'bg-yellow-500 text-black' :
+             index === 1 ? 'bg-gray-400 text-black' :
+             index === 2 ? 'bg-orange-500 text-white' :
+             'bg-amber-600 text-white';
+    }
+  };
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4">
@@ -323,10 +554,10 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         <div className="flex items-center justify-between mb-3 sm:mb-4">
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white mb-1 drop-shadow-lg">
-              Leaderboard {showMode === 'eracle' ? 'Eracle' : 'Achille'}
+              Leaderboard {getModeTitle()}
             </h2>
             <p className={`${accentColor} font-medium text-sm`}>
-              {showMode === 'eracle' ? 'Le 12 Fatiche - Top 5' : 'Aristeia Infinita - Top 5'}
+              {getModeDescription()}
             </p>
           </div>
           
@@ -347,18 +578,28 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
               <button 
                 onClick={() => setShowMode('eracle')}
                 className={`px-4 sm:px-6 py-2 rounded-lg font-semibold transition-all duration-200 text-sm ${
-                  showMode === 'eracle' ? 'bg-purple-500 text-white shadow-lg' : 'text-white/70 hover:text-white/90'
+                  showMode === 'eracle' 
+                    ? getSwitchButtonColors('eracle').selected 
+                    : getSwitchButtonColors('eracle').unselected
                 }`}
               >
-                🏛️ Eracle
+                {currentTheme === 'classica' ? '🏔️ Eracle' : 
+                 currentTheme === 'intrattenimento' ? '🏔️ Hollywood' :
+                 currentTheme === 'trash' ? '🏔️ Memelord' :
+                 '🏔️ Gran Sapiarca'}
               </button>
               <button 
                 onClick={() => setShowMode('achille')}
                 className={`px-4 sm:px-6 py-2 rounded-lg font-semibold transition-all duration-200 text-sm ${
-                  showMode === 'achille' ? 'bg-amber-500 text-white shadow-lg' : 'text-white/70 hover:text-white/90'
+                  showMode === 'achille' 
+                    ? getSwitchButtonColors('achille').selected 
+                    : getSwitchButtonColors('achille').unselected
                 }`}
               >
-                ⚔️ Achille
+                {currentTheme === 'classica' ? '⚔️ Achille' : 
+                 currentTheme === 'intrattenimento' ? '⚔️ Superstar' :
+                 currentTheme === 'trash' ? '⚔️ Memegod' :
+                 '⚔️ Il Supremo'}
               </button>
             </div>
           </div>
@@ -419,13 +660,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                   className={`flex items-center justify-between p-3 rounded-xl border-2 transition-all duration-200 ${
                     isTemporary
                       ? 'bg-gradient-to-r from-green-600/60 to-emerald-600/60 border-green-400/70 shadow-xl animate-pulse'
-                      : index === 0 
-                      ? 'bg-gradient-to-r from-yellow-600/40 to-amber-600/40 border-yellow-400/50 shadow-lg' 
-                      : index === 1
-                      ? 'bg-gradient-to-r from-gray-500/40 to-gray-600/40 border-gray-400/50'
-                      : index === 2
-                      ? 'bg-gradient-to-r from-orange-600/40 to-red-600/40 border-orange-400/50'
-                      : 'bg-gradient-to-r from-amber-800/40 to-orange-800/40 border-amber-400/30'
+                      : getPositionColors(index)
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -433,10 +668,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center font-black text-sm ${
                       isTemporary
                         ? 'bg-green-500 text-white'
-                        : index === 0 ? 'bg-yellow-500 text-black' :
-                        index === 1 ? 'bg-gray-400 text-black' :
-                        index === 2 ? 'bg-orange-500 text-white' :
-                        'bg-amber-600 text-white'
+                        : getPositionNumberColors(index)
                     }`}>
                       {index + 1}
                     </div>
@@ -477,7 +709,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         </div>
 
         {/* Footer */}
-        <div className={`mt-2 sm:mt-3 pt-1.5 sm:pt-2 border-t ${isEracleMode ? 'border-purple-400/20' : 'border-amber-400/20'}`}>
+        <div className={`mt-2 sm:mt-3 pt-1.5 sm:pt-2 border-t ${borderColor.replace('/30', '/20')}`}>
           <p className={`${accentColor} text-xs text-center`}>
             {showMode === 'eracle' 
               ? 'Ordinati per fatiche superate, poi per punteggio.'

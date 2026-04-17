@@ -1,0 +1,137 @@
+[
+  {
+    "id": "t1",
+    "quote": "It's over 9000!",
+    "author": "Vegeta",
+    "choices": [
+      "Vegeta",
+      "Goku",
+      "Piccolo",
+      "Frieza"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1996, Dragon Ball Z",
+    "source_title": "Dragon Ball Z",
+    "source_link": "https://en.wikipedia.org/wiki/Dragon_Ball_Z",
+    "tags": [
+      "anime",
+      "meme",
+      "iconico"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Principe Saiyan di Dragon Ball",
+    "hint_more": "Principe Saiyan orgoglioso e potente. Noto per la sua forza e per essere uno dei personaggi più popolari di Dragon Ball Z.",
+    "ambiguity_note": "Le opzioni includono Goku (protagonista), Piccolo (Namek) e Frieza (antagonista). Vegeta è noto per questa frase che ha generato uno dei meme più famosi di internet.",
+    "language_orig": "JP",
+    "context": "Nel 1996, Akira Toriyama creò uno dei momenti più iconici di Dragon Ball Z. Vegeta pronunciò questa frase con incredulità, trasformando una semplice esclamazione in un meme eterno della cultura pop."
+  },
+  {
+    "id": "t2",
+    "quote": "All your base are belong to us.",
+    "author": "Cats",
+    "choices": [
+      "Cats",
+      "Zero Wing",
+      "Sega",
+      "Nintendo"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "1989, Zero Wing",
+    "source_title": "Zero Wing",
+    "source_link": "https://en.wikipedia.org/wiki/Zero_Wing",
+    "tags": [
+      "videogiochi",
+      "meme",
+      "traduzione"
+    ],
+    "difficulty": 4,
+    "spiciness": 1,
+    "hint_short": "Villain di Zero Wing",
+    "hint_more": "Antagonista del videogioco Zero Wing. Noto per la sua frase mal tradotta che è diventata uno dei meme più famosi di internet.",
+    "ambiguity_note": "Le opzioni includono Zero Wing (titolo del gioco), Sega (publisher) e Nintendo (concorrente). I Cats sono noti per questa frase che ha generato il meme 'All your base'.",
+    "language_orig": "EN",
+    "context": "Nel 1989, Toaplan creò Zero Wing per Sega. I Cats pronunciarono questa frase mal tradotta, trasformando un errore di localizzazione in uno dei meme più duraturi della cultura internet."
+  },
+  {
+    "id": "t3",
+    "quote": "I'm the Juggernaut, bitch!",
+    "author": "Juggernaut",
+    "choices": [
+      "Juggernaut",
+      "Wolverine",
+      "Professor X",
+      "Magneto"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2006, X-Men: The Last Stand",
+    "source_title": "X-Men: The Last Stand",
+    "source_link": "https://en.wikipedia.org/wiki/X-Men:_The_Last_Stand",
+    "tags": [
+      "cinema",
+      "meme",
+      "supereroi"
+    ],
+    "difficulty": 3,
+    "spiciness": 2,
+    "hint_short": "Villain di X-Men",
+    "hint_more": "Villain mutante di X-Men noto per la sua forza invincibile. Interpretato da Vinnie Jones nel film del 2006.",
+    "ambiguity_note": "Le opzioni includono Wolverine (eroe), Professor X (leader) e Magneto (antagonista). Juggernaut è noto per questa frase che è diventata un meme iconico.",
+    "language_orig": "EN",
+    "context": "Nel 2006, Brett Ratner diresse X-Men: The Last Stand. Juggernaut pronunciò questa frase con arroganza, trasformando una minaccia in un meme eterno della cultura pop."
+  },
+  {
+    "id": "t4",
+    "quote": "This is Sparta!",
+    "author": "Re Leonida",
+    "choices": [
+      "Re Leonida",
+      "Gerard Butler",
+      "Alessandro Magno",
+      "Achille"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2006, 300",
+    "source_title": "300",
+    "source_link": "https://en.wikipedia.org/wiki/300_(film)",
+    "tags": [
+      "cinema",
+      "meme",
+      "storia"
+    ],
+    "difficulty": 2,
+    "spiciness": 1,
+    "hint_short": "Re di Sparta nel film 300",
+    "hint_more": "Re di Sparta interpretato da Gerard Butler nel film 300. Noto per la sua determinazione e per aver guidato i 300 spartani contro i persiani.",
+    "ambiguity_note": "Le opzioni includono Gerard Butler (attore), Alessandro Magno (conquistatore) e Achille (eroe greco). Leonida è noto per questa frase che ha generato innumerevoli meme e parodie.",
+    "language_orig": "EN",
+    "context": "Nel 2006, Zack Snyder diresse 300 basato sul fumetto di Frank Miller. Leonida pronunciò questa frase con furore, trasformando un grido di battaglia in un meme eterno della cultura pop."
+  },
+  {
+    "id": "t5",
+    "quote": "I'm not a rapper, I'm a rapper.",
+    "author": "Soulja Boy",
+    "choices": [
+      "Soulja Boy",
+      "Lil Wayne",
+      "50 Cent",
+      "Eminem"
+    ],
+    "correctIndex": 0,
+    "year_or_period": "2007, Crank That",
+    "source_title": "Crank That (Soulja Boy)",
+    "source_link": "https://en.wikipedia.org/wiki/Soulja_Boy",
+    "tags": [
+      "musica",
+      "meme",
+      "hip-hop"
+    ],
+    "difficulty": 3,
+    "spiciness": 1,
+    "hint_short": "Rapper americano",
+    "hint_more": "Rapper americano noto per il suo stile unico e per aver creato uno dei meme più famosi di internet con la sua canzone 'Crank That'.",
+    "ambiguity_note": "Le opzioni includono Lil Wayne (rapper), 50 Cent (rapper) e Eminem (rapper). Soulja Boy è noto per questa frase che ha generato innumerevoli meme e parodie.",
+    "language_orig": "EN",
+    "context": "Nel 2007, Soulja Boy pubblicò 'Crank That' e creò uno dei meme più duraturi di internet. Questa frase apparentemente contraddittoria è diventata un simbolo della cultura meme e del trash."
+  }
+]

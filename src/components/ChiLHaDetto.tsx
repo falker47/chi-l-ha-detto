@@ -1,13 +1,97 @@
 import React, { useEffect, useMemo, useState, useCallback } from "react";
 import type { Item } from "../types";
 import itemsRaw from "../data/quotes.json";
+import entertainmentQuotes from "../data/entertainmentQuotes.json";
+import trashQuotes from "../data/trashQuotes.json";
 import { personaggiImageMap } from "../data/imageMappings";
 import HeroImagePreloader from "./HeroImagePreloader";
 import Leaderboard from "./Leaderboard";
 
+// Importa tutti i file JSON
+const CLASSIC_QUOTES = itemsRaw as Item[];
+const ENTERTAINMENT_QUOTES = entertainmentQuotes as Item[];
+const TRASH_QUOTES = trashQuotes as Item[];
 
+// Funzione per ottenere le domande corrette in base al tema
+const getQuotesByTheme = (theme: string | undefined): Item[] => {
+  switch (theme) {
+    case 'intrattenimento':
+      return ENTERTAINMENT_QUOTES;
+    case 'trash':
+      return TRASH_QUOTES;
+    case 'mista':
+      // Per il tema misto, combina tutte le domande
+      return [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES];
+    case 'classica':
+    default:
+      return CLASSIC_QUOTES;
+  }
+};
 
-const ITEMS = itemsRaw as Item[];
+// Funzione per selezionare domande con probabilità ponderate per il tema misto (Gran Sapiarca)
+const selectWeightedQuestions = (questionsCount: number, usedQuestions: Set<string>): Item[] => {
+  const selectedQuestions: Item[] = [];
+  const usedQuestionIds = new Set(usedQuestions);
+  
+  // Probabilità: 50% CLASSIC_QUOTES, 35% ENTERTAINMENT_QUOTES, 15% TRASH_QUOTES
+  const weights = [
+    { source: CLASSIC_QUOTES, weight: 0.50, name: 'classic' },
+    { source: ENTERTAINMENT_QUOTES, weight: 0.35, name: 'entertainment' },
+    { source: TRASH_QUOTES, weight: 0.15, name: 'trash' }
+  ];
+  
+  // Calcola quante domande selezionare da ogni categoria
+  const categoryCounts = weights.map(w => ({
+    ...w,
+    count: Math.round(questionsCount * w.weight)
+  }));
+  
+  // Aggiusta per assicurarsi che la somma sia esattamente questionsCount
+  const totalAllocated = categoryCounts.reduce((sum, cat) => sum + cat.count, 0);
+  if (totalAllocated !== questionsCount) {
+    const difference = questionsCount - totalAllocated;
+    // Aggiungi la differenza alla categoria con peso maggiore (classic)
+    categoryCounts[0].count += difference;
+  }
+  
+  // Seleziona domande da ogni categoria
+  for (const category of categoryCounts) {
+    const availableQuestions = category.source.filter(item => !usedQuestionIds.has(item.id));
+    
+    if (availableQuestions.length === 0) {
+      // Se non ci sono domande disponibili in questa categoria, prendi da tutte le categorie
+      const allAvailable = [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES]
+        .filter(item => !usedQuestionIds.has(item.id));
+      if (allAvailable.length > 0) {
+        const randomQuestion = allAvailable[Math.floor(Math.random() * allAvailable.length)];
+        selectedQuestions.push(randomQuestion);
+        usedQuestionIds.add(randomQuestion.id);
+      }
+      continue;
+    }
+    
+    // Seleziona casualmente le domande da questa categoria
+    const shuffled = [...availableQuestions].sort(() => Math.random() - 0.5);
+    const selectedFromCategory = shuffled.slice(0, category.count);
+    
+    selectedQuestions.push(...selectedFromCategory);
+    selectedFromCategory.forEach(q => usedQuestionIds.add(q.id));
+  }
+  
+  // Se non abbiamo abbastanza domande, riempiamo con domande casuali da tutte le categorie
+  while (selectedQuestions.length < questionsCount) {
+    const allAvailable = [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES]
+      .filter(item => !usedQuestionIds.has(item.id));
+    
+    if (allAvailable.length === 0) break; // Non ci sono più domande disponibili
+    
+    const randomQuestion = allAvailable[Math.floor(Math.random() * allAvailable.length)];
+    selectedQuestions.push(randomQuestion);
+    usedQuestionIds.add(randomQuestion.id);
+  }
+  
+  return selectedQuestions;
+};
 
 function shuffle<T>(arr: T[]) {
   const a = arr.slice();
@@ -21,11 +105,13 @@ function shuffle<T>(arr: T[]) {
 export default function ChiLHaDetto({ 
   gameMode,
   backgroundImage,
-  onBackToMenu 
+  onBackToMenu,
+  currentTheme
 }: { 
   gameMode: 'classic' | 'millionaire';
   backgroundImage: string;
-  onBackToMenu: () => void; 
+  onBackToMenu: () => void;
+  currentTheme?: 'classica' | 'intrattenimento' | 'trash' | 'mista';
 }) {
   const [historicalMode, setHistoricalMode] = useState(true);
   const [order, setOrder] = useState<number[]>([]);
@@ -91,24 +177,53 @@ export default function ChiLHaDetto({
   const [loadedImagesCache, setLoadedImagesCache] = useState<Set<string>>(new Set());
   const [isPreloading, setIsPreloading] = useState(false);
   
-  // Costanti per la modalità di gioco
-  const QUESTIONS_PER_GAME = 12; // Ogni partita ha 12 domande
+  // Funzione per ottenere il numero di domande in base al tema e modalità
+  const getQuestionsPerGame = (theme: string | undefined, mode: string): number => {
+    if (mode === 'millionaire' && theme === 'mista') {
+      return 15; // Gran Sapiarca ha 15 domande
+    }
+    return 12; // Tutte le altre modalità hanno 12 domande
+  };
   
-  // Configurazione modalità milionario
-  const MILLIONAIRE_DIFFICULTY_MAP = [
-    { min: 1, max: 1 },    // Q1: difficoltà 1
-    { min: 1, max: 2 },    // Q2: difficoltà 1-2
-    { min: 2, max: 2 },    // Q3: difficoltà 2
-    { min: 3, max: 3 },    // Q4: difficoltà 3
-    { min: 3, max: 4 },    // Q5: difficoltà 3-4
-    { min: 4, max: 4 },    // Q6: difficoltà 4
-    { min: 4, max: 5 },    // Q7: difficoltà 4-5
-    { min: 5, max: 5 },    // Q8: difficoltà 5
-    { min: 5, max: 6 },    // Q9: difficoltà 5-6
-    { min: 6, max: 6 },    // Q10: difficoltà 6
-    { min: 6, max: 7 },    // Q11: difficoltà 6-7
-    { min: 7, max: 7 }     // Q12: difficoltà 7
-  ];
+  // Funzione per ottenere la mappa delle difficoltà in base al numero di domande
+  const getDifficultyMap = (questionsCount: number) => {
+    if (questionsCount === 15) {
+      // Mappa per 15 domande (Gran Sapiarca)
+      return [
+        { min: 1, max: 1 },    // Q1: difficoltà 1
+        { min: 1, max: 2 },    // Q2: difficoltà 1-2
+        { min: 2, max: 2 },    // Q3: difficoltà 2
+        { min: 2, max: 3 },    // Q4: difficoltà 2-3
+        { min: 3, max: 3 },    // Q5: difficoltà 3
+        { min: 3, max: 4 },    // Q6: difficoltà 3-4
+        { min: 4, max: 4 },    // Q7: difficoltà 4
+        { min: 4, max: 5 },    // Q8: difficoltà 4-5
+        { min: 5, max: 5 },    // Q9: difficoltà 5
+        { min: 5, max: 6 },    // Q10: difficoltà 5-6
+        { min: 6, max: 6 },    // Q11: difficoltà 6
+        { min: 6, max: 7 },    // Q12: difficoltà 6-7
+        { min: 6, max: 7 },    // Q13: difficoltà 6-7
+        { min: 7, max: 7 },    // Q14: difficoltà 7
+        { min: 7, max: 7 }     // Q15: difficoltà 7 (massima)
+      ];
+    } else {
+      // Mappa per 12 domande (tutte le altre modalità)
+      return [
+        { min: 1, max: 1 },    // Q1: difficoltà 1
+        { min: 1, max: 2 },    // Q2: difficoltà 1-2
+        { min: 2, max: 2 },    // Q3: difficoltà 2
+        { min: 3, max: 3 },    // Q4: difficoltà 3
+        { min: 3, max: 4 },    // Q5: difficoltà 3-4
+        { min: 4, max: 4 },    // Q6: difficoltà 4
+        { min: 4, max: 5 },    // Q7: difficoltà 4-5
+        { min: 5, max: 5 },    // Q8: difficoltà 5
+        { min: 5, max: 6 },    // Q9: difficoltà 5-6
+        { min: 6, max: 6 },    // Q10: difficoltà 6
+        { min: 6, max: 7 },    // Q11: difficoltà 6-7
+        { min: 7, max: 7 }     // Q12: difficoltà 7
+      ];
+    }
+  };
 
   useEffect(() => {
     // Reset delle domande usate per ogni nuova partita
@@ -117,32 +232,51 @@ export default function ChiLHaDetto({
     if (gameMode === 'millionaire') {
       // Modalità milionario: seleziona domande per difficoltà progressiva
       const selectedQuestions: number[] = [];
+      const questionsPerGame = getQuestionsPerGame(currentTheme, gameMode);
+      const difficultyMap = getDifficultyMap(questionsPerGame);
       
-      for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
-        const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
-        const availableQuestions = ITEMS.filter(item => 
-          item.difficulty >= difficultyRange.min && 
-          item.difficulty <= difficultyRange.max
-        );
+      if (currentTheme === 'mista') {
+        // Per il tema misto (Gran Sapiarca), usa selezione ponderata
+        const weightedQuestions = selectWeightedQuestions(questionsPerGame, usedQuestions);
+        const allItems = [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES];
         
-        if (availableQuestions.length > 0) {
-          const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
-          const originalIndex = ITEMS.findIndex(item => item.id === randomQuestion.id);
-          selectedQuestions.push(originalIndex);
-        } else {
-          // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
-          const availableFallback = ITEMS;
-          if (availableFallback.length > 0) {
-            const randomIndex = Math.floor(Math.random() * availableFallback.length);
-            const fallbackQuestion = availableFallback[randomIndex];
-            const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
+        // Trova gli indici delle domande selezionate
+        for (const question of weightedQuestions) {
+          const originalIndex = allItems.findIndex(item => item.id === question.id);
+          if (originalIndex !== -1) {
+            selectedQuestions.push(originalIndex);
+          }
+        }
+      } else {
+        // Per gli altri temi, usa la logica originale
+        const currentItems = getQuotesByTheme(currentTheme);
+        
+        for (let i = 0; i < questionsPerGame; i++) {
+          const difficultyRange = difficultyMap[i];
+          const availableQuestions = currentItems.filter(item => 
+            item.difficulty >= difficultyRange.min && 
+            item.difficulty <= difficultyRange.max
+          );
+          
+          if (availableQuestions.length > 0) {
+            const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+            const originalIndex = currentItems.findIndex(item => item.id === randomQuestion.id);
             selectedQuestions.push(originalIndex);
           } else {
-            // Se non ci sono domande disponibili, prendi una casuale
-            const randomIndex = Math.floor(Math.random() * ITEMS.length);
-            const fallbackQuestion = ITEMS[randomIndex];
-            const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
-            selectedQuestions.push(originalIndex);
+            // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
+            const availableFallback = currentItems;
+            if (availableFallback.length > 0) {
+              const randomIndex = Math.floor(Math.random() * availableFallback.length);
+              const fallbackQuestion = availableFallback[randomIndex];
+              const originalIndex = currentItems.findIndex(item => item.id === fallbackQuestion.id);
+              selectedQuestions.push(originalIndex);
+            } else {
+              // Se non ci sono domande disponibili, prendi una casuale
+              const randomIndex = Math.floor(Math.random() * currentItems.length);
+              const fallbackQuestion = currentItems[randomIndex];
+              const originalIndex = currentItems.findIndex(item => item.id === fallbackQuestion.id);
+              selectedQuestions.push(originalIndex);
+            }
           }
         }
       }
@@ -194,8 +328,30 @@ export default function ChiLHaDetto({
   const selectNextQuestion = useCallback(() => {
     if (gameMode !== 'classic') return;
     
+    // Per il tema misto, usa la distribuzione garantita anche nella modalità classic
+    if (currentTheme === 'mista') {
+      // Usa la selezione ponderata per garantire la distribuzione 50/35/15
+      const weightedQuestions = selectWeightedQuestions(1, usedQuestions); // Seleziona solo 1 domanda
+      const allItems = [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES];
+      
+      if (weightedQuestions.length > 0) {
+        const selectedQuestion = weightedQuestions[0];
+        const originalIndex = allItems.findIndex(item => item.id === selectedQuestion.id);
+        
+        if (originalIndex !== -1) {
+          // Aggiungi la domanda selezionata alle domande usate in questa sessione
+          setSessionUsedQuestions(prev => new Set([...prev, selectedQuestion.id]));
+          setOrder([originalIndex]);
+          return;
+        }
+      }
+    }
+    
+    // Per gli altri temi, usa la logica originale
+    const currentItems = getQuotesByTheme(currentTheme);
+    
     // Filtra le domande che non sono state usate né globalmente né in questa sessione
-    const availableItems = ITEMS.filter(item => 
+    const availableItems = currentItems.filter(item => 
       !usedQuestions.has(item.id) && !sessionUsedQuestions.has(item.id)
     );
     
@@ -208,7 +364,7 @@ export default function ChiLHaDetto({
     }
     
     // Esclude la domanda corrente per evitare duplicati consecutivi
-    const currentQuestionId = order.length > 0 ? ITEMS[order[0]]?.id : null;
+    const currentQuestionId = order.length > 0 ? currentItems[order[0]]?.id : null;
     const availableItemsNoCurrent = availableItems.filter(item => item.id !== currentQuestionId);
     
     // Se dopo aver escluso la domanda corrente non ci sono più domande disponibili,
@@ -236,13 +392,13 @@ export default function ChiLHaDetto({
       selectedQuestion = finalAvailableItems[Math.floor(Math.random() * finalAvailableItems.length)];
     }
     
-    const originalIndex = ITEMS.findIndex(item => item.id === selectedQuestion.id);
+    const originalIndex = currentItems.findIndex(item => item.id === selectedQuestion.id);
     
     // Aggiungi la domanda selezionata alle domande usate in questa sessione
     setSessionUsedQuestions(prev => new Set([...prev, selectedQuestion.id]));
     
     setOrder([originalIndex]);
-  }, [gameMode, usedQuestions, sessionUsedQuestions, i, resetUsedQuestions, order, streak]);
+  }, [gameMode, usedQuestions, sessionUsedQuestions, i, resetUsedQuestions, order, streak, currentTheme]);
 
   const current: Item | null = useMemo(() => {
     if (gameMode === 'classic') {
@@ -251,12 +407,31 @@ export default function ChiLHaDetto({
         selectNextQuestion();
         return null;
       }
-      return ITEMS[order[0]];
+      
+      // Per il tema misto, usa l'array combinato anche nella modalità classic
+      if (currentTheme === 'mista') {
+        const allItems = [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES];
+        return allItems[order[0]];
+      } else {
+        // Per gli altri temi, usa getQuotesByTheme
+        const currentItems = getQuotesByTheme(currentTheme);
+        return currentItems[order[0]];
+      }
     } else {
       // Per la modalità millionaire, usa l'ordine predefinito
-      return order.length ? ITEMS[order[i]] : null;
+      if (order.length === 0) return null;
+      
+      // Per il tema misto, usa l'array combinato
+      if (currentTheme === 'mista') {
+        const allItems = [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES];
+        return allItems[order[i]];
+      } else {
+        // Per gli altri temi, usa getQuotesByTheme
+        const currentItems = getQuotesByTheme(currentTheme);
+        return currentItems[order[i]];
+      }
     }
-  }, [order, i, gameMode, selectNextQuestion]);
+  }, [order, i, gameMode, selectNextQuestion, currentTheme]);
 
   // Funzione per preload delle immagini dei personaggi
   const preloadCharacterImages = useCallback((choices: string[]) => {
@@ -594,7 +769,8 @@ export default function ChiLHaDetto({
         
         // Calcola il punteggio finale con il moltiplicatore hints (solo se vittoria)
         const newQuestionScores = [...questionScores, questionScore];
-        if (newStreak === 12) {
+        const maxLevel = getQuestionsPerGame(currentTheme, gameMode);
+        if (newStreak === maxLevel) {
           // Vittoria: applica moltiplicatore hints
           const baseScore = newQuestionScores.reduce((sum, score) => sum + score, 0);
           const finalScore = calculateEracleFinalScore(newQuestionScores, hintsUnused);
@@ -634,12 +810,13 @@ export default function ChiLHaDetto({
             setIs2ndChanceActive(false);
           }
           
-          // Durata diversa per vittoria finale (livello 12) vs livelli normali
-          const animationDuration = newLevel === 12 ? 3000 : 1500;
+          // Durata diversa per vittoria finale vs livelli normali
+          const maxLevel = getQuestionsPerGame(currentTheme, gameMode);
+          const animationDuration = newLevel === maxLevel ? 3000 : 1500;
           setTimeout(() => {
             setShowClimbingAnimation(false);
             // Se è vittoria finale, mostra la leaderboard
-            if (newLevel === 12) {
+            if (newLevel === maxLevel) {
               setTimeout(() => {
                 setShowLeaderboard(true);
               }, 1000);
@@ -727,8 +904,9 @@ export default function ChiLHaDetto({
     }
     
     if (gameMode === 'millionaire') {
-      // Modalità Verso l'Olimpo: 12 domande fisse
-      if (i < QUESTIONS_PER_GAME - 1) {
+      // Modalità Verso l'Olimpo: domande fisse in base al tema
+      const questionsPerGame = getQuestionsPerGame(currentTheme, gameMode);
+      if (i < questionsPerGame - 1) {
         setI((v) => v + 1);
         
         // Reset dello stato per la nuova domanda (mantiene punteggio e streak)
@@ -749,23 +927,42 @@ export default function ChiLHaDetto({
         
         // Modalità milionario: seleziona domande per difficoltà progressiva
         const selectedQuestions: number[] = [];
+        const questionsPerGame = getQuestionsPerGame(currentTheme, gameMode);
+        const difficultyMap = getDifficultyMap(questionsPerGame);
         
-        for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
-          const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
-          const availableQuestions = ITEMS.filter(item => 
-            item.difficulty >= difficultyRange.min && item.difficulty <= difficultyRange.max
-          );
+        if (currentTheme === 'mista') {
+          // Per il tema misto (Gran Sapiarca), usa selezione ponderata
+          const weightedQuestions = selectWeightedQuestions(questionsPerGame, usedQuestions);
+          const allItems = [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES];
           
-          if (availableQuestions.length > 0) {
-            const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
-            const originalIndex = ITEMS.findIndex(item => item.id === randomQuestion.id);
-            selectedQuestions.push(originalIndex);
-          } else {
-            // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
-            const randomIndex = Math.floor(Math.random() * ITEMS.length);
-            const fallbackQuestion = ITEMS[randomIndex];
-            const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
-            selectedQuestions.push(originalIndex);
+          // Trova gli indici delle domande selezionate
+          for (const question of weightedQuestions) {
+            const originalIndex = allItems.findIndex(item => item.id === question.id);
+            if (originalIndex !== -1) {
+              selectedQuestions.push(originalIndex);
+            }
+          }
+        } else {
+          // Per gli altri temi, usa la logica originale
+          const currentItems = getQuotesByTheme(currentTheme);
+          
+          for (let i = 0; i < questionsPerGame; i++) {
+            const difficultyRange = difficultyMap[i];
+            const availableQuestions = currentItems.filter(item => 
+              item.difficulty >= difficultyRange.min && item.difficulty <= difficultyRange.max
+            );
+            
+            if (availableQuestions.length > 0) {
+              const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+              const originalIndex = currentItems.findIndex(item => item.id === randomQuestion.id);
+              selectedQuestions.push(originalIndex);
+            } else {
+              // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
+              const randomIndex = Math.floor(Math.random() * currentItems.length);
+              const fallbackQuestion = currentItems[randomIndex];
+              const originalIndex = currentItems.findIndex(item => item.id === fallbackQuestion.id);
+              selectedQuestions.push(originalIndex);
+            }
           }
         }
         
@@ -943,7 +1140,7 @@ export default function ChiLHaDetto({
                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
             {gameMode === 'millionaire' ? (
               <>
-                <div className="text-purple-300 font-bold text-lg sm:text-xl">Liv. {i + 1} di 12</div>
+                <div className="text-purple-300 font-bold text-lg sm:text-xl">Liv. {i + 1} di {getQuestionsPerGame(currentTheme, gameMode)}</div>
               </>
             ) : (
               <div className="flex items-center gap-3">
@@ -992,7 +1189,7 @@ export default function ChiLHaDetto({
                 
                 {/* Progresso principale con gradiente animato */}
                 <div className="h-full bg-gradient-to-r from-purple-400 via-purple-300 to-purple-500 shadow-lg transition-all duration-700 ease-out relative overflow-hidden"
-                     style={{ width: `${(completedLevels / 12) * 100}%` }}>
+                     style={{ width: `${(completedLevels / getQuestionsPerGame(currentTheme, gameMode)) * 100}%` }}>
                   
                   {/* Effetto brillante che si muove */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
@@ -1003,10 +1200,10 @@ export default function ChiLHaDetto({
                 
                 {/* Indicatori di livello con piccoli punti - allineamento perfetto */}
                 <div className="absolute inset-0 flex items-center justify-between px-1">
-                  {Array.from({ length: 13 }, (_, index) => {
-                    // Calcola la posizione esatta del punto (0-12)
+                  {Array.from({ length: getQuestionsPerGame(currentTheme, gameMode) + 1 }, (_, index) => {
+                    // Calcola la posizione esatta del punto (0-12 o 0-15)
                     const pointPosition = index;
-                    // Calcola la posizione corrente della progress bar (0-12) - si aggiorna solo dopo risposta corretta
+                    // Calcola la posizione corrente della progress bar - si aggiorna solo dopo risposta corretta
                     const currentProgress = completedLevels;
                     // Il punto si illumina solo se la progress bar ha superato la sua posizione
                     const shouldLightUp = pointPosition < currentProgress;
@@ -1307,7 +1504,7 @@ export default function ChiLHaDetto({
                          animation: 'pulse 2s infinite'
                        }}>
                     {gameMode === 'millionaire'
-                      ? (currentLevel === 12 ? '🏆 VITTORIA FINALE!' : `Fatica ${currentLevel} Superata!`)
+                      ? (currentLevel === getQuestionsPerGame(currentTheme, gameMode) ? '🏆 VITTORIA FINALE!' : `Fatica ${currentLevel} Superata!`)
                       : `🔥 Streak: ${streak} 🔥`
                     }
                   </div>
@@ -1316,8 +1513,8 @@ export default function ChiLHaDetto({
                   <div className="text-xl sm:text-2xl text-purple-100 font-semibold mb-4 drop-shadow-lg"
                        style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
                     {gameMode === 'millionaire'
-                      ? (currentLevel === 12 
-                          ? '🎉 Hai completato tutte le Dodici Fatiche! 🎉' 
+                      ? (currentLevel === getQuestionsPerGame(currentTheme, gameMode) 
+                          ? '🎉 Hai completato tutte le Fatiche! 🎉' 
                           : 'Continua la scalata verso l\'Olimpo!')
                       : `Continua la battaglia! Pts: ${score}`
                     }
@@ -1336,12 +1533,12 @@ export default function ChiLHaDetto({
                     <>
                       <div className="mt-4 w-48 h-2 bg-purple-800/50 rounded-full overflow-hidden mx-auto">
                         <div className="h-full bg-gradient-to-r from-purple-400 to-purple-600 rounded-full animate-pulse"
-                             style={{ width: `${(currentLevel / 12) * 100}%` }}></div>
+                             style={{ width: `${(currentLevel / getQuestionsPerGame(currentTheme, gameMode)) * 100}%` }}></div>
                       </div>
                       
                       {/* Testo progresso */}
                       <div className="mt-2 text-sm text-purple-200 font-medium">
-                        {currentLevel}/12 livelli completati
+                        {currentLevel}/{getQuestionsPerGame(currentTheme, gameMode)} livelli completati
                       </div>
                     </>
                   )}
@@ -1449,7 +1646,7 @@ export default function ChiLHaDetto({
                   {/* Bottoni di azione con layout responsive */}
                   <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center items-center">
                                         {/* Bottoni diversi per modalità Verso l'Olimpo se si è sbagliato O se si è vinto, e per Battaglia di Achille se si è sbagliato O se è scaduto il tempo */}
-                    {(gameMode === 'millionaire' && (gameOver || (selected !== null && (!mappedChoices[selected]?.isCorrect || (mappedChoices[selected]?.isCorrect && i === QUESTIONS_PER_GAME - 1))))) || 
+                    {(gameMode === 'millionaire' && (gameOver || (selected !== null && (!mappedChoices[selected]?.isCorrect || (mappedChoices[selected]?.isCorrect && i === getQuestionsPerGame(currentTheme, gameMode) - 1))))) || 
                      (gameMode !== 'millionaire' && (isTimeoutGameOver || (selected !== null && !mappedChoices[selected]?.isCorrect))) ? (
                       <>
                         <button 
@@ -1494,34 +1691,74 @@ export default function ChiLHaDetto({
                             
                             // Rimescola le domande per la nuova partita
                             
+                            // Ottieni le domande corrette in base al tema
+                            const currentItems = getQuotesByTheme(currentTheme);
+                            
                             if (gameMode === 'millionaire') {
                               // Modalità Verso l'Olimpo: seleziona nuove domande per difficoltà progressiva
                               const selectedQuestions: number[] = [];
+                              const questionsPerGame = getQuestionsPerGame(currentTheme, gameMode);
+                              const difficultyMap = getDifficultyMap(questionsPerGame);
                               
-                              for (let i = 0; i < QUESTIONS_PER_GAME; i++) {
-                                const difficultyRange = MILLIONAIRE_DIFFICULTY_MAP[i];
-                                const availableQuestions = ITEMS.filter(item => 
-                                  item.difficulty >= difficultyRange.min && item.difficulty <= difficultyRange.max
-                                );
+                              if (currentTheme === 'mista') {
+                                // Per il tema misto (Gran Sapiarca), usa selezione ponderata
+                                const weightedQuestions = selectWeightedQuestions(questionsPerGame, usedQuestions);
+                                const allItems = [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES];
                                 
-                                if (availableQuestions.length > 0) {
-                                  const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
-                                  const originalIndex = ITEMS.findIndex(item => item.id === randomQuestion.id);
-                                  selectedQuestions.push(originalIndex);
-                                } else {
-                                  // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
-                                  const randomIndex = Math.floor(Math.random() * ITEMS.length);
-                                  const fallbackQuestion = ITEMS[randomIndex];
-                                  const originalIndex = ITEMS.findIndex(item => item.id === fallbackQuestion.id);
-                                  selectedQuestions.push(originalIndex);
+                                // Trova gli indici delle domande selezionate
+                                for (const question of weightedQuestions) {
+                                  const originalIndex = allItems.findIndex(item => item.id === question.id);
+                                  if (originalIndex !== -1) {
+                                    selectedQuestions.push(originalIndex);
+                                  }
+                                }
+                              } else {
+                                // Per gli altri temi, usa la logica originale
+                                for (let i = 0; i < questionsPerGame; i++) {
+                                  const difficultyRange = difficultyMap[i];
+                                  const availableQuestions = currentItems.filter(item => 
+                                    item.difficulty >= difficultyRange.min && item.difficulty <= difficultyRange.max
+                                  );
+                                  
+                                  if (availableQuestions.length > 0) {
+                                    const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+                                    const originalIndex = currentItems.findIndex(item => item.id === randomQuestion.id);
+                                    selectedQuestions.push(originalIndex);
+                                  } else {
+                                    // Fallback: se non ci sono domande per questa difficoltà, prendi una casuale
+                                    const randomIndex = Math.floor(Math.random() * currentItems.length);
+                                    const fallbackQuestion = currentItems[randomIndex];
+                                    const originalIndex = currentItems.findIndex(item => item.id === fallbackQuestion.id);
+                                    selectedQuestions.push(originalIndex);
+                                  }
                                 }
                               }
                               
                               setOrder(selectedQuestions);
                             } else {
-                              // Modalità classica: estrai casualmente 10 nuove domande
-                              const shuffledIndices = shuffle(ITEMS.map((_, k) => k));
-                              setOrder(shuffledIndices.slice(0, QUESTIONS_PER_GAME));
+                              // Modalità classica: estrai casualmente nuove domande
+                              if (currentTheme === 'mista') {
+                                // Per il tema misto, usa la selezione ponderata anche per la modalità classic
+                                const weightedQuestions = selectWeightedQuestions(1, usedQuestions);
+                                const allItems = [...CLASSIC_QUOTES, ...ENTERTAINMENT_QUOTES, ...TRASH_QUOTES];
+                                
+                                if (weightedQuestions.length > 0) {
+                                  const selectedQuestion = weightedQuestions[0];
+                                  const originalIndex = allItems.findIndex(item => item.id === selectedQuestion.id);
+                                  if (originalIndex !== -1) {
+                                    setOrder([originalIndex]);
+                                  } else {
+                                    setOrder([]);
+                                  }
+                                } else {
+                                  setOrder([]);
+                                }
+                              } else {
+                                // Per gli altri temi, usa la logica originale
+                                const questionsPerGame = getQuestionsPerGame(currentTheme, gameMode);
+                                const shuffledIndices = shuffle(currentItems.map((_, k) => k));
+                                setOrder(shuffledIndices.slice(0, questionsPerGame));
+                              }
                             }
                           }} 
                           className="px-4 sm:px-6 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold hover:from-purple-600 hover:to-purple-700 transition-colors shadow-lg text-sm sm:text-base w-full sm:w-auto drop-shadow-lg"
@@ -1537,7 +1774,7 @@ export default function ChiLHaDetto({
                         style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
                       >
                         {gameMode === 'millionaire' 
-                          ? (i < QUESTIONS_PER_GAME - 1 ? "Prossima Domanda" : "Nuovo Round")
+                          ? (i < getQuestionsPerGame(currentTheme, gameMode) - 1 ? "Prossima Domanda" : "Nuovo Round")
                           : (isTimeoutGameOver ? "Nuova Partita" : "Prossima Domanda")
                         }
                       </button>
@@ -1570,6 +1807,7 @@ export default function ChiLHaDetto({
         <Leaderboard
           onClose={() => setShowLeaderboard(false)}
           gameMode={gameMode === 'classic' ? 'achille' : gameMode}
+          currentTheme={currentTheme}
           currentStreak={gameMode === 'millionaire' ? currentLevel : finalStreak}
           currentScore={score}
           onSaveRecord={(name) => {
