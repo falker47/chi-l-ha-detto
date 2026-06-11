@@ -397,10 +397,10 @@
     "difficulty": 7,
     "spiciness": 0,
     "hint_short": "Letteratura latina antica",
-    "hint_more": "Commediografo latino del III-II secolo a.C., autore di commedie come 'Asinaria', che coniò questa celebre espressione molto prima che Hobbes la utilizzasse nel 'Leviatano'.",
-    "ambiguity_note": "Le opzioni includono Hobbes (che rese famosa la frase nel 'Leviatano') e Seneca (filosofo stoico), entrambi associati al pessimismo. Cicerone è fuorviante perché è un ottimista. Plauto la scrisse in una commedia, non in un trattato filosofico.",
+    "hint_more": "Commediografo latino del III-II secolo a.C., autore di commedie come 'Asinaria', dove scrive 'Lupus est homo homini, non homo, quom qualis sit non novit' (v. 495). La forma sintetica 'Homo homini lupus' è un adattamento posteriore, reso celebre da Hobbes nel 'Leviatano'.",
+    "ambiguity_note": "Le opzioni includono Hobbes (che rese famosa la forma sintetica nel 'Leviatano') e Seneca (filosofo stoico), entrambi associati al pessimismo. Cicerone è fuorviante. L'originale plautino è più articolato: 'Lupus est homo homini, non homo, quom qualis sit non novit' — l'uomo è lupo per l'altro uomo quando non ne conosce la natura.",
     "language_orig": "LA",
-    "context": "Nell'antica Roma del III-II secolo a.C., Plauto sviluppò una visione pessimistica della natura umana attraverso il teatro. Credeva che l'uomo fosse naturalmente aggressivo e competitivo, anticipando il pessimismo moderno."
+    "context": "Nell'Asinaria (v. 495), commedia del III-II secolo a.C., Plauto mette in bocca a un personaggio la frase 'Lupus est homo homini, non homo, quom qualis sit non novit': l'uomo è un lupo per l'altro uomo, finché non lo conosce. La forma sintetica e aforistica 'Homo homini lupus' fu canonizzata secoli dopo da Thomas Hobbes nel 'Leviatano' (1651) come emblema della guerra di tutti contro tutti allo stato di natura."
   },
   {
     "id": "q16",
@@ -1214,17 +1214,17 @@
   },
   {
     "id": "q46",
-    "quote": "L'arco dell'universo morale è lungo, ma si piega verso la giustizia.",
-    "author": "Martin Luther King",
+    "quote": "The arc of the moral universe is long, but it bends toward justice (\"L'arco dell'universo morale è lungo, ma si piega verso la giustizia\").",
+    "author": "Theodore Parker",
     "choices": [
-      "Martin Luther King",
       "Theodore Parker",
+      "Martin Luther King",
       "Barack Obama",
       "Frederick Douglass"
     ],
     "correctIndex": 0,
-    "year_or_period": "1950s–1960s (ripresa)",
-    "source_title": "Sermoni di MLK (1950s-1960s) - Ripresa da Theodore Parker (1853)",
+    "year_or_period": "1853",
+    "source_title": "Theodore Parker, 'Of Justice and the Conscience' - sermone (1853)",
     "source_link": "https://en.wikipedia.org/wiki/The_arc_of_the_moral_universe_is_long",
     "tags": [
       "diritti civili",
@@ -1233,11 +1233,11 @@
     ],
     "difficulty": 4,
     "spiciness": 1,
-    "hint_short": "Storia americana del XX secolo",
-    "hint_more": "Pastore battista e attivista americano del XX secolo, leader del movimento per i diritti civili, noto per il suo discorso 'I have a dream' e per la sua filosofia della nonviolenza.",
-    "ambiguity_note": "Le opzioni includono Parker (autore originale) e Obama (che la citò), entrambi associati al tema della giustizia. Douglass è fuorviante perché è un abolizionista del XIX secolo. MLK riprese questa frase da Parker rendendola famosa.",
+    "hint_short": "Ministro unitariano e abolizionista americano",
+    "hint_more": "Ministro unitariano e abolizionista americano dell'Ottocento. Formulò la frase in un sermone del 1853 ('Of Justice and the Conscience'). Martin Luther King la riprese e la rese celebre un secolo dopo, ma l'autore originale è Parker.",
+    "ambiguity_note": "Le opzioni includono MLK (che rese celebre la frase un secolo dopo) e Obama (che la citò ripetutamente). Douglass è fuorviante come contemporaneo abolizionista. Theodore Parker è il coniatore originale del 1853.",
     "language_orig": "EN",
-    "context": "Nell'America degli anni '50-'60, MLK sviluppò una filosofia dei diritti civili basata sulla speranza. Credeva che l'arco dell'universo morale si piegasse verso la giustizia, trasformando la retorica in speranza rivoluzionaria e guidando il movimento per i diritti civili."
+    "context": "Nel 1853 il ministro unitariano e abolizionista americano Theodore Parker pronunciò nel sermone 'Of Justice and the Conscience' la celebre immagine dell'arco morale che si piega verso la giustizia. Un secolo dopo, Martin Luther King la riprese ripetutamente nei propri discorsi rendendola uno dei simboli retorici del movimento per i diritti civili; Barack Obama la richiamò spesso durante la sua presidenza. L'autore originale resta però Parker."
   },
   {
     "id": "q47",
@@ -1358,9 +1358,9 @@
       "Winston Churchill"
     ],
     "correctIndex": 0,
-    "year_or_period": "1935",
-    "source_title": "HLS Nuremberg Trials Project, Doc. PS-2656 (1935)",
-    "source_link": "https://nuremberg.law.harvard.edu/documents/1168-extract-from-a-speech?mode=text",
+    "year_or_period": "Anni '30 (discorsi nazisti sulla Hitlerjugend)",
+    "source_title": "Discorsi di Hitler sulla Gioventù Hitleriana, anni '30 (versione tedesca: 'Wer die Jugend hat, hat die Zukunft')",
+    "source_link": "https://en.wikipedia.org/wiki/Hitler_Youth",
     "tags": [
       "propaganda",
       "nazismo",
@@ -1495,9 +1495,9 @@
       "Angela Davis"
     ],
     "correctIndex": 0,
-    "year_or_period": "1967",
-    "source_title": "Interview on NBC/Reportage (1967) - Ampla documentazione",
-    "source_link": "https://www.nbcnews.com/news/nbcblk/martin-luther-king-jr-riot-language-unheard-n782271",
+    "year_or_period": "14 aprile 1967",
+    "source_title": "Discorso 'The Other America', Stanford University (14 aprile 1967); prima formulazione nell'intervista CBS a Mike Wallace del 27 settembre 1966",
+    "source_link": "https://www.crmvet.org/docs/otheram.htm",
     "tags": [
       "diritti civili",
       "USA",
@@ -1871,7 +1871,7 @@
     ],
     "correctIndex": 0,
     "year_or_period": "V sec. a.C.",
-    "source_title": "Frammenti (V sec. a.C.) - Tradizione",
+    "source_title": "Parafrasi moderna della dottrina di Eraclito (frammenti autentici: DK B12, 'panta rhei')",
     "source_link": "https://en.wikipedia.org/wiki/Heraclitus",
     "tags": [
       "filosofia antica",
@@ -1880,10 +1880,10 @@
     "difficulty": 2,
     "spiciness": 0,
     "hint_short": "Filosofia greca presocratica",
-    "hint_more": "Filosofo greco presocratico del VI-V secolo a.C., noto per la sua dottrina del divenire e per aver sostenuto che 'tutto scorre' (panta rhei), considerato il filosofo del cambiamento.",
-    "ambiguity_note": "Le opzioni includono Cesare e Machiavelli (statisti), entrambi associati al tema del cambiamento. Pitagora è fuorviante perché è un matematico. Eraclito scrisse questo nei suoi frammenti.",
+    "hint_more": "Filosofo greco presocratico del VI-V secolo a.C., noto per la sua dottrina del divenire e per aver sostenuto che 'tutto scorre' (panta rhei). Questa formulazione è una parafrasi moderna del suo pensiero; i frammenti originali parlano del fiume e del divenire continuo.",
+    "ambiguity_note": "Le opzioni includono Cesare e Machiavelli (statisti), entrambi associati al tema del cambiamento. Pitagora è fuorviante perché è un matematico. La formulazione 'Nulla è permanente tranne il cambiamento' è parafrasi popolare: nei frammenti originali Eraclito usa l'immagine del fiume (DK B12).",
     "language_orig": "EL",
-    "context": "Nell'antica Grecia del V secolo a.C., Eraclito sviluppò una filosofia presocratica basata sul divenire. Credeva che nulla fosse permanente tranne il cambiamento, trasformando la filosofia in dottrina del divenire e influenzando il pensiero occidentale per millenni."
+    "context": "Nell'antica Grecia del V secolo a.C., Eraclito sviluppò la dottrina del divenire. I suoi frammenti autentici — come il celebre 'non si può scendere due volte nello stesso fiume' (DK B12) — descrivono una realtà in perpetuo mutamento. La formulazione 'Nulla è permanente tranne il cambiamento' è una sintesi popolare moderna del suo pensiero, non una citazione diretta."
   },
   {
     "id": "q71",
@@ -2569,9 +2569,9 @@
       "Sun Tzu"
     ],
     "correctIndex": 0,
-    "year_or_period": "I sec. d.C. (tradiz.)",
-    "source_title": "Massima latina - attribuzione tradizionale (I sec. d.C.)",
-    "source_link": "https://it.wikipedia.org/wiki/Per_aspera_ad_astra",
+    "year_or_period": "I sec. d.C. (attribuzione tradizionale; sintesi di passi latini)",
+    "source_title": "Motto latino tradizionalmente attribuito a Seneca (Hercules Furens, v. 437) e Virgilio (Eneide IX, 641)",
+    "source_link": "https://en.wikipedia.org/wiki/Per_aspera_ad_astra",
     "tags": [
       "latino",
       "resilienza",
@@ -2580,10 +2580,10 @@
     "difficulty": 1,
     "spiciness": 0,
     "hint_short": "Filosofia romana del I secolo",
-    "hint_more": "Filosofo stoico romano del I secolo d.C., precettore di Nerone, autore delle 'Lettere a Lucilio' e noto per i suoi insegnamenti sulla virtù e la saggezza.",
-    "ambiguity_note": "Le opzioni includono Mussolini (dittatore moderno), Marco Aurelio (imperatore filosofo) e Sun Tzu (stratega), tutti associati al tema della perseveranza. Tradizionalmente attribuita a Seneca.",
+    "hint_more": "Filosofo stoico romano del I secolo d.C., precettore di Nerone. La formula esatta 'Per aspera ad astra' non compare nei suoi scritti, ma si ispira al verso dell'Hercules Furens ('non est ad astra mollis e terris via') ed è tradizionalmente attribuita a Seneca.",
+    "ambiguity_note": "Le opzioni includono Mussolini (dittatore moderno), Marco Aurelio (imperatore filosofo) e Sun Tzu (stratega), tutti associati al tema della perseveranza. La formulazione moderna deriva da passi latini di Seneca e Virgilio sintetizzati in epoca successiva.",
     "language_orig": "LA",
-    "context": "Nell'Impero Romano del I secolo d.C., Seneca sviluppò una filosofia stoica della resilienza. Credeva che per aspera ad astra significasse che attraverso le difficoltà si raggiungessero le stelle, trasformando la sofferenza in via verso l'eccellenza e influenzando il pensiero occidentale sulla perseveranza."
+    "context": "Nel I secolo d.C., Seneca scrisse nell'Hercules Furens (v. 437) che 'non esiste via agevole dalla terra alle stelle'. Virgilio nell'Eneide (IX, 641) aveva già usato 'sic itur ad astra'. La forma sintetica 'Per aspera ad astra' è una costruzione posteriore, entrata nella tradizione europea come motto della perseveranza e attribuita convenzionalmente a Seneca."
   },
   {
     "id": "q97",
@@ -2688,10 +2688,10 @@
     "difficulty": 4,
     "spiciness": 0,
     "hint_short": "Storia francese del XIX secolo",
-    "hint_more": "Imperatore francese del XIX secolo, noto per le sue campagne militari in Europa e per aver rivoluzionato la strategia militare, considerato uno dei più grandi generali della storia.",
-    "ambiguity_note": "Le opzioni includono Cesare (generale romano), Churchill (leader bellico) e Musk (imprenditore moderno), tutti associati al tema della determinazione. Napoleone pronunciò questo aforisma motivazionale.",
+    "hint_more": "Imperatore francese del XIX secolo, noto per le sue campagne militari in Europa e per aver rivoluzionato la strategia militare, considerato uno dei più grandi generali della storia. La frase gli è comunemente attribuita ma non è documentata con certezza nei suoi scritti.",
+    "ambiguity_note": "Le opzioni includono Cesare (generale romano), Churchill (leader bellico) e Musk (imprenditore moderno), tutti associati al tema della determinazione. L'attribuzione a Napoleone è tradizionale ma l'aforisma non è verificato nelle sue lettere o discorsi ufficiali.",
     "language_orig": "FR",
-    "context": "Nella Francia del XIX secolo, durante l'Impero napoleonico, Napoleone sviluppò una filosofia della volontà basata sulla determinazione. Credeva che 'impossibile' fosse una parola per sciocchi, trasformando l'ambizione in ideologia e influenzando la mentalità del successo moderno."
+    "context": "La frase è tradizionalmente attribuita a Napoleone Bonaparte nel XIX secolo, in varie forme ('Impossible n'est pas français'). Gli studiosi moderni la considerano apocrifa o molto posteriore: non è documentata puntualmente nei suoi scritti, ma si diffuse come sintesi della sua filosofia della volontà dopo la caduta dell'Impero, trasformandosi in aforisma motivazionale universale."
   },
   {
     "id": "q101",
@@ -2704,9 +2704,9 @@
       "Isaac Newton"
     ],
     "correctIndex": 0,
-    "year_or_period": "Rinascimento (attrib.)",
-    "source_title": "Aforisma popolare - attribuzione discussa (Rinascimento)",
-    "source_link": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci#Quotations",
+    "year_or_period": "Attribuzione apocrifa (1955 / 1977)",
+    "source_title": "Misattribuzione: la frase appare in W. Gaddis 'The Recognitions' (1955) e in una brochure Apple del 1977",
+    "source_link": "https://en.wikiquote.org/wiki/Leonardo_da_Vinci",
     "tags": [
       "design",
       "arte",
@@ -2715,10 +2715,10 @@
     "difficulty": 3,
     "spiciness": 0,
     "hint_short": "Rinascimento italiano",
-    "hint_more": "Artista e inventore italiano del Rinascimento, noto per opere come 'La Gioconda' e 'L'Ultima Cena', considerato uno dei più grandi geni della storia per i suoi contributi all'arte, alla scienza e all'ingegneria.",
-    "ambiguity_note": "Le opzioni includono Michelangelo (altro artista rinascimentale), Jobs (designer moderno) e Newton (scienziato), tutti associati al tema dell'innovazione. Aforisma tradizionalmente attribuito a Leonardo.",
-    "language_orig": "IT",
-    "context": "Nel Rinascimento italiano, Leonardo sviluppò una filosofia del design basata sull'essenzialità. Credeva che la semplicità fosse la massima sofisticazione, trasformando l'arte in scienza dell'eleganza e influenzando il design moderno per secoli."
+    "hint_more": "Artista e inventore italiano del Rinascimento, noto per opere come 'La Gioconda' e 'L'Ultima Cena'. La frase gli è comunemente attribuita ma NON compare nei suoi manoscritti: è una misattribuzione moderna.",
+    "ambiguity_note": "Le opzioni includono Michelangelo (altro artista rinascimentale), Jobs (che la riprese per Apple) e Newton (scienziato). La frase è popolarmente attribuita a Leonardo ma non ha riscontro nei Codici vinciani; la sua prima attestazione nota è in William Gaddis, 'The Recognitions' (1955), e fu resa celebre da una brochure Apple del 1977.",
+    "language_orig": "EN",
+    "context": "La frase 'Simplicity is the ultimate sophistication' è comunemente attribuita a Leonardo da Vinci, ma gli studiosi non hanno trovato alcuna fonte rinascimentale. La prima attestazione è nel romanzo 'The Recognitions' di William Gaddis (1955) e la sua popolarità nasce da una brochure Apple del 1977 dove fu messa in bocca a Leonardo. È oggi un classico esempio di citazione apocrifa della cultura design."
   },
   {
     "id": "q102",
@@ -2911,7 +2911,7 @@
   },
   {
     "id": "q109",
-    "quote": "Crisi è quel momento in cui il vecchio muore ed il nuovo stenta a nascere.",
+    "quote": "La crisi consiste appunto nel fatto che il vecchio muore e il nuovo non può nascere: in questo interregno si verificano i fenomeni morbosi più svariati.",
     "author": "Antonio Gramsci",
     "choices": [
       "Antonio Gramsci",
@@ -2920,9 +2920,9 @@
       "Hannah Arendt"
     ],
     "correctIndex": 0,
-    "year_or_period": "1929–1935",
-    "source_title": "Quaderni del carcere (1929-1935) - formulazione parafrasata",
-    "source_link": "https://it.wikipedia.org/wiki/Antonio_Gramsci#Quaderni_del_carcere",
+    "year_or_period": "1930",
+    "source_title": "Quaderni del carcere, Quaderno 3, §34 (1930)",
+    "source_link": "https://it.wikipedia.org/wiki/Quaderni_del_carcere",
     "tags": [
       "politica",
       "teoria",
@@ -3047,30 +3047,30 @@
   },
   {
     "id": "q114",
-    "quote": "Che io possa avere la forza di cambiare le cose che posso cambiare, che io possa avere la pazienza di accettare le cose che non posso cambiare, che io possa avere soprattutto l'intelligenza di saperle distinguere.",
-    "author": "Thomas More",
+    "quote": "God, grant me the serenity to accept the things I cannot change, courage to change the things I can, and wisdom to know the difference (\"Signore, concedimi la serenità di accettare le cose che non posso cambiare, il coraggio di cambiare quelle che posso, e la saggezza di distinguerle\").",
+    "author": "Reinhold Niebuhr",
     "choices": [
+      "Reinhold Niebuhr",
       "Thomas More",
       "San Francesco d'Assisi",
-      "Otto von Bismarck",
-      "Martin Luther King"
+      "Bill Wilson (AA)"
     ],
     "correctIndex": 0,
-    "year_or_period": "XVI secolo",
-    "source_title": "Preghiera della Serenità - attribuita (XVI secolo)",
-    "source_link": "https://it.wikipedia.org/wiki/Thomas_More",
+    "year_or_period": "c. 1932-1934",
+    "source_title": "Serenity Prayer - sermoni di Reinhold Niebuhr (c. 1932-1934); diffusa dagli Alcolisti Anonimi dal 1941",
+    "source_link": "https://en.wikipedia.org/wiki/Serenity_Prayer",
     "tags": [
       "filosofia",
       "spiritualità",
       "saggezza"
     ],
-    "difficulty": 3,
+    "difficulty": 5,
     "spiciness": 0,
-    "hint_short": "Umanista e santo inglese",
-    "hint_more": "Umanista, politico e santo inglese del XVI secolo, cancelliere di Enrico VIII, autore di 'Utopia' e martire della Chiesa cattolica per aver difeso la fede.",
-    "ambiguity_note": "Le opzioni includono San Francesco (santo medievale), Bismarck (statista tedesco) e King (leader afroamericano), tutti associati al tema della saggezza. Tradizionalmente attribuita a Thomas More.",
-    "language_orig": "LA",
-    "context": "Nell'Inghilterra del XVI secolo, durante l'Umanesimo, Thomas More sviluppò una filosofia della saggezza basata sul discernimento. Credeva che bisognasse avere la forza di cambiare ciò che si può, la pazienza di accettare ciò che non si può, e l'intelligenza di distinguerli, trasformando la saggezza in equilibrio pratico."
+    "hint_short": "Teologo protestante americano del XX secolo",
+    "hint_more": "Teologo protestante americano (1892-1971), docente all'Union Theological Seminary di New York. Compose la 'Preghiera della Serenità' nei primi anni '30 per i suoi sermoni; venne adottata dagli Alcolisti Anonimi nel 1941 e da allora è diventata una delle preghiere più citate al mondo.",
+    "ambiguity_note": "Le opzioni includono Thomas More (a cui la preghiera è erroneamente attribuita, talvolta insieme a San Francesco per una presunta origine medievale), San Francesco d'Assisi (altra misattribuzione comune) e Bill Wilson, cofondatore degli Alcolisti Anonimi (che la diffuse ma non la scrisse).",
+    "language_orig": "EN",
+    "context": "Negli Stati Uniti dei primi anni '30, il teologo protestante Reinhold Niebuhr compose la celebre 'Serenity Prayer' per i propri sermoni all'Union Theological Seminary. La preghiera fu adottata dagli Alcolisti Anonimi nel 1941 e divenne pilastro del loro programma in 12 passi. La falsa attribuzione a Thomas More o a San Francesco d'Assisi è una leggenda moderna: non esiste alcuna versione medievale della preghiera."
   },
   {
     "id": "q115",
@@ -3164,8 +3164,8 @@
       "Madre Teresa di Calcutta"
     ],
     "correctIndex": 0,
-    "year_or_period": "1860",
-    "source_title": "Spedizione dei Mille (1860)",
+    "year_or_period": "15 maggio 1860 (battaglia di Calatafimi) - attribuzione tradizionale",
+    "source_title": "Giuseppe Cesare Abba, 'Da Quarto al Volturno. Noterelle d'uno dei Mille' (1880); attribuzione storicamente dubbia",
     "source_link": "https://it.wikipedia.org/wiki/Giuseppe_Garibaldi",
     "tags": [
       "Risorgimento",
@@ -3175,10 +3175,10 @@
     "difficulty": 1,
     "spiciness": 0,
     "hint_short": "Eroe del Risorgimento italiano",
-    "hint_more": "Generale e patriota italiano, protagonista del Risorgimento, noto per la Spedizione dei Mille e per aver contribuito all'unificazione d'Italia.",
-    "ambiguity_note": "Le opzioni includono Cesare Borgia (condottiero rinascimentale), Kanye West (artista moderno) e Madre Teresa (santa), tutti associati al tema dell'azione o della dedizione. Garibaldi pronunciò questa frase durante la Spedizione dei Mille.",
+    "hint_more": "Generale e patriota italiano, protagonista del Risorgimento, noto per la Spedizione dei Mille. La frase gli è tradizionalmente attribuita durante la battaglia di Calatafimi, ma la fonte è il racconto di Giuseppe Cesare Abba (1880), non un verbale diretto.",
+    "ambiguity_note": "Le opzioni includono Cesare Borgia (condottiero rinascimentale), Kanye West (artista moderno) e Madre Teresa (santa), tutti associati al tema dell'azione o della dedizione. La frase è attribuita a Garibaldi nella tradizione risorgimentale, ma molti storici la considerano una costruzione retorica posteriore.",
     "language_orig": "IT",
-    "context": "Nell'Italia del 1860, durante il Risorgimento, Garibaldi sviluppò una filosofia patriottica basata sull'azione determinata. Credeva che 'Qui si fa l'Italia o si muore' rappresentasse l'essenza della lotta per l'unità, trasformando il patriottismo in sacrificio supremo e influenzando l'identità nazionale italiana."
+    "context": "Il 15 maggio 1860, durante la battaglia di Calatafimi nella Spedizione dei Mille, Garibaldi avrebbe rivolto al suo luogotenente Nino Bixio la frase 'Qui si fa l'Italia o si muore'. La fonte principale è il libro di memorie di Giuseppe Cesare Abba, 'Da Quarto al Volturno' (1880), scritto vent'anni dopo: molti storici moderni considerano la frase una ricostruzione retorica del mito garibaldino piuttosto che un'autentica citazione."
   },
   {
     "id": "q119",
@@ -3209,7 +3209,7 @@
   },
   {
     "id": "q120",
-    "quote": "L'orgoglio ci costa più della fame, della sete e del freddo.",
+    "quote": "Pride costs us more than hunger, thirst and cold (\"L'orgoglio ci costa più della fame, della sete e del freddo\").",
     "author": "Thomas Jefferson",
     "choices": [
       "Thomas Jefferson",
@@ -3218,9 +3218,9 @@
       "Maria Antonietta"
     ],
     "correctIndex": 0,
-    "year_or_period": "XVIII-XIX secolo",
-    "source_title": "Lettere e scritti (XVIII-XIX secolo)",
-    "source_link": "https://it.wikipedia.org/wiki/Thomas_Jefferson",
+    "year_or_period": "Attribuzione apocrifa (XIX-XX secolo)",
+    "source_title": "Citazione comunemente attribuita a Jefferson; classificata come 'spurious quotation' dalla Thomas Jefferson Foundation (Monticello)",
+    "source_link": "https://www.monticello.org/research-education/thomas-jefferson-encyclopedia/spurious-quotations/",
     "tags": [
       "filosofia",
       "psicologia",
@@ -3229,37 +3229,38 @@
     "difficulty": 3,
     "spiciness": 0,
     "hint_short": "Padre fondatore degli Stati Uniti",
-    "hint_more": "Terzo presidente degli Stati Uniti, autore della Dichiarazione d'Indipendenza e noto per le sue riflessioni filosofiche sulla natura umana e sulla società.",
-    "ambiguity_note": "Le opzioni includono Sun Tzu (stratega antico), Malcolm X (attivista) e Maria Antonietta (regina francese), tutti associati al tema della saggezza o del potere. Jefferson espresse questa riflessione nei suoi scritti.",
+    "hint_more": "Terzo presidente degli Stati Uniti, autore della Dichiarazione d'Indipendenza. La frase gli è popolarmente attribuita ma NON è documentata nei suoi scritti: la Thomas Jefferson Foundation (Monticello), custode ufficiale del suo archivio, la classifica tra le 'spurious quotations'.",
+    "ambiguity_note": "Le opzioni includono Sun Tzu (stratega antico), Malcolm X (attivista) e Maria Antonietta (regina francese). La paternità a Jefferson è tradizionale ma contestata: non compare nei Papers di Jefferson conservati al Monticello.",
     "language_orig": "EN",
-    "context": "Negli Stati Uniti del XVIII-XIX secolo, durante la fondazione della repubblica, Jefferson sviluppò una filosofia morale basata sull'umiltà. Credeva che l'orgoglio costasse più della fame, della sete e del freddo, trasformando l'umiltà in virtù fondamentale e influenzando l'etica repubblicana americana."
+    "context": "La frase è tradizionalmente attribuita a Thomas Jefferson ma la Thomas Jefferson Foundation di Monticello, gestore dell'archivio ufficiale dello statista, la include nell'elenco delle 'spurious quotations' — citazioni mai documentate nei suoi scritti. Probabilmente si tratta di un aforisma moderno retrospettivamente associato al padre fondatore per la sua attinenza con l'etica repubblicana americana."
   },
   {
     "id": "q121",
-    "quote": "Il fine giustifica i mezzi.",
-    "author": "Niccolò Machiavelli",
+    "quote": "Exitus acta probat (\"Il risultato giustifica le azioni\", tradotto nell'italiano moderno come 'Il fine giustifica i mezzi').",
+    "author": "Publio Ovidio Nasone",
     "choices": [
+      "Publio Ovidio Nasone",
       "Niccolò Machiavelli",
-      "Carl von Clausewitz",
-      "Joseph Stalin",
-      "J. Robert Oppenheimer"
+      "Ignazio di Loyola",
+      "Joseph Stalin"
     ],
     "correctIndex": 0,
-    "year_or_period": "XVI secolo",
-    "source_title": "Il Principe (XVI secolo)",
-    "source_link": "https://it.wikipedia.org/wiki/Niccolò_Machiavelli",
+    "year_or_period": "1 a.C. (Heroides II, 85)",
+    "source_title": "Ovidio, Heroides II, 85 (1 a.C.)",
+    "source_link": "https://it.wikipedia.org/wiki/Il_fine_giustifica_i_mezzi",
     "tags": [
       "filosofia",
       "politica",
-      "etica"
+      "etica",
+      "latino"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "spiciness": 0,
-    "hint_short": "Filosofo e politico fiorentino",
-    "hint_more": "Filosofo, politico e scrittore fiorentino del Rinascimento, autore de 'Il Principe' e noto per aver teorizzato la separazione tra etica privata e politica.",
-    "ambiguity_note": "Le opzioni includono Clausewitz (teorico militare), Stalin (dittatore) e Oppenheimer (fisico nucleare), tutti associati al tema del potere. Questa frase è una sintesi moderna del pensiero di Machiavelli, non scritta direttamente da lui.",
-    "language_orig": "IT",
-    "context": "Nell'Italia del XVI secolo, durante il Rinascimento, Machiavelli sviluppò una filosofia politica basata sul realismo. Credeva che il fine giustificasse i mezzi perché l'efficacia del governo prevale sui principi morali assoluti, trasformando la politica in arte del potere e influenzando il pensiero politico moderno."
+    "hint_short": "Poeta latino del I secolo a.C.",
+    "hint_more": "Poeta latino (43 a.C. - 17/18 d.C.), autore delle Heroides, delle Metamorfosi e dell'Ars amatoria. La formula 'Exitus acta probat' compare nell'Heroide II (v. 85) di Fillide a Demofoonte. È la più antica attestazione del principio 'il fine giustifica i mezzi'.",
+    "ambiguity_note": "Le opzioni includono Machiavelli (a cui la frase è universalmente attribuita ma che NON la scrisse: nel Principe XVIII usa solo 'si guarda al fine'), Ignazio di Loyola (cui è attribuita la versione gesuita) e Stalin. L'autore originale è Ovidio, che la coniò in latino 1500 anni prima di Machiavelli.",
+    "language_orig": "LA",
+    "context": "Nel I secolo a.C., Ovidio scrisse nelle Heroides (II, 85) la formula 'exitus acta probat' — l'esito giustifica le azioni — rivolta da Fillide a Demofoonte. La frase sintetica italiana 'Il fine giustifica i mezzi' è una riformulazione moderna attribuita erroneamente a Machiavelli: nel Principe (cap. XVIII) il Segretario fiorentino scrisse solo 'si guarda al fine', senza la massima aforistica. La versione moderna fu canonizzata nella tradizione gesuita e poi diffusa dalla critica antimachiavellica."
   },
   {
     "id": "q122",
@@ -3353,8 +3354,8 @@
       "Napoleone Bonaparte"
     ],
     "correctIndex": 0,
-    "year_or_period": "1814-1848",
-    "source_title": "Memorie e documenti diplomatici (1814-1848)",
+    "year_or_period": "1847",
+    "source_title": "Nota diplomatica al conte Dietrichstein (2 agosto 1847)",
     "source_link": "https://it.wikipedia.org/wiki/Klemens_von_Metternich",
     "tags": [
       "storia",
@@ -3364,14 +3365,14 @@
     "difficulty": 5,
     "spiciness": 0,
     "hint_short": "Cancelliere austriaco del XIX secolo",
-    "hint_more": "Cancelliere austriaco del XIX secolo, noto per la sua politica conservatrice e per aver pronunciato questa frase durante il Congresso di Vienna, esprimendo scetticismo sull'unità italiana.",
+    "hint_more": "Cancelliere austriaco del XIX secolo, noto per la sua politica conservatrice. Pronunciò questa frase in francese ('l'Italie n'est qu'une expression géographique') in una nota diplomatica del 2 agosto 1847, destinata a essere comunicata al ministro britannico Palmerston, per negare l'esistenza di una nazione italiana.",
     "ambiguity_note": "Le opzioni includono Garibaldi (eroe del Risorgimento), Cavour (statista italiano) e Napoleone (imperatore), tutti associati al tema dell'Italia. Metternich pronunciò questa frase negando l'identità nazionale italiana.",
-    "language_orig": "IT",
-    "context": "Nell'Austria del 1814-1848, durante il Congresso di Vienna, Metternich sviluppò una diplomazia conservatrice basata sulla negazione del nazionalismo. Credeva che l'Italia non fosse altro che un'espressione geografica, trasformando la geopolitica in strumento di controllo e influenzando la percezione europea dell'Italia pre-unitaria."
+    "language_orig": "FR",
+    "context": "Il 2 agosto 1847, Metternich inviò al conte Dietrichstein una nota diplomatica destinata a essere comunicata al ministro inglese Palmerston: definì l'Italia 'una mera espressione geografica' per scoraggiare le aspirazioni unitarie italiane alla vigilia dei moti del 1848. La frase divenne simbolo del disprezzo asburgico per il Risorgimento e fu ripetutamente citata dai patrioti italiani come prova della necessità dell'unificazione."
   },
   {
     "id": "q126",
-    "quote": "La vita è una commedia, e noi siamo solo attori",
+    "quote": "Tutto il mondo è un palcoscenico, e tutti gli uomini e le donne solamente degli attori.",
     "author": "William Shakespeare",
     "choices": [
       "William Shakespeare",
@@ -3380,9 +3381,9 @@
       "Seneca"
     ],
     "correctIndex": 0,
-    "year_or_period": "1599",
-    "source_title": "Come vi piace (1599)",
-    "source_link": "https://it.wikipedia.org/wiki/William_Shakespeare",
+    "year_or_period": "c. 1599-1600",
+    "source_title": "Come vi piace / As You Like It, Atto II, scena VII",
+    "source_link": "https://en.wikipedia.org/wiki/All_the_world%27s_a_stage",
     "tags": [
       "teatro",
       "filosofia",
@@ -3391,10 +3392,10 @@
     "difficulty": 2,
     "spiciness": 0,
     "hint_short": "Drammaturgo inglese del XVI secolo",
-    "hint_more": "Drammaturgo inglese del XVI secolo, considerato il più grande scrittore in lingua inglese, autore di questa celebre frase dal monologo di Jaques in 'Come vi piace'.",
-    "ambiguity_note": "Le opzioni includono Machiavelli (filosofo rinascimentale), Musk (imprenditore moderno) e Seneca (filosofo stoico), tutti associati al tema della vita. Shakespeare scrisse questa metafora in 'Come vi piace'.",
+    "hint_more": "Drammaturgo inglese, considerato il più grande scrittore in lingua inglese, autore di questa celebre frase dal monologo di Jaques in 'Come vi piace' (Atto II, scena VII).",
+    "ambiguity_note": "Le opzioni includono Machiavelli (filosofo rinascimentale), Musk (imprenditore moderno) e Seneca (filosofo stoico), tutti associati al tema della vita. Shakespeare scrisse questa celebre metafora nel monologo delle 'sette età dell'uomo'.",
     "language_orig": "EN",
-    "context": "Nell'Inghilterra elisabettiana del 1599, Shakespeare sviluppò una filosofia teatrale basata sulla metafora del mondo come palcoscenico. Credeva che la vita fosse una commedia e gli uomini solo attori, trasformando il teatro in specchio dell'esistenza e influenzando la letteratura occidentale per secoli."
+    "context": "Nell'Inghilterra elisabettiana, intorno al 1599-1600, Shakespeare fece pronunciare al personaggio malinconico di Jaques in 'Come vi piace' il celebre monologo delle 'Sette età dell'uomo', che si apre con 'Tutto il mondo è un palcoscenico'. La metafora del mondo come teatro attraversa tutta la letteratura occidentale e rimane una delle immagini più citate di Shakespeare."
   },
   {
     "id": "q127",
@@ -3407,8 +3408,8 @@
       "Eraclito"
     ],
     "correctIndex": 0,
-    "year_or_period": "1921",
-    "source_title": "Sei personaggi in cerca d'autore (1921)",
+    "year_or_period": "XX secolo (attribuzione popolare)",
+    "source_title": "Citazione popolarmente attribuita a Pirandello; non documentata nelle sue opere",
     "source_link": "https://it.wikipedia.org/wiki/Luigi_Pirandello",
     "tags": [
       "teatro",
@@ -3418,10 +3419,10 @@
     "difficulty": 3,
     "spiciness": 0,
     "hint_short": "Drammaturgo e scrittore siciliano",
-    "hint_more": "Drammaturgo e scrittore siciliano, premio Nobel per la letteratura nel 1934, noto per le sue opere sul tema della maschera e dell'identità.",
-    "ambiguity_note": "Le opzioni includono Wilde (scrittore vittoriano), Eleanor Roosevelt (first lady) e Eraclito (filosofo presocratico), tutti associati al tema della saggezza. Pirandello scrisse questa riflessione in 'Sei personaggi in cerca d'autore'.",
+    "hint_more": "Drammaturgo e scrittore siciliano, premio Nobel per la letteratura nel 1934, noto per le sue opere sul tema della maschera e dell'identità. La citazione è coerente con la sua poetica della maschera ma NON risulta documentata nelle sue opere.",
+    "ambiguity_note": "Le opzioni includono Wilde (scrittore vittoriano), Eleanor Roosevelt (first lady) e Eraclito (filosofo presocratico), tutti associati al tema della saggezza. La frase è popolarmente attribuita a Pirandello per la coerenza con il tema maschera/volto, ma la fonte precisa non è mai stata identificata nelle sue opere (non compare né in 'Sei personaggi in cerca d'autore' né in 'Uno, nessuno e centomila').",
     "language_orig": "IT",
-    "context": "Nell'Italia del 1921, durante il periodo tra le due guerre, Pirandello sviluppò una filosofia dell'identità basata sulla maschera. Credeva che nel lungo tragitto della vita si incontrassero tante maschere e pochi volti, trasformando l'identità in questione filosofica e influenzando il teatro dell'assurdo."
+    "context": "La frase è tradizionalmente attribuita a Pirandello per la perfetta coerenza con la sua poetica della maschera e del volto — centrali in opere come 'Uno, nessuno e centomila' (1926) e 'Sei personaggi in cerca d'autore' (1921). Tuttavia nessuno studioso ha individuato la fonte precisa: si tratta con ogni probabilità di una sintesi popolare del suo pensiero, ormai entrata nel canone delle citazioni apocrife attribuite allo scrittore siciliano."
   },
   {
     "id": "q128",
@@ -3506,7 +3507,7 @@
   },
   {
     "id": "q131",
-    "quote": "Se vuoi qualcosa che non hai mai avuto, devi fare qualcosa che non hai mai fatto.",
+    "quote": "If you want something you've never had, you must do something you've never done (\"Se vuoi qualcosa che non hai mai avuto, devi fare qualcosa che non hai mai fatto\").",
     "author": "Thomas Jefferson",
     "choices": [
       "Thomas Jefferson",
@@ -3515,48 +3516,48 @@
       "John F. Kennedy"
     ],
     "correctIndex": 0,
-    "year_or_period": "1776-1826",
-    "source_title": "Lettere e discorsi (1776-1826)",
-    "source_link": "https://it.wikipedia.org/wiki/Thomas_Jefferson",
+    "year_or_period": "Attribuzione apocrifa (XX secolo)",
+    "source_title": "Aforisma motivazionale moderno; attribuito erroneamente a Jefferson — classificato come 'spurious quotation' dal Monticello",
+    "source_link": "https://www.monticello.org/research-education/thomas-jefferson-encyclopedia/spurious-quotations/",
     "tags": [
-      "filosofia",
       "motivazione",
+      "apocrifo",
       "storia"
     ],
     "difficulty": 6,
     "spiciness": 0,
-    "hint_short": "Presidente degli Stati Uniti",
-    "hint_more": "Terzo presidente degli Stati Uniti, autore della Dichiarazione d'Indipendenza, noto per le sue riflessioni sul progresso e l'innovazione.",
-    "ambiguity_note": "Le opzioni includono Mandela (leader sudafricano), Machiavelli (filosofo rinascimentale) e Kennedy (presidente americano), tutti associati al tema del cambiamento. Jefferson espresse questa filosofia nei suoi scritti.",
+    "hint_short": "Padre fondatore degli Stati Uniti",
+    "hint_more": "Terzo presidente degli Stati Uniti, autore della Dichiarazione d'Indipendenza. La frase gli è popolarmente attribuita ma la Thomas Jefferson Foundation (Monticello) conferma che NON appare in alcun suo scritto: si tratta di un aforisma motivazionale del XX secolo.",
+    "ambiguity_note": "Le opzioni includono Mandela, Machiavelli e Kennedy. L'attribuzione a Jefferson è moderna e contestata dal Monticello, ma resta la più diffusa: per fini di gameplay viene mantenuta come 'autore convenzionale', pur essendo apocrifa.",
     "language_orig": "EN",
-    "context": "Negli Stati Uniti del 1776-1826, durante la fondazione della repubblica, Jefferson sviluppò una filosofia del progresso basata sull'innovazione. Credeva che per ottenere qualcosa di nuovo bisognasse fare qualcosa di nuovo, trasformando il cambiamento in prerequisito del progresso e influenzando l'etica americana dell'innovazione."
+    "context": "La Thomas Jefferson Foundation di Monticello classifica questa frase tra le 'spurious quotations' attribuite al terzo presidente americano. Non compare in nessuna lettera, discorso o articolo documentato di Jefferson: è un aforisma motivazionale diffuso nel XX secolo, probabilmente in ambienti di self-help o business americani, retrospettivamente attribuito al padre fondatore per la sua rilevanza simbolica."
   },
   {
     "id": "q132",
-    "quote": "Prima ti ignorano, poi ti deridono, poi ti combattono. Poi vinci.",
-    "author": "Mahatma Gandhi",
+    "quote": "First they ignore you, then they ridicule you, then they attack you, and then you win (\"Prima ti ignorano, poi ti deridono, poi ti combattono, poi vinci\").",
+    "author": "Nicholas Klein",
     "choices": [
+      "Nicholas Klein",
       "Mahatma Gandhi",
       "Martin Luther King",
-      "Adolf Hitler",
       "Bill Gates"
     ],
     "correctIndex": 0,
-    "year_or_period": "1920-1948",
-    "source_title": "Discorsi e scritti (1920-1948)",
-    "source_link": "https://it.wikipedia.org/wiki/Mahatma_Gandhi",
+    "year_or_period": "1918",
+    "source_title": "Discorso alla convenzione della Amalgamated Clothing Workers of America, Baltimora (maggio 1918)",
+    "source_link": "https://en.wikipedia.org/wiki/Nicholas_Klein",
     "tags": [
-      "filosofia",
+      "sindacato",
       "resistenza",
       "storia"
     ],
-    "difficulty": 2,
+    "difficulty": 6,
     "spiciness": 0,
-    "hint_short": "Leader della resistenza non violenta indiana",
-    "hint_more": "Leader della resistenza non violenta indiana, noto per aver guidato l'indipendenza dell'India dal dominio britannico attraverso la disobbedienza civile.",
-    "ambiguity_note": "Le opzioni includono King (leader afroamericano), Hitler (dittatore nazista) e Gates (imprenditore), tutti associati al tema della resistenza o del successo. Gandhi espresse questa strategia nei suoi scritti.",
+    "hint_short": "Sindacalista e avvocato americano del primo Novecento",
+    "hint_more": "Sindacalista e avvocato americano, coniò questa progressione nel discorso del maggio 1918 alla convenzione del sindacato tessile di Baltimora: 'Prima vi ignorano. Poi vi deridono. Poi vi attaccano e vogliono bruciarvi. Poi vi erigono monumenti.' La frase fu successivamente attribuita erroneamente a Gandhi, che non la pronunciò mai.",
+    "ambiguity_note": "Le opzioni includono Gandhi (a cui la frase è universalmente attribuita ma non compare in alcuno dei suoi scritti documentati), MLK e Gates. L'autore originale è il sindacalista americano Nicholas Klein.",
     "language_orig": "EN",
-    "context": "Nell'India del 1920-1948, durante la lotta per l'indipendenza, Gandhi sviluppò una strategia di resistenza basata sulla progressione morale. Credeva che prima ti ignorano, poi ti deridono, poi ti combattono, poi vinci, trasformando la resistenza pacifica in strategia di vittoria e influenzando i movimenti di liberazione mondiali."
+    "context": "Nel maggio 1918, alla convenzione della Amalgamated Clothing Workers of America a Baltimora, il sindacalista e avvocato Nicholas Klein pronunciò questo celebre passaggio per incoraggiare la lotta operaia. La frase è stata successivamente attribuita erroneamente a Gandhi (o a Schopenhauer): Quote Investigator e gli studiosi di Gandhi confermano che non appare in nessuno dei suoi scritti. L'attribuzione a Gandhi divenne popolare negli anni '80 del Novecento."
   },
   {
     "id": "q133",
@@ -3668,34 +3669,35 @@
   },
   {
     "id": "q137",
-    "quote": "Multos inimicos, honorem multum (\"Molti nemici, molto onore\").",
-    "author": "Gaio Giulio Cesare",
+    "quote": "Viel Feind, viel Ehr' (\"Molti nemici, molto onore\").",
+    "author": "Georg von Frundsberg",
     "choices": [
+      "Georg von Frundsberg",
       "Gaio Giulio Cesare",
-      "Marco Tullio Cicerone",
-      "Luigi Pirandello",
-      "Ottaviano Augusto"
+      "Benito Mussolini",
+      "Gabriele D'Annunzio"
     ],
     "correctIndex": 0,
-    "year_or_period": "49 a.C.",
-    "source_title": "De Bello Gallico (49 a.C.)",
-    "source_link": "https://it.wikipedia.org/wiki/Giulio_Cesare",
+    "year_or_period": "XVI secolo (c. 1513)",
+    "source_title": "Motto personale di Georg von Frundsberg (1473-1528), condottiero tedesco dei Lanzichenecchi",
+    "source_link": "https://de.wikipedia.org/wiki/Georg_von_Frundsberg",
     "tags": [
       "storia",
-      "Roma",
-      "filosofia"
+      "rinascimento",
+      "guerra",
+      "motto"
     ],
-    "difficulty": 5,
-    "spiciness": 0,
-    "hint_short": "Generale e dittatore romano",
-    "hint_more": "Generale e dittatore romano, noto per aver pronunciato questa frase che significa 'Molti nemici, molto onore', riflettendo sulla natura del potere.",
-    "ambiguity_note": "Le opzioni includono Cicerone (oratore romano), Pirandello (scrittore moderno) e Augusto (primo imperatore), tutti associati al tema del potere. Cesare pronunciò questa frase nel De Bello Gallico.",
-    "language_orig": "LA",
-    "context": "Nell'antica Roma del 49 a.C., durante la guerra civile, Cesare sviluppò una filosofia del potere basata sulla realpolitik. Credeva che 'Multos inimicos, honorem multum' rappresentasse la natura del potere, trasformando i nemici in segno di successo e influenzando il pensiero politico romano."
+    "difficulty": 6,
+    "spiciness": 1,
+    "hint_short": "Condottiero tedesco del Rinascimento",
+    "hint_more": "Capitano dei Lanzichenecchi imperiali al servizio di Carlo V, noto come il 'padre dei Lanzichenecchi'. Il motto 'Viel Feind, viel Ehr'' accompagnò la sua carriera militare e divenne celebre in tutta l'Europa rinascimentale.",
+    "ambiguity_note": "Le opzioni includono Cesare (attribuzione popolare errata, non compare nel De Bello Gallico), Mussolini (che riprese il motto su 'Gerarchia' nel 1924 trasformandolo in slogan fascista) e D'Annunzio (esteta nazionalista). L'autore originale è von Frundsberg: il motto è in tedesco, non in latino né in italiano.",
+    "language_orig": "DE",
+    "context": "Georg von Frundsberg (1473-1528), capitano dei Lanzichenecchi imperiali e fedele di Carlo V, adottò come proprio motto 'Viel Feind, viel Ehr'' (letteralmente: 'molti nemici, molto onore'). Il motto si diffuse in tutta Europa come emblema dell'etica cavalleresca rinascimentale. Nel 1924 Mussolini lo tradusse in italiano sulla rivista 'Gerarchia', trasformandolo in slogan propagandistico del regime fascista — contribuendo a far circolare l'errata attribuzione a Giulio Cesare, cui la frase non appartiene."
   },
   {
     "id": "q138",
-    "quote": "Nessuno può farti sentire inferiore senza il tuo consenso.",
+    "quote": "No one can make you feel inferior without your consent (\"Nessuno può farti sentire inferiore senza il tuo consenso\").",
     "author": "Eleanor Roosevelt",
     "choices": [
       "Eleanor Roosevelt",
@@ -3704,21 +3706,21 @@
       "Pitagora"
     ],
     "correctIndex": 0,
-    "year_or_period": "1933-1945",
-    "source_title": "Discorsi e scritti (1933-1945)",
-    "source_link": "https://it.wikipedia.org/wiki/Eleanor_Roosevelt",
+    "year_or_period": "Settembre 1940 (riformulazione redazionale di Reader's Digest)",
+    "source_title": "Reader's Digest (settembre 1940): riformulazione di commenti di Eleanor Roosevelt del 1935; formulazione esatta non documentata negli scritti originali",
+    "source_link": "https://quoteinvestigator.com/2011/03/30/not-inferior/",
     "tags": [
       "filosofia",
       "autostima",
-      "storia"
+      "apocrifo"
     ],
     "difficulty": 4,
     "spiciness": 0,
     "hint_short": "First Lady degli Stati Uniti",
-    "hint_more": "First Lady degli Stati Uniti, attivista per i diritti umani e autrice di questa frase sulla dignità personale e l'autostima.",
-    "ambiguity_note": "Le opzioni includono Sartre (filosofo esistenzialista), Machiavelli (filosofo rinascimentale) e Pitagora (filosofo antico), tutti associati al tema della saggezza. Eleanor Roosevelt pronunciò questa frase durante la sua attività di first lady.",
+    "hint_more": "First Lady degli Stati Uniti e attivista per i diritti umani. La frase nella formulazione esatta non risulta nei suoi scritti: secondo Quote Investigator è una riformulazione giornalistica apparsa su Reader's Digest (settembre 1940), ispirata a suoi commenti del 1935. L'attribuzione è comunemente accettata poiché riflette fedelmente il suo pensiero.",
+    "ambiguity_note": "Le opzioni includono Sartre, Machiavelli e Pitagora. La frase è universalmente attribuita a Eleanor Roosevelt, ma la formulazione esatta è una sintesi redazionale di Reader's Digest del 1940, non una citazione letterale.",
     "language_orig": "EN",
-    "context": "Negli Stati Uniti del 1933-1945, durante la presidenza di Franklin D. Roosevelt, Eleanor sviluppò una filosofia dell'autostima basata sull'empowerment personale. Credeva che nessuno potesse farti sentire inferiore senza il tuo consenso, trasformando la dignità in scelta individuale e influenzando il movimento per i diritti delle donne."
+    "context": "Nel settembre 1940, la rivista Reader's Digest pubblicò questa formulazione sintetica attribuendola a Eleanor Roosevelt. Quote Investigator e gli studiosi di Eleanor Roosevelt hanno dimostrato che la frase esatta non compare nei suoi libri, discorsi o articoli: è una riformulazione giornalistica ispirata a commenti che la first lady aveva fatto nel 1935 su un episodio di snobismo sociale. L'attribuzione a Roosevelt è rimasta canonica per la coerenza con la sua filosofia dell'autostima."
   },
   {
     "id": "q139",
@@ -4003,9 +4005,9 @@
       "Winston Churchill"
     ],
     "correctIndex": 0,
-    "year_or_period": "1936, Fascismo italiano",
-    "source_title": "Discorso di Mussolini al popolo italiano",
-    "source_link": "https://it.wikipedia.org/wiki/Benito_Mussolini",
+    "year_or_period": "10 giugno 1940, Seconda guerra mondiale",
+    "source_title": "Discorso di dichiarazione di guerra da Palazzo Venezia (10 giugno 1940)",
+    "source_link": "https://it.wikipedia.org/wiki/Dichiarazione_di_guerra_dell%27Italia_a_Francia_e_Regno_Unito",
     "tags": [
       "fascismo",
       "propaganda",
@@ -4014,10 +4016,10 @@
     "difficulty": 1,
     "spiciness": 2,
     "hint_short": "Dittatore italiano del XX secolo",
-    "hint_more": "Dittatore italiano che fondò il fascismo e governò l'Italia dal 1922 al 1943. Noto per i suoi discorsi propagandistici e la retorica bellicosa.",
-    "ambiguity_note": "Le opzioni includono Hitler (alleato di Mussolini), Stalin (dittatore comunista) e Churchill (nemico durante la guerra). Mussolini usava spesso frasi retoriche per galvanizzare le folle.",
+    "hint_more": "Dittatore italiano che fondò il fascismo e governò l'Italia dal 1922 al 1943. Pronunciò questa frase chiudendo il discorso di dichiarazione di guerra a Francia e Regno Unito dal balcone di Palazzo Venezia il 10 giugno 1940.",
+    "ambiguity_note": "Le opzioni includono Hitler (alleato di Mussolini), Stalin (dittatore comunista) e Churchill (nemico durante la guerra). Mussolini concluse con questa formula il celebre discorso dell'entrata in guerra.",
     "language_orig": "IT",
-    "context": "Nel 1936, durante il regime fascista, Mussolini sviluppò una retorica basata sulla vittoria e sulla superiorità italiana. Credeva che l'Italia dovesse dimostrare la sua forza attraverso la conquista e l'espansione, trasformando la propaganda in strumento di mobilitazione di massa."
+    "context": "Il 10 giugno 1940, dal balcone di Palazzo Venezia, Mussolini annunciò l'entrata in guerra dell'Italia al fianco della Germania nazista contro Francia e Regno Unito. Chiuse il discorso con il grido 'Vincere, e vinceremo!', che sarebbe diventato uno slogan propagandistico del regime, ripetuto fino alla caduta del fascismo nel 1943."
   },
   {
     "id": "q150",
@@ -4102,7 +4104,7 @@
   },
   {
     "id": "q153",
-    "quote": "L'esperienza è il tipo di insegnante più difficile. Prima ti fa l'esame, poi ti spiega la lezione.",
+    "quote": "Experience is a hard teacher because she gives the test first, the lesson afterwards (\"L'esperienza è un insegnante difficile: prima ti fa l'esame, poi ti spiega la lezione\").",
     "author": "Oscar Wilde",
     "choices": [
       "Oscar Wilde",
@@ -4111,48 +4113,48 @@
       "Gabriele D'Annunzio"
     ],
     "correctIndex": 0,
-    "year_or_period": "1891, Letteratura inglese",
-    "source_title": "Il ritratto di Dorian Gray",
-    "source_link": "https://it.wikipedia.org/wiki/Oscar_Wilde",
+    "year_or_period": "Attribuzione apocrifa; la formulazione esatta compare negli anni '30 del Novecento, quaranta anni dopo la morte di Wilde",
+    "source_title": "Attribuzione popolare a Oscar Wilde; la frase NON compare nelle sue opere. Prima attestazione documentata: anni '30-'60 del Novecento, in varie forme attribuite anche a Vernon Law",
+    "source_link": "https://quoteinvestigator.com/2018/03/17/test-first/",
     "tags": [
       "letteratura",
       "esperienza",
-      "apprendimento"
+      "apocrifo"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "spiciness": 1,
     "hint_short": "Scrittore irlandese del XIX secolo",
-    "hint_more": "Scrittore irlandese noto per i suoi aforismi paradossali e il romanzo 'Il ritratto di Dorian Gray'. Maestro dell'umorismo e della critica sociale.",
-    "ambiguity_note": "Le opzioni includono Nietzsche (filosofo critico), Schopenhauer (pessimista) e D'Annunzio (esteta italiano). Wilde amava i paradossi che rovesciavano le convenzioni educative.",
+    "hint_more": "Scrittore irlandese noto per i suoi aforismi paradossali e il romanzo 'Il ritratto di Dorian Gray' (1890). La frase gli è popolarmente attribuita ma NON compare in alcuna sua opera: le prime attestazioni sono degli anni '30 del XX secolo, decenni dopo la sua morte (1900).",
+    "ambiguity_note": "Le opzioni includono Nietzsche, Schopenhauer e D'Annunzio. L'attribuzione a Wilde è popolare ma apocrifa; la frase circola su internet associata al suo nome, ma nessuno studioso l'ha mai individuata nei suoi testi.",
     "language_orig": "EN",
-    "context": "Nell'Inghilterra del 1891, Wilde sviluppò una filosofia estetica basata sui paradossi educativi. Credeva che l'esperienza fosse un maestro crudele ma efficace, trasformando la pedagogia in aforisma letterario."
+    "context": "La frase è universalmente attribuita a Oscar Wilde nella cultura motivazionale, ma nessuno studioso wildiano ha mai individuato la fonte originale nelle sue opere. Quote Investigator documenta le prime attestazioni negli anni '30-'60 del Novecento, quaranta-sessant'anni dopo la morte dello scrittore (1900). Una versione affine è stata attribuita a Vernon Sanders Law, giocatore di baseball americano, nel 1960. L'attribuzione a Wilde resta convenzionale ma priva di supporto filologico."
   },
   {
     "id": "q154",
-    "quote": "La felicità non è avere quello che si desidera, ma desiderare quello che si ha.",
+    "quote": "Happiness is not having what you want, but wanting what you have (\"La felicità non è avere quello che si desidera, ma desiderare quello che si ha\").",
     "author": "Oscar Wilde",
     "choices": [
       "Oscar Wilde",
       "Epicuro",
       "Arthur Schopenhauer",
-      "Friedrich Nietzsche"
+      "Rabbi Hyman Schachtel"
     ],
     "correctIndex": 0,
-    "year_or_period": "1891, Letteratura inglese",
-    "source_title": "Il ritratto di Dorian Gray",
-    "source_link": "https://it.wikipedia.org/wiki/Oscar_Wilde",
+    "year_or_period": "Attribuzione apocrifa; prima attestazione documentata: Rabbi Hyman Schachtel, 'The Real Enjoyment of Living' (1954)",
+    "source_title": "Aforisma popolarmente attribuito a Wilde; la formulazione esatta è attestata per la prima volta in Rabbi Hyman Schachtel (1954); NON compare nelle opere di Wilde",
+    "source_link": "https://quoteinvestigator.com/2014/12/16/want/",
     "tags": [
       "letteratura",
       "felicità",
-      "paradossi"
+      "apocrifo"
     ],
     "difficulty": 5,
     "spiciness": 1,
     "hint_short": "Scrittore irlandese del XIX secolo",
-    "hint_more": "Scrittore irlandese noto per i suoi aforismi paradossali e il romanzo 'Il ritratto di Dorian Gray'. Maestro dell'umorismo e della critica sociale.",
-    "ambiguity_note": "Le opzioni includono Epicuro (filosofo della felicità), Schopenhauer (pessimista) e Nietzsche (filosofo critico). Wilde amava i paradossi che rovesciavano le convenzioni sociali.",
+    "hint_more": "Scrittore irlandese noto per i suoi aforismi paradossali. La frase gli è popolarmente attribuita ma NON compare nelle sue opere. La prima attestazione documentata è nel libro del rabbino Hyman Schachtel 'The Real Enjoyment of Living' (1954), 54 anni dopo la morte di Wilde (1900).",
+    "ambiguity_note": "Le opzioni includono Epicuro (filosofo della felicità), Schopenhauer (pessimista) e Hyman Schachtel, rabbino americano e vero autore documentato della formulazione (1954). L'attribuzione a Wilde è convenzionale ma apocrifa.",
     "language_orig": "EN",
-    "context": "Nell'Inghilterra del 1891, Wilde sviluppò una filosofia estetica basata sui paradossi della felicità. Credeva che la felicità dipendesse dall'atteggiamento mentale, non dalle circostanze esterne, trasformando la psicologia in aforisma letterario."
+    "context": "La frase è universalmente attribuita a Oscar Wilde nella cultura popolare, ma gli studiosi wildiani non l'hanno mai individuata nelle sue opere. Quote Investigator documenta la prima attestazione nel libro 'The Real Enjoyment of Living' del rabbino americano Hyman Schachtel (1954). L'aforisma circola anche attribuito a Socrate, Epicuro o a vari pensatori, ma si tratta in ogni caso di riformulazioni moderne."
   },
   {
     "id": "q155",
@@ -4183,30 +4185,31 @@
   },
   {
     "id": "q156",
-    "quote": "Un sepolcro ora basta per colui al quale il mondo non era abbastanza",
-    "author": "Alessandro Magno",
+    "quote": "Sufficit huic tumulus, cui non suffecerat orbis (\"Un sepolcro basta a colui al quale il mondo non era bastato\").",
+    "author": "Epitaffio medievale anonimo",
     "choices": [
+      "Epitaffio medievale anonimo",
       "Alessandro Magno",
       "Giulio Cesare",
-      "Napoleone Bonaparte",
-      "Ottaviano Augusto"
+      "Napoleone Bonaparte"
     ],
     "correctIndex": 0,
-    "year_or_period": "323 a.C., Antichità",
-    "source_title": "Epitaffio di Alessandro Magno",
-    "source_link": "https://it.wikipedia.org/wiki/Alessandro_Magno",
+    "year_or_period": "XII secolo (epitaffio latino medievale per Alessandro Magno)",
+    "source_title": "Epitaffio latino medievale tramandato nell'Anthologia Latina; ripreso nell'Alexandreis di Gautier de Châtillon (c. 1180)",
+    "source_link": "https://en.wikipedia.org/wiki/Alexandreis",
     "tags": [
       "antichità",
-      "conquista",
-      "morte"
+      "medioevo",
+      "morte",
+      "latino"
     ],
-    "difficulty": 4,
+    "difficulty": 7,
     "spiciness": 1,
-    "hint_short": "Conquistatore macedone del IV secolo a.C.",
-    "hint_more": "Re di Macedonia che conquistò l'impero persiano e arrivò fino all'India. Noto per la sua ambizione smisurata e la frase 'Un sepolcro ora basta per colui al quale il mondo non era abbastanza'.",
-    "ambiguity_note": "Le opzioni includono Giulio Cesare (conquistatore romano), Napoleone Bonaparte (imperatore francese) e Ottaviano Augusto (primo imperatore romano). Alessandro Magno conquistò un impero che si estendeva dalla Grecia all'India.",
-    "language_orig": "GR",
-    "context": "Nel 323 a.C., alla morte di Alessandro Magno, il suo epitaffio rifletteva l'ironia della sua ambizione smisurata. Credeva che il mondo intero non fosse sufficiente per la sua sete di conquista, trasformando la morte in momento di riflessione sulla vanità del potere."
+    "hint_short": "Epitaffio medievale composto per Alessandro Magno",
+    "hint_more": "Epigramma funerario latino di autore anonimo, composto in epoca medievale (XII secolo) per commemorare Alessandro Magno (morto nel 323 a.C.). Non si tratta quindi di un'iscrizione contemporanea alla sua morte né di parole del conquistatore, ma di una composizione posteriore di oltre 1400 anni.",
+    "ambiguity_note": "Le opzioni includono Alessandro Magno (soggetto dell'epitaffio, ma non autore: morì nel 323 a.C. e non poté scrivere il proprio epitaffio), Cesare e Napoleone. L'epitaffio è una costruzione letteraria medievale, non una fonte storica coeva.",
+    "language_orig": "LA",
+    "context": "L'epigramma 'Sufficit huic tumulus, cui non suffecerat orbis' è un epitaffio latino medievale composto per Alessandro Magno (356-323 a.C.) circa quindici secoli dopo la sua morte. Circolò in varie raccolte medievali e trovò ampia fortuna nell'Alexandreis di Gautier de Châtillon (c. 1180), poema latino che narrava le gesta del conquistatore macedone. Non è quindi né un'iscrizione tombale contemporanea, né parole pronunciate da Alessandro: è una riflessione medievale sulla vanità della gloria."
   },
   {
     "id": "q157",

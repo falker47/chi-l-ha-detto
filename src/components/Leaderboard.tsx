@@ -241,7 +241,8 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     try {
       setSaving(true);
       const currentMode = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
-      
+      const leaderboardKey = getLeaderboardKey(currentTheme, currentMode);
+
       // Salva su Supabase
       const updatedRecords = await leaderboardApi.addRecord(
         currentMode,
@@ -250,7 +251,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         currentStreak,
         currentScore
       );
-      
+
       // Aggiorna la leaderboard locale
       const newLeaderboard = {
         ...leaderboard,
@@ -298,7 +299,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       
       const newLeaderboard = {
         ...leaderboard,
-        [modeKey]: updatedLeaderboard
+        [leaderboardKey]: updatedLeaderboard
       };
       
       setLeaderboard(newLeaderboard);

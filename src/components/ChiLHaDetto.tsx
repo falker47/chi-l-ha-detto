@@ -28,6 +28,15 @@ const getQuotesByTheme = (theme: string | undefined): Item[] => {
   }
 };
 
+function shuffle<T>(arr: T[]) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 // Funzione per selezionare domande con probabilità ponderate per il tema misto (Gran Sapiarca)
 const selectWeightedQuestions = (questionsCount: number, usedQuestions: Set<string>): Item[] => {
   const selectedQuestions: Item[] = [];
@@ -71,7 +80,7 @@ const selectWeightedQuestions = (questionsCount: number, usedQuestions: Set<stri
     }
     
     // Seleziona casualmente le domande da questa categoria
-    const shuffled = [...availableQuestions].sort(() => Math.random() - 0.5);
+    const shuffled = shuffle(availableQuestions);
     const selectedFromCategory = shuffled.slice(0, category.count);
     
     selectedQuestions.push(...selectedFromCategory);
@@ -93,16 +102,7 @@ const selectWeightedQuestions = (questionsCount: number, usedQuestions: Set<stri
   return selectedQuestions;
 };
 
-function shuffle<T>(arr: T[]) {
-  const a = arr.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-export default function ChiLHaDetto({ 
+export default function ChiLHaDetto({
   gameMode,
   backgroundImage,
   onBackToMenu,
@@ -154,10 +154,10 @@ export default function ChiLHaDetto({
   
   // Funzione per resettare le domande usate
   const resetUsedQuestions = useCallback(() => {
-    const resetUsedQuestions = new Set<string>();
-    setUsedQuestions(resetUsedQuestions);
+    const emptySet = new Set<string>();
+    setUsedQuestions(emptySet);
     setSessionUsedQuestions(new Set()); // Reset anche delle domande della sessione
-    saveUsedQuestions(resetUsedQuestions);
+    saveUsedQuestions(emptySet);
   }, [saveUsedQuestions]);
   const [used5050, setUsed5050] = useState(false);
   const [disabledOptions, setDisabledOptions] = useState<number[]>([]);
@@ -322,7 +322,7 @@ export default function ChiLHaDetto({
     }
     
     // Non resettare showGameOverAnimation qui, viene gestito in onAnswer
-  }, [gameMode, loadUsedQuestions, saveUsedQuestions, resetUsedQuestions]);
+  }, [gameMode, resetUsedQuestions]);
 
   // Funzione per selezionare la prossima domanda nella modalità classic
   const selectNextQuestion = useCallback(() => {
@@ -378,9 +378,9 @@ export default function ChiLHaDetto({
     const targetDifficulty = Math.min(7, baseDifficulty + streakBonus);
     
     // Trova domande con difficoltà vicina alla target
-    // Per le prime domande (difficoltà 1-3), accettiamo solo difficoltà esatta o +1
+    // Per le prime domande (difficoltà 1-3), accettiamo solo difficoltà esatta
     // Per le domande più difficili (4-7), accettiamo ±1
-    const tolerance = targetDifficulty <= 3 ? 1 : 1;
+    const tolerance = targetDifficulty <= 3 ? 0 : 1;
     const availableQuestions = finalAvailableItems.filter(item => 
       Math.abs(item.difficulty - targetDifficulty) <= tolerance
     );
