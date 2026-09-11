@@ -11,8 +11,9 @@ const ItemSchema = z.object({
   source_title: z.string().min(1),
   source_link: z.string().url(),
   tags: z.array(z.string()),
-  difficulty: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5)]),
-  spiciness: z.union([z.literal(0), z.literal(1), z.literal(2)]),
+  // The shipped game/datasets already use difficulty 1–7 and spiciness up to 4.
+  difficulty: z.number().int().min(1).max(7),
+  spiciness: z.number().int().min(0).max(4),
   hint_short: z.string().min(1),
   hint_more: z.string().min(1),
   ambiguity_note: z.string().min(1),

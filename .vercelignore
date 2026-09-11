@@ -1,0 +1,8 @@
+.env*
+!.env.example
+.migration-backup/
+backups/
+docs/
+node_modules/
+dist/
+.git/

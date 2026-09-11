@@ -1,20 +1,5 @@
-# 🚀 Chi l'ha detto? - Deploy GitHub Pages
+# Archivio statico GitHub Pages
 
-Questa è la versione deployata dell'applicazione.
-
-## 📁 Contenuto
-- `index.html` - Pagina principale
-- `assets/` - CSS e JavaScript compilati
-- `images/` - Immagini e personaggi
-
-## 🌐 URL
-https://falker47.github.io/chi-l-ha-detto/
-
-## 🔧 Deploy
-Per aggiornare:
-1. `npm run build`
-2. Copia `dist/*` in `docs/`
-3. Commit e push
-
----
-*Generato automaticamente da Vite*
+Questa cartella conserva una vecchia build e le relative immagini. Non è il sito Vercel corrente.
+Non pubblicarla come versione della nuova architettura: manca la Vercel Function /api/leaderboard.
+Vedere [la guida deployment](../DEPLOY_GUIDE.md). I file storici restano per riferimento.

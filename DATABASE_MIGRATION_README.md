@@ -1,205 +1,47 @@
-# 🗄️ Database Migration Guide - Sistema Temi
+# Migrazione completata: Neon Frankfurt
 
-## 📋 Panoramica
+## Stato definitivo
 
-Questo documento descrive le modifiche necessarie al database Supabase per supportare il nuovo sistema di temi implementato nel gioco "Chi l'ha detto?".
+La migrazione dei dati è stata completata prima di questo aggiornamento applicativo. La sola
+sorgente runtime è DATABASE_URL, verso chi_l_ha_detto sul progetto Neon chi-l-ha-detto in Frankfurt.
+Non reimportare i dati, non eseguire DDL e non chiedere privilegi owner al ruolo applicativo.
+Supabase resta inattivo; il Neon americano è solo una copia temporanea di sicurezza e non va usato.
 
-## 🎯 Obiettivo
+Baseline comunicata e verificata in lettura: 36 righe, ID 1–36, classica/achille 14,
+classica/eracle 22. Checksum canonico comunicato dall'operatore:
+a612119a5ca4e0febe42d2c4c074437e. La relativa formula di serializzazione non è presente nel repository.
+Per il controllo prima/dopo viene inoltre confrontato ogni campo delle 36 righe con il file locale
+ignorato backups/frankfurt-pre-deploy.json, inclusi ID e timestamp UTC a sei decimali.
+Identity già riallineata e snapshot di sicurezza già creato dall'operatore.
 
-Aggiungere supporto per 4 temi diversi:
-- **Classica** (esistente)
-- **Intrattenimento** (cinema/videogiochi)
-- **Trash** (meme/trash)
-- **Mista** (tutti i temi combinati)
+## Schema effettivo e compatibilità
 
-## 📊 Schema Attuale
+La tabella esistente usa id bigint identity, name/mode text, theme varchar, streak/score integer,
+timestamp timestamptz. Esistono PK, check del tema e indice tema/modalità. Non esiste UNIQUE su
+mode/theme/name e sono presenti cinque gruppi duplicati; nessuna riga viene eliminata o deduplicata
+fisicamente. L'API sceglie l'ultimo timestamp per identità (spareggio streak, score, id DESC), quindi
+ordina la Top 5 per streak DESC, score DESC, timestamp ASC, id ASC.
 
-```sql
-CREATE TABLE leaderboard (
-  id SERIAL PRIMARY KEY,
-  mode VARCHAR(50) NOT NULL,        -- 'achille' o 'eracle'
-  name VARCHAR(100) NOT NULL,
-  streak INTEGER NOT NULL,
-  score INTEGER NOT NULL,
-  timestamp TIMESTAMP DEFAULT NOW()
-);
-```
+Il salvataggio prende un advisory lock transazionale sull'identità e aggiorna la riga selezionata,
+oppure inserisce se manca. READ COMMITTED garantisce uno snapshot nuovo dopo l'attesa del lock.
+I test includono lo schema senza UNIQUE e un ruolo con soli SELECT/INSERT/UPDATE + sequence.
+Nessuna migrazione schema viene eseguita all'avvio, durante la build o nelle richieste API.
 
-## 🔄 Modifiche Richieste
+## Utility archiviate
 
-### 1. Aggiungere Colonna `theme`
+migrations/001_leaderboard.sql e gli script db:migrate/db:import sono utility per un NUOVO database
+vuoto, con schema a unicità esplicita; non sono adatti né necessari per convertire lo schema storico
+Frankfurt. Il factory attuale è vincolato al target e ruolo Frankfurt: per riutilizzare queste utility
+su una futura destinazione occorre prima adattare esplicitamente quella procedura amministrativa. Non eseguirli sulla produzione attuale. L'importatore effettua dry-run per default,
+valida l'intero file e conserva il backup prima di applicare un'importazione esplicitamente richiesta.
+Lo script di export Supabase è un'utility locale storica e non è parte del runtime o del deployment.
+Non usarlo per riaprire la migrazione già conclusa.
 
-```sql
--- Aggiungi la colonna theme con default 'classica'
-ALTER TABLE leaderboard 
-ADD COLUMN theme VARCHAR(50) NOT NULL DEFAULT 'classica';
-```
+## Backup e rollback
 
-### 2. Aggiornare Record Esistenti
+backups/ e .migration-backup/ sono esclusi da Git e dall'upload Vercel. Non pubblicare connessioni,
+export o copie delle vecchie variabili. Non eliminare nessuno dei database durante il collaudo.
+In caso di problemi applicativi distribuire una correzione o una versione compatibile con Frankfurt.
+Il vecchio deployment Supabase non è un rollback consentito. Nessun restore o reimport automatico.
 
-```sql
--- Assicurati che tutti i record esistenti abbiano theme = 'classica'
-UPDATE leaderboard 
-SET theme = 'classica' 
-WHERE theme IS NULL OR theme = '';
-```
-
-### 3. Aggiungere Vincoli di Validazione
-
-```sql
--- Aggiungi vincolo per assicurarsi che solo temi validi vengano inseriti
-ALTER TABLE leaderboard 
-ADD CONSTRAINT check_theme 
-CHECK (theme IN ('classica', 'intrattenimento', 'trash', 'mista'));
-```
-
-### 4. Creare Indice per Performance
-
-```sql
--- Crea indice per migliorare le query per tema+modalità
-CREATE INDEX idx_leaderboard_theme_mode ON leaderboard(theme, mode);
-```
-
-## 📝 Script Completo di Migrazione
-
-```sql
--- =====================================================
--- MIGRATION: Add theme support to leaderboard
--- Created: [DATA ODIERNA]
--- Description: Aggiunge supporto per 4 temi diversi
--- =====================================================
-
--- Step 1: Aggiungi la colonna theme
-ALTER TABLE leaderboard 
-ADD COLUMN theme VARCHAR(50) NOT NULL DEFAULT 'classica';
-
--- Step 2: Aggiorna record esistenti (se necessario)
-UPDATE leaderboard 
-SET theme = 'classica' 
-WHERE theme IS NULL OR theme = '';
-
--- Step 3: Aggiungi vincolo per temi validi
-ALTER TABLE leaderboard 
-ADD CONSTRAINT check_theme 
-CHECK (theme IN ('classica', 'intrattenimento', 'trash', 'mista'));
-
--- Step 4: Crea indice per performance
-CREATE INDEX idx_leaderboard_theme_mode ON leaderboard(theme, mode);
-
--- Step 5: Verifica la struttura finale
-\d leaderboard;
-```
-
-## 🎮 Temi e Modalità Supportate
-
-| Tema | Modalità 1 | Modalità 2 |
-|------|------------|------------|
-| **Classica** | Eracle | Achille |
-| **Intrattenimento** | Verso la Fama | Superstar |
-| **Trash** | Verso la Fama | Memelord |
-| **Mista** | Gran Sapiarca | Il Supremo |
-
-## 📊 Struttura Finale della Tabella
-
-```sql
-CREATE TABLE leaderboard (
-  id SERIAL PRIMARY KEY,
-  mode VARCHAR(50) NOT NULL,        -- 'achille' o 'eracle'
-  theme VARCHAR(50) NOT NULL,       -- 'classica', 'intrattenimento', 'trash', 'mista'
-  name VARCHAR(100) NOT NULL,
-  streak INTEGER NOT NULL,
-  score INTEGER NOT NULL,
-  timestamp TIMESTAMP DEFAULT NOW(),
-  CONSTRAINT check_theme CHECK (theme IN ('classica', 'intrattenimento', 'trash', 'mista'))
-);
-```
-
-## 🧪 Test di Verifica
-
-### Test 1: Inserimento Record
-```sql
--- Test inserimento per ogni tema
-INSERT INTO leaderboard (mode, theme, name, streak, score) VALUES 
-('eracle', 'classica', 'Test Classica', 5, 1000),
-('achille', 'intrattenimento', 'Test Intrattenimento', 3, 800),
-('eracle', 'trash', 'Test Trash', 7, 1200),
-('achille', 'mista', 'Test Mista', 4, 900);
-```
-
-### Test 2: Query per Tema
-```sql
--- Verifica che i record vengano filtrati correttamente per tema
-SELECT * FROM leaderboard WHERE theme = 'intrattenimento';
-SELECT * FROM leaderboard WHERE theme = 'trash' AND mode = 'eracle';
-```
-
-### Test 3: Performance
-```sql
--- Verifica che l'indice funzioni
-EXPLAIN ANALYZE 
-SELECT * FROM leaderboard 
-WHERE theme = 'classica' AND mode = 'eracle' 
-ORDER BY streak DESC, score DESC 
-LIMIT 5;
-```
-
-## ⚠️ Note Importanti
-
-### Prima dell'Esecuzione
-- [ ] **Backup del database** completo
-- [ ] **Test in ambiente di sviluppo** prima della produzione
-- [ ] **Verifica compatibilità** con il codice esistente
-
-### Durante l'Esecuzione
-- [ ] **Monitora i log** per eventuali errori
-- [ ] **Verifica che non ci siano lock** sulla tabella
-- [ ] **Controlla che tutti i record** vengano aggiornati correttamente
-
-### Dopo l'Esecuzione
-- [ ] **Testa l'inserimento** di nuovi record
-- [ ] **Verifica le query** dell'applicazione
-- [ ] **Controlla le performance** delle query
-
-## 🚀 Come Eseguire
-
-### Opzione A: SQL Editor Supabase
-1. Vai su [supabase.com](https://supabase.com)
-2. Accedi al tuo progetto
-3. Vai su **SQL Editor**
-4. Esegui lo script completo di migrazione
-
-### Opzione B: Migrazione Supabase
-1. Vai su **Database** → **Migrations**
-2. Crea una nuova migrazione
-3. Incolla lo script completo
-4. Esegui la migrazione
-
-## 🔍 Rollback (se necessario)
-
-```sql
--- ATTENZIONE: Questo rimuoverà la colonna theme e tutti i dati associati
--- Usa solo se assolutamente necessario
-
--- Rimuovi vincolo
-ALTER TABLE leaderboard DROP CONSTRAINT check_theme;
-
--- Rimuovi indice
-DROP INDEX idx_leaderboard_theme_mode;
-
--- Rimuovi colonna
-ALTER TABLE leaderboard DROP COLUMN theme;
-```
-
-## 📞 Supporto
-
-Se riscontri problemi durante la migrazione:
-1. Controlla i log di Supabase
-2. Verifica che tutti i record esistenti abbiano `theme = 'classica'`
-3. Testa le query con `EXPLAIN ANALYZE`
-4. Contatta il supporto Supabase se necessario
-
----
-
-**Data Creazione:** [DATA ODIERNA]  
-**Versione:** 1.0  
-**Stato:** Pronto per l'esecuzione ✅
+Esiti delle prove production e conservazione dei dati: MIGRATION_STATUS.md.

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { leaderboardApi, type LeaderboardData, type LeaderboardEntry } from '../lib/supabase';
+import { leaderboardApi, LeaderboardApiError, readCache, writeCache, localUpsert, type LeaderboardData, type LeaderboardEntry } from '../lib/leaderboard';
 
 interface LeaderboardProps {
   onClose: () => void;
@@ -121,54 +121,29 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     }
   }, [disableModeSwitch, gameMode]);
 
-  // Carica la leaderboard
+  // The API returns only this theme's two Top 5 lists.
   useEffect(() => {
-    const fetchLeaderboard = async () => {
-      try {
-        setLoading(true);
-        
-        // Prima prova a caricare dal localStorage come fallback
-        const localBackup = localStorage.getItem('chiLHaDetto_leaderboard_backup');
-        if (localBackup) {
-          try {
-            const backupData = JSON.parse(localBackup);
-            setLeaderboard(backupData);
-            console.log('📦 Caricata leaderboard dal backup locale');
-          } catch (e) {
-            console.warn('Errore nel parsing del backup locale:', e);
-          }
-        }
-        
-        // Carica da Supabase
-        const data = await leaderboardApi.getAll();
-        setLeaderboard(data);
-        
-        // Salva il backup locale
-        localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(data));
-        console.log('💾 Backup locale aggiornato con dati da Supabase');
-        
-      } catch (err) {
-        console.warn('Supabase non disponibile, usando backup locale:', err);
-        // Se Supabase non risponde, usa il backup locale se disponibile
-        const localBackup = localStorage.getItem('chiLHaDetto_leaderboard_backup');
-        if (localBackup) {
-          try {
-            const backupData = JSON.parse(localBackup);
-            setLeaderboard(backupData);
-            setError('Supabase temporaneamente non disponibile - usando dati locali');
-          } catch (e) {
-            setError('Impossibile connettersi a Supabase e nessun backup disponibile');
-          }
-        } else {
-          setError('Impossibile connettersi a Supabase');
-        }
-      } finally {
-        setLoading(false);
+    let cancelled = false;
+    const cached = readCache();
+    setLeaderboard(cached);
+    setLoading(true);
+    setError(null);
+    leaderboardApi.getAll(currentTheme).then(data => {
+      if (cancelled) return;
+      const merged = { ...cached };
+      for (const mode of ['achille', 'eracle'] as const) {
+        const key = getLeaderboardKey(currentTheme, mode);
+        merged[key] = data[key];
       }
-    };
-
-    fetchLeaderboard();
-  }, []);
+      setLeaderboard(merged);
+      writeCache(merged);
+    }).catch(() => {
+      if (!cancelled) setError('Classifica online temporaneamente non disponibile - usando dati locali');
+    }).finally(() => {
+      if (!cancelled) setLoading(false);
+    });
+    return () => { cancelled = true; };
+  }, [currentTheme]);
 
   // Controlla se il punteggio attuale merita di essere salvato
   useEffect(() => {
@@ -224,7 +199,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       setShowSaveForm(false);
     }
     console.log('=====================================');
-  }, [leaderboard, currentStreak, currentScore, gameMode, recordAlreadySaved, loading]);
+  }, [leaderboard, currentStreak, currentScore, gameMode, currentTheme, recordAlreadySaved, loading]);
 
   // Reset del flag quando si chiude la leaderboard
   useEffect(() => {
@@ -236,14 +211,14 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
 
 
   const handleSaveRecord = async () => {
-    if (!playerName.trim()) return;
+    if (!playerName.trim() || saving || recordAlreadySaved) return;
     
     try {
       setSaving(true);
       const currentMode = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
       const leaderboardKey = getLeaderboardKey(currentTheme, currentMode);
 
-      // Salva su Supabase
+      // Salva su classifica online
       const updatedRecords = await leaderboardApi.addRecord(
         currentMode,
         currentTheme,
@@ -258,10 +233,11 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
         [leaderboardKey]: updatedRecords
       };
       setLeaderboard(newLeaderboard);
+      setError(null);
       
       // Aggiorna anche il backup locale
-      localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(newLeaderboard));
-      console.log('💾 Record salvato su Supabase e backup locale aggiornato');
+      writeCache(newLeaderboard);
+      console.log('💾 Record salvato su classifica online e backup locale aggiornato');
       
       setShowSaveForm(false);
       setPlayerName('');
@@ -273,15 +249,22 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       
     } catch (err) {
       console.error('Errore nel salvataggio:', err);
+      // Invalid requests must not be disguised as successful offline saves.
+      if (err instanceof LeaderboardApiError && (err.status === 400 || err.status === 415)) {
+        setError('Record non valido: controlla nome e punteggio');
+        return;
+      }
       
-      // Fallback: salva localmente anche se Supabase non risponde
+      // Fallback: salva localmente anche se classifica online non risponde
       const currentMode = (gameMode === 'millionaire' || gameMode === 'classic') ? 'eracle' : 'achille';
       const leaderboardKey = getLeaderboardKey(currentTheme, currentMode);
       const currentModeLeaderboard = leaderboard[leaderboardKey] || [];
       
       // Crea il nuovo record
-      const newRecord = {
+      const newRecord: LeaderboardEntry = {
         id: Date.now(), // ID temporaneo
+        mode: currentMode,
+        theme: currentTheme,
         name: playerName.trim(),
         streak: currentStreak,
         score: currentScore,
@@ -289,27 +272,23 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       };
       
       // Aggiungi il record alla leaderboard locale
-      const updatedLeaderboard = [...currentModeLeaderboard, newRecord]
-        .sort((a, b) => {
-          if (b.streak !== a.streak) return b.streak - a.streak;
-          if (b.score !== a.score) return b.score - a.score;
-          return new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime();
-        })
-        .slice(0, 5); // Mantieni solo i top 5
-      
+      const updatedLeaderboard = localUpsert(currentModeLeaderboard, newRecord);
+
       const newLeaderboard = {
         ...leaderboard,
         [leaderboardKey]: updatedLeaderboard
       };
       
       setLeaderboard(newLeaderboard);
-      localStorage.setItem('chiLHaDetto_leaderboard_backup', JSON.stringify(newLeaderboard));
+      const stored = writeCache(newLeaderboard);
       
       setShowSaveForm(false);
       setPlayerName('');
       setRecordAlreadySaved(true);
       
-      setError('Supabase non disponibile - record salvato localmente');
+      setError(stored
+        ? 'Classifica online non disponibile - record salvato solo su questo dispositivo'
+        : 'Classifica online non disponibile - record conservato solo in questa schermata');
       
       if (onSaveRecord) {
         onSaveRecord(playerName.trim());

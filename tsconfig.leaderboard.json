@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "types": ["node", "vite/client"] },
+  "include": ["api", "backend", "shared", "scripts/*leaderboard*.ts", "scripts/export-supabase.ts", "scripts/dev-api.ts", "tests", "src/lib/leaderboard.ts"]
+}

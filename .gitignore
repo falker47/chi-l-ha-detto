@@ -1,8 +1,15 @@
-node_modules
-dist
+node_modules/
+dist/
 .env
-node_modules
-/dist
+.env.*
+!.env.example
+.vercel/
+.migration-backup/
+backups/
 
 
 
+
+.env.local
+.env.*.local
+.vercel

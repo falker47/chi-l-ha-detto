@@ -1,210 +1,83 @@
-# 🏆 Sistema Leaderboard - Chi l'ha detto?
+# Classifica globale
 
-## 📋 Panoramica
+React/Vite su Vercel → /api/leaderboard (Vercel Function Node 22) → Neon Free Postgres.
+Il browser non accede al database. La sola variabile runtime necessaria è DATABASE_URL, sul server.
 
-Il sistema di leaderboard globale permette ai giocatori di competere per entrare nella top 5 per entrambe le modalità di gioco:
+## Comportamento
 
-- **Modalità Eracle**: Top 5 per le 12 Fatiche completate
-- **Modalità Achille**: Top 5 per la streak più lunga
+Quattro temi (classica, intrattenimento, trash, mista), due modalità (achille, eracle).
+Ogni combinazione mostra cinque record ordinati per streak DESC, score DESC, timestamp ASC.
+A parità completa si usa id ASC per stabilità. Il tema mista/eracle arriva a 15 livelli; gli altri eracle a 12.
 
-## 🚀 Avvio del Sistema
+Il nome, con maiuscole/minuscole distinte, identifica un record per modalità e tema. I nuovi nomi vengono
+trimmed e limitati a 20 caratteri. Come nel precedente codice Supabase, un nuovo invio SOSTITUISCE il
+risultato precedente anche se peggiore. Una transazione READ COMMITTED acquisisce prima un advisory
+lock sulla tripla modalità/tema/nome, poi aggiorna la riga esistente o ne inserisce una nuova.
+Il runtime usa solo SELECT/INSERT/UPDATE e la sequence, senza DDL né privilegi owner.
+Invii concorrenti dalla stessa API sono serializzati: prevale l'ultimo aggiornamento eseguito.
+Scrittori SQL esterni devono rispettare lo stesso lock.
 
-### 1. Avvio del Backend
-```bash
-npm run server
+Lo schema Frankfurt conserva 36 righe storiche, incluse cinque identità duplicate, e non ha un
+vincolo UNIQUE sulla tripla. Per ciascuna identità la lettura e l'aggiornamento selezionano il timestamp
+più recente, poi streak/score/id decrescenti per gli spareggi. Le altre righe restano intatte nel DB;
+la Top 5 mostra un solo risultato per nome. Gli ID bigint vengono restituiti come stringhe decimali,
+senza perdita di precisione; la cache accetta anche i vecchi ID numerici.
+
+## API
+
+GET /api/leaderboard?theme=classica restituisce { data: LeaderboardData }, al massimo dieci righe,
+cinque per modalità. Le chiavi degli altri temi sono vuote per compatibilità dell'interfaccia.
+È possibile aggiungere &mode=achille per limitare la risposta a cinque righe.
+Tema obbligatorio; valori non validi, parametri sconosciuti e ripetuti danno 400.
+
+POST /api/leaderboard con Content-Type: application/json:
+
+```json
+{"mode":"achille","theme":"classica","name":"Ada","streak":3,"score":200}
 ```
-Il server si avvierà sulla porta 3001.
 
-### 2. Avvio del Frontend
-```bash
-npm run dev
-```
-Il frontend si avvierà sulla porta 5173.
+Restituisce { data: LeaderboardEntry[] }, la Top 5 della combinazione dopo il salvataggio,
+nella stessa transazione. Campi extra (inclusi id e timestamp) sono rifiutati.
+400 = input non valido; 405 = metodo non consentito; 415 = tipo di contenuto errato;
+503 = database/API indisponibile. Gli errori non restituiscono connessioni, SQL o credenziali.
+Le risposte non vengono memorizzate dalla CDN. Le letture fallite vengono ritentate una volta;
+le scritture non vengono ritentate automaticamente. Budget: 12 secondi per operazione DB,
+30 secondi per Function/client, sufficiente per il normale risveglio Neon.
 
-### 3. Avvio Completo (Backend + Frontend)
-```bash
+## Cache e limiti
+
+localStorage conserva chiLHaDetto_leaderboard_backup, inclusi i formati precedenti.
+Un errore remoto mostra un avviso neutrale e i dati locali. Un salvataggio remoto fallito può
+essere conservato solo sul dispositivo (o solo in memoria se lo storage è bloccato).
+I record locali NON vengono sincronizzati automaticamente e possono essere sostituiti al prossimo
+caricamento remoto riuscito, come prima. Gli errori di validazione 400/415 non vengono presentati come salvataggi riusciti; errori di disponibilità come 429 usano il fallback.
+
+Il server controlla interi non negativi, lunghezza nomi, modalità, temi e massimi ricavabili dalle
+formule del gioco. Achille: al massimo 80 punti per domanda e moltiplicatore streak esistente.
+Eracle: somma dei massimi con timer 60 secondi, bonus massimo ×3 solo alla vittoria.
+Lo schema conserva valori storici validi anche se creati da versioni precedenti delle formule.
+Nomi senza login e punteggi generati dal client NON costituiscono protezione anti-cheat:
+un client ostile può fabbricare punteggi plausibili o sostituire il risultato di un omonimo.
+Non è implementato un limite distribuito per IP; in caso di abusi usare le regole Firewall Vercel
+compatibili col piano, senza cron o servizi a pagamento aggiuntivi.
+
+## Sviluppo e test
+
+```sh
+npm ci
 npm run dev:full
+npm test
+npm run typecheck
+npm run lint
+npm run validate
+npm run build
 ```
 
-## 🎯 Funzionalità
+Inserire DATABASE_URL in .env.local (ignorato da Git). Vite inoltra /api alla porta locale 3001;
+l'adattatore scripts/dev-api.ts esegue lo stesso handler della Function. npm run dev e
+npm run preview da soli servono il frontend: senza API compare il fallback locale.
+I test eseguono SQL reale in PostgreSQL WASM (PGlite): schema ripetuto, tutte le otto Top 5,
+upsert, transazioni, importazione, validazione e errori. PGlite serializza le richieste;
+non sostituisce una verifica della concorrenza multi-connessione o del risveglio sul Neon reale.
 
-### 📊 Leaderboard
-- **Top 5 globale** per ogni modalità
-- **Ordinamento intelligente**:
-  1. Streak/Fatica (decrescente)
-  2. Punteggio (decrescente) 
-  3. Timestamp (crescente - chi arriva prima sta più in alto)
-
-### 💾 Salvataggio Record
-- **Automatico**: Quando un giocatore raggiunge un punteggio da top 5
-- **Input nome**: Il giocatore inserisce il suo nome al momento del record
-- **Validazione**: Controllo che il record meriti di essere salvato
-
-### 🎮 Integrazione nel Gioco
-- **Game Over**: La leaderboard appare automaticamente quando il gioco finisce
-- **Vittoria Finale**: Appare anche quando si completa la modalità Eracle
-- **Menu Principale**: Bottone "Top 5" per visualizzare la leaderboard
-
-## 🔧 API Endpoints
-
-### GET /api/leaderboard
-Ottiene la leaderboard completa
-```json
-{
-  "success": true,
-  "data": {
-    "achille": [...],
-    "eracle": [...]
-  }
-}
-```
-
-### GET /api/leaderboard/:mode
-Ottiene la leaderboard per una modalità specifica
-- `mode`: "achille" o "eracle"
-
-### POST /api/leaderboard
-Aggiunge un nuovo record
-```json
-{
-  "mode": "achille",
-  "name": "Nome Giocatore",
-  "streak": 15,
-  "score": 2500
-}
-```
-
-### GET /api/health
-Health check del server
-
-## 📁 Struttura File
-
-```
-server/
-├── index.js              # Server Express
-└── leaderboard.json      # Database JSON (auto-generato)
-
-src/components/
-├── Leaderboard.tsx       # Componente UI leaderboard
-└── ChiLHaDetto.tsx      # Integrazione nel gioco
-
-src/types.ts             # Tipi TypeScript
-```
-
-## 🎨 Design
-
-### 🏆 Leaderboard UI
-- **Design epico**: Gradiente amber/orange con effetti glow
-- **Posizioni colorate**: 
-  - 🥇 1° posto: Oro
-  - 🥈 2° posto: Argento  
-  - 🥉 3° posto: Bronzo
-  - 4°-5° posto: Amber
-- **Animazioni**: Fade-in, ping, shimmer
-- **Responsive**: Ottimizzato per mobile e desktop
-
-### 📱 Form Salvataggio
-- **Validazione**: Nome obbligatorio, max 20 caratteri
-- **Feedback**: Messaggi di successo/errore
-- **UX**: Input con placeholder e validazione real-time
-
-## 🔒 Sicurezza
-
-- **Validazione input**: Controllo di tutti i parametri
-- **CORS**: Configurato per il frontend
-- **Error handling**: Gestione errori completa
-- **Fallback**: Timeout per caricamento immagini
-
-## 🚀 Deploy
-
-### Sviluppo Locale
-1. `npm install`
-2. `npm run dev:full`
-
-### Produzione
-1. `npm run build`
-2. Avvia il server: `npm run server`
-3. Servi i file statici dalla cartella `dist/`
-
-## 📊 Dati Leaderboard
-
-### Struttura Record
-```json
-{
-  "id": 1234567890.123,
-  "name": "Nome Giocatore",
-  "streak": 15,
-  "score": 2500,
-  "timestamp": "2024-01-15T10:30:00.000Z"
-}
-```
-
-### Modalità Eracle
-- **Streak**: Numero di fatiche completate (1-12)
-- **Score**: Punteggio totale accumulato
-- **Vittoria**: Completare tutte le 12 fatiche
-
-### Modalità Achille  
-- **Streak**: Numero di risposte corrette consecutive
-- **Score**: Punteggio totale accumulato
-- **Obiettivo**: Resistenza infinita
-
-## 🎯 Logica di Ordinamento
-
-```javascript
-// 1. Ordina per streak/fatica (decrescente)
-if (a.streak !== b.streak) {
-  return b.streak - a.streak;
-}
-
-// 2. Ordina per punteggio (decrescente)  
-if (a.score !== b.score) {
-  return b.score - a.score;
-}
-
-// 3. Ordina per timestamp (crescente - chi arriva prima sta più in alto)
-return new Date(a.timestamp) - new Date(b.timestamp);
-```
-
-## 🔧 Configurazione
-
-### Porte
-- **Frontend**: 5173 (Vite)
-- **Backend**: 3001 (Express)
-
-### Variabili Ambiente
-- `PORT`: Porta del server (default: 3001)
-
-## 🐛 Troubleshooting
-
-### Server non si avvia
-- Controlla che la porta 3001 sia libera
-- Verifica che Node.js sia installato
-
-### Frontend non si connette
-- Controlla che il server sia attivo
-- Verifica l'URL: `http://localhost:3001`
-
-### Record non si salvano
-- Controlla la console per errori
-- Verifica che il file `leaderboard.json` sia scrivibile
-
-## 📈 Statistiche
-
-Il sistema traccia:
-- **Record totali** per modalità
-- **Timestamp** di ogni record
-- **Punteggi** e streak
-- **Nomi giocatori** (max 20 caratteri)
-
-## 🎮 Esperienza Utente
-
-1. **Gioca** normalmente
-2. **Raggiungi** un punteggio da top 5
-3. **Inserisci** il tuo nome
-4. **Visualizza** la leaderboard
-5. **Competi** per salire in classifica!
-
----
-
-*Sistema leaderboard sviluppato per "Chi l'ha detto? - Ambiguità Edition"* 🏛️⚡
+Setup e passaggio dei dati: [deploy](DEPLOY_GUIDE.md), [migrazione](DATABASE_MIGRATION_README.md).

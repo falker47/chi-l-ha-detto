@@ -198,27 +198,6 @@ function MainMenu({
   getBackgroundImage: () => string;
 }) {
   
-  // Sveglia il server Render all'apertura del menu per evitare attese
-  useEffect(() => {
-    const wakeUpServer = async () => {
-      try {
-        // Solo in produzione, non in sviluppo
-        if (window.location.hostname !== 'localhost') {
-          const apiUrl = 'https://chi-l-ha-detto.onrender.com/api/health';
-          await fetch(apiUrl, { 
-            method: 'GET',
-            signal: AbortSignal.timeout(5000) // Timeout di 5 secondi
-          });
-          console.log('🌅 Server Render svegliato');
-        }
-      } catch (err) {
-        console.warn('Impossibile svegliare il server:', err);
-      }
-    };
-
-    wakeUpServer();
-  }, []);
-
   // Funzione per ottenere i colori dei bottoni in base al tema e alla modalità
   const getButtonColors = (mode: 'millionaire' | 'classic') => {
     if (currentTheme === 'intrattenimento') {

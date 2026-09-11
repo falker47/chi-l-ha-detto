@@ -23,37 +23,13 @@ Il progetto è attualmente deployato su Vercel:
 - **Deploy automatico** ad ogni push su main
 - **Performance ottimizzate** per mobile e desktop
 
-### 📄 GitHub Pages (Alternativo)
+La classifica globale usa una Vercel Function e Neon Free PostgreSQL, con risveglio su richiesta
+senza cron. Il database definitivo è Neon Frankfurt (chi_l_ha_detto), con Function Vercel fra1.
+DATABASE_URL resta esclusivamente sul server. I 36 record storici sono già migrati: non reimportarli.
 
-#### Metodo 1: Deploy Manuale
-
-1. **Build locale:**
-   ```bash
-   npm run build
-   ```
-
-2. **Pusha tutto:**
-   ```bash
-   git add .
-   git commit -m "Aggiornamenti per GitHub Pages"
-   git push origin main
-   ```
-
-3. **Configura GitHub Pages:**
-   - Vai su GitHub > Repository > **Settings** > **Pages**
-   - **Source**: "Deploy from a branch"
-   - **Branch**: `main`
-   - **Folder**: `/ (root)`
-   - Clicca **Save**
-
-4. **Aspetta il deploy** (2-5 minuti)
-
-### Metodo 2: GitHub Actions (Opzionale)
-
-1. **Vai su Actions** nel repository
-2. **Seleziona** "Manual Deploy to GitHub Pages"
-3. **Clicca** "Run workflow"
-4. **Configura Pages** per usare branch `gh-pages`
+- [Setup Neon/Vercel e variabili](DEPLOY_GUIDE.md)
+- [Migrazione dati e rollback](DATABASE_MIGRATION_README.md)
+- [API, cache e test](LEADERBOARD_README.md)
 
 ## 🛠️ Tecnologie
 
@@ -67,7 +43,7 @@ Il progetto è attualmente deployato su Vercel:
 
 ```bash
 # Installa dipendenze
-npm install
+npm ci
 
 # Avvia server di sviluppo
 npm run dev
