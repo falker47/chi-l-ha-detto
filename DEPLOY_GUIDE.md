@@ -49,6 +49,24 @@ Riferimenti: [Neon scale-to-zero](https://neon.com/docs/introduction/scale-to-ze
 [Neon Free](https://neon.com/pricing), [Vercel Hobby](https://vercel.com/docs/plans/hobby),
 [regioni Functions](https://vercel.com/docs/functions/configuring-functions/region).
 
+## Vecchio servizio Render: disattivare l'auto-deploy
+
+La configurazione storica Render usava Root Directory `server`, Build Command `npm install`
+e Start Command `npm start`. Il commit `d1757ad` ha rimosso intenzionalmente
+`server/package.json` e `server/index.js`: quel servizio non è più un target di deployment.
+La notifica Render del 11 settembre 2026 riporta un build fallito con stato 254 sullo stesso
+commit. La configurazione storica non è più compatibile con il repository; il comando esatto
+che ha fallito deve essere confermato nei log Render autenticati.
+
+Nel servizio Render `chi-l-ha-detto`, verificare i log e le impostazioni, quindi disattivare
+l'auto-deploy da Git. Questa impostazione appartiene al servizio Render e non viene modificata
+da un commit in questo repository. Conservare il servizio e gli eventuali dati storici finché
+non viene autorizzata separatamente la loro rimozione.
+
+Non ripristinare il backend Express/JSON né cambiare la root Render per tentare di distribuire
+la nuova applicazione: la produzione supportata è Vercel con `/api/leaderboard` e Neon Frankfurt.
+Non modificare `DATABASE_URL`, schema o dati per risolvere questa notifica.
+
 ## Ripristino
 
 Conservare database e backup. Un eventuale rollback deve usare una versione compatibile con Neon
