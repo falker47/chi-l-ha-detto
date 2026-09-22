@@ -763,7 +763,6 @@ export default function ChiLHaDetto({
         const maxLevel = getQuestionsPerGame(currentTheme, gameMode);
         if (newStreak === maxLevel) {
           // Vittoria: applica moltiplicatore hints
-          const baseScore = newQuestionScores.reduce((sum, score) => sum + score, 0);
           const finalScore = calculateEracleFinalScore(newQuestionScores, hintsUnused);
           setScore(finalScore);
         } else {
@@ -1780,9 +1779,6 @@ export default function ChiLHaDetto({
       </HeroImagePreloader>
       
       {/* Leaderboard */}
-      {showLeaderboard && (() => {
-        return null;
-      })()}
       {showLeaderboard && (
         <Leaderboard
           onClose={() => setShowLeaderboard(false)}
@@ -1790,7 +1786,7 @@ export default function ChiLHaDetto({
           currentTheme={currentTheme}
           currentStreak={gameMode === 'millionaire' ? currentLevel : finalStreak}
           currentScore={score}
-          onSaveRecord={(name) => {
+          onSaveRecord={() => {
             setRecordSaved(true);
           }}
           disableModeSwitch={true} // Disabilita i bottoni di switch nella schermata game over
