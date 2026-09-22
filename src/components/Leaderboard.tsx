@@ -147,11 +147,6 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
 
   // Controlla se il punteggio attuale merita di essere salvato
   useEffect(() => {
-    console.log('=== DEBUG LEADERBOARD VALIDATION ===');
-    console.log('currentStreak:', currentStreak);
-    console.log('currentScore:', currentScore);
-    console.log('recordAlreadySaved:', recordAlreadySaved);
-    console.log('loading:', loading);
     
     // Solo se abbiamo un punteggio valido, non è già stato salvato, e la leaderboard è stata caricata
     if (currentStreak > 0 && currentScore > 0 && !recordAlreadySaved && !loading) {
@@ -159,46 +154,32 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       const leaderboardKey = getLeaderboardKey(currentTheme, currentMode);
       const currentModeLeaderboard = leaderboard[leaderboardKey];
       
-      console.log('Mode:', currentMode);
-      console.log('Theme:', currentTheme);
-      console.log('Leaderboard key:', leaderboardKey);
-      console.log('Leaderboard data:', currentModeLeaderboard);
       
       let isTop5 = false;
       
       if (currentModeLeaderboard.length < 5) {
         // Se ci sono meno di 5 record, c'è spazio
         isTop5 = true;
-        console.log('✅ Top 5: Meno di 5 record');
       } else if (currentModeLeaderboard.length >= 5) {
         // Se ci sono già 5 record, controlla se il punteggio è migliore del 5° posto
         const fifthPlace = currentModeLeaderboard[4];
-        console.log('5° posto:', fifthPlace);
         
         if (currentStreak > fifthPlace.streak) {
           isTop5 = true;
-          console.log('✅ Top 5: Streak maggiore');
         } else if (currentStreak === fifthPlace.streak && currentScore > fifthPlace.score) {
           isTop5 = true;
-          console.log('✅ Top 5: Stessa streak, score maggiore');
         } else {
-          console.log('❌ Non Top 5: Punteggio insufficiente');
         }
       }
       
-      console.log('Risultato isTop5:', isTop5);
       if (isTop5) {
-        console.log('✅ Mostrando form di salvataggio');
         setShowSaveForm(true);
       } else {
-        console.log('❌ Nascondendo form di salvataggio - punteggio insufficiente');
         setShowSaveForm(false);
       }
     } else {
-      console.log('❌ Condizioni non soddisfatte per validazione - nascondendo form');
       setShowSaveForm(false);
     }
-    console.log('=====================================');
   }, [leaderboard, currentStreak, currentScore, gameMode, currentTheme, recordAlreadySaved, loading]);
 
   // Reset del flag quando si chiude la leaderboard
@@ -237,7 +218,6 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       
       // Aggiorna anche il backup locale
       writeCache(newLeaderboard);
-      console.log('💾 Record salvato su classifica online e backup locale aggiornato');
       
       setShowSaveForm(false);
       setPlayerName('');
