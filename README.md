@@ -1,92 +1,136 @@
-# Chi l'ha detto? - Ambiguità Edition
+# Chi l'ha detto?
 
-Un quiz interattivo che mette alla prova la tua conoscenza delle citazioni storiche e del loro vero contesto. Scopri chi ha davvero pronunciato le frasi più famose della storia!
+An Italian-language quote quiz about **attribution, context and ambiguity**. The game asks who said a line, then goes beyond the answer with historical context, hints and notes for quotations whose popular attribution is disputed or apocryphal.
 
-## 🎯 Caratteristiche
+[**Play the live version →**](https://chi-l-ha-detto.vercel.app/)
 
-- **Due modalità di gioco**: Eracle (Le 12 Fatiche) e Achille (Aristeia)
-- **Quiz interattivo** con citazioni storiche autentiche
-- **Sistema anti-duplicati** per esperienza sempre fresca
-- **Contenuti educativi** con contesto storico e note di ambiguità
-- **Immagini dei personaggi** storici
-- **Sistema di punteggio** e streak
-- **Hint e aiuti** durante il gioco
-- **Design responsive** ottimizzato per mobile e desktop
-- **Favicon e meta tag** per condivisione social
+![Chi l'ha detto? preview](public/images/preview.png)
 
-## 🚀 Deploy
+## What it is
 
-### 🌐 Vercel (Raccomandato)
+The project combines a quiz game with a small curated knowledge base around quotations.
 
-Il progetto è attualmente deployato su Vercel:
-- **URL**: [https://chi-l-ha-detto.vercel.app/](https://chi-l-ha-detto.vercel.app/)
-- **Deploy automatico** ad ogni push su main
-- **Performance ottimizzate** per mobile e desktop
+- **4 themes**: Classica, Intrattenimento, Trash and Mista.
+- **2 gameplay models**:
+  - **Eracle** — finite progression through increasingly difficult stages.
+  - **Achille** — open-ended streak mode.
+- **Theme-specific identities** such as Hollywood, Superstar, Memelord and Gran Sapiarca.
+- **Hints and second-chance mechanics** integrated into gameplay.
+- **Top-5 leaderboards** separated by theme and mode.
+- **Responsive UI** designed for desktop and mobile.
+- Quote records include source/context fields, difficulty, hints and ambiguity notes rather than treating every viral attribution as unquestionably authentic.
 
-La classifica globale usa una Vercel Function e Neon Free PostgreSQL, con risveglio su richiesta
-senza cron. Il database definitivo è Neon Frankfurt (chi_l_ha_detto), con Function Vercel fra1.
-DATABASE_URL resta esclusivamente sul server. I 36 record storici sono già migrati: non reimportarli.
+## Architecture
 
-- [Setup Neon/Vercel e variabili](DEPLOY_GUIDE.md)
-- [Migrazione dati e rollback](DATABASE_MIGRATION_README.md)
-- [API, cache e test](LEADERBOARD_README.md)
+```text
+React 18 + TypeScript + Vite + Tailwind
+                │
+                ├── static game UI and quote dataset
+                │
+                └── /api/leaderboard
+                         │
+                         ▼
+                 Vercel Function (fra1)
+                         │
+                         ▼
+              Neon PostgreSQL (Frankfurt)
+```
 
-## 🛠️ Tecnologie
+The leaderboard API is server-side only. `DATABASE_URL` is never exposed through Vite, and request payloads are validated with Zod before reaching PostgreSQL.
 
-- **React 18** con TypeScript
-- **Vite** per build e sviluppo
-- **Tailwind CSS** per styling responsive
-- **Vercel** per deploy e hosting
-- **GitHub** per version control
+The frontend keeps a localStorage cache as a graceful fallback when the remote leaderboard is temporarily unavailable. Server-side ranking, upsert behavior and historical-row compatibility are covered by PostgreSQL-compatible integration tests using PGlite.
 
-## 🛠️ Sviluppo Locale
+### Main stack
+
+| Area | Technology |
+| --- | --- |
+| Frontend | React 18, TypeScript, Vite, Tailwind CSS |
+| API | Vercel Functions, Web Standard `Request`/`Response` |
+| Database | Neon PostgreSQL |
+| Validation | Zod |
+| Tests | Node test runner + PGlite |
+| Hosting | Vercel |
+
+## Verification
+
+The repository includes automated checks for the game data and leaderboard stack:
 
 ```bash
-# Installa dipendenze
-npm ci
-
-# Avvia server di sviluppo
-npm run dev
-
-# Build per produzione
-npm run build
-
-# Anteprima build
-npm run preview
-
-# Validazione dati
+npm test
+npm run typecheck
+npm run lint
 npm run validate
+npm run build
 ```
 
-## 📁 Struttura Progetto
+The leaderboard test suite covers all eight theme/mode combinations, ranking and Top-5 selection, PostgreSQL schema behavior, upserts, concurrent submissions, API validation/error handling, migration/import semantics, microsecond timestamps and the local cache fallback.
 
+A GitHub Actions workflow runs the same verification path on pushes and pull requests.
+
+## Live deployment
+
+Production is hosted on Vercel:
+
+**https://chi-l-ha-detto.vercel.app/**
+
+The production project deploys from `main`. The SPA and leaderboard API share the same Vercel project, while `/api/*` is excluded from the frontend fallback rewrite.
+
+The current backend architecture replaced the older Supabase/Render setup. Historical migration notes are retained for reproducibility, but they are not part of the runtime architecture.
+
+## Local development
+
+Requires **Node.js 22**.
+
+```bash
+npm ci
+npm run dev
 ```
+
+To run the frontend and local API together:
+
+```bash
+npm run dev:full
+```
+
+Before pushing a change:
+
+```bash
+npm test
+npm run typecheck
+npm run lint
+npm run validate
+npm run build
+```
+
+## Repository map
+
+```text
 ├── src/
-│   ├── components/     # Componenti React
-│   ├── data/          # Dati delle citazioni
-│   └── types.ts       # Definizioni TypeScript
-├── public/
-│   └── images/        # Immagini e personaggi
-├── .github/workflows/ # GitHub Actions
-└── vite.config.ts     # Configurazione Vite
+│   ├── components/          # Game and leaderboard UI
+│   ├── data/                # Quote dataset
+│   └── lib/                 # Frontend leaderboard client/cache
+├── api/                     # Vercel Function entry point
+├── backend/                 # Database, queries and validation
+├── shared/                  # Shared leaderboard types/ranking helpers
+├── tests/                   # PostgreSQL-compatible integration tests
+├── migrations/              # Database schema
+├── scripts/                 # Validation and migration utilities
+├── public/images/           # Game artwork and social preview
+├── vercel.json              # Runtime region, routing and cache config
+└── README.md
 ```
 
-## 🎨 Design
+## Operational documentation
 
-L'applicazione utilizza un design moderno e responsive:
-- **Sfondo**: Immagini storiche con overlay scuri
-- **Modalità Eracle**: Palette viola/indaco per "Le 12 Fatiche"
-- **Modalità Achille**: Palette amber/arancione per "Aristeia"
-- **Testi**: Bianco con ombre per leggibilità
-- **Footer**: Nero fisso con link al portfolio
+These documents preserve the implementation and migration details without cluttering the main project overview:
 
-## 🌐 Live Demo
+- [Vercel + Neon deployment](DEPLOY_GUIDE.md)
+- [Leaderboard API, cache and tests](LEADERBOARD_README.md)
+- [Database migration and rollback](DATABASE_MIGRATION_README.md)
+- [Completed migration verification](MIGRATION_STATUS.md)
 
-🎮 **[Gioca ora su Vercel](https://chi-l-ha-detto.vercel.app/)**
+## Scope and limitations
 
-Testa la tua conoscenza delle citazioni storiche direttamente online!
+The leaderboard is a lightweight game feature, not an anti-cheat system: scores originate in the browser and player identities are not authenticated. The server validates shape and plausible score bounds, but does not attempt to provide competitive-game security.
 
-## 📝 Licenza
-
-Progetto educativo per scopi didattici.
-
+No explicit open-source license is currently granted for this repository. Licensing is intentionally left to the portfolio-wide metadata/licensing pass.
