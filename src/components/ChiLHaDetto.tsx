@@ -437,7 +437,6 @@ export default function ChiLHaDetto({
   const preloadCharacterImages = useCallback((choices: string[]) => {
     // Evita chiamate multiple contemporanee
     if (isPreloading) {
-      console.log('Preload già in corso, salto...');
       return;
     }
     
@@ -447,13 +446,11 @@ export default function ChiLHaDetto({
     
     if (allImagesCached) {
       // Se tutte le immagini sono già caricate, non mostrare il preload
-      console.log('Tutte le immagini sono già in cache');
       setImagesPreloaded(true);
       return;
     }
     
     // Altrimenti, mostra il preload e carica le immagini
-    console.log('Avvio preload immagini...');
     setIsPreloading(true);
     setImagesPreloaded(false);
     
@@ -479,7 +476,6 @@ export default function ChiLHaDetto({
           clearTimeout(imageTimeout);
           // Aggiungi l'immagine al cache
           setLoadedImagesCache(prev => new Set([...prev, imageUrl]));
-          console.log(`Immagine caricata: ${imageUrl}`);
           resolve();
         };
         img.onerror = () => {
@@ -495,7 +491,6 @@ export default function ChiLHaDetto({
       clearTimeout(safetyTimeout);
       setIsPreloading(false);
       setImagesPreloaded(true);
-      console.log('Preload immagini completato');
     }).catch((error) => {
       console.error('Errore nel preload delle immagini:', error);
       clearTimeout(safetyTimeout);
@@ -535,10 +530,6 @@ export default function ChiLHaDetto({
 
   useEffect(() => {
     if (timeLeft === 0 && !revealed) {
-      console.log('⏰ TIMEOUT - Debug punteggi:');
-      console.log('streak:', streak);
-      console.log('score:', score);
-      console.log('finalStreak:', finalStreak);
       
       // Salva la streak finale prima di resettarla (solo se è maggiore di 0)
       if (streak > 0) {
@@ -774,7 +765,6 @@ export default function ChiLHaDetto({
           // Vittoria: applica moltiplicatore hints
           const baseScore = newQuestionScores.reduce((sum, score) => sum + score, 0);
           const finalScore = calculateEracleFinalScore(newQuestionScores, hintsUnused);
-          console.log(`🏆 VITTORIA! Punteggio base: ${baseScore}, Hints non utilizzati: ${hintsUnused}, Moltiplicatore: ${1 + (0.5 * hintsUnused)}, Punteggio finale: ${finalScore}`);
           setScore(finalScore);
         } else {
           // Durante il gioco: somma semplice
@@ -1029,7 +1019,6 @@ export default function ChiLHaDetto({
     // Decrementa il contatore hints non utilizzati (modalità Eracle)
     if (gameMode === 'millionaire') {
       setHintsUnused(prev => Math.max(0, prev - 1));
-      console.log(`50/50 utilizzato! Hints rimanenti: ${hintsUnused - 1}`);
     }
   }
 
@@ -1040,7 +1029,6 @@ export default function ChiLHaDetto({
     // Decrementa il contatore hints non utilizzati (modalità Eracle)
     if (gameMode === 'millionaire') {
       setHintsUnused(prev => Math.max(0, prev - 1));
-      console.log(`2nd Chance utilizzato! Hints rimanenti: ${hintsUnused - 1}`);
     }
   }
 
@@ -1052,7 +1040,6 @@ export default function ChiLHaDetto({
     // Decrementa il contatore hints non utilizzati (modalità Eracle)
     if (gameMode === 'millionaire') {
       setHintsUnused(prev => Math.max(0, prev - 1));
-      console.log(`Hint utilizzato! Hints rimanenti: ${hintsUnused - 1}`);
     }
   }
 
@@ -1064,7 +1051,6 @@ export default function ChiLHaDetto({
     // Decrementa il contatore hints non utilizzati (modalità Eracle)
     if (gameMode === 'millionaire') {
       setHintsUnused(prev => Math.max(0, prev - 1));
-      console.log(`Super Hint utilizzato! Hints rimanenti: ${hintsUnused - 1}`);
     }
   }
 
@@ -1795,12 +1781,6 @@ export default function ChiLHaDetto({
       
       {/* Leaderboard */}
       {showLeaderboard && (() => {
-        console.log('📊 LEADERBOARD - Debug punteggi:');
-        console.log('gameMode:', gameMode);
-        console.log('currentLevel:', currentLevel);
-        console.log('finalStreak:', finalStreak);
-        console.log('score:', score);
-        console.log('currentStreak passato:', gameMode === 'millionaire' ? currentLevel : finalStreak);
         return null;
       })()}
       {showLeaderboard && (
@@ -1812,7 +1792,6 @@ export default function ChiLHaDetto({
           currentScore={score}
           onSaveRecord={(name) => {
             setRecordSaved(true);
-            console.log(`Record salvato per ${name}`);
           }}
           disableModeSwitch={true} // Disabilita i bottoni di switch nella schermata game over
         />
