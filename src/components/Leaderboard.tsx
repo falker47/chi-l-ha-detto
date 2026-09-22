@@ -168,7 +168,6 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
           isTop5 = true;
         } else if (currentStreak === fifthPlace.streak && currentScore > fifthPlace.score) {
           isTop5 = true;
-        } else {
         }
       }
       
