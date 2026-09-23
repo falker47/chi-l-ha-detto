@@ -133,4 +133,4 @@ These documents preserve the implementation and migration details without clutte
 
 The leaderboard is a lightweight game feature, not an anti-cheat system: scores originate in the browser and player identities are not authenticated. The server validates shape and plausible score bounds, but does not attempt to provide competitive-game security.
 
-No explicit open-source license is currently granted for this repository. Licensing is intentionally left to the portfolio-wide metadata/licensing pass.
+No explicit open-source license is currently granted for this repository.
