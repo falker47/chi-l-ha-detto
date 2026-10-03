@@ -628,7 +628,7 @@ function MainMenu({
       <footer className="fixed bottom-0 left-0 right-0 bg-black py-3 z-50">
         <div className="text-center">
           <a 
-            href="https://falker47.github.io/Nexus-portfolio/" 
+            href="https://falker47.github.io/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-amber-300 transition-colors duration-300 hover:underline focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:ring-offset-2 focus:ring-offset-black rounded-sm px-1 py-0.5 active:scale-95 transform transition-transform duration-150 text-sm"
@@ -888,7 +888,7 @@ function TutorialScreen({ onBackToMenu }: { onBackToMenu: () => void }) {
       <footer className="fixed bottom-0 left-0 right-0 bg-black py-3 z-50">
         <div className="text-center">
           <a 
-            href="https://falker47.github.io/Nexus-portfolio/" 
+            href="https://falker47.github.io/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-amber-300 transition-colors duration-300 hover:underline focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:ring-offset-2 focus:ring-offset-black rounded-sm px-1 py-0.5 active:scale-95 transform transition-transform duration-150 text-sm"
